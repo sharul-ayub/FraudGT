@@ -1,0 +1,1743 @@
+{
+  "nodes": [
+    {
+      "id": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT+RMP.yaml",
+      "type": "config",
+      "name": "AML-Medium-LI-SparseNodeGT+RMP.yaml",
+      "filePath": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT+RMP.yaml",
+      "summary": "YAML experiment configuration for AML Medium-LI hetero-edge classification using SparseNodeGT, link-neighbor sampling, weighted cross-entropy, AdamW, and f1 model selection with reverse message passing.",
+      "tags": [
+        "configuration",
+        "aml-experiment",
+        "graph-learning",
+        "graph-transformer",
+        "reverse-message-passing"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML GraphGym-style config with top-level sections for dataset, train, validation, model, gt, gnn, optimizer, wandb, and output settings."
+    },
+    {
+      "id": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT-EdgeAttn.yaml",
+      "type": "config",
+      "name": "AML-Medium-LI-SparseNodeGT-EdgeAttn.yaml",
+      "filePath": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT-EdgeAttn.yaml",
+      "summary": "YAML experiment configuration for AML Medium-LI hetero-edge classification using SparseNodeGT, link-neighbor sampling, weighted cross-entropy, AdamW, and f1 model selection with edge attention masking.",
+      "tags": [
+        "configuration",
+        "aml-experiment",
+        "graph-learning",
+        "graph-transformer",
+        "edge-attention"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML GraphGym-style config with top-level sections for dataset, train, validation, model, gt, gnn, optimizer, wandb, and output settings."
+    },
+    {
+      "id": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT-EdgeGate.yaml",
+      "type": "config",
+      "name": "AML-Medium-LI-SparseNodeGT-EdgeGate.yaml",
+      "filePath": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT-EdgeGate.yaml",
+      "summary": "YAML experiment configuration for AML Medium-LI hetero-edge classification using SparseNodeGT, link-neighbor sampling, weighted cross-entropy, AdamW, and f1 model selection with edge gating.",
+      "tags": [
+        "configuration",
+        "aml-experiment",
+        "graph-learning",
+        "graph-transformer",
+        "edge-gating"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML GraphGym-style config with top-level sections for dataset, train, validation, model, gt, gnn, optimizer, wandb, and output settings."
+    },
+    {
+      "id": "config:configs/AML-Small-HI/AML-Small-HI-GATE.yaml",
+      "type": "config",
+      "name": "AML-Small-HI-GATE.yaml",
+      "filePath": "configs/AML-Small-HI/AML-Small-HI-GATE.yaml",
+      "summary": "YAML experiment configuration for AML Small-HI hetero-edge classification using GATE, link-neighbor sampling, weighted cross-entropy, AdamW, and f1 model selection.",
+      "tags": [
+        "configuration",
+        "aml-experiment",
+        "graph-learning",
+        "gate"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML GraphGym-style config with top-level sections for dataset, train, validation, model, gnn, optimizer, wandb, and output settings."
+    },
+    {
+      "id": "config:configs/AML-Small-HI/AML-Small-HI-GatedGCN.yaml",
+      "type": "config",
+      "name": "AML-Small-HI-GatedGCN.yaml",
+      "filePath": "configs/AML-Small-HI/AML-Small-HI-GatedGCN.yaml",
+      "summary": "YAML experiment configuration for AML Small-HI hetero-edge classification using GatedGCN, link-neighbor sampling, weighted cross-entropy, AdamW, and f1 model selection.",
+      "tags": [
+        "configuration",
+        "aml-experiment",
+        "graph-learning",
+        "gatedgcn"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML GraphGym-style config with top-level sections for dataset, train, validation, model, gnn, optimizer, wandb, and output settings."
+    },
+    {
+      "id": "config:configs/AML-Small-HI/AML-Small-HI-GINE.yaml",
+      "type": "config",
+      "name": "AML-Small-HI-GINE.yaml",
+      "filePath": "configs/AML-Small-HI/AML-Small-HI-GINE.yaml",
+      "summary": "YAML experiment configuration for AML Small-HI hetero-edge classification using GINE, link-neighbor sampling, weighted cross-entropy, AdamW, and f1 model selection.",
+      "tags": [
+        "configuration",
+        "aml-experiment",
+        "graph-learning",
+        "gine"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML GraphGym-style config with top-level sections for dataset, train, validation, model, gnn, optimizer, wandb, and output settings."
+    },
+    {
+      "id": "config:configs/AML-Small-HI/AML-Small-HI-GINE+Ego.yaml",
+      "type": "config",
+      "name": "AML-Small-HI-GINE+Ego.yaml",
+      "filePath": "configs/AML-Small-HI/AML-Small-HI-GINE+Ego.yaml",
+      "summary": "YAML experiment configuration for AML Small-HI hetero-edge classification using GINE, link-neighbor sampling, weighted cross-entropy, AdamW, and f1 model selection with ego-style transform settings.",
+      "tags": [
+        "configuration",
+        "aml-experiment",
+        "graph-learning",
+        "gine",
+        "ego-transform"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML GraphGym-style config with top-level sections for dataset, train, validation, model, gnn, optimizer, wandb, and output settings."
+    },
+    {
+      "id": "config:configs/AML-Small-HI/AML-Small-HI-GINE+EU.yaml",
+      "type": "config",
+      "name": "AML-Small-HI-GINE+EU.yaml",
+      "filePath": "configs/AML-Small-HI/AML-Small-HI-GINE+EU.yaml",
+      "summary": "YAML experiment configuration for AML Small-HI hetero-edge classification using GINE, link-neighbor sampling, weighted cross-entropy, AdamW, and f1 model selection with edge-update variant settings.",
+      "tags": [
+        "configuration",
+        "aml-experiment",
+        "graph-learning",
+        "gine",
+        "edge-updates"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML GraphGym-style config with top-level sections for dataset, train, validation, model, gnn, optimizer, wandb, and output settings."
+    },
+    {
+      "id": "config:configs/AML-Small-HI/AML-Small-HI-GINE+ports.yaml",
+      "type": "config",
+      "name": "AML-Small-HI-GINE+ports.yaml",
+      "filePath": "configs/AML-Small-HI/AML-Small-HI-GINE+ports.yaml",
+      "summary": "YAML experiment configuration for AML Small-HI hetero-edge classification using GINE, link-neighbor sampling, weighted cross-entropy, AdamW, and f1 model selection with port features.",
+      "tags": [
+        "configuration",
+        "aml-experiment",
+        "graph-learning",
+        "gine",
+        "port-features"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML GraphGym-style config with top-level sections for dataset, train, validation, model, gnn, optimizer, wandb, and output settings."
+    },
+    {
+      "id": "config:configs/AML-Small-HI/AML-Small-HI-GINE+RMP.yaml",
+      "type": "config",
+      "name": "AML-Small-HI-GINE+RMP.yaml",
+      "filePath": "configs/AML-Small-HI/AML-Small-HI-GINE+RMP.yaml",
+      "summary": "YAML experiment configuration for AML Small-HI hetero-edge classification using GINE, link-neighbor sampling, weighted cross-entropy, AdamW, and f1 model selection with reverse message passing.",
+      "tags": [
+        "configuration",
+        "aml-experiment",
+        "graph-learning",
+        "gine",
+        "reverse-message-passing"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML GraphGym-style config with top-level sections for dataset, train, validation, model, gnn, optimizer, wandb, and output settings."
+    },
+    {
+      "id": "config:configs/AML-Small-HI/AML-Small-HI-MLP.yaml",
+      "type": "config",
+      "name": "AML-Small-HI-MLP.yaml",
+      "filePath": "configs/AML-Small-HI/AML-Small-HI-MLP.yaml",
+      "summary": "YAML experiment configuration for AML Small-HI hetero-edge classification using MLP, link-neighbor sampling, weighted cross-entropy, AdamW, and f1 model selection.",
+      "tags": [
+        "configuration",
+        "aml-experiment",
+        "graph-learning",
+        "mlp"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML GraphGym-style config with top-level sections for dataset, train, validation, model, gnn, optimizer, wandb, and output settings."
+    },
+    {
+      "id": "config:configs/AML-Small-HI/AML-Small-HI-Multi-GINE.yaml",
+      "type": "config",
+      "name": "AML-Small-HI-Multi-GINE.yaml",
+      "filePath": "configs/AML-Small-HI/AML-Small-HI-Multi-GINE.yaml",
+      "summary": "YAML experiment configuration for AML Small-HI hetero-edge classification using GINE, link-neighbor sampling, weighted cross-entropy, AdamW, and f1 model selection with reverse message passing, port features.",
+      "tags": [
+        "configuration",
+        "aml-experiment",
+        "graph-learning",
+        "gine",
+        "port-features"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML GraphGym-style config with top-level sections for dataset, train, validation, model, gnn, optimizer, wandb, and output settings."
+    },
+    {
+      "id": "config:configs/AML-Small-HI/AML-Small-HI-Multi-GINE+EU.yaml",
+      "type": "config",
+      "name": "AML-Small-HI-Multi-GINE+EU.yaml",
+      "filePath": "configs/AML-Small-HI/AML-Small-HI-Multi-GINE+EU.yaml",
+      "summary": "YAML experiment configuration for AML Small-HI hetero-edge classification using GINE, link-neighbor sampling, weighted cross-entropy, AdamW, and f1 model selection with reverse message passing, port features, edge-update variant settings.",
+      "tags": [
+        "configuration",
+        "aml-experiment",
+        "graph-learning",
+        "gine",
+        "port-features"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML GraphGym-style config with top-level sections for dataset, train, validation, model, gnn, optimizer, wandb, and output settings."
+    },
+    {
+      "id": "config:configs/AML-Small-HI/AML-Small-HI-Multi-PNA.yaml",
+      "type": "config",
+      "name": "AML-Small-HI-Multi-PNA.yaml",
+      "filePath": "configs/AML-Small-HI/AML-Small-HI-Multi-PNA.yaml",
+      "summary": "YAML experiment configuration for AML Small-HI hetero-edge classification using PNA, link-neighbor sampling, weighted cross-entropy, AdamW, and f1 model selection with reverse message passing, port features.",
+      "tags": [
+        "configuration",
+        "aml-experiment",
+        "graph-learning",
+        "pna",
+        "port-features"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML GraphGym-style config with top-level sections for dataset, train, validation, model, gnn, optimizer, wandb, and output settings."
+    },
+    {
+      "id": "config:configs/AML-Small-HI/AML-Small-HI-Multi-PNA+EU.yaml",
+      "type": "config",
+      "name": "AML-Small-HI-Multi-PNA+EU.yaml",
+      "filePath": "configs/AML-Small-HI/AML-Small-HI-Multi-PNA+EU.yaml",
+      "summary": "YAML experiment configuration for AML Small-HI hetero-edge classification using PNA, link-neighbor sampling, weighted cross-entropy, AdamW, and f1 model selection with reverse message passing, port features, edge-update variant settings.",
+      "tags": [
+        "configuration",
+        "aml-experiment",
+        "graph-learning",
+        "pna",
+        "port-features"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML GraphGym-style config with top-level sections for dataset, train, validation, model, gnn, optimizer, wandb, and output settings."
+    },
+    {
+      "id": "config:configs/AML-Small-HI/AML-Small-HI-Multi-SparseNodeGT.yaml",
+      "type": "config",
+      "name": "AML-Small-HI-Multi-SparseNodeGT.yaml",
+      "filePath": "configs/AML-Small-HI/AML-Small-HI-Multi-SparseNodeGT.yaml",
+      "summary": "YAML experiment configuration for AML Small-HI hetero-edge classification using SparseNodeGT, link-neighbor sampling, weighted cross-entropy, AdamW, and f1 model selection with reverse message passing, port features.",
+      "tags": [
+        "configuration",
+        "aml-experiment",
+        "graph-learning",
+        "graph-transformer",
+        "port-features"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML GraphGym-style config with top-level sections for dataset, train, validation, model, gt, gnn, optimizer, wandb, and output settings."
+    },
+    {
+      "id": "config:configs/AML-Small-HI/AML-Small-HI-PNA.yaml",
+      "type": "config",
+      "name": "AML-Small-HI-PNA.yaml",
+      "filePath": "configs/AML-Small-HI/AML-Small-HI-PNA.yaml",
+      "summary": "YAML experiment configuration for AML Small-HI hetero-edge classification using PNA, link-neighbor sampling, weighted cross-entropy, AdamW, and f1 model selection.",
+      "tags": [
+        "configuration",
+        "aml-experiment",
+        "graph-learning",
+        "pna"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML GraphGym-style config with top-level sections for dataset, train, validation, model, gnn, optimizer, wandb, and output settings."
+    },
+    {
+      "id": "config:configs/AML-Small-HI/AML-Small-HI-PNA+Ego.yaml",
+      "type": "config",
+      "name": "AML-Small-HI-PNA+Ego.yaml",
+      "filePath": "configs/AML-Small-HI/AML-Small-HI-PNA+Ego.yaml",
+      "summary": "YAML experiment configuration for AML Small-HI hetero-edge classification using PNA, link-neighbor sampling, weighted cross-entropy, AdamW, and f1 model selection with ego-style transform settings.",
+      "tags": [
+        "configuration",
+        "aml-experiment",
+        "graph-learning",
+        "pna",
+        "ego-transform"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML GraphGym-style config with top-level sections for dataset, train, validation, model, gnn, optimizer, wandb, and output settings."
+    },
+    {
+      "id": "config:configs/AML-Small-HI/AML-Small-HI-PNA+EU.yaml",
+      "type": "config",
+      "name": "AML-Small-HI-PNA+EU.yaml",
+      "filePath": "configs/AML-Small-HI/AML-Small-HI-PNA+EU.yaml",
+      "summary": "YAML experiment configuration for AML Small-HI hetero-edge classification using PNA, link-neighbor sampling, weighted cross-entropy, AdamW, and f1 model selection with edge-update variant settings.",
+      "tags": [
+        "configuration",
+        "aml-experiment",
+        "graph-learning",
+        "pna",
+        "edge-updates"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML GraphGym-style config with top-level sections for dataset, train, validation, model, gnn, optimizer, wandb, and output settings."
+    },
+    {
+      "id": "config:configs/AML-Small-HI/AML-Small-HI-PNA+ports.yaml",
+      "type": "config",
+      "name": "AML-Small-HI-PNA+ports.yaml",
+      "filePath": "configs/AML-Small-HI/AML-Small-HI-PNA+ports.yaml",
+      "summary": "YAML experiment configuration for AML Small-HI hetero-edge classification using PNA, link-neighbor sampling, weighted cross-entropy, AdamW, and f1 model selection with port features.",
+      "tags": [
+        "configuration",
+        "aml-experiment",
+        "graph-learning",
+        "pna",
+        "port-features"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML GraphGym-style config with top-level sections for dataset, train, validation, model, gnn, optimizer, wandb, and output settings."
+    },
+    {
+      "id": "config:configs/AML-Small-HI/AML-Small-HI-PNA+RMP.yaml",
+      "type": "config",
+      "name": "AML-Small-HI-PNA+RMP.yaml",
+      "filePath": "configs/AML-Small-HI/AML-Small-HI-PNA+RMP.yaml",
+      "summary": "YAML experiment configuration for AML Small-HI hetero-edge classification using PNA, link-neighbor sampling, weighted cross-entropy, AdamW, and f1 model selection with reverse message passing.",
+      "tags": [
+        "configuration",
+        "aml-experiment",
+        "graph-learning",
+        "pna",
+        "reverse-message-passing"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML GraphGym-style config with top-level sections for dataset, train, validation, model, gnn, optimizer, wandb, and output settings."
+    },
+    {
+      "id": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT.yaml",
+      "type": "config",
+      "name": "AML-Small-HI-SparseNodeGT.yaml",
+      "filePath": "configs/AML-Small-HI/AML-Small-HI-SparseNodeGT.yaml",
+      "summary": "YAML experiment configuration for AML Small-HI hetero-edge classification using SparseNodeGT, link-neighbor sampling, weighted cross-entropy, AdamW, and f1 model selection.",
+      "tags": [
+        "configuration",
+        "aml-experiment",
+        "graph-learning",
+        "graph-transformer"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML GraphGym-style config with top-level sections for dataset, train, validation, model, gt, gnn, optimizer, wandb, and output settings."
+    },
+    {
+      "id": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+Dropout.yaml",
+      "type": "config",
+      "name": "AML-Small-HI-SparseNodeGT+Dropout.yaml",
+      "filePath": "configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+Dropout.yaml",
+      "summary": "YAML experiment configuration for AML Small-HI hetero-edge classification using SparseNodeGT, link-neighbor sampling, weighted cross-entropy, AdamW, and f1 model selection with dropout ablation.",
+      "tags": [
+        "configuration",
+        "aml-experiment",
+        "graph-learning",
+        "graph-transformer"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML GraphGym-style config with top-level sections for dataset, train, validation, model, gt, gnn, optimizer, wandb, and output settings."
+    },
+    {
+      "id": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+Ego.yaml",
+      "type": "config",
+      "name": "AML-Small-HI-SparseNodeGT+Ego.yaml",
+      "filePath": "configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+Ego.yaml",
+      "summary": "YAML experiment configuration for AML Small-HI hetero-edge classification using SparseNodeGT, link-neighbor sampling, weighted cross-entropy, AdamW, and f1 model selection with ego-style transform settings.",
+      "tags": [
+        "configuration",
+        "aml-experiment",
+        "graph-learning",
+        "graph-transformer",
+        "ego-transform"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML GraphGym-style config with top-level sections for dataset, train, validation, model, gt, gnn, optimizer, wandb, and output settings."
+    },
+    {
+      "id": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+LP.yaml",
+      "type": "config",
+      "name": "AML-Small-HI-SparseNodeGT+LP.yaml",
+      "filePath": "configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+LP.yaml",
+      "summary": "YAML experiment configuration for AML Small-HI hetero-edge classification using SparseNodeGT, link-neighbor sampling, weighted cross-entropy, AdamW, and f1 model selection with heterogeneous label positional encoding.",
+      "tags": [
+        "configuration",
+        "aml-experiment",
+        "graph-learning",
+        "graph-transformer",
+        "label-encoding"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML GraphGym-style config with top-level sections for dataset, train, validation, model, gt, gnn, optimizer, wandb, and output settings."
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT+RMP.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT+RMP.yaml",
+      "target": "file:fraudGT/graphgym/config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT+RMP.yaml",
+      "target": "file:fraudGT/config/dataset_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT+RMP.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT+RMP.yaml",
+      "target": "file:fraudGT/config/optimizers_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT+RMP.yaml",
+      "target": "file:fraudGT/config/wandb_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT+RMP.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT+RMP.yaml",
+      "target": "file:fraudGT/config/gt_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT+RMP.yaml",
+      "target": "file:fraudGT/layer/gt_layer.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT-EdgeAttn.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT-EdgeAttn.yaml",
+      "target": "file:fraudGT/graphgym/config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT-EdgeAttn.yaml",
+      "target": "file:fraudGT/config/dataset_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT-EdgeAttn.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT-EdgeAttn.yaml",
+      "target": "file:fraudGT/config/optimizers_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT-EdgeAttn.yaml",
+      "target": "file:fraudGT/config/wandb_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT-EdgeAttn.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT-EdgeAttn.yaml",
+      "target": "file:fraudGT/config/gt_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT-EdgeAttn.yaml",
+      "target": "file:fraudGT/layer/gt_layer.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT-EdgeGate.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT-EdgeGate.yaml",
+      "target": "file:fraudGT/graphgym/config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT-EdgeGate.yaml",
+      "target": "file:fraudGT/config/dataset_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT-EdgeGate.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT-EdgeGate.yaml",
+      "target": "file:fraudGT/config/optimizers_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT-EdgeGate.yaml",
+      "target": "file:fraudGT/config/wandb_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT-EdgeGate.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT-EdgeGate.yaml",
+      "target": "file:fraudGT/config/gt_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT-EdgeGate.yaml",
+      "target": "file:fraudGT/layer/gt_layer.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GATE.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GATE.yaml",
+      "target": "file:fraudGT/graphgym/config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GATE.yaml",
+      "target": "file:fraudGT/config/dataset_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GATE.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GATE.yaml",
+      "target": "file:fraudGT/config/optimizers_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GATE.yaml",
+      "target": "file:fraudGT/config/wandb_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GATE.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GatedGCN.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GatedGCN.yaml",
+      "target": "file:fraudGT/graphgym/config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GatedGCN.yaml",
+      "target": "file:fraudGT/config/dataset_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GatedGCN.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GatedGCN.yaml",
+      "target": "file:fraudGT/config/optimizers_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GatedGCN.yaml",
+      "target": "file:fraudGT/config/wandb_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GatedGCN.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GINE.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GINE.yaml",
+      "target": "file:fraudGT/graphgym/config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GINE.yaml",
+      "target": "file:fraudGT/config/dataset_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GINE.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GINE.yaml",
+      "target": "file:fraudGT/config/optimizers_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GINE.yaml",
+      "target": "file:fraudGT/config/wandb_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GINE.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GINE+Ego.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GINE+Ego.yaml",
+      "target": "file:fraudGT/graphgym/config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GINE+Ego.yaml",
+      "target": "file:fraudGT/config/dataset_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GINE+Ego.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GINE+Ego.yaml",
+      "target": "file:fraudGT/config/optimizers_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GINE+Ego.yaml",
+      "target": "file:fraudGT/config/wandb_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GINE+Ego.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GINE+EU.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GINE+EU.yaml",
+      "target": "file:fraudGT/graphgym/config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GINE+EU.yaml",
+      "target": "file:fraudGT/config/dataset_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GINE+EU.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GINE+EU.yaml",
+      "target": "file:fraudGT/config/optimizers_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GINE+EU.yaml",
+      "target": "file:fraudGT/config/wandb_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GINE+EU.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GINE+ports.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GINE+ports.yaml",
+      "target": "file:fraudGT/graphgym/config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GINE+ports.yaml",
+      "target": "file:fraudGT/config/dataset_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GINE+ports.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GINE+ports.yaml",
+      "target": "file:fraudGT/config/optimizers_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GINE+ports.yaml",
+      "target": "file:fraudGT/config/wandb_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GINE+ports.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GINE+RMP.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GINE+RMP.yaml",
+      "target": "file:fraudGT/graphgym/config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GINE+RMP.yaml",
+      "target": "file:fraudGT/config/dataset_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GINE+RMP.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GINE+RMP.yaml",
+      "target": "file:fraudGT/config/optimizers_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GINE+RMP.yaml",
+      "target": "file:fraudGT/config/wandb_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-GINE+RMP.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-MLP.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-MLP.yaml",
+      "target": "file:fraudGT/graphgym/config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-MLP.yaml",
+      "target": "file:fraudGT/config/dataset_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-MLP.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-MLP.yaml",
+      "target": "file:fraudGT/config/optimizers_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-MLP.yaml",
+      "target": "file:fraudGT/config/wandb_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-MLP.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-Multi-GINE.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-Multi-GINE.yaml",
+      "target": "file:fraudGT/graphgym/config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-Multi-GINE.yaml",
+      "target": "file:fraudGT/config/dataset_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-Multi-GINE.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-Multi-GINE.yaml",
+      "target": "file:fraudGT/config/optimizers_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-Multi-GINE.yaml",
+      "target": "file:fraudGT/config/wandb_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-Multi-GINE.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-Multi-GINE+EU.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-Multi-GINE+EU.yaml",
+      "target": "file:fraudGT/graphgym/config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-Multi-GINE+EU.yaml",
+      "target": "file:fraudGT/config/dataset_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-Multi-GINE+EU.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-Multi-GINE+EU.yaml",
+      "target": "file:fraudGT/config/optimizers_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-Multi-GINE+EU.yaml",
+      "target": "file:fraudGT/config/wandb_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-Multi-GINE+EU.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-Multi-PNA.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-Multi-PNA.yaml",
+      "target": "file:fraudGT/graphgym/config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-Multi-PNA.yaml",
+      "target": "file:fraudGT/config/dataset_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-Multi-PNA.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-Multi-PNA.yaml",
+      "target": "file:fraudGT/config/optimizers_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-Multi-PNA.yaml",
+      "target": "file:fraudGT/config/wandb_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-Multi-PNA.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-Multi-PNA+EU.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-Multi-PNA+EU.yaml",
+      "target": "file:fraudGT/graphgym/config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-Multi-PNA+EU.yaml",
+      "target": "file:fraudGT/config/dataset_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-Multi-PNA+EU.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-Multi-PNA+EU.yaml",
+      "target": "file:fraudGT/config/optimizers_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-Multi-PNA+EU.yaml",
+      "target": "file:fraudGT/config/wandb_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-Multi-PNA+EU.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-Multi-SparseNodeGT.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-Multi-SparseNodeGT.yaml",
+      "target": "file:fraudGT/graphgym/config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-Multi-SparseNodeGT.yaml",
+      "target": "file:fraudGT/config/dataset_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-Multi-SparseNodeGT.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-Multi-SparseNodeGT.yaml",
+      "target": "file:fraudGT/config/optimizers_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-Multi-SparseNodeGT.yaml",
+      "target": "file:fraudGT/config/wandb_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-Multi-SparseNodeGT.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-Multi-SparseNodeGT.yaml",
+      "target": "file:fraudGT/config/gt_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-Multi-SparseNodeGT.yaml",
+      "target": "file:fraudGT/layer/gt_layer.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-PNA.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-PNA.yaml",
+      "target": "file:fraudGT/graphgym/config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-PNA.yaml",
+      "target": "file:fraudGT/config/dataset_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-PNA.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-PNA.yaml",
+      "target": "file:fraudGT/config/optimizers_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-PNA.yaml",
+      "target": "file:fraudGT/config/wandb_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-PNA.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-PNA+Ego.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-PNA+Ego.yaml",
+      "target": "file:fraudGT/graphgym/config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-PNA+Ego.yaml",
+      "target": "file:fraudGT/config/dataset_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-PNA+Ego.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-PNA+Ego.yaml",
+      "target": "file:fraudGT/config/optimizers_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-PNA+Ego.yaml",
+      "target": "file:fraudGT/config/wandb_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-PNA+Ego.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-PNA+EU.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-PNA+EU.yaml",
+      "target": "file:fraudGT/graphgym/config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-PNA+EU.yaml",
+      "target": "file:fraudGT/config/dataset_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-PNA+EU.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-PNA+EU.yaml",
+      "target": "file:fraudGT/config/optimizers_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-PNA+EU.yaml",
+      "target": "file:fraudGT/config/wandb_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-PNA+EU.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-PNA+ports.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-PNA+ports.yaml",
+      "target": "file:fraudGT/graphgym/config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-PNA+ports.yaml",
+      "target": "file:fraudGT/config/dataset_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-PNA+ports.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-PNA+ports.yaml",
+      "target": "file:fraudGT/config/optimizers_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-PNA+ports.yaml",
+      "target": "file:fraudGT/config/wandb_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-PNA+ports.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-PNA+RMP.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-PNA+RMP.yaml",
+      "target": "file:fraudGT/graphgym/config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-PNA+RMP.yaml",
+      "target": "file:fraudGT/config/dataset_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-PNA+RMP.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-PNA+RMP.yaml",
+      "target": "file:fraudGT/config/optimizers_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-PNA+RMP.yaml",
+      "target": "file:fraudGT/config/wandb_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-PNA+RMP.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT.yaml",
+      "target": "file:fraudGT/graphgym/config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT.yaml",
+      "target": "file:fraudGT/config/dataset_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT.yaml",
+      "target": "file:fraudGT/config/optimizers_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT.yaml",
+      "target": "file:fraudGT/config/wandb_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT.yaml",
+      "target": "file:fraudGT/config/gt_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT.yaml",
+      "target": "file:fraudGT/layer/gt_layer.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+Dropout.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+Dropout.yaml",
+      "target": "file:fraudGT/graphgym/config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+Dropout.yaml",
+      "target": "file:fraudGT/config/dataset_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+Dropout.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+Dropout.yaml",
+      "target": "file:fraudGT/config/optimizers_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+Dropout.yaml",
+      "target": "file:fraudGT/config/wandb_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+Dropout.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+Dropout.yaml",
+      "target": "file:fraudGT/config/gt_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+Dropout.yaml",
+      "target": "file:fraudGT/layer/gt_layer.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+Ego.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+Ego.yaml",
+      "target": "file:fraudGT/graphgym/config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+Ego.yaml",
+      "target": "file:fraudGT/config/dataset_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+Ego.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+Ego.yaml",
+      "target": "file:fraudGT/config/optimizers_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+Ego.yaml",
+      "target": "file:fraudGT/config/wandb_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+Ego.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+Ego.yaml",
+      "target": "file:fraudGT/config/gt_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+Ego.yaml",
+      "target": "file:fraudGT/layer/gt_layer.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+LP.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+LP.yaml",
+      "target": "file:fraudGT/graphgym/config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+LP.yaml",
+      "target": "file:fraudGT/config/dataset_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+LP.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+LP.yaml",
+      "target": "file:fraudGT/config/optimizers_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+LP.yaml",
+      "target": "file:fraudGT/config/wandb_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+LP.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+LP.yaml",
+      "target": "file:fraudGT/config/gt_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+LP.yaml",
+      "target": "file:fraudGT/layer/gt_layer.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+LP.yaml",
+      "target": "file:fraudGT/config/posenc_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

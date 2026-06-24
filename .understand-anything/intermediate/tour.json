@@ -1,0 +1,143 @@
+[
+  {
+    "order": 1,
+    "title": "Project Overview",
+    "description": "Start with the README to understand FraudGT as a graph transformer framework for financial fraud detection. It gives the newcomer the experiment-oriented view of the repo: install dependencies, point YAML configs at datasets and logs, then run AML or Ethereum fraud experiments.",
+    "nodeIds": [
+      "document:README.md",
+      "document:requirements.txt"
+    ],
+    "languageLesson": "Markdown project documentation is useful as an architectural map when it names the run commands, configuration files, and datasets that the code later implements."
+  },
+  {
+    "order": 2,
+    "title": "Launch Experiments",
+    "description": "The shell entry points show how users actually begin an experiment before Python takes over. Building on the README, the interactive runner exposes dataset, model, positional encoding, optimizer, and training choices, while the grid runner turns those choices into repeated comparison runs.",
+    "nodeIds": [
+      "file:run/interactive_run.sh",
+      "file:run/run_grid.sh"
+    ],
+    "languageLesson": "Shell launch scripts often encode the practical experiment surface of a research repo, especially when they translate user choices into config paths and repeated command invocations."
+  },
+  {
+    "order": 3,
+    "title": "Runtime Entry Point",
+    "description": "The main Python entry point is the center of the runtime graph and the highest fan-in node in the topology analysis. It parses configuration, initializes GraphGym and FraudGT components, constructs model, optimizer, and logger objects, then hands control to training.",
+    "nodeIds": [
+      "file:fraudGT/main.py"
+    ],
+    "languageLesson": "A Python module run with python -m keeps package-relative imports stable, which matters for repos that register many extensions at import time."
+  },
+  {
+    "order": 4,
+    "title": "Experiment Configuration",
+    "description": "The YAML experiment files are the bridge between user intent and the Python runtime from the previous step. This representative AML SparseNodeGT configuration selects hetero-edge classification, link-neighbor sampling, weighted cross entropy, AdamW training, and transformer-specific feature choices.",
+    "nodeIds": [
+      "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+ports+Ego.yaml",
+      "file:fraudGT/config/defaults_config.py",
+      "file:fraudGT/config/dataset_config.py",
+      "file:fraudGT/config/gt_config.py"
+    ],
+    "languageLesson": "YAML configs work best here as declarative experiment recipes: static files choose datasets, model variants, and training knobs while Python modules define the default schema those files override."
+  },
+  {
+    "order": 5,
+    "title": "Dataset Construction",
+    "description": "Once configuration selects a dataset, the loaders build the graph objects used by the rest of the pipeline. AML preprocessing creates temporal heterogeneous transaction graphs for edge supervision, while the Ethereum loader covers the node-oriented dataset path and the temporal base class supplies shared raw and processed file orchestration.",
+    "nodeIds": [
+      "file:fraudGT/datasets/aml_dataset.py",
+      "file:fraudGT/datasets/eth_dataset.py",
+      "file:fraudGT/datasets/temporal_dataset.py"
+    ],
+    "languageLesson": "PyTorch Geometric dataset classes usually separate raw files, processed files, download, and process steps so expensive graph construction can be cached between runs."
+  },
+  {
+    "order": 6,
+    "title": "Loading And Sampling",
+    "description": "After datasets exist, the loader and sampler decide what each training batch looks like. The master loader prepares supported graph datasets and transforms, while the custom sampler covers neighbor, link-neighbor, HGT-style, and other sampling strategies needed for large financial transaction graphs.",
+    "nodeIds": [
+      "file:fraudGT/loader/master_loader.py",
+      "file:fraudGT/sampler/custom_sampler.py"
+    ],
+    "languageLesson": "Graph minibatching is usually task-specific: edge classification needs sampled neighborhoods plus explicit supervised edge labels, not just batches of independent rows."
+  },
+  {
+    "order": 7,
+    "title": "Feature Encoders",
+    "description": "Before transformer layers can operate, raw graph attributes and optional structural signals need to become hidden representations. These encoders project raw node and edge features, combine dataset-specific features with positional encodings, and support heterogeneous label or position features used by the configured experiment.",
+    "nodeIds": [
+      "file:fraudGT/encoder/raw_encoder.py",
+      "file:fraudGT/encoder/hetero_raw_encoder.py",
+      "file:fraudGT/encoder/composed_encoders.py",
+      "file:fraudGT/encoder/hetero_pos_encoder.py"
+    ],
+    "languageLesson": "Encoder modules act as adapters between tabular graph attributes and neural network hidden dimensions, keeping model layers independent from dataset-specific feature formats."
+  },
+  {
+    "order": 8,
+    "title": "Transformer Core",
+    "description": "The GTModel assembles the learned representation path: encoders feed graph transformer layers, optional normalization is applied, and the configured task head produces predictions. The core layer implements relation-aware attention, edge-type behavior, temporal encoding, and feed-forward updates that make FraudGT distinct from a plain message-passing baseline.",
+    "nodeIds": [
+      "file:fraudGT/network/gt_model.py",
+      "file:fraudGT/layer/gt_layer.py"
+    ],
+    "languageLesson": "Research model files often split orchestration from math: the network class wires components together, while the layer class owns the repeated attention and update block."
+  },
+  {
+    "order": 9,
+    "title": "Prediction Heads",
+    "description": "The heads convert graph representations into the fraud task outputs requested by the config. Heterogeneous edge prediction scores transaction edges from endpoint embeddings, while node and inductive heads cover alternative node-supervision paths used by other datasets or experiments.",
+    "nodeIds": [
+      "file:fraudGT/head/hetero_edge.py",
+      "file:fraudGT/head/hetero_node.py",
+      "file:fraudGT/head/inductive_node.py"
+    ],
+    "languageLesson": "Separating heads from encoders lets the same representation stack support edge, node, graph, or link prediction with different slicing and scoring logic."
+  },
+  {
+    "order": 10,
+    "title": "Training Loop",
+    "description": "Training ties together the sampled batches, model outputs, loss functions, metrics, and experiment logging. The custom training code handles evaluation, multi-stage training, inference-only paths, and attention logging, while the custom loss and metric wrappers align optimization and reporting with fraud-detection tasks.",
+    "nodeIds": [
+      "file:fraudGT/train/custom_train.py",
+      "file:fraudGT/loss/weighted_cross_entropy.py",
+      "file:fraudGT/metric_wrapper.py",
+      "file:fraudGT/logger.py"
+    ],
+    "languageLesson": "Imbalanced fraud detection often needs metric-aware training utilities, because accuracy alone can hide poor minority-class performance."
+  },
+  {
+    "order": 11,
+    "title": "Finetuning And Aggregation",
+    "description": "After a run is trainable, these utilities explain how FraudGT reuses checkpoints and summarizes repeated experiments. Finetuning loads compatible pretrained configurations and weights, while aggregation parses repeated run outputs and writes summaries for comparison.",
+    "nodeIds": [
+      "file:fraudGT/finetuning.py",
+      "file:fraudGT/agg_runs.py"
+    ]
+  },
+  {
+    "order": 12,
+    "title": "GraphGym Foundation",
+    "description": "The local GraphGym layer is the framework substrate underneath the FraudGT-specific modules. Its config, registry, optimizer, loss, logger, and training modules provide the extension points that let configs select datasets, models, layers, losses, schedulers, and runtime hooks by name.",
+    "nodeIds": [
+      "file:fraudGT/graphgym/config.py",
+      "file:fraudGT/graphgym/register.py",
+      "file:fraudGT/graphgym/train.py",
+      "file:fraudGT/graphgym/loss.py",
+      "file:fraudGT/graphgym/optimizer.py"
+    ],
+    "languageLesson": "Registry-driven Python frameworks trade direct imports for named extension points, which is powerful for experiments but makes import-time registration an important part of program behavior."
+  },
+  {
+    "order": 13,
+    "title": "Extension Surface",
+    "description": "The tour ends at the contribution packages because they show how FraudGT and GraphGym can grow without rewriting the main runtime. These examples and package initializers document the extension pattern for adding activations, feature encoders, layers, heads, losses, optimizers, loaders, networks, and training routines.",
+    "nodeIds": [
+      "file:fraudGT/graphgym/contrib/__init__.py",
+      "file:fraudGT/graphgym/contrib/layer/example.py",
+      "file:fraudGT/graphgym/contrib/network/example.py",
+      "file:fraudGT/graphgym/contrib/train/example.py"
+    ],
+    "languageLesson": "A contrib tree is a teaching surface as much as an extension surface: small registered examples show the required function signatures and naming conventions for new components."
+  }
+]

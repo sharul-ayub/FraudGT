@@ -1,0 +1,5088 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "fraudGT/encoder/hetero_gnn_encoder.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 259,
+      "nonEmptyLines": 235,
+      "classes": [
+        {
+          "name": "GeneralLayer",
+          "startLine": 13,
+          "endLine": 55,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "GeneralMultiLayer",
+          "startLine": 58,
+          "endLine": 80,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "HeteroGNNEncoder",
+          "startLine": 84,
+          "endLine": 258,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "GeneralLayer",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "GeneralMultiLayer",
+          "line": 58,
+          "isDefault": false
+        },
+        {
+          "name": "HeteroGNNEncoder",
+          "line": 83,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super(GeneralLayer, self).__init__",
+          "lineNumber": 26
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 26
+        },
+        {
+          "caller": "__init__",
+          "callee": "layer_wrapper.append",
+          "lineNumber": 34
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.BatchNorm1d",
+          "lineNumber": 35
+        },
+        {
+          "caller": "__init__",
+          "callee": "layer_wrapper.append",
+          "lineNumber": 37
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.LayerNorm",
+          "lineNumber": 37
+        },
+        {
+          "caller": "__init__",
+          "callee": "layer_wrapper.append",
+          "lineNumber": 39
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Dropout",
+          "lineNumber": 40
+        },
+        {
+          "caller": "__init__",
+          "callee": "layer_wrapper.append",
+          "lineNumber": 42
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Sequential",
+          "lineNumber": 43
+        },
+        {
+          "caller": "forward",
+          "callee": "self.layer",
+          "lineNumber": 46
+        },
+        {
+          "caller": "forward",
+          "callee": "isinstance",
+          "lineNumber": 47
+        },
+        {
+          "caller": "forward",
+          "callee": "self.post_layer",
+          "lineNumber": 48
+        },
+        {
+          "caller": "forward",
+          "callee": "F.normalize",
+          "lineNumber": 50
+        },
+        {
+          "caller": "forward",
+          "callee": "self.post_layer",
+          "lineNumber": 52
+        },
+        {
+          "caller": "forward",
+          "callee": "F.normalize",
+          "lineNumber": 54
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(GeneralMultiLayer, self).__init__",
+          "lineNumber": 68
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 68
+        },
+        {
+          "caller": "__init__",
+          "callee": "range",
+          "lineNumber": 70
+        },
+        {
+          "caller": "__init__",
+          "callee": "GeneralLayer",
+          "lineNumber": 74
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.add_module",
+          "lineNumber": 75
+        },
+        {
+          "caller": "__init__",
+          "callee": "'Layer_{}'.format",
+          "lineNumber": 75
+        },
+        {
+          "caller": "forward",
+          "callee": "self.children",
+          "lineNumber": 78
+        },
+        {
+          "caller": "forward",
+          "callee": "layer",
+          "lineNumber": 79
+        },
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 94
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 94
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 97
+        },
+        {
+          "caller": "__init__",
+          "callee": "dataset[0].metadata",
+          "lineNumber": 98
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Dropout",
+          "lineNumber": 106
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Dropout",
+          "lineNumber": 107
+        },
+        {
+          "caller": "__init__",
+          "callee": "torch.nn.ModuleDict",
+          "lineNumber": 123
+        },
+        {
+          "caller": "__init__",
+          "callee": "GeneralMultiLayer",
+          "lineNumber": 125
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.ModuleList",
+          "lineNumber": 134
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.ModuleList",
+          "lineNumber": 135
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.ModuleList",
+          "lineNumber": 137
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.LayerNorm",
+          "lineNumber": 141
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.BatchNorm1d",
+          "lineNumber": 143
+        },
+        {
+          "caller": "__init__",
+          "callee": "range",
+          "lineNumber": 144
+        },
+        {
+          "caller": "__init__",
+          "callee": "HeteroConv",
+          "lineNumber": 148
+        },
+        {
+          "caller": "__init__",
+          "callee": "GraphConv",
+          "lineNumber": 149
+        },
+        {
+          "caller": "__init__",
+          "callee": "HeteroConv",
+          "lineNumber": 153
+        },
+        {
+          "caller": "__init__",
+          "callee": "SAGEConv",
+          "lineNumber": 154
+        },
+        {
+          "caller": "__init__",
+          "callee": "MLP",
+          "lineNumber": 157
+        },
+        {
+          "caller": "__init__",
+          "callee": "HeteroConv",
+          "lineNumber": 162
+        },
+        {
+          "caller": "__init__",
+          "callee": "GINConv",
+          "lineNumber": 163
+        },
+        {
+          "caller": "__init__",
+          "callee": "HeteroConv",
+          "lineNumber": 168
+        },
+        {
+          "caller": "__init__",
+          "callee": "GATConv",
+          "lineNumber": 169
+        },
+        {
+          "caller": "__init__",
+          "callee": "HeteroConv",
+          "lineNumber": 175
+        },
+        {
+          "caller": "__init__",
+          "callee": "GATConv",
+          "lineNumber": 176
+        },
+        {
+          "caller": "__init__",
+          "callee": "HeteroConv",
+          "lineNumber": 182
+        },
+        {
+          "caller": "__init__",
+          "callee": "GATConv",
+          "lineNumber": 183
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.convs.append",
+          "lineNumber": 188
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.norms.append",
+          "lineNumber": 195
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.ModuleDict",
+          "lineNumber": 195
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.LayerNorm",
+          "lineNumber": 198
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.BatchNorm1d",
+          "lineNumber": 200
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 202
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.ModuleDict",
+          "lineNumber": 206
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 208
+        },
+        {
+          "caller": "forward",
+          "callee": "isinstance",
+          "lineNumber": 213
+        },
+        {
+          "caller": "forward",
+          "callee": "batch.collect",
+          "lineNumber": 214
+        },
+        {
+          "caller": "forward",
+          "callee": "batch.collect",
+          "lineNumber": 214
+        },
+        {
+          "caller": "forward",
+          "callee": "self.input_drop",
+          "lineNumber": 219
+        },
+        {
+          "caller": "forward",
+          "callee": "x_dict.items",
+          "lineNumber": 220
+        },
+        {
+          "caller": "forward",
+          "callee": "x_dict.items",
+          "lineNumber": 225
+        },
+        {
+          "caller": "forward",
+          "callee": "range",
+          "lineNumber": 232
+        },
+        {
+          "caller": "forward",
+          "callee": "x_dict.items",
+          "lineNumber": 241
+        },
+        {
+          "caller": "forward",
+          "callee": "self.drop",
+          "lineNumber": 244
+        },
+        {
+          "caller": "forward",
+          "callee": "self.activation",
+          "lineNumber": 244
+        },
+        {
+          "caller": "forward",
+          "callee": "x_dict.items",
+          "lineNumber": 245
+        },
+        {
+          "caller": "forward",
+          "callee": "x_dict.items",
+          "lineNumber": 248
+        },
+        {
+          "caller": "forward",
+          "callee": "isinstance",
+          "lineNumber": 254
+        },
+        {
+          "caller": "forward",
+          "callee": "torch.cat",
+          "lineNumber": 255
+        },
+        {
+          "caller": "forward",
+          "callee": "torch.cat",
+          "lineNumber": 257
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 0,
+        "classCount": 3
+      }
+    },
+    {
+      "path": "fraudGT/encoder/hetero_label_encoder.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 143,
+      "nonEmptyLines": 120,
+      "classes": [
+        {
+          "name": "HeteroLabelNodeEncoder",
+          "startLine": 12,
+          "endLine": 79,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "HeteroLabelEdgeEncoder",
+          "startLine": 83,
+          "endLine": 143,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "HeteroLabelNodeEncoder",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "HeteroLabelEdgeEncoder",
+          "line": 82,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 25
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 25
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 26
+        },
+        {
+          "caller": "__init__",
+          "callee": "dataset[0].metadata",
+          "lineNumber": 29
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 33
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.ModuleDict",
+          "lineNumber": 36
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 38
+        },
+        {
+          "caller": "forward",
+          "callee": "isinstance",
+          "lineNumber": 42
+        },
+        {
+          "caller": "forward",
+          "callee": "batch[node_type].y.squeeze().clone",
+          "lineNumber": 58
+        },
+        {
+          "caller": "forward",
+          "callee": "batch[node_type].y.squeeze",
+          "lineNumber": 58
+        },
+        {
+          "caller": "forward",
+          "callee": "label.numel",
+          "lineNumber": 62
+        },
+        {
+          "caller": "forward",
+          "callee": "torch.arange",
+          "lineNumber": 64
+        },
+        {
+          "caller": "forward",
+          "callee": "torch.rand",
+          "lineNumber": 64
+        },
+        {
+          "caller": "forward",
+          "callee": "F.one_hot(label, self.dim_out + 1).type",
+          "lineNumber": 68
+        },
+        {
+          "caller": "forward",
+          "callee": "F.one_hot",
+          "lineNumber": 68
+        },
+        {
+          "caller": "forward",
+          "callee": "self.linear",
+          "lineNumber": 72
+        },
+        {
+          "caller": "forward",
+          "callee": "list",
+          "lineNumber": 75
+        },
+        {
+          "caller": "forward",
+          "callee": "self.linear.values",
+          "lineNumber": 75
+        },
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 96
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 96
+        },
+        {
+          "caller": "__init__",
+          "callee": "dataset[0].metadata",
+          "lineNumber": 99
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 103
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.ModuleDict",
+          "lineNumber": 106
+        },
+        {
+          "caller": "__init__",
+          "callee": "'__'.join",
+          "lineNumber": 107
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 108
+        },
+        {
+          "caller": "forward",
+          "callee": "isinstance",
+          "lineNumber": 112
+        },
+        {
+          "caller": "forward",
+          "callee": "'__'.join",
+          "lineNumber": 114
+        },
+        {
+          "caller": "forward",
+          "callee": "batch[edge_type_tuple].y.squeeze().clone",
+          "lineNumber": 122
+        },
+        {
+          "caller": "forward",
+          "callee": "batch[edge_type_tuple].y.squeeze",
+          "lineNumber": 122
+        },
+        {
+          "caller": "forward",
+          "callee": "label.numel",
+          "lineNumber": 126
+        },
+        {
+          "caller": "forward",
+          "callee": "torch.arange",
+          "lineNumber": 128
+        },
+        {
+          "caller": "forward",
+          "callee": "torch.rand",
+          "lineNumber": 128
+        },
+        {
+          "caller": "forward",
+          "callee": "F.one_hot(label, self.dim_out + 1).type",
+          "lineNumber": 132
+        },
+        {
+          "caller": "forward",
+          "callee": "F.one_hot",
+          "lineNumber": 132
+        },
+        {
+          "caller": "forward",
+          "callee": "self.linear",
+          "lineNumber": 136
+        },
+        {
+          "caller": "forward",
+          "callee": "list",
+          "lineNumber": 139
+        },
+        {
+          "caller": "forward",
+          "callee": "self.linear.values",
+          "lineNumber": 139
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 0,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "fraudGT/encoder/hetero_pos_encoder.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 198,
+      "nonEmptyLines": 169,
+      "classes": [
+        {
+          "name": "HeteroPENodeEncoder",
+          "startLine": 10,
+          "endLine": 158,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "RWSENodeEncoder",
+          "startLine": 162,
+          "endLine": 165,
+          "methods": [],
+          "properties": []
+        },
+        {
+          "name": "MetapathNodeEncoder",
+          "startLine": 169,
+          "endLine": 172,
+          "methods": [],
+          "properties": []
+        },
+        {
+          "name": "Node2VecNodeEncoder",
+          "startLine": 175,
+          "endLine": 178,
+          "methods": [],
+          "properties": []
+        },
+        {
+          "name": "TransENodeEncoder",
+          "startLine": 181,
+          "endLine": 184,
+          "methods": [],
+          "properties": []
+        },
+        {
+          "name": "ComplExNodeEncoder",
+          "startLine": 187,
+          "endLine": 190,
+          "methods": [],
+          "properties": []
+        },
+        {
+          "name": "DistMultNodeEncoder",
+          "startLine": 193,
+          "endLine": 196,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "HeteroPENodeEncoder",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "RWSENodeEncoder",
+          "line": 161,
+          "isDefault": false
+        },
+        {
+          "name": "MetapathNodeEncoder",
+          "line": 168,
+          "isDefault": false
+        },
+        {
+          "name": "Node2VecNodeEncoder",
+          "line": 174,
+          "isDefault": false
+        },
+        {
+          "name": "TransENodeEncoder",
+          "line": 180,
+          "isDefault": false
+        },
+        {
+          "name": "ComplExNodeEncoder",
+          "line": 186,
+          "isDefault": false
+        },
+        {
+          "name": "DistMultNodeEncoder",
+          "line": 192,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 25
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 25
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 26
+        },
+        {
+          "caller": "__init__",
+          "callee": "ValueError",
+          "lineNumber": 28
+        },
+        {
+          "caller": "__init__",
+          "callee": "getattr",
+          "lineNumber": 34
+        },
+        {
+          "caller": "__init__",
+          "callee": "pecfg.model.lower",
+          "lineNumber": 36
+        },
+        {
+          "caller": "__init__",
+          "callee": "pecfg.raw_norm_type.lower",
+          "lineNumber": 38
+        },
+        {
+          "caller": "__init__",
+          "callee": "ValueError",
+          "lineNumber": 42
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.ModuleDict",
+          "lineNumber": 48
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 50
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 52
+        },
+        {
+          "caller": "__init__",
+          "callee": "len",
+          "lineNumber": 57
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.BatchNorm1d",
+          "lineNumber": 59
+        },
+        {
+          "caller": "__init__",
+          "callee": "layers.append",
+          "lineNumber": 66
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 66
+        },
+        {
+          "caller": "__init__",
+          "callee": "layers.append",
+          "lineNumber": 67
+        },
+        {
+          "caller": "__init__",
+          "callee": "activation",
+          "lineNumber": 67
+        },
+        {
+          "caller": "__init__",
+          "callee": "layers.append",
+          "lineNumber": 69
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 69
+        },
+        {
+          "caller": "__init__",
+          "callee": "layers.append",
+          "lineNumber": 70
+        },
+        {
+          "caller": "__init__",
+          "callee": "activation",
+          "lineNumber": 70
+        },
+        {
+          "caller": "__init__",
+          "callee": "range",
+          "lineNumber": 71
+        },
+        {
+          "caller": "__init__",
+          "callee": "layers.append",
+          "lineNumber": 72
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 72
+        },
+        {
+          "caller": "__init__",
+          "callee": "layers.append",
+          "lineNumber": 73
+        },
+        {
+          "caller": "__init__",
+          "callee": "activation",
+          "lineNumber": 73
+        },
+        {
+          "caller": "__init__",
+          "callee": "layers.append",
+          "lineNumber": 74
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 74
+        },
+        {
+          "caller": "__init__",
+          "callee": "layers.append",
+          "lineNumber": 75
+        },
+        {
+          "caller": "__init__",
+          "callee": "activation",
+          "lineNumber": 75
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Sequential",
+          "lineNumber": 76
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 78
+        },
+        {
+          "caller": "__init__",
+          "callee": "ValueError",
+          "lineNumber": 80
+        },
+        {
+          "caller": "__init__",
+          "callee": "layers.append",
+          "lineNumber": 86
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 86
+        },
+        {
+          "caller": "__init__",
+          "callee": "layers.append",
+          "lineNumber": 87
+        },
+        {
+          "caller": "__init__",
+          "callee": "activation",
+          "lineNumber": 87
+        },
+        {
+          "caller": "__init__",
+          "callee": "layers.append",
+          "lineNumber": 89
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 89
+        },
+        {
+          "caller": "__init__",
+          "callee": "layers.append",
+          "lineNumber": 90
+        },
+        {
+          "caller": "__init__",
+          "callee": "activation",
+          "lineNumber": 90
+        },
+        {
+          "caller": "__init__",
+          "callee": "range",
+          "lineNumber": 91
+        },
+        {
+          "caller": "__init__",
+          "callee": "layers.append",
+          "lineNumber": 92
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 92
+        },
+        {
+          "caller": "__init__",
+          "callee": "layers.append",
+          "lineNumber": 93
+        },
+        {
+          "caller": "__init__",
+          "callee": "activation",
+          "lineNumber": 93
+        },
+        {
+          "caller": "__init__",
+          "callee": "layers.append",
+          "lineNumber": 94
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 94
+        },
+        {
+          "caller": "__init__",
+          "callee": "layers.append",
+          "lineNumber": 95
+        },
+        {
+          "caller": "__init__",
+          "callee": "activation",
+          "lineNumber": 95
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Sequential",
+          "lineNumber": 96
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 98
+        },
+        {
+          "caller": "forward",
+          "callee": "isinstance",
+          "lineNumber": 103
+        },
+        {
+          "caller": "forward",
+          "callee": "hasattr",
+          "lineNumber": 104
+        },
+        {
+          "caller": "forward",
+          "callee": "hasattr",
+          "lineNumber": 108
+        },
+        {
+          "caller": "forward",
+          "callee": "batch.to_homogeneous",
+          "lineNumber": 115
+        },
+        {
+          "caller": "forward",
+          "callee": "get_rw_landing_probs",
+          "lineNumber": 117
+        },
+        {
+          "caller": "forward",
+          "callee": "homo_data.node_type.numel",
+          "lineNumber": 119
+        },
+        {
+          "caller": "forward",
+          "callee": "self.raw_norm",
+          "lineNumber": 122
+        },
+        {
+          "caller": "forward",
+          "callee": "self.pe_encoder",
+          "lineNumber": 123
+        },
+        {
+          "caller": "forward",
+          "callee": "enumerate",
+          "lineNumber": 127
+        },
+        {
+          "caller": "forward",
+          "callee": "batch.num_nodes_dict.items",
+          "lineNumber": 127
+        },
+        {
+          "caller": "forward",
+          "callee": "getattr",
+          "lineNumber": 130
+        },
+        {
+          "caller": "forward",
+          "callee": "self.raw_norm",
+          "lineNumber": 134
+        },
+        {
+          "caller": "forward",
+          "callee": "self.pe_encoder",
+          "lineNumber": 135
+        },
+        {
+          "caller": "forward",
+          "callee": "isinstance",
+          "lineNumber": 138
+        },
+        {
+          "caller": "forward",
+          "callee": "hasattr",
+          "lineNumber": 140
+        },
+        {
+          "caller": "forward",
+          "callee": "torch.cat",
+          "lineNumber": 146
+        },
+        {
+          "caller": "forward",
+          "callee": "self.linear_x",
+          "lineNumber": 149
+        },
+        {
+          "caller": "forward",
+          "callee": "torch.cat",
+          "lineNumber": 153
+        },
+        {
+          "caller": "forward",
+          "callee": "setattr",
+          "lineNumber": 157
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 0,
+        "classCount": 7
+      }
+    },
+    {
+      "path": "fraudGT/encoder/hetero_raw_encoder.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 179,
+      "nonEmptyLines": 158,
+      "classes": [
+        {
+          "name": "GeneralLayer",
+          "startLine": 8,
+          "endLine": 50,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "GeneralMultiLayer",
+          "startLine": 53,
+          "endLine": 75,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "HeteroRawNodeEncoder",
+          "startLine": 78,
+          "endLine": 138,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "HeteroRawEdgeEncoder",
+          "startLine": 142,
+          "endLine": 179,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "GeneralLayer",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "GeneralMultiLayer",
+          "line": 53,
+          "isDefault": false
+        },
+        {
+          "name": "HeteroRawNodeEncoder",
+          "line": 77,
+          "isDefault": false
+        },
+        {
+          "name": "HeteroRawEdgeEncoder",
+          "line": 141,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super(GeneralLayer, self).__init__",
+          "lineNumber": 21
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 21
+        },
+        {
+          "caller": "__init__",
+          "callee": "layer_wrapper.append",
+          "lineNumber": 29
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.BatchNorm1d",
+          "lineNumber": 30
+        },
+        {
+          "caller": "__init__",
+          "callee": "layer_wrapper.append",
+          "lineNumber": 32
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.LayerNorm",
+          "lineNumber": 32
+        },
+        {
+          "caller": "__init__",
+          "callee": "layer_wrapper.append",
+          "lineNumber": 34
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Dropout",
+          "lineNumber": 35
+        },
+        {
+          "caller": "__init__",
+          "callee": "layer_wrapper.append",
+          "lineNumber": 37
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Sequential",
+          "lineNumber": 38
+        },
+        {
+          "caller": "forward",
+          "callee": "self.layer",
+          "lineNumber": 41
+        },
+        {
+          "caller": "forward",
+          "callee": "isinstance",
+          "lineNumber": 42
+        },
+        {
+          "caller": "forward",
+          "callee": "self.post_layer",
+          "lineNumber": 43
+        },
+        {
+          "caller": "forward",
+          "callee": "F.normalize",
+          "lineNumber": 45
+        },
+        {
+          "caller": "forward",
+          "callee": "self.post_layer",
+          "lineNumber": 47
+        },
+        {
+          "caller": "forward",
+          "callee": "F.normalize",
+          "lineNumber": 49
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(GeneralMultiLayer, self).__init__",
+          "lineNumber": 63
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 63
+        },
+        {
+          "caller": "__init__",
+          "callee": "range",
+          "lineNumber": 65
+        },
+        {
+          "caller": "__init__",
+          "callee": "GeneralLayer",
+          "lineNumber": 69
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.add_module",
+          "lineNumber": 70
+        },
+        {
+          "caller": "__init__",
+          "callee": "'Layer_{}'.format",
+          "lineNumber": 70
+        },
+        {
+          "caller": "forward",
+          "callee": "self.children",
+          "lineNumber": 73
+        },
+        {
+          "caller": "forward",
+          "callee": "layer",
+          "lineNumber": 74
+        },
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 86
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 86
+        },
+        {
+          "caller": "__init__",
+          "callee": "dataset[0].metadata",
+          "lineNumber": 92
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 99
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.ModuleDict",
+          "lineNumber": 102
+        },
+        {
+          "caller": "__init__",
+          "callee": "hasattr",
+          "lineNumber": 104
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 105
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.ModuleDict",
+          "lineNumber": 115
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Embedding",
+          "lineNumber": 117
+        },
+        {
+          "caller": "__init__",
+          "callee": "hasattr",
+          "lineNumber": 119
+        },
+        {
+          "caller": "forward",
+          "callee": "isinstance",
+          "lineNumber": 124
+        },
+        {
+          "caller": "forward",
+          "callee": "hasattr",
+          "lineNumber": 127
+        },
+        {
+          "caller": "forward",
+          "callee": "list",
+          "lineNumber": 136
+        },
+        {
+          "caller": "forward",
+          "callee": "self.linear.values",
+          "lineNumber": 136
+        },
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 150
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 150
+        },
+        {
+          "caller": "__init__",
+          "callee": "dataset[0].metadata",
+          "lineNumber": 152
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 154
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.ModuleDict",
+          "lineNumber": 157
+        },
+        {
+          "caller": "__init__",
+          "callee": "'__'.join",
+          "lineNumber": 159
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 160
+        },
+        {
+          "caller": "forward",
+          "callee": "isinstance",
+          "lineNumber": 171
+        },
+        {
+          "caller": "forward",
+          "callee": "batch.collect(\"edge_attr\").items",
+          "lineNumber": 173
+        },
+        {
+          "caller": "forward",
+          "callee": "batch.collect",
+          "lineNumber": 173
+        },
+        {
+          "caller": "forward",
+          "callee": "'__'.join",
+          "lineNumber": 174
+        },
+        {
+          "caller": "forward",
+          "callee": "list",
+          "lineNumber": 177
+        },
+        {
+          "caller": "forward",
+          "callee": "self.linear.values",
+          "lineNumber": 177
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 0,
+        "classCount": 4
+      }
+    },
+    {
+      "path": "fraudGT/encoder/homo_gnn_encoder.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 203,
+      "nonEmptyLines": 181,
+      "classes": [
+        {
+          "name": "GeneralLayer",
+          "startLine": 13,
+          "endLine": 55,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "GeneralMultiLayer",
+          "startLine": 58,
+          "endLine": 80,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "HomoGNNEncoder",
+          "startLine": 84,
+          "endLine": 202,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "GeneralLayer",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "GeneralMultiLayer",
+          "line": 58,
+          "isDefault": false
+        },
+        {
+          "name": "HomoGNNEncoder",
+          "line": 83,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super(GeneralLayer, self).__init__",
+          "lineNumber": 26
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 26
+        },
+        {
+          "caller": "__init__",
+          "callee": "layer_wrapper.append",
+          "lineNumber": 34
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.BatchNorm1d",
+          "lineNumber": 35
+        },
+        {
+          "caller": "__init__",
+          "callee": "layer_wrapper.append",
+          "lineNumber": 37
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.LayerNorm",
+          "lineNumber": 37
+        },
+        {
+          "caller": "__init__",
+          "callee": "layer_wrapper.append",
+          "lineNumber": 39
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Dropout",
+          "lineNumber": 40
+        },
+        {
+          "caller": "__init__",
+          "callee": "layer_wrapper.append",
+          "lineNumber": 42
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Sequential",
+          "lineNumber": 43
+        },
+        {
+          "caller": "forward",
+          "callee": "self.layer",
+          "lineNumber": 46
+        },
+        {
+          "caller": "forward",
+          "callee": "isinstance",
+          "lineNumber": 47
+        },
+        {
+          "caller": "forward",
+          "callee": "self.post_layer",
+          "lineNumber": 48
+        },
+        {
+          "caller": "forward",
+          "callee": "F.normalize",
+          "lineNumber": 50
+        },
+        {
+          "caller": "forward",
+          "callee": "self.post_layer",
+          "lineNumber": 52
+        },
+        {
+          "caller": "forward",
+          "callee": "F.normalize",
+          "lineNumber": 54
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(GeneralMultiLayer, self).__init__",
+          "lineNumber": 68
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 68
+        },
+        {
+          "caller": "__init__",
+          "callee": "range",
+          "lineNumber": 70
+        },
+        {
+          "caller": "__init__",
+          "callee": "GeneralLayer",
+          "lineNumber": 74
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.add_module",
+          "lineNumber": 75
+        },
+        {
+          "caller": "__init__",
+          "callee": "'Layer_{}'.format",
+          "lineNumber": 75
+        },
+        {
+          "caller": "forward",
+          "callee": "self.children",
+          "lineNumber": 78
+        },
+        {
+          "caller": "forward",
+          "callee": "layer",
+          "lineNumber": 79
+        },
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 93
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 93
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Dropout",
+          "lineNumber": 99
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Dropout",
+          "lineNumber": 100
+        },
+        {
+          "caller": "__init__",
+          "callee": "GeneralMultiLayer",
+          "lineNumber": 116
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.ModuleList",
+          "lineNumber": 122
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.ModuleList",
+          "lineNumber": 123
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.ModuleList",
+          "lineNumber": 125
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.LayerNorm",
+          "lineNumber": 129
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.BatchNorm1d",
+          "lineNumber": 131
+        },
+        {
+          "caller": "__init__",
+          "callee": "range",
+          "lineNumber": 132
+        },
+        {
+          "caller": "__init__",
+          "callee": "GraphConv",
+          "lineNumber": 136
+        },
+        {
+          "caller": "__init__",
+          "callee": "SAGEConv",
+          "lineNumber": 138
+        },
+        {
+          "caller": "__init__",
+          "callee": "MLP",
+          "lineNumber": 140
+        },
+        {
+          "caller": "__init__",
+          "callee": "GINConv",
+          "lineNumber": 145
+        },
+        {
+          "caller": "__init__",
+          "callee": "GATConv",
+          "lineNumber": 149
+        },
+        {
+          "caller": "__init__",
+          "callee": "GATConv",
+          "lineNumber": 153
+        },
+        {
+          "caller": "__init__",
+          "callee": "GATConv",
+          "lineNumber": 157
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.convs.append",
+          "lineNumber": 160
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.norms.append",
+          "lineNumber": 163
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.LayerNorm",
+          "lineNumber": 163
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.norms.append",
+          "lineNumber": 165
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.BatchNorm1d",
+          "lineNumber": 165
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 167
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 171
+        },
+        {
+          "caller": "forward",
+          "callee": "isinstance",
+          "lineNumber": 175
+        },
+        {
+          "caller": "forward",
+          "callee": "batch.to_homogeneous",
+          "lineNumber": 176
+        },
+        {
+          "caller": "forward",
+          "callee": "x.nan_to_num",
+          "lineNumber": 178
+        },
+        {
+          "caller": "forward",
+          "callee": "self.pre_mp",
+          "lineNumber": 184
+        },
+        {
+          "caller": "forward",
+          "callee": "range",
+          "lineNumber": 186
+        },
+        {
+          "caller": "forward",
+          "callee": "self.drop",
+          "lineNumber": 189
+        },
+        {
+          "caller": "forward",
+          "callee": "self.activation",
+          "lineNumber": 189
+        },
+        {
+          "caller": "forward",
+          "callee": "enumerate",
+          "lineNumber": 191
+        },
+        {
+          "caller": "forward",
+          "callee": "self.linear",
+          "lineNumber": 194
+        },
+        {
+          "caller": "forward",
+          "callee": "isinstance",
+          "lineNumber": 198
+        },
+        {
+          "caller": "forward",
+          "callee": "torch.cat",
+          "lineNumber": 199
+        },
+        {
+          "caller": "forward",
+          "callee": "torch.cat",
+          "lineNumber": 201
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 0,
+        "classCount": 3
+      }
+    },
+    {
+      "path": "fraudGT/encoder/raw_encoder.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 171,
+      "nonEmptyLines": 150,
+      "classes": [
+        {
+          "name": "GeneralLayer",
+          "startLine": 8,
+          "endLine": 50,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "GeneralMultiLayer",
+          "startLine": 53,
+          "endLine": 75,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "RawNodeEncoder",
+          "startLine": 78,
+          "endLine": 131,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "RawEdgeEncoder",
+          "startLine": 135,
+          "endLine": 171,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "GeneralLayer",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "GeneralMultiLayer",
+          "line": 53,
+          "isDefault": false
+        },
+        {
+          "name": "RawNodeEncoder",
+          "line": 77,
+          "isDefault": false
+        },
+        {
+          "name": "RawEdgeEncoder",
+          "line": 134,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super(GeneralLayer, self).__init__",
+          "lineNumber": 21
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 21
+        },
+        {
+          "caller": "__init__",
+          "callee": "layer_wrapper.append",
+          "lineNumber": 29
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.BatchNorm1d",
+          "lineNumber": 30
+        },
+        {
+          "caller": "__init__",
+          "callee": "layer_wrapper.append",
+          "lineNumber": 32
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.LayerNorm",
+          "lineNumber": 32
+        },
+        {
+          "caller": "__init__",
+          "callee": "layer_wrapper.append",
+          "lineNumber": 34
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Dropout",
+          "lineNumber": 35
+        },
+        {
+          "caller": "__init__",
+          "callee": "layer_wrapper.append",
+          "lineNumber": 37
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Sequential",
+          "lineNumber": 38
+        },
+        {
+          "caller": "forward",
+          "callee": "self.layer",
+          "lineNumber": 41
+        },
+        {
+          "caller": "forward",
+          "callee": "isinstance",
+          "lineNumber": 42
+        },
+        {
+          "caller": "forward",
+          "callee": "self.post_layer",
+          "lineNumber": 43
+        },
+        {
+          "caller": "forward",
+          "callee": "F.normalize",
+          "lineNumber": 45
+        },
+        {
+          "caller": "forward",
+          "callee": "self.post_layer",
+          "lineNumber": 47
+        },
+        {
+          "caller": "forward",
+          "callee": "F.normalize",
+          "lineNumber": 49
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(GeneralMultiLayer, self).__init__",
+          "lineNumber": 63
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 63
+        },
+        {
+          "caller": "__init__",
+          "callee": "range",
+          "lineNumber": 65
+        },
+        {
+          "caller": "__init__",
+          "callee": "GeneralLayer",
+          "lineNumber": 69
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.add_module",
+          "lineNumber": 70
+        },
+        {
+          "caller": "__init__",
+          "callee": "'Layer_{}'.format",
+          "lineNumber": 70
+        },
+        {
+          "caller": "forward",
+          "callee": "self.children",
+          "lineNumber": 73
+        },
+        {
+          "caller": "forward",
+          "callee": "layer",
+          "lineNumber": 74
+        },
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 86
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 86
+        },
+        {
+          "caller": "__init__",
+          "callee": "dataset[0].metadata",
+          "lineNumber": 88
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 95
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.ModuleDict",
+          "lineNumber": 98
+        },
+        {
+          "caller": "__init__",
+          "callee": "hasattr",
+          "lineNumber": 100
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 101
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.ModuleDict",
+          "lineNumber": 108
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Embedding",
+          "lineNumber": 110
+        },
+        {
+          "caller": "__init__",
+          "callee": "hasattr",
+          "lineNumber": 112
+        },
+        {
+          "caller": "forward",
+          "callee": "isinstance",
+          "lineNumber": 117
+        },
+        {
+          "caller": "forward",
+          "callee": "hasattr",
+          "lineNumber": 120
+        },
+        {
+          "caller": "forward",
+          "callee": "self.linear",
+          "lineNumber": 121
+        },
+        {
+          "caller": "forward",
+          "callee": "self.linear",
+          "lineNumber": 129
+        },
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 143
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 143
+        },
+        {
+          "caller": "__init__",
+          "callee": "dataset[0].metadata",
+          "lineNumber": 145
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 147
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.ModuleDict",
+          "lineNumber": 150
+        },
+        {
+          "caller": "__init__",
+          "callee": "'__'.join",
+          "lineNumber": 152
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 153
+        },
+        {
+          "caller": "forward",
+          "callee": "isinstance",
+          "lineNumber": 163
+        },
+        {
+          "caller": "forward",
+          "callee": "batch.collect(\"edge_attr\").items",
+          "lineNumber": 165
+        },
+        {
+          "caller": "forward",
+          "callee": "batch.collect",
+          "lineNumber": 165
+        },
+        {
+          "caller": "forward",
+          "callee": "self.linear",
+          "lineNumber": 166
+        },
+        {
+          "caller": "forward",
+          "callee": "self.linear",
+          "lineNumber": 169
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 0,
+        "classCount": 4
+      }
+    },
+    {
+      "path": "fraudGT/finetuning.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 150,
+      "nonEmptyLines": 124,
+      "functions": [
+        {
+          "name": "get_final_pretrained_ckpt",
+          "startLine": 10,
+          "endLine": 17,
+          "params": [
+            "ckpt_dir"
+          ]
+        },
+        {
+          "name": "compare_cfg",
+          "startLine": 20,
+          "endLine": 31,
+          "params": [
+            "cfg_main",
+            "cfg_secondary",
+            "field_name",
+            "strict"
+          ]
+        },
+        {
+          "name": "set_new_cfg_allowed",
+          "startLine": 34,
+          "endLine": 45,
+          "params": [
+            "config",
+            "is_new_allowed"
+          ]
+        },
+        {
+          "name": "load_pretrained_model_cfg",
+          "startLine": 48,
+          "endLine": 96,
+          "params": [
+            "cfg"
+          ]
+        },
+        {
+          "name": "init_model_from_pretrained",
+          "startLine": 99,
+          "endLine": 149,
+          "params": [
+            "model",
+            "pretrained_dir",
+            "freeze_main",
+            "reset_prediction_head",
+            "seed"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "get_final_pretrained_ckpt",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "compare_cfg",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "set_new_cfg_allowed",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "load_pretrained_model_cfg",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "init_model_from_pretrained",
+          "line": 99,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "get_final_pretrained_ckpt",
+          "callee": "osp.exists",
+          "lineNumber": 11
+        },
+        {
+          "caller": "get_final_pretrained_ckpt",
+          "callee": "os.listdir",
+          "lineNumber": 12
+        },
+        {
+          "caller": "get_final_pretrained_ckpt",
+          "callee": "int",
+          "lineNumber": 13
+        },
+        {
+          "caller": "get_final_pretrained_ckpt",
+          "callee": "name.split",
+          "lineNumber": 13
+        },
+        {
+          "caller": "get_final_pretrained_ckpt",
+          "callee": "max",
+          "lineNumber": 14
+        },
+        {
+          "caller": "get_final_pretrained_ckpt",
+          "callee": "FileNotFoundError",
+          "lineNumber": 16
+        },
+        {
+          "caller": "get_final_pretrained_ckpt",
+          "callee": "osp.join",
+          "lineNumber": 17
+        },
+        {
+          "caller": "compare_cfg",
+          "callee": "field_name.split",
+          "lineNumber": 22
+        },
+        {
+          "caller": "compare_cfg",
+          "callee": "ValueError",
+          "lineNumber": 27
+        },
+        {
+          "caller": "compare_cfg",
+          "callee": "logging.warning",
+          "lineNumber": 30
+        },
+        {
+          "caller": "set_new_cfg_allowed",
+          "callee": "config.__dict__.values",
+          "lineNumber": 40
+        },
+        {
+          "caller": "set_new_cfg_allowed",
+          "callee": "isinstance",
+          "lineNumber": 41
+        },
+        {
+          "caller": "set_new_cfg_allowed",
+          "callee": "set_new_cfg_allowed",
+          "lineNumber": 42
+        },
+        {
+          "caller": "set_new_cfg_allowed",
+          "callee": "config.values",
+          "lineNumber": 43
+        },
+        {
+          "caller": "set_new_cfg_allowed",
+          "callee": "isinstance",
+          "lineNumber": 44
+        },
+        {
+          "caller": "set_new_cfg_allowed",
+          "callee": "set_new_cfg_allowed",
+          "lineNumber": 45
+        },
+        {
+          "caller": "load_pretrained_model_cfg",
+          "callee": "osp.join",
+          "lineNumber": 49
+        },
+        {
+          "caller": "load_pretrained_model_cfg",
+          "callee": "os.path.isfile",
+          "lineNumber": 50
+        },
+        {
+          "caller": "load_pretrained_model_cfg",
+          "callee": "FileNotFoundError",
+          "lineNumber": 51
+        },
+        {
+          "caller": "load_pretrained_model_cfg",
+          "callee": "logging.info",
+          "lineNumber": 54
+        },
+        {
+          "caller": "load_pretrained_model_cfg",
+          "callee": "CfgNode",
+          "lineNumber": 57
+        },
+        {
+          "caller": "load_pretrained_model_cfg",
+          "callee": "set_cfg",
+          "lineNumber": 58
+        },
+        {
+          "caller": "load_pretrained_model_cfg",
+          "callee": "set_new_cfg_allowed",
+          "lineNumber": 59
+        },
+        {
+          "caller": "load_pretrained_model_cfg",
+          "callee": "pretrained_cfg.merge_from_file",
+          "lineNumber": 60
+        },
+        {
+          "caller": "load_pretrained_model_cfg",
+          "callee": "compare_cfg",
+          "lineNumber": 64
+        },
+        {
+          "caller": "load_pretrained_model_cfg",
+          "callee": "compare_cfg",
+          "lineNumber": 65
+        },
+        {
+          "caller": "load_pretrained_model_cfg",
+          "callee": "compare_cfg",
+          "lineNumber": 66
+        },
+        {
+          "caller": "load_pretrained_model_cfg",
+          "callee": "compare_cfg",
+          "lineNumber": 67
+        },
+        {
+          "caller": "load_pretrained_model_cfg",
+          "callee": "compare_cfg",
+          "lineNumber": 68
+        },
+        {
+          "caller": "load_pretrained_model_cfg",
+          "callee": "compare_cfg",
+          "lineNumber": 69
+        },
+        {
+          "caller": "load_pretrained_model_cfg",
+          "callee": "compare_cfg",
+          "lineNumber": 70
+        },
+        {
+          "caller": "load_pretrained_model_cfg",
+          "callee": "compare_cfg",
+          "lineNumber": 71
+        },
+        {
+          "caller": "load_pretrained_model_cfg",
+          "callee": "compare_cfg",
+          "lineNumber": 72
+        },
+        {
+          "caller": "load_pretrained_model_cfg",
+          "callee": "cfg.keys",
+          "lineNumber": 75
+        },
+        {
+          "caller": "load_pretrained_model_cfg",
+          "callee": "key.startswith",
+          "lineNumber": 76
+        },
+        {
+          "caller": "load_pretrained_model_cfg",
+          "callee": "compare_cfg",
+          "lineNumber": 83
+        },
+        {
+          "caller": "load_pretrained_model_cfg",
+          "callee": "compare_cfg",
+          "lineNumber": 84
+        },
+        {
+          "caller": "load_pretrained_model_cfg",
+          "callee": "compare_cfg",
+          "lineNumber": 85
+        },
+        {
+          "caller": "load_pretrained_model_cfg",
+          "callee": "compare_cfg",
+          "lineNumber": 86
+        },
+        {
+          "caller": "init_model_from_pretrained",
+          "callee": "get_final_pretrained_ckpt",
+          "lineNumber": 117
+        },
+        {
+          "caller": "init_model_from_pretrained",
+          "callee": "osp.join",
+          "lineNumber": 117
+        },
+        {
+          "caller": "init_model_from_pretrained",
+          "callee": "str",
+          "lineNumber": 117
+        },
+        {
+          "caller": "init_model_from_pretrained",
+          "callee": "logging.info",
+          "lineNumber": 118
+        },
+        {
+          "caller": "init_model_from_pretrained",
+          "callee": "torch.load",
+          "lineNumber": 120
+        },
+        {
+          "caller": "init_model_from_pretrained",
+          "callee": "torch.device",
+          "lineNumber": 120
+        },
+        {
+          "caller": "init_model_from_pretrained",
+          "callee": "model.state_dict",
+          "lineNumber": 122
+        },
+        {
+          "caller": "init_model_from_pretrained",
+          "callee": "pretrained_dict.items",
+          "lineNumber": 137
+        },
+        {
+          "caller": "init_model_from_pretrained",
+          "callee": "k.startswith",
+          "lineNumber": 138
+        },
+        {
+          "caller": "init_model_from_pretrained",
+          "callee": "print",
+          "lineNumber": 140
+        },
+        {
+          "caller": "init_model_from_pretrained",
+          "callee": "list",
+          "lineNumber": 140
+        },
+        {
+          "caller": "init_model_from_pretrained",
+          "callee": "pretrained_dict.keys",
+          "lineNumber": 140
+        },
+        {
+          "caller": "init_model_from_pretrained",
+          "callee": "model_dict.update",
+          "lineNumber": 141
+        },
+        {
+          "caller": "init_model_from_pretrained",
+          "callee": "model.load_state_dict",
+          "lineNumber": 143
+        },
+        {
+          "caller": "init_model_from_pretrained",
+          "callee": "model.named_parameters",
+          "lineNumber": 146
+        },
+        {
+          "caller": "init_model_from_pretrained",
+          "callee": "key.startswith",
+          "lineNumber": 147
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 5,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "fraudGT/graphgym/__init__.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 2,
+      "nonEmptyLines": 2,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "fraudGT/graphgym/checkpoint.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 88,
+      "nonEmptyLines": 62,
+      "functions": [
+        {
+          "name": "load_ckpt",
+          "startLine": 15,
+          "endLine": 35,
+          "params": [
+            "model",
+            "optimizer",
+            "scheduler",
+            "epoch"
+          ]
+        },
+        {
+          "name": "save_ckpt",
+          "startLine": 38,
+          "endLine": 53,
+          "params": [
+            "model",
+            "optimizer",
+            "scheduler",
+            "epoch"
+          ]
+        },
+        {
+          "name": "remove_ckpt",
+          "startLine": 56,
+          "endLine": 58,
+          "params": [
+            "epoch"
+          ]
+        },
+        {
+          "name": "clean_ckpt",
+          "startLine": 61,
+          "endLine": 64,
+          "params": []
+        },
+        {
+          "name": "get_ckpt_dir",
+          "startLine": 70,
+          "endLine": 71,
+          "params": []
+        },
+        {
+          "name": "get_ckpt_path",
+          "startLine": 74,
+          "endLine": 75,
+          "params": [
+            "epoch"
+          ]
+        },
+        {
+          "name": "get_ckpt_epochs",
+          "startLine": 78,
+          "endLine": 80,
+          "params": []
+        },
+        {
+          "name": "get_ckpt_epoch",
+          "startLine": 83,
+          "endLine": 87,
+          "params": [
+            "epoch"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "load_ckpt",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "save_ckpt",
+          "line": 38,
+          "isDefault": false
+        },
+        {
+          "name": "remove_ckpt",
+          "line": 56,
+          "isDefault": false
+        },
+        {
+          "name": "clean_ckpt",
+          "line": 61,
+          "isDefault": false
+        },
+        {
+          "name": "get_ckpt_dir",
+          "line": 70,
+          "isDefault": false
+        },
+        {
+          "name": "get_ckpt_path",
+          "line": 74,
+          "isDefault": false
+        },
+        {
+          "name": "get_ckpt_epochs",
+          "line": 78,
+          "isDefault": false
+        },
+        {
+          "name": "get_ckpt_epoch",
+          "line": 83,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "load_ckpt",
+          "callee": "get_ckpt_epoch",
+          "lineNumber": 22
+        },
+        {
+          "caller": "load_ckpt",
+          "callee": "get_ckpt_path",
+          "lineNumber": 23
+        },
+        {
+          "caller": "load_ckpt",
+          "callee": "osp.exists",
+          "lineNumber": 25
+        },
+        {
+          "caller": "load_ckpt",
+          "callee": "torch.load",
+          "lineNumber": 28
+        },
+        {
+          "caller": "load_ckpt",
+          "callee": "model.load_state_dict",
+          "lineNumber": 29
+        },
+        {
+          "caller": "load_ckpt",
+          "callee": "optimizer.load_state_dict",
+          "lineNumber": 31
+        },
+        {
+          "caller": "load_ckpt",
+          "callee": "scheduler.load_state_dict",
+          "lineNumber": 33
+        },
+        {
+          "caller": "save_ckpt",
+          "callee": "model.state_dict",
+          "lineNumber": 46
+        },
+        {
+          "caller": "save_ckpt",
+          "callee": "optimizer.state_dict",
+          "lineNumber": 48
+        },
+        {
+          "caller": "save_ckpt",
+          "callee": "scheduler.state_dict",
+          "lineNumber": 50
+        },
+        {
+          "caller": "save_ckpt",
+          "callee": "os.makedirs",
+          "lineNumber": 52
+        },
+        {
+          "caller": "save_ckpt",
+          "callee": "get_ckpt_dir",
+          "lineNumber": 52
+        },
+        {
+          "caller": "save_ckpt",
+          "callee": "torch.save",
+          "lineNumber": 53
+        },
+        {
+          "caller": "save_ckpt",
+          "callee": "get_ckpt_path",
+          "lineNumber": 53
+        },
+        {
+          "caller": "save_ckpt",
+          "callee": "get_ckpt_epoch",
+          "lineNumber": 53
+        },
+        {
+          "caller": "remove_ckpt",
+          "callee": "os.remove",
+          "lineNumber": 58
+        },
+        {
+          "caller": "remove_ckpt",
+          "callee": "get_ckpt_path",
+          "lineNumber": 58
+        },
+        {
+          "caller": "remove_ckpt",
+          "callee": "get_ckpt_epoch",
+          "lineNumber": 58
+        },
+        {
+          "caller": "clean_ckpt",
+          "callee": "get_ckpt_epochs",
+          "lineNumber": 63
+        },
+        {
+          "caller": "clean_ckpt",
+          "callee": "os.remove",
+          "lineNumber": 64
+        },
+        {
+          "caller": "clean_ckpt",
+          "callee": "get_ckpt_path",
+          "lineNumber": 64
+        },
+        {
+          "caller": "get_ckpt_dir",
+          "callee": "osp.join",
+          "lineNumber": 71
+        },
+        {
+          "caller": "get_ckpt_path",
+          "callee": "osp.join",
+          "lineNumber": 75
+        },
+        {
+          "caller": "get_ckpt_path",
+          "callee": "get_ckpt_dir",
+          "lineNumber": 75
+        },
+        {
+          "caller": "get_ckpt_epochs",
+          "callee": "glob.glob",
+          "lineNumber": 79
+        },
+        {
+          "caller": "get_ckpt_epochs",
+          "callee": "get_ckpt_path",
+          "lineNumber": 79
+        },
+        {
+          "caller": "get_ckpt_epochs",
+          "callee": "sorted",
+          "lineNumber": 80
+        },
+        {
+          "caller": "get_ckpt_epochs",
+          "callee": "int",
+          "lineNumber": 80
+        },
+        {
+          "caller": "get_ckpt_epochs",
+          "callee": "osp.basename(path).split",
+          "lineNumber": 80
+        },
+        {
+          "caller": "get_ckpt_epochs",
+          "callee": "osp.basename",
+          "lineNumber": 80
+        },
+        {
+          "caller": "get_ckpt_epoch",
+          "callee": "get_ckpt_epochs",
+          "lineNumber": 85
+        },
+        {
+          "caller": "get_ckpt_epoch",
+          "callee": "len",
+          "lineNumber": 86
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 8,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "fraudGT/graphgym/cmd_args.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 30,
+      "nonEmptyLines": 25,
+      "functions": [
+        {
+          "name": "parse_args",
+          "startLine": 4,
+          "endLine": 29,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "parse_args",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "parse_args",
+          "callee": "argparse.ArgumentParser",
+          "lineNumber": 6
+        },
+        {
+          "caller": "parse_args",
+          "callee": "parser.add_argument",
+          "lineNumber": 8
+        },
+        {
+          "caller": "parse_args",
+          "callee": "parser.add_argument",
+          "lineNumber": 13
+        },
+        {
+          "caller": "parse_args",
+          "callee": "parser.add_argument",
+          "lineNumber": 17
+        },
+        {
+          "caller": "parse_args",
+          "callee": "parser.add_argument",
+          "lineNumber": 20
+        },
+        {
+          "caller": "parse_args",
+          "callee": "parser.add_argument",
+          "lineNumber": 24
+        },
+        {
+          "caller": "parse_args",
+          "callee": "parser.parse_args",
+          "lineNumber": 29
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "fraudGT/graphgym/config.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 635,
+      "nonEmptyLines": 462,
+      "functions": [
+        {
+          "name": "set_cfg",
+          "startLine": 18,
+          "endLine": 464,
+          "params": [
+            "cfg"
+          ]
+        },
+        {
+          "name": "assert_cfg",
+          "startLine": 467,
+          "endLine": 492,
+          "params": [
+            "cfg"
+          ]
+        },
+        {
+          "name": "dump_cfg",
+          "startLine": 495,
+          "endLine": 507,
+          "params": [
+            "cfg"
+          ]
+        },
+        {
+          "name": "load_cfg",
+          "startLine": 510,
+          "endLine": 521,
+          "params": [
+            "cfg",
+            "args"
+          ]
+        },
+        {
+          "name": "update_cfg",
+          "startLine": 524,
+          "endLine": 538,
+          "params": [
+            "cfg",
+            "update"
+          ]
+        },
+        {
+          "name": "makedirs_rm_exist",
+          "startLine": 541,
+          "endLine": 544,
+          "params": [
+            "dir"
+          ]
+        },
+        {
+          "name": "get_fname",
+          "startLine": 547,
+          "endLine": 559,
+          "params": [
+            "fname"
+          ]
+        },
+        {
+          "name": "set_out_dir",
+          "startLine": 562,
+          "endLine": 577,
+          "params": [
+            "out_dir",
+            "fname"
+          ]
+        },
+        {
+          "name": "set_run_dir",
+          "startLine": 580,
+          "endLine": 594,
+          "params": [
+            "out_dir"
+          ]
+        },
+        {
+          "name": "from_config",
+          "startLine": 597,
+          "endLine": 621,
+          "params": [
+            "func"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "set_cfg",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "assert_cfg",
+          "line": 467,
+          "isDefault": false
+        },
+        {
+          "name": "dump_cfg",
+          "line": 495,
+          "isDefault": false
+        },
+        {
+          "name": "load_cfg",
+          "line": 510,
+          "isDefault": false
+        },
+        {
+          "name": "update_cfg",
+          "line": 524,
+          "isDefault": false
+        },
+        {
+          "name": "makedirs_rm_exist",
+          "line": 541,
+          "isDefault": false
+        },
+        {
+          "name": "get_fname",
+          "line": 547,
+          "isDefault": false
+        },
+        {
+          "name": "set_out_dir",
+          "line": 562,
+          "isDefault": false
+        },
+        {
+          "name": "set_run_dir",
+          "line": 580,
+          "isDefault": false
+        },
+        {
+          "name": "from_config",
+          "line": 597,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "set_cfg",
+          "callee": "CN",
+          "lineNumber": 86
+        },
+        {
+          "caller": "set_cfg",
+          "callee": "CN",
+          "lineNumber": 100
+        },
+        {
+          "caller": "set_cfg",
+          "callee": "CN",
+          "lineNumber": 236
+        },
+        {
+          "caller": "set_cfg",
+          "callee": "CN",
+          "lineNumber": 289
+        },
+        {
+          "caller": "set_cfg",
+          "callee": "CN",
+          "lineNumber": 306
+        },
+        {
+          "caller": "set_cfg",
+          "callee": "CN",
+          "lineNumber": 344
+        },
+        {
+          "caller": "set_cfg",
+          "callee": "CN",
+          "lineNumber": 417
+        },
+        {
+          "caller": "set_cfg",
+          "callee": "CN",
+          "lineNumber": 446
+        },
+        {
+          "caller": "set_cfg",
+          "callee": "CN",
+          "lineNumber": 457
+        },
+        {
+          "caller": "set_cfg",
+          "callee": "register.config_dict.values",
+          "lineNumber": 463
+        },
+        {
+          "caller": "set_cfg",
+          "callee": "func",
+          "lineNumber": 464
+        },
+        {
+          "caller": "assert_cfg",
+          "callee": "ValueError",
+          "lineNumber": 470
+        },
+        {
+          "caller": "assert_cfg",
+          "callee": "'Task {} not supported, must be one of node, '\r\n                         'edge, graph, link_pred'.format",
+          "lineNumber": 470
+        },
+        {
+          "caller": "assert_cfg",
+          "callee": "logging.warning",
+          "lineNumber": 475
+        },
+        {
+          "caller": "assert_cfg",
+          "callee": "logging.warning",
+          "lineNumber": 480
+        },
+        {
+          "caller": "assert_cfg",
+          "callee": "logging.warning",
+          "lineNumber": 483
+        },
+        {
+          "caller": "assert_cfg",
+          "callee": "logging.warning",
+          "lineNumber": 487
+        },
+        {
+          "caller": "dump_cfg",
+          "callee": "os.makedirs",
+          "lineNumber": 504
+        },
+        {
+          "caller": "dump_cfg",
+          "callee": "os.path.join",
+          "lineNumber": 505
+        },
+        {
+          "caller": "dump_cfg",
+          "callee": "open",
+          "lineNumber": 506
+        },
+        {
+          "caller": "dump_cfg",
+          "callee": "cfg.dump",
+          "lineNumber": 507
+        },
+        {
+          "caller": "load_cfg",
+          "callee": "cfg.merge_from_file",
+          "lineNumber": 519
+        },
+        {
+          "caller": "load_cfg",
+          "callee": "cfg.merge_from_list",
+          "lineNumber": 520
+        },
+        {
+          "caller": "load_cfg",
+          "callee": "assert_cfg",
+          "lineNumber": 521
+        },
+        {
+          "caller": "update_cfg",
+          "callee": "update.items",
+          "lineNumber": 534
+        },
+        {
+          "caller": "update_cfg",
+          "callee": "cfg.merge_from_list",
+          "lineNumber": 536
+        },
+        {
+          "caller": "update_cfg",
+          "callee": "assert_cfg",
+          "lineNumber": 537
+        },
+        {
+          "caller": "makedirs_rm_exist",
+          "callee": "os.path.isdir",
+          "lineNumber": 542
+        },
+        {
+          "caller": "makedirs_rm_exist",
+          "callee": "shutil.rmtree",
+          "lineNumber": 543
+        },
+        {
+          "caller": "makedirs_rm_exist",
+          "callee": "os.makedirs",
+          "lineNumber": 544
+        },
+        {
+          "caller": "get_fname",
+          "callee": "fname.split",
+          "lineNumber": 554
+        },
+        {
+          "caller": "get_fname",
+          "callee": "fname.endswith",
+          "lineNumber": 555
+        },
+        {
+          "caller": "get_fname",
+          "callee": "fname.endswith",
+          "lineNumber": 557
+        },
+        {
+          "caller": "set_out_dir",
+          "callee": "get_fname",
+          "lineNumber": 571
+        },
+        {
+          "caller": "set_out_dir",
+          "callee": "os.path.join",
+          "lineNumber": 572
+        },
+        {
+          "caller": "set_out_dir",
+          "callee": "os.makedirs",
+          "lineNumber": 575
+        },
+        {
+          "caller": "set_out_dir",
+          "callee": "makedirs_rm_exist",
+          "lineNumber": 577
+        },
+        {
+          "caller": "set_run_dir",
+          "callee": "os.path.join",
+          "lineNumber": 589
+        },
+        {
+          "caller": "set_run_dir",
+          "callee": "str",
+          "lineNumber": 589
+        },
+        {
+          "caller": "set_run_dir",
+          "callee": "os.makedirs",
+          "lineNumber": 592
+        },
+        {
+          "caller": "set_run_dir",
+          "callee": "makedirs_rm_exist",
+          "lineNumber": 594
+        },
+        {
+          "caller": "from_config",
+          "callee": "inspect.isclass",
+          "lineNumber": 598
+        },
+        {
+          "caller": "from_config",
+          "callee": "list",
+          "lineNumber": 599
+        },
+        {
+          "caller": "from_config",
+          "callee": "inspect.signature(func.__init__).parameters.values",
+          "lineNumber": 599
+        },
+        {
+          "caller": "from_config",
+          "callee": "inspect.signature",
+          "lineNumber": 599
+        },
+        {
+          "caller": "from_config",
+          "callee": "list",
+          "lineNumber": 601
+        },
+        {
+          "caller": "from_config",
+          "callee": "inspect.signature(func).parameters.values",
+          "lineNumber": 601
+        },
+        {
+          "caller": "from_config",
+          "callee": "inspect.signature",
+          "lineNumber": 601
+        },
+        {
+          "caller": "from_config",
+          "callee": "functools.wraps",
+          "lineNumber": 606
+        },
+        {
+          "caller": "wrapper",
+          "callee": "dict",
+          "lineNumber": 609
+        },
+        {
+          "caller": "wrapper",
+          "callee": "isinstance",
+          "lineNumber": 609
+        },
+        {
+          "caller": "wrapper",
+          "callee": "asdict",
+          "lineNumber": 609
+        },
+        {
+          "caller": "wrapper",
+          "callee": "zip",
+          "lineNumber": 611
+        },
+        {
+          "caller": "wrapper",
+          "callee": "len",
+          "lineNumber": 611
+        },
+        {
+          "caller": "wrapper",
+          "callee": "len",
+          "lineNumber": 611
+        },
+        {
+          "caller": "wrapper",
+          "callee": "ValueError",
+          "lineNumber": 618
+        },
+        {
+          "caller": "wrapper",
+          "callee": "func",
+          "lineNumber": 619
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 10,
+        "functionCount": 10,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/__init__.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 15,
+      "nonEmptyLines": 14,
+      "metrics": {
+        "importCount": 13,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/act/__init__.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 7,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/act/example.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 25,
+      "nonEmptyLines": 17,
+      "classes": [
+        {
+          "name": "SWISH",
+          "startLine": 8,
+          "endLine": 18,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "SWISH",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 10
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 10
+        },
+        {
+          "caller": "forward",
+          "callee": "x.mul_",
+          "lineNumber": 15
+        },
+        {
+          "caller": "forward",
+          "callee": "torch.sigmoid",
+          "lineNumber": 15
+        },
+        {
+          "caller": "forward",
+          "callee": "torch.sigmoid",
+          "lineNumber": 18
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/config/__init__.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 7,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/config/example.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 27,
+      "nonEmptyLines": 17,
+      "functions": [
+        {
+          "name": "set_cfg_example",
+          "startLine": 6,
+          "endLine": 23,
+          "params": [
+            "cfg"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "set_cfg_example",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "set_cfg_example",
+          "callee": "CN",
+          "lineNumber": 20
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/feature_augment/__init__.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 7,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/feature_augment/example.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 19,
+      "nonEmptyLines": 13,
+      "functions": [
+        {
+          "name": "example_node_augmentation_func",
+          "startLine": 6,
+          "endLine": 15,
+          "params": [
+            "graph",
+            "**kwargs"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "example_node_augmentation_func",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "example_node_augmentation_func",
+          "callee": "list",
+          "lineNumber": 15
+        },
+        {
+          "caller": "example_node_augmentation_func",
+          "callee": "nx.clustering(graph.G).values",
+          "lineNumber": 15
+        },
+        {
+          "caller": "example_node_augmentation_func",
+          "callee": "nx.clustering",
+          "lineNumber": 15
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/feature_encoder/__init__.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 7,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/feature_encoder/example.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 55,
+      "nonEmptyLines": 35,
+      "classes": [
+        {
+          "name": "ExampleNodeEncoder",
+          "startLine": 7,
+          "endLine": 25,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "ExampleEdgeEncoder",
+          "startLine": 31,
+          "endLine": 51,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ExampleNodeEncoder",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "ExampleEdgeEncoder",
+          "line": 31,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super(ExampleNodeEncoder, self).__init__",
+          "lineNumber": 16
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 16
+        },
+        {
+          "caller": "__init__",
+          "callee": "torch.nn.Embedding",
+          "lineNumber": 18
+        },
+        {
+          "caller": "__init__",
+          "callee": "torch.nn.init.xavier_uniform_",
+          "lineNumber": 19
+        },
+        {
+          "caller": "forward",
+          "callee": "self.encoder",
+          "lineNumber": 23
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(ExampleEdgeEncoder, self).__init__",
+          "lineNumber": 34
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 34
+        },
+        {
+          "caller": "__init__",
+          "callee": "torch.nn.ModuleList",
+          "lineNumber": 36
+        },
+        {
+          "caller": "__init__",
+          "callee": "get_bond_feature_dims",
+          "lineNumber": 37
+        },
+        {
+          "caller": "__init__",
+          "callee": "enumerate",
+          "lineNumber": 39
+        },
+        {
+          "caller": "__init__",
+          "callee": "torch.nn.Embedding",
+          "lineNumber": 40
+        },
+        {
+          "caller": "__init__",
+          "callee": "torch.nn.init.xavier_uniform_",
+          "lineNumber": 41
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.bond_embedding_list.append",
+          "lineNumber": 42
+        },
+        {
+          "caller": "forward",
+          "callee": "range",
+          "lineNumber": 46
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 0,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/head/__init__.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 7,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/head/example.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 27,
+      "nonEmptyLines": 18,
+      "classes": [
+        {
+          "name": "ExampleNodeHead",
+          "startLine": 6,
+          "endLine": 23,
+          "methods": [
+            "__init__",
+            "_apply_index",
+            "forward"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ExampleNodeHead",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super(ExampleNodeHead, self).__init__",
+          "lineNumber": 10
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 10
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 11
+        },
+        {
+          "caller": "forward",
+          "callee": "self.layer_post_mp",
+          "lineNumber": 21
+        },
+        {
+          "caller": "forward",
+          "callee": "self._apply_index",
+          "lineNumber": 22
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/layer/__init__.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 7,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/layer/attconv.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 607,
+      "nonEmptyLines": 504,
+      "classes": [
+        {
+          "name": "GeneralAddAttConvLayer",
+          "startLine": 14,
+          "endLine": 121,
+          "methods": [
+            "__init__",
+            "reset_parameters",
+            "norm",
+            "forward",
+            "message",
+            "update",
+            "__repr__"
+          ],
+          "properties": []
+        },
+        {
+          "name": "GeneralMulAttConvLayer",
+          "startLine": 124,
+          "endLine": 234,
+          "methods": [
+            "__init__",
+            "reset_parameters",
+            "norm",
+            "forward",
+            "message",
+            "update",
+            "__repr__"
+          ],
+          "properties": []
+        },
+        {
+          "name": "GeneralAddAttConv",
+          "startLine": 237,
+          "endLine": 244,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "GeneralMulAttConv",
+          "startLine": 247,
+          "endLine": 254,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "GeneralEdgeAttConvv1Layer",
+          "startLine": 261,
+          "endLine": 413,
+          "methods": [
+            "__init__",
+            "reset_parameters",
+            "norm",
+            "forward",
+            "message",
+            "update",
+            "__repr__"
+          ],
+          "properties": []
+        },
+        {
+          "name": "GeneralEdgeAttConvv2Layer",
+          "startLine": 416,
+          "endLine": 578,
+          "methods": [
+            "__init__",
+            "reset_parameters",
+            "norm",
+            "forward",
+            "message",
+            "update",
+            "__repr__"
+          ],
+          "properties": []
+        },
+        {
+          "name": "GeneralEdgeAttConvv1",
+          "startLine": 581,
+          "endLine": 590,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "GeneralEdgeAttConvv2",
+          "startLine": 593,
+          "endLine": 602,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "GeneralAddAttConvLayer",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "GeneralMulAttConvLayer",
+          "line": 124,
+          "isDefault": false
+        },
+        {
+          "name": "GeneralAddAttConv",
+          "line": 237,
+          "isDefault": false
+        },
+        {
+          "name": "GeneralMulAttConv",
+          "line": 247,
+          "isDefault": false
+        },
+        {
+          "name": "GeneralEdgeAttConvv1Layer",
+          "line": 261,
+          "isDefault": false
+        },
+        {
+          "name": "GeneralEdgeAttConvv2Layer",
+          "line": 416,
+          "isDefault": false
+        },
+        {
+          "name": "GeneralEdgeAttConvv1",
+          "line": 581,
+          "isDefault": false
+        },
+        {
+          "name": "GeneralEdgeAttConvv2",
+          "line": 593,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super(GeneralAddAttConvLayer, self).__init__",
+          "lineNumber": 23
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 23
+        },
+        {
+          "caller": "__init__",
+          "callee": "int",
+          "lineNumber": 27
+        },
+        {
+          "caller": "__init__",
+          "callee": "int",
+          "lineNumber": 28
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 37
+        },
+        {
+          "caller": "__init__",
+          "callee": "Parameter",
+          "lineNumber": 39
+        },
+        {
+          "caller": "__init__",
+          "callee": "torch.Tensor",
+          "lineNumber": 40
+        },
+        {
+          "caller": "__init__",
+          "callee": "Parameter",
+          "lineNumber": 43
+        },
+        {
+          "caller": "__init__",
+          "callee": "torch.Tensor",
+          "lineNumber": 43
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.register_parameter",
+          "lineNumber": 45
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.reset_parameters",
+          "lineNumber": 47
+        },
+        {
+          "caller": "reset_parameters",
+          "callee": "glorot",
+          "lineNumber": 50
+        },
+        {
+          "caller": "reset_parameters",
+          "callee": "zeros",
+          "lineNumber": 51
+        },
+        {
+          "caller": "norm",
+          "callee": "torch.ones",
+          "lineNumber": 62
+        },
+        {
+          "caller": "norm",
+          "callee": "edge_index.size",
+          "lineNumber": 62
+        },
+        {
+          "caller": "norm",
+          "callee": "add_remaining_self_loops",
+          "lineNumber": 67
+        },
+        {
+          "caller": "norm",
+          "callee": "scatter_add",
+          "lineNumber": 71
+        },
+        {
+          "caller": "norm",
+          "callee": "deg.pow",
+          "lineNumber": 72
+        },
+        {
+          "caller": "norm",
+          "callee": "float",
+          "lineNumber": 73
+        },
+        {
+          "caller": "forward",
+          "callee": "edge_index.size",
+          "lineNumber": 79
+        },
+        {
+          "caller": "forward",
+          "callee": "RuntimeError",
+          "lineNumber": 80
+        },
+        {
+          "caller": "forward",
+          "callee": "'Cached {} number of edges, but found {}. Please '\r\n                    'disable the caching behavior of this layer by removing '\r\n                    'the `cached=True` argument in its constructor.'.format",
+          "lineNumber": 81
+        },
+        {
+          "caller": "forward",
+          "callee": "edge_index.size",
+          "lineNumber": 84
+        },
+        {
+          "caller": "forward",
+          "callee": "edge_index.size",
+          "lineNumber": 87
+        },
+        {
+          "caller": "forward",
+          "callee": "self.norm",
+          "lineNumber": 89
+        },
+        {
+          "caller": "forward",
+          "callee": "x.size",
+          "lineNumber": 89
+        },
+        {
+          "caller": "forward",
+          "callee": "self.linear_msg",
+          "lineNumber": 98
+        },
+        {
+          "caller": "forward",
+          "callee": "self.propagate",
+          "lineNumber": 100
+        },
+        {
+          "caller": "message",
+          "callee": "x_i.view",
+          "lineNumber": 103
+        },
+        {
+          "caller": "message",
+          "callee": "x_j.view",
+          "lineNumber": 104
+        },
+        {
+          "caller": "message",
+          "callee": "(torch.cat([x_i, x_j], dim=-1) * self.att).sum",
+          "lineNumber": 105
+        },
+        {
+          "caller": "message",
+          "callee": "torch.cat",
+          "lineNumber": 105
+        },
+        {
+          "caller": "message",
+          "callee": "F.leaky_relu",
+          "lineNumber": 106
+        },
+        {
+          "caller": "message",
+          "callee": "softmax",
+          "lineNumber": 107
+        },
+        {
+          "caller": "message",
+          "callee": "alpha.view",
+          "lineNumber": 108
+        },
+        {
+          "caller": "message",
+          "callee": "norm.view",
+          "lineNumber": 109
+        },
+        {
+          "caller": "update",
+          "callee": "aggr_out.view",
+          "lineNumber": 113
+        },
+        {
+          "caller": "__repr__",
+          "callee": "'{}({}, {}, {})'.format",
+          "lineNumber": 119
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(GeneralMulAttConvLayer, self).__init__",
+          "lineNumber": 133
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 133
+        },
+        {
+          "caller": "__init__",
+          "callee": "int",
+          "lineNumber": 137
+        },
+        {
+          "caller": "__init__",
+          "callee": "int",
+          "lineNumber": 138
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 147
+        },
+        {
+          "caller": "__init__",
+          "callee": "Parameter",
+          "lineNumber": 151
+        },
+        {
+          "caller": "__init__",
+          "callee": "torch.Tensor",
+          "lineNumber": 151
+        },
+        {
+          "caller": "__init__",
+          "callee": "torch.sqrt",
+          "lineNumber": 152
+        },
+        {
+          "caller": "__init__",
+          "callee": "torch.tensor",
+          "lineNumber": 152
+        },
+        {
+          "caller": "__init__",
+          "callee": "Parameter",
+          "lineNumber": 155
+        },
+        {
+          "caller": "__init__",
+          "callee": "torch.Tensor",
+          "lineNumber": 155
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.register_parameter",
+          "lineNumber": 157
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.reset_parameters",
+          "lineNumber": 159
+        },
+        {
+          "caller": "reset_parameters",
+          "callee": "zeros",
+          "lineNumber": 162
+        },
+        {
+          "caller": "reset_parameters",
+          "callee": "zeros",
+          "lineNumber": 163
+        },
+        {
+          "caller": "norm",
+          "callee": "torch.ones",
+          "lineNumber": 174
+        },
+        {
+          "caller": "norm",
+          "callee": "edge_index.size",
+          "lineNumber": 174
+        },
+        {
+          "caller": "norm",
+          "callee": "add_remaining_self_loops",
+          "lineNumber": 179
+        },
+        {
+          "caller": "norm",
+          "callee": "scatter_add",
+          "lineNumber": 183
+        },
+        {
+          "caller": "norm",
+          "callee": "deg.pow",
+          "lineNumber": 184
+        },
+        {
+          "caller": "norm",
+          "callee": "float",
+          "lineNumber": 185
+        },
+        {
+          "caller": "forward",
+          "callee": "edge_index.size",
+          "lineNumber": 191
+        },
+        {
+          "caller": "forward",
+          "callee": "RuntimeError",
+          "lineNumber": 192
+        },
+        {
+          "caller": "forward",
+          "callee": "'Cached {} number of edges, but found {}. Please '\r\n                    'disable the caching behavior of this layer by removing '\r\n                    'the `cached=True` argument in its constructor.'.format",
+          "lineNumber": 193
+        },
+        {
+          "caller": "forward",
+          "callee": "edge_index.size",
+          "lineNumber": 196
+        },
+        {
+          "caller": "forward",
+          "callee": "edge_index.size",
+          "lineNumber": 199
+        },
+        {
+          "caller": "forward",
+          "callee": "self.norm",
+          "lineNumber": 201
+        },
+        {
+          "caller": "forward",
+          "callee": "x.size",
+          "lineNumber": 201
+        },
+        {
+          "caller": "forward",
+          "callee": "self.linear_msg",
+          "lineNumber": 210
+        },
+        {
+          "caller": "forward",
+          "callee": "self.propagate",
+          "lineNumber": 212
+        },
+        {
+          "caller": "message",
+          "callee": "x_i.view",
+          "lineNumber": 216
+        },
+        {
+          "caller": "message",
+          "callee": "x_j.view",
+          "lineNumber": 217
+        },
+        {
+          "caller": "message",
+          "callee": "(x_i * x_j + self.bias_att).sum",
+          "lineNumber": 218
+        },
+        {
+          "caller": "message",
+          "callee": "softmax",
+          "lineNumber": 220
+        },
+        {
+          "caller": "message",
+          "callee": "alpha.view",
+          "lineNumber": 221
+        },
+        {
+          "caller": "message",
+          "callee": "norm.view",
+          "lineNumber": 222
+        },
+        {
+          "caller": "update",
+          "callee": "aggr_out.view",
+          "lineNumber": 226
+        },
+        {
+          "caller": "__repr__",
+          "callee": "'{}({}, {}, {})'.format",
+          "lineNumber": 232
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(GeneralAddAttConv, self).__init__",
+          "lineNumber": 239
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 239
+        },
+        {
+          "caller": "__init__",
+          "callee": "GeneralAddAttConvLayer",
+          "lineNumber": 240
+        },
+        {
+          "caller": "forward",
+          "callee": "self.model",
+          "lineNumber": 243
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(GeneralMulAttConv, self).__init__",
+          "lineNumber": 249
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 249
+        },
+        {
+          "caller": "__init__",
+          "callee": "GeneralMulAttConvLayer",
+          "lineNumber": 250
+        },
+        {
+          "caller": "forward",
+          "callee": "self.model",
+          "lineNumber": 253
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(GeneralEdgeAttConvv1Layer, self).__init__",
+          "lineNumber": 271
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 271
+        },
+        {
+          "caller": "__init__",
+          "callee": "int",
+          "lineNumber": 275
+        },
+        {
+          "caller": "__init__",
+          "callee": "int",
+          "lineNumber": 276
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 288
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 292
+        },
+        {
+          "caller": "__init__",
+          "callee": "Parameter",
+          "lineNumber": 296
+        },
+        {
+          "caller": "__init__",
+          "callee": "torch.Tensor",
+          "lineNumber": 297
+        },
+        {
+          "caller": "__init__",
+          "callee": "Parameter",
+          "lineNumber": 299
+        },
+        {
+          "caller": "__init__",
+          "callee": "torch.Tensor",
+          "lineNumber": 300
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 303
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.BatchNorm1d",
+          "lineNumber": 307
+        },
+        {
+          "caller": "__init__",
+          "callee": "Parameter",
+          "lineNumber": 312
+        },
+        {
+          "caller": "__init__",
+          "callee": "torch.Tensor",
+          "lineNumber": 312
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.register_parameter",
+          "lineNumber": 314
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.reset_parameters",
+          "lineNumber": 316
+        },
+        {
+          "caller": "reset_parameters",
+          "callee": "glorot",
+          "lineNumber": 319
+        },
+        {
+          "caller": "reset_parameters",
+          "callee": "glorot",
+          "lineNumber": 321
+        },
+        {
+          "caller": "reset_parameters",
+          "callee": "zeros",
+          "lineNumber": 322
+        },
+        {
+          "caller": "norm",
+          "callee": "torch.ones",
+          "lineNumber": 333
+        },
+        {
+          "caller": "norm",
+          "callee": "edge_index.size",
+          "lineNumber": 333
+        },
+        {
+          "caller": "norm",
+          "callee": "add_remaining_self_loops",
+          "lineNumber": 338
+        },
+        {
+          "caller": "norm",
+          "callee": "scatter_add",
+          "lineNumber": 342
+        },
+        {
+          "caller": "norm",
+          "callee": "deg.pow",
+          "lineNumber": 343
+        },
+        {
+          "caller": "norm",
+          "callee": "float",
+          "lineNumber": 344
+        },
+        {
+          "caller": "forward",
+          "callee": "edge_index.size",
+          "lineNumber": 355
+        },
+        {
+          "caller": "forward",
+          "callee": "RuntimeError",
+          "lineNumber": 356
+        },
+        {
+          "caller": "forward",
+          "callee": "'Cached {} number of edges, but found {}. Please '\r\n                    'disable the caching behavior of this layer by removing '\r\n                    'the `cached=True` argument in its constructor.'.format",
+          "lineNumber": 357
+        },
+        {
+          "caller": "forward",
+          "callee": "edge_index.size",
+          "lineNumber": 360
+        },
+        {
+          "caller": "forward",
+          "callee": "edge_index.size",
+          "lineNumber": 363
+        },
+        {
+          "caller": "forward",
+          "callee": "self.norm",
+          "lineNumber": 365
+        },
+        {
+          "caller": "forward",
+          "callee": "x.size",
+          "lineNumber": 365
+        },
+        {
+          "caller": "forward",
+          "callee": "self.propagate",
+          "lineNumber": 374
+        },
+        {
+          "caller": "message",
+          "callee": "torch.cat",
+          "lineNumber": 383
+        },
+        {
+          "caller": "message",
+          "callee": "torch.cat",
+          "lineNumber": 385
+        },
+        {
+          "caller": "message",
+          "callee": "self.linear_msg",
+          "lineNumber": 386
+        },
+        {
+          "caller": "message",
+          "callee": "x_j.view",
+          "lineNumber": 387
+        },
+        {
+          "caller": "message",
+          "callee": "task_emb.view",
+          "lineNumber": 389
+        },
+        {
+          "caller": "message",
+          "callee": "(x_j * self.att_msg).sum",
+          "lineNumber": 390
+        },
+        {
+          "caller": "message",
+          "callee": "(task_emb *\r\n                                                    self.att_task).sum",
+          "lineNumber": 390
+        },
+        {
+          "caller": "message",
+          "callee": "(x_j * self.att_msg).sum",
+          "lineNumber": 393
+        },
+        {
+          "caller": "message",
+          "callee": "F.leaky_relu",
+          "lineNumber": 394
+        },
+        {
+          "caller": "message",
+          "callee": "softmax",
+          "lineNumber": 395
+        },
+        {
+          "caller": "message",
+          "callee": "alpha.view",
+          "lineNumber": 396
+        },
+        {
+          "caller": "message",
+          "callee": "norm.view",
+          "lineNumber": 397
+        },
+        {
+          "caller": "update",
+          "callee": "aggr_out.view",
+          "lineNumber": 401
+        },
+        {
+          "caller": "update",
+          "callee": "self.linear_final_bn",
+          "lineNumber": 403
+        },
+        {
+          "caller": "update",
+          "callee": "self.linear_final",
+          "lineNumber": 405
+        },
+        {
+          "caller": "__repr__",
+          "callee": "'{}({}, {}, {})'.format",
+          "lineNumber": 411
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(GeneralEdgeAttConvv2Layer, self).__init__",
+          "lineNumber": 426
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 426
+        },
+        {
+          "caller": "__init__",
+          "callee": "int",
+          "lineNumber": 430
+        },
+        {
+          "caller": "__init__",
+          "callee": "int",
+          "lineNumber": 431
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 443
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 446
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 450
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 454
+        },
+        {
+          "caller": "__init__",
+          "callee": "Parameter",
+          "lineNumber": 458
+        },
+        {
+          "caller": "__init__",
+          "callee": "torch.Tensor",
+          "lineNumber": 459
+        },
+        {
+          "caller": "__init__",
+          "callee": "Parameter",
+          "lineNumber": 461
+        },
+        {
+          "caller": "__init__",
+          "callee": "torch.Tensor",
+          "lineNumber": 462
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 465
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.BatchNorm1d",
+          "lineNumber": 469
+        },
+        {
+          "caller": "__init__",
+          "callee": "Parameter",
+          "lineNumber": 474
+        },
+        {
+          "caller": "__init__",
+          "callee": "torch.Tensor",
+          "lineNumber": 474
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.register_parameter",
+          "lineNumber": 476
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.reset_parameters",
+          "lineNumber": 478
+        },
+        {
+          "caller": "reset_parameters",
+          "callee": "glorot",
+          "lineNumber": 481
+        },
+        {
+          "caller": "reset_parameters",
+          "callee": "glorot",
+          "lineNumber": 483
+        },
+        {
+          "caller": "reset_parameters",
+          "callee": "zeros",
+          "lineNumber": 484
+        },
+        {
+          "caller": "norm",
+          "callee": "torch.ones",
+          "lineNumber": 495
+        },
+        {
+          "caller": "norm",
+          "callee": "edge_index.size",
+          "lineNumber": 495
+        },
+        {
+          "caller": "norm",
+          "callee": "add_remaining_self_loops",
+          "lineNumber": 500
+        },
+        {
+          "caller": "norm",
+          "callee": "scatter_add",
+          "lineNumber": 504
+        },
+        {
+          "caller": "norm",
+          "callee": "deg.pow",
+          "lineNumber": 505
+        },
+        {
+          "caller": "norm",
+          "callee": "float",
+          "lineNumber": 506
+        },
+        {
+          "caller": "forward",
+          "callee": "edge_index.size",
+          "lineNumber": 517
+        },
+        {
+          "caller": "forward",
+          "callee": "RuntimeError",
+          "lineNumber": 518
+        },
+        {
+          "caller": "forward",
+          "callee": "'Cached {} number of edges, but found {}. Please '\r\n                    'disable the caching behavior of this layer by removing '\r\n                    'the `cached=True` argument in its constructor.'.format",
+          "lineNumber": 519
+        },
+        {
+          "caller": "forward",
+          "callee": "edge_index.size",
+          "lineNumber": 522
+        },
+        {
+          "caller": "forward",
+          "callee": "edge_index.size",
+          "lineNumber": 525
+        },
+        {
+          "caller": "forward",
+          "callee": "self.norm",
+          "lineNumber": 527
+        },
+        {
+          "caller": "forward",
+          "callee": "x.size",
+          "lineNumber": 527
+        },
+        {
+          "caller": "forward",
+          "callee": "self.propagate",
+          "lineNumber": 539
+        },
+        {
+          "caller": "message",
+          "callee": "torch.cat",
+          "lineNumber": 548
+        },
+        {
+          "caller": "message",
+          "callee": "torch.cat",
+          "lineNumber": 550
+        },
+        {
+          "caller": "message",
+          "callee": "self.linear_value",
+          "lineNumber": 551
+        },
+        {
+          "caller": "message",
+          "callee": "x_j.view",
+          "lineNumber": 552
+        },
+        {
+          "caller": "message",
+          "callee": "task_emb.view",
+          "lineNumber": 554
+        },
+        {
+          "caller": "message",
+          "callee": "(x_j * self.att_msg).sum",
+          "lineNumber": 555
+        },
+        {
+          "caller": "message",
+          "callee": "(task_emb *\r\n                                                    self.att_task).sum",
+          "lineNumber": 555
+        },
+        {
+          "caller": "message",
+          "callee": "(x_j * self.att_msg).sum",
+          "lineNumber": 558
+        },
+        {
+          "caller": "message",
+          "callee": "F.leaky_relu",
+          "lineNumber": 559
+        },
+        {
+          "caller": "message",
+          "callee": "softmax",
+          "lineNumber": 560
+        },
+        {
+          "caller": "message",
+          "callee": "alpha.view",
+          "lineNumber": 561
+        },
+        {
+          "caller": "message",
+          "callee": "norm.view",
+          "lineNumber": 562
+        },
+        {
+          "caller": "update",
+          "callee": "aggr_out.view",
+          "lineNumber": 566
+        },
+        {
+          "caller": "update",
+          "callee": "self.linear_final_bn",
+          "lineNumber": 568
+        },
+        {
+          "caller": "update",
+          "callee": "self.linear_final",
+          "lineNumber": 570
+        },
+        {
+          "caller": "__repr__",
+          "callee": "'{}({}, {}, {})'.format",
+          "lineNumber": 576
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(GeneralEdgeAttConvv1, self).__init__",
+          "lineNumber": 583
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 583
+        },
+        {
+          "caller": "__init__",
+          "callee": "GeneralEdgeAttConvv1Layer",
+          "lineNumber": 584
+        },
+        {
+          "caller": "forward",
+          "callee": "self.model",
+          "lineNumber": 587
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(GeneralEdgeAttConvv2, self).__init__",
+          "lineNumber": 595
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 595
+        },
+        {
+          "caller": "__init__",
+          "callee": "GeneralEdgeAttConvv2Layer",
+          "lineNumber": 596
+        },
+        {
+          "caller": "forward",
+          "callee": "self.model",
+          "lineNumber": 599
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 0,
+        "classCount": 8
+      }
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/layer/example.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 121,
+      "nonEmptyLines": 84,
+      "classes": [
+        {
+          "name": "ExampleConv1",
+          "startLine": 16,
+          "endLine": 58,
+          "methods": [
+            "__init__",
+            "reset_parameters",
+            "forward",
+            "message",
+            "update",
+            "__repr__"
+          ],
+          "properties": []
+        },
+        {
+          "name": "ExampleConv2Layer",
+          "startLine": 67,
+          "endLine": 106,
+          "methods": [
+            "__init__",
+            "reset_parameters",
+            "forward",
+            "message",
+            "update",
+            "__repr__"
+          ],
+          "properties": []
+        },
+        {
+          "name": "ExampleConv2",
+          "startLine": 109,
+          "endLine": 116,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ExampleConv1",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "ExampleConv2Layer",
+          "line": 67,
+          "isDefault": false
+        },
+        {
+          "name": "ExampleConv2",
+          "line": 109,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super(ExampleConv1, self).__init__",
+          "lineNumber": 21
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 21
+        },
+        {
+          "caller": "__init__",
+          "callee": "Parameter",
+          "lineNumber": 26
+        },
+        {
+          "caller": "__init__",
+          "callee": "torch.Tensor",
+          "lineNumber": 26
+        },
+        {
+          "caller": "__init__",
+          "callee": "Parameter",
+          "lineNumber": 29
+        },
+        {
+          "caller": "__init__",
+          "callee": "torch.Tensor",
+          "lineNumber": 29
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.register_parameter",
+          "lineNumber": 31
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.reset_parameters",
+          "lineNumber": 33
+        },
+        {
+          "caller": "reset_parameters",
+          "callee": "glorot",
+          "lineNumber": 36
+        },
+        {
+          "caller": "reset_parameters",
+          "callee": "zeros",
+          "lineNumber": 37
+        },
+        {
+          "caller": "forward",
+          "callee": "torch.matmul",
+          "lineNumber": 42
+        },
+        {
+          "caller": "forward",
+          "callee": "self.propagate",
+          "lineNumber": 44
+        },
+        {
+          "caller": "__repr__",
+          "callee": "'{}({}, {})'.format",
+          "lineNumber": 57
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(ExampleConv2Layer, self).__init__",
+          "lineNumber": 72
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 72
+        },
+        {
+          "caller": "__init__",
+          "callee": "Parameter",
+          "lineNumber": 77
+        },
+        {
+          "caller": "__init__",
+          "callee": "torch.Tensor",
+          "lineNumber": 77
+        },
+        {
+          "caller": "__init__",
+          "callee": "Parameter",
+          "lineNumber": 80
+        },
+        {
+          "caller": "__init__",
+          "callee": "torch.Tensor",
+          "lineNumber": 80
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.register_parameter",
+          "lineNumber": 82
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.reset_parameters",
+          "lineNumber": 84
+        },
+        {
+          "caller": "reset_parameters",
+          "callee": "glorot",
+          "lineNumber": 87
+        },
+        {
+          "caller": "reset_parameters",
+          "callee": "zeros",
+          "lineNumber": 88
+        },
+        {
+          "caller": "forward",
+          "callee": "torch.matmul",
+          "lineNumber": 92
+        },
+        {
+          "caller": "forward",
+          "callee": "self.propagate",
+          "lineNumber": 94
+        },
+        {
+          "caller": "__repr__",
+          "callee": "'{}({}, {})'.format",
+          "lineNumber": 105
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(ExampleConv2, self).__init__",
+          "lineNumber": 111
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 111
+        },
+        {
+          "caller": "__init__",
+          "callee": "ExampleConv2Layer",
+          "lineNumber": 112
+        },
+        {
+          "caller": "forward",
+          "callee": "self.model",
+          "lineNumber": 115
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 0,
+        "classCount": 3
+      }
+    }
+  ]
+}

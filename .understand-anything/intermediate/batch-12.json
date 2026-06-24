@@ -1,0 +1,581 @@
+{
+  "nodes": [
+    {
+      "id": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+ports.yaml",
+      "type": "config",
+      "name": "AML-Small-HI-SparseNodeGT+ports.yaml",
+      "filePath": "configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+ports.yaml",
+      "summary": "Defines an AML Small-HI experiment configuration for the SparseNodeGT transformer with port features, using hetero-edge AML classification with link-neighbor sampling, weighted cross-entropy, and AdamW training settings.",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "graph-transformer",
+        "high-illicit-split"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config organized into dataset, train, validation, model, GNN/GT, and optimizer sections."
+    },
+    {
+      "id": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+ports+Ego.yaml",
+      "type": "config",
+      "name": "AML-Small-HI-SparseNodeGT+ports+Ego.yaml",
+      "filePath": "configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+ports+Ego.yaml",
+      "summary": "Defines an AML Small-HI experiment configuration for the SparseNodeGT transformer with port features, ego-network augmentation, using hetero-edge AML classification with link-neighbor sampling, weighted cross-entropy, and AdamW training settings.",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "graph-transformer",
+        "high-illicit-split"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config organized into dataset, train, validation, model, GNN/GT, and optimizer sections."
+    },
+    {
+      "id": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+ports+LP.yaml",
+      "type": "config",
+      "name": "AML-Small-HI-SparseNodeGT+ports+LP.yaml",
+      "filePath": "configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+ports+LP.yaml",
+      "summary": "Defines an AML Small-HI experiment configuration for the SparseNodeGT transformer with port features, label positional encoding, using hetero-edge AML classification with link-neighbor sampling, weighted cross-entropy, and AdamW training settings.",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "graph-transformer",
+        "high-illicit-split"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config organized into dataset, train, validation, model, GNN/GT, and optimizer sections."
+    },
+    {
+      "id": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+RMP.yaml",
+      "type": "config",
+      "name": "AML-Small-HI-SparseNodeGT+RMP.yaml",
+      "filePath": "configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+RMP.yaml",
+      "summary": "Defines an AML Small-HI experiment configuration for the SparseNodeGT transformer with reverse message passing, using hetero-edge AML classification with link-neighbor sampling, weighted cross-entropy, and AdamW training settings.",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "graph-transformer",
+        "high-illicit-split"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config organized into dataset, train, validation, model, GNN/GT, and optimizer sections."
+    },
+    {
+      "id": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT-EdgeAttn.yaml",
+      "type": "config",
+      "name": "AML-Small-HI-SparseNodeGT-EdgeAttn.yaml",
+      "filePath": "configs/AML-Small-HI/AML-Small-HI-SparseNodeGT-EdgeAttn.yaml",
+      "summary": "Defines an AML Small-HI experiment configuration for the SparseNodeGT transformer with edge attention masking, using hetero-edge AML classification with link-neighbor sampling, weighted cross-entropy, and AdamW training settings.",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "graph-transformer",
+        "high-illicit-split"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config organized into dataset, train, validation, model, GNN/GT, and optimizer sections."
+    },
+    {
+      "id": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT-EdgeGate.yaml",
+      "type": "config",
+      "name": "AML-Small-HI-SparseNodeGT-EdgeGate.yaml",
+      "filePath": "configs/AML-Small-HI/AML-Small-HI-SparseNodeGT-EdgeGate.yaml",
+      "summary": "Defines an AML Small-HI experiment configuration for the SparseNodeGT transformer with edge gating, using hetero-edge AML classification with link-neighbor sampling, weighted cross-entropy, and AdamW training settings.",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "graph-transformer",
+        "high-illicit-split"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config organized into dataset, train, validation, model, GNN/GT, and optimizer sections."
+    },
+    {
+      "id": "config:configs/AML-Small-LI/AML-Small-LI-GATE.yaml",
+      "type": "config",
+      "name": "AML-Small-LI-GATE.yaml",
+      "filePath": "configs/AML-Small-LI/AML-Small-LI-GATE.yaml",
+      "summary": "Defines an AML Small-LI experiment configuration for the GATE baseline, using hetero-edge AML classification with link-neighbor sampling, weighted cross-entropy, and AdamW training settings.",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "gnn-baseline",
+        "low-illicit-split"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config organized into dataset, train, validation, model, GNN/GT, and optimizer sections."
+    },
+    {
+      "id": "config:configs/AML-Small-LI/AML-Small-LI-GatedGCN.yaml",
+      "type": "config",
+      "name": "AML-Small-LI-GatedGCN.yaml",
+      "filePath": "configs/AML-Small-LI/AML-Small-LI-GatedGCN.yaml",
+      "summary": "Defines an AML Small-LI experiment configuration for the GatedGCN baseline, using hetero-edge AML classification with link-neighbor sampling, weighted cross-entropy, and AdamW training settings.",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "gnn-baseline",
+        "low-illicit-split"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config organized into dataset, train, validation, model, GNN/GT, and optimizer sections."
+    },
+    {
+      "id": "config:configs/AML-Small-LI/AML-Small-LI-GINE.yaml",
+      "type": "config",
+      "name": "AML-Small-LI-GINE.yaml",
+      "filePath": "configs/AML-Small-LI/AML-Small-LI-GINE.yaml",
+      "summary": "Defines an AML Small-LI experiment configuration for the GINE baseline, using hetero-edge AML classification with link-neighbor sampling, weighted cross-entropy, and AdamW training settings.",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "gnn-baseline",
+        "low-illicit-split"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config organized into dataset, train, validation, model, GNN/GT, and optimizer sections."
+    },
+    {
+      "id": "config:configs/AML-Small-LI/AML-Small-LI-GINE+Ego.yaml",
+      "type": "config",
+      "name": "AML-Small-LI-GINE+Ego.yaml",
+      "filePath": "configs/AML-Small-LI/AML-Small-LI-GINE+Ego.yaml",
+      "summary": "Defines an AML Small-LI experiment configuration for the GINE baseline with ego-network augmentation, using hetero-edge AML classification with link-neighbor sampling, weighted cross-entropy, and AdamW training settings.",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "gnn-baseline",
+        "low-illicit-split"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config organized into dataset, train, validation, model, GNN/GT, and optimizer sections."
+    },
+    {
+      "id": "config:configs/AML-Small-LI/AML-Small-LI-GINE+EU.yaml",
+      "type": "config",
+      "name": "AML-Small-LI-GINE+EU.yaml",
+      "filePath": "configs/AML-Small-LI/AML-Small-LI-GINE+EU.yaml",
+      "summary": "Defines an AML Small-LI experiment configuration for the GINE baseline with edge-update features, using hetero-edge AML classification with link-neighbor sampling, weighted cross-entropy, and AdamW training settings.",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "gnn-baseline",
+        "low-illicit-split"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config organized into dataset, train, validation, model, GNN/GT, and optimizer sections."
+    },
+    {
+      "id": "config:configs/AML-Small-LI/AML-Small-LI-GINE+ports.yaml",
+      "type": "config",
+      "name": "AML-Small-LI-GINE+ports.yaml",
+      "filePath": "configs/AML-Small-LI/AML-Small-LI-GINE+ports.yaml",
+      "summary": "Defines an AML Small-LI experiment configuration for the GINE baseline with port features, using hetero-edge AML classification with link-neighbor sampling, weighted cross-entropy, and AdamW training settings.",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "gnn-baseline",
+        "low-illicit-split"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config organized into dataset, train, validation, model, GNN/GT, and optimizer sections."
+    },
+    {
+      "id": "config:configs/AML-Small-LI/AML-Small-LI-GINE+RMP.yaml",
+      "type": "config",
+      "name": "AML-Small-LI-GINE+RMP.yaml",
+      "filePath": "configs/AML-Small-LI/AML-Small-LI-GINE+RMP.yaml",
+      "summary": "Defines an AML Small-LI experiment configuration for the GINE baseline with reverse message passing, using hetero-edge AML classification with link-neighbor sampling, weighted cross-entropy, and AdamW training settings.",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "gnn-baseline",
+        "low-illicit-split"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config organized into dataset, train, validation, model, GNN/GT, and optimizer sections."
+    },
+    {
+      "id": "config:configs/AML-Small-LI/AML-Small-LI-MLP.yaml",
+      "type": "config",
+      "name": "AML-Small-LI-MLP.yaml",
+      "filePath": "configs/AML-Small-LI/AML-Small-LI-MLP.yaml",
+      "summary": "Defines an AML Small-LI experiment configuration for the MLP baseline, using hetero-edge AML classification with link-neighbor sampling, weighted cross-entropy, and AdamW training settings.",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "baseline-model",
+        "low-illicit-split"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config organized into dataset, train, validation, model, GNN/GT, and optimizer sections."
+    },
+    {
+      "id": "config:configs/AML-Small-LI/AML-Small-LI-Multi-GINE.yaml",
+      "type": "config",
+      "name": "AML-Small-LI-Multi-GINE.yaml",
+      "filePath": "configs/AML-Small-LI/AML-Small-LI-Multi-GINE.yaml",
+      "summary": "Defines an AML Small-LI experiment configuration for the multi-relation GINE baseline, using hetero-edge AML classification with link-neighbor sampling, weighted cross-entropy, and AdamW training settings.",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "gnn-baseline",
+        "low-illicit-split"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config organized into dataset, train, validation, model, GNN/GT, and optimizer sections."
+    },
+    {
+      "id": "config:configs/AML-Small-LI/AML-Small-LI-Multi-GINE+EU.yaml",
+      "type": "config",
+      "name": "AML-Small-LI-Multi-GINE+EU.yaml",
+      "filePath": "configs/AML-Small-LI/AML-Small-LI-Multi-GINE+EU.yaml",
+      "summary": "Defines an AML Small-LI experiment configuration for the multi-relation GINE baseline with edge-update features, using hetero-edge AML classification with link-neighbor sampling, weighted cross-entropy, and AdamW training settings.",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "gnn-baseline",
+        "low-illicit-split"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config organized into dataset, train, validation, model, GNN/GT, and optimizer sections."
+    },
+    {
+      "id": "config:configs/AML-Small-LI/AML-Small-LI-Multi-PNA.yaml",
+      "type": "config",
+      "name": "AML-Small-LI-Multi-PNA.yaml",
+      "filePath": "configs/AML-Small-LI/AML-Small-LI-Multi-PNA.yaml",
+      "summary": "Defines an AML Small-LI experiment configuration for the multi-relation PNA baseline, using hetero-edge AML classification with link-neighbor sampling, weighted cross-entropy, and AdamW training settings.",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "gnn-baseline",
+        "low-illicit-split"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config organized into dataset, train, validation, model, GNN/GT, and optimizer sections."
+    },
+    {
+      "id": "config:configs/AML-Small-LI/AML-Small-LI-Multi-PNA+EU.yaml",
+      "type": "config",
+      "name": "AML-Small-LI-Multi-PNA+EU.yaml",
+      "filePath": "configs/AML-Small-LI/AML-Small-LI-Multi-PNA+EU.yaml",
+      "summary": "Defines an AML Small-LI experiment configuration for the multi-relation PNA baseline with edge-update features, using hetero-edge AML classification with link-neighbor sampling, weighted cross-entropy, and AdamW training settings.",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "gnn-baseline",
+        "low-illicit-split"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config organized into dataset, train, validation, model, GNN/GT, and optimizer sections."
+    },
+    {
+      "id": "config:configs/AML-Small-LI/AML-Small-LI-Multi-SparseNodeGT.yaml",
+      "type": "config",
+      "name": "AML-Small-LI-Multi-SparseNodeGT.yaml",
+      "filePath": "configs/AML-Small-LI/AML-Small-LI-Multi-SparseNodeGT.yaml",
+      "summary": "Defines an AML Small-LI experiment configuration for the SparseNodeGT transformer, using hetero-edge AML classification with link-neighbor sampling, weighted cross-entropy, and AdamW training settings.",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "graph-transformer",
+        "low-illicit-split"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config organized into dataset, train, validation, model, GNN/GT, and optimizer sections."
+    },
+    {
+      "id": "config:configs/AML-Small-LI/AML-Small-LI-PNA.yaml",
+      "type": "config",
+      "name": "AML-Small-LI-PNA.yaml",
+      "filePath": "configs/AML-Small-LI/AML-Small-LI-PNA.yaml",
+      "summary": "Defines an AML Small-LI experiment configuration for the PNA baseline, using hetero-edge AML classification with link-neighbor sampling, weighted cross-entropy, and AdamW training settings.",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "gnn-baseline",
+        "low-illicit-split"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config organized into dataset, train, validation, model, GNN/GT, and optimizer sections."
+    },
+    {
+      "id": "config:configs/AML-Small-LI/AML-Small-LI-PNA+EU.yaml",
+      "type": "config",
+      "name": "AML-Small-LI-PNA+EU.yaml",
+      "filePath": "configs/AML-Small-LI/AML-Small-LI-PNA+EU.yaml",
+      "summary": "Defines an AML Small-LI experiment configuration for the PNA baseline with edge-update features, using hetero-edge AML classification with link-neighbor sampling, weighted cross-entropy, and AdamW training settings.",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "gnn-baseline",
+        "low-illicit-split"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config organized into dataset, train, validation, model, GNN/GT, and optimizer sections."
+    },
+    {
+      "id": "config:configs/AML-Small-LI/AML-Small-LI-SparseNodeGT.yaml",
+      "type": "config",
+      "name": "AML-Small-LI-SparseNodeGT.yaml",
+      "filePath": "configs/AML-Small-LI/AML-Small-LI-SparseNodeGT.yaml",
+      "summary": "Defines an AML Small-LI experiment configuration for the SparseNodeGT transformer, using hetero-edge AML classification with link-neighbor sampling, weighted cross-entropy, and AdamW training settings.",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "graph-transformer",
+        "low-illicit-split"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config organized into dataset, train, validation, model, GNN/GT, and optimizer sections."
+    },
+    {
+      "id": "config:configs/AML-Small-LI/AML-Small-LI-SparseNodeGT+Ego.yaml",
+      "type": "config",
+      "name": "AML-Small-LI-SparseNodeGT+Ego.yaml",
+      "filePath": "configs/AML-Small-LI/AML-Small-LI-SparseNodeGT+Ego.yaml",
+      "summary": "Defines an AML Small-LI experiment configuration for the SparseNodeGT transformer with ego-network augmentation, using hetero-edge AML classification with link-neighbor sampling, weighted cross-entropy, and AdamW training settings.",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "graph-transformer",
+        "low-illicit-split"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config organized into dataset, train, validation, model, GNN/GT, and optimizer sections."
+    },
+    {
+      "id": "config:configs/AML-Small-LI/AML-Small-LI-SparseNodeGT+ports.yaml",
+      "type": "config",
+      "name": "AML-Small-LI-SparseNodeGT+ports.yaml",
+      "filePath": "configs/AML-Small-LI/AML-Small-LI-SparseNodeGT+ports.yaml",
+      "summary": "Defines an AML Small-LI experiment configuration for the SparseNodeGT transformer with port features, using hetero-edge AML classification with link-neighbor sampling, weighted cross-entropy, and AdamW training settings.",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "graph-transformer",
+        "low-illicit-split"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config organized into dataset, train, validation, model, GNN/GT, and optimizer sections."
+    },
+    {
+      "id": "config:configs/AML-Small-LI/AML-Small-LI-SparseNodeGT+ports+Ego.yaml",
+      "type": "config",
+      "name": "AML-Small-LI-SparseNodeGT+ports+Ego.yaml",
+      "filePath": "configs/AML-Small-LI/AML-Small-LI-SparseNodeGT+ports+Ego.yaml",
+      "summary": "Defines an AML Small-LI experiment configuration for the SparseNodeGT transformer with port features, ego-network augmentation, using hetero-edge AML classification with link-neighbor sampling, weighted cross-entropy, and AdamW training settings.",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "graph-transformer",
+        "low-illicit-split"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config organized into dataset, train, validation, model, GNN/GT, and optimizer sections."
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+ports.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+ports+Ego.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+ports+LP.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+RMP.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT-EdgeAttn.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-HI/AML-Small-HI-SparseNodeGT-EdgeGate.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI/AML-Small-LI-GATE.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI/AML-Small-LI-GatedGCN.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI/AML-Small-LI-GINE.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI/AML-Small-LI-GINE+Ego.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI/AML-Small-LI-GINE+EU.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI/AML-Small-LI-GINE+ports.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI/AML-Small-LI-GINE+RMP.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI/AML-Small-LI-MLP.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI/AML-Small-LI-Multi-GINE.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI/AML-Small-LI-Multi-GINE+EU.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI/AML-Small-LI-Multi-PNA.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI/AML-Small-LI-Multi-PNA+EU.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI/AML-Small-LI-Multi-SparseNodeGT.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI/AML-Small-LI-PNA.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI/AML-Small-LI-PNA+EU.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI/AML-Small-LI-SparseNodeGT.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI/AML-Small-LI-SparseNodeGT+Ego.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI/AML-Small-LI-SparseNodeGT+ports.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI/AML-Small-LI-SparseNodeGT+ports+Ego.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

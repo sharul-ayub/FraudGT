@@ -1,0 +1,931 @@
+{
+  "nodes": [
+    {
+      "id": "config:configs/AML-Small-LI/AML-Small-LI-SparseNodeGT+RMP.yaml",
+      "type": "config",
+      "name": "AML-Small-LI-SparseNodeGT+RMP.yaml",
+      "filePath": "configs/AML-Small-LI/AML-Small-LI-SparseNodeGT+RMP.yaml",
+      "summary": "Configures a AML Small-LI hetero edge experiment using GTModel and SparseNodeTransformer with reverse message passing. It sets dataset loading, training and validation cadence, model parameters, and optimizer settings.",
+      "tags": [
+        "configuration",
+        "aml-dataset",
+        "training-config",
+        "graph-transformer",
+        "reverse-message-passing"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config with 13 top-level sections: out_dir, metric_best, seed, wandb, dataset, num_threads, num_workers, train, val, model, gt, gnn, optim."
+    },
+    {
+      "id": "config:configs/AML-Small-LI/AML-Small-LI-SparseNodeGT-EdgeAttn.yaml",
+      "type": "config",
+      "name": "AML-Small-LI-SparseNodeGT-EdgeAttn.yaml",
+      "filePath": "configs/AML-Small-LI/AML-Small-LI-SparseNodeGT-EdgeAttn.yaml",
+      "summary": "Configures a AML Small-LI hetero edge experiment using GTModel and SparseNodeTransformer with edge attention. It sets dataset loading, training and validation cadence, model parameters, and optimizer settings.",
+      "tags": [
+        "configuration",
+        "aml-dataset",
+        "training-config",
+        "graph-transformer",
+        "edge-attention"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config with 13 top-level sections: out_dir, metric_best, seed, wandb, dataset, num_threads, num_workers, train, val, model, gt, gnn, optim."
+    },
+    {
+      "id": "config:configs/AML-Small-LI/AML-Small-LI-SparseNodeGT-EdgeGate.yaml",
+      "type": "config",
+      "name": "AML-Small-LI-SparseNodeGT-EdgeGate.yaml",
+      "filePath": "configs/AML-Small-LI/AML-Small-LI-SparseNodeGT-EdgeGate.yaml",
+      "summary": "Configures a AML Small-LI hetero edge experiment using GTModel and SparseNodeTransformer with edge gating. It sets dataset loading, training and validation cadence, model parameters, and optimizer settings.",
+      "tags": [
+        "configuration",
+        "aml-dataset",
+        "training-config",
+        "graph-transformer",
+        "edge-gating"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config with 13 top-level sections: out_dir, metric_best, seed, wandb, dataset, num_threads, num_workers, train, val, model, gt, gnn, optim."
+    },
+    {
+      "id": "config:configs/AML-Small-LI_Transfer/AML-Small-LI_Transfer-Multi-SparseNodeGT.yaml",
+      "type": "config",
+      "name": "AML-Small-LI_Transfer-Multi-SparseNodeGT.yaml",
+      "filePath": "configs/AML-Small-LI_Transfer/AML-Small-LI_Transfer-Multi-SparseNodeGT.yaml",
+      "summary": "Configures a AML Small-LI hetero edge experiment using GTModel and SparseNodeTransformer with reverse message passing, ports features, pretrained transfer. It sets dataset loading, training and validation cadence, model parameters, and optimizer settings. It also points at a pretrained run for transfer initialization.",
+      "tags": [
+        "configuration",
+        "aml-dataset",
+        "training-config",
+        "graph-transformer",
+        "transfer-suite"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config with 14 top-level sections: out_dir, metric_best, seed, wandb, dataset, num_threads, num_workers, train, val, pretrained, model, gt, gnn, optim."
+    },
+    {
+      "id": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-GATE.yaml",
+      "type": "config",
+      "name": "AML-Small-LI-GATE.yaml",
+      "filePath": "configs/AML-Small-LI_Transfer/AML-Small-LI-GATE.yaml",
+      "summary": "Configures a AML Small-LI hetero edge experiment using HomoGNNEdgeModel and GATE. It sets dataset loading, training and validation cadence, model parameters, and optimizer settings.",
+      "tags": [
+        "configuration",
+        "aml-dataset",
+        "training-config",
+        "gate-gnn",
+        "transfer-suite"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config with 12 top-level sections: out_dir, metric_best, seed, wandb, dataset, num_threads, num_workers, train, val, model, gnn, optim."
+    },
+    {
+      "id": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-GatedGCN.yaml",
+      "type": "config",
+      "name": "AML-Small-LI-GatedGCN.yaml",
+      "filePath": "configs/AML-Small-LI_Transfer/AML-Small-LI-GatedGCN.yaml",
+      "summary": "Configures a AML Small-LI hetero edge experiment using HomoGNNEdgeModel and GatedGCN. It sets dataset loading, training and validation cadence, model parameters, and optimizer settings.",
+      "tags": [
+        "configuration",
+        "aml-dataset",
+        "training-config",
+        "gatedgcn-gnn",
+        "transfer-suite"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config with 12 top-level sections: out_dir, metric_best, seed, wandb, dataset, num_threads, num_workers, train, val, model, gnn, optim."
+    },
+    {
+      "id": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-GINE.yaml",
+      "type": "config",
+      "name": "AML-Small-LI-GINE.yaml",
+      "filePath": "configs/AML-Small-LI_Transfer/AML-Small-LI-GINE.yaml",
+      "summary": "Configures a AML Small-LI hetero edge experiment using HomoGNNEdgeModel and GINE. It sets dataset loading, training and validation cadence, model parameters, and optimizer settings.",
+      "tags": [
+        "configuration",
+        "aml-dataset",
+        "training-config",
+        "gine-gnn",
+        "transfer-suite"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config with 12 top-level sections: out_dir, metric_best, seed, wandb, dataset, num_threads, num_workers, train, val, model, gnn, optim."
+    },
+    {
+      "id": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-GINE+Ego.yaml",
+      "type": "config",
+      "name": "AML-Small-LI-GINE+Ego.yaml",
+      "filePath": "configs/AML-Small-LI_Transfer/AML-Small-LI-GINE+Ego.yaml",
+      "summary": "Configures a AML Small-LI hetero edge experiment using HomoGNNEdgeModel and GINE with ego features. It sets dataset loading, training and validation cadence, model parameters, and optimizer settings.",
+      "tags": [
+        "configuration",
+        "aml-dataset",
+        "training-config",
+        "gine-gnn",
+        "transfer-suite"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config with 12 top-level sections: out_dir, metric_best, seed, wandb, dataset, num_threads, num_workers, train, val, model, gnn, optim."
+    },
+    {
+      "id": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-GINE+EU.yaml",
+      "type": "config",
+      "name": "AML-Small-LI-GINE+EU.yaml",
+      "filePath": "configs/AML-Small-LI_Transfer/AML-Small-LI-GINE+EU.yaml",
+      "summary": "Configures a AML Small-LI hetero edge experiment using HomoGNNEdgeModel and GINE with edge update. It sets dataset loading, training and validation cadence, model parameters, and optimizer settings.",
+      "tags": [
+        "configuration",
+        "aml-dataset",
+        "training-config",
+        "gine-gnn",
+        "transfer-suite"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config with 12 top-level sections: out_dir, metric_best, seed, wandb, dataset, num_threads, num_workers, train, val, model, gnn, optim."
+    },
+    {
+      "id": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-GINE+ports.yaml",
+      "type": "config",
+      "name": "AML-Small-LI-GINE+ports.yaml",
+      "filePath": "configs/AML-Small-LI_Transfer/AML-Small-LI-GINE+ports.yaml",
+      "summary": "Configures a AML Small-LI hetero edge experiment using HomoGNNEdgeModel and GINE with ports features. It sets dataset loading, training and validation cadence, model parameters, and optimizer settings.",
+      "tags": [
+        "configuration",
+        "aml-dataset",
+        "training-config",
+        "gine-gnn",
+        "transfer-suite"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config with 12 top-level sections: out_dir, metric_best, seed, wandb, dataset, num_threads, num_workers, train, val, model, gnn, optim."
+    },
+    {
+      "id": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-GINE+RMP.yaml",
+      "type": "config",
+      "name": "AML-Small-LI-GINE+RMP.yaml",
+      "filePath": "configs/AML-Small-LI_Transfer/AML-Small-LI-GINE+RMP.yaml",
+      "summary": "Configures a AML Small-LI hetero edge experiment using HomoGNNEdgeModel and GINE with reverse message passing. It sets dataset loading, training and validation cadence, model parameters, and optimizer settings.",
+      "tags": [
+        "configuration",
+        "aml-dataset",
+        "training-config",
+        "gine-gnn",
+        "transfer-suite"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config with 12 top-level sections: out_dir, metric_best, seed, wandb, dataset, num_threads, num_workers, train, val, model, gnn, optim."
+    },
+    {
+      "id": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-MLP.yaml",
+      "type": "config",
+      "name": "AML-Small-LI-MLP.yaml",
+      "filePath": "configs/AML-Small-LI_Transfer/AML-Small-LI-MLP.yaml",
+      "summary": "Configures a AML Small-LI hetero edge experiment using MLPModel and MLP. It sets dataset loading, training and validation cadence, model parameters, and optimizer settings.",
+      "tags": [
+        "configuration",
+        "aml-dataset",
+        "training-config",
+        "mlp-baseline",
+        "transfer-suite"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config with 12 top-level sections: out_dir, metric_best, seed, wandb, dataset, num_threads, num_workers, train, val, model, gnn, optim."
+    },
+    {
+      "id": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-Multi-GINE.yaml",
+      "type": "config",
+      "name": "AML-Small-LI-Multi-GINE.yaml",
+      "filePath": "configs/AML-Small-LI_Transfer/AML-Small-LI-Multi-GINE.yaml",
+      "summary": "Configures a AML Small-LI hetero edge experiment using HomoGNNEdgeModel and GINE with reverse message passing, ports features. It sets dataset loading, training and validation cadence, model parameters, and optimizer settings.",
+      "tags": [
+        "configuration",
+        "aml-dataset",
+        "training-config",
+        "gine-gnn",
+        "transfer-suite"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config with 12 top-level sections: out_dir, metric_best, seed, wandb, dataset, num_threads, num_workers, train, val, model, gnn, optim."
+    },
+    {
+      "id": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-Multi-GINE+EU.yaml",
+      "type": "config",
+      "name": "AML-Small-LI-Multi-GINE+EU.yaml",
+      "filePath": "configs/AML-Small-LI_Transfer/AML-Small-LI-Multi-GINE+EU.yaml",
+      "summary": "Configures a AML Small-LI hetero edge experiment using HomoGNNEdgeModel and GINE with reverse message passing, ports features, edge update. It sets dataset loading, training and validation cadence, model parameters, and optimizer settings.",
+      "tags": [
+        "configuration",
+        "aml-dataset",
+        "training-config",
+        "gine-gnn",
+        "transfer-suite"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config with 12 top-level sections: out_dir, metric_best, seed, wandb, dataset, num_threads, num_workers, train, val, model, gnn, optim."
+    },
+    {
+      "id": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-Multi-PNA.yaml",
+      "type": "config",
+      "name": "AML-Small-LI-Multi-PNA.yaml",
+      "filePath": "configs/AML-Small-LI_Transfer/AML-Small-LI-Multi-PNA.yaml",
+      "summary": "Configures a AML Small-LI hetero edge experiment using HomoGNNEdgeModel and PNA with reverse message passing, ports features. It sets dataset loading, training and validation cadence, model parameters, and optimizer settings.",
+      "tags": [
+        "configuration",
+        "aml-dataset",
+        "training-config",
+        "pna-gnn",
+        "transfer-suite"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config with 12 top-level sections: out_dir, metric_best, seed, wandb, dataset, num_threads, num_workers, train, val, model, gnn, optim."
+    },
+    {
+      "id": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-Multi-PNA+EU.yaml",
+      "type": "config",
+      "name": "AML-Small-LI-Multi-PNA+EU.yaml",
+      "filePath": "configs/AML-Small-LI_Transfer/AML-Small-LI-Multi-PNA+EU.yaml",
+      "summary": "Configures a AML Small-LI hetero edge experiment using HomoGNNEdgeModel and PNA with reverse message passing, ports features, edge update. It sets dataset loading, training and validation cadence, model parameters, and optimizer settings.",
+      "tags": [
+        "configuration",
+        "aml-dataset",
+        "training-config",
+        "pna-gnn",
+        "transfer-suite"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config with 12 top-level sections: out_dir, metric_best, seed, wandb, dataset, num_threads, num_workers, train, val, model, gnn, optim."
+    },
+    {
+      "id": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-PNA.yaml",
+      "type": "config",
+      "name": "AML-Small-LI-PNA.yaml",
+      "filePath": "configs/AML-Small-LI_Transfer/AML-Small-LI-PNA.yaml",
+      "summary": "Configures a AML Small-LI hetero edge experiment using HomoGNNEdgeModel and PNA. It sets dataset loading, training and validation cadence, model parameters, and optimizer settings.",
+      "tags": [
+        "configuration",
+        "aml-dataset",
+        "training-config",
+        "pna-gnn",
+        "transfer-suite"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config with 12 top-level sections: out_dir, metric_best, seed, wandb, dataset, num_threads, num_workers, train, val, model, gnn, optim."
+    },
+    {
+      "id": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-PNA+EU.yaml",
+      "type": "config",
+      "name": "AML-Small-LI-PNA+EU.yaml",
+      "filePath": "configs/AML-Small-LI_Transfer/AML-Small-LI-PNA+EU.yaml",
+      "summary": "Configures a AML Small-LI hetero edge experiment using HomoGNNEdgeModel and PNA with edge update. It sets dataset loading, training and validation cadence, model parameters, and optimizer settings.",
+      "tags": [
+        "configuration",
+        "aml-dataset",
+        "training-config",
+        "pna-gnn",
+        "transfer-suite"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config with 12 top-level sections: out_dir, metric_best, seed, wandb, dataset, num_threads, num_workers, train, val, model, gnn, optim."
+    },
+    {
+      "id": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT.yaml",
+      "type": "config",
+      "name": "AML-Small-LI-SparseNodeGT.yaml",
+      "filePath": "configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT.yaml",
+      "summary": "Configures a AML Small-LI hetero edge experiment using GTModel and SparseNodeTransformer. It sets dataset loading, training and validation cadence, model parameters, and optimizer settings.",
+      "tags": [
+        "configuration",
+        "aml-dataset",
+        "training-config",
+        "graph-transformer",
+        "transfer-suite"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config with 13 top-level sections: out_dir, metric_best, seed, wandb, dataset, num_threads, num_workers, train, val, model, gt, gnn, optim."
+    },
+    {
+      "id": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT+Ego.yaml",
+      "type": "config",
+      "name": "AML-Small-LI-SparseNodeGT+Ego.yaml",
+      "filePath": "configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT+Ego.yaml",
+      "summary": "Configures a AML Small-LI hetero edge experiment using GTModel and SparseNodeTransformer with ego features. It sets dataset loading, training and validation cadence, model parameters, and optimizer settings.",
+      "tags": [
+        "configuration",
+        "aml-dataset",
+        "training-config",
+        "graph-transformer",
+        "transfer-suite"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config with 13 top-level sections: out_dir, metric_best, seed, wandb, dataset, num_threads, num_workers, train, val, model, gt, gnn, optim."
+    },
+    {
+      "id": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT+ports.yaml",
+      "type": "config",
+      "name": "AML-Small-LI-SparseNodeGT+ports.yaml",
+      "filePath": "configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT+ports.yaml",
+      "summary": "Configures a AML Small-LI hetero edge experiment using GTModel and SparseNodeTransformer with ports features. It sets dataset loading, training and validation cadence, model parameters, and optimizer settings.",
+      "tags": [
+        "configuration",
+        "aml-dataset",
+        "training-config",
+        "graph-transformer",
+        "transfer-suite"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config with 13 top-level sections: out_dir, metric_best, seed, wandb, dataset, num_threads, num_workers, train, val, model, gt, gnn, optim."
+    },
+    {
+      "id": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT+ports+Ego.yaml",
+      "type": "config",
+      "name": "AML-Small-LI-SparseNodeGT+ports+Ego.yaml",
+      "filePath": "configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT+ports+Ego.yaml",
+      "summary": "Configures a AML Small-LI hetero edge experiment using GTModel and SparseNodeTransformer with ports features, ego features. It sets dataset loading, training and validation cadence, model parameters, and optimizer settings.",
+      "tags": [
+        "configuration",
+        "aml-dataset",
+        "training-config",
+        "graph-transformer",
+        "transfer-suite"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config with 13 top-level sections: out_dir, metric_best, seed, wandb, dataset, num_threads, num_workers, train, val, model, gt, gnn, optim."
+    },
+    {
+      "id": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT+RMP.yaml",
+      "type": "config",
+      "name": "AML-Small-LI-SparseNodeGT+RMP.yaml",
+      "filePath": "configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT+RMP.yaml",
+      "summary": "Configures a AML Small-LI hetero edge experiment using GTModel and SparseNodeTransformer with reverse message passing. It sets dataset loading, training and validation cadence, model parameters, and optimizer settings.",
+      "tags": [
+        "configuration",
+        "aml-dataset",
+        "training-config",
+        "graph-transformer",
+        "transfer-suite"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config with 13 top-level sections: out_dir, metric_best, seed, wandb, dataset, num_threads, num_workers, train, val, model, gt, gnn, optim."
+    },
+    {
+      "id": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT-EdgeAttn.yaml",
+      "type": "config",
+      "name": "AML-Small-LI-SparseNodeGT-EdgeAttn.yaml",
+      "filePath": "configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT-EdgeAttn.yaml",
+      "summary": "Configures a AML Small-LI hetero edge experiment using GTModel and SparseNodeTransformer with edge attention. It sets dataset loading, training and validation cadence, model parameters, and optimizer settings.",
+      "tags": [
+        "configuration",
+        "aml-dataset",
+        "training-config",
+        "graph-transformer",
+        "transfer-suite"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config with 13 top-level sections: out_dir, metric_best, seed, wandb, dataset, num_threads, num_workers, train, val, model, gt, gnn, optim."
+    },
+    {
+      "id": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT-EdgeGate.yaml",
+      "type": "config",
+      "name": "AML-Small-LI-SparseNodeGT-EdgeGate.yaml",
+      "filePath": "configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT-EdgeGate.yaml",
+      "summary": "Configures a AML Small-LI hetero edge experiment using GTModel and SparseNodeTransformer with edge gating. It sets dataset loading, training and validation cadence, model parameters, and optimizer settings.",
+      "tags": [
+        "configuration",
+        "aml-dataset",
+        "training-config",
+        "graph-transformer",
+        "transfer-suite"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config with 13 top-level sections: out_dir, metric_best, seed, wandb, dataset, num_threads, num_workers, train, val, model, gt, gnn, optim."
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:configs/AML-Small-LI/AML-Small-LI-SparseNodeGT+RMP.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI/AML-Small-LI-SparseNodeGT+RMP.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI/AML-Small-LI-SparseNodeGT+RMP.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI/AML-Small-LI-SparseNodeGT-EdgeAttn.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI/AML-Small-LI-SparseNodeGT-EdgeAttn.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI/AML-Small-LI-SparseNodeGT-EdgeAttn.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI/AML-Small-LI-SparseNodeGT-EdgeGate.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI/AML-Small-LI-SparseNodeGT-EdgeGate.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI/AML-Small-LI-SparseNodeGT-EdgeGate.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI_Transfer-Multi-SparseNodeGT.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI_Transfer-Multi-SparseNodeGT.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI_Transfer-Multi-SparseNodeGT.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-GATE.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-GATE.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-GATE.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-GatedGCN.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-GatedGCN.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-GatedGCN.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-GINE.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-GINE.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-GINE.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-GINE+Ego.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-GINE+Ego.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-GINE+Ego.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-GINE+EU.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-GINE+EU.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-GINE+EU.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-GINE+ports.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-GINE+ports.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-GINE+ports.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-GINE+RMP.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-GINE+RMP.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-GINE+RMP.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-MLP.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-MLP.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-MLP.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-Multi-GINE.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-Multi-GINE.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-Multi-GINE.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-Multi-GINE+EU.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-Multi-GINE+EU.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-Multi-GINE+EU.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-Multi-PNA.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-Multi-PNA.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-Multi-PNA.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-Multi-PNA+EU.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-Multi-PNA+EU.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-Multi-PNA+EU.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-PNA.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-PNA.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-PNA.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-PNA+EU.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-PNA+EU.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-PNA+EU.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT+Ego.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT+Ego.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT+Ego.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT+ports.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT+ports.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT+ports.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT+ports+Ego.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT+ports+Ego.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT+ports+Ego.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT+RMP.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT+RMP.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT+RMP.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT-EdgeAttn.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT-EdgeAttn.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT-EdgeAttn.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT-EdgeGate.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT-EdgeGate.yaml",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT-EdgeGate.yaml",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

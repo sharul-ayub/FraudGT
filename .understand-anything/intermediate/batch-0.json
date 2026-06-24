@@ -1,0 +1,1487 @@
+{
+  "nodes": [
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "Project overview for FraudGT, including environment setup and instructions for running experiments on financial fraud datasets.",
+      "tags": [
+        "documentation",
+        "overview",
+        "getting-started"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:requirements.txt",
+      "type": "document",
+      "name": "requirements.txt",
+      "filePath": "requirements.txt",
+      "summary": "Python dependency list for experiment tracking, configuration, graph learning, downloading, and tabular data processing packages used by FraudGT.",
+      "tags": [
+        "documentation",
+        "dependencies",
+        "environment"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:run/interactive_run.sh",
+      "type": "file",
+      "name": "interactive_run.sh",
+      "filePath": "run/interactive_run.sh",
+      "summary": "Interactive experiment runner that exposes dataset, model, positional encoding, optimizer, and training options before launching repeated FraudGT runs.",
+      "tags": [
+        "entry-point",
+        "experiment-runner",
+        "training"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:run/interactive_run.sh:run_repeats",
+      "type": "function",
+      "name": "run_repeats",
+      "filePath": "run/interactive_run.sh",
+      "lineRange": [
+        5,
+        31
+      ],
+      "summary": "Runs a configured experiment repeatedly across seed values and delegates each run to the FraudGT training entry point.",
+      "tags": [
+        "experiment-runner",
+        "training",
+        "automation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:run/run_grid.sh",
+      "type": "file",
+      "name": "run_grid.sh",
+      "filePath": "run/run_grid.sh",
+      "summary": "Manual grid runner that enumerates experiment settings and launches repeated FraudGT training jobs for comparison across datasets and encoders.",
+      "tags": [
+        "experiment-runner",
+        "manual-sweep",
+        "training"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:run/run_grid.sh:run_repeats",
+      "type": "function",
+      "name": "run_repeats",
+      "filePath": "run/run_grid.sh",
+      "lineRange": [
+        3,
+        31
+      ],
+      "summary": "Runs a configured experiment repeatedly across seed values and delegates each run to the FraudGT training entry point.",
+      "tags": [
+        "experiment-runner",
+        "training",
+        "automation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "fraudGT/__init__.py",
+      "summary": "Package-level initializer that imports FraudGT subpackages so the framework modules are reachable from the top-level package.",
+      "tags": [
+        "entry-point",
+        "package-init",
+        "barrel"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/act/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "fraudGT/act/__init__.py",
+      "summary": "Initializer for the activation package, currently acting as a lightweight namespace placeholder.",
+      "tags": [
+        "package-init",
+        "activation",
+        "namespace"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/act/example.py",
+      "type": "file",
+      "name": "example.py",
+      "filePath": "fraudGT/act/example.py",
+      "summary": "Minimal activation example module retained as a placeholder for custom activation registration patterns.",
+      "tags": [
+        "example",
+        "activation",
+        "placeholder"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/agg_runs.py",
+      "type": "file",
+      "name": "agg_runs.py",
+      "filePath": "fraudGT/agg_runs.py",
+      "summary": "Aggregates repeated experiment outputs by parsing run names, collecting split metrics, selecting best runs, and writing JSON and TensorBoard summaries.",
+      "tags": [
+        "utility",
+        "experiment-results",
+        "aggregation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:fraudGT/agg_runs.py:is_seed",
+      "type": "function",
+      "name": "is_seed",
+      "filePath": "fraudGT/agg_runs.py",
+      "lineRange": [
+        22,
+        27
+      ],
+      "summary": "Checks whether a run directory name represents a numeric seed.",
+      "tags": [
+        "utility",
+        "aggregation",
+        "experiment-results"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/agg_runs.py:is_split",
+      "type": "function",
+      "name": "is_split",
+      "filePath": "fraudGT/agg_runs.py",
+      "lineRange": [
+        30,
+        34
+      ],
+      "summary": "Checks whether a directory name represents a split folder.",
+      "tags": [
+        "utility",
+        "aggregation",
+        "experiment-results"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/agg_runs.py:join_list",
+      "type": "function",
+      "name": "join_list",
+      "filePath": "fraudGT/agg_runs.py",
+      "lineRange": [
+        37,
+        42
+      ],
+      "summary": "Concatenates paired lists element by element while preserving list positions.",
+      "tags": [
+        "utility",
+        "aggregation",
+        "experiment-results"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/agg_runs.py:agg_dict_list",
+      "type": "function",
+      "name": "agg_dict_list",
+      "filePath": "fraudGT/agg_runs.py",
+      "lineRange": [
+        45,
+        58
+      ],
+      "summary": "Aggregates a list of metric dictionaries into mean and standard deviation summary values.",
+      "tags": [
+        "utility",
+        "aggregation",
+        "experiment-results"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/agg_runs.py:name_to_dict",
+      "type": "function",
+      "name": "name_to_dict",
+      "filePath": "fraudGT/agg_runs.py",
+      "lineRange": [
+        61,
+        74
+      ],
+      "summary": "Parses an encoded run name into configuration key-value pairs for aggregation output.",
+      "tags": [
+        "utility",
+        "aggregation",
+        "experiment-results"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/agg_runs.py:rm_keys",
+      "type": "function",
+      "name": "rm_keys",
+      "filePath": "fraudGT/agg_runs.py",
+      "lineRange": [
+        77,
+        79
+      ],
+      "summary": "Removes selected keys from a dictionary in place.",
+      "tags": [
+        "utility",
+        "aggregation",
+        "experiment-results"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/agg_runs.py:agg_runs",
+      "type": "function",
+      "name": "agg_runs",
+      "filePath": "fraudGT/agg_runs.py",
+      "lineRange": [
+        82,
+        162
+      ],
+      "summary": "Aggregates repeated experiment results across seeds and splits, writes summary artifacts, and optionally exports TensorBoard metrics.",
+      "tags": [
+        "utility",
+        "aggregation",
+        "experiment-results"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:fraudGT/config/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "fraudGT/config/__init__.py",
+      "summary": "Configuration package initializer that groups the FraudGT configuration extension modules.",
+      "tags": [
+        "package-init",
+        "configuration",
+        "namespace"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/config/dataset_config.py",
+      "type": "file",
+      "name": "dataset_config.py",
+      "filePath": "fraudGT/config/dataset_config.py",
+      "summary": "Extends the runtime configuration with dataset identifiers, storage paths, task settings, labels, and edge/message-passing options.",
+      "tags": [
+        "configuration",
+        "dataset",
+        "task-settings"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/config/dataset_config.py:dataset_cfg",
+      "type": "function",
+      "name": "dataset_cfg",
+      "filePath": "fraudGT/config/dataset_config.py",
+      "lineRange": [
+        5,
+        27
+      ],
+      "summary": "Adds dataset-related options such as name, directory, task type, label table, and edge split behavior to the config object.",
+      "tags": [
+        "configuration",
+        "extension",
+        "defaults"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/config/defaults_config.py",
+      "type": "file",
+      "name": "defaults_config.py",
+      "filePath": "fraudGT/config/defaults_config.py",
+      "summary": "Defines shared default configuration values for device, training, batching, logging, model naming, and dataset splits.",
+      "tags": [
+        "configuration",
+        "defaults",
+        "training"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:fraudGT/config/defaults_config.py:overwrite_defaults_cfg",
+      "type": "function",
+      "name": "overwrite_defaults_cfg",
+      "filePath": "fraudGT/config/defaults_config.py",
+      "lineRange": [
+        5,
+        22
+      ],
+      "summary": "Overrides GraphGym defaults with FraudGT project defaults for device, logging, batching, training, and output behavior.",
+      "tags": [
+        "configuration",
+        "extension",
+        "defaults"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/config/defaults_config.py:extended_cfg",
+      "type": "function",
+      "name": "extended_cfg",
+      "filePath": "fraudGT/config/defaults_config.py",
+      "lineRange": [
+        26,
+        91
+      ],
+      "summary": "Extends the configuration with FraudGT-specific defaults for model shape, dataset behavior, logging, and experiment control.",
+      "tags": [
+        "configuration",
+        "extension",
+        "defaults"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:fraudGT/config/gt_config.py",
+      "type": "file",
+      "name": "gt_config.py",
+      "filePath": "fraudGT/config/gt_config.py",
+      "summary": "Adds Graph Transformer architecture configuration, including layer structure, attention behavior, normalization, and edge feature handling.",
+      "tags": [
+        "configuration",
+        "graph-transformer",
+        "model"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:fraudGT/config/gt_config.py:set_cfg_gt",
+      "type": "function",
+      "name": "set_cfg_gt",
+      "filePath": "fraudGT/config/gt_config.py",
+      "lineRange": [
+        6,
+        103
+      ],
+      "summary": "Adds Graph Transformer configuration blocks for attention, edge features, residual connections, normalization, and layer parameters.",
+      "tags": [
+        "configuration",
+        "extension",
+        "defaults"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:fraudGT/config/optimizers_config.py",
+      "type": "file",
+      "name": "optimizers_config.py",
+      "filePath": "fraudGT/config/optimizers_config.py",
+      "summary": "Adds optimizer and scheduler configuration defaults for AdamW, reduce-on-plateau, step, cosine, and linear warmup schedules.",
+      "tags": [
+        "configuration",
+        "optimizer",
+        "scheduler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/config/optimizers_config.py:extended_optim_cfg",
+      "type": "function",
+      "name": "extended_optim_cfg",
+      "filePath": "fraudGT/config/optimizers_config.py",
+      "lineRange": [
+        5,
+        28
+      ],
+      "summary": "Adds optimizer and scheduler configuration defaults used by FraudGT training runs.",
+      "tags": [
+        "configuration",
+        "extension",
+        "defaults"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/config/posenc_config.py",
+      "type": "file",
+      "name": "posenc_config.py",
+      "filePath": "fraudGT/config/posenc_config.py",
+      "summary": "Defines positional and structural encoding configuration blocks for random walk, metapath, node2vec, label, and knowledge-graph embeddings.",
+      "tags": [
+        "configuration",
+        "positional-encoding",
+        "structural-encoding"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:fraudGT/config/posenc_config.py:set_cfg_posenc",
+      "type": "function",
+      "name": "set_cfg_posenc",
+      "filePath": "fraudGT/config/posenc_config.py",
+      "lineRange": [
+        6,
+        141
+      ],
+      "summary": "Adds positional encoding configuration blocks for structural encoders, label encoders, and knowledge-graph embedding methods.",
+      "tags": [
+        "configuration",
+        "extension",
+        "defaults"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:fraudGT/config/pretrained_config.py",
+      "type": "file",
+      "name": "pretrained_config.py",
+      "filePath": "fraudGT/config/pretrained_config.py",
+      "summary": "Adds configuration for loading and freezing pretrained modules during FraudGT experiments.",
+      "tags": [
+        "configuration",
+        "pretraining",
+        "checkpointing"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/config/pretrained_config.py:set_cfg_pretrained",
+      "type": "function",
+      "name": "set_cfg_pretrained",
+      "filePath": "fraudGT/config/pretrained_config.py",
+      "lineRange": [
+        6,
+        20
+      ],
+      "summary": "Adds pretrained model loading, directory, epoch, and freezing options to the config object.",
+      "tags": [
+        "configuration",
+        "extension",
+        "defaults"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/config/split_config.py",
+      "type": "file",
+      "name": "split_config.py",
+      "filePath": "fraudGT/config/split_config.py",
+      "summary": "Adds split configuration values controlling number of splits and train/validation/test ratios.",
+      "tags": [
+        "configuration",
+        "data-split",
+        "evaluation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/config/split_config.py:set_cfg_split",
+      "type": "function",
+      "name": "set_cfg_split",
+      "filePath": "fraudGT/config/split_config.py",
+      "lineRange": [
+        5,
+        23
+      ],
+      "summary": "Adds split-count and train/validation/test ratio options to the config object.",
+      "tags": [
+        "configuration",
+        "extension",
+        "defaults"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/config/wandb_config.py",
+      "type": "file",
+      "name": "wandb_config.py",
+      "filePath": "fraudGT/config/wandb_config.py",
+      "summary": "Adds Weights and Biases logging configuration, including project, entity, naming, and usage toggles.",
+      "tags": [
+        "configuration",
+        "experiment-tracking",
+        "logging"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/config/wandb_config.py:set_cfg_wandb",
+      "type": "function",
+      "name": "set_cfg_wandb",
+      "filePath": "fraudGT/config/wandb_config.py",
+      "lineRange": [
+        6,
+        23
+      ],
+      "summary": "Adds Weights and Biases settings for project metadata and logging behavior.",
+      "tags": [
+        "configuration",
+        "extension",
+        "defaults"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/datasets/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "fraudGT/datasets/__init__.py",
+      "summary": "Dataset package initializer that groups FraudGT dataset loaders and helpers.",
+      "tags": [
+        "package-init",
+        "datasets",
+        "namespace"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "file",
+      "name": "aml_dataset.py",
+      "filePath": "fraudGT/datasets/aml_dataset.py",
+      "summary": "Implements AML transaction preprocessing and a temporal heterogeneous dataset loader that creates train, validation, and test HeteroData splits with optional port features.",
+      "tags": [
+        "data-pipeline",
+        "aml",
+        "heterogeneous-graph"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:fraudGT/datasets/aml_dataset.py:z_norm",
+      "type": "function",
+      "name": "z_norm",
+      "filePath": "fraudGT/datasets/aml_dataset.py",
+      "lineRange": [
+        25,
+        28
+      ],
+      "summary": "Normalizes tensor features by column while guarding against zero standard deviations.",
+      "tags": [
+        "utility",
+        "graph-features",
+        "preprocessing"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/datasets/aml_dataset.py:format_dataset",
+      "type": "function",
+      "name": "format_dataset",
+      "filePath": "fraudGT/datasets/aml_dataset.py",
+      "lineRange": [
+        30,
+        98
+      ],
+      "summary": "Converts raw AML transaction text fields into numeric account, currency, payment-format, timestamp, amount, and label columns.",
+      "tags": [
+        "data-pipeline",
+        "dataset",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:fraudGT/datasets/aml_dataset.py:to_adj_nodes_with_times",
+      "type": "function",
+      "name": "to_adj_nodes_with_times",
+      "filePath": "fraudGT/datasets/aml_dataset.py",
+      "lineRange": [
+        100,
+        110
+      ],
+      "summary": "Builds incoming and outgoing timestamped adjacency lists from homogeneous or heterogeneous transaction edge indexes.",
+      "tags": [
+        "utility",
+        "graph-features",
+        "preprocessing"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/datasets/aml_dataset.py:ports",
+      "type": "function",
+      "name": "ports",
+      "filePath": "fraudGT/datasets/aml_dataset.py",
+      "lineRange": [
+        112,
+        125
+      ],
+      "summary": "Computes port-number features for transaction edges based on sorted unique neighbors in an adjacency list.",
+      "tags": [
+        "utility",
+        "graph-features",
+        "preprocessing"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/datasets/aml_dataset.py:AMLDataset",
+      "type": "class",
+      "name": "AMLDataset",
+      "filePath": "fraudGT/datasets/aml_dataset.py",
+      "lineRange": [
+        127,
+        351
+      ],
+      "summary": "Temporal dataset implementation for AML transaction CSVs that formats raw transactions into heterogeneous graph splits and processed port features.",
+      "tags": [
+        "data-model",
+        "dataset",
+        "pytorch-geometric"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:fraudGT/datasets/eth_dataset.py",
+      "type": "file",
+      "name": "eth_dataset.py",
+      "filePath": "fraudGT/datasets/eth_dataset.py",
+      "summary": "Implements Ethereum transaction dataset loading, downloading, preprocessing, split construction, and optional port feature augmentation.",
+      "tags": [
+        "data-pipeline",
+        "ethereum",
+        "heterogeneous-graph"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:fraudGT/datasets/eth_dataset.py:z_norm",
+      "type": "function",
+      "name": "z_norm",
+      "filePath": "fraudGT/datasets/eth_dataset.py",
+      "lineRange": [
+        25,
+        28
+      ],
+      "summary": "Normalizes tensor features by column while guarding against zero standard deviations.",
+      "tags": [
+        "utility",
+        "graph-features",
+        "preprocessing"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/datasets/eth_dataset.py:to_adj_nodes_with_times",
+      "type": "function",
+      "name": "to_adj_nodes_with_times",
+      "filePath": "fraudGT/datasets/eth_dataset.py",
+      "lineRange": [
+        30,
+        40
+      ],
+      "summary": "Builds incoming and outgoing timestamped adjacency lists from homogeneous or heterogeneous transaction edge indexes.",
+      "tags": [
+        "utility",
+        "graph-features",
+        "preprocessing"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/datasets/eth_dataset.py:ports",
+      "type": "function",
+      "name": "ports",
+      "filePath": "fraudGT/datasets/eth_dataset.py",
+      "lineRange": [
+        42,
+        55
+      ],
+      "summary": "Computes port-number features for transaction edges based on sorted unique neighbors in an adjacency list.",
+      "tags": [
+        "utility",
+        "graph-features",
+        "preprocessing"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/datasets/eth_dataset.py:ETHDataset",
+      "type": "class",
+      "name": "ETHDataset",
+      "filePath": "fraudGT/datasets/eth_dataset.py",
+      "lineRange": [
+        57,
+        221
+      ],
+      "summary": "Temporal dataset implementation for Ethereum transactions that downloads raw data, constructs graph splits, and stores optional port features.",
+      "tags": [
+        "data-model",
+        "dataset",
+        "pytorch-geometric"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:fraudGT/datasets/temporal_dataset.py",
+      "type": "file",
+      "name": "temporal_dataset.py",
+      "filePath": "fraudGT/datasets/temporal_dataset.py",
+      "summary": "Provides a temporal dataset base class modeled after PyG dataset processing, with raw/processed path management and download/process orchestration.",
+      "tags": [
+        "data-model",
+        "temporal-dataset",
+        "pytorch-geometric"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:fraudGT/datasets/temporal_dataset.py:overrides_method",
+      "type": "function",
+      "name": "overrides_method",
+      "filePath": "fraudGT/datasets/temporal_dataset.py",
+      "lineRange": [
+        197,
+        205
+      ],
+      "summary": "Detects whether a TemporalDataset subclass overrides a named method.",
+      "tags": [
+        "utility",
+        "aggregation",
+        "experiment-results"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/datasets/temporal_dataset.py:TemporalDataset",
+      "type": "class",
+      "name": "TemporalDataset",
+      "filePath": "fraudGT/datasets/temporal_dataset.py",
+      "lineRange": [
+        31,
+        195
+      ],
+      "summary": "Base dataset abstraction that manages raw and processed paths, download/process hooks, and accessors for temporal graph datasets.",
+      "tags": [
+        "data-model",
+        "dataset",
+        "pytorch-geometric"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:fraudGT/datasets/utils.py",
+      "type": "file",
+      "name": "utils.py",
+      "filePath": "fraudGT/datasets/utils.py",
+      "summary": "Provides dataset download and zip extraction helper logic used by dataset loaders.",
+      "tags": [
+        "utility",
+        "download",
+        "data-prep"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/datasets/utils.py:download_dataset",
+      "type": "function",
+      "name": "download_dataset",
+      "filePath": "fraudGT/datasets/utils.py",
+      "lineRange": [
+        8,
+        33
+      ],
+      "summary": "Downloads a dataset archive with gdown, extracts zip files when needed, and removes the archive after extraction.",
+      "tags": [
+        "data-pipeline",
+        "dataset",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/encoder/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "fraudGT/encoder/__init__.py",
+      "summary": "Encoder package initializer that groups FraudGT node, edge, raw, heterogeneous, and composed encoder modules.",
+      "tags": [
+        "package-init",
+        "encoder",
+        "namespace"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/encoder/composed_encoders.py",
+      "type": "file",
+      "name": "composed_encoders.py",
+      "filePath": "fraudGT/encoder/composed_encoders.py",
+      "summary": "Registers composed node and edge encoders that concatenate dataset-specific encoders with positional or structural encoders at runtime.",
+      "tags": [
+        "factory",
+        "encoder",
+        "registration"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:fraudGT/encoder/composed_encoders.py:concat_node_encoders",
+      "type": "function",
+      "name": "concat_node_encoders",
+      "filePath": "fraudGT/encoder/composed_encoders.py",
+      "lineRange": [
+        18,
+        124
+      ],
+      "summary": "Creates and returns composed node encoder classes that concatenate dataset-specific encoders with positional encoders.",
+      "tags": [
+        "factory",
+        "encoder",
+        "composition"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:fraudGT/encoder/composed_encoders.py:concat_edge_encoders",
+      "type": "function",
+      "name": "concat_edge_encoders",
+      "filePath": "fraudGT/encoder/composed_encoders.py",
+      "lineRange": [
+        206,
+        312
+      ],
+      "summary": "Creates and returns composed edge encoder classes that concatenate dataset-specific edge encoders with positional encoders.",
+      "tags": [
+        "factory",
+        "encoder",
+        "composition"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:fraudGT/encoder/hetero_embed_encoder.py",
+      "type": "file",
+      "name": "hetero_embed_encoder.py",
+      "filePath": "fraudGT/encoder/hetero_embed_encoder.py",
+      "summary": "Defines a heterogeneous node-type embedding encoder that assigns learned embeddings by node type and stores them in PyG batches.",
+      "tags": [
+        "encoder",
+        "heterogeneous-graph",
+        "embedding"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/encoder/hetero_embed_encoder.py:TypeDictNodeEncoder",
+      "type": "class",
+      "name": "TypeDictNodeEncoder",
+      "filePath": "fraudGT/encoder/hetero_embed_encoder.py",
+      "lineRange": [
+        9,
+        33
+      ],
+      "summary": "PyTorch module that creates node-type-specific embedding tables and writes learned node features into heterogeneous batches.",
+      "tags": [
+        "encoder",
+        "embedding",
+        "heterogeneous-graph"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:run/interactive_run.sh",
+      "target": "function:run/interactive_run.sh:run_repeats",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:run/run_grid.sh",
+      "target": "function:run/run_grid.sh:run_repeats",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/__init__.py",
+      "target": "file:fraudGT/act/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:fraudGT/__init__.py",
+      "target": "file:fraudGT/config/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:fraudGT/__init__.py",
+      "target": "file:fraudGT/encoder/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:fraudGT/__init__.py",
+      "target": "file:fraudGT/head/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:fraudGT/__init__.py",
+      "target": "file:fraudGT/loader/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:fraudGT/__init__.py",
+      "target": "file:fraudGT/loss/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:fraudGT/__init__.py",
+      "target": "file:fraudGT/network/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:fraudGT/__init__.py",
+      "target": "file:fraudGT/optimizer/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:fraudGT/__init__.py",
+      "target": "file:fraudGT/sampler/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:fraudGT/__init__.py",
+      "target": "file:fraudGT/train/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:fraudGT/__init__.py",
+      "target": "file:fraudGT/transform/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:fraudGT/agg_runs.py",
+      "target": "function:fraudGT/agg_runs.py:is_seed",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/agg_runs.py",
+      "target": "function:fraudGT/agg_runs.py:is_seed",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/agg_runs.py",
+      "target": "function:fraudGT/agg_runs.py:is_split",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/agg_runs.py",
+      "target": "function:fraudGT/agg_runs.py:is_split",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/agg_runs.py",
+      "target": "function:fraudGT/agg_runs.py:join_list",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/agg_runs.py",
+      "target": "function:fraudGT/agg_runs.py:join_list",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/agg_runs.py",
+      "target": "function:fraudGT/agg_runs.py:agg_dict_list",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/agg_runs.py",
+      "target": "function:fraudGT/agg_runs.py:agg_dict_list",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/agg_runs.py",
+      "target": "function:fraudGT/agg_runs.py:name_to_dict",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/agg_runs.py",
+      "target": "function:fraudGT/agg_runs.py:name_to_dict",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/agg_runs.py",
+      "target": "function:fraudGT/agg_runs.py:rm_keys",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/agg_runs.py",
+      "target": "function:fraudGT/agg_runs.py:rm_keys",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/agg_runs.py",
+      "target": "function:fraudGT/agg_runs.py:agg_runs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/agg_runs.py",
+      "target": "function:fraudGT/agg_runs.py:agg_runs",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/config/dataset_config.py",
+      "target": "function:fraudGT/config/dataset_config.py:dataset_cfg",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/config/dataset_config.py",
+      "target": "function:fraudGT/config/dataset_config.py:dataset_cfg",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/config/defaults_config.py",
+      "target": "function:fraudGT/config/defaults_config.py:overwrite_defaults_cfg",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/config/defaults_config.py",
+      "target": "function:fraudGT/config/defaults_config.py:overwrite_defaults_cfg",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/config/defaults_config.py",
+      "target": "function:fraudGT/config/defaults_config.py:extended_cfg",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/config/defaults_config.py",
+      "target": "function:fraudGT/config/defaults_config.py:extended_cfg",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/config/gt_config.py",
+      "target": "function:fraudGT/config/gt_config.py:set_cfg_gt",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/config/gt_config.py",
+      "target": "function:fraudGT/config/gt_config.py:set_cfg_gt",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/config/optimizers_config.py",
+      "target": "function:fraudGT/config/optimizers_config.py:extended_optim_cfg",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/config/optimizers_config.py",
+      "target": "function:fraudGT/config/optimizers_config.py:extended_optim_cfg",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/config/posenc_config.py",
+      "target": "function:fraudGT/config/posenc_config.py:set_cfg_posenc",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/config/posenc_config.py",
+      "target": "function:fraudGT/config/posenc_config.py:set_cfg_posenc",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/config/pretrained_config.py",
+      "target": "function:fraudGT/config/pretrained_config.py:set_cfg_pretrained",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/config/pretrained_config.py",
+      "target": "function:fraudGT/config/pretrained_config.py:set_cfg_pretrained",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/config/split_config.py",
+      "target": "function:fraudGT/config/split_config.py:set_cfg_split",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/config/split_config.py",
+      "target": "function:fraudGT/config/split_config.py:set_cfg_split",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/config/wandb_config.py",
+      "target": "function:fraudGT/config/wandb_config.py:set_cfg_wandb",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/config/wandb_config.py",
+      "target": "function:fraudGT/config/wandb_config.py:set_cfg_wandb",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/datasets/aml_dataset.py",
+      "target": "file:fraudGT/datasets/temporal_dataset.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:fraudGT/datasets/aml_dataset.py",
+      "target": "function:fraudGT/datasets/aml_dataset.py:z_norm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/datasets/aml_dataset.py",
+      "target": "function:fraudGT/datasets/aml_dataset.py:z_norm",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/datasets/aml_dataset.py",
+      "target": "function:fraudGT/datasets/aml_dataset.py:format_dataset",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/datasets/aml_dataset.py",
+      "target": "function:fraudGT/datasets/aml_dataset.py:format_dataset",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/datasets/aml_dataset.py",
+      "target": "function:fraudGT/datasets/aml_dataset.py:to_adj_nodes_with_times",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/datasets/aml_dataset.py",
+      "target": "function:fraudGT/datasets/aml_dataset.py:to_adj_nodes_with_times",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/datasets/aml_dataset.py",
+      "target": "function:fraudGT/datasets/aml_dataset.py:ports",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/datasets/aml_dataset.py",
+      "target": "function:fraudGT/datasets/aml_dataset.py:ports",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/datasets/aml_dataset.py",
+      "target": "class:fraudGT/datasets/aml_dataset.py:AMLDataset",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/datasets/aml_dataset.py",
+      "target": "class:fraudGT/datasets/aml_dataset.py:AMLDataset",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/datasets/eth_dataset.py",
+      "target": "file:fraudGT/datasets/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:fraudGT/datasets/eth_dataset.py",
+      "target": "function:fraudGT/datasets/eth_dataset.py:z_norm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/datasets/eth_dataset.py",
+      "target": "function:fraudGT/datasets/eth_dataset.py:z_norm",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/datasets/eth_dataset.py",
+      "target": "function:fraudGT/datasets/eth_dataset.py:to_adj_nodes_with_times",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/datasets/eth_dataset.py",
+      "target": "function:fraudGT/datasets/eth_dataset.py:to_adj_nodes_with_times",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/datasets/eth_dataset.py",
+      "target": "function:fraudGT/datasets/eth_dataset.py:ports",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/datasets/eth_dataset.py",
+      "target": "function:fraudGT/datasets/eth_dataset.py:ports",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/datasets/eth_dataset.py",
+      "target": "class:fraudGT/datasets/eth_dataset.py:ETHDataset",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/datasets/eth_dataset.py",
+      "target": "class:fraudGT/datasets/eth_dataset.py:ETHDataset",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/datasets/temporal_dataset.py",
+      "target": "function:fraudGT/datasets/temporal_dataset.py:overrides_method",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/datasets/temporal_dataset.py",
+      "target": "function:fraudGT/datasets/temporal_dataset.py:overrides_method",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/datasets/temporal_dataset.py",
+      "target": "class:fraudGT/datasets/temporal_dataset.py:TemporalDataset",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/datasets/temporal_dataset.py",
+      "target": "class:fraudGT/datasets/temporal_dataset.py:TemporalDataset",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/datasets/utils.py",
+      "target": "function:fraudGT/datasets/utils.py:download_dataset",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/datasets/utils.py",
+      "target": "function:fraudGT/datasets/utils.py:download_dataset",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/encoder/composed_encoders.py",
+      "target": "function:fraudGT/encoder/composed_encoders.py:concat_node_encoders",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/encoder/composed_encoders.py",
+      "target": "function:fraudGT/encoder/composed_encoders.py:concat_node_encoders",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/encoder/composed_encoders.py",
+      "target": "function:fraudGT/encoder/composed_encoders.py:concat_edge_encoders",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/encoder/composed_encoders.py",
+      "target": "function:fraudGT/encoder/composed_encoders.py:concat_edge_encoders",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/encoder/hetero_embed_encoder.py",
+      "target": "class:fraudGT/encoder/hetero_embed_encoder.py:TypeDictNodeEncoder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/encoder/hetero_embed_encoder.py",
+      "target": "class:fraudGT/encoder/hetero_embed_encoder.py:TypeDictNodeEncoder",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "document:README.md",
+      "target": "file:run/interactive_run.sh",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:README.md",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:requirements.txt",
+      "target": "file:fraudGT/datasets/aml_dataset.py",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:run/interactive_run.sh",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:run/run_grid.sh",
+      "target": "file:fraudGT/config/defaults_config.py",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:fraudGT/datasets/aml_dataset.py",
+      "target": "class:fraudGT/datasets/temporal_dataset.py:TemporalDataset",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:fraudGT/datasets/eth_dataset.py",
+      "target": "class:fraudGT/datasets/temporal_dataset.py:TemporalDataset",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:fraudGT/encoder/composed_encoders.py",
+      "target": "file:fraudGT/encoder/hetero_embed_encoder.py",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

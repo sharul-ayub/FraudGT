@@ -1,0 +1,575 @@
+{
+    "nodes":  [
+                  {
+                      "id":  "config:configs/AML-Large-LI/AML-Large-LI-Multi-GINE.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-LI-Multi-GINE.yaml",
+                      "filePath":  "configs/AML-Large-LI/AML-Large-LI-Multi-GINE.yaml",
+                      "summary":  "Configures an AML Large-LI hetero-edge classification training run for the GINE model with multi-run variants. It sets dataset encoders, link-neighbor sampling, weighted cross-entropy, validation cadence, and optimizer scheduling for FraudGT experiments.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml-experiment",
+                                   "hetero-edge-classification",
+                                   "graph-neural-network",
+                                   "feature-variant"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML experiment configuration organized around dataset, train, validation, model, gnn/gt, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-LI/AML-Large-LI-Multi-GINE+EU.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-LI-Multi-GINE+EU.yaml",
+                      "filePath":  "configs/AML-Large-LI/AML-Large-LI-Multi-GINE+EU.yaml",
+                      "summary":  "Configures an AML Large-LI hetero-edge classification training run for the GINE model with multi-run, edge-usage variants. It sets dataset encoders, link-neighbor sampling, weighted cross-entropy, validation cadence, and optimizer scheduling for FraudGT experiments.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml-experiment",
+                                   "hetero-edge-classification",
+                                   "graph-neural-network",
+                                   "feature-variant"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML experiment configuration organized around dataset, train, validation, model, gnn/gt, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-LI/AML-Large-LI-Multi-PNA.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-LI-Multi-PNA.yaml",
+                      "filePath":  "configs/AML-Large-LI/AML-Large-LI-Multi-PNA.yaml",
+                      "summary":  "Configures an AML Large-LI hetero-edge classification training run for the PNA model with multi-run variants. It sets dataset encoders, link-neighbor sampling, weighted cross-entropy, validation cadence, and optimizer scheduling for FraudGT experiments.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml-experiment",
+                                   "hetero-edge-classification",
+                                   "graph-neural-network",
+                                   "feature-variant"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML experiment configuration organized around dataset, train, validation, model, gnn/gt, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-LI/AML-Large-LI-Multi-PNA+EU.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-LI-Multi-PNA+EU.yaml",
+                      "filePath":  "configs/AML-Large-LI/AML-Large-LI-Multi-PNA+EU.yaml",
+                      "summary":  "Configures an AML Large-LI hetero-edge classification training run for the PNA model with multi-run, edge-usage variants. It sets dataset encoders, link-neighbor sampling, weighted cross-entropy, validation cadence, and optimizer scheduling for FraudGT experiments.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml-experiment",
+                                   "hetero-edge-classification",
+                                   "graph-neural-network",
+                                   "feature-variant"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML experiment configuration organized around dataset, train, validation, model, gnn/gt, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-LI/AML-Large-LI-Multi-SparseNodeGT.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-LI-Multi-SparseNodeGT.yaml",
+                      "filePath":  "configs/AML-Large-LI/AML-Large-LI-Multi-SparseNodeGT.yaml",
+                      "summary":  "Configures an AML Large-LI hetero-edge classification training run for the SparseNodeGT transformer model with multi-run variants. It sets dataset encoders, link-neighbor sampling, weighted cross-entropy, validation cadence, and optimizer scheduling for FraudGT experiments.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml-experiment",
+                                   "hetero-edge-classification",
+                                   "graph-transformer",
+                                   "feature-variant"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML experiment configuration organized around dataset, train, validation, model, gnn/gt, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-LI/AML-Large-LI-PNA.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-LI-PNA.yaml",
+                      "filePath":  "configs/AML-Large-LI/AML-Large-LI-PNA.yaml",
+                      "summary":  "Configures an AML Large-LI hetero-edge classification training run for the PNA model. It sets dataset encoders, link-neighbor sampling, weighted cross-entropy, validation cadence, and optimizer scheduling for FraudGT experiments.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml-experiment",
+                                   "hetero-edge-classification",
+                                   "graph-neural-network"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML experiment configuration organized around dataset, train, validation, model, gnn/gt, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-LI/AML-Large-LI-PNA+EU.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-LI-PNA+EU.yaml",
+                      "filePath":  "configs/AML-Large-LI/AML-Large-LI-PNA+EU.yaml",
+                      "summary":  "Configures an AML Large-LI hetero-edge classification training run for the PNA model with edge-usage variants. It sets dataset encoders, link-neighbor sampling, weighted cross-entropy, validation cadence, and optimizer scheduling for FraudGT experiments.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml-experiment",
+                                   "hetero-edge-classification",
+                                   "graph-neural-network",
+                                   "feature-variant"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML experiment configuration organized around dataset, train, validation, model, gnn/gt, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-LI/AML-Large-LI-SparseNodeGT.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-LI-SparseNodeGT.yaml",
+                      "filePath":  "configs/AML-Large-LI/AML-Large-LI-SparseNodeGT.yaml",
+                      "summary":  "Configures an AML Large-LI hetero-edge classification training run for the SparseNodeGT transformer model. It sets dataset encoders, link-neighbor sampling, weighted cross-entropy, validation cadence, and optimizer scheduling for FraudGT experiments.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml-experiment",
+                                   "hetero-edge-classification",
+                                   "graph-transformer"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML experiment configuration organized around dataset, train, validation, model, gnn/gt, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-LI/AML-Large-LI-SparseNodeGT+Ego.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-LI-SparseNodeGT+Ego.yaml",
+                      "filePath":  "configs/AML-Large-LI/AML-Large-LI-SparseNodeGT+Ego.yaml",
+                      "summary":  "Configures an AML Large-LI hetero-edge classification training run for the SparseNodeGT transformer model with ego-id variants. It sets dataset encoders, link-neighbor sampling, weighted cross-entropy, validation cadence, and optimizer scheduling for FraudGT experiments.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml-experiment",
+                                   "hetero-edge-classification",
+                                   "graph-transformer",
+                                   "feature-variant"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML experiment configuration organized around dataset, train, validation, model, gnn/gt, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-LI/AML-Large-LI-SparseNodeGT+ports.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-LI-SparseNodeGT+ports.yaml",
+                      "filePath":  "configs/AML-Large-LI/AML-Large-LI-SparseNodeGT+ports.yaml",
+                      "summary":  "Configures an AML Large-LI hetero-edge classification training run for the SparseNodeGT transformer model with ports variants. It sets dataset encoders, link-neighbor sampling, weighted cross-entropy, validation cadence, and optimizer scheduling for FraudGT experiments.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml-experiment",
+                                   "hetero-edge-classification",
+                                   "graph-transformer",
+                                   "feature-variant"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML experiment configuration organized around dataset, train, validation, model, gnn/gt, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-LI/AML-Large-LI-SparseNodeGT+ports+Ego.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-LI-SparseNodeGT+ports+Ego.yaml",
+                      "filePath":  "configs/AML-Large-LI/AML-Large-LI-SparseNodeGT+ports+Ego.yaml",
+                      "summary":  "Configures an AML Large-LI hetero-edge classification training run for the SparseNodeGT transformer model with ego-id, ports variants. It sets dataset encoders, link-neighbor sampling, weighted cross-entropy, validation cadence, and optimizer scheduling for FraudGT experiments.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml-experiment",
+                                   "hetero-edge-classification",
+                                   "graph-transformer",
+                                   "feature-variant"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML experiment configuration organized around dataset, train, validation, model, gnn/gt, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-LI/AML-Large-LI-SparseNodeGT+RMP.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-LI-SparseNodeGT+RMP.yaml",
+                      "filePath":  "configs/AML-Large-LI/AML-Large-LI-SparseNodeGT+RMP.yaml",
+                      "summary":  "Configures an AML Large-LI hetero-edge classification training run for the SparseNodeGT transformer model with reverse-message-passing variants. It sets dataset encoders, link-neighbor sampling, weighted cross-entropy, validation cadence, and optimizer scheduling for FraudGT experiments.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml-experiment",
+                                   "hetero-edge-classification",
+                                   "graph-transformer",
+                                   "feature-variant"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML experiment configuration organized around dataset, train, validation, model, gnn/gt, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-LI/AML-Large-LI-SparseNodeGT-EdgeAttn.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-LI-SparseNodeGT-EdgeAttn.yaml",
+                      "filePath":  "configs/AML-Large-LI/AML-Large-LI-SparseNodeGT-EdgeAttn.yaml",
+                      "summary":  "Configures an AML Large-LI hetero-edge classification training run for the SparseNodeGT transformer model with edge-attention-mask variants. It sets dataset encoders, link-neighbor sampling, weighted cross-entropy, validation cadence, and optimizer scheduling for FraudGT experiments.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml-experiment",
+                                   "hetero-edge-classification",
+                                   "graph-transformer",
+                                   "feature-variant"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML experiment configuration organized around dataset, train, validation, model, gnn/gt, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-LI/AML-Large-LI-SparseNodeGT-EdgeGate.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-LI-SparseNodeGT-EdgeGate.yaml",
+                      "filePath":  "configs/AML-Large-LI/AML-Large-LI-SparseNodeGT-EdgeGate.yaml",
+                      "summary":  "Configures an AML Large-LI hetero-edge classification training run for the SparseNodeGT transformer model with edge-gated-mask variants. It sets dataset encoders, link-neighbor sampling, weighted cross-entropy, validation cadence, and optimizer scheduling for FraudGT experiments.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml-experiment",
+                                   "hetero-edge-classification",
+                                   "graph-transformer",
+                                   "feature-variant"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML experiment configuration organized around dataset, train, validation, model, gnn/gt, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-LI_Transfer/AML-Large-LI_Transfer-Multi-SparseNodeGT.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-LI_Transfer-Multi-SparseNodeGT.yaml",
+                      "filePath":  "configs/AML-Large-LI_Transfer/AML-Large-LI_Transfer-Multi-SparseNodeGT.yaml",
+                      "summary":  "Configures a transfer-learning AML Large-LI hetero-edge classification run for the SparseNodeGT transformer model with multi-run variants. It sets dataset encoders, link-neighbor sampling, weighted cross-entropy, optimizer scheduling, and pretrained checkpoint behavior for inference-only transfer experiments.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml-experiment",
+                                   "hetero-edge-classification",
+                                   "transfer-learning",
+                                   "feature-variant"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML experiment configuration organized around dataset, train, validation, model, gnn/gt, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-LI_Transfer/AML-Large-LI-GATE.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-LI-GATE.yaml",
+                      "filePath":  "configs/AML-Large-LI_Transfer/AML-Large-LI-GATE.yaml",
+                      "summary":  "Configures a transfer-learning AML Large-LI hetero-edge classification run for the GATE model. It sets dataset encoders, link-neighbor sampling, weighted cross-entropy, optimizer scheduling, and pretrained checkpoint behavior for inference-only transfer experiments.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml-experiment",
+                                   "hetero-edge-classification",
+                                   "transfer-learning"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML experiment configuration organized around dataset, train, validation, model, gnn/gt, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-LI_Transfer/AML-Large-LI-GatedGCN.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-LI-GatedGCN.yaml",
+                      "filePath":  "configs/AML-Large-LI_Transfer/AML-Large-LI-GatedGCN.yaml",
+                      "summary":  "Configures a transfer-learning AML Large-LI hetero-edge classification run for the GatedGCN model. It sets dataset encoders, link-neighbor sampling, weighted cross-entropy, optimizer scheduling, and pretrained checkpoint behavior for inference-only transfer experiments.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml-experiment",
+                                   "hetero-edge-classification",
+                                   "transfer-learning"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML experiment configuration organized around dataset, train, validation, model, gnn/gt, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-LI_Transfer/AML-Large-LI-GINE.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-LI-GINE.yaml",
+                      "filePath":  "configs/AML-Large-LI_Transfer/AML-Large-LI-GINE.yaml",
+                      "summary":  "Configures a transfer-learning AML Large-LI hetero-edge classification run for the GINE model. It sets dataset encoders, link-neighbor sampling, weighted cross-entropy, optimizer scheduling, and pretrained checkpoint behavior for inference-only transfer experiments.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml-experiment",
+                                   "hetero-edge-classification",
+                                   "transfer-learning"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML experiment configuration organized around dataset, train, validation, model, gnn/gt, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-LI_Transfer/AML-Large-LI-GINE+Ego.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-LI-GINE+Ego.yaml",
+                      "filePath":  "configs/AML-Large-LI_Transfer/AML-Large-LI-GINE+Ego.yaml",
+                      "summary":  "Configures a transfer-learning AML Large-LI hetero-edge classification run for the GINE model with ego-id variants. It sets dataset encoders, link-neighbor sampling, weighted cross-entropy, optimizer scheduling, and pretrained checkpoint behavior for inference-only transfer experiments.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml-experiment",
+                                   "hetero-edge-classification",
+                                   "transfer-learning",
+                                   "feature-variant"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML experiment configuration organized around dataset, train, validation, model, gnn/gt, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-LI_Transfer/AML-Large-LI-GINE+EU.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-LI-GINE+EU.yaml",
+                      "filePath":  "configs/AML-Large-LI_Transfer/AML-Large-LI-GINE+EU.yaml",
+                      "summary":  "Configures a transfer-learning AML Large-LI hetero-edge classification run for the GINE model with edge-usage variants. It sets dataset encoders, link-neighbor sampling, weighted cross-entropy, optimizer scheduling, and pretrained checkpoint behavior for inference-only transfer experiments.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml-experiment",
+                                   "hetero-edge-classification",
+                                   "transfer-learning",
+                                   "feature-variant"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML experiment configuration organized around dataset, train, validation, model, gnn/gt, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-LI_Transfer/AML-Large-LI-GINE+ports.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-LI-GINE+ports.yaml",
+                      "filePath":  "configs/AML-Large-LI_Transfer/AML-Large-LI-GINE+ports.yaml",
+                      "summary":  "Configures a transfer-learning AML Large-LI hetero-edge classification run for the GINE model with ports variants. It sets dataset encoders, link-neighbor sampling, weighted cross-entropy, optimizer scheduling, and pretrained checkpoint behavior for inference-only transfer experiments.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml-experiment",
+                                   "hetero-edge-classification",
+                                   "transfer-learning",
+                                   "feature-variant"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML experiment configuration organized around dataset, train, validation, model, gnn/gt, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-LI_Transfer/AML-Large-LI-GINE+RMP.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-LI-GINE+RMP.yaml",
+                      "filePath":  "configs/AML-Large-LI_Transfer/AML-Large-LI-GINE+RMP.yaml",
+                      "summary":  "Configures a transfer-learning AML Large-LI hetero-edge classification run for the GINE model with reverse-message-passing variants. It sets dataset encoders, link-neighbor sampling, weighted cross-entropy, optimizer scheduling, and pretrained checkpoint behavior for inference-only transfer experiments.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml-experiment",
+                                   "hetero-edge-classification",
+                                   "transfer-learning",
+                                   "feature-variant"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML experiment configuration organized around dataset, train, validation, model, gnn/gt, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-LI_Transfer/AML-Large-LI-MLP.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-LI-MLP.yaml",
+                      "filePath":  "configs/AML-Large-LI_Transfer/AML-Large-LI-MLP.yaml",
+                      "summary":  "Configures a transfer-learning AML Large-LI hetero-edge classification run for the MLP model. It sets dataset encoders, link-neighbor sampling, weighted cross-entropy, optimizer scheduling, and pretrained checkpoint behavior for inference-only transfer experiments.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml-experiment",
+                                   "hetero-edge-classification",
+                                   "transfer-learning"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML experiment configuration organized around dataset, train, validation, model, gnn/gt, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-LI_Transfer/AML-Large-LI-Multi-GINE.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-LI-Multi-GINE.yaml",
+                      "filePath":  "configs/AML-Large-LI_Transfer/AML-Large-LI-Multi-GINE.yaml",
+                      "summary":  "Configures a transfer-learning AML Large-LI hetero-edge classification run for the GINE model with multi-run variants. It sets dataset encoders, link-neighbor sampling, weighted cross-entropy, optimizer scheduling, and pretrained checkpoint behavior for inference-only transfer experiments.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml-experiment",
+                                   "hetero-edge-classification",
+                                   "transfer-learning",
+                                   "feature-variant"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML experiment configuration organized around dataset, train, validation, model, gnn/gt, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-LI_Transfer/AML-Large-LI-Multi-GINE+EU.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-LI-Multi-GINE+EU.yaml",
+                      "filePath":  "configs/AML-Large-LI_Transfer/AML-Large-LI-Multi-GINE+EU.yaml",
+                      "summary":  "Configures a transfer-learning AML Large-LI hetero-edge classification run for the GINE model with multi-run, edge-usage variants. It sets dataset encoders, link-neighbor sampling, weighted cross-entropy, optimizer scheduling, and pretrained checkpoint behavior for inference-only transfer experiments.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml-experiment",
+                                   "hetero-edge-classification",
+                                   "transfer-learning",
+                                   "feature-variant"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML experiment configuration organized around dataset, train, validation, model, gnn/gt, and optimizer sections."
+                  }
+              ],
+    "edges":  [
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-Multi-GINE.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-Multi-GINE+EU.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-Multi-PNA.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-Multi-PNA+EU.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-Multi-SparseNodeGT.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-PNA.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-PNA+EU.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-SparseNodeGT.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-SparseNodeGT+Ego.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-SparseNodeGT+ports.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-SparseNodeGT+ports+Ego.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-SparseNodeGT+RMP.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-SparseNodeGT-EdgeAttn.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-SparseNodeGT-EdgeGate.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI_Transfer/AML-Large-LI_Transfer-Multi-SparseNodeGT.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI_Transfer/AML-Large-LI-GATE.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI_Transfer/AML-Large-LI-GatedGCN.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI_Transfer/AML-Large-LI-GINE.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI_Transfer/AML-Large-LI-GINE+Ego.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI_Transfer/AML-Large-LI-GINE+EU.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI_Transfer/AML-Large-LI-GINE+ports.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI_Transfer/AML-Large-LI-GINE+RMP.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI_Transfer/AML-Large-LI-MLP.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI_Transfer/AML-Large-LI-Multi-GINE.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI_Transfer/AML-Large-LI-Multi-GINE+EU.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  }
+              ]
+}

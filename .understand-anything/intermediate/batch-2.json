@@ -1,0 +1,1912 @@
+{
+    "nodes":  [
+                  {
+                      "id":  "file:fraudGT/graphgym/contrib/layer/generalconv.py",
+                      "type":  "file",
+                      "name":  "generalconv.py",
+                      "filePath":  "fraudGT/graphgym/contrib/layer/generalconv.py",
+                      "summary":  "Defines configurable GraphGym message-passing convolution layers for node and edge-aware propagation, with normalization, self-message handling, and optional cached graph normalization.",
+                      "tags":  [
+                                   "gnn-layer",
+                                   "message-passing",
+                                   "graphgym"
+                               ],
+                      "complexity":  "complex"
+                  },
+                  {
+                      "id":  "class:fraudGT/graphgym/contrib/layer/generalconv.py:GeneralConvLayer",
+                      "type":  "class",
+                      "name":  "GeneralConvLayer",
+                      "filePath":  "fraudGT/graphgym/contrib/layer/generalconv.py",
+                      "lineRange":  [
+                                        12,
+                                        126
+                                    ],
+                      "summary":  "Implements the GeneralConvLayer neural network component used by GraphGym graph convolution or feature encoding paths.",
+                      "tags":  [
+                                   "class",
+                                   "graphgym",
+                                   "component"
+                               ],
+                      "complexity":  "moderate"
+                  },
+                  {
+                      "id":  "class:fraudGT/graphgym/contrib/layer/generalconv.py:GeneralEdgeConvLayer",
+                      "type":  "class",
+                      "name":  "GeneralEdgeConvLayer",
+                      "filePath":  "fraudGT/graphgym/contrib/layer/generalconv.py",
+                      "lineRange":  [
+                                        129,
+                                        242
+                                    ],
+                      "summary":  "Implements the GeneralEdgeConvLayer neural network component used by GraphGym graph convolution or feature encoding paths.",
+                      "tags":  [
+                                   "class",
+                                   "graphgym",
+                                   "component"
+                               ],
+                      "complexity":  "moderate"
+                  },
+                  {
+                      "id":  "file:fraudGT/graphgym/contrib/layer/generalconv_ogb.py",
+                      "type":  "file",
+                      "name":  "generalconv_ogb.py",
+                      "filePath":  "fraudGT/graphgym/contrib/layer/generalconv_ogb.py",
+                      "summary":  "Provides OGB-oriented GraphGym convolution layers, including bond feature encoding and a registered wrapper for molecular graph edge attributes.",
+                      "tags":  [
+                                   "gnn-layer",
+                                   "message-passing",
+                                   "graphgym"
+                               ],
+                      "complexity":  "moderate"
+                  },
+                  {
+                      "id":  "class:fraudGT/graphgym/contrib/layer/generalconv_ogb.py:BondEncoder",
+                      "type":  "class",
+                      "name":  "BondEncoder",
+                      "filePath":  "fraudGT/graphgym/contrib/layer/generalconv_ogb.py",
+                      "lineRange":  [
+                                        16,
+                                        33
+                                    ],
+                      "summary":  "Implements the BondEncoder neural network component used by GraphGym graph convolution or feature encoding paths.",
+                      "tags":  [
+                                   "class",
+                                   "graphgym",
+                                   "component"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "class:fraudGT/graphgym/contrib/layer/generalconv_ogb.py:GeneralOGBConvLayer",
+                      "type":  "class",
+                      "name":  "GeneralOGBConvLayer",
+                      "filePath":  "fraudGT/graphgym/contrib/layer/generalconv_ogb.py",
+                      "lineRange":  [
+                                        36,
+                                        125
+                                    ],
+                      "summary":  "Implements the GeneralOGBConvLayer neural network component used by GraphGym graph convolution or feature encoding paths.",
+                      "tags":  [
+                                   "class",
+                                   "graphgym",
+                                   "component"
+                               ],
+                      "complexity":  "moderate"
+                  },
+                  {
+                      "id":  "class:fraudGT/graphgym/contrib/layer/generalconv_ogb.py:GeneralOGBConv",
+                      "type":  "class",
+                      "name":  "GeneralOGBConv",
+                      "filePath":  "fraudGT/graphgym/contrib/layer/generalconv_ogb.py",
+                      "lineRange":  [
+                                        128,
+                                        136
+                                    ],
+                      "summary":  "Implements the GeneralOGBConv neural network component used by GraphGym graph convolution or feature encoding paths.",
+                      "tags":  [
+                                   "class",
+                                   "graphgym",
+                                   "component"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:fraudGT/graphgym/contrib/layer/generalconv_v2.py",
+                      "type":  "file",
+                      "name":  "generalconv_v2.py",
+                      "filePath":  "fraudGT/graphgym/contrib/layer/generalconv_v2.py",
+                      "summary":  "Implements second-generation configurable GraphGym convolution layers with additional normalization behavior and edge-aware message construction.",
+                      "tags":  [
+                                   "gnn-layer",
+                                   "message-passing",
+                                   "graphgym"
+                               ],
+                      "complexity":  "complex"
+                  },
+                  {
+                      "id":  "class:fraudGT/graphgym/contrib/layer/generalconv_v2.py:GeneralConvLayerV2",
+                      "type":  "class",
+                      "name":  "GeneralConvLayerV2",
+                      "filePath":  "fraudGT/graphgym/contrib/layer/generalconv_v2.py",
+                      "lineRange":  [
+                                        12,
+                                        145
+                                    ],
+                      "summary":  "Implements the GeneralConvLayerV2 neural network component used by GraphGym graph convolution or feature encoding paths.",
+                      "tags":  [
+                                   "class",
+                                   "graphgym",
+                                   "component"
+                               ],
+                      "complexity":  "moderate"
+                  },
+                  {
+                      "id":  "class:fraudGT/graphgym/contrib/layer/generalconv_v2.py:GeneralEdgeConvLayerV2",
+                      "type":  "class",
+                      "name":  "GeneralEdgeConvLayerV2",
+                      "filePath":  "fraudGT/graphgym/contrib/layer/generalconv_v2.py",
+                      "lineRange":  [
+                                        148,
+                                        274
+                                    ],
+                      "summary":  "Implements the GeneralEdgeConvLayerV2 neural network component used by GraphGym graph convolution or feature encoding paths.",
+                      "tags":  [
+                                   "class",
+                                   "graphgym",
+                                   "component"
+                               ],
+                      "complexity":  "moderate"
+                  },
+                  {
+                      "id":  "file:fraudGT/graphgym/contrib/layer/idconv.py",
+                      "type":  "file",
+                      "name":  "idconv.py",
+                      "filePath":  "fraudGT/graphgym/contrib/layer/idconv.py",
+                      "summary":  "Defines identity-aware GraphGym convolution variants for General, GCN, SAGE, GAT, and GIN-style layers and registers their wrapper modules.",
+                      "tags":  [
+                                   "gnn-layer",
+                                   "message-passing",
+                                   "graphgym"
+                               ],
+                      "complexity":  "complex"
+                  },
+                  {
+                      "id":  "class:fraudGT/graphgym/contrib/layer/idconv.py:GeneralIDConvLayer",
+                      "type":  "class",
+                      "name":  "GeneralIDConvLayer",
+                      "filePath":  "fraudGT/graphgym/contrib/layer/idconv.py",
+                      "lineRange":  [
+                                        15,
+                                        109
+                                    ],
+                      "summary":  "Implements the GeneralIDConvLayer neural network component used by GraphGym graph convolution or feature encoding paths.",
+                      "tags":  [
+                                   "class",
+                                   "graphgym",
+                                   "component"
+                               ],
+                      "complexity":  "moderate"
+                  },
+                  {
+                      "id":  "class:fraudGT/graphgym/contrib/layer/idconv.py:GCNIDConvLayer",
+                      "type":  "class",
+                      "name":  "GCNIDConvLayer",
+                      "filePath":  "fraudGT/graphgym/contrib/layer/idconv.py",
+                      "lineRange":  [
+                                        112,
+                                        207
+                                    ],
+                      "summary":  "Implements the GCNIDConvLayer neural network component used by GraphGym graph convolution or feature encoding paths.",
+                      "tags":  [
+                                   "class",
+                                   "graphgym",
+                                   "component"
+                               ],
+                      "complexity":  "moderate"
+                  },
+                  {
+                      "id":  "class:fraudGT/graphgym/contrib/layer/idconv.py:SAGEIDConvLayer",
+                      "type":  "class",
+                      "name":  "SAGEIDConvLayer",
+                      "filePath":  "fraudGT/graphgym/contrib/layer/idconv.py",
+                      "lineRange":  [
+                                        210,
+                                        295
+                                    ],
+                      "summary":  "Implements the SAGEIDConvLayer neural network component used by GraphGym graph convolution or feature encoding paths.",
+                      "tags":  [
+                                   "class",
+                                   "graphgym",
+                                   "component"
+                               ],
+                      "complexity":  "moderate"
+                  },
+                  {
+                      "id":  "class:fraudGT/graphgym/contrib/layer/idconv.py:GATIDConvLayer",
+                      "type":  "class",
+                      "name":  "GATIDConvLayer",
+                      "filePath":  "fraudGT/graphgym/contrib/layer/idconv.py",
+                      "lineRange":  [
+                                        298,
+                                        386
+                                    ],
+                      "summary":  "Implements the GATIDConvLayer neural network component used by GraphGym graph convolution or feature encoding paths.",
+                      "tags":  [
+                                   "class",
+                                   "graphgym",
+                                   "component"
+                               ],
+                      "complexity":  "moderate"
+                  },
+                  {
+                      "id":  "class:fraudGT/graphgym/contrib/layer/idconv.py:GINIDConvLayer",
+                      "type":  "class",
+                      "name":  "GINIDConvLayer",
+                      "filePath":  "fraudGT/graphgym/contrib/layer/idconv.py",
+                      "lineRange":  [
+                                        389,
+                                        421
+                                    ],
+                      "summary":  "Implements the GINIDConvLayer neural network component used by GraphGym graph convolution or feature encoding paths.",
+                      "tags":  [
+                                   "class",
+                                   "graphgym",
+                                   "component"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "class:fraudGT/graphgym/contrib/layer/idconv.py:GeneralIDConv",
+                      "type":  "class",
+                      "name":  "GeneralIDConv",
+                      "filePath":  "fraudGT/graphgym/contrib/layer/idconv.py",
+                      "lineRange":  [
+                                        424,
+                                        432
+                                    ],
+                      "summary":  "Implements the GeneralIDConv neural network component used by GraphGym graph convolution or feature encoding paths.",
+                      "tags":  [
+                                   "class",
+                                   "graphgym",
+                                   "component"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "class:fraudGT/graphgym/contrib/layer/idconv.py:GCNIDConv",
+                      "type":  "class",
+                      "name":  "GCNIDConv",
+                      "filePath":  "fraudGT/graphgym/contrib/layer/idconv.py",
+                      "lineRange":  [
+                                        435,
+                                        443
+                                    ],
+                      "summary":  "Implements the GCNIDConv neural network component used by GraphGym graph convolution or feature encoding paths.",
+                      "tags":  [
+                                   "class",
+                                   "graphgym",
+                                   "component"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "class:fraudGT/graphgym/contrib/layer/idconv.py:SAGEIDConv",
+                      "type":  "class",
+                      "name":  "SAGEIDConv",
+                      "filePath":  "fraudGT/graphgym/contrib/layer/idconv.py",
+                      "lineRange":  [
+                                        446,
+                                        454
+                                    ],
+                      "summary":  "Implements the SAGEIDConv neural network component used by GraphGym graph convolution or feature encoding paths.",
+                      "tags":  [
+                                   "class",
+                                   "graphgym",
+                                   "component"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "class:fraudGT/graphgym/contrib/layer/idconv.py:GATIDConv",
+                      "type":  "class",
+                      "name":  "GATIDConv",
+                      "filePath":  "fraudGT/graphgym/contrib/layer/idconv.py",
+                      "lineRange":  [
+                                        457,
+                                        465
+                                    ],
+                      "summary":  "Implements the GATIDConv neural network component used by GraphGym graph convolution or feature encoding paths.",
+                      "tags":  [
+                                   "class",
+                                   "graphgym",
+                                   "component"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "class:fraudGT/graphgym/contrib/layer/idconv.py:GINIDConv",
+                      "type":  "class",
+                      "name":  "GINIDConv",
+                      "filePath":  "fraudGT/graphgym/contrib/layer/idconv.py",
+                      "lineRange":  [
+                                        468,
+                                        480
+                                    ],
+                      "summary":  "Implements the GINIDConv neural network component used by GraphGym graph convolution or feature encoding paths.",
+                      "tags":  [
+                                   "class",
+                                   "graphgym",
+                                   "component"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:fraudGT/graphgym/contrib/layer/sageinitconv.py",
+                      "type":  "file",
+                      "name":  "sageinitconv.py",
+                      "filePath":  "fraudGT/graphgym/contrib/layer/sageinitconv.py",
+                      "summary":  "Implements and registers a SAGE-style initial convolution layer for GraphGym models using PyG message passing.",
+                      "tags":  [
+                                   "gnn-layer",
+                                   "message-passing",
+                                   "graphgym"
+                               ],
+                      "complexity":  "moderate"
+                  },
+                  {
+                      "id":  "class:fraudGT/graphgym/contrib/layer/sageinitconv.py:SAGEConvLayer",
+                      "type":  "class",
+                      "name":  "SAGEConvLayer",
+                      "filePath":  "fraudGT/graphgym/contrib/layer/sageinitconv.py",
+                      "lineRange":  [
+                                        12,
+                                        102
+                                    ],
+                      "summary":  "Implements the SAGEConvLayer neural network component used by GraphGym graph convolution or feature encoding paths.",
+                      "tags":  [
+                                   "class",
+                                   "graphgym",
+                                   "component"
+                               ],
+                      "complexity":  "moderate"
+                  },
+                  {
+                      "id":  "class:fraudGT/graphgym/contrib/layer/sageinitconv.py:SAGEinitConv",
+                      "type":  "class",
+                      "name":  "SAGEinitConv",
+                      "filePath":  "fraudGT/graphgym/contrib/layer/sageinitconv.py",
+                      "lineRange":  [
+                                        105,
+                                        112
+                                    ],
+                      "summary":  "Implements the SAGEinitConv neural network component used by GraphGym graph convolution or feature encoding paths.",
+                      "tags":  [
+                                   "class",
+                                   "graphgym",
+                                   "component"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:fraudGT/graphgym/contrib/loader/__init__.py",
+                      "type":  "file",
+                      "name":  "__init__.py",
+                      "filePath":  "fraudGT/graphgym/contrib/loader/__init__.py",
+                      "summary":  "Package initializer for contributed GraphGym dataset loader extensions.",
+                      "tags":  [
+                                   "entry-point",
+                                   "package",
+                                   "extension"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:fraudGT/graphgym/contrib/loader/example.py",
+                      "type":  "file",
+                      "name":  "example.py",
+                      "filePath":  "fraudGT/graphgym/contrib/loader/example.py",
+                      "summary":  "Template file showing where a custom GraphGym dataset loader can be implemented and registered.",
+                      "tags":  [
+                                   "data-loading",
+                                   "dataset",
+                                   "graphgym"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:fraudGT/graphgym/contrib/loss/__init__.py",
+                      "type":  "file",
+                      "name":  "__init__.py",
+                      "filePath":  "fraudGT/graphgym/contrib/loss/__init__.py",
+                      "summary":  "Package initializer for contributed GraphGym loss extensions.",
+                      "tags":  [
+                                   "entry-point",
+                                   "package",
+                                   "extension"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:fraudGT/graphgym/contrib/loss/example.py",
+                      "type":  "file",
+                      "name":  "example.py",
+                      "filePath":  "fraudGT/graphgym/contrib/loss/example.py",
+                      "summary":  "Template loss extension showing the shape of a custom loss function and optional GraphGym registry hook.",
+                      "tags":  [
+                                   "loss",
+                                   "template",
+                                   "extension"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:fraudGT/graphgym/contrib/network/__init__.py",
+                      "type":  "file",
+                      "name":  "__init__.py",
+                      "filePath":  "fraudGT/graphgym/contrib/network/__init__.py",
+                      "summary":  "Package initializer for contributed GraphGym network definitions.",
+                      "tags":  [
+                                   "entry-point",
+                                   "package",
+                                   "extension"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:fraudGT/graphgym/contrib/network/example.py",
+                      "type":  "file",
+                      "name":  "example.py",
+                      "filePath":  "fraudGT/graphgym/contrib/network/example.py",
+                      "summary":  "Commented template for building and registering a custom GraphGym GNN network with a node head and stacked layers.",
+                      "tags":  [
+                                   "network",
+                                   "template",
+                                   "extension"
+                               ],
+                      "complexity":  "moderate"
+                  },
+                  {
+                      "id":  "file:fraudGT/graphgym/contrib/optimizer/__init__.py",
+                      "type":  "file",
+                      "name":  "__init__.py",
+                      "filePath":  "fraudGT/graphgym/contrib/optimizer/__init__.py",
+                      "summary":  "Package initializer for contributed GraphGym optimizer and scheduler extensions.",
+                      "tags":  [
+                                   "entry-point",
+                                   "package",
+                                   "extension"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:fraudGT/graphgym/contrib/optimizer/example.py",
+                      "type":  "file",
+                      "name":  "example.py",
+                      "filePath":  "fraudGT/graphgym/contrib/optimizer/example.py",
+                      "summary":  "Example extension registering an Adagrad optimizer and ReduceLROnPlateau scheduler for GraphGym training.",
+                      "tags":  [
+                                   "optimizer",
+                                   "scheduler",
+                                   "extension"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/contrib/optimizer/example.py:optimizer_example",
+                      "type":  "function",
+                      "name":  "optimizer_example",
+                      "filePath":  "fraudGT/graphgym/contrib/optimizer/example.py",
+                      "lineRange":  [
+                                        7,
+                                        11
+                                    ],
+                      "summary":  "Implements optimizer_example behavior for the surrounding GraphGym module.",
+                      "tags":  [
+                                   "function",
+                                   "graphgym",
+                                   "workflow"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/contrib/optimizer/example.py:scheduler_example",
+                      "type":  "function",
+                      "name":  "scheduler_example",
+                      "filePath":  "fraudGT/graphgym/contrib/optimizer/example.py",
+                      "lineRange":  [
+                                        17,
+                                        20
+                                    ],
+                      "summary":  "Implements scheduler_example behavior for the surrounding GraphGym module.",
+                      "tags":  [
+                                   "function",
+                                   "graphgym",
+                                   "workflow"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:fraudGT/graphgym/contrib/pooling/__init__.py",
+                      "type":  "file",
+                      "name":  "__init__.py",
+                      "filePath":  "fraudGT/graphgym/contrib/pooling/__init__.py",
+                      "summary":  "Package initializer for contributed GraphGym pooling extensions.",
+                      "tags":  [
+                                   "entry-point",
+                                   "package",
+                                   "extension"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:fraudGT/graphgym/contrib/pooling/example.py",
+                      "type":  "file",
+                      "name":  "example.py",
+                      "filePath":  "fraudGT/graphgym/contrib/pooling/example.py",
+                      "summary":  "Example global pooling extension showing the registration pattern for a custom GraphGym pooling function.",
+                      "tags":  [
+                                   "pooling",
+                                   "extension",
+                                   "aggregation"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/contrib/pooling/example.py:global_example_pool",
+                      "type":  "function",
+                      "name":  "global_example_pool",
+                      "filePath":  "fraudGT/graphgym/contrib/pooling/example.py",
+                      "lineRange":  [
+                                        6,
+                                        8
+                                    ],
+                      "summary":  "Implements global_example_pool behavior for the surrounding GraphGym module.",
+                      "tags":  [
+                                   "function",
+                                   "graphgym",
+                                   "workflow"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:fraudGT/graphgym/contrib/stage/__init__.py",
+                      "type":  "file",
+                      "name":  "__init__.py",
+                      "filePath":  "fraudGT/graphgym/contrib/stage/__init__.py",
+                      "summary":  "Package initializer for contributed GraphGym stage extensions.",
+                      "tags":  [
+                                   "entry-point",
+                                   "package",
+                                   "extension"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:fraudGT/graphgym/contrib/stage/example.py",
+                      "type":  "file",
+                      "name":  "example.py",
+                      "filePath":  "fraudGT/graphgym/contrib/stage/example.py",
+                      "summary":  "Example stage module that stacks GNN layers according to GraphGym configuration and registers the stage.",
+                      "tags":  [
+                                   "gnn-stage",
+                                   "model-stack",
+                                   "extension"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "class:fraudGT/graphgym/contrib/stage/example.py:GNNStackStage",
+                      "type":  "class",
+                      "name":  "GNNStackStage",
+                      "filePath":  "fraudGT/graphgym/contrib/stage/example.py",
+                      "lineRange":  [
+                                        9,
+                                        25
+                                    ],
+                      "summary":  "Implements the GNNStackStage model stage that composes configured GraphGym layers.",
+                      "tags":  [
+                                   "class",
+                                   "graphgym",
+                                   "component"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:fraudGT/graphgym/contrib/train/__init__.py",
+                      "type":  "file",
+                      "name":  "__init__.py",
+                      "filePath":  "fraudGT/graphgym/contrib/train/__init__.py",
+                      "summary":  "Package initializer for contributed GraphGym training-loop extensions.",
+                      "tags":  [
+                                   "entry-point",
+                                   "package",
+                                   "extension"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:fraudGT/graphgym/contrib/train/example.py",
+                      "type":  "file",
+                      "name":  "example.py",
+                      "filePath":  "fraudGT/graphgym/contrib/train/example.py",
+                      "summary":  "Example training extension implementing train, evaluation, checkpointing, and scheduler steps for GraphGym.",
+                      "tags":  [
+                                   "training-loop",
+                                   "checkpointing",
+                                   "evaluation"
+                               ],
+                      "complexity":  "moderate"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/contrib/train/example.py:train_epoch",
+                      "type":  "function",
+                      "name":  "train_epoch",
+                      "filePath":  "fraudGT/graphgym/contrib/train/example.py",
+                      "lineRange":  [
+                                        13,
+                                        30
+                                    ],
+                      "summary":  "Runs the training logic for one epoch or registered training procedure.",
+                      "tags":  [
+                                   "function",
+                                   "graphgym",
+                                   "workflow"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/contrib/train/example.py:eval_epoch",
+                      "type":  "function",
+                      "name":  "eval_epoch",
+                      "filePath":  "fraudGT/graphgym/contrib/train/example.py",
+                      "lineRange":  [
+                                        33,
+                                        46
+                                    ],
+                      "summary":  "Runs evaluation logic over a loader and updates metric loggers.",
+                      "tags":  [
+                                   "function",
+                                   "graphgym",
+                                   "workflow"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/contrib/train/example.py:train_example",
+                      "type":  "function",
+                      "name":  "train_example",
+                      "filePath":  "fraudGT/graphgym/contrib/train/example.py",
+                      "lineRange":  [
+                                        49,
+                                        73
+                                    ],
+                      "summary":  "Runs the training logic for one epoch or registered training procedure.",
+                      "tags":  [
+                                   "function",
+                                   "graphgym",
+                                   "workflow"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:fraudGT/graphgym/contrib/transform/__init__.py",
+                      "type":  "file",
+                      "name":  "__init__.py",
+                      "filePath":  "fraudGT/graphgym/contrib/transform/__init__.py",
+                      "summary":  "Package initializer for contributed GraphGym graph transform extensions.",
+                      "tags":  [
+                                   "entry-point",
+                                   "package",
+                                   "extension"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:fraudGT/graphgym/contrib/transform/identity.py",
+                      "type":  "file",
+                      "name":  "identity.py",
+                      "filePath":  "fraudGT/graphgym/contrib/transform/identity.py",
+                      "summary":  "Computes multi-hop identity features from graph connectivity using normalized sparse matrix powers.",
+                      "tags":  [
+                                   "graph-transform",
+                                   "features",
+                                   "sparse-matrix"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/contrib/transform/identity.py:norm",
+                      "type":  "function",
+                      "name":  "norm",
+                      "filePath":  "fraudGT/graphgym/contrib/transform/identity.py",
+                      "lineRange":  [
+                                        6,
+                                        21
+                                    ],
+                      "summary":  "Computes graph normalization or identity feature matrices from edge connectivity.",
+                      "tags":  [
+                                   "function",
+                                   "graphgym",
+                                   "workflow"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/contrib/transform/identity.py:compute_identity",
+                      "type":  "function",
+                      "name":  "compute_identity",
+                      "filePath":  "fraudGT/graphgym/contrib/transform/identity.py",
+                      "lineRange":  [
+                                        25,
+                                        35
+                                    ],
+                      "summary":  "Computes graph normalization or identity feature matrices from edge connectivity.",
+                      "tags":  [
+                                   "function",
+                                   "graphgym",
+                                   "workflow"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:fraudGT/graphgym/init.py",
+                      "type":  "file",
+                      "name":  "init.py",
+                      "filePath":  "fraudGT/graphgym/init.py",
+                      "summary":  "Provides a shared weight-initialization helper for GraphGym model modules.",
+                      "tags":  [
+                                   "python",
+                                   "graphgym",
+                                   "extension"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/init.py:init_weights",
+                      "type":  "function",
+                      "name":  "init_weights",
+                      "filePath":  "fraudGT/graphgym/init.py",
+                      "lineRange":  [
+                                        4,
+                                        19
+                                    ],
+                      "summary":  "Implements init_weights behavior for the surrounding GraphGym module.",
+                      "tags":  [
+                                   "function",
+                                   "graphgym",
+                                   "workflow"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:fraudGT/graphgym/loader.py",
+                      "type":  "file",
+                      "name":  "loader.py",
+                      "filePath":  "fraudGT/graphgym/loader.py",
+                      "summary":  "Builds PyG and custom temporal datasets, applies GraphGym dataset metadata, and creates data loaders including neighbor loaders for FraudGT training.",
+                      "tags":  [
+                                   "data-loading",
+                                   "dataset",
+                                   "graphgym"
+                               ],
+                      "complexity":  "complex"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/loader.py:planetoid_dataset",
+                      "type":  "function",
+                      "name":  "planetoid_dataset",
+                      "filePath":  "fraudGT/graphgym/loader.py",
+                      "lineRange":  [
+                                        24,
+                                        25
+                                    ],
+                      "summary":  "Implements planetoid_dataset behavior for the surrounding GraphGym module.",
+                      "tags":  [
+                                   "function",
+                                   "graphgym",
+                                   "workflow"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/loader.py:load_pyg",
+                      "type":  "function",
+                      "name":  "load_pyg",
+                      "filePath":  "fraudGT/graphgym/loader.py",
+                      "lineRange":  [
+                                        34,
+                                        76
+                                    ],
+                      "summary":  "Loads graph dataset data for the configured GraphGym data source.",
+                      "tags":  [
+                                   "function",
+                                   "graphgym",
+                                   "workflow"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/loader.py:set_dataset_attr",
+                      "type":  "function",
+                      "name":  "set_dataset_attr",
+                      "filePath":  "fraudGT/graphgym/loader.py",
+                      "lineRange":  [
+                                        79,
+                                        83
+                                    ],
+                      "summary":  "Implements set_dataset_attr behavior for the surrounding GraphGym module.",
+                      "tags":  [
+                                   "function",
+                                   "graphgym",
+                                   "workflow"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/loader.py:load_ogb",
+                      "type":  "function",
+                      "name":  "load_ogb",
+                      "filePath":  "fraudGT/graphgym/loader.py",
+                      "lineRange":  [
+                                        86,
+                                        155
+                                    ],
+                      "summary":  "Loads graph dataset data for the configured GraphGym data source.",
+                      "tags":  [
+                                   "function",
+                                   "graphgym",
+                                   "workflow"
+                               ],
+                      "complexity":  "moderate"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/loader.py:load_dataset",
+                      "type":  "function",
+                      "name":  "load_dataset",
+                      "filePath":  "fraudGT/graphgym/loader.py",
+                      "lineRange":  [
+                                        158,
+                                        182
+                                    ],
+                      "summary":  "Loads graph dataset data for the configured GraphGym data source.",
+                      "tags":  [
+                                   "function",
+                                   "graphgym",
+                                   "workflow"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/loader.py:set_dataset_info",
+                      "type":  "function",
+                      "name":  "set_dataset_info",
+                      "filePath":  "fraudGT/graphgym/loader.py",
+                      "lineRange":  [
+                                        185,
+                                        272
+                                    ],
+                      "summary":  "Implements set_dataset_info behavior for the surrounding GraphGym module.",
+                      "tags":  [
+                                   "function",
+                                   "graphgym",
+                                   "workflow"
+                               ],
+                      "complexity":  "moderate"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/loader.py:create_dataset",
+                      "type":  "function",
+                      "name":  "create_dataset",
+                      "filePath":  "fraudGT/graphgym/loader.py",
+                      "lineRange":  [
+                                        275,
+                                        285
+                                    ],
+                      "summary":  "Constructs the configured dataset and applies preprocessing, splitting, and metadata setup.",
+                      "tags":  [
+                                   "function",
+                                   "graphgym",
+                                   "workflow"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/loader.py:get_loader",
+                      "type":  "function",
+                      "name":  "get_loader",
+                      "filePath":  "fraudGT/graphgym/loader.py",
+                      "lineRange":  [
+                                        288,
+                                        350
+                                    ],
+                      "summary":  "Builds the concrete loader implementation for the requested sampler and split.",
+                      "tags":  [
+                                   "function",
+                                   "graphgym",
+                                   "workflow"
+                               ],
+                      "complexity":  "moderate"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/loader.py:create_loader",
+                      "type":  "function",
+                      "name":  "create_loader",
+                      "filePath":  "fraudGT/graphgym/loader.py",
+                      "lineRange":  [
+                                        353,
+                                        405
+                                    ],
+                      "summary":  "Creates training, validation, and test loaders for the prepared graph dataset.",
+                      "tags":  [
+                                   "function",
+                                   "graphgym",
+                                   "workflow"
+                               ],
+                      "complexity":  "moderate"
+                  },
+                  {
+                      "id":  "file:fraudGT/graphgym/loader_deepsnap.py",
+                      "type":  "file",
+                      "name":  "loader_deepsnap.py",
+                      "filePath":  "fraudGT/graphgym/loader_deepsnap.py",
+                      "summary":  "Legacy DeepSNAP dataset loading path that loads graph datasets, applies transforms, splits datasets, and builds PyTorch data loaders.",
+                      "tags":  [
+                                   "data-loading",
+                                   "dataset",
+                                   "graphgym"
+                               ],
+                      "complexity":  "complex"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/loader_deepsnap.py:load_pyg",
+                      "type":  "function",
+                      "name":  "load_pyg",
+                      "filePath":  "fraudGT/graphgym/loader_deepsnap.py",
+                      "lineRange":  [
+                                        23,
+                                        73
+                                    ],
+                      "summary":  "Loads graph dataset data for the configured GraphGym data source.",
+                      "tags":  [
+                                   "function",
+                                   "graphgym",
+                                   "workflow"
+                               ],
+                      "complexity":  "moderate"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/loader_deepsnap.py:load_nx",
+                      "type":  "function",
+                      "name":  "load_nx",
+                      "filePath":  "fraudGT/graphgym/loader_deepsnap.py",
+                      "lineRange":  [
+                                        76,
+                                        90
+                                    ],
+                      "summary":  "Loads graph dataset data for the configured GraphGym data source.",
+                      "tags":  [
+                                   "function",
+                                   "graphgym",
+                                   "workflow"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/loader_deepsnap.py:load_dataset",
+                      "type":  "function",
+                      "name":  "load_dataset",
+                      "filePath":  "fraudGT/graphgym/loader_deepsnap.py",
+                      "lineRange":  [
+                                        93,
+                                        124
+                                    ],
+                      "summary":  "Loads graph dataset data for the configured GraphGym data source.",
+                      "tags":  [
+                                   "function",
+                                   "graphgym",
+                                   "workflow"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/loader_deepsnap.py:filter_graphs",
+                      "type":  "function",
+                      "name":  "filter_graphs",
+                      "filePath":  "fraudGT/graphgym/loader_deepsnap.py",
+                      "lineRange":  [
+                                        127,
+                                        136
+                                    ],
+                      "summary":  "Implements filter_graphs behavior for the surrounding GraphGym module.",
+                      "tags":  [
+                                   "function",
+                                   "graphgym",
+                                   "workflow"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/loader_deepsnap.py:transform_before_split",
+                      "type":  "function",
+                      "name":  "transform_before_split",
+                      "filePath":  "fraudGT/graphgym/loader_deepsnap.py",
+                      "lineRange":  [
+                                        139,
+                                        167
+                                    ],
+                      "summary":  "Implements transform_before_split behavior for the surrounding GraphGym module.",
+                      "tags":  [
+                                   "function",
+                                   "graphgym",
+                                   "workflow"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/loader_deepsnap.py:transform_after_split",
+                      "type":  "function",
+                      "name":  "transform_after_split",
+                      "filePath":  "fraudGT/graphgym/loader_deepsnap.py",
+                      "lineRange":  [
+                                        170,
+                                        189
+                                    ],
+                      "summary":  "Implements transform_after_split behavior for the surrounding GraphGym module.",
+                      "tags":  [
+                                   "function",
+                                   "graphgym",
+                                   "workflow"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/loader_deepsnap.py:set_dataset_info",
+                      "type":  "function",
+                      "name":  "set_dataset_info",
+                      "filePath":  "fraudGT/graphgym/loader_deepsnap.py",
+                      "lineRange":  [
+                                        192,
+                                        214
+                                    ],
+                      "summary":  "Implements set_dataset_info behavior for the surrounding GraphGym module.",
+                      "tags":  [
+                                   "function",
+                                   "graphgym",
+                                   "workflow"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/loader_deepsnap.py:create_dataset",
+                      "type":  "function",
+                      "name":  "create_dataset",
+                      "filePath":  "fraudGT/graphgym/loader_deepsnap.py",
+                      "lineRange":  [
+                                        217,
+                                        270
+                                    ],
+                      "summary":  "Constructs the configured dataset and applies preprocessing, splitting, and metadata setup.",
+                      "tags":  [
+                                   "function",
+                                   "graphgym",
+                                   "workflow"
+                               ],
+                      "complexity":  "moderate"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/loader_deepsnap.py:create_loader",
+                      "type":  "function",
+                      "name":  "create_loader",
+                      "filePath":  "fraudGT/graphgym/loader_deepsnap.py",
+                      "lineRange":  [
+                                        273,
+                                        291
+                                    ],
+                      "summary":  "Creates training, validation, and test loaders for the prepared graph dataset.",
+                      "tags":  [
+                                   "function",
+                                   "graphgym",
+                                   "workflow"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:fraudGT/graphgym/logger.py",
+                      "type":  "file",
+                      "name":  "logger.py",
+                      "filePath":  "fraudGT/graphgym/logger.py",
+                      "summary":  "Defines GraphGym logging utilities for experiment output, metrics aggregation, TensorBoard writing, and task-specific evaluation summaries.",
+                      "tags":  [
+                                   "logging",
+                                   "metrics",
+                                   "experiment-tracking"
+                               ],
+                      "complexity":  "complex"
+                  },
+                  {
+                      "id":  "class:fraudGT/graphgym/logger.py:Logger",
+                      "type":  "class",
+                      "name":  "Logger",
+                      "filePath":  "fraudGT/graphgym/logger.py",
+                      "lineRange":  [
+                                        34,
+                                        217
+                                    ],
+                      "summary":  "Aggregates predictions, metrics, timing, and TensorBoard/statistics output for a GraphGym train/validation/test split.",
+                      "tags":  [
+                                   "class",
+                                   "graphgym",
+                                   "component"
+                               ],
+                      "complexity":  "moderate"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/logger.py:setup_printing",
+                      "type":  "function",
+                      "name":  "setup_printing",
+                      "filePath":  "fraudGT/graphgym/logger.py",
+                      "lineRange":  [
+                                        13,
+                                        31
+                                    ],
+                      "summary":  "Configures or creates logging behavior for GraphGym experiment metrics.",
+                      "tags":  [
+                                   "function",
+                                   "graphgym",
+                                   "workflow"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/logger.py:infer_task",
+                      "type":  "function",
+                      "name":  "infer_task",
+                      "filePath":  "fraudGT/graphgym/logger.py",
+                      "lineRange":  [
+                                        220,
+                                        229
+                                    ],
+                      "summary":  "Configures or creates logging behavior for GraphGym experiment metrics.",
+                      "tags":  [
+                                   "function",
+                                   "graphgym",
+                                   "workflow"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/logger.py:create_logger",
+                      "type":  "function",
+                      "name":  "create_logger",
+                      "filePath":  "fraudGT/graphgym/logger.py",
+                      "lineRange":  [
+                                        232,
+                                        243
+                                    ],
+                      "summary":  "Configures or creates logging behavior for GraphGym experiment metrics.",
+                      "tags":  [
+                                   "function",
+                                   "graphgym",
+                                   "workflow"
+                               ],
+                      "complexity":  "simple"
+                  }
+              ],
+    "edges":  [
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/generalconv.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/generalconv.py:GeneralConvLayer",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/generalconv.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/generalconv.py:GeneralConvLayer",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/generalconv.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/generalconv.py:GeneralEdgeConvLayer",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/generalconv.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/generalconv.py:GeneralEdgeConvLayer",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/generalconv_ogb.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/generalconv_ogb.py:BondEncoder",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/generalconv_ogb.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/generalconv_ogb.py:BondEncoder",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/generalconv_ogb.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/generalconv_ogb.py:GeneralOGBConvLayer",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/generalconv_ogb.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/generalconv_ogb.py:GeneralOGBConvLayer",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/generalconv_ogb.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/generalconv_ogb.py:GeneralOGBConv",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/generalconv_ogb.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/generalconv_ogb.py:GeneralOGBConv",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/generalconv_v2.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/generalconv_v2.py:GeneralConvLayerV2",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/generalconv_v2.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/generalconv_v2.py:GeneralConvLayerV2",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/generalconv_v2.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/generalconv_v2.py:GeneralEdgeConvLayerV2",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/generalconv_v2.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/generalconv_v2.py:GeneralEdgeConvLayerV2",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/idconv.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/idconv.py:GeneralIDConvLayer",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/idconv.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/idconv.py:GeneralIDConvLayer",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/idconv.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/idconv.py:GCNIDConvLayer",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/idconv.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/idconv.py:GCNIDConvLayer",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/idconv.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/idconv.py:SAGEIDConvLayer",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/idconv.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/idconv.py:SAGEIDConvLayer",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/idconv.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/idconv.py:GATIDConvLayer",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/idconv.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/idconv.py:GATIDConvLayer",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/idconv.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/idconv.py:GINIDConvLayer",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/idconv.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/idconv.py:GINIDConvLayer",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/idconv.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/idconv.py:GeneralIDConv",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/idconv.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/idconv.py:GeneralIDConv",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/idconv.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/idconv.py:GCNIDConv",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/idconv.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/idconv.py:GCNIDConv",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/idconv.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/idconv.py:SAGEIDConv",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/idconv.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/idconv.py:SAGEIDConv",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/idconv.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/idconv.py:GATIDConv",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/idconv.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/idconv.py:GATIDConv",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/idconv.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/idconv.py:GINIDConv",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/idconv.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/idconv.py:GINIDConv",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/sageinitconv.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/sageinitconv.py:SAGEConvLayer",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/sageinitconv.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/sageinitconv.py:SAGEConvLayer",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/sageinitconv.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/sageinitconv.py:SAGEinitConv",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/sageinitconv.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/sageinitconv.py:SAGEinitConv",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/optimizer/example.py",
+                      "target":  "function:fraudGT/graphgym/contrib/optimizer/example.py:optimizer_example",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/optimizer/example.py",
+                      "target":  "function:fraudGT/graphgym/contrib/optimizer/example.py:optimizer_example",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/optimizer/example.py",
+                      "target":  "function:fraudGT/graphgym/contrib/optimizer/example.py:scheduler_example",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/optimizer/example.py",
+                      "target":  "function:fraudGT/graphgym/contrib/optimizer/example.py:scheduler_example",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/pooling/example.py",
+                      "target":  "function:fraudGT/graphgym/contrib/pooling/example.py:global_example_pool",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/pooling/example.py",
+                      "target":  "function:fraudGT/graphgym/contrib/pooling/example.py:global_example_pool",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/stage/example.py",
+                      "target":  "class:fraudGT/graphgym/contrib/stage/example.py:GNNStackStage",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/stage/example.py",
+                      "target":  "class:fraudGT/graphgym/contrib/stage/example.py:GNNStackStage",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/train/example.py",
+                      "target":  "function:fraudGT/graphgym/contrib/train/example.py:train_epoch",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/train/example.py",
+                      "target":  "function:fraudGT/graphgym/contrib/train/example.py:train_epoch",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/train/example.py",
+                      "target":  "function:fraudGT/graphgym/contrib/train/example.py:eval_epoch",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/train/example.py",
+                      "target":  "function:fraudGT/graphgym/contrib/train/example.py:eval_epoch",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/train/example.py",
+                      "target":  "function:fraudGT/graphgym/contrib/train/example.py:train_example",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/train/example.py",
+                      "target":  "function:fraudGT/graphgym/contrib/train/example.py:train_example",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/transform/identity.py",
+                      "target":  "function:fraudGT/graphgym/contrib/transform/identity.py:norm",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/transform/identity.py",
+                      "target":  "function:fraudGT/graphgym/contrib/transform/identity.py:norm",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/transform/identity.py",
+                      "target":  "function:fraudGT/graphgym/contrib/transform/identity.py:compute_identity",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/transform/identity.py",
+                      "target":  "function:fraudGT/graphgym/contrib/transform/identity.py:compute_identity",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/init.py",
+                      "target":  "function:fraudGT/graphgym/init.py:init_weights",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/init.py",
+                      "target":  "function:fraudGT/graphgym/init.py:init_weights",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/loader.py",
+                      "target":  "function:fraudGT/graphgym/loader.py:planetoid_dataset",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/loader.py",
+                      "target":  "function:fraudGT/graphgym/loader.py:planetoid_dataset",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/loader.py",
+                      "target":  "function:fraudGT/graphgym/loader.py:load_pyg",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/loader.py",
+                      "target":  "function:fraudGT/graphgym/loader.py:load_pyg",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/loader.py",
+                      "target":  "function:fraudGT/graphgym/loader.py:set_dataset_attr",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/loader.py",
+                      "target":  "function:fraudGT/graphgym/loader.py:set_dataset_attr",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/loader.py",
+                      "target":  "function:fraudGT/graphgym/loader.py:load_ogb",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/loader.py",
+                      "target":  "function:fraudGT/graphgym/loader.py:load_ogb",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/loader.py",
+                      "target":  "function:fraudGT/graphgym/loader.py:load_dataset",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/loader.py",
+                      "target":  "function:fraudGT/graphgym/loader.py:load_dataset",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/loader.py",
+                      "target":  "function:fraudGT/graphgym/loader.py:set_dataset_info",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/loader.py",
+                      "target":  "function:fraudGT/graphgym/loader.py:set_dataset_info",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/loader.py",
+                      "target":  "function:fraudGT/graphgym/loader.py:create_dataset",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/loader.py",
+                      "target":  "function:fraudGT/graphgym/loader.py:create_dataset",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/loader.py",
+                      "target":  "function:fraudGT/graphgym/loader.py:get_loader",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/loader.py",
+                      "target":  "function:fraudGT/graphgym/loader.py:get_loader",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/loader.py",
+                      "target":  "function:fraudGT/graphgym/loader.py:create_loader",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/loader.py",
+                      "target":  "function:fraudGT/graphgym/loader.py:create_loader",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/loader_deepsnap.py",
+                      "target":  "function:fraudGT/graphgym/loader_deepsnap.py:load_pyg",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/loader_deepsnap.py",
+                      "target":  "function:fraudGT/graphgym/loader_deepsnap.py:load_pyg",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/loader_deepsnap.py",
+                      "target":  "function:fraudGT/graphgym/loader_deepsnap.py:load_nx",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/loader_deepsnap.py",
+                      "target":  "function:fraudGT/graphgym/loader_deepsnap.py:load_nx",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/loader_deepsnap.py",
+                      "target":  "function:fraudGT/graphgym/loader_deepsnap.py:load_dataset",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/loader_deepsnap.py",
+                      "target":  "function:fraudGT/graphgym/loader_deepsnap.py:load_dataset",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/loader_deepsnap.py",
+                      "target":  "function:fraudGT/graphgym/loader_deepsnap.py:filter_graphs",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/loader_deepsnap.py",
+                      "target":  "function:fraudGT/graphgym/loader_deepsnap.py:filter_graphs",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/loader_deepsnap.py",
+                      "target":  "function:fraudGT/graphgym/loader_deepsnap.py:transform_before_split",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/loader_deepsnap.py",
+                      "target":  "function:fraudGT/graphgym/loader_deepsnap.py:transform_before_split",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/loader_deepsnap.py",
+                      "target":  "function:fraudGT/graphgym/loader_deepsnap.py:transform_after_split",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/loader_deepsnap.py",
+                      "target":  "function:fraudGT/graphgym/loader_deepsnap.py:transform_after_split",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/loader_deepsnap.py",
+                      "target":  "function:fraudGT/graphgym/loader_deepsnap.py:set_dataset_info",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/loader_deepsnap.py",
+                      "target":  "function:fraudGT/graphgym/loader_deepsnap.py:set_dataset_info",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/loader_deepsnap.py",
+                      "target":  "function:fraudGT/graphgym/loader_deepsnap.py:create_dataset",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/loader_deepsnap.py",
+                      "target":  "function:fraudGT/graphgym/loader_deepsnap.py:create_dataset",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/loader_deepsnap.py",
+                      "target":  "function:fraudGT/graphgym/loader_deepsnap.py:create_loader",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/loader_deepsnap.py",
+                      "target":  "function:fraudGT/graphgym/loader_deepsnap.py:create_loader",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/logger.py",
+                      "target":  "class:fraudGT/graphgym/logger.py:Logger",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/logger.py",
+                      "target":  "class:fraudGT/graphgym/logger.py:Logger",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/logger.py",
+                      "target":  "function:fraudGT/graphgym/logger.py:setup_printing",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/logger.py",
+                      "target":  "function:fraudGT/graphgym/logger.py:setup_printing",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/logger.py",
+                      "target":  "function:fraudGT/graphgym/logger.py:infer_task",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/logger.py",
+                      "target":  "function:fraudGT/graphgym/logger.py:infer_task",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/logger.py",
+                      "target":  "function:fraudGT/graphgym/logger.py:create_logger",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/logger.py",
+                      "target":  "function:fraudGT/graphgym/logger.py:create_logger",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  }
+              ]
+}

@@ -1,0 +1,581 @@
+{
+  "nodes": [
+    {
+      "id": "config:configs/AML-Medium-LI/AML-Medium-LI-SparseNodeGT+Ego.yaml",
+      "type": "config",
+      "name": "AML-Medium-LI-SparseNodeGT+Ego.yaml",
+      "filePath": "configs/AML-Medium-LI/AML-Medium-LI-SparseNodeGT+Ego.yaml",
+      "summary": "Configures a Medium-LI AML hetero-edge classification run using SparseNodeGT with ego-id training.",
+      "tags": [
+        "configuration",
+        "aml",
+        "hetero-edge",
+        "sparse-node-gt",
+        "ego-id"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config includes a gt section for transformer controls alongside dataset, train, val, model, gnn, and optim sections."
+    },
+    {
+      "id": "config:configs/AML-Medium-LI/AML-Medium-LI-SparseNodeGT+ports.yaml",
+      "type": "config",
+      "name": "AML-Medium-LI-SparseNodeGT+ports.yaml",
+      "filePath": "configs/AML-Medium-LI/AML-Medium-LI-SparseNodeGT+ports.yaml",
+      "summary": "Configures a Medium-LI AML hetero-edge classification run using SparseNodeGT with dataset port features.",
+      "tags": [
+        "configuration",
+        "aml",
+        "hetero-edge",
+        "sparse-node-gt",
+        "ports"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config includes a gt section for transformer controls alongside dataset, train, val, model, gnn, and optim sections."
+    },
+    {
+      "id": "config:configs/AML-Medium-LI/AML-Medium-LI-SparseNodeGT+ports+Ego.yaml",
+      "type": "config",
+      "name": "AML-Medium-LI-SparseNodeGT+ports+Ego.yaml",
+      "filePath": "configs/AML-Medium-LI/AML-Medium-LI-SparseNodeGT+ports+Ego.yaml",
+      "summary": "Configures a Medium-LI AML hetero-edge classification run using SparseNodeGT with dataset port features, ego-id training.",
+      "tags": [
+        "configuration",
+        "aml",
+        "hetero-edge",
+        "sparse-node-gt",
+        "ports"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config includes a gt section for transformer controls alongside dataset, train, val, model, gnn, and optim sections."
+    },
+    {
+      "id": "config:configs/AML-Medium-LI/AML-Medium-LI-SparseNodeGT+RMP.yaml",
+      "type": "config",
+      "name": "AML-Medium-LI-SparseNodeGT+RMP.yaml",
+      "filePath": "configs/AML-Medium-LI/AML-Medium-LI-SparseNodeGT+RMP.yaml",
+      "summary": "Configures a Medium-LI AML hetero-edge classification run using SparseNodeGT with reverse-message-passing and port-based multi-relation settings.",
+      "tags": [
+        "configuration",
+        "aml",
+        "hetero-edge",
+        "sparse-node-gt",
+        "multi-relation"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config includes a gt section for transformer controls alongside dataset, train, val, model, gnn, and optim sections."
+    },
+    {
+      "id": "config:configs/AML-Medium-LI/AML-Medium-LI-SparseNodeGT-EdgeAttn.yaml",
+      "type": "config",
+      "name": "AML-Medium-LI-SparseNodeGT-EdgeAttn.yaml",
+      "filePath": "configs/AML-Medium-LI/AML-Medium-LI-SparseNodeGT-EdgeAttn.yaml",
+      "summary": "Configures a Medium-LI AML hetero-edge classification run using SparseNodeGT with an edge-attention ablation.",
+      "tags": [
+        "configuration",
+        "aml",
+        "hetero-edge",
+        "sparse-node-gt",
+        "edge-attention"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config includes a gt section for transformer controls alongside dataset, train, val, model, gnn, and optim sections."
+    },
+    {
+      "id": "config:configs/AML-Medium-LI/AML-Medium-LI-SparseNodeGT-EdgeGate.yaml",
+      "type": "config",
+      "name": "AML-Medium-LI-SparseNodeGT-EdgeGate.yaml",
+      "filePath": "configs/AML-Medium-LI/AML-Medium-LI-SparseNodeGT-EdgeGate.yaml",
+      "summary": "Configures a Medium-LI AML hetero-edge classification run using SparseNodeGT with an edge-gate ablation.",
+      "tags": [
+        "configuration",
+        "aml",
+        "hetero-edge",
+        "sparse-node-gt",
+        "edge-gate"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config includes a gt section for transformer controls alongside dataset, train, val, model, gnn, and optim sections."
+    },
+    {
+      "id": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI_Transfer-Multi-SparseNodeGT.yaml",
+      "type": "config",
+      "name": "AML-Medium-LI_Transfer-Multi-SparseNodeGT.yaml",
+      "filePath": "configs/AML-Medium-LI_Transfer/AML-Medium-LI_Transfer-Multi-SparseNodeGT.yaml",
+      "summary": "Configures a Medium-LI AML hetero-edge classification transfer-set run using SparseNodeGT with pretrained inference-only evaluation, reverse-message-passing and port-based multi-relation settings, ego-id training.",
+      "tags": [
+        "configuration",
+        "aml",
+        "hetero-edge",
+        "sparse-node-gt",
+        "transfer"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config includes a gt section for transformer controls alongside dataset, train, val, model, gnn, and optim sections."
+    },
+    {
+      "id": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-GATE.yaml",
+      "type": "config",
+      "name": "AML-Medium-LI-GATE.yaml",
+      "filePath": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-GATE.yaml",
+      "summary": "Configures a Medium-LI AML hetero-edge classification transfer-set run using GATE with link-neighbor sampling, weighted cross entropy, and AdamW scheduling.",
+      "tags": [
+        "configuration",
+        "aml",
+        "hetero-edge",
+        "gate",
+        "experiment"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config organizes dataset, train, val, model, gnn, and optim controls for GraphGym-style runs."
+    },
+    {
+      "id": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-GatedGCN.yaml",
+      "type": "config",
+      "name": "AML-Medium-LI-GatedGCN.yaml",
+      "filePath": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-GatedGCN.yaml",
+      "summary": "Configures a Medium-LI AML hetero-edge classification transfer-set run using GatedGCN with link-neighbor sampling, weighted cross entropy, and AdamW scheduling.",
+      "tags": [
+        "configuration",
+        "aml",
+        "hetero-edge",
+        "gated-gcn",
+        "experiment"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config organizes dataset, train, val, model, gnn, and optim controls for GraphGym-style runs."
+    },
+    {
+      "id": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-GINE.yaml",
+      "type": "config",
+      "name": "AML-Medium-LI-GINE.yaml",
+      "filePath": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-GINE.yaml",
+      "summary": "Configures a Medium-LI AML hetero-edge classification transfer-set run using GINE with link-neighbor sampling, weighted cross entropy, and AdamW scheduling.",
+      "tags": [
+        "configuration",
+        "aml",
+        "hetero-edge",
+        "gine",
+        "experiment"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config organizes dataset, train, val, model, gnn, and optim controls for GraphGym-style runs."
+    },
+    {
+      "id": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-GINE+Ego.yaml",
+      "type": "config",
+      "name": "AML-Medium-LI-GINE+Ego.yaml",
+      "filePath": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-GINE+Ego.yaml",
+      "summary": "Configures a Medium-LI AML hetero-edge classification transfer-set run using GINE with ego-id training.",
+      "tags": [
+        "configuration",
+        "aml",
+        "hetero-edge",
+        "gine",
+        "ego-id"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config organizes dataset, train, val, model, gnn, and optim controls for GraphGym-style runs."
+    },
+    {
+      "id": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-GINE+EU.yaml",
+      "type": "config",
+      "name": "AML-Medium-LI-GINE+EU.yaml",
+      "filePath": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-GINE+EU.yaml",
+      "summary": "Configures a Medium-LI AML hetero-edge classification transfer-set run using GINE with edge-update behavior.",
+      "tags": [
+        "configuration",
+        "aml",
+        "hetero-edge",
+        "gine",
+        "edge-updates"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config organizes dataset, train, val, model, gnn, and optim controls for GraphGym-style runs."
+    },
+    {
+      "id": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-GINE+ports.yaml",
+      "type": "config",
+      "name": "AML-Medium-LI-GINE+ports.yaml",
+      "filePath": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-GINE+ports.yaml",
+      "summary": "Configures a Medium-LI AML hetero-edge classification transfer-set run using GINE with dataset port features.",
+      "tags": [
+        "configuration",
+        "aml",
+        "hetero-edge",
+        "gine",
+        "ports"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config organizes dataset, train, val, model, gnn, and optim controls for GraphGym-style runs."
+    },
+    {
+      "id": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-GINE+RMP.yaml",
+      "type": "config",
+      "name": "AML-Medium-LI-GINE+RMP.yaml",
+      "filePath": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-GINE+RMP.yaml",
+      "summary": "Configures a Medium-LI AML hetero-edge classification transfer-set run using GINE with reverse-message-passing and port-based multi-relation settings.",
+      "tags": [
+        "configuration",
+        "aml",
+        "hetero-edge",
+        "gine",
+        "multi-relation"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config organizes dataset, train, val, model, gnn, and optim controls for GraphGym-style runs."
+    },
+    {
+      "id": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-MLP.yaml",
+      "type": "config",
+      "name": "AML-Medium-LI-MLP.yaml",
+      "filePath": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-MLP.yaml",
+      "summary": "Configures a Medium-LI AML hetero-edge classification transfer-set run using MLP with link-neighbor sampling, weighted cross entropy, and AdamW scheduling.",
+      "tags": [
+        "configuration",
+        "aml",
+        "hetero-edge",
+        "mlp",
+        "baseline"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config organizes dataset, train, val, model, gnn, and optim controls for GraphGym-style runs."
+    },
+    {
+      "id": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-Multi-GINE.yaml",
+      "type": "config",
+      "name": "AML-Medium-LI-Multi-GINE.yaml",
+      "filePath": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-Multi-GINE.yaml",
+      "summary": "Configures a Medium-LI AML hetero-edge classification transfer-set run using GINE with reverse-message-passing and port-based multi-relation settings, ego-id training.",
+      "tags": [
+        "configuration",
+        "aml",
+        "hetero-edge",
+        "gine",
+        "multi-relation"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config organizes dataset, train, val, model, gnn, and optim controls for GraphGym-style runs."
+    },
+    {
+      "id": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-Multi-GINE+EU.yaml",
+      "type": "config",
+      "name": "AML-Medium-LI-Multi-GINE+EU.yaml",
+      "filePath": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-Multi-GINE+EU.yaml",
+      "summary": "Configures a Medium-LI AML hetero-edge classification transfer-set run using GINE with reverse-message-passing and port-based multi-relation settings, ego-id training, edge-update behavior.",
+      "tags": [
+        "configuration",
+        "aml",
+        "hetero-edge",
+        "gine",
+        "multi-relation"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config organizes dataset, train, val, model, gnn, and optim controls for GraphGym-style runs."
+    },
+    {
+      "id": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-Multi-PNA.yaml",
+      "type": "config",
+      "name": "AML-Medium-LI-Multi-PNA.yaml",
+      "filePath": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-Multi-PNA.yaml",
+      "summary": "Configures a Medium-LI AML hetero-edge classification transfer-set run using PNA with reverse-message-passing and port-based multi-relation settings, ego-id training.",
+      "tags": [
+        "configuration",
+        "aml",
+        "hetero-edge",
+        "pna",
+        "multi-relation"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config organizes dataset, train, val, model, gnn, and optim controls for GraphGym-style runs."
+    },
+    {
+      "id": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-Multi-PNA+EU.yaml",
+      "type": "config",
+      "name": "AML-Medium-LI-Multi-PNA+EU.yaml",
+      "filePath": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-Multi-PNA+EU.yaml",
+      "summary": "Configures a Medium-LI AML hetero-edge classification transfer-set run using PNA with reverse-message-passing and port-based multi-relation settings, ego-id training, edge-update behavior.",
+      "tags": [
+        "configuration",
+        "aml",
+        "hetero-edge",
+        "pna",
+        "multi-relation"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config organizes dataset, train, val, model, gnn, and optim controls for GraphGym-style runs."
+    },
+    {
+      "id": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-PNA.yaml",
+      "type": "config",
+      "name": "AML-Medium-LI-PNA.yaml",
+      "filePath": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-PNA.yaml",
+      "summary": "Configures a Medium-LI AML hetero-edge classification transfer-set run using PNA with link-neighbor sampling, weighted cross entropy, and AdamW scheduling.",
+      "tags": [
+        "configuration",
+        "aml",
+        "hetero-edge",
+        "pna",
+        "experiment"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config organizes dataset, train, val, model, gnn, and optim controls for GraphGym-style runs."
+    },
+    {
+      "id": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-PNA+EU.yaml",
+      "type": "config",
+      "name": "AML-Medium-LI-PNA+EU.yaml",
+      "filePath": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-PNA+EU.yaml",
+      "summary": "Configures a Medium-LI AML hetero-edge classification transfer-set run using PNA with edge-update behavior.",
+      "tags": [
+        "configuration",
+        "aml",
+        "hetero-edge",
+        "pna",
+        "edge-updates"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config organizes dataset, train, val, model, gnn, and optim controls for GraphGym-style runs."
+    },
+    {
+      "id": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT.yaml",
+      "type": "config",
+      "name": "AML-Medium-LI-SparseNodeGT.yaml",
+      "filePath": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT.yaml",
+      "summary": "Configures a Medium-LI AML hetero-edge classification transfer-set run using SparseNodeGT with link-neighbor sampling, weighted cross entropy, and AdamW scheduling.",
+      "tags": [
+        "configuration",
+        "aml",
+        "hetero-edge",
+        "sparse-node-gt",
+        "experiment"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config includes a gt section for transformer controls alongside dataset, train, val, model, gnn, and optim sections."
+    },
+    {
+      "id": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT+Ego.yaml",
+      "type": "config",
+      "name": "AML-Medium-LI-SparseNodeGT+Ego.yaml",
+      "filePath": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT+Ego.yaml",
+      "summary": "Configures a Medium-LI AML hetero-edge classification transfer-set run using SparseNodeGT with ego-id training.",
+      "tags": [
+        "configuration",
+        "aml",
+        "hetero-edge",
+        "sparse-node-gt",
+        "ego-id"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config includes a gt section for transformer controls alongside dataset, train, val, model, gnn, and optim sections."
+    },
+    {
+      "id": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT+ports.yaml",
+      "type": "config",
+      "name": "AML-Medium-LI-SparseNodeGT+ports.yaml",
+      "filePath": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT+ports.yaml",
+      "summary": "Configures a Medium-LI AML hetero-edge classification transfer-set run using SparseNodeGT with dataset port features.",
+      "tags": [
+        "configuration",
+        "aml",
+        "hetero-edge",
+        "sparse-node-gt",
+        "ports"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config includes a gt section for transformer controls alongside dataset, train, val, model, gnn, and optim sections."
+    },
+    {
+      "id": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT+ports+Ego.yaml",
+      "type": "config",
+      "name": "AML-Medium-LI-SparseNodeGT+ports+Ego.yaml",
+      "filePath": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT+ports+Ego.yaml",
+      "summary": "Configures a Medium-LI AML hetero-edge classification transfer-set run using SparseNodeGT with dataset port features, ego-id training.",
+      "tags": [
+        "configuration",
+        "aml",
+        "hetero-edge",
+        "sparse-node-gt",
+        "ports"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML experiment config includes a gt section for transformer controls alongside dataset, train, val, model, gnn, and optim sections."
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:configs/AML-Medium-LI/AML-Medium-LI-SparseNodeGT+Ego.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI/AML-Medium-LI-SparseNodeGT+ports.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI/AML-Medium-LI-SparseNodeGT+ports+Ego.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI/AML-Medium-LI-SparseNodeGT+RMP.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI/AML-Medium-LI-SparseNodeGT-EdgeAttn.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI/AML-Medium-LI-SparseNodeGT-EdgeGate.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI_Transfer-Multi-SparseNodeGT.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-GATE.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-GatedGCN.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-GINE.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-GINE+Ego.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-GINE+EU.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-GINE+ports.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-GINE+RMP.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-MLP.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-Multi-GINE.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-Multi-GINE+EU.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-Multi-PNA.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-Multi-PNA+EU.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-PNA.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-PNA+EU.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT+Ego.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT+ports.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT+ports+Ego.yaml",
+      "target": "file:fraudGT/main.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

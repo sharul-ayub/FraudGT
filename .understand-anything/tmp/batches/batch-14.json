@@ -1,0 +1,188 @@
+﻿{
+    "batchIndex":  14,
+    "projectRoot":  "G:\\My Drive\\GithubRepo\\FraudGT",
+    "batchFiles":  [
+                       {
+                           "path":  "configs/ETH/ETH-GINE.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  74,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/ETH/ETH-GINE+Ego.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  75,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/ETH/ETH-GINE+EU.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  75,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/ETH/ETH-GINE+ports.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  76,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/ETH/ETH-GINE+RMP.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  76,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/ETH/ETH-MLP.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  72,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/ETH/ETH-Multi-GINE.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  76,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/ETH/ETH-Multi-PNA.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  77,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/ETH/ETH-Multi-PNA+EU.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  78,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/ETH/ETH-Multi-SparseNodeGT.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  85,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/ETH/ETH-PNA.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  75,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/ETH/ETH-PNA+EU.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  75,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/ETH/ETH-SparseNodeGT.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  82,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/ETH/ETH-SparseNodeGT+Ego.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  83,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/ETH/ETH-SparseNodeGT+LP.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  85,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/ETH/ETH-SparseNodeGT+LP+ports.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  87,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/ETH/ETH-SparseNodeGT+Node2Vec.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  86,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/ETH/ETH-SparseNodeGT+ports.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  84,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/ETH/ETH-SparseNodeGT+ports+Ego.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  85,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/ETH/ETH-SparseNodeGT+RMP.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  83,
+                           "fileCategory":  "config"
+                       }
+                   ],
+    "batchImportData":  {
+                            "configs/ETH/ETH-GINE.yaml":  [
+
+                                                          ],
+                            "configs/ETH/ETH-GINE+Ego.yaml":  [
+
+                                                              ],
+                            "configs/ETH/ETH-GINE+EU.yaml":  [
+
+                                                             ],
+                            "configs/ETH/ETH-GINE+ports.yaml":  [
+
+                                                                ],
+                            "configs/ETH/ETH-GINE+RMP.yaml":  [
+
+                                                              ],
+                            "configs/ETH/ETH-MLP.yaml":  [
+
+                                                         ],
+                            "configs/ETH/ETH-Multi-GINE.yaml":  [
+
+                                                                ],
+                            "configs/ETH/ETH-Multi-PNA.yaml":  [
+
+                                                               ],
+                            "configs/ETH/ETH-Multi-PNA+EU.yaml":  [
+
+                                                                  ],
+                            "configs/ETH/ETH-Multi-SparseNodeGT.yaml":  [
+
+                                                                        ],
+                            "configs/ETH/ETH-PNA.yaml":  [
+
+                                                         ],
+                            "configs/ETH/ETH-PNA+EU.yaml":  [
+
+                                                            ],
+                            "configs/ETH/ETH-SparseNodeGT.yaml":  [
+
+                                                                  ],
+                            "configs/ETH/ETH-SparseNodeGT+Ego.yaml":  [
+
+                                                                      ],
+                            "configs/ETH/ETH-SparseNodeGT+LP.yaml":  [
+
+                                                                     ],
+                            "configs/ETH/ETH-SparseNodeGT+LP+ports.yaml":  [
+
+                                                                           ],
+                            "configs/ETH/ETH-SparseNodeGT+Node2Vec.yaml":  [
+
+                                                                           ],
+                            "configs/ETH/ETH-SparseNodeGT+ports.yaml":  [
+
+                                                                        ],
+                            "configs/ETH/ETH-SparseNodeGT+ports+Ego.yaml":  [
+
+                                                                            ],
+                            "configs/ETH/ETH-SparseNodeGT+RMP.yaml":  [
+
+                                                                      ]
+                        }
+}

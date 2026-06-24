@@ -1,0 +1,243 @@
+﻿{
+    "batchIndex":  0,
+    "projectRoot":  "G:\\My Drive\\GithubRepo\\FraudGT",
+    "batchFiles":  [
+                       {
+                           "path":  "README.md",
+                           "language":  "markdown",
+                           "sizeLines":  38,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "requirements.txt",
+                           "language":  "unknown",
+                           "sizeLines":  7,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "run/interactive_run.sh",
+                           "language":  "shell",
+                           "sizeLines":  145,
+                           "fileCategory":  "script"
+                       },
+                       {
+                           "path":  "run/run_grid.sh",
+                           "language":  "shell",
+                           "sizeLines":  169,
+                           "fileCategory":  "script"
+                       },
+                       {
+                           "path":  "fraudGT/__init__.py",
+                           "language":  "python",
+                           "sizeLines":  12,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/act/__init__.py",
+                           "language":  "python",
+                           "sizeLines":  8,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/act/example.py",
+                           "language":  "python",
+                           "sizeLines":  12,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/agg_runs.py",
+                           "language":  "python",
+                           "sizeLines":  162,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/config/__init__.py",
+                           "language":  "python",
+                           "sizeLines":  8,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/config/dataset_config.py",
+                           "language":  "python",
+                           "sizeLines":  27,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/config/defaults_config.py",
+                           "language":  "python",
+                           "sizeLines":  91,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/config/gt_config.py",
+                           "language":  "python",
+                           "sizeLines":  103,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/config/optimizers_config.py",
+                           "language":  "python",
+                           "sizeLines":  28,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/config/posenc_config.py",
+                           "language":  "python",
+                           "sizeLines":  141,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/config/pretrained_config.py",
+                           "language":  "python",
+                           "sizeLines":  20,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/config/split_config.py",
+                           "language":  "python",
+                           "sizeLines":  23,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/config/wandb_config.py",
+                           "language":  "python",
+                           "sizeLines":  23,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/datasets/__init__.py",
+                           "language":  "python",
+                           "sizeLines":  8,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/datasets/aml_dataset.py",
+                           "language":  "python",
+                           "sizeLines":  351,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/datasets/eth_dataset.py",
+                           "language":  "python",
+                           "sizeLines":  221,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/datasets/temporal_dataset.py",
+                           "language":  "python",
+                           "sizeLines":  205,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/datasets/utils.py",
+                           "language":  "python",
+                           "sizeLines":  34,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/encoder/__init__.py",
+                           "language":  "python",
+                           "sizeLines":  8,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/encoder/composed_encoders.py",
+                           "language":  "python",
+                           "sizeLines":  331,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/encoder/hetero_embed_encoder.py",
+                           "language":  "python",
+                           "sizeLines":  33,
+                           "fileCategory":  "code"
+                       }
+                   ],
+    "batchImportData":  {
+                            "README.md":  [
+
+                                          ],
+                            "requirements.txt":  [
+
+                                                 ],
+                            "run/interactive_run.sh":  [
+
+                                                       ],
+                            "run/run_grid.sh":  [
+
+                                                ],
+                            "fraudGT/__init__.py":  [
+                                                        "fraudGT/act/__init__.py",
+                                                        "fraudGT/config/__init__.py",
+                                                        "fraudGT/encoder/__init__.py",
+                                                        "fraudGT/head/__init__.py",
+                                                        "fraudGT/loader/__init__.py",
+                                                        "fraudGT/loss/__init__.py",
+                                                        "fraudGT/network/__init__.py",
+                                                        "fraudGT/optimizer/__init__.py",
+                                                        "fraudGT/sampler/__init__.py",
+                                                        "fraudGT/train/__init__.py",
+                                                        "fraudGT/transform/__init__.py"
+                                                    ],
+                            "fraudGT/act/__init__.py":  [
+
+                                                        ],
+                            "fraudGT/act/example.py":  [
+
+                                                       ],
+                            "fraudGT/agg_runs.py":  [
+
+                                                    ],
+                            "fraudGT/config/__init__.py":  [
+
+                                                           ],
+                            "fraudGT/config/dataset_config.py":  [
+
+                                                                 ],
+                            "fraudGT/config/defaults_config.py":  [
+
+                                                                  ],
+                            "fraudGT/config/gt_config.py":  [
+
+                                                            ],
+                            "fraudGT/config/optimizers_config.py":  [
+
+                                                                    ],
+                            "fraudGT/config/posenc_config.py":  [
+
+                                                                ],
+                            "fraudGT/config/pretrained_config.py":  [
+
+                                                                    ],
+                            "fraudGT/config/split_config.py":  [
+
+                                                               ],
+                            "fraudGT/config/wandb_config.py":  [
+
+                                                               ],
+                            "fraudGT/datasets/__init__.py":  [
+
+                                                             ],
+                            "fraudGT/datasets/aml_dataset.py":  [
+                                                                    "fraudGT/datasets/temporal_dataset.py"
+                                                                ],
+                            "fraudGT/datasets/eth_dataset.py":  [
+                                                                    "fraudGT/datasets/utils.py"
+                                                                ],
+                            "fraudGT/datasets/temporal_dataset.py":  [
+
+                                                                     ],
+                            "fraudGT/datasets/utils.py":  [
+
+                                                          ],
+                            "fraudGT/encoder/__init__.py":  [
+
+                                                            ],
+                            "fraudGT/encoder/composed_encoders.py":  [
+
+                                                                     ],
+                            "fraudGT/encoder/hetero_embed_encoder.py":  [
+
+                                                                        ]
+                        }
+}

@@ -1,0 +1,2985 @@
+{
+  "nodes": [
+    {
+      "id": "file:fraudGT/network/hetero_gnn_edge_model.py",
+      "type": "file",
+      "name": "hetero_gnn_edge_model.py",
+      "filePath": "fraudGT/network/hetero_gnn_edge_model.py",
+      "summary": "Defines the heterogeneous edge-classification GNN used for transaction-style supervision, including feature encoders and relation-aware message passing over HeteroData metadata.",
+      "tags": [
+        "gnn-model",
+        "neural-network",
+        "graph-learning",
+        "fraud-detection"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:fraudGT/network/hetero_gnn_edge_model.py:FeatureEncoder",
+      "type": "class",
+      "name": "FeatureEncoder",
+      "filePath": "fraudGT/network/hetero_gnn_edge_model.py",
+      "lineRange": [
+        16,
+        57
+      ],
+      "summary": "Encodes raw node and edge attributes into the hidden representation expected by downstream FraudGT network layers.",
+      "tags": [
+        "class",
+        "gnn-model",
+        "graph-learning"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/network/hetero_gnn_edge_model.py:HeteroGNNEdgeModel",
+      "type": "class",
+      "name": "HeteroGNNEdgeModel",
+      "filePath": "fraudGT/network/hetero_gnn_edge_model.py",
+      "lineRange": [
+        60,
+        208
+      ],
+      "summary": "Implements the Hetero G N N Edge Model architecture for edge-level prediction over FraudGT graph batches.",
+      "tags": [
+        "class",
+        "gnn-model",
+        "graph-learning"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:fraudGT/network/hetero_gnn_model.py",
+      "type": "file",
+      "name": "hetero_gnn_model.py",
+      "filePath": "fraudGT/network/hetero_gnn_model.py",
+      "summary": "Defines the heterogeneous node-level GNN variant that encodes node and edge features and applies relation-specific convolution layers before a graph head.",
+      "tags": [
+        "gnn-model",
+        "neural-network",
+        "graph-learning",
+        "fraud-detection"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:fraudGT/network/hetero_gnn_model.py:FeatureEncoder",
+      "type": "class",
+      "name": "FeatureEncoder",
+      "filePath": "fraudGT/network/hetero_gnn_model.py",
+      "lineRange": [
+        14,
+        56
+      ],
+      "summary": "Encodes raw node and edge attributes into the hidden representation expected by downstream FraudGT network layers.",
+      "tags": [
+        "class",
+        "gnn-model",
+        "graph-learning"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/network/hetero_gnn_model.py:HeteroGNNModel",
+      "type": "class",
+      "name": "HeteroGNNModel",
+      "filePath": "fraudGT/network/hetero_gnn_model.py",
+      "lineRange": [
+        59,
+        201
+      ],
+      "summary": "Implements the Hetero G N N Model architecture for graph neural network prediction in FraudGT.",
+      "tags": [
+        "class",
+        "gnn-model",
+        "graph-learning"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:fraudGT/network/homo_gnn_edge_model.py",
+      "type": "file",
+      "name": "homo_gnn_edge_model.py",
+      "filePath": "fraudGT/network/homo_gnn_edge_model.py",
+      "summary": "Implements the homogeneous edge-classification GNN path, combining node and edge encoders with configurable convolution layers and an edge prediction head.",
+      "tags": [
+        "gnn-model",
+        "neural-network",
+        "graph-learning",
+        "fraud-detection"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:fraudGT/network/homo_gnn_edge_model.py:FeatureEncoder",
+      "type": "class",
+      "name": "FeatureEncoder",
+      "filePath": "fraudGT/network/homo_gnn_edge_model.py",
+      "lineRange": [
+        19,
+        60
+      ],
+      "summary": "Encodes raw node and edge attributes into the hidden representation expected by downstream FraudGT network layers.",
+      "tags": [
+        "class",
+        "gnn-model",
+        "graph-learning"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/network/homo_gnn_edge_model.py:HomoGNNEdgeModel",
+      "type": "class",
+      "name": "HomoGNNEdgeModel",
+      "filePath": "fraudGT/network/homo_gnn_edge_model.py",
+      "lineRange": [
+        63,
+        240
+      ],
+      "summary": "Implements the Homo G N N Edge Model architecture for edge-level prediction over FraudGT graph batches.",
+      "tags": [
+        "class",
+        "gnn-model",
+        "graph-learning"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:fraudGT/network/homo_gnn_model.py",
+      "type": "file",
+      "name": "homo_gnn_model.py",
+      "filePath": "fraudGT/network/homo_gnn_model.py",
+      "summary": "Implements the homogeneous node-level GNN model with configurable layer normalization, batch normalization, residual behavior, and GraphGym-style heads.",
+      "tags": [
+        "gnn-model",
+        "neural-network",
+        "graph-learning",
+        "fraud-detection"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:fraudGT/network/homo_gnn_model.py:FeatureEncoder",
+      "type": "class",
+      "name": "FeatureEncoder",
+      "filePath": "fraudGT/network/homo_gnn_model.py",
+      "lineRange": [
+        18,
+        56
+      ],
+      "summary": "Encodes raw node and edge attributes into the hidden representation expected by downstream FraudGT network layers.",
+      "tags": [
+        "class",
+        "gnn-model",
+        "graph-learning"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/network/homo_gnn_model.py:HomoGNNModel",
+      "type": "class",
+      "name": "HomoGNNModel",
+      "filePath": "fraudGT/network/homo_gnn_model.py",
+      "lineRange": [
+        59,
+        271
+      ],
+      "summary": "Implements the Homo G N N Model architecture for graph neural network prediction in FraudGT.",
+      "tags": [
+        "class",
+        "gnn-model",
+        "graph-learning"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:fraudGT/network/mlp_model.py",
+      "type": "file",
+      "name": "mlp_model.py",
+      "filePath": "fraudGT/network/mlp_model.py",
+      "summary": "Provides a non-message-passing MLP baseline that encodes node and edge attributes and feeds them through pre-message-passing blocks and a prediction head.",
+      "tags": [
+        "gnn-model",
+        "neural-network",
+        "graph-learning",
+        "fraud-detection"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:fraudGT/network/mlp_model.py:FeatureEncoder",
+      "type": "class",
+      "name": "FeatureEncoder",
+      "filePath": "fraudGT/network/mlp_model.py",
+      "lineRange": [
+        13,
+        55
+      ],
+      "summary": "Encodes raw node and edge attributes into the hidden representation expected by downstream FraudGT network layers.",
+      "tags": [
+        "class",
+        "gnn-model",
+        "graph-learning"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/network/mlp_model.py:MLPModel",
+      "type": "class",
+      "name": "MLPModel",
+      "filePath": "fraudGT/network/mlp_model.py",
+      "lineRange": [
+        58,
+        102
+      ],
+      "summary": "Implements an MLP baseline that bypasses graph message passing while preserving the project feature encoder and head conventions.",
+      "tags": [
+        "class",
+        "gnn-model",
+        "graph-learning"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/network/model.py",
+      "type": "file",
+      "name": "model.py",
+      "filePath": "fraudGT/network/model.py",
+      "summary": "Contains legacy/simple GNN building blocks: a classifier head and a stack of GeneralConv layers for transaction classification experiments.",
+      "tags": [
+        "gnn-model",
+        "neural-network",
+        "graph-learning",
+        "fraud-detection"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/network/model.py:Classifier",
+      "type": "class",
+      "name": "Classifier",
+      "filePath": "fraudGT/network/model.py",
+      "lineRange": [
+        14,
+        25
+      ],
+      "summary": "Applies a linear classifier and log-softmax output to learned transaction or node representations.",
+      "tags": [
+        "class",
+        "gnn-model",
+        "graph-learning"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/network/model.py:GNN",
+      "type": "class",
+      "name": "GNN",
+      "filePath": "fraudGT/network/model.py",
+      "lineRange": [
+        27,
+        53
+      ],
+      "summary": "Stacks GeneralConv layers with adaptation projections, dropout, and a classifier for legacy graph classification experiments.",
+      "tags": [
+        "class",
+        "gnn-model",
+        "graph-learning"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/network/utils.py",
+      "type": "file",
+      "name": "utils.py",
+      "filePath": "fraudGT/network/utils.py",
+      "summary": "Provides a configurable pre-network MLP builder used by network modules to transform feature dimensions before downstream heads.",
+      "tags": [
+        "gnn-model",
+        "neural-network",
+        "graph-learning",
+        "fraud-detection"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/network/utils.py:GTPreNN",
+      "type": "function",
+      "name": "GTPreNN",
+      "filePath": "fraudGT/network/utils.py",
+      "lineRange": [
+        14,
+        30
+      ],
+      "summary": "Provides the GTPreNN helper used by utils.py.",
+      "tags": [
+        "utility",
+        "configuration",
+        "experiment"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/optimizer/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "fraudGT/optimizer/__init__.py",
+      "summary": "Package initializer for optimizer extensions, exposing the optimizer namespace without adding runtime logic.",
+      "tags": [
+        "optimizer",
+        "scheduler",
+        "training",
+        "configuration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/optimizer/extra_optimizers.py",
+      "type": "file",
+      "name": "extra_optimizers.py",
+      "filePath": "fraudGT/optimizer/extra_optimizers.py",
+      "summary": "Registers additional optimizer and scheduler helpers, including AdamW, RMSProp, ReduceLROnPlateau, and warmup decay schedules.",
+      "tags": [
+        "optimizer",
+        "scheduler",
+        "training",
+        "configuration"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:fraudGT/optimizer/extra_optimizers.py:ExtendedSchedulerConfig",
+      "type": "class",
+      "name": "ExtendedSchedulerConfig",
+      "filePath": "fraudGT/optimizer/extra_optimizers.py",
+      "lineRange": [
+        40,
+        46
+      ],
+      "summary": "Extends scheduler configuration fields used by the custom optimizer and learning-rate scheduler registry.",
+      "tags": [
+        "class",
+        "gnn-model",
+        "graph-learning"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/optimizer/extra_optimizers.py:adagrad_optimizer",
+      "type": "function",
+      "name": "adagrad_optimizer",
+      "filePath": "fraudGT/optimizer/extra_optimizers.py",
+      "lineRange": [
+        16,
+        18
+      ],
+      "summary": "Creates or registers optimizer configuration for FraudGT training.",
+      "tags": [
+        "optimizer",
+        "scheduler",
+        "training"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/optimizer/extra_optimizers.py:adamW_optimizer",
+      "type": "function",
+      "name": "adamW_optimizer",
+      "filePath": "fraudGT/optimizer/extra_optimizers.py",
+      "lineRange": [
+        22,
+        32
+      ],
+      "summary": "Creates or registers optimizer configuration for FraudGT training.",
+      "tags": [
+        "optimizer",
+        "scheduler",
+        "training"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/optimizer/extra_optimizers.py:rmsProp_optimizer",
+      "type": "function",
+      "name": "rmsProp_optimizer",
+      "filePath": "fraudGT/optimizer/extra_optimizers.py",
+      "lineRange": [
+        35,
+        37
+      ],
+      "summary": "Creates or registers optimizer configuration for FraudGT training.",
+      "tags": [
+        "optimizer",
+        "scheduler",
+        "training"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/optimizer/extra_optimizers.py:plateau_scheduler",
+      "type": "function",
+      "name": "plateau_scheduler",
+      "filePath": "fraudGT/optimizer/extra_optimizers.py",
+      "lineRange": [
+        50,
+        52
+      ],
+      "summary": "Creates a learning-rate scheduler helper for FraudGT optimizer configuration.",
+      "tags": [
+        "optimizer",
+        "scheduler",
+        "training"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/optimizer/extra_optimizers.py:scheduler_reduce_on_plateau",
+      "type": "function",
+      "name": "scheduler_reduce_on_plateau",
+      "filePath": "fraudGT/optimizer/extra_optimizers.py",
+      "lineRange": [
+        56,
+        100
+      ],
+      "summary": "Creates a learning-rate scheduler helper for FraudGT optimizer configuration.",
+      "tags": [
+        "optimizer",
+        "scheduler",
+        "training"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/optimizer/extra_optimizers.py:linear_with_warmup_scheduler",
+      "type": "function",
+      "name": "linear_with_warmup_scheduler",
+      "filePath": "fraudGT/optimizer/extra_optimizers.py",
+      "lineRange": [
+        104,
+        111
+      ],
+      "summary": "Creates a learning-rate scheduler helper for FraudGT optimizer configuration.",
+      "tags": [
+        "optimizer",
+        "scheduler",
+        "training"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/optimizer/extra_optimizers.py:cosine_with_warmup_scheduler",
+      "type": "function",
+      "name": "cosine_with_warmup_scheduler",
+      "filePath": "fraudGT/optimizer/extra_optimizers.py",
+      "lineRange": [
+        115,
+        122
+      ],
+      "summary": "Creates a learning-rate scheduler helper for FraudGT optimizer configuration.",
+      "tags": [
+        "optimizer",
+        "scheduler",
+        "training"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/optimizer/extra_optimizers.py:polynomial_with_warmup_scheduler",
+      "type": "function",
+      "name": "polynomial_with_warmup_scheduler",
+      "filePath": "fraudGT/optimizer/extra_optimizers.py",
+      "lineRange": [
+        126,
+        133
+      ],
+      "summary": "Creates a learning-rate scheduler helper for FraudGT optimizer configuration.",
+      "tags": [
+        "optimizer",
+        "scheduler",
+        "training"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/optimizer/extra_optimizers.py:get_linear_schedule_with_warmup",
+      "type": "function",
+      "name": "get_linear_schedule_with_warmup",
+      "filePath": "fraudGT/optimizer/extra_optimizers.py",
+      "lineRange": [
+        136,
+        166
+      ],
+      "summary": "Creates a learning-rate scheduler helper for FraudGT optimizer configuration.",
+      "tags": [
+        "optimizer",
+        "scheduler",
+        "training"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/optimizer/extra_optimizers.py:get_cosine_schedule_with_warmup",
+      "type": "function",
+      "name": "get_cosine_schedule_with_warmup",
+      "filePath": "fraudGT/optimizer/extra_optimizers.py",
+      "lineRange": [
+        169,
+        202
+      ],
+      "summary": "Creates a learning-rate scheduler helper for FraudGT optimizer configuration.",
+      "tags": [
+        "optimizer",
+        "scheduler",
+        "training"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/optimizer/extra_optimizers.py:get_polynomial_decay_schedule_with_warmup",
+      "type": "function",
+      "name": "get_polynomial_decay_schedule_with_warmup",
+      "filePath": "fraudGT/optimizer/extra_optimizers.py",
+      "lineRange": [
+        205,
+        251
+      ],
+      "summary": "Creates a learning-rate scheduler helper for FraudGT optimizer configuration.",
+      "tags": [
+        "optimizer",
+        "scheduler",
+        "training"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/sampler/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "fraudGT/sampler/__init__.py",
+      "summary": "Package initializer for sampler utilities, keeping the sampler namespace importable for the training pipeline.",
+      "tags": [
+        "sampling",
+        "data-loader",
+        "graph-training",
+        "edge-classification"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/sampler/custom_sampler.py",
+      "type": "file",
+      "name": "custom_sampler.py",
+      "filePath": "fraudGT/sampler/custom_sampler.py",
+      "summary": "Defines custom loader wrappers and graph sampling strategies for neighbor, LINKX, GraphSAINT, HGT, NAG, GOAT, HINormer, and link-neighbor training modes.",
+      "tags": [
+        "sampling",
+        "data-loader",
+        "graph-training",
+        "edge-classification"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:fraudGT/sampler/custom_sampler.py:LoaderWrapper",
+      "type": "class",
+      "name": "LoaderWrapper",
+      "filePath": "fraudGT/sampler/custom_sampler.py",
+      "lineRange": [
+        22,
+        58
+      ],
+      "summary": "Supports custom graph mini-batch construction through the LoaderWrapper sampling helper.",
+      "tags": [
+        "class",
+        "sampling",
+        "data-loader"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/sampler/custom_sampler.py:AddEgoIdsForNeighbor",
+      "type": "class",
+      "name": "AddEgoIdsForNeighbor",
+      "filePath": "fraudGT/sampler/custom_sampler.py",
+      "lineRange": [
+        66,
+        86
+      ],
+      "summary": "Supports custom graph mini-batch construction through the AddEgoIdsForNeighbor sampling helper.",
+      "tags": [
+        "class",
+        "sampling",
+        "data-loader"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/sampler/custom_sampler.py:AdjRowLoader",
+      "type": "class",
+      "name": "AdjRowLoader",
+      "filePath": "fraudGT/sampler/custom_sampler.py",
+      "lineRange": [
+        123,
+        207
+      ],
+      "summary": "Supports custom graph mini-batch construction through the AdjRowLoader sampling helper.",
+      "tags": [
+        "class",
+        "sampling",
+        "data-loader"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:fraudGT/sampler/custom_sampler.py:LocalSampler",
+      "type": "class",
+      "name": "LocalSampler",
+      "filePath": "fraudGT/sampler/custom_sampler.py",
+      "lineRange": [
+        439,
+        562
+      ],
+      "summary": "Supports custom graph mini-batch construction through the LocalSampler sampling helper.",
+      "tags": [
+        "class",
+        "sampling",
+        "data-loader"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:fraudGT/sampler/custom_sampler.py:AddEgoIdsForLinkNeighbor",
+      "type": "class",
+      "name": "AddEgoIdsForLinkNeighbor",
+      "filePath": "fraudGT/sampler/custom_sampler.py",
+      "lineRange": [
+        769,
+        789
+      ],
+      "summary": "Supports custom graph mini-batch construction through the AddEgoIdsForLinkNeighbor sampling helper.",
+      "tags": [
+        "class",
+        "sampling",
+        "data-loader"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/sampler/custom_sampler.py:get_NeighborLoader",
+      "type": "function",
+      "name": "get_NeighborLoader",
+      "filePath": "fraudGT/sampler/custom_sampler.py",
+      "lineRange": [
+        89,
+        121
+      ],
+      "summary": "Builds a Neighbor loader for graph mini-batch sampling.",
+      "tags": [
+        "sampling",
+        "data-loader",
+        "graph-training"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/sampler/custom_sampler.py:get_LINKXLoader",
+      "type": "function",
+      "name": "get_LINKXLoader",
+      "filePath": "fraudGT/sampler/custom_sampler.py",
+      "lineRange": [
+        209,
+        235
+      ],
+      "summary": "Builds a LINKX loader for graph mini-batch sampling.",
+      "tags": [
+        "sampling",
+        "data-loader",
+        "graph-training"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/sampler/custom_sampler.py:get_GrashSAINTRandomWalkLoader",
+      "type": "function",
+      "name": "get_GrashSAINTRandomWalkLoader",
+      "filePath": "fraudGT/sampler/custom_sampler.py",
+      "lineRange": [
+        249,
+        268
+      ],
+      "summary": "Builds a GrashSAINTRandomWalk loader for graph mini-batch sampling.",
+      "tags": [
+        "sampling",
+        "data-loader",
+        "graph-training"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/sampler/custom_sampler.py:get_RandomNodeLoader",
+      "type": "function",
+      "name": "get_RandomNodeLoader",
+      "filePath": "fraudGT/sampler/custom_sampler.py",
+      "lineRange": [
+        271,
+        284
+      ],
+      "summary": "Builds a RandomNode loader for graph mini-batch sampling.",
+      "tags": [
+        "sampling",
+        "data-loader",
+        "graph-training"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/sampler/custom_sampler.py:get_HGTloader",
+      "type": "function",
+      "name": "get_HGTloader",
+      "filePath": "fraudGT/sampler/custom_sampler.py",
+      "lineRange": [
+        287,
+        315
+      ],
+      "summary": "Builds a HGTloader for graph mini-batch sampling.",
+      "tags": [
+        "sampling",
+        "data-loader",
+        "graph-training"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/sampler/custom_sampler.py:hop2seq",
+      "type": "function",
+      "name": "hop2seq",
+      "filePath": "fraudGT/sampler/custom_sampler.py",
+      "lineRange": [
+        317,
+        340
+      ],
+      "summary": "Provides the hop2seq helper used by custom_sampler.py.",
+      "tags": [
+        "sampling",
+        "data-loader",
+        "graph-training"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/sampler/custom_sampler.py:get_NAGloader",
+      "type": "function",
+      "name": "get_NAGloader",
+      "filePath": "fraudGT/sampler/custom_sampler.py",
+      "lineRange": [
+        343,
+        378
+      ],
+      "summary": "Builds a NAGloader for graph mini-batch sampling.",
+      "tags": [
+        "sampling",
+        "data-loader",
+        "graph-training"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/sampler/custom_sampler.py:convert_hop2seq",
+      "type": "function",
+      "name": "convert_hop2seq",
+      "filePath": "fraudGT/sampler/custom_sampler.py",
+      "lineRange": [
+        381,
+        409
+      ],
+      "summary": "Provides the convert_hop2seq helper used by custom_sampler.py.",
+      "tags": [
+        "sampling",
+        "data-loader",
+        "graph-training"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/sampler/custom_sampler.py:get_NAGHGTloader",
+      "type": "function",
+      "name": "get_NAGHGTloader",
+      "filePath": "fraudGT/sampler/custom_sampler.py",
+      "lineRange": [
+        411,
+        437
+      ],
+      "summary": "Builds a NAGHGTloader for graph mini-batch sampling.",
+      "tags": [
+        "sampling",
+        "data-loader",
+        "graph-training"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/sampler/custom_sampler.py:get_GOATLoader",
+      "type": "function",
+      "name": "get_GOATLoader",
+      "filePath": "fraudGT/sampler/custom_sampler.py",
+      "lineRange": [
+        565,
+        601
+      ],
+      "summary": "Builds a GOAT loader for graph mini-batch sampling.",
+      "tags": [
+        "sampling",
+        "data-loader",
+        "graph-training"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/sampler/custom_sampler.py:sample_neighbors_for_nodes",
+      "type": "function",
+      "name": "sample_neighbors_for_nodes",
+      "filePath": "fraudGT/sampler/custom_sampler.py",
+      "lineRange": [
+        603,
+        625
+      ],
+      "summary": "Samples graph neighborhoods or node batches used by custom training loaders.",
+      "tags": [
+        "sampling",
+        "data-loader",
+        "graph-training"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/sampler/custom_sampler.py:get_HINormerLoader",
+      "type": "function",
+      "name": "get_HINormerLoader",
+      "filePath": "fraudGT/sampler/custom_sampler.py",
+      "lineRange": [
+        628,
+        718
+      ],
+      "summary": "Builds a HINormer loader for graph mini-batch sampling.",
+      "tags": [
+        "sampling",
+        "data-loader",
+        "graph-training"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:fraudGT/sampler/custom_sampler.py:get_LinkNeighborLoader",
+      "type": "function",
+      "name": "get_LinkNeighborLoader",
+      "filePath": "fraudGT/sampler/custom_sampler.py",
+      "lineRange": [
+        793,
+        816
+      ],
+      "summary": "Builds a LinkNeighbor loader for graph mini-batch sampling.",
+      "tags": [
+        "sampling",
+        "data-loader",
+        "graph-training"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/timer.py",
+      "type": "file",
+      "name": "timer.py",
+      "filePath": "fraudGT/timer.py",
+      "summary": "Implements runtime timing utilities for CUDA and CPU regions, including epoch-level aggregation and optional performance-stat hooks.",
+      "tags": [
+        "performance",
+        "timing",
+        "runtime-stats",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:fraudGT/timer.py:RuntimeStatisticsCUDA",
+      "type": "class",
+      "name": "RuntimeStatisticsCUDA",
+      "filePath": "fraudGT/timer.py",
+      "lineRange": [
+        23,
+        153
+      ],
+      "summary": "Records runtime measurements through the RuntimeStatisticsCUDA timing helper.",
+      "tags": [
+        "class",
+        "timing",
+        "runtime-stats"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:fraudGT/timer.py:RuntimeStatistics",
+      "type": "class",
+      "name": "RuntimeStatistics",
+      "filePath": "fraudGT/timer.py",
+      "lineRange": [
+        209,
+        236
+      ],
+      "summary": "Records runtime measurements through the RuntimeStatistics timing helper.",
+      "tags": [
+        "class",
+        "timing",
+        "runtime-stats"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/timer.py:TimerResult",
+      "type": "class",
+      "name": "TimerResult",
+      "filePath": "fraudGT/timer.py",
+      "lineRange": [
+        239,
+        244
+      ],
+      "summary": "Records runtime measurements through the TimerResult timing helper.",
+      "tags": [
+        "class",
+        "timing",
+        "runtime-stats"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/timer.py:CUDAAggregateTimer",
+      "type": "class",
+      "name": "CUDAAggregateTimer",
+      "filePath": "fraudGT/timer.py",
+      "lineRange": [
+        247,
+        285
+      ],
+      "summary": "Records runtime measurements through the CUDAAggregateTimer timing helper.",
+      "tags": [
+        "class",
+        "timing",
+        "runtime-stats"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/timer.py:Timer",
+      "type": "class",
+      "name": "Timer",
+      "filePath": "fraudGT/timer.py",
+      "lineRange": [
+        288,
+        305
+      ],
+      "summary": "Records runtime measurements through the Timer timing helper.",
+      "tags": [
+        "class",
+        "timing",
+        "runtime-stats"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/timer.py:is_performance_stats_enabled",
+      "type": "function",
+      "name": "is_performance_stats_enabled",
+      "filePath": "fraudGT/timer.py",
+      "lineRange": [
+        18,
+        20
+      ],
+      "summary": "Controls runtime statistics collection and reporting for experiment profiling.",
+      "tags": [
+        "performance",
+        "timing",
+        "runtime-stats"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/timer.py:setup_runtime_stats",
+      "type": "function",
+      "name": "setup_runtime_stats",
+      "filePath": "fraudGT/timer.py",
+      "lineRange": [
+        159,
+        173
+      ],
+      "summary": "Controls runtime statistics collection and reporting for experiment profiling.",
+      "tags": [
+        "performance",
+        "timing",
+        "runtime-stats"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/timer.py:enable_runtime_stats",
+      "type": "function",
+      "name": "enable_runtime_stats",
+      "filePath": "fraudGT/timer.py",
+      "lineRange": [
+        176,
+        180
+      ],
+      "summary": "Controls runtime statistics collection and reporting for experiment profiling.",
+      "tags": [
+        "performance",
+        "timing",
+        "runtime-stats"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/timer.py:disable_runtime_stats",
+      "type": "function",
+      "name": "disable_runtime_stats",
+      "filePath": "fraudGT/timer.py",
+      "lineRange": [
+        183,
+        187
+      ],
+      "summary": "Controls runtime statistics collection and reporting for experiment profiling.",
+      "tags": [
+        "performance",
+        "timing",
+        "runtime-stats"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/timer.py:start_runtime_stats_epoch",
+      "type": "function",
+      "name": "start_runtime_stats_epoch",
+      "filePath": "fraudGT/timer.py",
+      "lineRange": [
+        190,
+        191
+      ],
+      "summary": "Controls runtime statistics collection and reporting for experiment profiling.",
+      "tags": [
+        "performance",
+        "timing",
+        "runtime-stats"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/timer.py:report_runtime_stats",
+      "type": "function",
+      "name": "report_runtime_stats",
+      "filePath": "fraudGT/timer.py",
+      "lineRange": [
+        194,
+        201
+      ],
+      "summary": "Controls runtime statistics collection and reporting for experiment profiling.",
+      "tags": [
+        "performance",
+        "timing",
+        "runtime-stats"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/timer.py:append_runtime_stats",
+      "type": "function",
+      "name": "append_runtime_stats",
+      "filePath": "fraudGT/timer.py",
+      "lineRange": [
+        204,
+        206
+      ],
+      "summary": "Controls runtime statistics collection and reporting for experiment profiling.",
+      "tags": [
+        "performance",
+        "timing",
+        "runtime-stats"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/train/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "fraudGT/train/__init__.py",
+      "summary": "Package initializer for training routines, keeping the training namespace importable for orchestration code.",
+      "tags": [
+        "training-loop",
+        "evaluation",
+        "experiment",
+        "graph-learning"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/train/custom_train.py",
+      "type": "file",
+      "name": "custom_train.py",
+      "filePath": "fraudGT/train/custom_train.py",
+      "summary": "Implements the main training, evaluation, multi-stage training, inference-only, and attention-logging loops used by FraudGT experiments.",
+      "tags": [
+        "training-loop",
+        "evaluation",
+        "experiment",
+        "graph-learning"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:fraudGT/train/custom_train.py:check_grad",
+      "type": "function",
+      "name": "check_grad",
+      "filePath": "fraudGT/train/custom_train.py",
+      "lineRange": [
+        25,
+        35
+      ],
+      "summary": "Provides the check_grad helper used by custom_train.py.",
+      "tags": [
+        "training-loop",
+        "evaluation",
+        "metrics"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/train/custom_train.py:train_epoch",
+      "type": "function",
+      "name": "train_epoch",
+      "filePath": "fraudGT/train/custom_train.py",
+      "lineRange": [
+        69,
+        183
+      ],
+      "summary": "Runs a training routine over FraudGT batches, including loss computation and metric logging.",
+      "tags": [
+        "training-loop",
+        "evaluation",
+        "metrics"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:fraudGT/train/custom_train.py:eval_epoch",
+      "type": "function",
+      "name": "eval_epoch",
+      "filePath": "fraudGT/train/custom_train.py",
+      "lineRange": [
+        187,
+        230
+      ],
+      "summary": "Evaluates a model over validation or test batches and returns task metrics.",
+      "tags": [
+        "training-loop",
+        "evaluation",
+        "metrics"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/train/custom_train.py:custom_train",
+      "type": "function",
+      "name": "custom_train",
+      "filePath": "fraudGT/train/custom_train.py",
+      "lineRange": [
+        234,
+        367
+      ],
+      "summary": "Runs a training routine over FraudGT batches, including loss computation and metric logging.",
+      "tags": [
+        "training-loop",
+        "evaluation",
+        "metrics"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:fraudGT/train/custom_train.py:multi_stage_train",
+      "type": "function",
+      "name": "multi_stage_train",
+      "filePath": "fraudGT/train/custom_train.py",
+      "lineRange": [
+        371,
+        585
+      ],
+      "summary": "Runs a training routine over FraudGT batches, including loss computation and metric logging.",
+      "tags": [
+        "training-loop",
+        "evaluation",
+        "metrics"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:fraudGT/train/custom_train.py:inference_only",
+      "type": "function",
+      "name": "inference_only",
+      "filePath": "fraudGT/train/custom_train.py",
+      "lineRange": [
+        589,
+        633
+      ],
+      "summary": "Runs model inference without weight updates for saved or evaluation-only experiments.",
+      "tags": [
+        "training-loop",
+        "evaluation",
+        "metrics"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/train/custom_train.py:log_attn_weights",
+      "type": "function",
+      "name": "log_attn_weights",
+      "filePath": "fraudGT/train/custom_train.py",
+      "lineRange": [
+        637,
+        708
+      ],
+      "summary": "Provides the log_attn_weights helper used by custom_train.py.",
+      "tags": [
+        "training-loop",
+        "evaluation",
+        "metrics"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:fraudGT/transform/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "fraudGT/transform/__init__.py",
+      "summary": "Package initializer for graph transform helpers and positional encoding transforms.",
+      "tags": [
+        "graph-transform",
+        "positional-encoding",
+        "preprocessing",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/transform/posenc_stats.py",
+      "type": "file",
+      "name": "posenc_stats.py",
+      "filePath": "fraudGT/transform/posenc_stats.py",
+      "summary": "Computes positional encoding statistics such as Laplacian eigenvectors, SignNet features, random-walk landing probabilities, heat kernels, and electrostatic encodings.",
+      "tags": [
+        "graph-transform",
+        "positional-encoding",
+        "preprocessing",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:fraudGT/transform/posenc_stats.py:compute_posenc_stats",
+      "type": "function",
+      "name": "compute_posenc_stats",
+      "filePath": "fraudGT/transform/posenc_stats.py",
+      "lineRange": [
+        12,
+        144
+      ],
+      "summary": "Computes graph positional encoding statistics used as structural features.",
+      "tags": [
+        "positional-encoding",
+        "graph-statistics",
+        "preprocessing"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:fraudGT/transform/posenc_stats.py:get_lap_decomp_stats",
+      "type": "function",
+      "name": "get_lap_decomp_stats",
+      "filePath": "fraudGT/transform/posenc_stats.py",
+      "lineRange": [
+        147,
+        180
+      ],
+      "summary": "Computes graph positional encoding statistics used as structural features.",
+      "tags": [
+        "positional-encoding",
+        "graph-statistics",
+        "preprocessing"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/transform/posenc_stats.py:get_rw_landing_probs",
+      "type": "function",
+      "name": "get_rw_landing_probs",
+      "filePath": "fraudGT/transform/posenc_stats.py",
+      "lineRange": [
+        183,
+        229
+      ],
+      "summary": "Computes graph positional encoding statistics used as structural features.",
+      "tags": [
+        "positional-encoding",
+        "graph-statistics",
+        "preprocessing"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/transform/posenc_stats.py:get_heat_kernels_diag",
+      "type": "function",
+      "name": "get_heat_kernels_diag",
+      "filePath": "fraudGT/transform/posenc_stats.py",
+      "lineRange": [
+        232,
+        278
+      ],
+      "summary": "Computes graph positional encoding statistics used as structural features.",
+      "tags": [
+        "positional-encoding",
+        "graph-statistics",
+        "preprocessing"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/transform/posenc_stats.py:get_heat_kernels",
+      "type": "function",
+      "name": "get_heat_kernels",
+      "filePath": "fraudGT/transform/posenc_stats.py",
+      "lineRange": [
+        281,
+        318
+      ],
+      "summary": "Computes graph positional encoding statistics used as structural features.",
+      "tags": [
+        "positional-encoding",
+        "graph-statistics",
+        "preprocessing"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/transform/posenc_stats.py:get_electrostatic_function_encoding",
+      "type": "function",
+      "name": "get_electrostatic_function_encoding",
+      "filePath": "fraudGT/transform/posenc_stats.py",
+      "lineRange": [
+        321,
+        348
+      ],
+      "summary": "Computes graph positional encoding statistics used as structural features.",
+      "tags": [
+        "positional-encoding",
+        "graph-statistics",
+        "preprocessing"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/transform/posenc_stats.py:eigvec_normalizer",
+      "type": "function",
+      "name": "eigvec_normalizer",
+      "filePath": "fraudGT/transform/posenc_stats.py",
+      "lineRange": [
+        351,
+        401
+      ],
+      "summary": "Computes graph positional encoding statistics used as structural features.",
+      "tags": [
+        "positional-encoding",
+        "graph-statistics",
+        "preprocessing"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:fraudGT/transform/transforms.py",
+      "type": "file",
+      "name": "transforms.py",
+      "filePath": "fraudGT/transform/transforms.py",
+      "summary": "Provides dataset pre-transform helpers for in-memory transformation, feature type casting, positional-feature concatenation, and graph size clipping.",
+      "tags": [
+        "graph-transform",
+        "positional-encoding",
+        "preprocessing",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:fraudGT/transform/transforms.py:pre_transform_in_memory",
+      "type": "function",
+      "name": "pre_transform_in_memory",
+      "filePath": "fraudGT/transform/transforms.py",
+      "lineRange": [
+        8,
+        36
+      ],
+      "summary": "Transforms graph dataset objects before model training.",
+      "tags": [
+        "graph-transform",
+        "preprocessing",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/transform/transforms.py:typecast_x",
+      "type": "function",
+      "name": "typecast_x",
+      "filePath": "fraudGT/transform/transforms.py",
+      "lineRange": [
+        39,
+        46
+      ],
+      "summary": "Transforms graph dataset objects before model training.",
+      "tags": [
+        "graph-transform",
+        "preprocessing",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/transform/transforms.py:concat_x_and_pos",
+      "type": "function",
+      "name": "concat_x_and_pos",
+      "filePath": "fraudGT/transform/transforms.py",
+      "lineRange": [
+        49,
+        51
+      ],
+      "summary": "Transforms graph dataset objects before model training.",
+      "tags": [
+        "graph-transform",
+        "preprocessing",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/transform/transforms.py:clip_graphs_to_size",
+      "type": "function",
+      "name": "clip_graphs_to_size",
+      "filePath": "fraudGT/transform/transforms.py",
+      "lineRange": [
+        54,
+        81
+      ],
+      "summary": "Transforms graph dataset objects before model training.",
+      "tags": [
+        "graph-transform",
+        "preprocessing",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/utils.py",
+      "type": "file",
+      "name": "utils.py",
+      "filePath": "fraudGT/utils.py",
+      "summary": "Provides experiment utility functions for optimizer/scheduler configs, output directories, negative edge construction, config flattening, run names, and graph unbatching.",
+      "tags": [
+        "utility",
+        "configuration",
+        "experiment",
+        "graph-processing"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:fraudGT/utils.py:new_optimizer_config",
+      "type": "function",
+      "name": "new_optimizer_config",
+      "filePath": "fraudGT/utils.py",
+      "lineRange": [
+        17,
+        21
+      ],
+      "summary": "Creates or registers optimizer configuration for FraudGT training.",
+      "tags": [
+        "utility",
+        "configuration",
+        "experiment"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/utils.py:new_scheduler_config",
+      "type": "function",
+      "name": "new_scheduler_config",
+      "filePath": "fraudGT/utils.py",
+      "lineRange": [
+        24,
+        31
+      ],
+      "summary": "Creates a learning-rate scheduler helper for FraudGT optimizer configuration.",
+      "tags": [
+        "utility",
+        "configuration",
+        "experiment"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/utils.py:custom_set_out_dir",
+      "type": "function",
+      "name": "custom_set_out_dir",
+      "filePath": "fraudGT/utils.py",
+      "lineRange": [
+        34,
+        48
+      ],
+      "summary": "Builds experiment configuration, naming, or output-directory helpers.",
+      "tags": [
+        "utility",
+        "configuration",
+        "experiment"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/utils.py:custom_set_run_dir",
+      "type": "function",
+      "name": "custom_set_run_dir",
+      "filePath": "fraudGT/utils.py",
+      "lineRange": [
+        51,
+        63
+      ],
+      "summary": "Builds experiment configuration, naming, or output-directory helpers.",
+      "tags": [
+        "utility",
+        "configuration",
+        "experiment"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/utils.py:negate_edge_index",
+      "type": "function",
+      "name": "negate_edge_index",
+      "filePath": "fraudGT/utils.py",
+      "lineRange": [
+        66,
+        119
+      ],
+      "summary": "Manipulates batched graph tensors and edge indices for downstream graph processing.",
+      "tags": [
+        "edge-processing",
+        "graph-utility",
+        "tensor"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:fraudGT/utils.py:flatten_dict",
+      "type": "function",
+      "name": "flatten_dict",
+      "filePath": "fraudGT/utils.py",
+      "lineRange": [
+        122,
+        137
+      ],
+      "summary": "Builds experiment configuration, naming, or output-directory helpers.",
+      "tags": [
+        "utility",
+        "configuration",
+        "experiment"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/utils.py:cfg_to_dict",
+      "type": "function",
+      "name": "cfg_to_dict",
+      "filePath": "fraudGT/utils.py",
+      "lineRange": [
+        140,
+        159
+      ],
+      "summary": "Builds experiment configuration, naming, or output-directory helpers.",
+      "tags": [
+        "utility",
+        "configuration",
+        "experiment"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/utils.py:make_wandb_name",
+      "type": "function",
+      "name": "make_wandb_name",
+      "filePath": "fraudGT/utils.py",
+      "lineRange": [
+        162,
+        203
+      ],
+      "summary": "Builds experiment configuration, naming, or output-directory helpers.",
+      "tags": [
+        "utility",
+        "configuration",
+        "experiment"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/utils.py:unbatch",
+      "type": "function",
+      "name": "unbatch",
+      "filePath": "fraudGT/utils.py",
+      "lineRange": [
+        206,
+        223
+      ],
+      "summary": "Manipulates batched graph tensors and edge indices for downstream graph processing.",
+      "tags": [
+        "utility",
+        "configuration",
+        "experiment"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/utils.py:unbatch_edge_index",
+      "type": "function",
+      "name": "unbatch_edge_index",
+      "filePath": "fraudGT/utils.py",
+      "lineRange": [
+        226,
+        245
+      ],
+      "summary": "Manipulates batched graph tensors and edge indices for downstream graph processing.",
+      "tags": [
+        "edge-processing",
+        "graph-utility",
+        "tensor"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:run/wrapper.sb",
+      "type": "file",
+      "name": "wrapper.sb",
+      "filePath": "run/wrapper.sb",
+      "summary": "Slurm batch wrapper that launches the project grid runner on an HPC GPU partition with fixed resource settings.",
+      "tags": [
+        "script",
+        "hpc",
+        "slurm",
+        "experiment-runner"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:configs/AML-Large-HI/AML-Large-HI-GATE.yaml",
+      "type": "config",
+      "name": "AML-Large-HI-GATE.yaml",
+      "filePath": "configs/AML-Large-HI/AML-Large-HI-GATE.yaml",
+      "summary": "AML Large HI experiment configuration for the GATE model, controlling dataset paths, edge-task training, model parameters, optimizer settings, and positional encodings.",
+      "tags": [
+        "configuration",
+        "aml",
+        "experiment",
+        "edge-classification"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:configs/AML-Large-HI/AML-Large-HI-GatedGCN.yaml",
+      "type": "config",
+      "name": "AML-Large-HI-GatedGCN.yaml",
+      "filePath": "configs/AML-Large-HI/AML-Large-HI-GatedGCN.yaml",
+      "summary": "AML Large HI experiment configuration for the GatedGCN model with dataset, training, optimizer, and graph encoding settings.",
+      "tags": [
+        "configuration",
+        "aml",
+        "experiment",
+        "edge-classification"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:configs/AML-Large-HI/AML-Large-HI-GINE.yaml",
+      "type": "config",
+      "name": "AML-Large-HI-GINE.yaml",
+      "filePath": "configs/AML-Large-HI/AML-Large-HI-GINE.yaml",
+      "summary": "AML Large HI experiment configuration for the GINE model with edge-task supervision and experiment output settings.",
+      "tags": [
+        "configuration",
+        "aml",
+        "experiment",
+        "edge-classification"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:configs/AML-Large-HI/AML-Large-HI-GINE+Ego.yaml",
+      "type": "config",
+      "name": "AML-Large-HI-GINE+Ego.yaml",
+      "filePath": "configs/AML-Large-HI/AML-Large-HI-GINE+Ego.yaml",
+      "summary": "AML Large HI experiment configuration for GINE with ego-node augmentation enabled for edge-focused training.",
+      "tags": [
+        "configuration",
+        "aml",
+        "experiment",
+        "edge-classification"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:configs/AML-Large-HI/AML-Large-HI-GINE+EU.yaml",
+      "type": "config",
+      "name": "AML-Large-HI-GINE+EU.yaml",
+      "filePath": "configs/AML-Large-HI/AML-Large-HI-GINE+EU.yaml",
+      "summary": "AML Large HI experiment configuration for GINE with edge-update settings enabled for AML transaction classification.",
+      "tags": [
+        "configuration",
+        "aml",
+        "experiment",
+        "edge-classification"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:configs/AML-Large-HI/AML-Large-HI-GINE+ports.yaml",
+      "type": "config",
+      "name": "AML-Large-HI-GINE+ports.yaml",
+      "filePath": "configs/AML-Large-HI/AML-Large-HI-GINE+ports.yaml",
+      "summary": "AML Large HI experiment configuration for GINE with port features enabled for transaction-edge experiments.",
+      "tags": [
+        "configuration",
+        "aml",
+        "experiment",
+        "edge-classification"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:fraudGT/network/hetero_gnn_edge_model.py",
+      "target": "class:fraudGT/network/hetero_gnn_edge_model.py:FeatureEncoder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/network/hetero_gnn_edge_model.py",
+      "target": "class:fraudGT/network/hetero_gnn_edge_model.py:FeatureEncoder",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/network/hetero_gnn_edge_model.py",
+      "target": "class:fraudGT/network/hetero_gnn_edge_model.py:HeteroGNNEdgeModel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/network/hetero_gnn_edge_model.py",
+      "target": "class:fraudGT/network/hetero_gnn_edge_model.py:HeteroGNNEdgeModel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/network/hetero_gnn_model.py",
+      "target": "class:fraudGT/network/hetero_gnn_model.py:FeatureEncoder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/network/hetero_gnn_model.py",
+      "target": "class:fraudGT/network/hetero_gnn_model.py:FeatureEncoder",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/network/hetero_gnn_model.py",
+      "target": "class:fraudGT/network/hetero_gnn_model.py:HeteroGNNModel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/network/hetero_gnn_model.py",
+      "target": "class:fraudGT/network/hetero_gnn_model.py:HeteroGNNModel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/network/homo_gnn_edge_model.py",
+      "target": "class:fraudGT/network/homo_gnn_edge_model.py:FeatureEncoder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/network/homo_gnn_edge_model.py",
+      "target": "class:fraudGT/network/homo_gnn_edge_model.py:FeatureEncoder",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/network/homo_gnn_edge_model.py",
+      "target": "class:fraudGT/network/homo_gnn_edge_model.py:HomoGNNEdgeModel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/network/homo_gnn_edge_model.py",
+      "target": "class:fraudGT/network/homo_gnn_edge_model.py:HomoGNNEdgeModel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/network/homo_gnn_model.py",
+      "target": "class:fraudGT/network/homo_gnn_model.py:FeatureEncoder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/network/homo_gnn_model.py",
+      "target": "class:fraudGT/network/homo_gnn_model.py:FeatureEncoder",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/network/homo_gnn_model.py",
+      "target": "class:fraudGT/network/homo_gnn_model.py:HomoGNNModel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/network/homo_gnn_model.py",
+      "target": "class:fraudGT/network/homo_gnn_model.py:HomoGNNModel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/network/mlp_model.py",
+      "target": "class:fraudGT/network/mlp_model.py:FeatureEncoder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/network/mlp_model.py",
+      "target": "class:fraudGT/network/mlp_model.py:FeatureEncoder",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/network/mlp_model.py",
+      "target": "class:fraudGT/network/mlp_model.py:MLPModel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/network/mlp_model.py",
+      "target": "class:fraudGT/network/mlp_model.py:MLPModel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/network/model.py",
+      "target": "class:fraudGT/network/model.py:Classifier",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/network/model.py",
+      "target": "class:fraudGT/network/model.py:Classifier",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/network/model.py",
+      "target": "class:fraudGT/network/model.py:GNN",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/network/model.py",
+      "target": "class:fraudGT/network/model.py:GNN",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/network/utils.py",
+      "target": "function:fraudGT/network/utils.py:GTPreNN",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/network/utils.py",
+      "target": "function:fraudGT/network/utils.py:GTPreNN",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/optimizer/extra_optimizers.py",
+      "target": "class:fraudGT/optimizer/extra_optimizers.py:ExtendedSchedulerConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/optimizer/extra_optimizers.py",
+      "target": "class:fraudGT/optimizer/extra_optimizers.py:ExtendedSchedulerConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/optimizer/extra_optimizers.py",
+      "target": "function:fraudGT/optimizer/extra_optimizers.py:adagrad_optimizer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/optimizer/extra_optimizers.py",
+      "target": "function:fraudGT/optimizer/extra_optimizers.py:adagrad_optimizer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/optimizer/extra_optimizers.py",
+      "target": "function:fraudGT/optimizer/extra_optimizers.py:adamW_optimizer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/optimizer/extra_optimizers.py",
+      "target": "function:fraudGT/optimizer/extra_optimizers.py:adamW_optimizer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/optimizer/extra_optimizers.py",
+      "target": "function:fraudGT/optimizer/extra_optimizers.py:rmsProp_optimizer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/optimizer/extra_optimizers.py",
+      "target": "function:fraudGT/optimizer/extra_optimizers.py:rmsProp_optimizer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/optimizer/extra_optimizers.py",
+      "target": "function:fraudGT/optimizer/extra_optimizers.py:plateau_scheduler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/optimizer/extra_optimizers.py",
+      "target": "function:fraudGT/optimizer/extra_optimizers.py:plateau_scheduler",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/optimizer/extra_optimizers.py",
+      "target": "function:fraudGT/optimizer/extra_optimizers.py:scheduler_reduce_on_plateau",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/optimizer/extra_optimizers.py",
+      "target": "function:fraudGT/optimizer/extra_optimizers.py:scheduler_reduce_on_plateau",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/optimizer/extra_optimizers.py",
+      "target": "function:fraudGT/optimizer/extra_optimizers.py:linear_with_warmup_scheduler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/optimizer/extra_optimizers.py",
+      "target": "function:fraudGT/optimizer/extra_optimizers.py:linear_with_warmup_scheduler",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/optimizer/extra_optimizers.py",
+      "target": "function:fraudGT/optimizer/extra_optimizers.py:cosine_with_warmup_scheduler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/optimizer/extra_optimizers.py",
+      "target": "function:fraudGT/optimizer/extra_optimizers.py:cosine_with_warmup_scheduler",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/optimizer/extra_optimizers.py",
+      "target": "function:fraudGT/optimizer/extra_optimizers.py:polynomial_with_warmup_scheduler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/optimizer/extra_optimizers.py",
+      "target": "function:fraudGT/optimizer/extra_optimizers.py:polynomial_with_warmup_scheduler",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/optimizer/extra_optimizers.py",
+      "target": "function:fraudGT/optimizer/extra_optimizers.py:get_linear_schedule_with_warmup",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/optimizer/extra_optimizers.py",
+      "target": "function:fraudGT/optimizer/extra_optimizers.py:get_linear_schedule_with_warmup",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/optimizer/extra_optimizers.py",
+      "target": "function:fraudGT/optimizer/extra_optimizers.py:get_cosine_schedule_with_warmup",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/optimizer/extra_optimizers.py",
+      "target": "function:fraudGT/optimizer/extra_optimizers.py:get_cosine_schedule_with_warmup",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/optimizer/extra_optimizers.py",
+      "target": "function:fraudGT/optimizer/extra_optimizers.py:get_polynomial_decay_schedule_with_warmup",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/optimizer/extra_optimizers.py",
+      "target": "function:fraudGT/optimizer/extra_optimizers.py:get_polynomial_decay_schedule_with_warmup",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/sampler/custom_sampler.py",
+      "target": "class:fraudGT/sampler/custom_sampler.py:LoaderWrapper",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/sampler/custom_sampler.py",
+      "target": "class:fraudGT/sampler/custom_sampler.py:LoaderWrapper",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/sampler/custom_sampler.py",
+      "target": "class:fraudGT/sampler/custom_sampler.py:AddEgoIdsForNeighbor",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/sampler/custom_sampler.py",
+      "target": "class:fraudGT/sampler/custom_sampler.py:AddEgoIdsForNeighbor",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/sampler/custom_sampler.py",
+      "target": "class:fraudGT/sampler/custom_sampler.py:AdjRowLoader",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/sampler/custom_sampler.py",
+      "target": "class:fraudGT/sampler/custom_sampler.py:AdjRowLoader",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/sampler/custom_sampler.py",
+      "target": "class:fraudGT/sampler/custom_sampler.py:LocalSampler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/sampler/custom_sampler.py",
+      "target": "class:fraudGT/sampler/custom_sampler.py:LocalSampler",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/sampler/custom_sampler.py",
+      "target": "class:fraudGT/sampler/custom_sampler.py:AddEgoIdsForLinkNeighbor",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/sampler/custom_sampler.py",
+      "target": "class:fraudGT/sampler/custom_sampler.py:AddEgoIdsForLinkNeighbor",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/sampler/custom_sampler.py",
+      "target": "function:fraudGT/sampler/custom_sampler.py:get_NeighborLoader",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/sampler/custom_sampler.py",
+      "target": "function:fraudGT/sampler/custom_sampler.py:get_NeighborLoader",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/sampler/custom_sampler.py",
+      "target": "function:fraudGT/sampler/custom_sampler.py:get_LINKXLoader",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/sampler/custom_sampler.py",
+      "target": "function:fraudGT/sampler/custom_sampler.py:get_LINKXLoader",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/sampler/custom_sampler.py",
+      "target": "function:fraudGT/sampler/custom_sampler.py:get_GrashSAINTRandomWalkLoader",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/sampler/custom_sampler.py",
+      "target": "function:fraudGT/sampler/custom_sampler.py:get_GrashSAINTRandomWalkLoader",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/sampler/custom_sampler.py",
+      "target": "function:fraudGT/sampler/custom_sampler.py:get_RandomNodeLoader",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/sampler/custom_sampler.py",
+      "target": "function:fraudGT/sampler/custom_sampler.py:get_RandomNodeLoader",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/sampler/custom_sampler.py",
+      "target": "function:fraudGT/sampler/custom_sampler.py:get_HGTloader",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/sampler/custom_sampler.py",
+      "target": "function:fraudGT/sampler/custom_sampler.py:get_HGTloader",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/sampler/custom_sampler.py",
+      "target": "function:fraudGT/sampler/custom_sampler.py:hop2seq",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/sampler/custom_sampler.py",
+      "target": "function:fraudGT/sampler/custom_sampler.py:hop2seq",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/sampler/custom_sampler.py",
+      "target": "function:fraudGT/sampler/custom_sampler.py:get_NAGloader",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/sampler/custom_sampler.py",
+      "target": "function:fraudGT/sampler/custom_sampler.py:get_NAGloader",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/sampler/custom_sampler.py",
+      "target": "function:fraudGT/sampler/custom_sampler.py:convert_hop2seq",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/sampler/custom_sampler.py",
+      "target": "function:fraudGT/sampler/custom_sampler.py:convert_hop2seq",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/sampler/custom_sampler.py",
+      "target": "function:fraudGT/sampler/custom_sampler.py:get_NAGHGTloader",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/sampler/custom_sampler.py",
+      "target": "function:fraudGT/sampler/custom_sampler.py:get_NAGHGTloader",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/sampler/custom_sampler.py",
+      "target": "function:fraudGT/sampler/custom_sampler.py:get_GOATLoader",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/sampler/custom_sampler.py",
+      "target": "function:fraudGT/sampler/custom_sampler.py:get_GOATLoader",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/sampler/custom_sampler.py",
+      "target": "function:fraudGT/sampler/custom_sampler.py:sample_neighbors_for_nodes",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/sampler/custom_sampler.py",
+      "target": "function:fraudGT/sampler/custom_sampler.py:sample_neighbors_for_nodes",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/sampler/custom_sampler.py",
+      "target": "function:fraudGT/sampler/custom_sampler.py:get_HINormerLoader",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/sampler/custom_sampler.py",
+      "target": "function:fraudGT/sampler/custom_sampler.py:get_HINormerLoader",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/sampler/custom_sampler.py",
+      "target": "function:fraudGT/sampler/custom_sampler.py:get_LinkNeighborLoader",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/sampler/custom_sampler.py",
+      "target": "function:fraudGT/sampler/custom_sampler.py:get_LinkNeighborLoader",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/timer.py",
+      "target": "class:fraudGT/timer.py:RuntimeStatisticsCUDA",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/timer.py",
+      "target": "class:fraudGT/timer.py:RuntimeStatisticsCUDA",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/timer.py",
+      "target": "class:fraudGT/timer.py:RuntimeStatistics",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/timer.py",
+      "target": "class:fraudGT/timer.py:RuntimeStatistics",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/timer.py",
+      "target": "class:fraudGT/timer.py:TimerResult",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/timer.py",
+      "target": "class:fraudGT/timer.py:TimerResult",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/timer.py",
+      "target": "class:fraudGT/timer.py:CUDAAggregateTimer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/timer.py",
+      "target": "class:fraudGT/timer.py:CUDAAggregateTimer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/timer.py",
+      "target": "class:fraudGT/timer.py:Timer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/timer.py",
+      "target": "class:fraudGT/timer.py:Timer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/timer.py",
+      "target": "function:fraudGT/timer.py:is_performance_stats_enabled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/timer.py",
+      "target": "function:fraudGT/timer.py:is_performance_stats_enabled",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/timer.py",
+      "target": "function:fraudGT/timer.py:setup_runtime_stats",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/timer.py",
+      "target": "function:fraudGT/timer.py:setup_runtime_stats",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/timer.py",
+      "target": "function:fraudGT/timer.py:enable_runtime_stats",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/timer.py",
+      "target": "function:fraudGT/timer.py:enable_runtime_stats",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/timer.py",
+      "target": "function:fraudGT/timer.py:disable_runtime_stats",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/timer.py",
+      "target": "function:fraudGT/timer.py:disable_runtime_stats",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/timer.py",
+      "target": "function:fraudGT/timer.py:start_runtime_stats_epoch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/timer.py",
+      "target": "function:fraudGT/timer.py:start_runtime_stats_epoch",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/timer.py",
+      "target": "function:fraudGT/timer.py:report_runtime_stats",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/timer.py",
+      "target": "function:fraudGT/timer.py:report_runtime_stats",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/timer.py",
+      "target": "function:fraudGT/timer.py:append_runtime_stats",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/timer.py",
+      "target": "function:fraudGT/timer.py:append_runtime_stats",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/train/custom_train.py",
+      "target": "function:fraudGT/train/custom_train.py:check_grad",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/train/custom_train.py",
+      "target": "function:fraudGT/train/custom_train.py:check_grad",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/train/custom_train.py",
+      "target": "function:fraudGT/train/custom_train.py:train_epoch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/train/custom_train.py",
+      "target": "function:fraudGT/train/custom_train.py:train_epoch",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/train/custom_train.py",
+      "target": "function:fraudGT/train/custom_train.py:eval_epoch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/train/custom_train.py",
+      "target": "function:fraudGT/train/custom_train.py:eval_epoch",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/train/custom_train.py",
+      "target": "function:fraudGT/train/custom_train.py:custom_train",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/train/custom_train.py",
+      "target": "function:fraudGT/train/custom_train.py:custom_train",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/train/custom_train.py",
+      "target": "function:fraudGT/train/custom_train.py:multi_stage_train",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/train/custom_train.py",
+      "target": "function:fraudGT/train/custom_train.py:multi_stage_train",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/train/custom_train.py",
+      "target": "function:fraudGT/train/custom_train.py:inference_only",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/train/custom_train.py",
+      "target": "function:fraudGT/train/custom_train.py:inference_only",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/train/custom_train.py",
+      "target": "function:fraudGT/train/custom_train.py:log_attn_weights",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/train/custom_train.py",
+      "target": "function:fraudGT/train/custom_train.py:log_attn_weights",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/transform/posenc_stats.py",
+      "target": "function:fraudGT/transform/posenc_stats.py:compute_posenc_stats",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/transform/posenc_stats.py",
+      "target": "function:fraudGT/transform/posenc_stats.py:compute_posenc_stats",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/transform/posenc_stats.py",
+      "target": "function:fraudGT/transform/posenc_stats.py:get_lap_decomp_stats",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/transform/posenc_stats.py",
+      "target": "function:fraudGT/transform/posenc_stats.py:get_lap_decomp_stats",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/transform/posenc_stats.py",
+      "target": "function:fraudGT/transform/posenc_stats.py:get_rw_landing_probs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/transform/posenc_stats.py",
+      "target": "function:fraudGT/transform/posenc_stats.py:get_rw_landing_probs",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/transform/posenc_stats.py",
+      "target": "function:fraudGT/transform/posenc_stats.py:get_heat_kernels_diag",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/transform/posenc_stats.py",
+      "target": "function:fraudGT/transform/posenc_stats.py:get_heat_kernels_diag",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/transform/posenc_stats.py",
+      "target": "function:fraudGT/transform/posenc_stats.py:get_heat_kernels",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/transform/posenc_stats.py",
+      "target": "function:fraudGT/transform/posenc_stats.py:get_heat_kernels",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/transform/posenc_stats.py",
+      "target": "function:fraudGT/transform/posenc_stats.py:get_electrostatic_function_encoding",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/transform/posenc_stats.py",
+      "target": "function:fraudGT/transform/posenc_stats.py:get_electrostatic_function_encoding",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/transform/posenc_stats.py",
+      "target": "function:fraudGT/transform/posenc_stats.py:eigvec_normalizer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/transform/posenc_stats.py",
+      "target": "function:fraudGT/transform/posenc_stats.py:eigvec_normalizer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/transform/transforms.py",
+      "target": "function:fraudGT/transform/transforms.py:pre_transform_in_memory",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/transform/transforms.py",
+      "target": "function:fraudGT/transform/transforms.py:pre_transform_in_memory",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/transform/transforms.py",
+      "target": "function:fraudGT/transform/transforms.py:typecast_x",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/transform/transforms.py",
+      "target": "function:fraudGT/transform/transforms.py:typecast_x",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/transform/transforms.py",
+      "target": "function:fraudGT/transform/transforms.py:concat_x_and_pos",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/transform/transforms.py",
+      "target": "function:fraudGT/transform/transforms.py:concat_x_and_pos",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/transform/transforms.py",
+      "target": "function:fraudGT/transform/transforms.py:clip_graphs_to_size",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/transform/transforms.py",
+      "target": "function:fraudGT/transform/transforms.py:clip_graphs_to_size",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/utils.py",
+      "target": "function:fraudGT/utils.py:new_optimizer_config",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/utils.py",
+      "target": "function:fraudGT/utils.py:new_optimizer_config",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/utils.py",
+      "target": "function:fraudGT/utils.py:new_scheduler_config",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/utils.py",
+      "target": "function:fraudGT/utils.py:new_scheduler_config",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/utils.py",
+      "target": "function:fraudGT/utils.py:custom_set_out_dir",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/utils.py",
+      "target": "function:fraudGT/utils.py:custom_set_out_dir",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/utils.py",
+      "target": "function:fraudGT/utils.py:custom_set_run_dir",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/utils.py",
+      "target": "function:fraudGT/utils.py:custom_set_run_dir",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/utils.py",
+      "target": "function:fraudGT/utils.py:negate_edge_index",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/utils.py",
+      "target": "function:fraudGT/utils.py:negate_edge_index",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/utils.py",
+      "target": "function:fraudGT/utils.py:flatten_dict",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/utils.py",
+      "target": "function:fraudGT/utils.py:flatten_dict",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/utils.py",
+      "target": "function:fraudGT/utils.py:cfg_to_dict",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/utils.py",
+      "target": "function:fraudGT/utils.py:cfg_to_dict",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/utils.py",
+      "target": "function:fraudGT/utils.py:make_wandb_name",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/utils.py",
+      "target": "function:fraudGT/utils.py:make_wandb_name",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/utils.py",
+      "target": "function:fraudGT/utils.py:unbatch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/utils.py",
+      "target": "function:fraudGT/utils.py:unbatch",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/utils.py",
+      "target": "function:fraudGT/utils.py:unbatch_edge_index",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/utils.py",
+      "target": "function:fraudGT/utils.py:unbatch_edge_index",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/network/model.py",
+      "target": "file:fraudGT/network/conv.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "config:configs/AML-Large-HI/AML-Large-HI-GATE.yaml",
+      "target": "file:fraudGT/network/hetero_gnn_edge_model.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Large-HI/AML-Large-HI-GatedGCN.yaml",
+      "target": "file:fraudGT/network/homo_gnn_edge_model.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Large-HI/AML-Large-HI-GINE.yaml",
+      "target": "file:fraudGT/network/homo_gnn_edge_model.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Large-HI/AML-Large-HI-GINE+Ego.yaml",
+      "target": "file:fraudGT/sampler/custom_sampler.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Large-HI/AML-Large-HI-GINE+EU.yaml",
+      "target": "file:fraudGT/network/homo_gnn_edge_model.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:configs/AML-Large-HI/AML-Large-HI-GINE+ports.yaml",
+      "target": "file:fraudGT/network/homo_gnn_edge_model.py",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:run/wrapper.sb",
+      "target": "file:fraudGT/train/custom_train.py",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

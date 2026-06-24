@@ -1,0 +1,466 @@
+{
+    "nodes":  [
+                  {
+                      "id":  "config:configs/ETH/ETH-GINE.yaml",
+                      "type":  "config",
+                      "name":  "ETH-GINE.yaml",
+                      "filePath":  "configs/ETH/ETH-GINE.yaml",
+                      "summary":  "Configures an ETH hetero-node classification experiment for the GINE architecture with baseline settings. It sets dataset paths, training and validation cadence, model/GNN or GT parameters, optimizer settings, and Weights \u0026 Biases logging.",
+                      "tags":  [
+                                   "configuration",
+                                   "eth-dataset",
+                                   "node-classification",
+                                   "gine-model",
+                                   "training-config"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML sections follow the standard FraudGT experiment layout: dataset, train, validation, model, gnn, and optimizer."
+                  },
+                  {
+                      "id":  "config:configs/ETH/ETH-GINE+Ego.yaml",
+                      "type":  "config",
+                      "name":  "ETH-GINE+Ego.yaml",
+                      "filePath":  "configs/ETH/ETH-GINE+Ego.yaml",
+                      "summary":  "Configures an ETH hetero-node classification experiment for the GINE architecture with ego-network features. It sets dataset paths, training and validation cadence, model/GNN or GT parameters, optimizer settings, and Weights \u0026 Biases logging.",
+                      "tags":  [
+                                   "configuration",
+                                   "eth-dataset",
+                                   "node-classification",
+                                   "gine-model",
+                                   "ego-features"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML sections follow the standard FraudGT experiment layout: dataset, train, validation, model, gnn, and optimizer."
+                  },
+                  {
+                      "id":  "config:configs/ETH/ETH-GINE+EU.yaml",
+                      "type":  "config",
+                      "name":  "ETH-GINE+EU.yaml",
+                      "filePath":  "configs/ETH/ETH-GINE+EU.yaml",
+                      "summary":  "Configures an ETH hetero-node classification experiment for the GINE architecture with edge updates. It sets dataset paths, training and validation cadence, model/GNN or GT parameters, optimizer settings, and Weights \u0026 Biases logging.",
+                      "tags":  [
+                                   "configuration",
+                                   "eth-dataset",
+                                   "node-classification",
+                                   "gine-model",
+                                   "edge-updates"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML sections follow the standard FraudGT experiment layout: dataset, train, validation, model, gnn, and optimizer."
+                  },
+                  {
+                      "id":  "config:configs/ETH/ETH-GINE+ports.yaml",
+                      "type":  "config",
+                      "name":  "ETH-GINE+ports.yaml",
+                      "filePath":  "configs/ETH/ETH-GINE+ports.yaml",
+                      "summary":  "Configures an ETH hetero-node classification experiment for the GINE architecture with port features. It sets dataset paths, training and validation cadence, model/GNN or GT parameters, optimizer settings, and Weights \u0026 Biases logging.",
+                      "tags":  [
+                                   "configuration",
+                                   "eth-dataset",
+                                   "node-classification",
+                                   "gine-model",
+                                   "port-features"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML sections follow the standard FraudGT experiment layout: dataset, train, validation, model, gnn, and optimizer."
+                  },
+                  {
+                      "id":  "config:configs/ETH/ETH-GINE+RMP.yaml",
+                      "type":  "config",
+                      "name":  "ETH-GINE+RMP.yaml",
+                      "filePath":  "configs/ETH/ETH-GINE+RMP.yaml",
+                      "summary":  "Configures an ETH hetero-node classification experiment for the GINE architecture with reverse message passing. It sets dataset paths, training and validation cadence, model/GNN or GT parameters, optimizer settings, and Weights \u0026 Biases logging.",
+                      "tags":  [
+                                   "configuration",
+                                   "eth-dataset",
+                                   "node-classification",
+                                   "gine-model",
+                                   "reverse-message-passing"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML sections follow the standard FraudGT experiment layout: dataset, train, validation, model, gnn, and optimizer."
+                  },
+                  {
+                      "id":  "config:configs/ETH/ETH-MLP.yaml",
+                      "type":  "config",
+                      "name":  "ETH-MLP.yaml",
+                      "filePath":  "configs/ETH/ETH-MLP.yaml",
+                      "summary":  "Configures an ETH hetero-node classification experiment for the MLP architecture with heterogeneous label positional encodings. It sets dataset paths, training and validation cadence, model/GNN or GT parameters, optimizer settings, and Weights \u0026 Biases logging.",
+                      "tags":  [
+                                   "configuration",
+                                   "eth-dataset",
+                                   "node-classification",
+                                   "mlp-baseline",
+                                   "label-positional-encoding"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML sections follow the standard FraudGT experiment layout: dataset, train, validation, model, gnn, and optimizer."
+                  },
+                  {
+                      "id":  "config:configs/ETH/ETH-Multi-GINE.yaml",
+                      "type":  "config",
+                      "name":  "ETH-Multi-GINE.yaml",
+                      "filePath":  "configs/ETH/ETH-Multi-GINE.yaml",
+                      "summary":  "Configures an ETH hetero-node classification experiment for the Multi-GINE architecture with baseline settings. It sets dataset paths, training and validation cadence, model/GNN or GT parameters, optimizer settings, and Weights \u0026 Biases logging.",
+                      "tags":  [
+                                   "configuration",
+                                   "eth-dataset",
+                                   "node-classification",
+                                   "multi-model",
+                                   "training-config"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML sections follow the standard FraudGT experiment layout: dataset, train, validation, model, gnn, and optimizer."
+                  },
+                  {
+                      "id":  "config:configs/ETH/ETH-Multi-PNA.yaml",
+                      "type":  "config",
+                      "name":  "ETH-Multi-PNA.yaml",
+                      "filePath":  "configs/ETH/ETH-Multi-PNA.yaml",
+                      "summary":  "Configures an ETH hetero-node classification experiment for the Multi-PNA architecture with baseline settings. It sets dataset paths, training and validation cadence, model/GNN or GT parameters, optimizer settings, and Weights \u0026 Biases logging.",
+                      "tags":  [
+                                   "configuration",
+                                   "eth-dataset",
+                                   "node-classification",
+                                   "multi-model",
+                                   "training-config"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML sections follow the standard FraudGT experiment layout: dataset, train, validation, model, gnn, and optimizer."
+                  },
+                  {
+                      "id":  "config:configs/ETH/ETH-Multi-PNA+EU.yaml",
+                      "type":  "config",
+                      "name":  "ETH-Multi-PNA+EU.yaml",
+                      "filePath":  "configs/ETH/ETH-Multi-PNA+EU.yaml",
+                      "summary":  "Configures an ETH hetero-node classification experiment for the Multi-PNA architecture with edge updates. It sets dataset paths, training and validation cadence, model/GNN or GT parameters, optimizer settings, and Weights \u0026 Biases logging.",
+                      "tags":  [
+                                   "configuration",
+                                   "eth-dataset",
+                                   "node-classification",
+                                   "multi-model",
+                                   "edge-updates"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML sections follow the standard FraudGT experiment layout: dataset, train, validation, model, gnn, and optimizer."
+                  },
+                  {
+                      "id":  "config:configs/ETH/ETH-Multi-SparseNodeGT.yaml",
+                      "type":  "config",
+                      "name":  "ETH-Multi-SparseNodeGT.yaml",
+                      "filePath":  "configs/ETH/ETH-Multi-SparseNodeGT.yaml",
+                      "summary":  "Configures an ETH hetero-node classification experiment for the SparseNodeGT architecture with baseline settings. It sets dataset paths, training and validation cadence, model/GNN or GT parameters, optimizer settings, and Weights \u0026 Biases logging.",
+                      "tags":  [
+                                   "configuration",
+                                   "eth-dataset",
+                                   "node-classification",
+                                   "graph-transformer",
+                                   "training-config"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML sections separate transformer-specific gt settings from general gnn and optimizer settings."
+                  },
+                  {
+                      "id":  "config:configs/ETH/ETH-PNA.yaml",
+                      "type":  "config",
+                      "name":  "ETH-PNA.yaml",
+                      "filePath":  "configs/ETH/ETH-PNA.yaml",
+                      "summary":  "Configures an ETH hetero-node classification experiment for the PNA architecture with baseline settings. It sets dataset paths, training and validation cadence, model/GNN or GT parameters, optimizer settings, and Weights \u0026 Biases logging.",
+                      "tags":  [
+                                   "configuration",
+                                   "eth-dataset",
+                                   "node-classification",
+                                   "pna-model",
+                                   "training-config"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML sections follow the standard FraudGT experiment layout: dataset, train, validation, model, gnn, and optimizer."
+                  },
+                  {
+                      "id":  "config:configs/ETH/ETH-PNA+EU.yaml",
+                      "type":  "config",
+                      "name":  "ETH-PNA+EU.yaml",
+                      "filePath":  "configs/ETH/ETH-PNA+EU.yaml",
+                      "summary":  "Configures an ETH hetero-node classification experiment for the PNA architecture with edge updates. It sets dataset paths, training and validation cadence, model/GNN or GT parameters, optimizer settings, and Weights \u0026 Biases logging.",
+                      "tags":  [
+                                   "configuration",
+                                   "eth-dataset",
+                                   "node-classification",
+                                   "pna-model",
+                                   "edge-updates"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML sections follow the standard FraudGT experiment layout: dataset, train, validation, model, gnn, and optimizer."
+                  },
+                  {
+                      "id":  "config:configs/ETH/ETH-SparseNodeGT.yaml",
+                      "type":  "config",
+                      "name":  "ETH-SparseNodeGT.yaml",
+                      "filePath":  "configs/ETH/ETH-SparseNodeGT.yaml",
+                      "summary":  "Configures an ETH hetero-node classification experiment for the SparseNodeGT architecture with baseline settings. It sets dataset paths, training and validation cadence, model/GNN or GT parameters, optimizer settings, and Weights \u0026 Biases logging.",
+                      "tags":  [
+                                   "configuration",
+                                   "eth-dataset",
+                                   "node-classification",
+                                   "graph-transformer",
+                                   "training-config"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML sections separate transformer-specific gt settings from general gnn and optimizer settings."
+                  },
+                  {
+                      "id":  "config:configs/ETH/ETH-SparseNodeGT+Ego.yaml",
+                      "type":  "config",
+                      "name":  "ETH-SparseNodeGT+Ego.yaml",
+                      "filePath":  "configs/ETH/ETH-SparseNodeGT+Ego.yaml",
+                      "summary":  "Configures an ETH hetero-node classification experiment for the SparseNodeGT architecture with ego-network features. It sets dataset paths, training and validation cadence, model/GNN or GT parameters, optimizer settings, and Weights \u0026 Biases logging.",
+                      "tags":  [
+                                   "configuration",
+                                   "eth-dataset",
+                                   "node-classification",
+                                   "graph-transformer",
+                                   "ego-features"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML sections separate transformer-specific gt settings from general gnn and optimizer settings."
+                  },
+                  {
+                      "id":  "config:configs/ETH/ETH-SparseNodeGT+LP.yaml",
+                      "type":  "config",
+                      "name":  "ETH-SparseNodeGT+LP.yaml",
+                      "filePath":  "configs/ETH/ETH-SparseNodeGT+LP.yaml",
+                      "summary":  "Configures an ETH hetero-node classification experiment for the SparseNodeGT architecture with heterogeneous label positional encodings. It sets dataset paths, training and validation cadence, model/GNN or GT parameters, optimizer settings, and Weights \u0026 Biases logging.",
+                      "tags":  [
+                                   "configuration",
+                                   "eth-dataset",
+                                   "node-classification",
+                                   "graph-transformer",
+                                   "label-positional-encoding"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML sections include positional encoding controls alongside dataset, train, validation, model, GT/GNN, and optimizer settings."
+                  },
+                  {
+                      "id":  "config:configs/ETH/ETH-SparseNodeGT+LP+ports.yaml",
+                      "type":  "config",
+                      "name":  "ETH-SparseNodeGT+LP+ports.yaml",
+                      "filePath":  "configs/ETH/ETH-SparseNodeGT+LP+ports.yaml",
+                      "summary":  "Configures an ETH hetero-node classification experiment for the SparseNodeGT architecture with port features and heterogeneous label positional encodings. It sets dataset paths, training and validation cadence, model/GNN or GT parameters, optimizer settings, and Weights \u0026 Biases logging.",
+                      "tags":  [
+                                   "configuration",
+                                   "eth-dataset",
+                                   "node-classification",
+                                   "graph-transformer",
+                                   "port-features"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML sections include positional encoding controls alongside dataset, train, validation, model, GT/GNN, and optimizer settings."
+                  },
+                  {
+                      "id":  "config:configs/ETH/ETH-SparseNodeGT+Node2Vec.yaml",
+                      "type":  "config",
+                      "name":  "ETH-SparseNodeGT+Node2Vec.yaml",
+                      "filePath":  "configs/ETH/ETH-SparseNodeGT+Node2Vec.yaml",
+                      "summary":  "Configures an ETH hetero-node classification experiment for the SparseNodeGT architecture with Node2Vec positional encodings. It sets dataset paths, training and validation cadence, model/GNN or GT parameters, optimizer settings, and Weights \u0026 Biases logging.",
+                      "tags":  [
+                                   "configuration",
+                                   "eth-dataset",
+                                   "node-classification",
+                                   "graph-transformer",
+                                   "node2vec"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML sections include positional encoding controls alongside dataset, train, validation, model, GT/GNN, and optimizer settings."
+                  },
+                  {
+                      "id":  "config:configs/ETH/ETH-SparseNodeGT+ports.yaml",
+                      "type":  "config",
+                      "name":  "ETH-SparseNodeGT+ports.yaml",
+                      "filePath":  "configs/ETH/ETH-SparseNodeGT+ports.yaml",
+                      "summary":  "Configures an ETH hetero-node classification experiment for the SparseNodeGT architecture with port features. It sets dataset paths, training and validation cadence, model/GNN or GT parameters, optimizer settings, and Weights \u0026 Biases logging.",
+                      "tags":  [
+                                   "configuration",
+                                   "eth-dataset",
+                                   "node-classification",
+                                   "graph-transformer",
+                                   "port-features"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML sections separate transformer-specific gt settings from general gnn and optimizer settings."
+                  },
+                  {
+                      "id":  "config:configs/ETH/ETH-SparseNodeGT+ports+Ego.yaml",
+                      "type":  "config",
+                      "name":  "ETH-SparseNodeGT+ports+Ego.yaml",
+                      "filePath":  "configs/ETH/ETH-SparseNodeGT+ports+Ego.yaml",
+                      "summary":  "Configures an ETH hetero-node classification experiment for the SparseNodeGT architecture with port features and ego-network features. It sets dataset paths, training and validation cadence, model/GNN or GT parameters, optimizer settings, and Weights \u0026 Biases logging.",
+                      "tags":  [
+                                   "configuration",
+                                   "eth-dataset",
+                                   "node-classification",
+                                   "graph-transformer",
+                                   "port-features"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML sections separate transformer-specific gt settings from general gnn and optimizer settings."
+                  },
+                  {
+                      "id":  "config:configs/ETH/ETH-SparseNodeGT+RMP.yaml",
+                      "type":  "config",
+                      "name":  "ETH-SparseNodeGT+RMP.yaml",
+                      "filePath":  "configs/ETH/ETH-SparseNodeGT+RMP.yaml",
+                      "summary":  "Configures an ETH hetero-node classification experiment for the SparseNodeGT architecture with reverse message passing. It sets dataset paths, training and validation cadence, model/GNN or GT parameters, optimizer settings, and Weights \u0026 Biases logging.",
+                      "tags":  [
+                                   "configuration",
+                                   "eth-dataset",
+                                   "node-classification",
+                                   "graph-transformer",
+                                   "reverse-message-passing"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML sections separate transformer-specific gt settings from general gnn and optimizer settings."
+                  }
+              ],
+    "edges":  [
+                  {
+                      "source":  "config:configs/ETH/ETH-GINE.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/ETH/ETH-GINE+Ego.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/ETH/ETH-GINE+EU.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/ETH/ETH-GINE+ports.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/ETH/ETH-GINE+RMP.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/ETH/ETH-MLP.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/ETH/ETH-Multi-GINE.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/ETH/ETH-Multi-PNA.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/ETH/ETH-Multi-PNA+EU.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/ETH/ETH-Multi-SparseNodeGT.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/ETH/ETH-PNA.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/ETH/ETH-PNA+EU.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/ETH/ETH-SparseNodeGT.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/ETH/ETH-SparseNodeGT+Ego.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/ETH/ETH-SparseNodeGT+LP.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/ETH/ETH-SparseNodeGT+LP+ports.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/ETH/ETH-SparseNodeGT+Node2Vec.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/ETH/ETH-SparseNodeGT+ports.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/ETH/ETH-SparseNodeGT+ports+Ego.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/ETH/ETH-SparseNodeGT+RMP.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  }
+              ]
+}

@@ -1,0 +1,1176 @@
+{
+    "nodes":  [
+                  {
+                      "id":  "config:configs/AML-Large-HI/AML-Large-HI-GINE+RMP.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-HI-GINE+RMP.yaml",
+                      "filePath":  "configs/AML-Large-HI/AML-Large-HI-GINE+RMP.yaml",
+                      "summary":  "Configures Large-HI AML hetero_edge classification with HomoGNNEdgeModel using GINE, reverse message passing, link-neighbor sampling, weighted cross entropy, and cosine warmup training.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml",
+                                   "hetero-edge",
+                                   "large-hi",
+                                   "gine"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML GraphGym-style experiment config covering dataset, train/validation sampler, model, GNN/GT layer, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-HI/AML-Large-HI-MLP.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-HI-MLP.yaml",
+                      "filePath":  "configs/AML-Large-HI/AML-Large-HI-MLP.yaml",
+                      "summary":  "Configures Large-HI AML hetero_edge classification with MLPModel using MLPModel, link-neighbor sampling, weighted cross entropy, and cosine warmup training.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml",
+                                   "hetero-edge",
+                                   "large-hi",
+                                   "mlpmodel"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML GraphGym-style experiment config covering dataset, train/validation sampler, model, GNN/GT layer, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-HI/AML-Large-HI-Multi-GINE.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-HI-Multi-GINE.yaml",
+                      "filePath":  "configs/AML-Large-HI/AML-Large-HI-Multi-GINE.yaml",
+                      "summary":  "Configures Large-HI AML hetero_edge classification with HomoGNNEdgeModel using GINE, ports, reverse message passing, ego IDs, link-neighbor sampling, weighted cross entropy, and cosine warmup training.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml",
+                                   "hetero-edge",
+                                   "large-hi",
+                                   "gine"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML GraphGym-style experiment config covering dataset, train/validation sampler, model, GNN/GT layer, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-HI/AML-Large-HI-Multi-GINE+EU.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-HI-Multi-GINE+EU.yaml",
+                      "filePath":  "configs/AML-Large-HI/AML-Large-HI-Multi-GINE+EU.yaml",
+                      "summary":  "Configures Large-HI AML hetero_edge classification with HomoGNNEdgeModel using GINE, ports, reverse message passing, ego IDs, link-neighbor sampling, weighted cross entropy, and cosine warmup training.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml",
+                                   "hetero-edge",
+                                   "large-hi",
+                                   "gine"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML GraphGym-style experiment config covering dataset, train/validation sampler, model, GNN/GT layer, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-HI/AML-Large-HI-Multi-PNA.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-HI-Multi-PNA.yaml",
+                      "filePath":  "configs/AML-Large-HI/AML-Large-HI-Multi-PNA.yaml",
+                      "summary":  "Configures Large-HI AML hetero_edge classification with HomoGNNEdgeModel using PNA, ports, reverse message passing, ego IDs, link-neighbor sampling, weighted cross entropy, and cosine warmup training.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml",
+                                   "hetero-edge",
+                                   "large-hi",
+                                   "pna"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML GraphGym-style experiment config covering dataset, train/validation sampler, model, GNN/GT layer, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-HI/AML-Large-HI-Multi-PNA+EU.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-HI-Multi-PNA+EU.yaml",
+                      "filePath":  "configs/AML-Large-HI/AML-Large-HI-Multi-PNA+EU.yaml",
+                      "summary":  "Configures Large-HI AML hetero_edge classification with HomoGNNEdgeModel using PNA, ports, reverse message passing, ego IDs, link-neighbor sampling, weighted cross entropy, and cosine warmup training.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml",
+                                   "hetero-edge",
+                                   "large-hi",
+                                   "pna"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML GraphGym-style experiment config covering dataset, train/validation sampler, model, GNN/GT layer, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-HI/AML-Large-HI-Multi-SparseNodeGT.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-HI-Multi-SparseNodeGT.yaml",
+                      "filePath":  "configs/AML-Large-HI/AML-Large-HI-Multi-SparseNodeGT.yaml",
+                      "summary":  "Configures Large-HI AML hetero_edge classification with GTModel using SparseNodeTransformer, ports, reverse message passing, ego IDs, link-neighbor sampling, weighted cross entropy, and cosine warmup training.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml",
+                                   "hetero-edge",
+                                   "large-hi",
+                                   "sparsenodetransformer"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML GraphGym-style experiment config covering dataset, train/validation sampler, model, GNN/GT layer, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-HI/AML-Large-HI-PNA.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-HI-PNA.yaml",
+                      "filePath":  "configs/AML-Large-HI/AML-Large-HI-PNA.yaml",
+                      "summary":  "Configures Large-HI AML hetero_edge classification with HomoGNNEdgeModel using PNA, link-neighbor sampling, weighted cross entropy, and cosine warmup training.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml",
+                                   "hetero-edge",
+                                   "large-hi",
+                                   "pna"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML GraphGym-style experiment config covering dataset, train/validation sampler, model, GNN/GT layer, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-HI/AML-Large-HI-PNA+EU.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-HI-PNA+EU.yaml",
+                      "filePath":  "configs/AML-Large-HI/AML-Large-HI-PNA+EU.yaml",
+                      "summary":  "Configures Large-HI AML hetero_edge classification with HomoGNNEdgeModel using PNA, link-neighbor sampling, weighted cross entropy, and cosine warmup training.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml",
+                                   "hetero-edge",
+                                   "large-hi",
+                                   "pna"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML GraphGym-style experiment config covering dataset, train/validation sampler, model, GNN/GT layer, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-HI-SparseNodeGT.yaml",
+                      "filePath":  "configs/AML-Large-HI/AML-Large-HI-SparseNodeGT.yaml",
+                      "summary":  "Configures Large-HI AML hetero_edge classification with GTModel using SparseNodeTransformer, link-neighbor sampling, weighted cross entropy, and cosine warmup training.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml",
+                                   "hetero-edge",
+                                   "large-hi",
+                                   "sparsenodetransformer"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML GraphGym-style experiment config covering dataset, train/validation sampler, model, GNN/GT layer, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT+Dropout.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-HI-SparseNodeGT+Dropout.yaml",
+                      "filePath":  "configs/AML-Large-HI/AML-Large-HI-SparseNodeGT+Dropout.yaml",
+                      "summary":  "Configures Large-HI AML hetero_edge classification with GTModel using SparseNodeTransformer, link-neighbor sampling, weighted cross entropy, and cosine warmup training.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml",
+                                   "hetero-edge",
+                                   "large-hi",
+                                   "sparsenodetransformer"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML GraphGym-style experiment config covering dataset, train/validation sampler, model, GNN/GT layer, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT+Ego.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-HI-SparseNodeGT+Ego.yaml",
+                      "filePath":  "configs/AML-Large-HI/AML-Large-HI-SparseNodeGT+Ego.yaml",
+                      "summary":  "Configures Large-HI AML hetero_edge classification with GTModel using SparseNodeTransformer, ego IDs, link-neighbor sampling, weighted cross entropy, and cosine warmup training.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml",
+                                   "hetero-edge",
+                                   "large-hi",
+                                   "sparsenodetransformer"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML GraphGym-style experiment config covering dataset, train/validation sampler, model, GNN/GT layer, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT+ports.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-HI-SparseNodeGT+ports.yaml",
+                      "filePath":  "configs/AML-Large-HI/AML-Large-HI-SparseNodeGT+ports.yaml",
+                      "summary":  "Configures Large-HI AML hetero_edge classification with GTModel using SparseNodeTransformer, ports, link-neighbor sampling, weighted cross entropy, and cosine warmup training.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml",
+                                   "hetero-edge",
+                                   "large-hi",
+                                   "sparsenodetransformer"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML GraphGym-style experiment config covering dataset, train/validation sampler, model, GNN/GT layer, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT+ports+Ego.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-HI-SparseNodeGT+ports+Ego.yaml",
+                      "filePath":  "configs/AML-Large-HI/AML-Large-HI-SparseNodeGT+ports+Ego.yaml",
+                      "summary":  "Configures Large-HI AML hetero_edge classification with GTModel using SparseNodeTransformer, ports, ego IDs, link-neighbor sampling, weighted cross entropy, and cosine warmup training.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml",
+                                   "hetero-edge",
+                                   "large-hi",
+                                   "sparsenodetransformer"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML GraphGym-style experiment config covering dataset, train/validation sampler, model, GNN/GT layer, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT+RMP.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-HI-SparseNodeGT+RMP.yaml",
+                      "filePath":  "configs/AML-Large-HI/AML-Large-HI-SparseNodeGT+RMP.yaml",
+                      "summary":  "Configures Large-HI AML hetero_edge classification with GTModel using SparseNodeTransformer, reverse message passing, link-neighbor sampling, weighted cross entropy, and cosine warmup training.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml",
+                                   "hetero-edge",
+                                   "large-hi",
+                                   "sparsenodetransformer"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML GraphGym-style experiment config covering dataset, train/validation sampler, model, GNN/GT layer, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT-EdgeAttn.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-HI-SparseNodeGT-EdgeAttn.yaml",
+                      "filePath":  "configs/AML-Large-HI/AML-Large-HI-SparseNodeGT-EdgeAttn.yaml",
+                      "summary":  "Configures Large-HI AML hetero_edge classification with GTModel using SparseNodeTransformer, link-neighbor sampling, weighted cross entropy, and cosine warmup training.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml",
+                                   "hetero-edge",
+                                   "large-hi",
+                                   "sparsenodetransformer"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML GraphGym-style experiment config covering dataset, train/validation sampler, model, GNN/GT layer, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT-EdgeGate.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-HI-SparseNodeGT-EdgeGate.yaml",
+                      "filePath":  "configs/AML-Large-HI/AML-Large-HI-SparseNodeGT-EdgeGate.yaml",
+                      "summary":  "Configures Large-HI AML hetero_edge classification with GTModel using SparseNodeTransformer, link-neighbor sampling, weighted cross entropy, and cosine warmup training.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml",
+                                   "hetero-edge",
+                                   "large-hi",
+                                   "sparsenodetransformer"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML GraphGym-style experiment config covering dataset, train/validation sampler, model, GNN/GT layer, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-LI/AML-Large-LI-GATE.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-LI-GATE.yaml",
+                      "filePath":  "configs/AML-Large-LI/AML-Large-LI-GATE.yaml",
+                      "summary":  "Configures Large-LI AML hetero_edge classification with HomoGNNEdgeModel using GATE, link-neighbor sampling, weighted cross entropy, and cosine warmup training.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml",
+                                   "hetero-edge",
+                                   "large-li",
+                                   "gate"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML GraphGym-style experiment config covering dataset, train/validation sampler, model, GNN/GT layer, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-LI/AML-Large-LI-GatedGCN.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-LI-GatedGCN.yaml",
+                      "filePath":  "configs/AML-Large-LI/AML-Large-LI-GatedGCN.yaml",
+                      "summary":  "Configures Large-LI AML hetero_edge classification with HomoGNNEdgeModel using GatedGCN, link-neighbor sampling, weighted cross entropy, and cosine warmup training.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml",
+                                   "hetero-edge",
+                                   "large-li",
+                                   "gatedgcn"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML GraphGym-style experiment config covering dataset, train/validation sampler, model, GNN/GT layer, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-LI/AML-Large-LI-GINE.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-LI-GINE.yaml",
+                      "filePath":  "configs/AML-Large-LI/AML-Large-LI-GINE.yaml",
+                      "summary":  "Configures Large-LI AML hetero_edge classification with HomoGNNEdgeModel using GINE, link-neighbor sampling, weighted cross entropy, and cosine warmup training.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml",
+                                   "hetero-edge",
+                                   "large-li",
+                                   "gine"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML GraphGym-style experiment config covering dataset, train/validation sampler, model, GNN/GT layer, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-LI/AML-Large-LI-GINE+Ego.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-LI-GINE+Ego.yaml",
+                      "filePath":  "configs/AML-Large-LI/AML-Large-LI-GINE+Ego.yaml",
+                      "summary":  "Configures Large-LI AML hetero_edge classification with HomoGNNEdgeModel using GINE, ego IDs, link-neighbor sampling, weighted cross entropy, and cosine warmup training.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml",
+                                   "hetero-edge",
+                                   "large-li",
+                                   "gine"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML GraphGym-style experiment config covering dataset, train/validation sampler, model, GNN/GT layer, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-LI/AML-Large-LI-GINE+EU.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-LI-GINE+EU.yaml",
+                      "filePath":  "configs/AML-Large-LI/AML-Large-LI-GINE+EU.yaml",
+                      "summary":  "Configures Large-LI AML hetero_edge classification with HomoGNNEdgeModel using GINE, link-neighbor sampling, weighted cross entropy, and cosine warmup training.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml",
+                                   "hetero-edge",
+                                   "large-li",
+                                   "gine"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML GraphGym-style experiment config covering dataset, train/validation sampler, model, GNN/GT layer, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-LI/AML-Large-LI-GINE+ports.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-LI-GINE+ports.yaml",
+                      "filePath":  "configs/AML-Large-LI/AML-Large-LI-GINE+ports.yaml",
+                      "summary":  "Configures Large-LI AML hetero_edge classification with HomoGNNEdgeModel using GINE, ports, link-neighbor sampling, weighted cross entropy, and cosine warmup training.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml",
+                                   "hetero-edge",
+                                   "large-li",
+                                   "gine"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML GraphGym-style experiment config covering dataset, train/validation sampler, model, GNN/GT layer, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-LI/AML-Large-LI-GINE+RMP.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-LI-GINE+RMP.yaml",
+                      "filePath":  "configs/AML-Large-LI/AML-Large-LI-GINE+RMP.yaml",
+                      "summary":  "Configures Large-LI AML hetero_edge classification with HomoGNNEdgeModel using GINE, reverse message passing, link-neighbor sampling, weighted cross entropy, and cosine warmup training.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml",
+                                   "hetero-edge",
+                                   "large-li",
+                                   "gine"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML GraphGym-style experiment config covering dataset, train/validation sampler, model, GNN/GT layer, and optimizer sections."
+                  },
+                  {
+                      "id":  "config:configs/AML-Large-LI/AML-Large-LI-MLP.yaml",
+                      "type":  "config",
+                      "name":  "AML-Large-LI-MLP.yaml",
+                      "filePath":  "configs/AML-Large-LI/AML-Large-LI-MLP.yaml",
+                      "summary":  "Configures Large-LI AML hetero_edge classification with MLPModel using MLPModel, link-neighbor sampling, weighted cross entropy, and cosine warmup training.",
+                      "tags":  [
+                                   "configuration",
+                                   "aml",
+                                   "hetero-edge",
+                                   "large-li",
+                                   "mlpmodel"
+                               ],
+                      "complexity":  "moderate",
+                      "languageNotes":  "YAML GraphGym-style experiment config covering dataset, train/validation sampler, model, GNN/GT layer, and optimizer sections."
+                  }
+              ],
+    "edges":  [
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-GINE+RMP.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-GINE+RMP.yaml",
+                      "target":  "file:fraudGT/datasets/aml_dataset.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-GINE+RMP.yaml",
+                      "target":  "file:fraudGT/sampler/custom_sampler.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-GINE+RMP.yaml",
+                      "target":  "file:fraudGT/network/homo_gnn_edge_model.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-MLP.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-MLP.yaml",
+                      "target":  "file:fraudGT/datasets/aml_dataset.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-MLP.yaml",
+                      "target":  "file:fraudGT/sampler/custom_sampler.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-MLP.yaml",
+                      "target":  "file:fraudGT/network/mlp_model.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-Multi-GINE.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-Multi-GINE.yaml",
+                      "target":  "file:fraudGT/datasets/aml_dataset.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-Multi-GINE.yaml",
+                      "target":  "file:fraudGT/sampler/custom_sampler.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-Multi-GINE.yaml",
+                      "target":  "file:fraudGT/network/homo_gnn_edge_model.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-Multi-GINE+EU.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-Multi-GINE+EU.yaml",
+                      "target":  "file:fraudGT/datasets/aml_dataset.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-Multi-GINE+EU.yaml",
+                      "target":  "file:fraudGT/sampler/custom_sampler.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-Multi-GINE+EU.yaml",
+                      "target":  "file:fraudGT/network/homo_gnn_edge_model.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-Multi-PNA.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-Multi-PNA.yaml",
+                      "target":  "file:fraudGT/datasets/aml_dataset.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-Multi-PNA.yaml",
+                      "target":  "file:fraudGT/sampler/custom_sampler.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-Multi-PNA.yaml",
+                      "target":  "file:fraudGT/network/homo_gnn_edge_model.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-Multi-PNA+EU.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-Multi-PNA+EU.yaml",
+                      "target":  "file:fraudGT/datasets/aml_dataset.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-Multi-PNA+EU.yaml",
+                      "target":  "file:fraudGT/sampler/custom_sampler.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-Multi-PNA+EU.yaml",
+                      "target":  "file:fraudGT/network/homo_gnn_edge_model.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-Multi-SparseNodeGT.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-Multi-SparseNodeGT.yaml",
+                      "target":  "file:fraudGT/datasets/aml_dataset.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-Multi-SparseNodeGT.yaml",
+                      "target":  "file:fraudGT/sampler/custom_sampler.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-Multi-SparseNodeGT.yaml",
+                      "target":  "file:fraudGT/network/gt_model.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-Multi-SparseNodeGT.yaml",
+                      "target":  "file:fraudGT/layer/gt_layer.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-PNA.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-PNA.yaml",
+                      "target":  "file:fraudGT/datasets/aml_dataset.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-PNA.yaml",
+                      "target":  "file:fraudGT/sampler/custom_sampler.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-PNA.yaml",
+                      "target":  "file:fraudGT/network/homo_gnn_edge_model.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-PNA+EU.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-PNA+EU.yaml",
+                      "target":  "file:fraudGT/datasets/aml_dataset.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-PNA+EU.yaml",
+                      "target":  "file:fraudGT/sampler/custom_sampler.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-PNA+EU.yaml",
+                      "target":  "file:fraudGT/network/homo_gnn_edge_model.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT.yaml",
+                      "target":  "file:fraudGT/datasets/aml_dataset.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT.yaml",
+                      "target":  "file:fraudGT/sampler/custom_sampler.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT.yaml",
+                      "target":  "file:fraudGT/network/gt_model.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT.yaml",
+                      "target":  "file:fraudGT/layer/gt_layer.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT+Dropout.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT+Dropout.yaml",
+                      "target":  "file:fraudGT/datasets/aml_dataset.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT+Dropout.yaml",
+                      "target":  "file:fraudGT/sampler/custom_sampler.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT+Dropout.yaml",
+                      "target":  "file:fraudGT/network/gt_model.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT+Dropout.yaml",
+                      "target":  "file:fraudGT/layer/gt_layer.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT+Ego.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT+Ego.yaml",
+                      "target":  "file:fraudGT/datasets/aml_dataset.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT+Ego.yaml",
+                      "target":  "file:fraudGT/sampler/custom_sampler.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT+Ego.yaml",
+                      "target":  "file:fraudGT/network/gt_model.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT+Ego.yaml",
+                      "target":  "file:fraudGT/layer/gt_layer.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT+ports.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT+ports.yaml",
+                      "target":  "file:fraudGT/datasets/aml_dataset.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT+ports.yaml",
+                      "target":  "file:fraudGT/sampler/custom_sampler.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT+ports.yaml",
+                      "target":  "file:fraudGT/network/gt_model.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT+ports.yaml",
+                      "target":  "file:fraudGT/layer/gt_layer.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT+ports+Ego.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT+ports+Ego.yaml",
+                      "target":  "file:fraudGT/datasets/aml_dataset.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT+ports+Ego.yaml",
+                      "target":  "file:fraudGT/sampler/custom_sampler.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT+ports+Ego.yaml",
+                      "target":  "file:fraudGT/network/gt_model.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT+ports+Ego.yaml",
+                      "target":  "file:fraudGT/layer/gt_layer.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT+RMP.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT+RMP.yaml",
+                      "target":  "file:fraudGT/datasets/aml_dataset.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT+RMP.yaml",
+                      "target":  "file:fraudGT/sampler/custom_sampler.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT+RMP.yaml",
+                      "target":  "file:fraudGT/network/gt_model.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT+RMP.yaml",
+                      "target":  "file:fraudGT/layer/gt_layer.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT-EdgeAttn.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT-EdgeAttn.yaml",
+                      "target":  "file:fraudGT/datasets/aml_dataset.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT-EdgeAttn.yaml",
+                      "target":  "file:fraudGT/sampler/custom_sampler.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT-EdgeAttn.yaml",
+                      "target":  "file:fraudGT/network/gt_model.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT-EdgeAttn.yaml",
+                      "target":  "file:fraudGT/layer/gt_layer.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT-EdgeGate.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT-EdgeGate.yaml",
+                      "target":  "file:fraudGT/datasets/aml_dataset.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT-EdgeGate.yaml",
+                      "target":  "file:fraudGT/sampler/custom_sampler.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT-EdgeGate.yaml",
+                      "target":  "file:fraudGT/network/gt_model.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-HI/AML-Large-HI-SparseNodeGT-EdgeGate.yaml",
+                      "target":  "file:fraudGT/layer/gt_layer.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-GATE.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-GATE.yaml",
+                      "target":  "file:fraudGT/datasets/aml_dataset.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-GATE.yaml",
+                      "target":  "file:fraudGT/sampler/custom_sampler.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-GATE.yaml",
+                      "target":  "file:fraudGT/network/homo_gnn_edge_model.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-GatedGCN.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-GatedGCN.yaml",
+                      "target":  "file:fraudGT/datasets/aml_dataset.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-GatedGCN.yaml",
+                      "target":  "file:fraudGT/sampler/custom_sampler.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-GatedGCN.yaml",
+                      "target":  "file:fraudGT/network/homo_gnn_edge_model.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-GatedGCN.yaml",
+                      "target":  "file:fraudGT/layer/gatedgcn_layer.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-GINE.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-GINE.yaml",
+                      "target":  "file:fraudGT/datasets/aml_dataset.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-GINE.yaml",
+                      "target":  "file:fraudGT/sampler/custom_sampler.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-GINE.yaml",
+                      "target":  "file:fraudGT/network/homo_gnn_edge_model.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-GINE+Ego.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-GINE+Ego.yaml",
+                      "target":  "file:fraudGT/datasets/aml_dataset.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-GINE+Ego.yaml",
+                      "target":  "file:fraudGT/sampler/custom_sampler.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-GINE+Ego.yaml",
+                      "target":  "file:fraudGT/network/homo_gnn_edge_model.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-GINE+EU.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-GINE+EU.yaml",
+                      "target":  "file:fraudGT/datasets/aml_dataset.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-GINE+EU.yaml",
+                      "target":  "file:fraudGT/sampler/custom_sampler.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-GINE+EU.yaml",
+                      "target":  "file:fraudGT/network/homo_gnn_edge_model.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-GINE+ports.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-GINE+ports.yaml",
+                      "target":  "file:fraudGT/datasets/aml_dataset.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-GINE+ports.yaml",
+                      "target":  "file:fraudGT/sampler/custom_sampler.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-GINE+ports.yaml",
+                      "target":  "file:fraudGT/network/homo_gnn_edge_model.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-GINE+RMP.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-GINE+RMP.yaml",
+                      "target":  "file:fraudGT/datasets/aml_dataset.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-GINE+RMP.yaml",
+                      "target":  "file:fraudGT/sampler/custom_sampler.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-GINE+RMP.yaml",
+                      "target":  "file:fraudGT/network/homo_gnn_edge_model.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-MLP.yaml",
+                      "target":  "file:fraudGT/main.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-MLP.yaml",
+                      "target":  "file:fraudGT/datasets/aml_dataset.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-MLP.yaml",
+                      "target":  "file:fraudGT/sampler/custom_sampler.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "config:configs/AML-Large-LI/AML-Large-LI-MLP.yaml",
+                      "target":  "file:fraudGT/network/mlp_model.py",
+                      "type":  "configures",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  }
+              ]
+}

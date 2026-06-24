@@ -1,0 +1,4175 @@
+{
+  "nodes": [
+    {
+      "id": "file:fraudGT/graphgym/loss.py",
+      "type": "file",
+      "name": "loss.py",
+      "filePath": "fraudGT/graphgym/loss.py",
+      "summary": "Computes the configured training loss for GraphGym tasks, including cross entropy, binary cross entropy, MSE, and registered custom losses.",
+      "tags": [
+        "loss",
+        "training",
+        "task-dispatch"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:fraudGT/graphgym/loss.py:compute_loss",
+      "type": "function",
+      "name": "compute_loss",
+      "filePath": "fraudGT/graphgym/loss.py",
+      "lineRange": [
+        9,
+        65
+      ],
+      "summary": "Selects and computes the configured objective for classification, binary classification, regression, or custom registered losses.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:fraudGT/graphgym/model_builder.py",
+      "type": "file",
+      "name": "model_builder.py",
+      "filePath": "fraudGT/graphgym/model_builder.py",
+      "summary": "Builds the configured PyTorch Geometric GraphGym model from registered model factories and optionally moves it to the active device.",
+      "tags": [
+        "model-factory",
+        "configuration",
+        "device"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/model_builder.py:create_model",
+      "type": "function",
+      "name": "create_model",
+      "filePath": "fraudGT/graphgym/model_builder.py",
+      "lineRange": [
+        10,
+        28
+      ],
+      "summary": "Instantiates the configured model class from the GraphGym registry and handles optional device placement.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/graphgym/model_builder_deepsnap.py",
+      "type": "file",
+      "name": "model_builder_deepsnap.py",
+      "filePath": "fraudGT/graphgym/model_builder_deepsnap.py",
+      "summary": "Builds the DeepSNAP variant of configured GraphGym models and optionally transfers the model to the active device.",
+      "tags": [
+        "model-factory",
+        "deepsnap",
+        "device"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/model_builder_deepsnap.py:create_model",
+      "type": "function",
+      "name": "create_model",
+      "filePath": "fraudGT/graphgym/model_builder_deepsnap.py",
+      "lineRange": [
+        13,
+        31
+      ],
+      "summary": "Instantiates the configured model class from the GraphGym registry and handles optional device placement.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/graphgym/models/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "fraudGT/graphgym/models/__init__.py",
+      "summary": "Marks the GraphGym models directory as a Python package for model-layer modules.",
+      "tags": [
+        "package",
+        "entry-point",
+        "module"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/graphgym/models/act.py",
+      "type": "file",
+      "name": "act.py",
+      "filePath": "fraudGT/graphgym/models/act.py",
+      "summary": "Defines the activation registry mapping configuration names to PyTorch activation modules.",
+      "tags": [
+        "activation",
+        "registry",
+        "configuration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/graphgym/models/feature_augment.py",
+      "type": "file",
+      "name": "feature_augment.py",
+      "filePath": "fraudGT/graphgym/models/feature_augment.py",
+      "summary": "Implements configurable graph feature augmentation for node, edge, and graph attributes, including structural metrics, binning, positional encodings, and preprocessing.",
+      "tags": [
+        "feature-engineering",
+        "graph-features",
+        "preprocessing"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:fraudGT/graphgym/models/feature_augment.py:_key",
+      "type": "function",
+      "name": "_key",
+      "filePath": "fraudGT/graphgym/models/feature_augment.py",
+      "lineRange": [
+        14,
+        15
+      ],
+      "summary": "Implements _key behavior used by feature_augment.py in the GraphGym training and model stack.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/models/feature_augment.py:create_augment_fun",
+      "type": "function",
+      "name": "create_augment_fun",
+      "filePath": "fraudGT/graphgym/models/feature_augment.py",
+      "lineRange": [
+        18,
+        22
+      ],
+      "summary": "Implements create_augment_fun behavior used by feature_augment.py in the GraphGym training and model stack.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/models/feature_augment.py:_replace_label",
+      "type": "function",
+      "name": "_replace_label",
+      "filePath": "fraudGT/graphgym/models/feature_augment.py",
+      "lineRange": [
+        25,
+        39
+      ],
+      "summary": "Implements _replace_label behavior used by feature_augment.py in the GraphGym training and model stack.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/feature_augment.py:FeatureAugment",
+      "type": "class",
+      "name": "FeatureAugment",
+      "filePath": "fraudGT/graphgym/models/feature_augment.py",
+      "lineRange": [
+        43,
+        328
+      ],
+      "summary": "Configurable augmentation module that computes structural graph features, converts representations, and augments labels or features across datasets.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/feature_augment.py:Preprocess",
+      "type": "class",
+      "name": "Preprocess",
+      "filePath": "fraudGT/graphgym/models/feature_augment.py",
+      "lineRange": [
+        331,
+        352
+      ],
+      "summary": "Preprocessing module that concatenates configured augmented node features into the batch node feature tensor.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/graphgym/models/feature_encoder.py",
+      "type": "file",
+      "name": "feature_encoder.py",
+      "filePath": "fraudGT/graphgym/models/feature_encoder.py",
+      "summary": "Defines node and edge feature encoders that wrap dataset-specific integer features with embeddings and optional batch normalization.",
+      "tags": [
+        "feature-encoding",
+        "embedding",
+        "batch-normalization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/feature_encoder.py:IntegerFeatureEncoder",
+      "type": "class",
+      "name": "IntegerFeatureEncoder",
+      "filePath": "fraudGT/graphgym/models/feature_encoder.py",
+      "lineRange": [
+        12,
+        30
+      ],
+      "summary": "Defines the IntegerFeatureEncoder module used by feature_encoder.py in the GraphGym model stack.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/feature_encoder.py:SingleAtomEncoder",
+      "type": "class",
+      "name": "SingleAtomEncoder",
+      "filePath": "fraudGT/graphgym/models/feature_encoder.py",
+      "lineRange": [
+        33,
+        52
+      ],
+      "summary": "Defines the SingleAtomEncoder module used by feature_encoder.py in the GraphGym model stack.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/feature_encoder.py:AtomEncoder",
+      "type": "class",
+      "name": "AtomEncoder",
+      "filePath": "fraudGT/graphgym/models/feature_encoder.py",
+      "lineRange": [
+        55,
+        80
+      ],
+      "summary": "Defines the AtomEncoder module used by feature_encoder.py in the GraphGym model stack.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/feature_encoder.py:BondEncoder",
+      "type": "class",
+      "name": "BondEncoder",
+      "filePath": "fraudGT/graphgym/models/feature_encoder.py",
+      "lineRange": [
+        83,
+        102
+      ],
+      "summary": "Defines the BondEncoder module used by feature_encoder.py in the GraphGym model stack.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/graphgym/models/feature_encoder_deepsnap.py",
+      "type": "file",
+      "name": "feature_encoder_deepsnap.py",
+      "filePath": "fraudGT/graphgym/models/feature_encoder_deepsnap.py",
+      "summary": "Provides DeepSNAP-compatible node and edge feature encoders with embedding and optional batch-normalization support.",
+      "tags": [
+        "feature-encoding",
+        "deepsnap",
+        "batch-normalization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/feature_encoder_deepsnap.py:IntegerFeatureEncoder",
+      "type": "class",
+      "name": "IntegerFeatureEncoder",
+      "filePath": "fraudGT/graphgym/models/feature_encoder_deepsnap.py",
+      "lineRange": [
+        11,
+        30
+      ],
+      "summary": "Defines the IntegerFeatureEncoder module used by feature_encoder_deepsnap.py in the GraphGym model stack.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/feature_encoder_deepsnap.py:SingleAtomEncoder",
+      "type": "class",
+      "name": "SingleAtomEncoder",
+      "filePath": "fraudGT/graphgym/models/feature_encoder_deepsnap.py",
+      "lineRange": [
+        33,
+        51
+      ],
+      "summary": "Defines the SingleAtomEncoder module used by feature_encoder_deepsnap.py in the GraphGym model stack.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/feature_encoder_deepsnap.py:AtomEncoder",
+      "type": "class",
+      "name": "AtomEncoder",
+      "filePath": "fraudGT/graphgym/models/feature_encoder_deepsnap.py",
+      "lineRange": [
+        54,
+        78
+      ],
+      "summary": "Defines the AtomEncoder module used by feature_encoder_deepsnap.py in the GraphGym model stack.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/feature_encoder_deepsnap.py:BondEncoder",
+      "type": "class",
+      "name": "BondEncoder",
+      "filePath": "fraudGT/graphgym/models/feature_encoder_deepsnap.py",
+      "lineRange": [
+        81,
+        105
+      ],
+      "summary": "Defines the BondEncoder module used by feature_encoder_deepsnap.py in the GraphGym model stack.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/graphgym/models/gnn.py",
+      "type": "file",
+      "name": "gnn.py",
+      "filePath": "fraudGT/graphgym/models/gnn.py",
+      "summary": "Assembles the main GraphGym GNN architecture from feature encoders, optional pre-message-passing layers, configurable GNN stages, and task heads.",
+      "tags": [
+        "gnn-model",
+        "model-composition",
+        "task-head"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:fraudGT/graphgym/models/gnn.py:GNNLayer",
+      "type": "function",
+      "name": "GNNLayer",
+      "filePath": "fraudGT/graphgym/models/gnn.py",
+      "lineRange": [
+        16,
+        26
+      ],
+      "summary": "Implements GNNLayer behavior used by gnn.py in the GraphGym training and model stack.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/models/gnn.py:GNNPreMP",
+      "type": "function",
+      "name": "GNNPreMP",
+      "filePath": "fraudGT/graphgym/models/gnn.py",
+      "lineRange": [
+        29,
+        45
+      ],
+      "summary": "Implements GNNPreMP behavior used by gnn.py in the GraphGym training and model stack.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/gnn.py:GNNStackStage",
+      "type": "class",
+      "name": "GNNStackStage",
+      "filePath": "fraudGT/graphgym/models/gnn.py",
+      "lineRange": [
+        49,
+        80
+      ],
+      "summary": "Stacks configurable GNN layers and applies skip-sum, skip-concat, and optional L2 normalization behavior.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/gnn.py:FeatureEncoder",
+      "type": "class",
+      "name": "FeatureEncoder",
+      "filePath": "fraudGT/graphgym/models/gnn.py",
+      "lineRange": [
+        93,
+        121
+      ],
+      "summary": "Applies configured node and edge encoders plus optional normalization before message passing.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/gnn.py:GNN",
+      "type": "class",
+      "name": "GNN",
+      "filePath": "fraudGT/graphgym/models/gnn.py",
+      "lineRange": [
+        125,
+        156
+      ],
+      "summary": "Composes the full GraphGym model from encoder, optional pre-message-passing layers, GNN stage, task head, and weight initialization.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/graphgym/models/gnn_deepsnap.py",
+      "type": "file",
+      "name": "gnn_deepsnap.py",
+      "filePath": "fraudGT/graphgym/models/gnn_deepsnap.py",
+      "summary": "Assembles the DeepSNAP GraphGym GNN stack from encoders, message-passing stages, and task heads.",
+      "tags": [
+        "gnn-model",
+        "deepsnap",
+        "model-composition"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:fraudGT/graphgym/models/gnn_deepsnap.py:GNNLayer",
+      "type": "function",
+      "name": "GNNLayer",
+      "filePath": "fraudGT/graphgym/models/gnn_deepsnap.py",
+      "lineRange": [
+        18,
+        28
+      ],
+      "summary": "Implements GNNLayer behavior used by gnn_deepsnap.py in the GraphGym training and model stack.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/models/gnn_deepsnap.py:GNNPreMP",
+      "type": "function",
+      "name": "GNNPreMP",
+      "filePath": "fraudGT/graphgym/models/gnn_deepsnap.py",
+      "lineRange": [
+        31,
+        46
+      ],
+      "summary": "Implements GNNPreMP behavior used by gnn_deepsnap.py in the GraphGym training and model stack.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/gnn_deepsnap.py:GNNSkipBlock",
+      "type": "class",
+      "name": "GNNSkipBlock",
+      "filePath": "fraudGT/graphgym/models/gnn_deepsnap.py",
+      "lineRange": [
+        50,
+        80
+      ],
+      "summary": "Defines the GNNSkipBlock module used by gnn_deepsnap.py in the GraphGym model stack.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/gnn_deepsnap.py:GNNStackStage",
+      "type": "class",
+      "name": "GNNStackStage",
+      "filePath": "fraudGT/graphgym/models/gnn_deepsnap.py",
+      "lineRange": [
+        84,
+        99
+      ],
+      "summary": "Stacks configurable GNN layers and applies skip-sum, skip-concat, and optional L2 normalization behavior.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/gnn_deepsnap.py:GNNSkipStage",
+      "type": "class",
+      "name": "GNNSkipStage",
+      "filePath": "fraudGT/graphgym/models/gnn_deepsnap.py",
+      "lineRange": [
+        102,
+        126
+      ],
+      "summary": "Defines the GNNSkipStage module used by gnn_deepsnap.py in the GraphGym model stack.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/gnn_deepsnap.py:GNN",
+      "type": "class",
+      "name": "GNN",
+      "filePath": "fraudGT/graphgym/models/gnn_deepsnap.py",
+      "lineRange": [
+        139,
+        183
+      ],
+      "summary": "Composes the full GraphGym model from encoder, optional pre-message-passing layers, GNN stage, task head, and weight initialization.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/graphgym/models/head.py",
+      "type": "file",
+      "name": "head.py",
+      "filePath": "fraudGT/graphgym/models/head.py",
+      "summary": "Defines prediction heads for node, edge, graph, and link-prediction tasks in PyTorch Geometric batches.",
+      "tags": [
+        "prediction-head",
+        "task-output",
+        "pooling"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/head.py:GNNNodeHead",
+      "type": "class",
+      "name": "GNNNodeHead",
+      "filePath": "fraudGT/graphgym/models/head.py",
+      "lineRange": [
+        16,
+        32
+      ],
+      "summary": "Defines the GNNNodeHead module used by head.py in the GraphGym model stack.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/head.py:GNNEdgeHead",
+      "type": "class",
+      "name": "GNNEdgeHead",
+      "filePath": "fraudGT/graphgym/models/head.py",
+      "lineRange": [
+        35,
+        87
+      ],
+      "summary": "Defines the GNNEdgeHead module used by head.py in the GraphGym model stack.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/head.py:GNNGraphHead",
+      "type": "class",
+      "name": "GNNGraphHead",
+      "filePath": "fraudGT/graphgym/models/head.py",
+      "lineRange": [
+        90,
+        113
+      ],
+      "summary": "Defines the GNNGraphHead module used by head.py in the GraphGym model stack.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/graphgym/models/head_deepsnap.py",
+      "type": "file",
+      "name": "head_deepsnap.py",
+      "filePath": "fraudGT/graphgym/models/head_deepsnap.py",
+      "summary": "Defines DeepSNAP-compatible prediction heads for graph, node, edge, and link-prediction tasks.",
+      "tags": [
+        "prediction-head",
+        "deepsnap",
+        "task-output"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/head_deepsnap.py:GNNNodeHead",
+      "type": "class",
+      "name": "GNNNodeHead",
+      "filePath": "fraudGT/graphgym/models/head_deepsnap.py",
+      "lineRange": [
+        16,
+        35
+      ],
+      "summary": "Defines the GNNNodeHead module used by head_deepsnap.py in the GraphGym model stack.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/head_deepsnap.py:GNNEdgeHead",
+      "type": "class",
+      "name": "GNNEdgeHead",
+      "filePath": "fraudGT/graphgym/models/head_deepsnap.py",
+      "lineRange": [
+        38,
+        89
+      ],
+      "summary": "Defines the GNNEdgeHead module used by head_deepsnap.py in the GraphGym model stack.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/head_deepsnap.py:GNNGraphHead",
+      "type": "class",
+      "name": "GNNGraphHead",
+      "filePath": "fraudGT/graphgym/models/head_deepsnap.py",
+      "lineRange": [
+        92,
+        119
+      ],
+      "summary": "Defines the GNNGraphHead module used by head_deepsnap.py in the GraphGym model stack.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/graphgym/models/layer.py",
+      "type": "file",
+      "name": "layer.py",
+      "filePath": "fraudGT/graphgym/models/layer.py",
+      "summary": "Provides reusable PyTorch Geometric layer wrappers, normalization wrappers, MLPs, and convolution registry entries for GraphGym models.",
+      "tags": [
+        "gnn-layer",
+        "registry",
+        "torch-geometric"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/layer.py:GeneralLayer",
+      "type": "class",
+      "name": "GeneralLayer",
+      "filePath": "fraudGT/graphgym/models/layer.py",
+      "lineRange": [
+        14,
+        56
+      ],
+      "summary": "Wraps a registered layer with optional batch normalization, layer normalization, dropout, activation, and L2 normalization.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/layer.py:GeneralMultiLayer",
+      "type": "class",
+      "name": "GeneralMultiLayer",
+      "filePath": "fraudGT/graphgym/models/layer.py",
+      "lineRange": [
+        59,
+        81
+      ],
+      "summary": "Builds a sequential stack of GeneralLayer modules with configurable hidden and output dimensions.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/layer.py:Linear",
+      "type": "class",
+      "name": "Linear",
+      "filePath": "fraudGT/graphgym/models/layer.py",
+      "lineRange": [
+        86,
+        96
+      ],
+      "summary": "Adapts a linear layer to operate on tensors or batch node features.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/layer.py:BatchNorm1dNode",
+      "type": "class",
+      "name": "BatchNorm1dNode",
+      "filePath": "fraudGT/graphgym/models/layer.py",
+      "lineRange": [
+        99,
+        107
+      ],
+      "summary": "Applies one-dimensional batch normalization to node feature tensors.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/layer.py:BatchNorm1dEdge",
+      "type": "class",
+      "name": "BatchNorm1dEdge",
+      "filePath": "fraudGT/graphgym/models/layer.py",
+      "lineRange": [
+        110,
+        118
+      ],
+      "summary": "Applies one-dimensional batch normalization to edge feature tensors.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/layer.py:MLP",
+      "type": "class",
+      "name": "MLP",
+      "filePath": "fraudGT/graphgym/models/layer.py",
+      "lineRange": [
+        121,
+        153
+      ],
+      "summary": "Builds a configurable multilayer perceptron from GraphGym linear wrappers.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/layer.py:GCNConv",
+      "type": "class",
+      "name": "GCNConv",
+      "filePath": "fraudGT/graphgym/models/layer.py",
+      "lineRange": [
+        156,
+        163
+      ],
+      "summary": "Wraps PyTorch Geometric GCNConv for GraphGym batch objects.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/layer.py:SAGEConv",
+      "type": "class",
+      "name": "SAGEConv",
+      "filePath": "fraudGT/graphgym/models/layer.py",
+      "lineRange": [
+        166,
+        173
+      ],
+      "summary": "Wraps PyTorch Geometric SAGEConv for GraphGym batch objects.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/layer.py:GATConv",
+      "type": "class",
+      "name": "GATConv",
+      "filePath": "fraudGT/graphgym/models/layer.py",
+      "lineRange": [
+        176,
+        183
+      ],
+      "summary": "Wraps PyTorch Geometric GATConv for GraphGym batch objects.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/layer.py:GINConv",
+      "type": "class",
+      "name": "GINConv",
+      "filePath": "fraudGT/graphgym/models/layer.py",
+      "lineRange": [
+        186,
+        195
+      ],
+      "summary": "Wraps PyTorch Geometric GINConv with an internal two-layer neural network.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/layer.py:SplineConv",
+      "type": "class",
+      "name": "SplineConv",
+      "filePath": "fraudGT/graphgym/models/layer.py",
+      "lineRange": [
+        198,
+        209
+      ],
+      "summary": "Wraps PyTorch Geometric SplineConv using edge attributes.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/layer.py:GeneralConv",
+      "type": "class",
+      "name": "GeneralConv",
+      "filePath": "fraudGT/graphgym/models/layer.py",
+      "lineRange": [
+        212,
+        219
+      ],
+      "summary": "Wraps the project general convolution layer for node updates.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/layer.py:GeneralEdgeConv",
+      "type": "class",
+      "name": "GeneralEdgeConv",
+      "filePath": "fraudGT/graphgym/models/layer.py",
+      "lineRange": [
+        222,
+        231
+      ],
+      "summary": "Wraps the project edge-aware convolution layer using edge features.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/layer.py:GeneralSampleEdgeConv",
+      "type": "class",
+      "name": "GeneralSampleEdgeConv",
+      "filePath": "fraudGT/graphgym/models/layer.py",
+      "lineRange": [
+        234,
+        244
+      ],
+      "summary": "Samples edges according to configuration before applying edge-aware convolution.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/graphgym/models/layer_deepsnap.py",
+      "type": "file",
+      "name": "layer_deepsnap.py",
+      "filePath": "fraudGT/graphgym/models/layer_deepsnap.py",
+      "summary": "Provides DeepSNAP-oriented layer wrappers and convolution registry entries for GraphGym model construction.",
+      "tags": [
+        "gnn-layer",
+        "deepsnap",
+        "registry"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/layer_deepsnap.py:GeneralLayer",
+      "type": "class",
+      "name": "GeneralLayer",
+      "filePath": "fraudGT/graphgym/models/layer_deepsnap.py",
+      "lineRange": [
+        14,
+        54
+      ],
+      "summary": "Wraps a registered layer with optional batch normalization, layer normalization, dropout, activation, and L2 normalization.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/layer_deepsnap.py:GeneralMultiLayer",
+      "type": "class",
+      "name": "GeneralMultiLayer",
+      "filePath": "fraudGT/graphgym/models/layer_deepsnap.py",
+      "lineRange": [
+        57,
+        79
+      ],
+      "summary": "Builds a sequential stack of GeneralLayer modules with configurable hidden and output dimensions.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/layer_deepsnap.py:Linear",
+      "type": "class",
+      "name": "Linear",
+      "filePath": "fraudGT/graphgym/models/layer_deepsnap.py",
+      "lineRange": [
+        84,
+        94
+      ],
+      "summary": "Adapts a linear layer to operate on tensors or batch node features.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/layer_deepsnap.py:BatchNorm1dNode",
+      "type": "class",
+      "name": "BatchNorm1dNode",
+      "filePath": "fraudGT/graphgym/models/layer_deepsnap.py",
+      "lineRange": [
+        97,
+        105
+      ],
+      "summary": "Applies one-dimensional batch normalization to node feature tensors.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/layer_deepsnap.py:BatchNorm1dEdge",
+      "type": "class",
+      "name": "BatchNorm1dEdge",
+      "filePath": "fraudGT/graphgym/models/layer_deepsnap.py",
+      "lineRange": [
+        108,
+        116
+      ],
+      "summary": "Applies one-dimensional batch normalization to edge feature tensors.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/layer_deepsnap.py:MLP",
+      "type": "class",
+      "name": "MLP",
+      "filePath": "fraudGT/graphgym/models/layer_deepsnap.py",
+      "lineRange": [
+        119,
+        151
+      ],
+      "summary": "Builds a configurable multilayer perceptron from GraphGym linear wrappers.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/layer_deepsnap.py:GCNConv",
+      "type": "class",
+      "name": "GCNConv",
+      "filePath": "fraudGT/graphgym/models/layer_deepsnap.py",
+      "lineRange": [
+        154,
+        161
+      ],
+      "summary": "Wraps PyTorch Geometric GCNConv for GraphGym batch objects.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/layer_deepsnap.py:SAGEConv",
+      "type": "class",
+      "name": "SAGEConv",
+      "filePath": "fraudGT/graphgym/models/layer_deepsnap.py",
+      "lineRange": [
+        164,
+        171
+      ],
+      "summary": "Wraps PyTorch Geometric SAGEConv for GraphGym batch objects.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/layer_deepsnap.py:GATConv",
+      "type": "class",
+      "name": "GATConv",
+      "filePath": "fraudGT/graphgym/models/layer_deepsnap.py",
+      "lineRange": [
+        174,
+        181
+      ],
+      "summary": "Wraps PyTorch Geometric GATConv for GraphGym batch objects.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/layer_deepsnap.py:GINConv",
+      "type": "class",
+      "name": "GINConv",
+      "filePath": "fraudGT/graphgym/models/layer_deepsnap.py",
+      "lineRange": [
+        184,
+        193
+      ],
+      "summary": "Wraps PyTorch Geometric GINConv with an internal two-layer neural network.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/layer_deepsnap.py:SplineConv",
+      "type": "class",
+      "name": "SplineConv",
+      "filePath": "fraudGT/graphgym/models/layer_deepsnap.py",
+      "lineRange": [
+        196,
+        208
+      ],
+      "summary": "Wraps PyTorch Geometric SplineConv using edge attributes.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/layer_deepsnap.py:GeneralConv",
+      "type": "class",
+      "name": "GeneralConv",
+      "filePath": "fraudGT/graphgym/models/layer_deepsnap.py",
+      "lineRange": [
+        211,
+        218
+      ],
+      "summary": "Wraps the project general convolution layer for node updates.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/layer_deepsnap.py:GeneralEdgeConv",
+      "type": "class",
+      "name": "GeneralEdgeConv",
+      "filePath": "fraudGT/graphgym/models/layer_deepsnap.py",
+      "lineRange": [
+        221,
+        230
+      ],
+      "summary": "Wraps the project edge-aware convolution layer using edge features.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/graphgym/models/layer_deepsnap.py:GeneralSampleEdgeConv",
+      "type": "class",
+      "name": "GeneralSampleEdgeConv",
+      "filePath": "fraudGT/graphgym/models/layer_deepsnap.py",
+      "lineRange": [
+        233,
+        245
+      ],
+      "summary": "Samples edges according to configuration before applying edge-aware convolution.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/graphgym/models/pooling.py",
+      "type": "file",
+      "name": "pooling.py",
+      "filePath": "fraudGT/graphgym/models/pooling.py",
+      "summary": "Defines graph pooling helpers and a pooling registry for aggregation strategies.",
+      "tags": [
+        "pooling",
+        "aggregation",
+        "registry"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/models/pooling.py:global_add_pool",
+      "type": "function",
+      "name": "global_add_pool",
+      "filePath": "fraudGT/graphgym/models/pooling.py",
+      "lineRange": [
+        11,
+        16
+      ],
+      "summary": "Implements global_add_pool behavior used by pooling.py in the GraphGym training and model stack.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/models/pooling.py:global_mean_pool",
+      "type": "function",
+      "name": "global_mean_pool",
+      "filePath": "fraudGT/graphgym/models/pooling.py",
+      "lineRange": [
+        19,
+        24
+      ],
+      "summary": "Implements global_mean_pool behavior used by pooling.py in the GraphGym training and model stack.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/models/pooling.py:global_max_pool",
+      "type": "function",
+      "name": "global_max_pool",
+      "filePath": "fraudGT/graphgym/models/pooling.py",
+      "lineRange": [
+        27,
+        32
+      ],
+      "summary": "Implements global_max_pool behavior used by pooling.py in the GraphGym training and model stack.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/graphgym/models/transform.py",
+      "type": "file",
+      "name": "transform.py",
+      "filePath": "fraudGT/graphgym/models/transform.py",
+      "summary": "Implements model transform utilities for composing preprocessing, feature augmentation, and model modules.",
+      "tags": [
+        "model-transform",
+        "preprocessing",
+        "composition"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:fraudGT/graphgym/models/transform.py:remove_node_feature",
+      "type": "function",
+      "name": "remove_node_feature",
+      "filePath": "fraudGT/graphgym/models/transform.py",
+      "lineRange": [
+        6,
+        8
+      ],
+      "summary": "Implements remove_node_feature behavior used by transform.py in the GraphGym training and model stack.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/models/transform.py:ego_nets",
+      "type": "function",
+      "name": "ego_nets",
+      "filePath": "fraudGT/graphgym/models/transform.py",
+      "lineRange": [
+        11,
+        38
+      ],
+      "summary": "Implements ego_nets behavior used by transform.py in the GraphGym training and model stack.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/models/transform.py:edge_nets",
+      "type": "function",
+      "name": "edge_nets",
+      "filePath": "fraudGT/graphgym/models/transform.py",
+      "lineRange": [
+        41,
+        65
+      ],
+      "summary": "Implements edge_nets behavior used by transform.py in the GraphGym training and model stack.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/models/transform.py:path_len",
+      "type": "function",
+      "name": "path_len",
+      "filePath": "fraudGT/graphgym/models/transform.py",
+      "lineRange": [
+        68,
+        91
+      ],
+      "summary": "Implements path_len behavior used by transform.py in the GraphGym training and model stack.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/models/transform.py:create_link_label",
+      "type": "function",
+      "name": "create_link_label",
+      "filePath": "fraudGT/graphgym/models/transform.py",
+      "lineRange": [
+        94,
+        110
+      ],
+      "summary": "Implements create_link_label behavior used by transform.py in the GraphGym training and model stack.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/models/transform.py:neg_sampling_transform",
+      "type": "function",
+      "name": "neg_sampling_transform",
+      "filePath": "fraudGT/graphgym/models/transform.py",
+      "lineRange": [
+        113,
+        132
+      ],
+      "summary": "Implements neg_sampling_transform behavior used by transform.py in the GraphGym training and model stack.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/graphgym/optimizer.py",
+      "type": "file",
+      "name": "optimizer.py",
+      "filePath": "fraudGT/graphgym/optimizer.py",
+      "summary": "Constructs optimizers and learning-rate schedulers from GraphGym configuration and registered optimizer or scheduler factories.",
+      "tags": [
+        "optimizer",
+        "scheduler",
+        "configuration"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:fraudGT/graphgym/optimizer.py:adam_optimizer",
+      "type": "function",
+      "name": "adam_optimizer",
+      "filePath": "fraudGT/graphgym/optimizer.py",
+      "lineRange": [
+        21,
+        23
+      ],
+      "summary": "Implements adam_optimizer behavior used by optimizer.py in the GraphGym training and model stack.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/optimizer.py:sgd_optimizer",
+      "type": "function",
+      "name": "sgd_optimizer",
+      "filePath": "fraudGT/graphgym/optimizer.py",
+      "lineRange": [
+        27,
+        30
+      ],
+      "summary": "Implements sgd_optimizer behavior used by optimizer.py in the GraphGym training and model stack.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/optimizer.py:create_optimizer",
+      "type": "function",
+      "name": "create_optimizer",
+      "filePath": "fraudGT/graphgym/optimizer.py",
+      "lineRange": [
+        33,
+        44
+      ],
+      "summary": "Implements create_optimizer behavior used by optimizer.py in the GraphGym training and model stack.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/optimizer.py:none_scheduler",
+      "type": "function",
+      "name": "none_scheduler",
+      "filePath": "fraudGT/graphgym/optimizer.py",
+      "lineRange": [
+        57,
+        58
+      ],
+      "summary": "Implements none_scheduler behavior used by optimizer.py in the GraphGym training and model stack.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/optimizer.py:step_scheduler",
+      "type": "function",
+      "name": "step_scheduler",
+      "filePath": "fraudGT/graphgym/optimizer.py",
+      "lineRange": [
+        62,
+        64
+      ],
+      "summary": "Implements step_scheduler behavior used by optimizer.py in the GraphGym training and model stack.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/optimizer.py:cos_scheduler",
+      "type": "function",
+      "name": "cos_scheduler",
+      "filePath": "fraudGT/graphgym/optimizer.py",
+      "lineRange": [
+        68,
+        69
+      ],
+      "summary": "Implements cos_scheduler behavior used by optimizer.py in the GraphGym training and model stack.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/optimizer.py:create_scheduler",
+      "type": "function",
+      "name": "create_scheduler",
+      "filePath": "fraudGT/graphgym/optimizer.py",
+      "lineRange": [
+        72,
+        77
+      ],
+      "summary": "Implements create_scheduler behavior used by optimizer.py in the GraphGym training and model stack.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/graphgym/optimizer.py:OptimizerConfig",
+      "type": "class",
+      "name": "OptimizerConfig",
+      "filePath": "fraudGT/graphgym/optimizer.py",
+      "lineRange": [
+        13,
+        17
+      ],
+      "summary": "Defines the OptimizerConfig module used by optimizer.py in the GraphGym model stack.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/graphgym/optimizer.py:SchedulerConfig",
+      "type": "class",
+      "name": "SchedulerConfig",
+      "filePath": "fraudGT/graphgym/optimizer.py",
+      "lineRange": [
+        48,
+        52
+      ],
+      "summary": "Defines the SchedulerConfig module used by optimizer.py in the GraphGym model stack.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/graphgym/register.py",
+      "type": "file",
+      "name": "register.py",
+      "filePath": "fraudGT/graphgym/register.py",
+      "summary": "Centralizes extension registries and registration helpers for GraphGym datasets, models, layers, losses, optimizers, schedulers, and hooks.",
+      "tags": [
+        "registry",
+        "extension-points",
+        "configuration"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:fraudGT/graphgym/register.py:register_base",
+      "type": "function",
+      "name": "register_base",
+      "filePath": "fraudGT/graphgym/register.py",
+      "lineRange": [
+        24,
+        47
+      ],
+      "summary": "Registers a custom component in the corresponding GraphGym extension registry.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/register.py:register_act",
+      "type": "function",
+      "name": "register_act",
+      "filePath": "fraudGT/graphgym/register.py",
+      "lineRange": [
+        50,
+        52
+      ],
+      "summary": "Registers a custom component in the corresponding GraphGym extension registry.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/register.py:register_node_encoder",
+      "type": "function",
+      "name": "register_node_encoder",
+      "filePath": "fraudGT/graphgym/register.py",
+      "lineRange": [
+        55,
+        57
+      ],
+      "summary": "Registers a custom component in the corresponding GraphGym extension registry.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/register.py:register_edge_encoder",
+      "type": "function",
+      "name": "register_edge_encoder",
+      "filePath": "fraudGT/graphgym/register.py",
+      "lineRange": [
+        60,
+        62
+      ],
+      "summary": "Registers a custom component in the corresponding GraphGym extension registry.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/register.py:register_stage",
+      "type": "function",
+      "name": "register_stage",
+      "filePath": "fraudGT/graphgym/register.py",
+      "lineRange": [
+        65,
+        67
+      ],
+      "summary": "Registers a custom component in the corresponding GraphGym extension registry.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/register.py:register_head",
+      "type": "function",
+      "name": "register_head",
+      "filePath": "fraudGT/graphgym/register.py",
+      "lineRange": [
+        70,
+        72
+      ],
+      "summary": "Registers a custom component in the corresponding GraphGym extension registry.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/register.py:register_layer",
+      "type": "function",
+      "name": "register_layer",
+      "filePath": "fraudGT/graphgym/register.py",
+      "lineRange": [
+        75,
+        77
+      ],
+      "summary": "Registers a custom component in the corresponding GraphGym extension registry.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/register.py:register_pooling",
+      "type": "function",
+      "name": "register_pooling",
+      "filePath": "fraudGT/graphgym/register.py",
+      "lineRange": [
+        80,
+        82
+      ],
+      "summary": "Registers a custom component in the corresponding GraphGym extension registry.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/register.py:register_network",
+      "type": "function",
+      "name": "register_network",
+      "filePath": "fraudGT/graphgym/register.py",
+      "lineRange": [
+        85,
+        87
+      ],
+      "summary": "Registers a custom component in the corresponding GraphGym extension registry.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/register.py:register_config",
+      "type": "function",
+      "name": "register_config",
+      "filePath": "fraudGT/graphgym/register.py",
+      "lineRange": [
+        90,
+        92
+      ],
+      "summary": "Registers a custom component in the corresponding GraphGym extension registry.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/register.py:register_dataset",
+      "type": "function",
+      "name": "register_dataset",
+      "filePath": "fraudGT/graphgym/register.py",
+      "lineRange": [
+        95,
+        97
+      ],
+      "summary": "Registers a custom component in the corresponding GraphGym extension registry.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/register.py:register_loader",
+      "type": "function",
+      "name": "register_loader",
+      "filePath": "fraudGT/graphgym/register.py",
+      "lineRange": [
+        100,
+        102
+      ],
+      "summary": "Registers a custom component in the corresponding GraphGym extension registry.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/register.py:register_sampler",
+      "type": "function",
+      "name": "register_sampler",
+      "filePath": "fraudGT/graphgym/register.py",
+      "lineRange": [
+        105,
+        107
+      ],
+      "summary": "Registers a custom component in the corresponding GraphGym extension registry.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/register.py:register_optimizer",
+      "type": "function",
+      "name": "register_optimizer",
+      "filePath": "fraudGT/graphgym/register.py",
+      "lineRange": [
+        110,
+        112
+      ],
+      "summary": "Registers a custom component in the corresponding GraphGym extension registry.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/register.py:register_scheduler",
+      "type": "function",
+      "name": "register_scheduler",
+      "filePath": "fraudGT/graphgym/register.py",
+      "lineRange": [
+        115,
+        117
+      ],
+      "summary": "Registers a custom component in the corresponding GraphGym extension registry.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/register.py:register_loss",
+      "type": "function",
+      "name": "register_loss",
+      "filePath": "fraudGT/graphgym/register.py",
+      "lineRange": [
+        120,
+        122
+      ],
+      "summary": "Registers a custom component in the corresponding GraphGym extension registry.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/register.py:register_train",
+      "type": "function",
+      "name": "register_train",
+      "filePath": "fraudGT/graphgym/register.py",
+      "lineRange": [
+        125,
+        127
+      ],
+      "summary": "Registers a custom component in the corresponding GraphGym extension registry.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/register.py:register_metric",
+      "type": "function",
+      "name": "register_metric",
+      "filePath": "fraudGT/graphgym/register.py",
+      "lineRange": [
+        130,
+        132
+      ],
+      "summary": "Registers a custom component in the corresponding GraphGym extension registry.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/register.py:register_feature_augment",
+      "type": "function",
+      "name": "register_feature_augment",
+      "filePath": "fraudGT/graphgym/register.py",
+      "lineRange": [
+        135,
+        136
+      ],
+      "summary": "Registers a custom component in the corresponding GraphGym extension registry.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/graphgym/register.py:ModuleStore",
+      "type": "class",
+      "name": "ModuleStore",
+      "filePath": "fraudGT/graphgym/register.py",
+      "lineRange": [
+        139,
+        172
+      ],
+      "summary": "Defines the ModuleStore module used by register.py in the GraphGym model stack.",
+      "tags": [
+        "class",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/graphgym/train.py",
+      "type": "file",
+      "name": "train.py",
+      "filePath": "fraudGT/graphgym/train.py",
+      "summary": "Provides the PyTorch Geometric training loop for batch iteration, loss computation, optimization, evaluation, and logging.",
+      "tags": [
+        "training-loop",
+        "evaluation",
+        "optimization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:fraudGT/graphgym/train.py:train_epoch",
+      "type": "function",
+      "name": "train_epoch",
+      "filePath": "fraudGT/graphgym/train.py",
+      "lineRange": [
+        12,
+        30
+      ],
+      "summary": "Runs or supports model training and optimization for a GraphGym task.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/train.py:eval_epoch",
+      "type": "function",
+      "name": "eval_epoch",
+      "filePath": "fraudGT/graphgym/train.py",
+      "lineRange": [
+        34,
+        48
+      ],
+      "summary": "Determines or performs evaluation behavior according to the training configuration.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/train.py:train",
+      "type": "function",
+      "name": "train",
+      "filePath": "fraudGT/graphgym/train.py",
+      "lineRange": [
+        51,
+        88
+      ],
+      "summary": "Runs or supports model training and optimization for a GraphGym task.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/graphgym/train_deepsnap.py",
+      "type": "file",
+      "name": "train_deepsnap.py",
+      "filePath": "fraudGT/graphgym/train_deepsnap.py",
+      "summary": "Provides the DeepSNAP training loop for training, evaluation, logging, and scheduler stepping.",
+      "tags": [
+        "training-loop",
+        "deepsnap",
+        "evaluation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:fraudGT/graphgym/train_deepsnap.py:train_epoch",
+      "type": "function",
+      "name": "train_epoch",
+      "filePath": "fraudGT/graphgym/train_deepsnap.py",
+      "lineRange": [
+        12,
+        29
+      ],
+      "summary": "Runs or supports model training and optimization for a GraphGym task.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/train_deepsnap.py:eval_epoch",
+      "type": "function",
+      "name": "eval_epoch",
+      "filePath": "fraudGT/graphgym/train_deepsnap.py",
+      "lineRange": [
+        33,
+        46
+      ],
+      "summary": "Determines or performs evaluation behavior according to the training configuration.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/train_deepsnap.py:train",
+      "type": "function",
+      "name": "train",
+      "filePath": "fraudGT/graphgym/train_deepsnap.py",
+      "lineRange": [
+        49,
+        84
+      ],
+      "summary": "Runs or supports model training and optimization for a GraphGym task.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/graphgym/utils/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "fraudGT/graphgym/utils/__init__.py",
+      "summary": "Marks the GraphGym utility directory as a Python package for helper modules.",
+      "tags": [
+        "package",
+        "entry-point",
+        "module"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/graphgym/utils/agg_runs.py",
+      "type": "file",
+      "name": "agg_runs.py",
+      "filePath": "fraudGT/graphgym/utils/agg_runs.py",
+      "summary": "Aggregates experiment outputs across run directories into CSV summaries for best, all, and best-epoch results.",
+      "tags": [
+        "experiment-results",
+        "aggregation",
+        "reporting"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:fraudGT/graphgym/utils/agg_runs.py:is_seed",
+      "type": "function",
+      "name": "is_seed",
+      "filePath": "fraudGT/graphgym/utils/agg_runs.py",
+      "lineRange": [
+        17,
+        22
+      ],
+      "summary": "Implements is_seed behavior used by agg_runs.py in the GraphGym training and model stack.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/utils/agg_runs.py:is_split",
+      "type": "function",
+      "name": "is_split",
+      "filePath": "fraudGT/graphgym/utils/agg_runs.py",
+      "lineRange": [
+        25,
+        29
+      ],
+      "summary": "Implements is_split behavior used by agg_runs.py in the GraphGym training and model stack.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/utils/agg_runs.py:join_list",
+      "type": "function",
+      "name": "join_list",
+      "filePath": "fraudGT/graphgym/utils/agg_runs.py",
+      "lineRange": [
+        32,
+        37
+      ],
+      "summary": "Implements join_list behavior used by agg_runs.py in the GraphGym training and model stack.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/utils/agg_runs.py:agg_dict_list",
+      "type": "function",
+      "name": "agg_dict_list",
+      "filePath": "fraudGT/graphgym/utils/agg_runs.py",
+      "lineRange": [
+        40,
+        53
+      ],
+      "summary": "Aggregates experiment result files into tabular summaries for comparison.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/utils/agg_runs.py:name_to_dict",
+      "type": "function",
+      "name": "name_to_dict",
+      "filePath": "fraudGT/graphgym/utils/agg_runs.py",
+      "lineRange": [
+        56,
+        66
+      ],
+      "summary": "Implements name_to_dict behavior used by agg_runs.py in the GraphGym training and model stack.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/utils/agg_runs.py:rm_keys",
+      "type": "function",
+      "name": "rm_keys",
+      "filePath": "fraudGT/graphgym/utils/agg_runs.py",
+      "lineRange": [
+        69,
+        71
+      ],
+      "summary": "Implements rm_keys behavior used by agg_runs.py in the GraphGym training and model stack.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/utils/agg_runs.py:agg_runs",
+      "type": "function",
+      "name": "agg_runs",
+      "filePath": "fraudGT/graphgym/utils/agg_runs.py",
+      "lineRange": [
+        74,
+        154
+      ],
+      "summary": "Aggregates experiment result files into tabular summaries for comparison.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:fraudGT/graphgym/utils/agg_runs.py:agg_batch",
+      "type": "function",
+      "name": "agg_batch",
+      "filePath": "fraudGT/graphgym/utils/agg_runs.py",
+      "lineRange": [
+        157,
+        247
+      ],
+      "summary": "Aggregates experiment result files into tabular summaries for comparison.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:fraudGT/graphgym/utils/comp_budget.py",
+      "type": "file",
+      "name": "comp_budget.py",
+      "filePath": "fraudGT/graphgym/utils/comp_budget.py",
+      "summary": "Matches model configurations against a baseline computational budget by adjusting dimensions and layer counts.",
+      "tags": [
+        "model-budget",
+        "configuration",
+        "analysis"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:fraudGT/graphgym/utils/comp_budget.py:params_count",
+      "type": "function",
+      "name": "params_count",
+      "filePath": "fraudGT/graphgym/utils/comp_budget.py",
+      "lineRange": [
+        7,
+        15
+      ],
+      "summary": "Implements params_count behavior used by comp_budget.py in the GraphGym training and model stack.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/utils/comp_budget.py:get_stats",
+      "type": "function",
+      "name": "get_stats",
+      "filePath": "fraudGT/graphgym/utils/comp_budget.py",
+      "lineRange": [
+        18,
+        20
+      ],
+      "summary": "Implements get_stats behavior used by comp_budget.py in the GraphGym training and model stack.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/utils/comp_budget.py:match_computation",
+      "type": "function",
+      "name": "match_computation",
+      "filePath": "fraudGT/graphgym/utils/comp_budget.py",
+      "lineRange": [
+        23,
+        57
+      ],
+      "summary": "Adjusts configuration values to align model size with a baseline computational budget.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/utils/comp_budget.py:dict_to_stats",
+      "type": "function",
+      "name": "dict_to_stats",
+      "filePath": "fraudGT/graphgym/utils/comp_budget.py",
+      "lineRange": [
+        60,
+        67
+      ],
+      "summary": "Implements dict_to_stats behavior used by comp_budget.py in the GraphGym training and model stack.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/utils/comp_budget.py:match_baseline_cfg",
+      "type": "function",
+      "name": "match_baseline_cfg",
+      "filePath": "fraudGT/graphgym/utils/comp_budget.py",
+      "lineRange": [
+        70,
+        96
+      ],
+      "summary": "Adjusts configuration values to align model size with a baseline computational budget.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/graphgym/utils/device.py",
+      "type": "file",
+      "name": "device.py",
+      "filePath": "fraudGT/graphgym/utils/device.py",
+      "summary": "Inspects GPU memory usage and selects an available CUDA device using greedy or randomized strategies.",
+      "tags": [
+        "gpu-selection",
+        "cuda",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:fraudGT/graphgym/utils/device.py:get_gpu_memory_map",
+      "type": "function",
+      "name": "get_gpu_memory_map",
+      "filePath": "fraudGT/graphgym/utils/device.py",
+      "lineRange": [
+        11,
+        18
+      ],
+      "summary": "Inspects CUDA state or chooses a device for model execution.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/utils/device.py:get_current_gpu_usage",
+      "type": "function",
+      "name": "get_current_gpu_usage",
+      "filePath": "fraudGT/graphgym/utils/device.py",
+      "lineRange": [
+        21,
+        38
+      ],
+      "summary": "Inspects CUDA state or chooses a device for model execution.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/utils/device.py:auto_select_device",
+      "type": "function",
+      "name": "auto_select_device",
+      "filePath": "fraudGT/graphgym/utils/device.py",
+      "lineRange": [
+        41,
+        76
+      ],
+      "summary": "Inspects CUDA state or chooses a device for model execution.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/graphgym/utils/epoch.py",
+      "type": "file",
+      "name": "epoch.py",
+      "filePath": "fraudGT/graphgym/utils/epoch.py",
+      "summary": "Provides small scheduling predicates for evaluation and checkpoint epochs.",
+      "tags": [
+        "epoch-schedule",
+        "evaluation",
+        "checkpointing"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/utils/epoch.py:is_train_eval_epoch",
+      "type": "function",
+      "name": "is_train_eval_epoch",
+      "filePath": "fraudGT/graphgym/utils/epoch.py",
+      "lineRange": [
+        4,
+        6
+      ],
+      "summary": "Runs or supports model training and optimization for a GraphGym task.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/utils/epoch.py:is_eval_epoch",
+      "type": "function",
+      "name": "is_eval_epoch",
+      "filePath": "fraudGT/graphgym/utils/epoch.py",
+      "lineRange": [
+        9,
+        12
+      ],
+      "summary": "Determines or performs evaluation behavior according to the training configuration.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/utils/epoch.py:is_ckpt_epoch",
+      "type": "function",
+      "name": "is_ckpt_epoch",
+      "filePath": "fraudGT/graphgym/utils/epoch.py",
+      "lineRange": [
+        15,
+        18
+      ],
+      "summary": "Evaluates whether the current epoch should trigger training evaluation, validation, or checkpoint behavior.",
+      "tags": [
+        "function",
+        "graphgym",
+        "python"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:fraudGT/graphgym/loss.py",
+      "target": "function:fraudGT/graphgym/loss.py:compute_loss",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/loss.py",
+      "target": "function:fraudGT/graphgym/loss.py:compute_loss",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/model_builder.py",
+      "target": "function:fraudGT/graphgym/model_builder.py:create_model",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/model_builder.py",
+      "target": "function:fraudGT/graphgym/model_builder.py:create_model",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/model_builder_deepsnap.py",
+      "target": "function:fraudGT/graphgym/model_builder_deepsnap.py:create_model",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/model_builder_deepsnap.py",
+      "target": "function:fraudGT/graphgym/model_builder_deepsnap.py:create_model",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/feature_augment.py",
+      "target": "function:fraudGT/graphgym/models/feature_augment.py:_key",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/feature_augment.py",
+      "target": "function:fraudGT/graphgym/models/feature_augment.py:_key",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/feature_augment.py",
+      "target": "function:fraudGT/graphgym/models/feature_augment.py:create_augment_fun",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/feature_augment.py",
+      "target": "function:fraudGT/graphgym/models/feature_augment.py:create_augment_fun",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/feature_augment.py",
+      "target": "function:fraudGT/graphgym/models/feature_augment.py:_replace_label",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/feature_augment.py",
+      "target": "function:fraudGT/graphgym/models/feature_augment.py:_replace_label",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/feature_augment.py",
+      "target": "class:fraudGT/graphgym/models/feature_augment.py:FeatureAugment",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/feature_augment.py",
+      "target": "class:fraudGT/graphgym/models/feature_augment.py:FeatureAugment",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/feature_augment.py",
+      "target": "class:fraudGT/graphgym/models/feature_augment.py:Preprocess",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/feature_augment.py",
+      "target": "class:fraudGT/graphgym/models/feature_augment.py:Preprocess",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/feature_encoder.py",
+      "target": "class:fraudGT/graphgym/models/feature_encoder.py:IntegerFeatureEncoder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/feature_encoder.py",
+      "target": "class:fraudGT/graphgym/models/feature_encoder.py:IntegerFeatureEncoder",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/feature_encoder.py",
+      "target": "class:fraudGT/graphgym/models/feature_encoder.py:SingleAtomEncoder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/feature_encoder.py",
+      "target": "class:fraudGT/graphgym/models/feature_encoder.py:SingleAtomEncoder",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/feature_encoder.py",
+      "target": "class:fraudGT/graphgym/models/feature_encoder.py:AtomEncoder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/feature_encoder.py",
+      "target": "class:fraudGT/graphgym/models/feature_encoder.py:AtomEncoder",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/feature_encoder.py",
+      "target": "class:fraudGT/graphgym/models/feature_encoder.py:BondEncoder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/feature_encoder.py",
+      "target": "class:fraudGT/graphgym/models/feature_encoder.py:BondEncoder",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/feature_encoder_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/feature_encoder_deepsnap.py:IntegerFeatureEncoder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/feature_encoder_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/feature_encoder_deepsnap.py:IntegerFeatureEncoder",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/feature_encoder_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/feature_encoder_deepsnap.py:SingleAtomEncoder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/feature_encoder_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/feature_encoder_deepsnap.py:SingleAtomEncoder",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/feature_encoder_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/feature_encoder_deepsnap.py:AtomEncoder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/feature_encoder_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/feature_encoder_deepsnap.py:AtomEncoder",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/feature_encoder_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/feature_encoder_deepsnap.py:BondEncoder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/feature_encoder_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/feature_encoder_deepsnap.py:BondEncoder",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/gnn.py",
+      "target": "function:fraudGT/graphgym/models/gnn.py:GNNLayer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/gnn.py",
+      "target": "function:fraudGT/graphgym/models/gnn.py:GNNLayer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/gnn.py",
+      "target": "function:fraudGT/graphgym/models/gnn.py:GNNPreMP",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/gnn.py",
+      "target": "function:fraudGT/graphgym/models/gnn.py:GNNPreMP",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/gnn.py",
+      "target": "class:fraudGT/graphgym/models/gnn.py:GNNStackStage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/gnn.py",
+      "target": "class:fraudGT/graphgym/models/gnn.py:GNNStackStage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/gnn.py",
+      "target": "class:fraudGT/graphgym/models/gnn.py:FeatureEncoder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/gnn.py",
+      "target": "class:fraudGT/graphgym/models/gnn.py:FeatureEncoder",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/gnn.py",
+      "target": "class:fraudGT/graphgym/models/gnn.py:GNN",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/gnn.py",
+      "target": "class:fraudGT/graphgym/models/gnn.py:GNN",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/gnn_deepsnap.py",
+      "target": "function:fraudGT/graphgym/models/gnn_deepsnap.py:GNNLayer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/gnn_deepsnap.py",
+      "target": "function:fraudGT/graphgym/models/gnn_deepsnap.py:GNNLayer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/gnn_deepsnap.py",
+      "target": "function:fraudGT/graphgym/models/gnn_deepsnap.py:GNNPreMP",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/gnn_deepsnap.py",
+      "target": "function:fraudGT/graphgym/models/gnn_deepsnap.py:GNNPreMP",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/gnn_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/gnn_deepsnap.py:GNNSkipBlock",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/gnn_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/gnn_deepsnap.py:GNNSkipBlock",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/gnn_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/gnn_deepsnap.py:GNNStackStage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/gnn_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/gnn_deepsnap.py:GNNStackStage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/gnn_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/gnn_deepsnap.py:GNNSkipStage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/gnn_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/gnn_deepsnap.py:GNNSkipStage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/gnn_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/gnn_deepsnap.py:GNN",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/gnn_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/gnn_deepsnap.py:GNN",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/head.py",
+      "target": "class:fraudGT/graphgym/models/head.py:GNNNodeHead",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/head.py",
+      "target": "class:fraudGT/graphgym/models/head.py:GNNNodeHead",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/head.py",
+      "target": "class:fraudGT/graphgym/models/head.py:GNNEdgeHead",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/head.py",
+      "target": "class:fraudGT/graphgym/models/head.py:GNNEdgeHead",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/head.py",
+      "target": "class:fraudGT/graphgym/models/head.py:GNNGraphHead",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/head.py",
+      "target": "class:fraudGT/graphgym/models/head.py:GNNGraphHead",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/head_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/head_deepsnap.py:GNNNodeHead",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/head_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/head_deepsnap.py:GNNNodeHead",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/head_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/head_deepsnap.py:GNNEdgeHead",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/head_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/head_deepsnap.py:GNNEdgeHead",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/head_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/head_deepsnap.py:GNNGraphHead",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/head_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/head_deepsnap.py:GNNGraphHead",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer.py",
+      "target": "class:fraudGT/graphgym/models/layer.py:GeneralLayer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer.py",
+      "target": "class:fraudGT/graphgym/models/layer.py:GeneralLayer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer.py",
+      "target": "class:fraudGT/graphgym/models/layer.py:GeneralMultiLayer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer.py",
+      "target": "class:fraudGT/graphgym/models/layer.py:GeneralMultiLayer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer.py",
+      "target": "class:fraudGT/graphgym/models/layer.py:Linear",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer.py",
+      "target": "class:fraudGT/graphgym/models/layer.py:Linear",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer.py",
+      "target": "class:fraudGT/graphgym/models/layer.py:BatchNorm1dNode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer.py",
+      "target": "class:fraudGT/graphgym/models/layer.py:BatchNorm1dNode",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer.py",
+      "target": "class:fraudGT/graphgym/models/layer.py:BatchNorm1dEdge",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer.py",
+      "target": "class:fraudGT/graphgym/models/layer.py:BatchNorm1dEdge",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer.py",
+      "target": "class:fraudGT/graphgym/models/layer.py:MLP",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer.py",
+      "target": "class:fraudGT/graphgym/models/layer.py:MLP",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer.py",
+      "target": "class:fraudGT/graphgym/models/layer.py:GCNConv",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer.py",
+      "target": "class:fraudGT/graphgym/models/layer.py:GCNConv",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer.py",
+      "target": "class:fraudGT/graphgym/models/layer.py:SAGEConv",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer.py",
+      "target": "class:fraudGT/graphgym/models/layer.py:SAGEConv",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer.py",
+      "target": "class:fraudGT/graphgym/models/layer.py:GATConv",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer.py",
+      "target": "class:fraudGT/graphgym/models/layer.py:GATConv",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer.py",
+      "target": "class:fraudGT/graphgym/models/layer.py:GINConv",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer.py",
+      "target": "class:fraudGT/graphgym/models/layer.py:GINConv",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer.py",
+      "target": "class:fraudGT/graphgym/models/layer.py:SplineConv",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer.py",
+      "target": "class:fraudGT/graphgym/models/layer.py:SplineConv",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer.py",
+      "target": "class:fraudGT/graphgym/models/layer.py:GeneralConv",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer.py",
+      "target": "class:fraudGT/graphgym/models/layer.py:GeneralConv",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer.py",
+      "target": "class:fraudGT/graphgym/models/layer.py:GeneralEdgeConv",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer.py",
+      "target": "class:fraudGT/graphgym/models/layer.py:GeneralEdgeConv",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer.py",
+      "target": "class:fraudGT/graphgym/models/layer.py:GeneralSampleEdgeConv",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer.py",
+      "target": "class:fraudGT/graphgym/models/layer.py:GeneralSampleEdgeConv",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/layer_deepsnap.py:GeneralLayer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/layer_deepsnap.py:GeneralLayer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/layer_deepsnap.py:GeneralMultiLayer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/layer_deepsnap.py:GeneralMultiLayer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/layer_deepsnap.py:Linear",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/layer_deepsnap.py:Linear",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/layer_deepsnap.py:BatchNorm1dNode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/layer_deepsnap.py:BatchNorm1dNode",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/layer_deepsnap.py:BatchNorm1dEdge",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/layer_deepsnap.py:BatchNorm1dEdge",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/layer_deepsnap.py:MLP",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/layer_deepsnap.py:MLP",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/layer_deepsnap.py:GCNConv",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/layer_deepsnap.py:GCNConv",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/layer_deepsnap.py:SAGEConv",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/layer_deepsnap.py:SAGEConv",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/layer_deepsnap.py:GATConv",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/layer_deepsnap.py:GATConv",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/layer_deepsnap.py:GINConv",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/layer_deepsnap.py:GINConv",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/layer_deepsnap.py:SplineConv",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/layer_deepsnap.py:SplineConv",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/layer_deepsnap.py:GeneralConv",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/layer_deepsnap.py:GeneralConv",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/layer_deepsnap.py:GeneralEdgeConv",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/layer_deepsnap.py:GeneralEdgeConv",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/layer_deepsnap.py:GeneralSampleEdgeConv",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/layer_deepsnap.py",
+      "target": "class:fraudGT/graphgym/models/layer_deepsnap.py:GeneralSampleEdgeConv",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/pooling.py",
+      "target": "function:fraudGT/graphgym/models/pooling.py:global_add_pool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/pooling.py",
+      "target": "function:fraudGT/graphgym/models/pooling.py:global_add_pool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/pooling.py",
+      "target": "function:fraudGT/graphgym/models/pooling.py:global_mean_pool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/pooling.py",
+      "target": "function:fraudGT/graphgym/models/pooling.py:global_mean_pool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/pooling.py",
+      "target": "function:fraudGT/graphgym/models/pooling.py:global_max_pool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/pooling.py",
+      "target": "function:fraudGT/graphgym/models/pooling.py:global_max_pool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/transform.py",
+      "target": "function:fraudGT/graphgym/models/transform.py:remove_node_feature",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/transform.py",
+      "target": "function:fraudGT/graphgym/models/transform.py:remove_node_feature",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/transform.py",
+      "target": "function:fraudGT/graphgym/models/transform.py:ego_nets",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/transform.py",
+      "target": "function:fraudGT/graphgym/models/transform.py:ego_nets",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/transform.py",
+      "target": "function:fraudGT/graphgym/models/transform.py:edge_nets",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/transform.py",
+      "target": "function:fraudGT/graphgym/models/transform.py:edge_nets",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/transform.py",
+      "target": "function:fraudGT/graphgym/models/transform.py:path_len",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/transform.py",
+      "target": "function:fraudGT/graphgym/models/transform.py:path_len",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/transform.py",
+      "target": "function:fraudGT/graphgym/models/transform.py:create_link_label",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/transform.py",
+      "target": "function:fraudGT/graphgym/models/transform.py:create_link_label",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/transform.py",
+      "target": "function:fraudGT/graphgym/models/transform.py:neg_sampling_transform",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/models/transform.py",
+      "target": "function:fraudGT/graphgym/models/transform.py:neg_sampling_transform",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/optimizer.py",
+      "target": "function:fraudGT/graphgym/optimizer.py:adam_optimizer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/optimizer.py",
+      "target": "function:fraudGT/graphgym/optimizer.py:adam_optimizer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/optimizer.py",
+      "target": "function:fraudGT/graphgym/optimizer.py:sgd_optimizer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/optimizer.py",
+      "target": "function:fraudGT/graphgym/optimizer.py:sgd_optimizer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/optimizer.py",
+      "target": "function:fraudGT/graphgym/optimizer.py:create_optimizer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/optimizer.py",
+      "target": "function:fraudGT/graphgym/optimizer.py:create_optimizer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/optimizer.py",
+      "target": "function:fraudGT/graphgym/optimizer.py:none_scheduler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/optimizer.py",
+      "target": "function:fraudGT/graphgym/optimizer.py:none_scheduler",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/optimizer.py",
+      "target": "function:fraudGT/graphgym/optimizer.py:step_scheduler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/optimizer.py",
+      "target": "function:fraudGT/graphgym/optimizer.py:step_scheduler",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/optimizer.py",
+      "target": "function:fraudGT/graphgym/optimizer.py:cos_scheduler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/optimizer.py",
+      "target": "function:fraudGT/graphgym/optimizer.py:cos_scheduler",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/optimizer.py",
+      "target": "function:fraudGT/graphgym/optimizer.py:create_scheduler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/optimizer.py",
+      "target": "function:fraudGT/graphgym/optimizer.py:create_scheduler",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/optimizer.py",
+      "target": "class:fraudGT/graphgym/optimizer.py:OptimizerConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/optimizer.py",
+      "target": "class:fraudGT/graphgym/optimizer.py:OptimizerConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/optimizer.py",
+      "target": "class:fraudGT/graphgym/optimizer.py:SchedulerConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/optimizer.py",
+      "target": "class:fraudGT/graphgym/optimizer.py:SchedulerConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/register.py",
+      "target": "function:fraudGT/graphgym/register.py:register_base",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/register.py",
+      "target": "function:fraudGT/graphgym/register.py:register_base",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/register.py",
+      "target": "function:fraudGT/graphgym/register.py:register_act",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/register.py",
+      "target": "function:fraudGT/graphgym/register.py:register_act",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/register.py",
+      "target": "function:fraudGT/graphgym/register.py:register_node_encoder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/register.py",
+      "target": "function:fraudGT/graphgym/register.py:register_node_encoder",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/register.py",
+      "target": "function:fraudGT/graphgym/register.py:register_edge_encoder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/register.py",
+      "target": "function:fraudGT/graphgym/register.py:register_edge_encoder",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/register.py",
+      "target": "function:fraudGT/graphgym/register.py:register_stage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/register.py",
+      "target": "function:fraudGT/graphgym/register.py:register_stage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/register.py",
+      "target": "function:fraudGT/graphgym/register.py:register_head",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/register.py",
+      "target": "function:fraudGT/graphgym/register.py:register_head",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/register.py",
+      "target": "function:fraudGT/graphgym/register.py:register_layer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/register.py",
+      "target": "function:fraudGT/graphgym/register.py:register_layer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/register.py",
+      "target": "function:fraudGT/graphgym/register.py:register_pooling",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/register.py",
+      "target": "function:fraudGT/graphgym/register.py:register_pooling",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/register.py",
+      "target": "function:fraudGT/graphgym/register.py:register_network",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/register.py",
+      "target": "function:fraudGT/graphgym/register.py:register_network",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/register.py",
+      "target": "function:fraudGT/graphgym/register.py:register_config",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/register.py",
+      "target": "function:fraudGT/graphgym/register.py:register_config",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/register.py",
+      "target": "function:fraudGT/graphgym/register.py:register_dataset",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/register.py",
+      "target": "function:fraudGT/graphgym/register.py:register_dataset",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/register.py",
+      "target": "function:fraudGT/graphgym/register.py:register_loader",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/register.py",
+      "target": "function:fraudGT/graphgym/register.py:register_loader",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/register.py",
+      "target": "function:fraudGT/graphgym/register.py:register_sampler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/register.py",
+      "target": "function:fraudGT/graphgym/register.py:register_sampler",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/register.py",
+      "target": "function:fraudGT/graphgym/register.py:register_optimizer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/register.py",
+      "target": "function:fraudGT/graphgym/register.py:register_optimizer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/register.py",
+      "target": "function:fraudGT/graphgym/register.py:register_scheduler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/register.py",
+      "target": "function:fraudGT/graphgym/register.py:register_scheduler",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/register.py",
+      "target": "function:fraudGT/graphgym/register.py:register_loss",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/register.py",
+      "target": "function:fraudGT/graphgym/register.py:register_loss",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/register.py",
+      "target": "function:fraudGT/graphgym/register.py:register_train",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/register.py",
+      "target": "function:fraudGT/graphgym/register.py:register_train",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/register.py",
+      "target": "function:fraudGT/graphgym/register.py:register_metric",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/register.py",
+      "target": "function:fraudGT/graphgym/register.py:register_metric",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/register.py",
+      "target": "function:fraudGT/graphgym/register.py:register_feature_augment",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/register.py",
+      "target": "function:fraudGT/graphgym/register.py:register_feature_augment",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/register.py",
+      "target": "class:fraudGT/graphgym/register.py:ModuleStore",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/register.py",
+      "target": "class:fraudGT/graphgym/register.py:ModuleStore",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/train.py",
+      "target": "function:fraudGT/graphgym/train.py:train_epoch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/train.py",
+      "target": "function:fraudGT/graphgym/train.py:train_epoch",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/train.py",
+      "target": "function:fraudGT/graphgym/train.py:eval_epoch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/train.py",
+      "target": "function:fraudGT/graphgym/train.py:eval_epoch",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/train.py",
+      "target": "function:fraudGT/graphgym/train.py:train",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/train.py",
+      "target": "function:fraudGT/graphgym/train.py:train",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/train_deepsnap.py",
+      "target": "function:fraudGT/graphgym/train_deepsnap.py:train_epoch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/train_deepsnap.py",
+      "target": "function:fraudGT/graphgym/train_deepsnap.py:train_epoch",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/train_deepsnap.py",
+      "target": "function:fraudGT/graphgym/train_deepsnap.py:eval_epoch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/train_deepsnap.py",
+      "target": "function:fraudGT/graphgym/train_deepsnap.py:eval_epoch",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/train_deepsnap.py",
+      "target": "function:fraudGT/graphgym/train_deepsnap.py:train",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/train_deepsnap.py",
+      "target": "function:fraudGT/graphgym/train_deepsnap.py:train",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/agg_runs.py",
+      "target": "function:fraudGT/graphgym/utils/agg_runs.py:is_seed",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/agg_runs.py",
+      "target": "function:fraudGT/graphgym/utils/agg_runs.py:is_seed",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/agg_runs.py",
+      "target": "function:fraudGT/graphgym/utils/agg_runs.py:is_split",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/agg_runs.py",
+      "target": "function:fraudGT/graphgym/utils/agg_runs.py:is_split",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/agg_runs.py",
+      "target": "function:fraudGT/graphgym/utils/agg_runs.py:join_list",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/agg_runs.py",
+      "target": "function:fraudGT/graphgym/utils/agg_runs.py:join_list",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/agg_runs.py",
+      "target": "function:fraudGT/graphgym/utils/agg_runs.py:agg_dict_list",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/agg_runs.py",
+      "target": "function:fraudGT/graphgym/utils/agg_runs.py:agg_dict_list",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/agg_runs.py",
+      "target": "function:fraudGT/graphgym/utils/agg_runs.py:name_to_dict",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/agg_runs.py",
+      "target": "function:fraudGT/graphgym/utils/agg_runs.py:name_to_dict",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/agg_runs.py",
+      "target": "function:fraudGT/graphgym/utils/agg_runs.py:rm_keys",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/agg_runs.py",
+      "target": "function:fraudGT/graphgym/utils/agg_runs.py:rm_keys",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/agg_runs.py",
+      "target": "function:fraudGT/graphgym/utils/agg_runs.py:agg_runs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/agg_runs.py",
+      "target": "function:fraudGT/graphgym/utils/agg_runs.py:agg_runs",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/agg_runs.py",
+      "target": "function:fraudGT/graphgym/utils/agg_runs.py:agg_batch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/agg_runs.py",
+      "target": "function:fraudGT/graphgym/utils/agg_runs.py:agg_batch",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/comp_budget.py",
+      "target": "function:fraudGT/graphgym/utils/comp_budget.py:params_count",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/comp_budget.py",
+      "target": "function:fraudGT/graphgym/utils/comp_budget.py:params_count",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/comp_budget.py",
+      "target": "function:fraudGT/graphgym/utils/comp_budget.py:get_stats",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/comp_budget.py",
+      "target": "function:fraudGT/graphgym/utils/comp_budget.py:get_stats",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/comp_budget.py",
+      "target": "function:fraudGT/graphgym/utils/comp_budget.py:match_computation",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/comp_budget.py",
+      "target": "function:fraudGT/graphgym/utils/comp_budget.py:match_computation",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/comp_budget.py",
+      "target": "function:fraudGT/graphgym/utils/comp_budget.py:dict_to_stats",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/comp_budget.py",
+      "target": "function:fraudGT/graphgym/utils/comp_budget.py:dict_to_stats",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/comp_budget.py",
+      "target": "function:fraudGT/graphgym/utils/comp_budget.py:match_baseline_cfg",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/comp_budget.py",
+      "target": "function:fraudGT/graphgym/utils/comp_budget.py:match_baseline_cfg",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/device.py",
+      "target": "function:fraudGT/graphgym/utils/device.py:get_gpu_memory_map",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/device.py",
+      "target": "function:fraudGT/graphgym/utils/device.py:get_gpu_memory_map",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/device.py",
+      "target": "function:fraudGT/graphgym/utils/device.py:get_current_gpu_usage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/device.py",
+      "target": "function:fraudGT/graphgym/utils/device.py:get_current_gpu_usage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/device.py",
+      "target": "function:fraudGT/graphgym/utils/device.py:auto_select_device",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/device.py",
+      "target": "function:fraudGT/graphgym/utils/device.py:auto_select_device",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/epoch.py",
+      "target": "function:fraudGT/graphgym/utils/epoch.py:is_train_eval_epoch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/epoch.py",
+      "target": "function:fraudGT/graphgym/utils/epoch.py:is_train_eval_epoch",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/epoch.py",
+      "target": "function:fraudGT/graphgym/utils/epoch.py:is_eval_epoch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/epoch.py",
+      "target": "function:fraudGT/graphgym/utils/epoch.py:is_eval_epoch",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/epoch.py",
+      "target": "function:fraudGT/graphgym/utils/epoch.py:is_ckpt_epoch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/epoch.py",
+      "target": "function:fraudGT/graphgym/utils/epoch.py:is_ckpt_epoch",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

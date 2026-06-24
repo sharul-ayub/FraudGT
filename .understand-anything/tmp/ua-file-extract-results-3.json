@@ -1,0 +1,6748 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "fraudGT/graphgym/loss.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 66,
+      "nonEmptyLines": 52,
+      "functions": [
+        {
+          "name": "compute_loss",
+          "startLine": 9,
+          "endLine": 65,
+          "params": [
+            "pred",
+            "true",
+            "epoch"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "compute_loss",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "compute_loss",
+          "callee": "nn.BCEWithLogitsLoss",
+          "lineNumber": 20
+        },
+        {
+          "caller": "compute_loss",
+          "callee": "nn.BCEWithLogitsLoss",
+          "lineNumber": 21
+        },
+        {
+          "caller": "compute_loss",
+          "callee": "nn.MSELoss",
+          "lineNumber": 22
+        },
+        {
+          "caller": "compute_loss",
+          "callee": "pred.squeeze",
+          "lineNumber": 26
+        },
+        {
+          "caller": "compute_loss",
+          "callee": "true.squeeze",
+          "lineNumber": 27
+        },
+        {
+          "caller": "compute_loss",
+          "callee": "register.loss_dict.values",
+          "lineNumber": 30
+        },
+        {
+          "caller": "compute_loss",
+          "callee": "func",
+          "lineNumber": 31
+        },
+        {
+          "caller": "compute_loss",
+          "callee": "F.log_softmax",
+          "lineNumber": 38
+        },
+        {
+          "caller": "compute_loss",
+          "callee": "F.nll_loss",
+          "lineNumber": 39
+        },
+        {
+          "caller": "compute_loss",
+          "callee": "true.float",
+          "lineNumber": 58
+        },
+        {
+          "caller": "compute_loss",
+          "callee": "bce_loss",
+          "lineNumber": 59
+        },
+        {
+          "caller": "compute_loss",
+          "callee": "torch.sigmoid",
+          "lineNumber": 59
+        },
+        {
+          "caller": "compute_loss",
+          "callee": "true.float",
+          "lineNumber": 61
+        },
+        {
+          "caller": "compute_loss",
+          "callee": "mse_loss",
+          "lineNumber": 62
+        },
+        {
+          "caller": "compute_loss",
+          "callee": "ValueError",
+          "lineNumber": 64
+        },
+        {
+          "caller": "compute_loss",
+          "callee": "'Loss func {} not supported'.format",
+          "lineNumber": 64
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "fraudGT/graphgym/model_builder.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 29,
+      "nonEmptyLines": 22,
+      "functions": [
+        {
+          "name": "create_model",
+          "startLine": 10,
+          "endLine": 28,
+          "params": [
+            "to_device",
+            "dim_in",
+            "dim_out",
+            "dataset"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "create_model",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "create_model",
+          "callee": "model.to",
+          "lineNumber": 27
+        },
+        {
+          "caller": "create_model",
+          "callee": "torch.device",
+          "lineNumber": 27
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "fraudGT/graphgym/model_builder_deepsnap.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 32,
+      "nonEmptyLines": 25,
+      "functions": [
+        {
+          "name": "create_model",
+          "startLine": 13,
+          "endLine": 31,
+          "params": [
+            "to_device",
+            "dim_in",
+            "dim_out"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "create_model",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "create_model",
+          "callee": "model.to",
+          "lineNumber": 30
+        },
+        {
+          "caller": "create_model",
+          "callee": "torch.device",
+          "lineNumber": 30
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "fraudGT/graphgym/models/__init__.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "fraudGT/graphgym/models/act.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 17,
+      "nonEmptyLines": 14,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "fraudGT/graphgym/models/feature_augment.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 353,
+      "nonEmptyLines": 309,
+      "functions": [
+        {
+          "name": "_key",
+          "startLine": 14,
+          "endLine": 15,
+          "params": [
+            "key",
+            "as_label"
+          ]
+        },
+        {
+          "name": "create_augment_fun",
+          "startLine": 18,
+          "endLine": 22,
+          "params": [
+            "graph_fun",
+            "key"
+          ]
+        },
+        {
+          "name": "_replace_label",
+          "startLine": 25,
+          "endLine": 39,
+          "params": [
+            "graph"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "FeatureAugment",
+          "startLine": 43,
+          "endLine": 328,
+          "methods": [
+            "__init__",
+            "register_feature_fun",
+            "_bin_features",
+            "_one_hot_tensor",
+            "_orig_features",
+            "_position_features",
+            "_get_max_value",
+            "_get_bin_edges",
+            "_augment_feature",
+            "augment"
+          ],
+          "properties": []
+        },
+        {
+          "name": "Preprocess",
+          "startLine": 331,
+          "endLine": 352,
+          "methods": [
+            "__init__",
+            "extra_repr",
+            "forward"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "_key",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "create_augment_fun",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "_replace_label",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "FeatureAugment",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "Preprocess",
+          "line": 331,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "augment_fun",
+          "callee": "_key",
+          "lineNumber": 20
+        },
+        {
+          "caller": "augment_fun",
+          "callee": "graph_fun",
+          "lineNumber": 20
+        },
+        {
+          "caller": "_replace_label",
+          "callee": "ValueError",
+          "lineNumber": 28
+        },
+        {
+          "caller": "_replace_label",
+          "callee": "_key",
+          "lineNumber": 30
+        },
+        {
+          "caller": "_replace_label",
+          "callee": "ValueError",
+          "lineNumber": 39
+        },
+        {
+          "caller": "_replace_label",
+          "callee": "'Unknown task type: {}'.format",
+          "lineNumber": 39
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(FeatureAugment, self).__init__",
+          "lineNumber": 45
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 45
+        },
+        {
+          "caller": "degree_fun",
+          "callee": "graph.G.degree",
+          "lineNumber": 50
+        },
+        {
+          "caller": "centrality_fun",
+          "callee": "nx.betweenness_centrality",
+          "lineNumber": 54
+        },
+        {
+          "caller": "path_len_fun",
+          "callee": "np.mean",
+          "lineNumber": 59
+        },
+        {
+          "caller": "path_len_fun",
+          "callee": "list",
+          "lineNumber": 60
+        },
+        {
+          "caller": "path_len_fun",
+          "callee": "nx.shortest_path_length(graph.G, source=x).values",
+          "lineNumber": 60
+        },
+        {
+          "caller": "path_len_fun",
+          "callee": "nx.shortest_path_length",
+          "lineNumber": 60
+        },
+        {
+          "caller": "edge_path_len_fun",
+          "callee": "np.mean",
+          "lineNumber": 66
+        },
+        {
+          "caller": "edge_path_len_fun",
+          "callee": "list",
+          "lineNumber": 67
+        },
+        {
+          "caller": "edge_path_len_fun",
+          "callee": "nx.shortest_path_length(graph.G, source=x).values",
+          "lineNumber": 67
+        },
+        {
+          "caller": "edge_path_len_fun",
+          "callee": "nx.shortest_path_length",
+          "lineNumber": 67
+        },
+        {
+          "caller": "pagerank_fun",
+          "callee": "nx.pagerank",
+          "lineNumber": 73
+        },
+        {
+          "caller": "identity_fun",
+          "callee": "ValueError",
+          "lineNumber": 78
+        },
+        {
+          "caller": "identity_fun",
+          "callee": "compute_identity",
+          "lineNumber": 79
+        },
+        {
+          "caller": "clustering_coefficient_fun",
+          "callee": "list",
+          "lineNumber": 83
+        },
+        {
+          "caller": "clustering_coefficient_fun",
+          "callee": "nx.clustering(graph.G).values",
+          "lineNumber": 83
+        },
+        {
+          "caller": "clustering_coefficient_fun",
+          "callee": "nx.clustering",
+          "lineNumber": 83
+        },
+        {
+          "caller": "const_fun",
+          "callee": "torch.ones",
+          "lineNumber": 87
+        },
+        {
+          "caller": "onehot_fun",
+          "callee": "torch.randperm",
+          "lineNumber": 92
+        },
+        {
+          "caller": "graph_laplacian_spectrum_fun",
+          "callee": "nx.laplacian_spectrum",
+          "lineNumber": 96
+        },
+        {
+          "caller": "graph_laplacian_spectrum_fun",
+          "callee": "len",
+          "lineNumber": 98
+        },
+        {
+          "caller": "graph_laplacian_spectrum_fun",
+          "callee": "torch.tensor",
+          "lineNumber": 100
+        },
+        {
+          "caller": "graph_path_len_fun",
+          "callee": "nx.average_shortest_path_length",
+          "lineNumber": 103
+        },
+        {
+          "caller": "graph_path_len_fun",
+          "callee": "torch.tensor",
+          "lineNumber": 104
+        },
+        {
+          "caller": "graph_clustering_fun",
+          "callee": "nx.average_clustering",
+          "lineNumber": 107
+        },
+        {
+          "caller": "graph_clustering_fun",
+          "callee": "torch.tensor",
+          "lineNumber": 108
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.feature_dict.items",
+          "lineNumber": 130
+        },
+        {
+          "caller": "__init__",
+          "callee": "create_augment_fun",
+          "lineNumber": 131
+        },
+        {
+          "caller": "register_feature_fun",
+          "callee": "create_augment_fun",
+          "lineNumber": 135
+        },
+        {
+          "caller": "_bin_features",
+          "callee": "np.array",
+          "lineNumber": 143
+        },
+        {
+          "caller": "_bin_features",
+          "callee": "np.digitize",
+          "lineNumber": 144
+        },
+        {
+          "caller": "_bin_features",
+          "callee": "np.min",
+          "lineNumber": 145
+        },
+        {
+          "caller": "_bin_features",
+          "callee": "np.max",
+          "lineNumber": 146
+        },
+        {
+          "caller": "_bin_features",
+          "callee": "FeatureAugment._one_hot_tensor",
+          "lineNumber": 147
+        },
+        {
+          "caller": "_one_hot_tensor",
+          "callee": "isinstance",
+          "lineNumber": 153
+        },
+        {
+          "caller": "_one_hot_tensor",
+          "callee": "ValueError",
+          "lineNumber": 154
+        },
+        {
+          "caller": "_one_hot_tensor",
+          "callee": "ValueError",
+          "lineNumber": 157
+        },
+        {
+          "caller": "_one_hot_tensor",
+          "callee": "torch.tensor",
+          "lineNumber": 158
+        },
+        {
+          "caller": "_one_hot_tensor",
+          "callee": "vals.squeeze",
+          "lineNumber": 161
+        },
+        {
+          "caller": "_one_hot_tensor",
+          "callee": "torch.zeros",
+          "lineNumber": 164
+        },
+        {
+          "caller": "_one_hot_tensor",
+          "callee": "len",
+          "lineNumber": 164
+        },
+        {
+          "caller": "_one_hot_tensor",
+          "callee": "one_hot.scatter_",
+          "lineNumber": 165
+        },
+        {
+          "caller": "_one_hot_tensor",
+          "callee": "vals.unsqueeze",
+          "lineNumber": 165
+        },
+        {
+          "caller": "_orig_features",
+          "callee": "isinstance",
+          "lineNumber": 171
+        },
+        {
+          "caller": "_orig_features",
+          "callee": "torch.tensor",
+          "lineNumber": 172
+        },
+        {
+          "caller": "_orig_features",
+          "callee": "graph[key].float",
+          "lineNumber": 174
+        },
+        {
+          "caller": "_orig_features",
+          "callee": "Graph._is_node_attribute",
+          "lineNumber": 176
+        },
+        {
+          "caller": "_orig_features",
+          "callee": "graph[key].unsqueeze",
+          "lineNumber": 178
+        },
+        {
+          "caller": "_position_features",
+          "callee": "isinstance",
+          "lineNumber": 187
+        },
+        {
+          "caller": "_position_features",
+          "callee": "graph[key].float",
+          "lineNumber": 188
+        },
+        {
+          "caller": "_position_features",
+          "callee": "torch.tensor(graph[key]).float",
+          "lineNumber": 190
+        },
+        {
+          "caller": "_position_features",
+          "callee": "torch.tensor",
+          "lineNumber": 190
+        },
+        {
+          "caller": "_position_features",
+          "callee": "pos.unsqueeze",
+          "lineNumber": 193
+        },
+        {
+          "caller": "_position_features",
+          "callee": "pos.view",
+          "lineNumber": 195
+        },
+        {
+          "caller": "_position_features",
+          "callee": "torch.arange(\r\n            0, feature_dim // 2).float",
+          "lineNumber": 198
+        },
+        {
+          "caller": "_position_features",
+          "callee": "torch.arange",
+          "lineNumber": 198
+        },
+        {
+          "caller": "_position_features",
+          "callee": "torch.sin",
+          "lineNumber": 200
+        },
+        {
+          "caller": "_position_features",
+          "callee": "pos.unsqueeze",
+          "lineNumber": 201
+        },
+        {
+          "caller": "_position_features",
+          "callee": "cycle_range.unsqueeze",
+          "lineNumber": 201
+        },
+        {
+          "caller": "_position_features",
+          "callee": "torch.cos",
+          "lineNumber": 202
+        },
+        {
+          "caller": "_position_features",
+          "callee": "pos.unsqueeze",
+          "lineNumber": 203
+        },
+        {
+          "caller": "_position_features",
+          "callee": "cycle_range.unsqueeze",
+          "lineNumber": 203
+        },
+        {
+          "caller": "_position_features",
+          "callee": "torch.cat",
+          "lineNumber": 205
+        },
+        {
+          "caller": "_position_features",
+          "callee": "m.view",
+          "lineNumber": 206
+        },
+        {
+          "caller": "_get_max_value",
+          "callee": "np.concatenate",
+          "lineNumber": 210
+        },
+        {
+          "caller": "_get_max_value",
+          "callee": "np.max",
+          "lineNumber": 211
+        },
+        {
+          "caller": "_get_bin_edges",
+          "callee": "np.concatenate",
+          "lineNumber": 223
+        },
+        {
+          "caller": "_get_bin_edges",
+          "callee": "np.array",
+          "lineNumber": 227
+        },
+        {
+          "caller": "_get_bin_edges",
+          "callee": "np.sort",
+          "lineNumber": 228
+        },
+        {
+          "caller": "_get_bin_edges",
+          "callee": "np.linspace(0,\r\n                                      len(list_scalars),\r\n                                      num=feature_dim,\r\n                                      endpoint=False).astype",
+          "lineNumber": 229
+        },
+        {
+          "caller": "_get_bin_edges",
+          "callee": "np.linspace",
+          "lineNumber": 229
+        },
+        {
+          "caller": "_get_bin_edges",
+          "callee": "len",
+          "lineNumber": 230
+        },
+        {
+          "caller": "_get_bin_edges",
+          "callee": "np.unique",
+          "lineNumber": 234
+        },
+        {
+          "caller": "_get_bin_edges",
+          "callee": "len",
+          "lineNumber": 235
+        },
+        {
+          "caller": "_get_bin_edges",
+          "callee": "len",
+          "lineNumber": 235
+        },
+        {
+          "caller": "_get_bin_edges",
+          "callee": "len",
+          "lineNumber": 237
+        },
+        {
+          "caller": "_get_bin_edges",
+          "callee": "logging.warning",
+          "lineNumber": 238
+        },
+        {
+          "caller": "_get_bin_edges",
+          "callee": "'{} dimensions are collapsed due to balanced'\r\n                                ' binning'.format",
+          "lineNumber": 238
+        },
+        {
+          "caller": "_get_bin_edges",
+          "callee": "np.array",
+          "lineNumber": 243
+        },
+        {
+          "caller": "_get_bin_edges",
+          "callee": "np.min",
+          "lineNumber": 244
+        },
+        {
+          "caller": "_get_bin_edges",
+          "callee": "np.max",
+          "lineNumber": 244
+        },
+        {
+          "caller": "_get_bin_edges",
+          "callee": "np.linspace",
+          "lineNumber": 245
+        },
+        {
+          "caller": "_get_bin_edges",
+          "callee": "np.arange",
+          "lineNumber": 250
+        },
+        {
+          "caller": "_get_bin_edges",
+          "callee": "ValueError",
+          "lineNumber": 252
+        },
+        {
+          "caller": "_get_bin_edges",
+          "callee": "'Bin method {} not supported'.format",
+          "lineNumber": 252
+        },
+        {
+          "caller": "_augment_feature",
+          "callee": "zip",
+          "lineNumber": 270
+        },
+        {
+          "caller": "_augment_feature",
+          "callee": "dataset.apply_transform",
+          "lineNumber": 275
+        },
+        {
+          "caller": "_augment_feature",
+          "callee": "dataset.apply_transform",
+          "lineNumber": 284
+        },
+        {
+          "caller": "_augment_feature",
+          "callee": "FeatureAugment._get_max_value",
+          "lineNumber": 290
+        },
+        {
+          "caller": "_augment_feature",
+          "callee": "dataset.apply_transform",
+          "lineNumber": 292
+        },
+        {
+          "caller": "_augment_feature",
+          "callee": "self._get_bin_edges",
+          "lineNumber": 302
+        },
+        {
+          "caller": "_augment_feature",
+          "callee": "dataset.apply_transform",
+          "lineNumber": 305
+        },
+        {
+          "caller": "_augment_feature",
+          "callee": "len",
+          "lineNumber": 310
+        },
+        {
+          "caller": "_augment_feature",
+          "callee": "actual_feat_dims.append",
+          "lineNumber": 312
+        },
+        {
+          "caller": "_augment_feature",
+          "callee": "dataset[0].get_num_dims",
+          "lineNumber": 312
+        },
+        {
+          "caller": "augment",
+          "callee": "self._augment_feature",
+          "lineNumber": 317
+        },
+        {
+          "caller": "augment",
+          "callee": "self._augment_feature",
+          "lineNumber": 322
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(Preprocess, self).__init__",
+          "lineNumber": 333
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 333
+        },
+        {
+          "caller": "__init__",
+          "callee": "zip",
+          "lineNumber": 336
+        },
+        {
+          "caller": "__init__",
+          "callee": "sum",
+          "lineNumber": 340
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.dim_dict.values",
+          "lineNumber": 340
+        },
+        {
+          "caller": "extra_repr",
+          "callee": "'\\n'.join",
+          "lineNumber": 343
+        },
+        {
+          "caller": "extra_repr",
+          "callee": "'{}: dim_out={}'.format",
+          "lineNumber": 344
+        },
+        {
+          "caller": "extra_repr",
+          "callee": "self.dim_dict.items",
+          "lineNumber": 345
+        },
+        {
+          "caller": "extra_repr",
+          "callee": "'Total: dim_out={}'.format",
+          "lineNumber": 346
+        },
+        {
+          "caller": "forward",
+          "callee": "torch.cat",
+          "lineNumber": 350
+        },
+        {
+          "caller": "forward",
+          "callee": "batch[name].float",
+          "lineNumber": 351
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 3,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "fraudGT/graphgym/models/feature_encoder.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 118,
+      "nonEmptyLines": 81,
+      "classes": [
+        {
+          "name": "IntegerFeatureEncoder",
+          "startLine": 12,
+          "endLine": 30,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "SingleAtomEncoder",
+          "startLine": 33,
+          "endLine": 52,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "AtomEncoder",
+          "startLine": 55,
+          "endLine": 80,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "BondEncoder",
+          "startLine": 83,
+          "endLine": 102,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "IntegerFeatureEncoder",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "SingleAtomEncoder",
+          "line": 33,
+          "isDefault": false
+        },
+        {
+          "name": "AtomEncoder",
+          "line": 55,
+          "isDefault": false
+        },
+        {
+          "name": "BondEncoder",
+          "line": 83,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super(IntegerFeatureEncoder, self).__init__",
+          "lineNumber": 21
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 21
+        },
+        {
+          "caller": "__init__",
+          "callee": "torch.nn.Embedding",
+          "lineNumber": 23
+        },
+        {
+          "caller": "__init__",
+          "callee": "torch.nn.init.xavier_uniform_",
+          "lineNumber": 24
+        },
+        {
+          "caller": "forward",
+          "callee": "self.encoder",
+          "lineNumber": 28
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(SingleAtomEncoder, self).__init__",
+          "lineNumber": 43
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 43
+        },
+        {
+          "caller": "__init__",
+          "callee": "torch.nn.Embedding",
+          "lineNumber": 46
+        },
+        {
+          "caller": "__init__",
+          "callee": "torch.nn.init.xavier_uniform_",
+          "lineNumber": 47
+        },
+        {
+          "caller": "forward",
+          "callee": "self.atom_type_embedding",
+          "lineNumber": 50
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(AtomEncoder, self).__init__",
+          "lineNumber": 64
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 64
+        },
+        {
+          "caller": "__init__",
+          "callee": "torch.nn.ModuleList",
+          "lineNumber": 66
+        },
+        {
+          "caller": "__init__",
+          "callee": "enumerate",
+          "lineNumber": 68
+        },
+        {
+          "caller": "__init__",
+          "callee": "torch.nn.Embedding",
+          "lineNumber": 69
+        },
+        {
+          "caller": "__init__",
+          "callee": "torch.nn.init.xavier_uniform_",
+          "lineNumber": 70
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.atom_embedding_list.append",
+          "lineNumber": 71
+        },
+        {
+          "caller": "forward",
+          "callee": "range",
+          "lineNumber": 75
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(BondEncoder, self).__init__",
+          "lineNumber": 86
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 86
+        },
+        {
+          "caller": "__init__",
+          "callee": "torch.nn.ModuleList",
+          "lineNumber": 88
+        },
+        {
+          "caller": "__init__",
+          "callee": "enumerate",
+          "lineNumber": 90
+        },
+        {
+          "caller": "__init__",
+          "callee": "torch.nn.Embedding",
+          "lineNumber": 91
+        },
+        {
+          "caller": "__init__",
+          "callee": "torch.nn.init.xavier_uniform_",
+          "lineNumber": 92
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.bond_embedding_list.append",
+          "lineNumber": 93
+        },
+        {
+          "caller": "forward",
+          "callee": "range",
+          "lineNumber": 97
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 0,
+        "classCount": 4
+      }
+    },
+    {
+      "path": "fraudGT/graphgym/models/feature_encoder_deepsnap.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 119,
+      "nonEmptyLines": 87,
+      "classes": [
+        {
+          "name": "IntegerFeatureEncoder",
+          "startLine": 11,
+          "endLine": 30,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "SingleAtomEncoder",
+          "startLine": 33,
+          "endLine": 51,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "AtomEncoder",
+          "startLine": 54,
+          "endLine": 78,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "BondEncoder",
+          "startLine": 81,
+          "endLine": 105,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "IntegerFeatureEncoder",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "SingleAtomEncoder",
+          "line": 33,
+          "isDefault": false
+        },
+        {
+          "name": "AtomEncoder",
+          "line": 54,
+          "isDefault": false
+        },
+        {
+          "name": "BondEncoder",
+          "line": 81,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super(IntegerFeatureEncoder, self).__init__",
+          "lineNumber": 21
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 21
+        },
+        {
+          "caller": "__init__",
+          "callee": "torch.nn.Embedding",
+          "lineNumber": 23
+        },
+        {
+          "caller": "__init__",
+          "callee": "torch.nn.init.xavier_uniform_",
+          "lineNumber": 24
+        },
+        {
+          "caller": "forward",
+          "callee": "self.encoder",
+          "lineNumber": 28
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(SingleAtomEncoder, self).__init__",
+          "lineNumber": 42
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 42
+        },
+        {
+          "caller": "__init__",
+          "callee": "torch.nn.Embedding",
+          "lineNumber": 45
+        },
+        {
+          "caller": "__init__",
+          "callee": "torch.nn.init.xavier_uniform_",
+          "lineNumber": 46
+        },
+        {
+          "caller": "forward",
+          "callee": "self.atom_type_embedding",
+          "lineNumber": 49
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(AtomEncoder, self).__init__",
+          "lineNumber": 63
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 63
+        },
+        {
+          "caller": "__init__",
+          "callee": "torch.nn.ModuleList",
+          "lineNumber": 65
+        },
+        {
+          "caller": "__init__",
+          "callee": "enumerate",
+          "lineNumber": 67
+        },
+        {
+          "caller": "__init__",
+          "callee": "torch.nn.Embedding",
+          "lineNumber": 68
+        },
+        {
+          "caller": "__init__",
+          "callee": "torch.nn.init.xavier_uniform_",
+          "lineNumber": 69
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.atom_embedding_list.append",
+          "lineNumber": 70
+        },
+        {
+          "caller": "forward",
+          "callee": "range",
+          "lineNumber": 74
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(BondEncoder, self).__init__",
+          "lineNumber": 89
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 89
+        },
+        {
+          "caller": "__init__",
+          "callee": "torch.nn.ModuleList",
+          "lineNumber": 91
+        },
+        {
+          "caller": "__init__",
+          "callee": "enumerate",
+          "lineNumber": 93
+        },
+        {
+          "caller": "__init__",
+          "callee": "torch.nn.Embedding",
+          "lineNumber": 94
+        },
+        {
+          "caller": "__init__",
+          "callee": "torch.nn.init.xavier_uniform_",
+          "lineNumber": 95
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.bond_embedding_list.append",
+          "lineNumber": 96
+        },
+        {
+          "caller": "forward",
+          "callee": "range",
+          "lineNumber": 100
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 0,
+        "classCount": 4
+      }
+    },
+    {
+      "path": "fraudGT/graphgym/models/gnn.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 157,
+      "nonEmptyLines": 129,
+      "functions": [
+        {
+          "name": "GNNLayer",
+          "startLine": 16,
+          "endLine": 26,
+          "params": [
+            "dim_in",
+            "dim_out",
+            "has_act",
+            "**kwargs"
+          ]
+        },
+        {
+          "name": "GNNPreMP",
+          "startLine": 29,
+          "endLine": 45,
+          "params": [
+            "dim_in",
+            "dim_out",
+            "**kwargs"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "GNNStackStage",
+          "startLine": 49,
+          "endLine": 80,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "FeatureEncoder",
+          "startLine": 93,
+          "endLine": 121,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "GNN",
+          "startLine": 125,
+          "endLine": 156,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "GNNLayer",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "GNNPreMP",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "GNNStackStage",
+          "line": 49,
+          "isDefault": false
+        },
+        {
+          "name": "FeatureEncoder",
+          "line": 93,
+          "isDefault": false
+        },
+        {
+          "name": "GNN",
+          "line": 125,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "GNNLayer",
+          "callee": "GeneralLayer",
+          "lineNumber": 26
+        },
+        {
+          "caller": "GNNPreMP",
+          "callee": "GeneralMultiLayer",
+          "lineNumber": 39
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(GNNStackStage, self).__init__",
+          "lineNumber": 59
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 59
+        },
+        {
+          "caller": "__init__",
+          "callee": "range",
+          "lineNumber": 61
+        },
+        {
+          "caller": "__init__",
+          "callee": "GNNLayer",
+          "lineNumber": 66
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.add_module",
+          "lineNumber": 67
+        },
+        {
+          "caller": "__init__",
+          "callee": "'layer{}'.format",
+          "lineNumber": 67
+        },
+        {
+          "caller": "forward",
+          "callee": "enumerate",
+          "lineNumber": 70
+        },
+        {
+          "caller": "forward",
+          "callee": "self.children",
+          "lineNumber": 70
+        },
+        {
+          "caller": "forward",
+          "callee": "layer",
+          "lineNumber": 72
+        },
+        {
+          "caller": "forward",
+          "callee": "torch.cat",
+          "lineNumber": 77
+        },
+        {
+          "caller": "forward",
+          "callee": "F.normalize",
+          "lineNumber": 79
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(FeatureEncoder, self).__init__",
+          "lineNumber": 101
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 101
+        },
+        {
+          "caller": "__init__",
+          "callee": "NodeEncoder",
+          "lineNumber": 106
+        },
+        {
+          "caller": "__init__",
+          "callee": "BatchNorm1dNode",
+          "lineNumber": 108
+        },
+        {
+          "caller": "__init__",
+          "callee": "EdgeEncoder",
+          "lineNumber": 114
+        },
+        {
+          "caller": "__init__",
+          "callee": "BatchNorm1dEdge",
+          "lineNumber": 116
+        },
+        {
+          "caller": "forward",
+          "callee": "self.children",
+          "lineNumber": 119
+        },
+        {
+          "caller": "forward",
+          "callee": "module",
+          "lineNumber": 120
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(GNN, self).__init__",
+          "lineNumber": 135
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 135
+        },
+        {
+          "caller": "__init__",
+          "callee": "FeatureEncoder",
+          "lineNumber": 139
+        },
+        {
+          "caller": "__init__",
+          "callee": "GNNPreMP",
+          "lineNumber": 143
+        },
+        {
+          "caller": "__init__",
+          "callee": "GNNStage",
+          "lineNumber": 146
+        },
+        {
+          "caller": "__init__",
+          "callee": "GNNHead",
+          "lineNumber": 149
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.apply",
+          "lineNumber": 151
+        },
+        {
+          "caller": "forward",
+          "callee": "self.children",
+          "lineNumber": 154
+        },
+        {
+          "caller": "forward",
+          "callee": "module",
+          "lineNumber": 155
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 2,
+        "classCount": 3
+      }
+    },
+    {
+      "path": "fraudGT/graphgym/models/gnn_deepsnap.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 184,
+      "nonEmptyLines": 156,
+      "functions": [
+        {
+          "name": "GNNLayer",
+          "startLine": 18,
+          "endLine": 28,
+          "params": [
+            "dim_in",
+            "dim_out",
+            "has_act"
+          ]
+        },
+        {
+          "name": "GNNPreMP",
+          "startLine": 31,
+          "endLine": 46,
+          "params": [
+            "dim_in",
+            "dim_out"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "GNNSkipBlock",
+          "startLine": 50,
+          "endLine": 80,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "GNNStackStage",
+          "startLine": 84,
+          "endLine": 99,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "GNNSkipStage",
+          "startLine": 102,
+          "endLine": 126,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "GNN",
+          "startLine": 139,
+          "endLine": 183,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "GNNLayer",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "GNNPreMP",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "GNNSkipBlock",
+          "line": 50,
+          "isDefault": false
+        },
+        {
+          "name": "GNNStackStage",
+          "line": 84,
+          "isDefault": false
+        },
+        {
+          "name": "GNNSkipStage",
+          "line": 102,
+          "isDefault": false
+        },
+        {
+          "name": "GNN",
+          "line": 139,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "GNNLayer",
+          "callee": "GeneralLayer",
+          "lineNumber": 28
+        },
+        {
+          "caller": "GNNPreMP",
+          "callee": "GeneralMultiLayer",
+          "lineNumber": 41
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(GNNSkipBlock, self).__init__",
+          "lineNumber": 53
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 53
+        },
+        {
+          "caller": "__init__",
+          "callee": "GNNLayer",
+          "lineNumber": 55
+        },
+        {
+          "caller": "__init__",
+          "callee": "range",
+          "lineNumber": 58
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.f.append",
+          "lineNumber": 60
+        },
+        {
+          "caller": "__init__",
+          "callee": "GNNLayer",
+          "lineNumber": 60
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.f.append",
+          "lineNumber": 62
+        },
+        {
+          "caller": "__init__",
+          "callee": "GNNLayer",
+          "lineNumber": 62
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Sequential",
+          "lineNumber": 63
+        },
+        {
+          "caller": "forward",
+          "callee": "self.f",
+          "lineNumber": 72
+        },
+        {
+          "caller": "forward",
+          "callee": "torch.cat",
+          "lineNumber": 75
+        },
+        {
+          "caller": "forward",
+          "callee": "self.f",
+          "lineNumber": 75
+        },
+        {
+          "caller": "forward",
+          "callee": "ValueError",
+          "lineNumber": 77
+        },
+        {
+          "caller": "forward",
+          "callee": "self.act",
+          "lineNumber": 79
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(GNNStackStage, self).__init__",
+          "lineNumber": 87
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 87
+        },
+        {
+          "caller": "__init__",
+          "callee": "range",
+          "lineNumber": 88
+        },
+        {
+          "caller": "__init__",
+          "callee": "GNNLayer",
+          "lineNumber": 90
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.add_module",
+          "lineNumber": 91
+        },
+        {
+          "caller": "__init__",
+          "callee": "'layer{}'.format",
+          "lineNumber": 91
+        },
+        {
+          "caller": "forward",
+          "callee": "self.children",
+          "lineNumber": 95
+        },
+        {
+          "caller": "forward",
+          "callee": "layer",
+          "lineNumber": 96
+        },
+        {
+          "caller": "forward",
+          "callee": "F.normalize",
+          "lineNumber": 98
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(GNNSkipStage, self).__init__",
+          "lineNumber": 105
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 105
+        },
+        {
+          "caller": "__init__",
+          "callee": "range",
+          "lineNumber": 109
+        },
+        {
+          "caller": "__init__",
+          "callee": "GNNSkipBlock",
+          "lineNumber": 114
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.add_module",
+          "lineNumber": 115
+        },
+        {
+          "caller": "__init__",
+          "callee": "'block{}'.format",
+          "lineNumber": 115
+        },
+        {
+          "caller": "forward",
+          "callee": "self.children",
+          "lineNumber": 122
+        },
+        {
+          "caller": "forward",
+          "callee": "layer",
+          "lineNumber": 123
+        },
+        {
+          "caller": "forward",
+          "callee": "F.normalize",
+          "lineNumber": 125
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(GNN, self).__init__",
+          "lineNumber": 147
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 147
+        },
+        {
+          "caller": "__init__",
+          "callee": "NodeEncoder",
+          "lineNumber": 154
+        },
+        {
+          "caller": "__init__",
+          "callee": "BatchNorm1dNode",
+          "lineNumber": 156
+        },
+        {
+          "caller": "__init__",
+          "callee": "EdgeEncoder",
+          "lineNumber": 162
+        },
+        {
+          "caller": "__init__",
+          "callee": "BatchNorm1dEdge",
+          "lineNumber": 164
+        },
+        {
+          "caller": "__init__",
+          "callee": "Preprocess",
+          "lineNumber": 166
+        },
+        {
+          "caller": "__init__",
+          "callee": "GNNPreMP",
+          "lineNumber": 169
+        },
+        {
+          "caller": "__init__",
+          "callee": "GNNStage",
+          "lineNumber": 172
+        },
+        {
+          "caller": "__init__",
+          "callee": "GNNHead",
+          "lineNumber": 176
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.apply",
+          "lineNumber": 178
+        },
+        {
+          "caller": "forward",
+          "callee": "self.children",
+          "lineNumber": 181
+        },
+        {
+          "caller": "forward",
+          "callee": "module",
+          "lineNumber": 182
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 2,
+        "classCount": 4
+      }
+    },
+    {
+      "path": "fraudGT/graphgym/models/head.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 125,
+      "nonEmptyLines": 103,
+      "classes": [
+        {
+          "name": "GNNNodeHead",
+          "startLine": 16,
+          "endLine": 32,
+          "methods": [
+            "__init__",
+            "_apply_index",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "GNNEdgeHead",
+          "startLine": 35,
+          "endLine": 87,
+          "methods": [
+            "__init__",
+            "_apply_index",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "GNNGraphHead",
+          "startLine": 90,
+          "endLine": 113,
+          "methods": [
+            "__init__",
+            "_apply_index",
+            "forward"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "GNNNodeHead",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "GNNEdgeHead",
+          "line": 35,
+          "isDefault": false
+        },
+        {
+          "name": "GNNGraphHead",
+          "line": 90,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super(GNNNodeHead, self).__init__",
+          "lineNumber": 19
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 19
+        },
+        {
+          "caller": "__init__",
+          "callee": "MLP",
+          "lineNumber": 20
+        },
+        {
+          "caller": "_apply_index",
+          "callee": "'{}_mask'.format",
+          "lineNumber": 26
+        },
+        {
+          "caller": "forward",
+          "callee": "self.layer_post_mp",
+          "lineNumber": 30
+        },
+        {
+          "caller": "forward",
+          "callee": "self._apply_index",
+          "lineNumber": 31
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(GNNEdgeHead, self).__init__",
+          "lineNumber": 47
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 47
+        },
+        {
+          "caller": "__init__",
+          "callee": "MLP",
+          "lineNumber": 51
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.layer_post_mp",
+          "lineNumber": 57
+        },
+        {
+          "caller": "__init__",
+          "callee": "torch.cat",
+          "lineNumber": 57
+        },
+        {
+          "caller": "__init__",
+          "callee": "ValueError",
+          "lineNumber": 60
+        },
+        {
+          "caller": "__init__",
+          "callee": "'Binary edge decoding ({})is used for multi-class '\r\n                    'edge/link prediction.'.format",
+          "lineNumber": 61
+        },
+        {
+          "caller": "__init__",
+          "callee": "MLP",
+          "lineNumber": 63
+        },
+        {
+          "caller": "__init__",
+          "callee": "torch.sum",
+          "lineNumber": 68
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.CosineSimilarity",
+          "lineNumber": 70
+        },
+        {
+          "caller": "__init__",
+          "callee": "ValueError",
+          "lineNumber": 72
+        },
+        {
+          "caller": "__init__",
+          "callee": "'Unknown edge decoding {}.'.format",
+          "lineNumber": 72
+        },
+        {
+          "caller": "_apply_index",
+          "callee": "'{}_edge_index'.format",
+          "lineNumber": 76
+        },
+        {
+          "caller": "_apply_index",
+          "callee": "'{}_edge_label'.format",
+          "lineNumber": 77
+        },
+        {
+          "caller": "forward",
+          "callee": "self.layer_post_mp",
+          "lineNumber": 82
+        },
+        {
+          "caller": "forward",
+          "callee": "self._apply_index",
+          "lineNumber": 83
+        },
+        {
+          "caller": "forward",
+          "callee": "self.decode_module",
+          "lineNumber": 86
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(GNNGraphHead, self).__init__",
+          "lineNumber": 97
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 97
+        },
+        {
+          "caller": "__init__",
+          "callee": "MLP",
+          "lineNumber": 99
+        },
+        {
+          "caller": "forward",
+          "callee": "self.pooling_fun",
+          "lineNumber": 109
+        },
+        {
+          "caller": "forward",
+          "callee": "self.layer_post_mp",
+          "lineNumber": 110
+        },
+        {
+          "caller": "forward",
+          "callee": "self._apply_index",
+          "lineNumber": 112
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 0,
+        "classCount": 3
+      }
+    },
+    {
+      "path": "fraudGT/graphgym/models/head_deepsnap.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 131,
+      "nonEmptyLines": 109,
+      "classes": [
+        {
+          "name": "GNNNodeHead",
+          "startLine": 16,
+          "endLine": 35,
+          "methods": [
+            "__init__",
+            "_apply_index",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "GNNEdgeHead",
+          "startLine": 38,
+          "endLine": 89,
+          "methods": [
+            "__init__",
+            "_apply_index",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "GNNGraphHead",
+          "startLine": 92,
+          "endLine": 119,
+          "methods": [
+            "__init__",
+            "_apply_index",
+            "forward"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "GNNNodeHead",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "GNNEdgeHead",
+          "line": 38,
+          "isDefault": false
+        },
+        {
+          "name": "GNNGraphHead",
+          "line": 92,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super(GNNNodeHead, self).__init__",
+          "lineNumber": 19
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 19
+        },
+        {
+          "caller": "__init__",
+          "callee": "MLP",
+          "lineNumber": 20
+        },
+        {
+          "caller": "forward",
+          "callee": "self.layer_post_mp",
+          "lineNumber": 33
+        },
+        {
+          "caller": "forward",
+          "callee": "self._apply_index",
+          "lineNumber": 34
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(GNNEdgeHead, self).__init__",
+          "lineNumber": 50
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 50
+        },
+        {
+          "caller": "__init__",
+          "callee": "MLP",
+          "lineNumber": 54
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.layer_post_mp",
+          "lineNumber": 60
+        },
+        {
+          "caller": "__init__",
+          "callee": "torch.cat",
+          "lineNumber": 60
+        },
+        {
+          "caller": "__init__",
+          "callee": "ValueError",
+          "lineNumber": 63
+        },
+        {
+          "caller": "__init__",
+          "callee": "'Binary edge decoding ({})is used for multi-class '\r\n                    'edge/link prediction.'.format",
+          "lineNumber": 64
+        },
+        {
+          "caller": "__init__",
+          "callee": "MLP",
+          "lineNumber": 66
+        },
+        {
+          "caller": "__init__",
+          "callee": "torch.sum",
+          "lineNumber": 71
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.CosineSimilarity",
+          "lineNumber": 73
+        },
+        {
+          "caller": "__init__",
+          "callee": "ValueError",
+          "lineNumber": 75
+        },
+        {
+          "caller": "__init__",
+          "callee": "'Unknown edge decoding {}.'.format",
+          "lineNumber": 75
+        },
+        {
+          "caller": "forward",
+          "callee": "self.layer_post_mp",
+          "lineNumber": 84
+        },
+        {
+          "caller": "forward",
+          "callee": "self._apply_index",
+          "lineNumber": 85
+        },
+        {
+          "caller": "forward",
+          "callee": "self.decode_module",
+          "lineNumber": 88
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(GNNGraphHead, self).__init__",
+          "lineNumber": 99
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 99
+        },
+        {
+          "caller": "__init__",
+          "callee": "MLP",
+          "lineNumber": 101
+        },
+        {
+          "caller": "forward",
+          "callee": "self.pooling_fun",
+          "lineNumber": 112
+        },
+        {
+          "caller": "forward",
+          "callee": "self.pooling_fun",
+          "lineNumber": 115
+        },
+        {
+          "caller": "forward",
+          "callee": "self.layer_post_mp",
+          "lineNumber": 116
+        },
+        {
+          "caller": "forward",
+          "callee": "self._apply_index",
+          "lineNumber": 118
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 0,
+        "classCount": 3
+      }
+    },
+    {
+      "path": "fraudGT/graphgym/models/layer.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 262,
+      "nonEmptyLines": 215,
+      "classes": [
+        {
+          "name": "GeneralLayer",
+          "startLine": 14,
+          "endLine": 56,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "GeneralMultiLayer",
+          "startLine": 59,
+          "endLine": 81,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "Linear",
+          "startLine": 86,
+          "endLine": 96,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "BatchNorm1dNode",
+          "startLine": 99,
+          "endLine": 107,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "BatchNorm1dEdge",
+          "startLine": 110,
+          "endLine": 118,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "MLP",
+          "startLine": 121,
+          "endLine": 153,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "GCNConv",
+          "startLine": 156,
+          "endLine": 163,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "SAGEConv",
+          "startLine": 166,
+          "endLine": 173,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "GATConv",
+          "startLine": 176,
+          "endLine": 183,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "GINConv",
+          "startLine": 186,
+          "endLine": 195,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "SplineConv",
+          "startLine": 198,
+          "endLine": 209,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "GeneralConv",
+          "startLine": 212,
+          "endLine": 219,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "GeneralEdgeConv",
+          "startLine": 222,
+          "endLine": 231,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "GeneralSampleEdgeConv",
+          "startLine": 234,
+          "endLine": 244,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "GeneralLayer",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "GeneralMultiLayer",
+          "line": 59,
+          "isDefault": false
+        },
+        {
+          "name": "Linear",
+          "line": 86,
+          "isDefault": false
+        },
+        {
+          "name": "BatchNorm1dNode",
+          "line": 99,
+          "isDefault": false
+        },
+        {
+          "name": "BatchNorm1dEdge",
+          "line": 110,
+          "isDefault": false
+        },
+        {
+          "name": "MLP",
+          "line": 121,
+          "isDefault": false
+        },
+        {
+          "name": "GCNConv",
+          "line": 156,
+          "isDefault": false
+        },
+        {
+          "name": "SAGEConv",
+          "line": 166,
+          "isDefault": false
+        },
+        {
+          "name": "GATConv",
+          "line": 176,
+          "isDefault": false
+        },
+        {
+          "name": "GINConv",
+          "line": 186,
+          "isDefault": false
+        },
+        {
+          "name": "SplineConv",
+          "line": 198,
+          "isDefault": false
+        },
+        {
+          "name": "GeneralConv",
+          "line": 212,
+          "isDefault": false
+        },
+        {
+          "name": "GeneralEdgeConv",
+          "line": 222,
+          "isDefault": false
+        },
+        {
+          "name": "GeneralSampleEdgeConv",
+          "line": 234,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super(GeneralLayer, self).__init__",
+          "lineNumber": 25
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 25
+        },
+        {
+          "caller": "__init__",
+          "callee": "layer_wrapper.append",
+          "lineNumber": 35
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.BatchNorm1d",
+          "lineNumber": 36
+        },
+        {
+          "caller": "__init__",
+          "callee": "layer_wrapper.append",
+          "lineNumber": 38
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.LayerNorm",
+          "lineNumber": 38
+        },
+        {
+          "caller": "__init__",
+          "callee": "layer_wrapper.append",
+          "lineNumber": 40
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Dropout",
+          "lineNumber": 41
+        },
+        {
+          "caller": "__init__",
+          "callee": "layer_wrapper.append",
+          "lineNumber": 43
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Sequential",
+          "lineNumber": 44
+        },
+        {
+          "caller": "forward",
+          "callee": "self.layer",
+          "lineNumber": 47
+        },
+        {
+          "caller": "forward",
+          "callee": "isinstance",
+          "lineNumber": 48
+        },
+        {
+          "caller": "forward",
+          "callee": "self.post_layer",
+          "lineNumber": 49
+        },
+        {
+          "caller": "forward",
+          "callee": "F.normalize",
+          "lineNumber": 51
+        },
+        {
+          "caller": "forward",
+          "callee": "self.post_layer",
+          "lineNumber": 53
+        },
+        {
+          "caller": "forward",
+          "callee": "F.normalize",
+          "lineNumber": 55
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(GeneralMultiLayer, self).__init__",
+          "lineNumber": 69
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 69
+        },
+        {
+          "caller": "__init__",
+          "callee": "range",
+          "lineNumber": 71
+        },
+        {
+          "caller": "__init__",
+          "callee": "GeneralLayer",
+          "lineNumber": 75
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.add_module",
+          "lineNumber": 76
+        },
+        {
+          "caller": "__init__",
+          "callee": "'Layer_{}'.format",
+          "lineNumber": 76
+        },
+        {
+          "caller": "forward",
+          "callee": "self.children",
+          "lineNumber": 79
+        },
+        {
+          "caller": "forward",
+          "callee": "layer",
+          "lineNumber": 80
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(Linear, self).__init__",
+          "lineNumber": 88
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 88
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 89
+        },
+        {
+          "caller": "forward",
+          "callee": "isinstance",
+          "lineNumber": 92
+        },
+        {
+          "caller": "forward",
+          "callee": "self.model",
+          "lineNumber": 93
+        },
+        {
+          "caller": "forward",
+          "callee": "self.model",
+          "lineNumber": 95
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(BatchNorm1dNode, self).__init__",
+          "lineNumber": 102
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 102
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.BatchNorm1d",
+          "lineNumber": 103
+        },
+        {
+          "caller": "forward",
+          "callee": "self.bn",
+          "lineNumber": 106
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(BatchNorm1dEdge, self).__init__",
+          "lineNumber": 113
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 113
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.BatchNorm1d",
+          "lineNumber": 114
+        },
+        {
+          "caller": "forward",
+          "callee": "self.bn",
+          "lineNumber": 117
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(MLP, self).__init__",
+          "lineNumber": 132
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 132
+        },
+        {
+          "caller": "__init__",
+          "callee": "layers.append",
+          "lineNumber": 136
+        },
+        {
+          "caller": "__init__",
+          "callee": "GeneralMultiLayer",
+          "lineNumber": 137
+        },
+        {
+          "caller": "__init__",
+          "callee": "layers.append",
+          "lineNumber": 143
+        },
+        {
+          "caller": "__init__",
+          "callee": "Linear",
+          "lineNumber": 143
+        },
+        {
+          "caller": "__init__",
+          "callee": "layers.append",
+          "lineNumber": 145
+        },
+        {
+          "caller": "__init__",
+          "callee": "Linear",
+          "lineNumber": 145
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Sequential",
+          "lineNumber": 146
+        },
+        {
+          "caller": "forward",
+          "callee": "isinstance",
+          "lineNumber": 149
+        },
+        {
+          "caller": "forward",
+          "callee": "self.model",
+          "lineNumber": 150
+        },
+        {
+          "caller": "forward",
+          "callee": "self.model",
+          "lineNumber": 152
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(GCNConv, self).__init__",
+          "lineNumber": 158
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 158
+        },
+        {
+          "caller": "__init__",
+          "callee": "pyg.nn.GCNConv",
+          "lineNumber": 159
+        },
+        {
+          "caller": "forward",
+          "callee": "self.model",
+          "lineNumber": 162
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(SAGEConv, self).__init__",
+          "lineNumber": 168
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 168
+        },
+        {
+          "caller": "__init__",
+          "callee": "pyg.nn.SAGEConv",
+          "lineNumber": 169
+        },
+        {
+          "caller": "forward",
+          "callee": "self.model",
+          "lineNumber": 172
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(GATConv, self).__init__",
+          "lineNumber": 178
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 178
+        },
+        {
+          "caller": "__init__",
+          "callee": "pyg.nn.GATConv",
+          "lineNumber": 179
+        },
+        {
+          "caller": "forward",
+          "callee": "self.model",
+          "lineNumber": 182
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(GINConv, self).__init__",
+          "lineNumber": 188
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 188
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Sequential",
+          "lineNumber": 189
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 189
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.ReLU",
+          "lineNumber": 189
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 190
+        },
+        {
+          "caller": "__init__",
+          "callee": "pyg.nn.GINConv",
+          "lineNumber": 191
+        },
+        {
+          "caller": "forward",
+          "callee": "self.model",
+          "lineNumber": 194
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(SplineConv, self).__init__",
+          "lineNumber": 200
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 200
+        },
+        {
+          "caller": "__init__",
+          "callee": "pyg.nn.SplineConv",
+          "lineNumber": 201
+        },
+        {
+          "caller": "forward",
+          "callee": "self.model",
+          "lineNumber": 208
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(GeneralConv, self).__init__",
+          "lineNumber": 214
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 214
+        },
+        {
+          "caller": "__init__",
+          "callee": "GeneralConvLayer",
+          "lineNumber": 215
+        },
+        {
+          "caller": "forward",
+          "callee": "self.model",
+          "lineNumber": 218
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(GeneralEdgeConv, self).__init__",
+          "lineNumber": 224
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 224
+        },
+        {
+          "caller": "__init__",
+          "callee": "GeneralEdgeConvLayer",
+          "lineNumber": 225
+        },
+        {
+          "caller": "forward",
+          "callee": "self.model",
+          "lineNumber": 228
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(GeneralSampleEdgeConv, self).__init__",
+          "lineNumber": 236
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 236
+        },
+        {
+          "caller": "__init__",
+          "callee": "GeneralEdgeConvLayer",
+          "lineNumber": 237
+        },
+        {
+          "caller": "forward",
+          "callee": "torch.rand",
+          "lineNumber": 240
+        },
+        {
+          "caller": "forward",
+          "callee": "self.model",
+          "lineNumber": 243
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 14,
+        "functionCount": 0,
+        "classCount": 14
+      }
+    },
+    {
+      "path": "fraudGT/graphgym/models/layer_deepsnap.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 263,
+      "nonEmptyLines": 216,
+      "classes": [
+        {
+          "name": "GeneralLayer",
+          "startLine": 14,
+          "endLine": 54,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "GeneralMultiLayer",
+          "startLine": 57,
+          "endLine": 79,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "Linear",
+          "startLine": 84,
+          "endLine": 94,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "BatchNorm1dNode",
+          "startLine": 97,
+          "endLine": 105,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "BatchNorm1dEdge",
+          "startLine": 108,
+          "endLine": 116,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "MLP",
+          "startLine": 119,
+          "endLine": 151,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "GCNConv",
+          "startLine": 154,
+          "endLine": 161,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "SAGEConv",
+          "startLine": 164,
+          "endLine": 171,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "GATConv",
+          "startLine": 174,
+          "endLine": 181,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "GINConv",
+          "startLine": 184,
+          "endLine": 193,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "SplineConv",
+          "startLine": 196,
+          "endLine": 208,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "GeneralConv",
+          "startLine": 211,
+          "endLine": 218,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "GeneralEdgeConv",
+          "startLine": 221,
+          "endLine": 230,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "GeneralSampleEdgeConv",
+          "startLine": 233,
+          "endLine": 245,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "GeneralLayer",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "GeneralMultiLayer",
+          "line": 57,
+          "isDefault": false
+        },
+        {
+          "name": "Linear",
+          "line": 84,
+          "isDefault": false
+        },
+        {
+          "name": "BatchNorm1dNode",
+          "line": 97,
+          "isDefault": false
+        },
+        {
+          "name": "BatchNorm1dEdge",
+          "line": 108,
+          "isDefault": false
+        },
+        {
+          "name": "MLP",
+          "line": 119,
+          "isDefault": false
+        },
+        {
+          "name": "GCNConv",
+          "line": 154,
+          "isDefault": false
+        },
+        {
+          "name": "SAGEConv",
+          "line": 164,
+          "isDefault": false
+        },
+        {
+          "name": "GATConv",
+          "line": 174,
+          "isDefault": false
+        },
+        {
+          "name": "GINConv",
+          "line": 184,
+          "isDefault": false
+        },
+        {
+          "name": "SplineConv",
+          "line": 196,
+          "isDefault": false
+        },
+        {
+          "name": "GeneralConv",
+          "line": 211,
+          "isDefault": false
+        },
+        {
+          "name": "GeneralEdgeConv",
+          "line": 221,
+          "isDefault": false
+        },
+        {
+          "name": "GeneralSampleEdgeConv",
+          "line": 233,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super(GeneralLayer, self).__init__",
+          "lineNumber": 24
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 24
+        },
+        {
+          "caller": "__init__",
+          "callee": "layer_wrapper.append",
+          "lineNumber": 33
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.BatchNorm1d",
+          "lineNumber": 34
+        },
+        {
+          "caller": "__init__",
+          "callee": "layer_wrapper.append",
+          "lineNumber": 36
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Dropout",
+          "lineNumber": 37
+        },
+        {
+          "caller": "__init__",
+          "callee": "layer_wrapper.append",
+          "lineNumber": 39
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Sequential",
+          "lineNumber": 40
+        },
+        {
+          "caller": "forward",
+          "callee": "self.layer",
+          "lineNumber": 43
+        },
+        {
+          "caller": "forward",
+          "callee": "isinstance",
+          "lineNumber": 44
+        },
+        {
+          "caller": "forward",
+          "callee": "self.post_layer",
+          "lineNumber": 45
+        },
+        {
+          "caller": "forward",
+          "callee": "F.normalize",
+          "lineNumber": 47
+        },
+        {
+          "caller": "forward",
+          "callee": "self.post_layer",
+          "lineNumber": 49
+        },
+        {
+          "caller": "forward",
+          "callee": "F.normalize",
+          "lineNumber": 51
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(GeneralMultiLayer, self).__init__",
+          "lineNumber": 67
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 67
+        },
+        {
+          "caller": "__init__",
+          "callee": "range",
+          "lineNumber": 69
+        },
+        {
+          "caller": "__init__",
+          "callee": "GeneralLayer",
+          "lineNumber": 73
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.add_module",
+          "lineNumber": 74
+        },
+        {
+          "caller": "__init__",
+          "callee": "'Layer_{}'.format",
+          "lineNumber": 74
+        },
+        {
+          "caller": "forward",
+          "callee": "self.children",
+          "lineNumber": 77
+        },
+        {
+          "caller": "forward",
+          "callee": "layer",
+          "lineNumber": 78
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(Linear, self).__init__",
+          "lineNumber": 86
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 86
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 87
+        },
+        {
+          "caller": "forward",
+          "callee": "isinstance",
+          "lineNumber": 90
+        },
+        {
+          "caller": "forward",
+          "callee": "self.model",
+          "lineNumber": 91
+        },
+        {
+          "caller": "forward",
+          "callee": "self.model",
+          "lineNumber": 93
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(BatchNorm1dNode, self).__init__",
+          "lineNumber": 100
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 100
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.BatchNorm1d",
+          "lineNumber": 101
+        },
+        {
+          "caller": "forward",
+          "callee": "self.bn",
+          "lineNumber": 104
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(BatchNorm1dEdge, self).__init__",
+          "lineNumber": 111
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 111
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.BatchNorm1d",
+          "lineNumber": 112
+        },
+        {
+          "caller": "forward",
+          "callee": "self.bn",
+          "lineNumber": 115
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(MLP, self).__init__",
+          "lineNumber": 130
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 130
+        },
+        {
+          "caller": "__init__",
+          "callee": "layers.append",
+          "lineNumber": 134
+        },
+        {
+          "caller": "__init__",
+          "callee": "GeneralMultiLayer",
+          "lineNumber": 135
+        },
+        {
+          "caller": "__init__",
+          "callee": "layers.append",
+          "lineNumber": 141
+        },
+        {
+          "caller": "__init__",
+          "callee": "Linear",
+          "lineNumber": 141
+        },
+        {
+          "caller": "__init__",
+          "callee": "layers.append",
+          "lineNumber": 143
+        },
+        {
+          "caller": "__init__",
+          "callee": "Linear",
+          "lineNumber": 143
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Sequential",
+          "lineNumber": 144
+        },
+        {
+          "caller": "forward",
+          "callee": "isinstance",
+          "lineNumber": 147
+        },
+        {
+          "caller": "forward",
+          "callee": "self.model",
+          "lineNumber": 148
+        },
+        {
+          "caller": "forward",
+          "callee": "self.model",
+          "lineNumber": 150
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(GCNConv, self).__init__",
+          "lineNumber": 156
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 156
+        },
+        {
+          "caller": "__init__",
+          "callee": "pyg.nn.GCNConv",
+          "lineNumber": 157
+        },
+        {
+          "caller": "forward",
+          "callee": "self.model",
+          "lineNumber": 160
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(SAGEConv, self).__init__",
+          "lineNumber": 166
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 166
+        },
+        {
+          "caller": "__init__",
+          "callee": "pyg.nn.SAGEConv",
+          "lineNumber": 167
+        },
+        {
+          "caller": "forward",
+          "callee": "self.model",
+          "lineNumber": 170
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(GATConv, self).__init__",
+          "lineNumber": 176
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 176
+        },
+        {
+          "caller": "__init__",
+          "callee": "pyg.nn.GATConv",
+          "lineNumber": 177
+        },
+        {
+          "caller": "forward",
+          "callee": "self.model",
+          "lineNumber": 180
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(GINConv, self).__init__",
+          "lineNumber": 186
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 186
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Sequential",
+          "lineNumber": 187
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 187
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.ReLU",
+          "lineNumber": 187
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 188
+        },
+        {
+          "caller": "__init__",
+          "callee": "pyg.nn.GINConv",
+          "lineNumber": 189
+        },
+        {
+          "caller": "forward",
+          "callee": "self.model",
+          "lineNumber": 192
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(SplineConv, self).__init__",
+          "lineNumber": 198
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 198
+        },
+        {
+          "caller": "__init__",
+          "callee": "pyg.nn.SplineConv",
+          "lineNumber": 199
+        },
+        {
+          "caller": "forward",
+          "callee": "self.model",
+          "lineNumber": 206
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(GeneralConv, self).__init__",
+          "lineNumber": 213
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 213
+        },
+        {
+          "caller": "__init__",
+          "callee": "GeneralConvLayer",
+          "lineNumber": 214
+        },
+        {
+          "caller": "forward",
+          "callee": "self.model",
+          "lineNumber": 217
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(GeneralEdgeConv, self).__init__",
+          "lineNumber": 223
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 223
+        },
+        {
+          "caller": "__init__",
+          "callee": "GeneralEdgeConvLayer",
+          "lineNumber": 224
+        },
+        {
+          "caller": "forward",
+          "callee": "self.model",
+          "lineNumber": 227
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(GeneralSampleEdgeConv, self).__init__",
+          "lineNumber": 235
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 235
+        },
+        {
+          "caller": "__init__",
+          "callee": "GeneralEdgeConvLayer",
+          "lineNumber": 236
+        },
+        {
+          "caller": "forward",
+          "callee": "torch.rand",
+          "lineNumber": 239
+        },
+        {
+          "caller": "forward",
+          "callee": "self.model",
+          "lineNumber": 242
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 14,
+        "functionCount": 0,
+        "classCount": 14
+      }
+    },
+    {
+      "path": "fraudGT/graphgym/models/pooling.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 42,
+      "nonEmptyLines": 31,
+      "functions": [
+        {
+          "name": "global_add_pool",
+          "startLine": 11,
+          "endLine": 16,
+          "params": [
+            "x",
+            "batch",
+            "id",
+            "size"
+          ]
+        },
+        {
+          "name": "global_mean_pool",
+          "startLine": 19,
+          "endLine": 24,
+          "params": [
+            "x",
+            "batch",
+            "id",
+            "size"
+          ]
+        },
+        {
+          "name": "global_max_pool",
+          "startLine": 27,
+          "endLine": 32,
+          "params": [
+            "x",
+            "batch",
+            "id",
+            "size"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "global_add_pool",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "global_mean_pool",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "global_max_pool",
+          "line": 27,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "global_add_pool",
+          "callee": "batch.max().item",
+          "lineNumber": 12
+        },
+        {
+          "caller": "global_add_pool",
+          "callee": "batch.max",
+          "lineNumber": 12
+        },
+        {
+          "caller": "global_add_pool",
+          "callee": "torch.index_select",
+          "lineNumber": 14
+        },
+        {
+          "caller": "global_add_pool",
+          "callee": "torch.index_select",
+          "lineNumber": 15
+        },
+        {
+          "caller": "global_add_pool",
+          "callee": "scatter",
+          "lineNumber": 16
+        },
+        {
+          "caller": "global_mean_pool",
+          "callee": "batch.max().item",
+          "lineNumber": 20
+        },
+        {
+          "caller": "global_mean_pool",
+          "callee": "batch.max",
+          "lineNumber": 20
+        },
+        {
+          "caller": "global_mean_pool",
+          "callee": "torch.index_select",
+          "lineNumber": 22
+        },
+        {
+          "caller": "global_mean_pool",
+          "callee": "torch.index_select",
+          "lineNumber": 23
+        },
+        {
+          "caller": "global_mean_pool",
+          "callee": "scatter",
+          "lineNumber": 24
+        },
+        {
+          "caller": "global_max_pool",
+          "callee": "batch.max().item",
+          "lineNumber": 28
+        },
+        {
+          "caller": "global_max_pool",
+          "callee": "batch.max",
+          "lineNumber": 28
+        },
+        {
+          "caller": "global_max_pool",
+          "callee": "torch.index_select",
+          "lineNumber": 30
+        },
+        {
+          "caller": "global_max_pool",
+          "callee": "torch.index_select",
+          "lineNumber": 31
+        },
+        {
+          "caller": "global_max_pool",
+          "callee": "scatter",
+          "lineNumber": 32
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "fraudGT/graphgym/models/transform.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 133,
+      "nonEmptyLines": 110,
+      "functions": [
+        {
+          "name": "remove_node_feature",
+          "startLine": 6,
+          "endLine": 8,
+          "params": [
+            "graph"
+          ]
+        },
+        {
+          "name": "ego_nets",
+          "startLine": 11,
+          "endLine": 38,
+          "params": [
+            "graph",
+            "radius"
+          ]
+        },
+        {
+          "name": "edge_nets",
+          "startLine": 41,
+          "endLine": 65,
+          "params": [
+            "graph"
+          ]
+        },
+        {
+          "name": "path_len",
+          "startLine": 68,
+          "endLine": 91,
+          "params": [
+            "graph"
+          ]
+        },
+        {
+          "name": "create_link_label",
+          "startLine": 94,
+          "endLine": 110,
+          "params": [
+            "pos_edge_index",
+            "neg_edge_index"
+          ]
+        },
+        {
+          "name": "neg_sampling_transform",
+          "startLine": 113,
+          "endLine": 132,
+          "params": [
+            "data"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "remove_node_feature",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "ego_nets",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "edge_nets",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "path_len",
+          "line": 68,
+          "isDefault": false
+        },
+        {
+          "name": "create_link_label",
+          "line": 94,
+          "isDefault": false
+        },
+        {
+          "name": "neg_sampling_transform",
+          "line": 113,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "remove_node_feature",
+          "callee": "torch.ones",
+          "lineNumber": 8
+        },
+        {
+          "caller": "ego_nets",
+          "callee": "range",
+          "lineNumber": 17
+        },
+        {
+          "caller": "ego_nets",
+          "callee": "egos.append",
+          "lineNumber": 19
+        },
+        {
+          "caller": "ego_nets",
+          "callee": "egos.append",
+          "lineNumber": 21
+        },
+        {
+          "caller": "ego_nets",
+          "callee": "nx.ego_graph",
+          "lineNumber": 21
+        },
+        {
+          "caller": "ego_nets",
+          "callee": "graph.G.__class__",
+          "lineNumber": 23
+        },
+        {
+          "caller": "ego_nets",
+          "callee": "range",
+          "lineNumber": 25
+        },
+        {
+          "caller": "ego_nets",
+          "callee": "len",
+          "lineNumber": 25
+        },
+        {
+          "caller": "ego_nets",
+          "callee": "G.add_node",
+          "lineNumber": 26
+        },
+        {
+          "caller": "ego_nets",
+          "callee": "egos[i].nodes",
+          "lineNumber": 26
+        },
+        {
+          "caller": "ego_nets",
+          "callee": "range",
+          "lineNumber": 27
+        },
+        {
+          "caller": "ego_nets",
+          "callee": "len",
+          "lineNumber": 27
+        },
+        {
+          "caller": "ego_nets",
+          "callee": "list",
+          "lineNumber": 28
+        },
+        {
+          "caller": "ego_nets",
+          "callee": "keys.remove",
+          "lineNumber": 29
+        },
+        {
+          "caller": "ego_nets",
+          "callee": "egos[i].number_of_nodes",
+          "lineNumber": 30
+        },
+        {
+          "caller": "ego_nets",
+          "callee": "range",
+          "lineNumber": 31
+        },
+        {
+          "caller": "ego_nets",
+          "callee": "dict",
+          "lineNumber": 33
+        },
+        {
+          "caller": "ego_nets",
+          "callee": "zip",
+          "lineNumber": 33
+        },
+        {
+          "caller": "ego_nets",
+          "callee": "nx.relabel_nodes",
+          "lineNumber": 34
+        },
+        {
+          "caller": "ego_nets",
+          "callee": "G.add_nodes_from",
+          "lineNumber": 35
+        },
+        {
+          "caller": "ego_nets",
+          "callee": "ego.nodes",
+          "lineNumber": 35
+        },
+        {
+          "caller": "ego_nets",
+          "callee": "G.add_edges_from",
+          "lineNumber": 36
+        },
+        {
+          "caller": "ego_nets",
+          "callee": "ego.edges",
+          "lineNumber": 36
+        },
+        {
+          "caller": "ego_nets",
+          "callee": "torch.arange",
+          "lineNumber": 38
+        },
+        {
+          "caller": "ego_nets",
+          "callee": "len",
+          "lineNumber": 38
+        },
+        {
+          "caller": "edge_nets",
+          "callee": "graph.G.__class__",
+          "lineNumber": 48
+        },
+        {
+          "caller": "edge_nets",
+          "callee": "range",
+          "lineNumber": 49
+        },
+        {
+          "caller": "edge_nets",
+          "callee": "list",
+          "lineNumber": 50
+        },
+        {
+          "caller": "edge_nets",
+          "callee": "range",
+          "lineNumber": 51
+        },
+        {
+          "caller": "edge_nets",
+          "callee": "dict",
+          "lineNumber": 52
+        },
+        {
+          "caller": "edge_nets",
+          "callee": "zip",
+          "lineNumber": 52
+        },
+        {
+          "caller": "edge_nets",
+          "callee": "nx.relabel_nodes",
+          "lineNumber": 53
+        },
+        {
+          "caller": "edge_nets",
+          "callee": "G.add_nodes_from",
+          "lineNumber": 54
+        },
+        {
+          "caller": "edge_nets",
+          "callee": "G_raw.nodes",
+          "lineNumber": 54
+        },
+        {
+          "caller": "edge_nets",
+          "callee": "G.add_edges_from",
+          "lineNumber": 55
+        },
+        {
+          "caller": "edge_nets",
+          "callee": "G_raw.edges",
+          "lineNumber": 55
+        },
+        {
+          "caller": "edge_nets",
+          "callee": "torch.arange",
+          "lineNumber": 57
+        },
+        {
+          "caller": "path_len",
+          "callee": "torch.randint",
+          "lineNumber": 73
+        },
+        {
+          "caller": "path_len",
+          "callee": "dict",
+          "lineNumber": 76
+        },
+        {
+          "caller": "path_len",
+          "callee": "nx.all_pairs_shortest_path_length",
+          "lineNumber": 76
+        },
+        {
+          "caller": "path_len",
+          "callee": "range",
+          "lineNumber": 79
+        },
+        {
+          "caller": "path_len",
+          "callee": "edge_label_index[0, i].item",
+          "lineNumber": 80
+        },
+        {
+          "caller": "path_len",
+          "callee": "edge_label_index[1, i].item",
+          "lineNumber": 81
+        },
+        {
+          "caller": "path_len",
+          "callee": "edge_label.append",
+          "lineNumber": 86
+        },
+        {
+          "caller": "path_len",
+          "callee": "min",
+          "lineNumber": 86
+        },
+        {
+          "caller": "path_len",
+          "callee": "index_keep.append",
+          "lineNumber": 87
+        },
+        {
+          "caller": "path_len",
+          "callee": "torch.tensor",
+          "lineNumber": 89
+        },
+        {
+          "caller": "create_link_label",
+          "callee": "pos_edge_index.size",
+          "lineNumber": 105
+        },
+        {
+          "caller": "create_link_label",
+          "callee": "neg_edge_index.size",
+          "lineNumber": 105
+        },
+        {
+          "caller": "create_link_label",
+          "callee": "torch.zeros",
+          "lineNumber": 106
+        },
+        {
+          "caller": "create_link_label",
+          "callee": "pos_edge_index.size",
+          "lineNumber": 109
+        },
+        {
+          "caller": "neg_sampling_transform",
+          "callee": "negative_sampling",
+          "lineNumber": 123
+        },
+        {
+          "caller": "neg_sampling_transform",
+          "callee": "data.train_pos_edge_index.size",
+          "lineNumber": 126
+        },
+        {
+          "caller": "neg_sampling_transform",
+          "callee": "torch.cat",
+          "lineNumber": 127
+        },
+        {
+          "caller": "neg_sampling_transform",
+          "callee": "create_link_label",
+          "lineNumber": 129
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 6,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "fraudGT/graphgym/optimizer.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 78,
+      "nonEmptyLines": 57,
+      "functions": [
+        {
+          "name": "adam_optimizer",
+          "startLine": 21,
+          "endLine": 23,
+          "params": [
+            "params",
+            "base_lr",
+            "weight_decay"
+          ]
+        },
+        {
+          "name": "sgd_optimizer",
+          "startLine": 27,
+          "endLine": 30,
+          "params": [
+            "params",
+            "base_lr",
+            "momentum",
+            "weight_decay"
+          ]
+        },
+        {
+          "name": "create_optimizer",
+          "startLine": 33,
+          "endLine": 44,
+          "params": [
+            "params",
+            "cfg"
+          ]
+        },
+        {
+          "name": "none_scheduler",
+          "startLine": 57,
+          "endLine": 58,
+          "params": [
+            "optimizer",
+            "max_epoch"
+          ]
+        },
+        {
+          "name": "step_scheduler",
+          "startLine": 62,
+          "endLine": 64,
+          "params": [
+            "optimizer",
+            "steps",
+            "lr_decay"
+          ]
+        },
+        {
+          "name": "cos_scheduler",
+          "startLine": 68,
+          "endLine": 69,
+          "params": [
+            "optimizer",
+            "max_epoch"
+          ]
+        },
+        {
+          "name": "create_scheduler",
+          "startLine": 72,
+          "endLine": 77,
+          "params": [
+            "optimizer",
+            "cfg"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "OptimizerConfig",
+          "startLine": 13,
+          "endLine": 17,
+          "methods": [],
+          "properties": [
+            "optimizer",
+            "base_lr",
+            "weight_decay",
+            "momentum"
+          ]
+        },
+        {
+          "name": "SchedulerConfig",
+          "startLine": 48,
+          "endLine": 52,
+          "methods": [],
+          "properties": [
+            "scheduler",
+            "steps",
+            "lr_decay",
+            "max_epoch"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "OptimizerConfig",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "adam_optimizer",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "sgd_optimizer",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "create_optimizer",
+          "line": 33,
+          "isDefault": false
+        },
+        {
+          "name": "SchedulerConfig",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "none_scheduler",
+          "line": 55,
+          "isDefault": false
+        },
+        {
+          "name": "step_scheduler",
+          "line": 61,
+          "isDefault": false
+        },
+        {
+          "name": "cos_scheduler",
+          "line": 67,
+          "isDefault": false
+        },
+        {
+          "name": "create_scheduler",
+          "line": 72,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "adam_optimizer",
+          "callee": "Adam",
+          "lineNumber": 23
+        },
+        {
+          "caller": "sgd_optimizer",
+          "callee": "SGD",
+          "lineNumber": 29
+        },
+        {
+          "caller": "create_optimizer",
+          "callee": "list",
+          "lineNumber": 35
+        },
+        {
+          "caller": "create_optimizer",
+          "callee": "isinstance",
+          "lineNumber": 37
+        },
+        {
+          "caller": "create_optimizer",
+          "callee": "filter",
+          "lineNumber": 38
+        },
+        {
+          "caller": "create_optimizer",
+          "callee": "filter",
+          "lineNumber": 40
+        },
+        {
+          "caller": "create_optimizer",
+          "callee": "register.optimizer_dict.get",
+          "lineNumber": 41
+        },
+        {
+          "caller": "create_optimizer",
+          "callee": "from_config",
+          "lineNumber": 43
+        },
+        {
+          "caller": "create_optimizer",
+          "callee": "ValueError",
+          "lineNumber": 44
+        },
+        {
+          "caller": "none_scheduler",
+          "callee": "StepLR",
+          "lineNumber": 58
+        },
+        {
+          "caller": "step_scheduler",
+          "callee": "MultiStepLR",
+          "lineNumber": 64
+        },
+        {
+          "caller": "cos_scheduler",
+          "callee": "CosineAnnealingLR",
+          "lineNumber": 69
+        },
+        {
+          "caller": "create_scheduler",
+          "callee": "register.scheduler_dict.get",
+          "lineNumber": 74
+        },
+        {
+          "caller": "create_scheduler",
+          "callee": "from_config",
+          "lineNumber": 76
+        },
+        {
+          "caller": "create_scheduler",
+          "callee": "ValueError",
+          "lineNumber": 77
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 9,
+        "functionCount": 7,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "fraudGT/graphgym/register.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 176,
+      "nonEmptyLines": 123,
+      "functions": [
+        {
+          "name": "register_base",
+          "startLine": 24,
+          "endLine": 47,
+          "params": [
+            "mapping",
+            "key",
+            "module"
+          ]
+        },
+        {
+          "name": "register_act",
+          "startLine": 50,
+          "endLine": 52,
+          "params": [
+            "key",
+            "module"
+          ]
+        },
+        {
+          "name": "register_node_encoder",
+          "startLine": 55,
+          "endLine": 57,
+          "params": [
+            "key",
+            "module"
+          ]
+        },
+        {
+          "name": "register_edge_encoder",
+          "startLine": 60,
+          "endLine": 62,
+          "params": [
+            "key",
+            "module"
+          ]
+        },
+        {
+          "name": "register_stage",
+          "startLine": 65,
+          "endLine": 67,
+          "params": [
+            "key",
+            "module"
+          ]
+        },
+        {
+          "name": "register_head",
+          "startLine": 70,
+          "endLine": 72,
+          "params": [
+            "key",
+            "module"
+          ]
+        },
+        {
+          "name": "register_layer",
+          "startLine": 75,
+          "endLine": 77,
+          "params": [
+            "key",
+            "module"
+          ]
+        },
+        {
+          "name": "register_pooling",
+          "startLine": 80,
+          "endLine": 82,
+          "params": [
+            "key",
+            "module"
+          ]
+        },
+        {
+          "name": "register_network",
+          "startLine": 85,
+          "endLine": 87,
+          "params": [
+            "key",
+            "module"
+          ]
+        },
+        {
+          "name": "register_config",
+          "startLine": 90,
+          "endLine": 92,
+          "params": [
+            "key",
+            "module"
+          ]
+        },
+        {
+          "name": "register_dataset",
+          "startLine": 95,
+          "endLine": 97,
+          "params": [
+            "key",
+            "module"
+          ]
+        },
+        {
+          "name": "register_loader",
+          "startLine": 100,
+          "endLine": 102,
+          "params": [
+            "key",
+            "module"
+          ]
+        },
+        {
+          "name": "register_sampler",
+          "startLine": 105,
+          "endLine": 107,
+          "params": [
+            "key",
+            "module"
+          ]
+        },
+        {
+          "name": "register_optimizer",
+          "startLine": 110,
+          "endLine": 112,
+          "params": [
+            "key",
+            "module"
+          ]
+        },
+        {
+          "name": "register_scheduler",
+          "startLine": 115,
+          "endLine": 117,
+          "params": [
+            "key",
+            "module"
+          ]
+        },
+        {
+          "name": "register_loss",
+          "startLine": 120,
+          "endLine": 122,
+          "params": [
+            "key",
+            "module"
+          ]
+        },
+        {
+          "name": "register_train",
+          "startLine": 125,
+          "endLine": 127,
+          "params": [
+            "key",
+            "module"
+          ]
+        },
+        {
+          "name": "register_metric",
+          "startLine": 130,
+          "endLine": 132,
+          "params": [
+            "key",
+            "module"
+          ]
+        },
+        {
+          "name": "register_feature_augment",
+          "startLine": 135,
+          "endLine": 136,
+          "params": [
+            "key",
+            "module"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ModuleStore",
+          "startLine": 139,
+          "endLine": 172,
+          "methods": [
+            "__init__",
+            "register"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "register_base",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "register_act",
+          "line": 50,
+          "isDefault": false
+        },
+        {
+          "name": "register_node_encoder",
+          "line": 55,
+          "isDefault": false
+        },
+        {
+          "name": "register_edge_encoder",
+          "line": 60,
+          "isDefault": false
+        },
+        {
+          "name": "register_stage",
+          "line": 65,
+          "isDefault": false
+        },
+        {
+          "name": "register_head",
+          "line": 70,
+          "isDefault": false
+        },
+        {
+          "name": "register_layer",
+          "line": 75,
+          "isDefault": false
+        },
+        {
+          "name": "register_pooling",
+          "line": 80,
+          "isDefault": false
+        },
+        {
+          "name": "register_network",
+          "line": 85,
+          "isDefault": false
+        },
+        {
+          "name": "register_config",
+          "line": 90,
+          "isDefault": false
+        },
+        {
+          "name": "register_dataset",
+          "line": 95,
+          "isDefault": false
+        },
+        {
+          "name": "register_loader",
+          "line": 100,
+          "isDefault": false
+        },
+        {
+          "name": "register_sampler",
+          "line": 105,
+          "isDefault": false
+        },
+        {
+          "name": "register_optimizer",
+          "line": 110,
+          "isDefault": false
+        },
+        {
+          "name": "register_scheduler",
+          "line": 115,
+          "isDefault": false
+        },
+        {
+          "name": "register_loss",
+          "line": 120,
+          "isDefault": false
+        },
+        {
+          "name": "register_train",
+          "line": 125,
+          "isDefault": false
+        },
+        {
+          "name": "register_metric",
+          "line": 130,
+          "isDefault": false
+        },
+        {
+          "name": "register_feature_augment",
+          "line": 135,
+          "isDefault": false
+        },
+        {
+          "name": "ModuleStore",
+          "line": 139,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "register_base",
+          "callee": "KeyError",
+          "lineNumber": 38
+        },
+        {
+          "caller": "bounded_register",
+          "callee": "register_base",
+          "lineNumber": 44
+        },
+        {
+          "caller": "register_act",
+          "callee": "register_base",
+          "lineNumber": 52
+        },
+        {
+          "caller": "register_node_encoder",
+          "callee": "register_base",
+          "lineNumber": 57
+        },
+        {
+          "caller": "register_edge_encoder",
+          "callee": "register_base",
+          "lineNumber": 62
+        },
+        {
+          "caller": "register_stage",
+          "callee": "register_base",
+          "lineNumber": 67
+        },
+        {
+          "caller": "register_head",
+          "callee": "register_base",
+          "lineNumber": 72
+        },
+        {
+          "caller": "register_layer",
+          "callee": "register_base",
+          "lineNumber": 77
+        },
+        {
+          "caller": "register_pooling",
+          "callee": "register_base",
+          "lineNumber": 82
+        },
+        {
+          "caller": "register_network",
+          "callee": "register_base",
+          "lineNumber": 87
+        },
+        {
+          "caller": "register_config",
+          "callee": "register_base",
+          "lineNumber": 92
+        },
+        {
+          "caller": "register_dataset",
+          "callee": "register_base",
+          "lineNumber": 97
+        },
+        {
+          "caller": "register_loader",
+          "callee": "register_base",
+          "lineNumber": 102
+        },
+        {
+          "caller": "register_sampler",
+          "callee": "register_base",
+          "lineNumber": 107
+        },
+        {
+          "caller": "register_optimizer",
+          "callee": "register_base",
+          "lineNumber": 112
+        },
+        {
+          "caller": "register_scheduler",
+          "callee": "register_base",
+          "lineNumber": 117
+        },
+        {
+          "caller": "register_loss",
+          "callee": "register_base",
+          "lineNumber": 122
+        },
+        {
+          "caller": "register_train",
+          "callee": "register_base",
+          "lineNumber": 127
+        },
+        {
+          "caller": "register_metric",
+          "callee": "register_base",
+          "lineNumber": 132
+        },
+        {
+          "caller": "register_feature_augment",
+          "callee": "register_base",
+          "lineNumber": 136
+        },
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 141
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 141
+        },
+        {
+          "caller": "register",
+          "callee": "self.keys",
+          "lineNumber": 156
+        },
+        {
+          "caller": "register",
+          "callee": "warnings.warn",
+          "lineNumber": 161
+        },
+        {
+          "caller": "bounded_register",
+          "callee": "self.register",
+          "lineNumber": 169
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 20,
+        "functionCount": 19,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "fraudGT/graphgym/train.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 89,
+      "nonEmptyLines": 76,
+      "functions": [
+        {
+          "name": "train_epoch",
+          "startLine": 12,
+          "endLine": 30,
+          "params": [
+            "logger",
+            "loader",
+            "model",
+            "optimizer",
+            "scheduler"
+          ]
+        },
+        {
+          "name": "eval_epoch",
+          "startLine": 34,
+          "endLine": 48,
+          "params": [
+            "logger",
+            "loader",
+            "model",
+            "split"
+          ]
+        },
+        {
+          "name": "train",
+          "startLine": 51,
+          "endLine": 88,
+          "params": [
+            "loggers",
+            "loaders",
+            "model",
+            "optimizer",
+            "scheduler"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "train_epoch",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "eval_epoch",
+          "line": 33,
+          "isDefault": false
+        },
+        {
+          "name": "train",
+          "line": 51,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "train_epoch",
+          "callee": "model.train",
+          "lineNumber": 13
+        },
+        {
+          "caller": "train_epoch",
+          "callee": "time.time",
+          "lineNumber": 14
+        },
+        {
+          "caller": "train_epoch",
+          "callee": "optimizer.zero_grad",
+          "lineNumber": 17
+        },
+        {
+          "caller": "train_epoch",
+          "callee": "batch.to",
+          "lineNumber": 18
+        },
+        {
+          "caller": "train_epoch",
+          "callee": "torch.device",
+          "lineNumber": 18
+        },
+        {
+          "caller": "train_epoch",
+          "callee": "model",
+          "lineNumber": 19
+        },
+        {
+          "caller": "train_epoch",
+          "callee": "compute_loss",
+          "lineNumber": 20
+        },
+        {
+          "caller": "train_epoch",
+          "callee": "loss.backward",
+          "lineNumber": 21
+        },
+        {
+          "caller": "train_epoch",
+          "callee": "optimizer.step",
+          "lineNumber": 22
+        },
+        {
+          "caller": "train_epoch",
+          "callee": "logger.update_stats",
+          "lineNumber": 23
+        },
+        {
+          "caller": "train_epoch",
+          "callee": "true.detach().cpu",
+          "lineNumber": 23
+        },
+        {
+          "caller": "train_epoch",
+          "callee": "true.detach",
+          "lineNumber": 23
+        },
+        {
+          "caller": "train_epoch",
+          "callee": "pred_score.detach().cpu",
+          "lineNumber": 24
+        },
+        {
+          "caller": "train_epoch",
+          "callee": "pred_score.detach",
+          "lineNumber": 24
+        },
+        {
+          "caller": "train_epoch",
+          "callee": "loss.item",
+          "lineNumber": 25
+        },
+        {
+          "caller": "train_epoch",
+          "callee": "scheduler.get_last_lr",
+          "lineNumber": 26
+        },
+        {
+          "caller": "train_epoch",
+          "callee": "time.time",
+          "lineNumber": 27
+        },
+        {
+          "caller": "train_epoch",
+          "callee": "time.time",
+          "lineNumber": 29
+        },
+        {
+          "caller": "train_epoch",
+          "callee": "scheduler.step",
+          "lineNumber": 30
+        },
+        {
+          "caller": "eval_epoch",
+          "callee": "model.eval",
+          "lineNumber": 35
+        },
+        {
+          "caller": "eval_epoch",
+          "callee": "time.time",
+          "lineNumber": 36
+        },
+        {
+          "caller": "eval_epoch",
+          "callee": "batch.to",
+          "lineNumber": 39
+        },
+        {
+          "caller": "eval_epoch",
+          "callee": "torch.device",
+          "lineNumber": 39
+        },
+        {
+          "caller": "eval_epoch",
+          "callee": "model",
+          "lineNumber": 40
+        },
+        {
+          "caller": "eval_epoch",
+          "callee": "compute_loss",
+          "lineNumber": 41
+        },
+        {
+          "caller": "eval_epoch",
+          "callee": "logger.update_stats",
+          "lineNumber": 42
+        },
+        {
+          "caller": "eval_epoch",
+          "callee": "true.detach().cpu",
+          "lineNumber": 42
+        },
+        {
+          "caller": "eval_epoch",
+          "callee": "true.detach",
+          "lineNumber": 42
+        },
+        {
+          "caller": "eval_epoch",
+          "callee": "pred_score.detach().cpu",
+          "lineNumber": 43
+        },
+        {
+          "caller": "eval_epoch",
+          "callee": "pred_score.detach",
+          "lineNumber": 43
+        },
+        {
+          "caller": "eval_epoch",
+          "callee": "loss.item",
+          "lineNumber": 44
+        },
+        {
+          "caller": "eval_epoch",
+          "callee": "time.time",
+          "lineNumber": 46
+        },
+        {
+          "caller": "eval_epoch",
+          "callee": "time.time",
+          "lineNumber": 48
+        },
+        {
+          "caller": "train",
+          "callee": "load_ckpt",
+          "lineNumber": 65
+        },
+        {
+          "caller": "train",
+          "callee": "logging.info",
+          "lineNumber": 67
+        },
+        {
+          "caller": "train",
+          "callee": "logging.info",
+          "lineNumber": 69
+        },
+        {
+          "caller": "train",
+          "callee": "'Start from epoch {}'.format",
+          "lineNumber": 69
+        },
+        {
+          "caller": "train",
+          "callee": "len",
+          "lineNumber": 71
+        },
+        {
+          "caller": "train",
+          "callee": "range",
+          "lineNumber": 73
+        },
+        {
+          "caller": "train",
+          "callee": "train_epoch",
+          "lineNumber": 74
+        },
+        {
+          "caller": "train",
+          "callee": "loggers[0].write_epoch",
+          "lineNumber": 75
+        },
+        {
+          "caller": "train",
+          "callee": "is_eval_epoch",
+          "lineNumber": 76
+        },
+        {
+          "caller": "train",
+          "callee": "range",
+          "lineNumber": 77
+        },
+        {
+          "caller": "train",
+          "callee": "eval_epoch",
+          "lineNumber": 78
+        },
+        {
+          "caller": "train",
+          "callee": "loggers[i].write_epoch",
+          "lineNumber": 80
+        },
+        {
+          "caller": "train",
+          "callee": "is_ckpt_epoch",
+          "lineNumber": 81
+        },
+        {
+          "caller": "train",
+          "callee": "save_ckpt",
+          "lineNumber": 82
+        },
+        {
+          "caller": "train",
+          "callee": "logger.close",
+          "lineNumber": 84
+        },
+        {
+          "caller": "train",
+          "callee": "clean_ckpt",
+          "lineNumber": 86
+        },
+        {
+          "caller": "train",
+          "callee": "logging.info",
+          "lineNumber": 88
+        },
+        {
+          "caller": "train",
+          "callee": "'Task done, results saved in {}'.format",
+          "lineNumber": 88
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "fraudGT/graphgym/train_deepsnap.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 85,
+      "nonEmptyLines": 72,
+      "functions": [
+        {
+          "name": "train_epoch",
+          "startLine": 12,
+          "endLine": 29,
+          "params": [
+            "logger",
+            "loader",
+            "model",
+            "optimizer",
+            "scheduler"
+          ]
+        },
+        {
+          "name": "eval_epoch",
+          "startLine": 33,
+          "endLine": 46,
+          "params": [
+            "logger",
+            "loader",
+            "model"
+          ]
+        },
+        {
+          "name": "train",
+          "startLine": 49,
+          "endLine": 84,
+          "params": [
+            "loggers",
+            "loaders",
+            "model",
+            "optimizer",
+            "scheduler"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "train_epoch",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "eval_epoch",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "train",
+          "line": 49,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "train_epoch",
+          "callee": "model.train",
+          "lineNumber": 13
+        },
+        {
+          "caller": "train_epoch",
+          "callee": "time.time",
+          "lineNumber": 14
+        },
+        {
+          "caller": "train_epoch",
+          "callee": "optimizer.zero_grad",
+          "lineNumber": 16
+        },
+        {
+          "caller": "train_epoch",
+          "callee": "batch.to",
+          "lineNumber": 17
+        },
+        {
+          "caller": "train_epoch",
+          "callee": "torch.device",
+          "lineNumber": 17
+        },
+        {
+          "caller": "train_epoch",
+          "callee": "model",
+          "lineNumber": 18
+        },
+        {
+          "caller": "train_epoch",
+          "callee": "compute_loss",
+          "lineNumber": 19
+        },
+        {
+          "caller": "train_epoch",
+          "callee": "loss.backward",
+          "lineNumber": 20
+        },
+        {
+          "caller": "train_epoch",
+          "callee": "optimizer.step",
+          "lineNumber": 21
+        },
+        {
+          "caller": "train_epoch",
+          "callee": "logger.update_stats",
+          "lineNumber": 22
+        },
+        {
+          "caller": "train_epoch",
+          "callee": "true.detach().cpu",
+          "lineNumber": 22
+        },
+        {
+          "caller": "train_epoch",
+          "callee": "true.detach",
+          "lineNumber": 22
+        },
+        {
+          "caller": "train_epoch",
+          "callee": "pred_score.detach().cpu",
+          "lineNumber": 23
+        },
+        {
+          "caller": "train_epoch",
+          "callee": "pred_score.detach",
+          "lineNumber": 23
+        },
+        {
+          "caller": "train_epoch",
+          "callee": "loss.item",
+          "lineNumber": 24
+        },
+        {
+          "caller": "train_epoch",
+          "callee": "scheduler.get_last_lr",
+          "lineNumber": 25
+        },
+        {
+          "caller": "train_epoch",
+          "callee": "time.time",
+          "lineNumber": 26
+        },
+        {
+          "caller": "train_epoch",
+          "callee": "time.time",
+          "lineNumber": 28
+        },
+        {
+          "caller": "train_epoch",
+          "callee": "scheduler.step",
+          "lineNumber": 29
+        },
+        {
+          "caller": "eval_epoch",
+          "callee": "model.eval",
+          "lineNumber": 34
+        },
+        {
+          "caller": "eval_epoch",
+          "callee": "time.time",
+          "lineNumber": 35
+        },
+        {
+          "caller": "eval_epoch",
+          "callee": "batch.to",
+          "lineNumber": 37
+        },
+        {
+          "caller": "eval_epoch",
+          "callee": "torch.device",
+          "lineNumber": 37
+        },
+        {
+          "caller": "eval_epoch",
+          "callee": "model",
+          "lineNumber": 38
+        },
+        {
+          "caller": "eval_epoch",
+          "callee": "compute_loss",
+          "lineNumber": 39
+        },
+        {
+          "caller": "eval_epoch",
+          "callee": "logger.update_stats",
+          "lineNumber": 40
+        },
+        {
+          "caller": "eval_epoch",
+          "callee": "true.detach().cpu",
+          "lineNumber": 40
+        },
+        {
+          "caller": "eval_epoch",
+          "callee": "true.detach",
+          "lineNumber": 40
+        },
+        {
+          "caller": "eval_epoch",
+          "callee": "pred_score.detach().cpu",
+          "lineNumber": 41
+        },
+        {
+          "caller": "eval_epoch",
+          "callee": "pred_score.detach",
+          "lineNumber": 41
+        },
+        {
+          "caller": "eval_epoch",
+          "callee": "loss.item",
+          "lineNumber": 42
+        },
+        {
+          "caller": "eval_epoch",
+          "callee": "time.time",
+          "lineNumber": 44
+        },
+        {
+          "caller": "eval_epoch",
+          "callee": "time.time",
+          "lineNumber": 46
+        },
+        {
+          "caller": "train",
+          "callee": "load_ckpt",
+          "lineNumber": 63
+        },
+        {
+          "caller": "train",
+          "callee": "logging.info",
+          "lineNumber": 65
+        },
+        {
+          "caller": "train",
+          "callee": "logging.info",
+          "lineNumber": 67
+        },
+        {
+          "caller": "train",
+          "callee": "'Start from epoch {}'.format",
+          "lineNumber": 67
+        },
+        {
+          "caller": "train",
+          "callee": "len",
+          "lineNumber": 69
+        },
+        {
+          "caller": "train",
+          "callee": "range",
+          "lineNumber": 70
+        },
+        {
+          "caller": "train",
+          "callee": "train_epoch",
+          "lineNumber": 71
+        },
+        {
+          "caller": "train",
+          "callee": "loggers[0].write_epoch",
+          "lineNumber": 72
+        },
+        {
+          "caller": "train",
+          "callee": "is_eval_epoch",
+          "lineNumber": 73
+        },
+        {
+          "caller": "train",
+          "callee": "range",
+          "lineNumber": 74
+        },
+        {
+          "caller": "train",
+          "callee": "eval_epoch",
+          "lineNumber": 75
+        },
+        {
+          "caller": "train",
+          "callee": "loggers[i].write_epoch",
+          "lineNumber": 76
+        },
+        {
+          "caller": "train",
+          "callee": "is_ckpt_epoch",
+          "lineNumber": 77
+        },
+        {
+          "caller": "train",
+          "callee": "save_ckpt",
+          "lineNumber": 78
+        },
+        {
+          "caller": "train",
+          "callee": "logger.close",
+          "lineNumber": 80
+        },
+        {
+          "caller": "train",
+          "callee": "clean_ckpt",
+          "lineNumber": 82
+        },
+        {
+          "caller": "train",
+          "callee": "logging.info",
+          "lineNumber": 84
+        },
+        {
+          "caller": "train",
+          "callee": "'Task done, results saved in {}'.format",
+          "lineNumber": 84
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "fraudGT/graphgym/utils/__init__.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "fraudGT/graphgym/utils/agg_runs.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 248,
+      "nonEmptyLines": 217,
+      "functions": [
+        {
+          "name": "is_seed",
+          "startLine": 17,
+          "endLine": 22,
+          "params": [
+            "s"
+          ]
+        },
+        {
+          "name": "is_split",
+          "startLine": 25,
+          "endLine": 29,
+          "params": [
+            "s"
+          ]
+        },
+        {
+          "name": "join_list",
+          "startLine": 32,
+          "endLine": 37,
+          "params": [
+            "l1",
+            "l2"
+          ]
+        },
+        {
+          "name": "agg_dict_list",
+          "startLine": 40,
+          "endLine": 53,
+          "params": [
+            "dict_list"
+          ]
+        },
+        {
+          "name": "name_to_dict",
+          "startLine": 56,
+          "endLine": 66,
+          "params": [
+            "run"
+          ]
+        },
+        {
+          "name": "rm_keys",
+          "startLine": 69,
+          "endLine": 71,
+          "params": [
+            "dict",
+            "keys"
+          ]
+        },
+        {
+          "name": "agg_runs",
+          "startLine": 74,
+          "endLine": 154,
+          "params": [
+            "dir",
+            "metric_best"
+          ]
+        },
+        {
+          "name": "agg_batch",
+          "startLine": 157,
+          "endLine": 247,
+          "params": [
+            "dir",
+            "metric_best"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "is_seed",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "is_split",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "join_list",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "agg_dict_list",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "name_to_dict",
+          "line": 56,
+          "isDefault": false
+        },
+        {
+          "name": "rm_keys",
+          "line": 69,
+          "isDefault": false
+        },
+        {
+          "name": "agg_runs",
+          "line": 74,
+          "isDefault": false
+        },
+        {
+          "name": "agg_batch",
+          "line": 157,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "is_seed",
+          "callee": "int",
+          "lineNumber": 19
+        },
+        {
+          "caller": "join_list",
+          "callee": "len",
+          "lineNumber": 33
+        },
+        {
+          "caller": "join_list",
+          "callee": "len",
+          "lineNumber": 33
+        },
+        {
+          "caller": "join_list",
+          "callee": "range",
+          "lineNumber": 35
+        },
+        {
+          "caller": "join_list",
+          "callee": "len",
+          "lineNumber": 35
+        },
+        {
+          "caller": "agg_dict_list",
+          "callee": "np.array",
+          "lineNumber": 50
+        },
+        {
+          "caller": "agg_dict_list",
+          "callee": "np.mean(value).round",
+          "lineNumber": 51
+        },
+        {
+          "caller": "agg_dict_list",
+          "callee": "np.mean",
+          "lineNumber": 51
+        },
+        {
+          "caller": "agg_dict_list",
+          "callee": "'{}_std'.format",
+          "lineNumber": 52
+        },
+        {
+          "caller": "agg_dict_list",
+          "callee": "np.std(value).round",
+          "lineNumber": 52
+        },
+        {
+          "caller": "agg_dict_list",
+          "callee": "np.std",
+          "lineNumber": 52
+        },
+        {
+          "caller": "name_to_dict",
+          "callee": "run.split",
+          "lineNumber": 57
+        },
+        {
+          "caller": "name_to_dict",
+          "callee": "col.split",
+          "lineNumber": 61
+        },
+        {
+          "caller": "name_to_dict",
+          "callee": "print",
+          "lineNumber": 63
+        },
+        {
+          "caller": "name_to_dict",
+          "callee": "keys.append",
+          "lineNumber": 64
+        },
+        {
+          "caller": "name_to_dict",
+          "callee": "vals.append",
+          "lineNumber": 65
+        },
+        {
+          "caller": "name_to_dict",
+          "callee": "string_to_python",
+          "lineNumber": 65
+        },
+        {
+          "caller": "name_to_dict",
+          "callee": "dict",
+          "lineNumber": 66
+        },
+        {
+          "caller": "name_to_dict",
+          "callee": "zip",
+          "lineNumber": 66
+        },
+        {
+          "caller": "rm_keys",
+          "callee": "dict.pop",
+          "lineNumber": 71
+        },
+        {
+          "caller": "agg_runs",
+          "callee": "os.listdir",
+          "lineNumber": 86
+        },
+        {
+          "caller": "agg_runs",
+          "callee": "is_seed",
+          "lineNumber": 87
+        },
+        {
+          "caller": "agg_runs",
+          "callee": "os.path.join",
+          "lineNumber": 88
+        },
+        {
+          "caller": "agg_runs",
+          "callee": "os.listdir",
+          "lineNumber": 91
+        },
+        {
+          "caller": "agg_runs",
+          "callee": "os.path.join",
+          "lineNumber": 92
+        },
+        {
+          "caller": "agg_runs",
+          "callee": "os.path.join",
+          "lineNumber": 93
+        },
+        {
+          "caller": "agg_runs",
+          "callee": "json_to_dict_list",
+          "lineNumber": 94
+        },
+        {
+          "caller": "agg_runs",
+          "callee": "np.array",
+          "lineNumber": 99
+        },
+        {
+          "caller": "agg_runs",
+          "callee": "eval",
+          "lineNumber": 103
+        },
+        {
+          "caller": "agg_runs",
+          "callee": "\"performance_np.{}()\".format",
+          "lineNumber": 103
+        },
+        {
+          "caller": "agg_runs",
+          "callee": "print",
+          "lineNumber": 105
+        },
+        {
+          "caller": "agg_runs",
+          "callee": "os.listdir",
+          "lineNumber": 107
+        },
+        {
+          "caller": "agg_runs",
+          "callee": "is_split",
+          "lineNumber": 108
+        },
+        {
+          "caller": "agg_runs",
+          "callee": "os.path.join",
+          "lineNumber": 109
+        },
+        {
+          "caller": "agg_runs",
+          "callee": "os.path.join",
+          "lineNumber": 110
+        },
+        {
+          "caller": "agg_runs",
+          "callee": "json_to_dict_list",
+          "lineNumber": 111
+        },
+        {
+          "caller": "agg_runs",
+          "callee": "print",
+          "lineNumber": 116
+        },
+        {
+          "caller": "agg_runs",
+          "callee": "join_list",
+          "lineNumber": 121
+        },
+        {
+          "caller": "agg_runs",
+          "callee": "results.items",
+          "lineNumber": 126
+        },
+        {
+          "caller": "agg_runs",
+          "callee": "results_best.items",
+          "lineNumber": 128
+        },
+        {
+          "caller": "agg_runs",
+          "callee": "range",
+          "lineNumber": 131
+        },
+        {
+          "caller": "agg_runs",
+          "callee": "len",
+          "lineNumber": 131
+        },
+        {
+          "caller": "agg_runs",
+          "callee": "agg_dict_list",
+          "lineNumber": 132
+        },
+        {
+          "caller": "agg_runs",
+          "callee": "agg_dict_list",
+          "lineNumber": 134
+        },
+        {
+          "caller": "agg_runs",
+          "callee": "results.items",
+          "lineNumber": 136
+        },
+        {
+          "caller": "agg_runs",
+          "callee": "os.path.join",
+          "lineNumber": 137
+        },
+        {
+          "caller": "agg_runs",
+          "callee": "makedirs_rm_exist",
+          "lineNumber": 138
+        },
+        {
+          "caller": "agg_runs",
+          "callee": "os.path.join",
+          "lineNumber": 139
+        },
+        {
+          "caller": "agg_runs",
+          "callee": "dict_list_to_json",
+          "lineNumber": 140
+        },
+        {
+          "caller": "agg_runs",
+          "callee": "ImportError",
+          "lineNumber": 144
+        },
+        {
+          "caller": "agg_runs",
+          "callee": "SummaryWriter",
+          "lineNumber": 146
+        },
+        {
+          "caller": "agg_runs",
+          "callee": "dict_list_to_tb",
+          "lineNumber": 147
+        },
+        {
+          "caller": "agg_runs",
+          "callee": "writer.close",
+          "lineNumber": 148
+        },
+        {
+          "caller": "agg_runs",
+          "callee": "results_best.items",
+          "lineNumber": 149
+        },
+        {
+          "caller": "agg_runs",
+          "callee": "os.path.join",
+          "lineNumber": 150
+        },
+        {
+          "caller": "agg_runs",
+          "callee": "os.path.join",
+          "lineNumber": 151
+        },
+        {
+          "caller": "agg_runs",
+          "callee": "dict_to_json",
+          "lineNumber": 152
+        },
+        {
+          "caller": "agg_runs",
+          "callee": "logging.info",
+          "lineNumber": 153
+        },
+        {
+          "caller": "agg_runs",
+          "callee": "'Results aggregated across runs saved in {}'.format",
+          "lineNumber": 153
+        },
+        {
+          "caller": "agg_runs",
+          "callee": "os.path.join",
+          "lineNumber": 154
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "os.listdir",
+          "lineNumber": 169
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "name_to_dict",
+          "lineNumber": 171
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "os.path.join",
+          "lineNumber": 172
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "os.path.isdir",
+          "lineNumber": 173
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "os.listdir",
+          "lineNumber": 174
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "os.path.join",
+          "lineNumber": 175
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "os.path.join",
+          "lineNumber": 176
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "json_to_dict_list",
+          "lineNumber": 177
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "rm_keys",
+          "lineNumber": 179
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "results[split].append",
+          "lineNumber": 181
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "os.path.join",
+          "lineNumber": 182
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "makedirs_rm_exist",
+          "lineNumber": 183
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "len",
+          "lineNumber": 185
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "pd.DataFrame",
+          "lineNumber": 186
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "results[key].sort_values",
+          "lineNumber": 187
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "list",
+          "lineNumber": 188
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "dict_name.keys",
+          "lineNumber": 188
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "len",
+          "lineNumber": 188
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "os.path.join",
+          "lineNumber": 189
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "'{}_best.csv'.format",
+          "lineNumber": 189
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "results[key].to_csv",
+          "lineNumber": 190
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "os.listdir",
+          "lineNumber": 193
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "name_to_dict",
+          "lineNumber": 195
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "os.path.join",
+          "lineNumber": 196
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "os.path.isdir",
+          "lineNumber": 197
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "os.listdir",
+          "lineNumber": 198
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "os.path.join",
+          "lineNumber": 199
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "os.path.join",
+          "lineNumber": 200
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "json_to_dict_list",
+          "lineNumber": 201
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "rm_keys",
+          "lineNumber": 203
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "results[split].append",
+          "lineNumber": 205
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "os.path.join",
+          "lineNumber": 206
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "len",
+          "lineNumber": 208
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "pd.DataFrame",
+          "lineNumber": 209
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "results[key].sort_values",
+          "lineNumber": 210
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "list",
+          "lineNumber": 211
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "dict_name.keys",
+          "lineNumber": 211
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "len",
+          "lineNumber": 211
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "os.path.join",
+          "lineNumber": 212
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "'{}.csv'.format",
+          "lineNumber": 212
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "results[key].to_csv",
+          "lineNumber": 213
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "os.listdir",
+          "lineNumber": 216
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "name_to_dict",
+          "lineNumber": 218
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "os.path.join",
+          "lineNumber": 219
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "os.path.isdir",
+          "lineNumber": 220
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "os.listdir",
+          "lineNumber": 221
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "os.path.join",
+          "lineNumber": 222
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "os.path.join",
+          "lineNumber": 223
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "json_to_dict_list",
+          "lineNumber": 224
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "np.array",
+          "lineNumber": 231
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "eval",
+          "lineNumber": 233
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "\"performance_np.{}()\".format",
+          "lineNumber": 233
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "rm_keys",
+          "lineNumber": 235
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "results[split].append",
+          "lineNumber": 237
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "os.path.join",
+          "lineNumber": 238
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "len",
+          "lineNumber": 240
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "pd.DataFrame",
+          "lineNumber": 241
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "results[key].sort_values",
+          "lineNumber": 242
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "list",
+          "lineNumber": 243
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "dict_name.keys",
+          "lineNumber": 243
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "len",
+          "lineNumber": 243
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "os.path.join",
+          "lineNumber": 244
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "'{}_bestepoch.csv'.format",
+          "lineNumber": 244
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "results[key].to_csv",
+          "lineNumber": 245
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "print",
+          "lineNumber": 247
+        },
+        {
+          "caller": "agg_batch",
+          "callee": "'Results aggregated across models saved in {}'.format",
+          "lineNumber": 247
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 8,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "fraudGT/graphgym/utils/comp_budget.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 97,
+      "nonEmptyLines": 80,
+      "functions": [
+        {
+          "name": "params_count",
+          "startLine": 7,
+          "endLine": 15,
+          "params": [
+            "model"
+          ]
+        },
+        {
+          "name": "get_stats",
+          "startLine": 18,
+          "endLine": 20,
+          "params": []
+        },
+        {
+          "name": "match_computation",
+          "startLine": 23,
+          "endLine": 57,
+          "params": [
+            "stats_baseline",
+            "key",
+            "mode"
+          ]
+        },
+        {
+          "name": "dict_to_stats",
+          "startLine": 60,
+          "endLine": 67,
+          "params": [
+            "cfg_dict"
+          ]
+        },
+        {
+          "name": "match_baseline_cfg",
+          "startLine": 70,
+          "endLine": 96,
+          "params": [
+            "cfg_dict",
+            "cfg_dict_baseline",
+            "verbose"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "params_count",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "get_stats",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "match_computation",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "dict_to_stats",
+          "line": 60,
+          "isDefault": false
+        },
+        {
+          "name": "match_baseline_cfg",
+          "line": 70,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "params_count",
+          "callee": "sum",
+          "lineNumber": 15
+        },
+        {
+          "caller": "params_count",
+          "callee": "p.numel",
+          "lineNumber": 15
+        },
+        {
+          "caller": "params_count",
+          "callee": "model.parameters",
+          "lineNumber": 15
+        },
+        {
+          "caller": "get_stats",
+          "callee": "create_model",
+          "lineNumber": 19
+        },
+        {
+          "caller": "get_stats",
+          "callee": "params_count",
+          "lineNumber": 20
+        },
+        {
+          "caller": "match_computation",
+          "callee": "get_stats",
+          "lineNumber": 25
+        },
+        {
+          "caller": "match_computation",
+          "callee": "math.sqrt",
+          "lineNumber": 30
+        },
+        {
+          "caller": "match_computation",
+          "callee": "int",
+          "lineNumber": 33
+        },
+        {
+          "caller": "match_computation",
+          "callee": "round",
+          "lineNumber": 33
+        },
+        {
+          "caller": "match_computation",
+          "callee": "get_stats",
+          "lineNumber": 36
+        },
+        {
+          "caller": "match_computation",
+          "callee": "abs",
+          "lineNumber": 37
+        },
+        {
+          "caller": "match_computation",
+          "callee": "get_stats",
+          "lineNumber": 44
+        },
+        {
+          "caller": "match_computation",
+          "callee": "get_stats",
+          "lineNumber": 52
+        },
+        {
+          "caller": "match_computation",
+          "callee": "get_stats",
+          "lineNumber": 56
+        },
+        {
+          "caller": "dict_to_stats",
+          "callee": "set_cfg",
+          "lineNumber": 62
+        },
+        {
+          "caller": "dict_to_stats",
+          "callee": "CN",
+          "lineNumber": 63
+        },
+        {
+          "caller": "dict_to_stats",
+          "callee": "cfg.merge_from_other_cfg",
+          "lineNumber": 64
+        },
+        {
+          "caller": "dict_to_stats",
+          "callee": "get_stats",
+          "lineNumber": 65
+        },
+        {
+          "caller": "dict_to_stats",
+          "callee": "set_cfg",
+          "lineNumber": 66
+        },
+        {
+          "caller": "match_baseline_cfg",
+          "callee": "dict_to_stats",
+          "lineNumber": 83
+        },
+        {
+          "caller": "match_baseline_cfg",
+          "callee": "set_cfg",
+          "lineNumber": 84
+        },
+        {
+          "caller": "match_baseline_cfg",
+          "callee": "CN",
+          "lineNumber": 85
+        },
+        {
+          "caller": "match_baseline_cfg",
+          "callee": "cfg.merge_from_other_cfg",
+          "lineNumber": 86
+        },
+        {
+          "caller": "match_baseline_cfg",
+          "callee": "match_computation",
+          "lineNumber": 87
+        },
+        {
+          "caller": "match_baseline_cfg",
+          "callee": "set_cfg",
+          "lineNumber": 92
+        },
+        {
+          "caller": "match_baseline_cfg",
+          "callee": "print",
+          "lineNumber": 94
+        },
+        {
+          "caller": "match_baseline_cfg",
+          "callee": "'Computational budget has matched: Baseline params {}, '\r\n              'Current params {}'.format",
+          "lineNumber": 94
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 5,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "fraudGT/graphgym/utils/device.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 77,
+      "nonEmptyLines": 65,
+      "functions": [
+        {
+          "name": "get_gpu_memory_map",
+          "startLine": 11,
+          "endLine": 18,
+          "params": []
+        },
+        {
+          "name": "get_current_gpu_usage",
+          "startLine": 21,
+          "endLine": 38,
+          "params": []
+        },
+        {
+          "name": "auto_select_device",
+          "startLine": 41,
+          "endLine": 76,
+          "params": [
+            "memory_max",
+            "memory_bias",
+            "strategy"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "get_gpu_memory_map",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "get_current_gpu_usage",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "auto_select_device",
+          "line": 41,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "get_gpu_memory_map",
+          "callee": "subprocess.check_output",
+          "lineNumber": 13
+        },
+        {
+          "caller": "get_gpu_memory_map",
+          "callee": "np.array",
+          "lineNumber": 17
+        },
+        {
+          "caller": "get_gpu_memory_map",
+          "callee": "int",
+          "lineNumber": 17
+        },
+        {
+          "caller": "get_gpu_memory_map",
+          "callee": "result.strip().split",
+          "lineNumber": 17
+        },
+        {
+          "caller": "get_gpu_memory_map",
+          "callee": "result.strip",
+          "lineNumber": 17
+        },
+        {
+          "caller": "get_current_gpu_usage",
+          "callee": "torch.cuda.is_available",
+          "lineNumber": 25
+        },
+        {
+          "caller": "get_current_gpu_usage",
+          "callee": "subprocess.check_output",
+          "lineNumber": 26
+        },
+        {
+          "caller": "get_current_gpu_usage",
+          "callee": "os.getpid",
+          "lineNumber": 30
+        },
+        {
+          "caller": "get_current_gpu_usage",
+          "callee": "result.strip().split",
+          "lineNumber": 32
+        },
+        {
+          "caller": "get_current_gpu_usage",
+          "callee": "result.strip",
+          "lineNumber": 32
+        },
+        {
+          "caller": "get_current_gpu_usage",
+          "callee": "line.split",
+          "lineNumber": 33
+        },
+        {
+          "caller": "get_current_gpu_usage",
+          "callee": "int",
+          "lineNumber": 34
+        },
+        {
+          "caller": "get_current_gpu_usage",
+          "callee": "int",
+          "lineNumber": 35
+        },
+        {
+          "caller": "auto_select_device",
+          "callee": "torch.cuda.is_available",
+          "lineNumber": 54
+        },
+        {
+          "caller": "auto_select_device",
+          "callee": "get_gpu_memory_map",
+          "lineNumber": 56
+        },
+        {
+          "caller": "auto_select_device",
+          "callee": "np.all",
+          "lineNumber": 57
+        },
+        {
+          "caller": "auto_select_device",
+          "callee": "np.argmin",
+          "lineNumber": 58
+        },
+        {
+          "caller": "auto_select_device",
+          "callee": "logging.info",
+          "lineNumber": 59
+        },
+        {
+          "caller": "auto_select_device",
+          "callee": "'GPU Mem: {}'.format",
+          "lineNumber": 59
+        },
+        {
+          "caller": "auto_select_device",
+          "callee": "logging.info",
+          "lineNumber": 60
+        },
+        {
+          "caller": "auto_select_device",
+          "callee": "'Greedy select GPU, select GPU {} with mem: {}'.format",
+          "lineNumber": 61
+        },
+        {
+          "caller": "auto_select_device",
+          "callee": "memory.sum",
+          "lineNumber": 66
+        },
+        {
+          "caller": "auto_select_device",
+          "callee": "np.random.choice",
+          "lineNumber": 67
+        },
+        {
+          "caller": "auto_select_device",
+          "callee": "len",
+          "lineNumber": 67
+        },
+        {
+          "caller": "auto_select_device",
+          "callee": "logging.info",
+          "lineNumber": 68
+        },
+        {
+          "caller": "auto_select_device",
+          "callee": "'GPU Mem: {}'.format",
+          "lineNumber": 68
+        },
+        {
+          "caller": "auto_select_device",
+          "callee": "logging.info",
+          "lineNumber": 69
+        },
+        {
+          "caller": "auto_select_device",
+          "callee": "'GPU Prob: {}'.format",
+          "lineNumber": 69
+        },
+        {
+          "caller": "auto_select_device",
+          "callee": "gpu_prob.round",
+          "lineNumber": 69
+        },
+        {
+          "caller": "auto_select_device",
+          "callee": "logging.info",
+          "lineNumber": 70
+        },
+        {
+          "caller": "auto_select_device",
+          "callee": "'Random select GPU, select GPU {} with mem: {}'.format",
+          "lineNumber": 71
+        },
+        {
+          "caller": "auto_select_device",
+          "callee": "'cuda:{}'.format",
+          "lineNumber": 74
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "fraudGT/graphgym/utils/epoch.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 19,
+      "nonEmptyLines": 12,
+      "functions": [
+        {
+          "name": "is_train_eval_epoch",
+          "startLine": 4,
+          "endLine": 6,
+          "params": [
+            "cur_epoch"
+          ]
+        },
+        {
+          "name": "is_eval_epoch",
+          "startLine": 9,
+          "endLine": 12,
+          "params": [
+            "cur_epoch",
+            "start_epoch"
+          ]
+        },
+        {
+          "name": "is_ckpt_epoch",
+          "startLine": 15,
+          "endLine": 18,
+          "params": [
+            "cur_epoch"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "is_train_eval_epoch",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "is_eval_epoch",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "is_ckpt_epoch",
+          "line": 15,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "is_train_eval_epoch",
+          "callee": "is_eval_epoch",
+          "lineNumber": 6
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    }
+  ]
+}

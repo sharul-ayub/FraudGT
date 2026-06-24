@@ -1,0 +1,233 @@
+﻿{
+    "batchIndex":  3,
+    "projectRoot":  "G:\\My Drive\\GithubRepo\\FraudGT",
+    "batchFiles":  [
+                       {
+                           "path":  "fraudGT/graphgym/loss.py",
+                           "language":  "python",
+                           "sizeLines":  65,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/graphgym/model_builder.py",
+                           "language":  "python",
+                           "sizeLines":  28,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/graphgym/model_builder_deepsnap.py",
+                           "language":  "python",
+                           "sizeLines":  31,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/graphgym/models/__init__.py",
+                           "language":  "python",
+                           "sizeLines":  0,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/graphgym/models/act.py",
+                           "language":  "python",
+                           "sizeLines":  17,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/graphgym/models/feature_augment.py",
+                           "language":  "python",
+                           "sizeLines":  352,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/graphgym/models/feature_encoder.py",
+                           "language":  "python",
+                           "sizeLines":  117,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/graphgym/models/feature_encoder_deepsnap.py",
+                           "language":  "python",
+                           "sizeLines":  118,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/graphgym/models/gnn.py",
+                           "language":  "python",
+                           "sizeLines":  156,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/graphgym/models/gnn_deepsnap.py",
+                           "language":  "python",
+                           "sizeLines":  183,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/graphgym/models/head.py",
+                           "language":  "python",
+                           "sizeLines":  124,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/graphgym/models/head_deepsnap.py",
+                           "language":  "python",
+                           "sizeLines":  130,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/graphgym/models/layer.py",
+                           "language":  "python",
+                           "sizeLines":  261,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/graphgym/models/layer_deepsnap.py",
+                           "language":  "python",
+                           "sizeLines":  262,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/graphgym/models/pooling.py",
+                           "language":  "python",
+                           "sizeLines":  41,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/graphgym/models/transform.py",
+                           "language":  "python",
+                           "sizeLines":  132,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/graphgym/optimizer.py",
+                           "language":  "python",
+                           "sizeLines":  77,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/graphgym/register.py",
+                           "language":  "python",
+                           "sizeLines":  175,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/graphgym/train.py",
+                           "language":  "python",
+                           "sizeLines":  88,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/graphgym/train_deepsnap.py",
+                           "language":  "python",
+                           "sizeLines":  84,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/graphgym/utils/__init__.py",
+                           "language":  "python",
+                           "sizeLines":  0,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/graphgym/utils/agg_runs.py",
+                           "language":  "python",
+                           "sizeLines":  247,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/graphgym/utils/comp_budget.py",
+                           "language":  "python",
+                           "sizeLines":  96,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/graphgym/utils/device.py",
+                           "language":  "python",
+                           "sizeLines":  76,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/graphgym/utils/epoch.py",
+                           "language":  "python",
+                           "sizeLines":  18,
+                           "fileCategory":  "code"
+                       }
+                   ],
+    "batchImportData":  {
+                            "fraudGT/graphgym/loss.py":  [
+
+                                                         ],
+                            "fraudGT/graphgym/model_builder.py":  [
+
+                                                                  ],
+                            "fraudGT/graphgym/model_builder_deepsnap.py":  [
+
+                                                                           ],
+                            "fraudGT/graphgym/models/__init__.py":  [
+
+                                                                    ],
+                            "fraudGT/graphgym/models/act.py":  [
+
+                                                               ],
+                            "fraudGT/graphgym/models/feature_augment.py":  [
+
+                                                                           ],
+                            "fraudGT/graphgym/models/feature_encoder.py":  [
+
+                                                                           ],
+                            "fraudGT/graphgym/models/feature_encoder_deepsnap.py":  [
+
+                                                                                    ],
+                            "fraudGT/graphgym/models/gnn.py":  [
+
+                                                               ],
+                            "fraudGT/graphgym/models/gnn_deepsnap.py":  [
+
+                                                                        ],
+                            "fraudGT/graphgym/models/head.py":  [
+
+                                                                ],
+                            "fraudGT/graphgym/models/head_deepsnap.py":  [
+
+                                                                         ],
+                            "fraudGT/graphgym/models/layer.py":  [
+
+                                                                 ],
+                            "fraudGT/graphgym/models/layer_deepsnap.py":  [
+
+                                                                          ],
+                            "fraudGT/graphgym/models/pooling.py":  [
+
+                                                                   ],
+                            "fraudGT/graphgym/models/transform.py":  [
+
+                                                                     ],
+                            "fraudGT/graphgym/optimizer.py":  [
+
+                                                              ],
+                            "fraudGT/graphgym/register.py":  [
+
+                                                             ],
+                            "fraudGT/graphgym/train.py":  [
+
+                                                          ],
+                            "fraudGT/graphgym/train_deepsnap.py":  [
+
+                                                                   ],
+                            "fraudGT/graphgym/utils/__init__.py":  [
+
+                                                                   ],
+                            "fraudGT/graphgym/utils/agg_runs.py":  [
+
+                                                                   ],
+                            "fraudGT/graphgym/utils/comp_budget.py":  [
+
+                                                                      ],
+                            "fraudGT/graphgym/utils/device.py":  [
+
+                                                                 ],
+                            "fraudGT/graphgym/utils/epoch.py":  [
+
+                                                                ]
+                        }
+}

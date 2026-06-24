@@ -1,0 +1,1967 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "configs/AML-Medium-LI/AML-Medium-LI-SparseNodeGT+Ego.yaml",
+      "language": "yaml",
+      "fileCategory": "config",
+      "totalLines": 84,
+      "nonEmptyLines": 83,
+      "sections": [
+        {
+          "heading": "out_dir",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "metric_best",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "seed",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "wandb",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "dataset",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "num_threads",
+          "level": 1,
+          "line": 21
+        },
+        {
+          "heading": "num_workers",
+          "level": 1,
+          "line": 22
+        },
+        {
+          "heading": "train",
+          "level": 1,
+          "line": 23
+        },
+        {
+          "heading": "val",
+          "level": 1,
+          "line": 35
+        },
+        {
+          "heading": "model",
+          "level": 1,
+          "line": 39
+        },
+        {
+          "heading": "gt",
+          "level": 1,
+          "line": 45
+        },
+        {
+          "heading": "gnn",
+          "level": 1,
+          "line": 63
+        },
+        {
+          "heading": "optim",
+          "level": 1,
+          "line": 65
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 13
+      }
+    },
+    {
+      "path": "configs/AML-Medium-LI/AML-Medium-LI-SparseNodeGT+ports.yaml",
+      "language": "yaml",
+      "fileCategory": "config",
+      "totalLines": 84,
+      "nonEmptyLines": 83,
+      "sections": [
+        {
+          "heading": "out_dir",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "metric_best",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "seed",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "wandb",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "dataset",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "num_threads",
+          "level": 1,
+          "line": 22
+        },
+        {
+          "heading": "num_workers",
+          "level": 1,
+          "line": 23
+        },
+        {
+          "heading": "train",
+          "level": 1,
+          "line": 24
+        },
+        {
+          "heading": "val",
+          "level": 1,
+          "line": 35
+        },
+        {
+          "heading": "model",
+          "level": 1,
+          "line": 39
+        },
+        {
+          "heading": "gt",
+          "level": 1,
+          "line": 45
+        },
+        {
+          "heading": "gnn",
+          "level": 1,
+          "line": 63
+        },
+        {
+          "heading": "optim",
+          "level": 1,
+          "line": 65
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 13
+      }
+    },
+    {
+      "path": "configs/AML-Medium-LI/AML-Medium-LI-SparseNodeGT+ports+Ego.yaml",
+      "language": "yaml",
+      "fileCategory": "config",
+      "totalLines": 85,
+      "nonEmptyLines": 84,
+      "sections": [
+        {
+          "heading": "out_dir",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "metric_best",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "seed",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "wandb",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "dataset",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "num_threads",
+          "level": 1,
+          "line": 22
+        },
+        {
+          "heading": "num_workers",
+          "level": 1,
+          "line": 23
+        },
+        {
+          "heading": "train",
+          "level": 1,
+          "line": 24
+        },
+        {
+          "heading": "val",
+          "level": 1,
+          "line": 36
+        },
+        {
+          "heading": "model",
+          "level": 1,
+          "line": 40
+        },
+        {
+          "heading": "gt",
+          "level": 1,
+          "line": 46
+        },
+        {
+          "heading": "gnn",
+          "level": 1,
+          "line": 64
+        },
+        {
+          "heading": "optim",
+          "level": 1,
+          "line": 66
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 13
+      }
+    },
+    {
+      "path": "configs/AML-Medium-LI/AML-Medium-LI-SparseNodeGT+RMP.yaml",
+      "language": "yaml",
+      "fileCategory": "config",
+      "totalLines": 85,
+      "nonEmptyLines": 84,
+      "sections": [
+        {
+          "heading": "out_dir",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "metric_best",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "seed",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "wandb",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "dataset",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "num_threads",
+          "level": 1,
+          "line": 23
+        },
+        {
+          "heading": "num_workers",
+          "level": 1,
+          "line": 24
+        },
+        {
+          "heading": "train",
+          "level": 1,
+          "line": 25
+        },
+        {
+          "heading": "val",
+          "level": 1,
+          "line": 36
+        },
+        {
+          "heading": "model",
+          "level": 1,
+          "line": 40
+        },
+        {
+          "heading": "gt",
+          "level": 1,
+          "line": 46
+        },
+        {
+          "heading": "gnn",
+          "level": 1,
+          "line": 64
+        },
+        {
+          "heading": "optim",
+          "level": 1,
+          "line": 66
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 13
+      }
+    },
+    {
+      "path": "configs/AML-Medium-LI/AML-Medium-LI-SparseNodeGT-EdgeAttn.yaml",
+      "language": "yaml",
+      "fileCategory": "config",
+      "totalLines": 83,
+      "nonEmptyLines": 82,
+      "sections": [
+        {
+          "heading": "out_dir",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "metric_best",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "seed",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "wandb",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "dataset",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "num_threads",
+          "level": 1,
+          "line": 21
+        },
+        {
+          "heading": "num_workers",
+          "level": 1,
+          "line": 22
+        },
+        {
+          "heading": "train",
+          "level": 1,
+          "line": 23
+        },
+        {
+          "heading": "val",
+          "level": 1,
+          "line": 34
+        },
+        {
+          "heading": "model",
+          "level": 1,
+          "line": 38
+        },
+        {
+          "heading": "gt",
+          "level": 1,
+          "line": 44
+        },
+        {
+          "heading": "gnn",
+          "level": 1,
+          "line": 62
+        },
+        {
+          "heading": "optim",
+          "level": 1,
+          "line": 64
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 13
+      }
+    },
+    {
+      "path": "configs/AML-Medium-LI/AML-Medium-LI-SparseNodeGT-EdgeGate.yaml",
+      "language": "yaml",
+      "fileCategory": "config",
+      "totalLines": 83,
+      "nonEmptyLines": 82,
+      "sections": [
+        {
+          "heading": "out_dir",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "metric_best",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "seed",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "wandb",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "dataset",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "num_threads",
+          "level": 1,
+          "line": 21
+        },
+        {
+          "heading": "num_workers",
+          "level": 1,
+          "line": 22
+        },
+        {
+          "heading": "train",
+          "level": 1,
+          "line": 23
+        },
+        {
+          "heading": "val",
+          "level": 1,
+          "line": 34
+        },
+        {
+          "heading": "model",
+          "level": 1,
+          "line": 38
+        },
+        {
+          "heading": "gt",
+          "level": 1,
+          "line": 44
+        },
+        {
+          "heading": "gnn",
+          "level": 1,
+          "line": 62
+        },
+        {
+          "heading": "optim",
+          "level": 1,
+          "line": 64
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 13
+      }
+    },
+    {
+      "path": "configs/AML-Medium-LI_Transfer/AML-Medium-LI_Transfer-Multi-SparseNodeGT.yaml",
+      "language": "yaml",
+      "fileCategory": "config",
+      "totalLines": 89,
+      "nonEmptyLines": 88,
+      "sections": [
+        {
+          "heading": "out_dir",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "metric_best",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "seed",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "wandb",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "dataset",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "num_threads",
+          "level": 1,
+          "line": 23
+        },
+        {
+          "heading": "num_workers",
+          "level": 1,
+          "line": 24
+        },
+        {
+          "heading": "train",
+          "level": 1,
+          "line": 25
+        },
+        {
+          "heading": "val",
+          "level": 1,
+          "line": 37
+        },
+        {
+          "heading": "pretrained",
+          "level": 1,
+          "line": 41
+        },
+        {
+          "heading": "model",
+          "level": 1,
+          "line": 44
+        },
+        {
+          "heading": "gt",
+          "level": 1,
+          "line": 50
+        },
+        {
+          "heading": "gnn",
+          "level": 1,
+          "line": 68
+        },
+        {
+          "heading": "optim",
+          "level": 1,
+          "line": 70
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 14
+      }
+    },
+    {
+      "path": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-GATE.yaml",
+      "language": "yaml",
+      "fileCategory": "config",
+      "totalLines": 76,
+      "nonEmptyLines": 75,
+      "sections": [
+        {
+          "heading": "out_dir",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "metric_best",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "seed",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "wandb",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "dataset",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "num_threads",
+          "level": 1,
+          "line": 21
+        },
+        {
+          "heading": "num_workers",
+          "level": 1,
+          "line": 22
+        },
+        {
+          "heading": "train",
+          "level": 1,
+          "line": 23
+        },
+        {
+          "heading": "val",
+          "level": 1,
+          "line": 34
+        },
+        {
+          "heading": "model",
+          "level": 1,
+          "line": 38
+        },
+        {
+          "heading": "gnn",
+          "level": 1,
+          "line": 44
+        },
+        {
+          "heading": "optim",
+          "level": 1,
+          "line": 57
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 12
+      }
+    },
+    {
+      "path": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-GatedGCN.yaml",
+      "language": "yaml",
+      "fileCategory": "config",
+      "totalLines": 75,
+      "nonEmptyLines": 74,
+      "sections": [
+        {
+          "heading": "out_dir",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "metric_best",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "seed",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "wandb",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "dataset",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "num_threads",
+          "level": 1,
+          "line": 21
+        },
+        {
+          "heading": "num_workers",
+          "level": 1,
+          "line": 22
+        },
+        {
+          "heading": "train",
+          "level": 1,
+          "line": 23
+        },
+        {
+          "heading": "val",
+          "level": 1,
+          "line": 34
+        },
+        {
+          "heading": "model",
+          "level": 1,
+          "line": 38
+        },
+        {
+          "heading": "gnn",
+          "level": 1,
+          "line": 44
+        },
+        {
+          "heading": "optim",
+          "level": 1,
+          "line": 56
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 12
+      }
+    },
+    {
+      "path": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-GINE.yaml",
+      "language": "yaml",
+      "fileCategory": "config",
+      "totalLines": 75,
+      "nonEmptyLines": 74,
+      "sections": [
+        {
+          "heading": "out_dir",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "metric_best",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "seed",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "wandb",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "dataset",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "num_threads",
+          "level": 1,
+          "line": 21
+        },
+        {
+          "heading": "num_workers",
+          "level": 1,
+          "line": 22
+        },
+        {
+          "heading": "train",
+          "level": 1,
+          "line": 23
+        },
+        {
+          "heading": "val",
+          "level": 1,
+          "line": 34
+        },
+        {
+          "heading": "model",
+          "level": 1,
+          "line": 38
+        },
+        {
+          "heading": "gnn",
+          "level": 1,
+          "line": 44
+        },
+        {
+          "heading": "optim",
+          "level": 1,
+          "line": 56
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 12
+      }
+    },
+    {
+      "path": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-GINE+Ego.yaml",
+      "language": "yaml",
+      "fileCategory": "config",
+      "totalLines": 76,
+      "nonEmptyLines": 75,
+      "sections": [
+        {
+          "heading": "out_dir",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "metric_best",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "seed",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "wandb",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "dataset",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "num_threads",
+          "level": 1,
+          "line": 21
+        },
+        {
+          "heading": "num_workers",
+          "level": 1,
+          "line": 22
+        },
+        {
+          "heading": "train",
+          "level": 1,
+          "line": 23
+        },
+        {
+          "heading": "val",
+          "level": 1,
+          "line": 35
+        },
+        {
+          "heading": "model",
+          "level": 1,
+          "line": 39
+        },
+        {
+          "heading": "gnn",
+          "level": 1,
+          "line": 45
+        },
+        {
+          "heading": "optim",
+          "level": 1,
+          "line": 57
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 12
+      }
+    },
+    {
+      "path": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-GINE+EU.yaml",
+      "language": "yaml",
+      "fileCategory": "config",
+      "totalLines": 76,
+      "nonEmptyLines": 75,
+      "sections": [
+        {
+          "heading": "out_dir",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "metric_best",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "seed",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "wandb",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "dataset",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "num_threads",
+          "level": 1,
+          "line": 21
+        },
+        {
+          "heading": "num_workers",
+          "level": 1,
+          "line": 22
+        },
+        {
+          "heading": "train",
+          "level": 1,
+          "line": 23
+        },
+        {
+          "heading": "val",
+          "level": 1,
+          "line": 34
+        },
+        {
+          "heading": "model",
+          "level": 1,
+          "line": 38
+        },
+        {
+          "heading": "gnn",
+          "level": 1,
+          "line": 44
+        },
+        {
+          "heading": "optim",
+          "level": 1,
+          "line": 57
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 12
+      }
+    },
+    {
+      "path": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-GINE+ports.yaml",
+      "language": "yaml",
+      "fileCategory": "config",
+      "totalLines": 76,
+      "nonEmptyLines": 75,
+      "sections": [
+        {
+          "heading": "out_dir",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "metric_best",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "seed",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "wandb",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "dataset",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "num_threads",
+          "level": 1,
+          "line": 22
+        },
+        {
+          "heading": "num_workers",
+          "level": 1,
+          "line": 23
+        },
+        {
+          "heading": "train",
+          "level": 1,
+          "line": 24
+        },
+        {
+          "heading": "val",
+          "level": 1,
+          "line": 35
+        },
+        {
+          "heading": "model",
+          "level": 1,
+          "line": 39
+        },
+        {
+          "heading": "gnn",
+          "level": 1,
+          "line": 45
+        },
+        {
+          "heading": "optim",
+          "level": 1,
+          "line": 57
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 12
+      }
+    },
+    {
+      "path": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-GINE+RMP.yaml",
+      "language": "yaml",
+      "fileCategory": "config",
+      "totalLines": 77,
+      "nonEmptyLines": 76,
+      "sections": [
+        {
+          "heading": "out_dir",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "metric_best",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "seed",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "wandb",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "dataset",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "num_threads",
+          "level": 1,
+          "line": 23
+        },
+        {
+          "heading": "num_workers",
+          "level": 1,
+          "line": 24
+        },
+        {
+          "heading": "train",
+          "level": 1,
+          "line": 25
+        },
+        {
+          "heading": "val",
+          "level": 1,
+          "line": 36
+        },
+        {
+          "heading": "model",
+          "level": 1,
+          "line": 40
+        },
+        {
+          "heading": "gnn",
+          "level": 1,
+          "line": 46
+        },
+        {
+          "heading": "optim",
+          "level": 1,
+          "line": 58
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 12
+      }
+    },
+    {
+      "path": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-MLP.yaml",
+      "language": "yaml",
+      "fileCategory": "config",
+      "totalLines": 73,
+      "nonEmptyLines": 72,
+      "sections": [
+        {
+          "heading": "out_dir",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "metric_best",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "seed",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "wandb",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "dataset",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "num_threads",
+          "level": 1,
+          "line": 21
+        },
+        {
+          "heading": "num_workers",
+          "level": 1,
+          "line": 22
+        },
+        {
+          "heading": "train",
+          "level": 1,
+          "line": 23
+        },
+        {
+          "heading": "val",
+          "level": 1,
+          "line": 34
+        },
+        {
+          "heading": "model",
+          "level": 1,
+          "line": 38
+        },
+        {
+          "heading": "gnn",
+          "level": 1,
+          "line": 44
+        },
+        {
+          "heading": "optim",
+          "level": 1,
+          "line": 54
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 12
+      }
+    },
+    {
+      "path": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-Multi-GINE.yaml",
+      "language": "yaml",
+      "fileCategory": "config",
+      "totalLines": 78,
+      "nonEmptyLines": 77,
+      "sections": [
+        {
+          "heading": "out_dir",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "metric_best",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "seed",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "wandb",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "dataset",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "num_threads",
+          "level": 1,
+          "line": 23
+        },
+        {
+          "heading": "num_workers",
+          "level": 1,
+          "line": 24
+        },
+        {
+          "heading": "train",
+          "level": 1,
+          "line": 25
+        },
+        {
+          "heading": "val",
+          "level": 1,
+          "line": 37
+        },
+        {
+          "heading": "model",
+          "level": 1,
+          "line": 41
+        },
+        {
+          "heading": "gnn",
+          "level": 1,
+          "line": 47
+        },
+        {
+          "heading": "optim",
+          "level": 1,
+          "line": 59
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 12
+      }
+    },
+    {
+      "path": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-Multi-GINE+EU.yaml",
+      "language": "yaml",
+      "fileCategory": "config",
+      "totalLines": 79,
+      "nonEmptyLines": 78,
+      "sections": [
+        {
+          "heading": "out_dir",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "metric_best",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "seed",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "wandb",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "dataset",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "num_threads",
+          "level": 1,
+          "line": 23
+        },
+        {
+          "heading": "num_workers",
+          "level": 1,
+          "line": 24
+        },
+        {
+          "heading": "train",
+          "level": 1,
+          "line": 25
+        },
+        {
+          "heading": "val",
+          "level": 1,
+          "line": 37
+        },
+        {
+          "heading": "model",
+          "level": 1,
+          "line": 41
+        },
+        {
+          "heading": "gnn",
+          "level": 1,
+          "line": 47
+        },
+        {
+          "heading": "optim",
+          "level": 1,
+          "line": 60
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 12
+      }
+    },
+    {
+      "path": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-Multi-PNA.yaml",
+      "language": "yaml",
+      "fileCategory": "config",
+      "totalLines": 78,
+      "nonEmptyLines": 77,
+      "sections": [
+        {
+          "heading": "out_dir",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "metric_best",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "seed",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "wandb",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "dataset",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "num_threads",
+          "level": 1,
+          "line": 23
+        },
+        {
+          "heading": "num_workers",
+          "level": 1,
+          "line": 24
+        },
+        {
+          "heading": "train",
+          "level": 1,
+          "line": 25
+        },
+        {
+          "heading": "val",
+          "level": 1,
+          "line": 37
+        },
+        {
+          "heading": "model",
+          "level": 1,
+          "line": 41
+        },
+        {
+          "heading": "gnn",
+          "level": 1,
+          "line": 47
+        },
+        {
+          "heading": "optim",
+          "level": 1,
+          "line": 59
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 12
+      }
+    },
+    {
+      "path": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-Multi-PNA+EU.yaml",
+      "language": "yaml",
+      "fileCategory": "config",
+      "totalLines": 79,
+      "nonEmptyLines": 78,
+      "sections": [
+        {
+          "heading": "out_dir",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "metric_best",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "seed",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "wandb",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "dataset",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "num_threads",
+          "level": 1,
+          "line": 23
+        },
+        {
+          "heading": "num_workers",
+          "level": 1,
+          "line": 24
+        },
+        {
+          "heading": "train",
+          "level": 1,
+          "line": 25
+        },
+        {
+          "heading": "val",
+          "level": 1,
+          "line": 37
+        },
+        {
+          "heading": "model",
+          "level": 1,
+          "line": 41
+        },
+        {
+          "heading": "gnn",
+          "level": 1,
+          "line": 47
+        },
+        {
+          "heading": "optim",
+          "level": 1,
+          "line": 60
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 12
+      }
+    },
+    {
+      "path": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-PNA.yaml",
+      "language": "yaml",
+      "fileCategory": "config",
+      "totalLines": 75,
+      "nonEmptyLines": 74,
+      "sections": [
+        {
+          "heading": "out_dir",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "metric_best",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "seed",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "wandb",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "dataset",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "num_threads",
+          "level": 1,
+          "line": 21
+        },
+        {
+          "heading": "num_workers",
+          "level": 1,
+          "line": 22
+        },
+        {
+          "heading": "train",
+          "level": 1,
+          "line": 23
+        },
+        {
+          "heading": "val",
+          "level": 1,
+          "line": 34
+        },
+        {
+          "heading": "model",
+          "level": 1,
+          "line": 38
+        },
+        {
+          "heading": "gnn",
+          "level": 1,
+          "line": 44
+        },
+        {
+          "heading": "optim",
+          "level": 1,
+          "line": 56
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 12
+      }
+    },
+    {
+      "path": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-PNA+EU.yaml",
+      "language": "yaml",
+      "fileCategory": "config",
+      "totalLines": 76,
+      "nonEmptyLines": 75,
+      "sections": [
+        {
+          "heading": "out_dir",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "metric_best",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "seed",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "wandb",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "dataset",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "num_threads",
+          "level": 1,
+          "line": 21
+        },
+        {
+          "heading": "num_workers",
+          "level": 1,
+          "line": 22
+        },
+        {
+          "heading": "train",
+          "level": 1,
+          "line": 23
+        },
+        {
+          "heading": "val",
+          "level": 1,
+          "line": 34
+        },
+        {
+          "heading": "model",
+          "level": 1,
+          "line": 38
+        },
+        {
+          "heading": "gnn",
+          "level": 1,
+          "line": 44
+        },
+        {
+          "heading": "optim",
+          "level": 1,
+          "line": 57
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 12
+      }
+    },
+    {
+      "path": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT.yaml",
+      "language": "yaml",
+      "fileCategory": "config",
+      "totalLines": 83,
+      "nonEmptyLines": 82,
+      "sections": [
+        {
+          "heading": "out_dir",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "metric_best",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "seed",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "wandb",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "dataset",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "num_threads",
+          "level": 1,
+          "line": 21
+        },
+        {
+          "heading": "num_workers",
+          "level": 1,
+          "line": 22
+        },
+        {
+          "heading": "train",
+          "level": 1,
+          "line": 23
+        },
+        {
+          "heading": "val",
+          "level": 1,
+          "line": 34
+        },
+        {
+          "heading": "model",
+          "level": 1,
+          "line": 38
+        },
+        {
+          "heading": "gt",
+          "level": 1,
+          "line": 44
+        },
+        {
+          "heading": "gnn",
+          "level": 1,
+          "line": 62
+        },
+        {
+          "heading": "optim",
+          "level": 1,
+          "line": 64
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 13
+      }
+    },
+    {
+      "path": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT+Ego.yaml",
+      "language": "yaml",
+      "fileCategory": "config",
+      "totalLines": 84,
+      "nonEmptyLines": 83,
+      "sections": [
+        {
+          "heading": "out_dir",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "metric_best",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "seed",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "wandb",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "dataset",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "num_threads",
+          "level": 1,
+          "line": 21
+        },
+        {
+          "heading": "num_workers",
+          "level": 1,
+          "line": 22
+        },
+        {
+          "heading": "train",
+          "level": 1,
+          "line": 23
+        },
+        {
+          "heading": "val",
+          "level": 1,
+          "line": 35
+        },
+        {
+          "heading": "model",
+          "level": 1,
+          "line": 39
+        },
+        {
+          "heading": "gt",
+          "level": 1,
+          "line": 45
+        },
+        {
+          "heading": "gnn",
+          "level": 1,
+          "line": 63
+        },
+        {
+          "heading": "optim",
+          "level": 1,
+          "line": 65
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 13
+      }
+    },
+    {
+      "path": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT+ports.yaml",
+      "language": "yaml",
+      "fileCategory": "config",
+      "totalLines": 84,
+      "nonEmptyLines": 83,
+      "sections": [
+        {
+          "heading": "out_dir",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "metric_best",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "seed",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "wandb",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "dataset",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "num_threads",
+          "level": 1,
+          "line": 22
+        },
+        {
+          "heading": "num_workers",
+          "level": 1,
+          "line": 23
+        },
+        {
+          "heading": "train",
+          "level": 1,
+          "line": 24
+        },
+        {
+          "heading": "val",
+          "level": 1,
+          "line": 35
+        },
+        {
+          "heading": "model",
+          "level": 1,
+          "line": 39
+        },
+        {
+          "heading": "gt",
+          "level": 1,
+          "line": 45
+        },
+        {
+          "heading": "gnn",
+          "level": 1,
+          "line": 63
+        },
+        {
+          "heading": "optim",
+          "level": 1,
+          "line": 65
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 13
+      }
+    },
+    {
+      "path": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT+ports+Ego.yaml",
+      "language": "yaml",
+      "fileCategory": "config",
+      "totalLines": 85,
+      "nonEmptyLines": 84,
+      "sections": [
+        {
+          "heading": "out_dir",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "metric_best",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "seed",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "wandb",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "dataset",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "num_threads",
+          "level": 1,
+          "line": 22
+        },
+        {
+          "heading": "num_workers",
+          "level": 1,
+          "line": 23
+        },
+        {
+          "heading": "train",
+          "level": 1,
+          "line": 24
+        },
+        {
+          "heading": "val",
+          "level": 1,
+          "line": 36
+        },
+        {
+          "heading": "model",
+          "level": 1,
+          "line": 40
+        },
+        {
+          "heading": "gt",
+          "level": 1,
+          "line": 46
+        },
+        {
+          "heading": "gnn",
+          "level": 1,
+          "line": 64
+        },
+        {
+          "heading": "optim",
+          "level": 1,
+          "line": 66
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 13
+      }
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+﻿{
+    "batchIndex":  5,
+    "projectRoot":  "G:\\My Drive\\GithubRepo\\FraudGT",
+    "batchFiles":  [
+                       {
+                           "path":  "fraudGT/network/hetero_gnn_edge_model.py",
+                           "language":  "python",
+                           "sizeLines":  461,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/network/hetero_gnn_model.py",
+                           "language":  "python",
+                           "sizeLines":  455,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/network/homo_gnn_edge_model.py",
+                           "language":  "python",
+                           "sizeLines":  240,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/network/homo_gnn_model.py",
+                           "language":  "python",
+                           "sizeLines":  271,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/network/mlp_model.py",
+                           "language":  "python",
+                           "sizeLines":  102,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/network/model.py",
+                           "language":  "python",
+                           "sizeLines":  53,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/network/utils.py",
+                           "language":  "python",
+                           "sizeLines":  30,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/optimizer/__init__.py",
+                           "language":  "python",
+                           "sizeLines":  8,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/optimizer/extra_optimizers.py",
+                           "language":  "python",
+                           "sizeLines":  251,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/sampler/__init__.py",
+                           "language":  "python",
+                           "sizeLines":  8,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/sampler/custom_sampler.py",
+                           "language":  "python",
+                           "sizeLines":  816,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/timer.py",
+                           "language":  "python",
+                           "sizeLines":  305,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/train/__init__.py",
+                           "language":  "python",
+                           "sizeLines":  8,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/train/custom_train.py",
+                           "language":  "python",
+                           "sizeLines":  708,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/transform/__init__.py",
+                           "language":  "python",
+                           "sizeLines":  8,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/transform/posenc_stats.py",
+                           "language":  "python",
+                           "sizeLines":  401,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/transform/transforms.py",
+                           "language":  "python",
+                           "sizeLines":  81,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/utils.py",
+                           "language":  "python",
+                           "sizeLines":  245,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "run/wrapper.sb",
+                           "language":  "unknown",
+                           "sizeLines":  23,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "configs/AML-Large-HI/AML-Large-HI-GATE.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  75,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/AML-Large-HI/AML-Large-HI-GatedGCN.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  74,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/AML-Large-HI/AML-Large-HI-GINE.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  74,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/AML-Large-HI/AML-Large-HI-GINE+Ego.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  75,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/AML-Large-HI/AML-Large-HI-GINE+EU.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  75,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/AML-Large-HI/AML-Large-HI-GINE+ports.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  75,
+                           "fileCategory":  "config"
+                       }
+                   ],
+    "batchImportData":  {
+                            "fraudGT/network/hetero_gnn_edge_model.py":  [
+
+                                                                         ],
+                            "fraudGT/network/hetero_gnn_model.py":  [
+
+                                                                    ],
+                            "fraudGT/network/homo_gnn_edge_model.py":  [
+
+                                                                       ],
+                            "fraudGT/network/homo_gnn_model.py":  [
+
+                                                                  ],
+                            "fraudGT/network/mlp_model.py":  [
+
+                                                             ],
+                            "fraudGT/network/model.py":  [
+                                                             "fraudGT/network/conv.py"
+                                                         ],
+                            "fraudGT/network/utils.py":  [
+
+                                                         ],
+                            "fraudGT/optimizer/__init__.py":  [
+
+                                                              ],
+                            "fraudGT/optimizer/extra_optimizers.py":  [
+
+                                                                      ],
+                            "fraudGT/sampler/__init__.py":  [
+
+                                                            ],
+                            "fraudGT/sampler/custom_sampler.py":  [
+
+                                                                  ],
+                            "fraudGT/timer.py":  [
+
+                                                 ],
+                            "fraudGT/train/__init__.py":  [
+
+                                                          ],
+                            "fraudGT/train/custom_train.py":  [
+
+                                                              ],
+                            "fraudGT/transform/__init__.py":  [
+
+                                                              ],
+                            "fraudGT/transform/posenc_stats.py":  [
+
+                                                                  ],
+                            "fraudGT/transform/transforms.py":  [
+
+                                                                ],
+                            "fraudGT/utils.py":  [
+
+                                                 ],
+                            "run/wrapper.sb":  [
+
+                                               ],
+                            "configs/AML-Large-HI/AML-Large-HI-GATE.yaml":  [
+
+                                                                            ],
+                            "configs/AML-Large-HI/AML-Large-HI-GatedGCN.yaml":  [
+
+                                                                                ],
+                            "configs/AML-Large-HI/AML-Large-HI-GINE.yaml":  [
+
+                                                                            ],
+                            "configs/AML-Large-HI/AML-Large-HI-GINE+Ego.yaml":  [
+
+                                                                                ],
+                            "configs/AML-Large-HI/AML-Large-HI-GINE+EU.yaml":  [
+
+                                                                               ],
+                            "configs/AML-Large-HI/AML-Large-HI-GINE+ports.yaml":  [
+
+                                                                                  ]
+                        }
+}

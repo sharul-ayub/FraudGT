@@ -1,0 +1,233 @@
+﻿{
+    "batchIndex":  11,
+    "projectRoot":  "G:\\My Drive\\GithubRepo\\FraudGT",
+    "batchFiles":  [
+                       {
+                           "path":  "configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT+RMP.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  84,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT-EdgeAttn.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  82,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT-EdgeGate.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  82,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/AML-Small-HI/AML-Small-HI-GATE.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  75,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/AML-Small-HI/AML-Small-HI-GatedGCN.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  74,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/AML-Small-HI/AML-Small-HI-GINE.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  74,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/AML-Small-HI/AML-Small-HI-GINE+Ego.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  75,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/AML-Small-HI/AML-Small-HI-GINE+EU.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  75,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/AML-Small-HI/AML-Small-HI-GINE+ports.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  75,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/AML-Small-HI/AML-Small-HI-GINE+RMP.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  76,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/AML-Small-HI/AML-Small-HI-MLP.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  72,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/AML-Small-HI/AML-Small-HI-Multi-GINE.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  77,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/AML-Small-HI/AML-Small-HI-Multi-GINE+EU.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  78,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/AML-Small-HI/AML-Small-HI-Multi-PNA.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  77,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/AML-Small-HI/AML-Small-HI-Multi-PNA+EU.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  78,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/AML-Small-HI/AML-Small-HI-Multi-SparseNodeGT.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  85,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/AML-Small-HI/AML-Small-HI-PNA.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  74,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/AML-Small-HI/AML-Small-HI-PNA+Ego.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  75,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/AML-Small-HI/AML-Small-HI-PNA+EU.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  75,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/AML-Small-HI/AML-Small-HI-PNA+ports.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  75,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/AML-Small-HI/AML-Small-HI-PNA+RMP.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  76,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/AML-Small-HI/AML-Small-HI-SparseNodeGT.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  82,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+Dropout.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  82,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+Ego.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  83,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+LP.yaml",
+                           "language":  "yaml",
+                           "sizeLines":  85,
+                           "fileCategory":  "config"
+                       }
+                   ],
+    "batchImportData":  {
+                            "configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT+RMP.yaml":  [
+
+                                                                                                   ],
+                            "configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT-EdgeAttn.yaml":  [
+
+                                                                                                        ],
+                            "configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT-EdgeGate.yaml":  [
+
+                                                                                                        ],
+                            "configs/AML-Small-HI/AML-Small-HI-GATE.yaml":  [
+
+                                                                            ],
+                            "configs/AML-Small-HI/AML-Small-HI-GatedGCN.yaml":  [
+
+                                                                                ],
+                            "configs/AML-Small-HI/AML-Small-HI-GINE.yaml":  [
+
+                                                                            ],
+                            "configs/AML-Small-HI/AML-Small-HI-GINE+Ego.yaml":  [
+
+                                                                                ],
+                            "configs/AML-Small-HI/AML-Small-HI-GINE+EU.yaml":  [
+
+                                                                               ],
+                            "configs/AML-Small-HI/AML-Small-HI-GINE+ports.yaml":  [
+
+                                                                                  ],
+                            "configs/AML-Small-HI/AML-Small-HI-GINE+RMP.yaml":  [
+
+                                                                                ],
+                            "configs/AML-Small-HI/AML-Small-HI-MLP.yaml":  [
+
+                                                                           ],
+                            "configs/AML-Small-HI/AML-Small-HI-Multi-GINE.yaml":  [
+
+                                                                                  ],
+                            "configs/AML-Small-HI/AML-Small-HI-Multi-GINE+EU.yaml":  [
+
+                                                                                     ],
+                            "configs/AML-Small-HI/AML-Small-HI-Multi-PNA.yaml":  [
+
+                                                                                 ],
+                            "configs/AML-Small-HI/AML-Small-HI-Multi-PNA+EU.yaml":  [
+
+                                                                                    ],
+                            "configs/AML-Small-HI/AML-Small-HI-Multi-SparseNodeGT.yaml":  [
+
+                                                                                          ],
+                            "configs/AML-Small-HI/AML-Small-HI-PNA.yaml":  [
+
+                                                                           ],
+                            "configs/AML-Small-HI/AML-Small-HI-PNA+Ego.yaml":  [
+
+                                                                               ],
+                            "configs/AML-Small-HI/AML-Small-HI-PNA+EU.yaml":  [
+
+                                                                              ],
+                            "configs/AML-Small-HI/AML-Small-HI-PNA+ports.yaml":  [
+
+                                                                                 ],
+                            "configs/AML-Small-HI/AML-Small-HI-PNA+RMP.yaml":  [
+
+                                                                               ],
+                            "configs/AML-Small-HI/AML-Small-HI-SparseNodeGT.yaml":  [
+
+                                                                                    ],
+                            "configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+Dropout.yaml":  [
+
+                                                                                            ],
+                            "configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+Ego.yaml":  [
+
+                                                                                        ],
+                            "configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+LP.yaml":  [
+
+                                                                                       ]
+                        }
+}

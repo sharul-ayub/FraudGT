@@ -1,0 +1,246 @@
+{
+    "batchIndex":  1,
+    "projectRoot":  "G:\\My Drive\\GithubRepo\\FraudGT",
+    "batchFiles":  [
+                       {
+                           "path":  "fraudGT/encoder/hetero_gnn_encoder.py",
+                           "language":  "python",
+                           "sizeLines":  258,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/encoder/hetero_label_encoder.py",
+                           "language":  "python",
+                           "sizeLines":  143,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/encoder/hetero_pos_encoder.py",
+                           "language":  "python",
+                           "sizeLines":  197,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/encoder/hetero_raw_encoder.py",
+                           "language":  "python",
+                           "sizeLines":  179,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/encoder/homo_gnn_encoder.py",
+                           "language":  "python",
+                           "sizeLines":  202,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/encoder/raw_encoder.py",
+                           "language":  "python",
+                           "sizeLines":  171,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/finetuning.py",
+                           "language":  "python",
+                           "sizeLines":  149,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/graphgym/__init__.py",
+                           "language":  "python",
+                           "sizeLines":  2,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/graphgym/checkpoint.py",
+                           "language":  "python",
+                           "sizeLines":  87,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/graphgym/cmd_args.py",
+                           "language":  "python",
+                           "sizeLines":  29,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/graphgym/config.py",
+                           "language":  "python",
+                           "sizeLines":  634,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/graphgym/contrib/__init__.py",
+                           "language":  "python",
+                           "sizeLines":  14,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/graphgym/contrib/act/__init__.py",
+                           "language":  "python",
+                           "sizeLines":  8,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/graphgym/contrib/act/example.py",
+                           "language":  "python",
+                           "sizeLines":  24,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/graphgym/contrib/config/__init__.py",
+                           "language":  "python",
+                           "sizeLines":  8,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/graphgym/contrib/config/example.py",
+                           "language":  "python",
+                           "sizeLines":  26,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/graphgym/contrib/feature_augment/__init__.py",
+                           "language":  "python",
+                           "sizeLines":  8,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/graphgym/contrib/feature_augment/example.py",
+                           "language":  "python",
+                           "sizeLines":  18,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/graphgym/contrib/feature_encoder/__init__.py",
+                           "language":  "python",
+                           "sizeLines":  8,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/graphgym/contrib/feature_encoder/example.py",
+                           "language":  "python",
+                           "sizeLines":  54,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/graphgym/contrib/head/__init__.py",
+                           "language":  "python",
+                           "sizeLines":  8,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/graphgym/contrib/head/example.py",
+                           "language":  "python",
+                           "sizeLines":  26,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/graphgym/contrib/layer/__init__.py",
+                           "language":  "python",
+                           "sizeLines":  8,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/graphgym/contrib/layer/attconv.py",
+                           "language":  "python",
+                           "sizeLines":  606,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "fraudGT/graphgym/contrib/layer/example.py",
+                           "language":  "python",
+                           "sizeLines":  120,
+                           "fileCategory":  "code"
+                       }
+                   ],
+    "batchImportData":  {
+                            "fraudGT/encoder/hetero_gnn_encoder.py":  [
+
+                                                                      ],
+                            "fraudGT/encoder/hetero_label_encoder.py":  [
+
+                                                                        ],
+                            "fraudGT/encoder/hetero_pos_encoder.py":  [
+
+                                                                      ],
+                            "fraudGT/encoder/hetero_raw_encoder.py":  [
+
+                                                                      ],
+                            "fraudGT/encoder/homo_gnn_encoder.py":  [
+
+                                                                    ],
+                            "fraudGT/encoder/raw_encoder.py":  [
+
+                                                               ],
+                            "fraudGT/finetuning.py":  [
+
+                                                      ],
+                            "fraudGT/graphgym/__init__.py":  [
+                                                                 "fraudGT/graphgym/models/__init__.py",
+                                                                 "fraudGT/graphgym/utils/__init__.py"
+                                                             ],
+                            "fraudGT/graphgym/checkpoint.py":  [
+
+                                                               ],
+                            "fraudGT/graphgym/cmd_args.py":  [
+
+                                                             ],
+                            "fraudGT/graphgym/config.py":  [
+
+                                                           ],
+                            "fraudGT/graphgym/contrib/__init__.py":  [
+                                                                         "fraudGT/graphgym/contrib/act/__init__.py",
+                                                                         "fraudGT/graphgym/contrib/config/__init__.py",
+                                                                         "fraudGT/graphgym/contrib/feature_augment/__init__.py",
+                                                                         "fraudGT/graphgym/contrib/feature_encoder/__init__.py",
+                                                                         "fraudGT/graphgym/contrib/head/__init__.py",
+                                                                         "fraudGT/graphgym/contrib/layer/__init__.py",
+                                                                         "fraudGT/graphgym/contrib/loader/__init__.py",
+                                                                         "fraudGT/graphgym/contrib/loss/__init__.py",
+                                                                         "fraudGT/graphgym/contrib/network/__init__.py",
+                                                                         "fraudGT/graphgym/contrib/pooling/__init__.py",
+                                                                         "fraudGT/graphgym/contrib/stage/__init__.py",
+                                                                         "fraudGT/graphgym/contrib/train/__init__.py",
+                                                                         "fraudGT/graphgym/contrib/transform/__init__.py"
+                                                                     ],
+                            "fraudGT/graphgym/contrib/act/__init__.py":  [
+
+                                                                         ],
+                            "fraudGT/graphgym/contrib/act/example.py":  [
+
+                                                                        ],
+                            "fraudGT/graphgym/contrib/config/__init__.py":  [
+
+                                                                            ],
+                            "fraudGT/graphgym/contrib/config/example.py":  [
+
+                                                                           ],
+                            "fraudGT/graphgym/contrib/feature_augment/__init__.py":  [
+
+                                                                                     ],
+                            "fraudGT/graphgym/contrib/feature_augment/example.py":  [
+
+                                                                                    ],
+                            "fraudGT/graphgym/contrib/feature_encoder/__init__.py":  [
+
+                                                                                     ],
+                            "fraudGT/graphgym/contrib/feature_encoder/example.py":  [
+
+                                                                                    ],
+                            "fraudGT/graphgym/contrib/head/__init__.py":  [
+
+                                                                          ],
+                            "fraudGT/graphgym/contrib/head/example.py":  [
+
+                                                                         ],
+                            "fraudGT/graphgym/contrib/layer/__init__.py":  [
+
+                                                                           ],
+                            "fraudGT/graphgym/contrib/layer/attconv.py":  [
+
+                                                                          ],
+                            "fraudGT/graphgym/contrib/layer/example.py":  [
+
+                                                                          ]
+                        }
+}

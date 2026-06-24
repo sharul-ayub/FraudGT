@@ -1,0 +1,13 @@
+{
+  "fixedSectionOk": true,
+  "nodesRecovered": 0,
+  "edgesRestored": 0,
+  "crossBatchEdgesAdded": 0,
+  "typesRemapped": 0,
+  "complexityRemapped": 0,
+  "notes": [
+    "Merge report contained no explicit Fixed or Could not fix sections; node types, required fields, and complexity values were already valid.",
+    "The 3-edge reduction matched duplicate related edges across batch outputs, not dangling data loss.",
+    "All 29 importMap-backed internal imports already had corresponding file-level imports edges."
+  ]
+}

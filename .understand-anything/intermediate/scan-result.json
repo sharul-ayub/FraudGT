@@ -1,0 +1,2646 @@
+{
+  "name": "FraudGT",
+  "description": "FraudGT is a graph transformer codebase for financial fraud detection, with AML and Ethereum dataset processing, experiment configs, training scripts, and GraphGym-style model components. Note: this project has over 100 source files; consider scoping analysis to a subdirectory for faster results.",
+  "languages": [
+    "markdown",
+    "python",
+    "shell",
+    "yaml"
+  ],
+  "frameworks": [
+    "PyTorch",
+    "Weights & Biases"
+  ],
+  "files": [
+    {
+      "path": "configs/AML-Large-HI/AML-Large-HI-GATE.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-HI/AML-Large-HI-GatedGCN.yaml",
+      "language": "yaml",
+      "sizeLines": 74,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-HI/AML-Large-HI-GINE.yaml",
+      "language": "yaml",
+      "sizeLines": 74,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-HI/AML-Large-HI-GINE+Ego.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-HI/AML-Large-HI-GINE+EU.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-HI/AML-Large-HI-GINE+ports.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-HI/AML-Large-HI-GINE+RMP.yaml",
+      "language": "yaml",
+      "sizeLines": 76,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-HI/AML-Large-HI-MLP.yaml",
+      "language": "yaml",
+      "sizeLines": 72,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-HI/AML-Large-HI-Multi-GINE.yaml",
+      "language": "yaml",
+      "sizeLines": 77,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-HI/AML-Large-HI-Multi-GINE+EU.yaml",
+      "language": "yaml",
+      "sizeLines": 78,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-HI/AML-Large-HI-Multi-PNA.yaml",
+      "language": "yaml",
+      "sizeLines": 77,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-HI/AML-Large-HI-Multi-PNA+EU.yaml",
+      "language": "yaml",
+      "sizeLines": 78,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-HI/AML-Large-HI-Multi-SparseNodeGT.yaml",
+      "language": "yaml",
+      "sizeLines": 85,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-HI/AML-Large-HI-PNA.yaml",
+      "language": "yaml",
+      "sizeLines": 74,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-HI/AML-Large-HI-PNA+EU.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-HI/AML-Large-HI-SparseNodeGT-EdgeAttn.yaml",
+      "language": "yaml",
+      "sizeLines": 82,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-HI/AML-Large-HI-SparseNodeGT-EdgeGate.yaml",
+      "language": "yaml",
+      "sizeLines": 82,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-HI/AML-Large-HI-SparseNodeGT.yaml",
+      "language": "yaml",
+      "sizeLines": 82,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-HI/AML-Large-HI-SparseNodeGT+Dropout.yaml",
+      "language": "yaml",
+      "sizeLines": 82,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-HI/AML-Large-HI-SparseNodeGT+Ego.yaml",
+      "language": "yaml",
+      "sizeLines": 83,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-HI/AML-Large-HI-SparseNodeGT+ports.yaml",
+      "language": "yaml",
+      "sizeLines": 83,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-HI/AML-Large-HI-SparseNodeGT+ports+Ego.yaml",
+      "language": "yaml",
+      "sizeLines": 84,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-HI/AML-Large-HI-SparseNodeGT+RMP.yaml",
+      "language": "yaml",
+      "sizeLines": 84,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-LI_Transfer/AML-Large-LI_Transfer-Multi-SparseNodeGT.yaml",
+      "language": "yaml",
+      "sizeLines": 88,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-LI_Transfer/AML-Large-LI-GATE.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-LI_Transfer/AML-Large-LI-GatedGCN.yaml",
+      "language": "yaml",
+      "sizeLines": 74,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-LI_Transfer/AML-Large-LI-GINE.yaml",
+      "language": "yaml",
+      "sizeLines": 74,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-LI_Transfer/AML-Large-LI-GINE+Ego.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-LI_Transfer/AML-Large-LI-GINE+EU.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-LI_Transfer/AML-Large-LI-GINE+ports.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-LI_Transfer/AML-Large-LI-GINE+RMP.yaml",
+      "language": "yaml",
+      "sizeLines": 76,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-LI_Transfer/AML-Large-LI-MLP.yaml",
+      "language": "yaml",
+      "sizeLines": 72,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-LI_Transfer/AML-Large-LI-Multi-GINE.yaml",
+      "language": "yaml",
+      "sizeLines": 77,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-LI_Transfer/AML-Large-LI-Multi-GINE+EU.yaml",
+      "language": "yaml",
+      "sizeLines": 78,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-LI_Transfer/AML-Large-LI-Multi-PNA.yaml",
+      "language": "yaml",
+      "sizeLines": 77,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-LI_Transfer/AML-Large-LI-Multi-PNA+EU.yaml",
+      "language": "yaml",
+      "sizeLines": 78,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-LI_Transfer/AML-Large-LI-PNA.yaml",
+      "language": "yaml",
+      "sizeLines": 74,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-LI_Transfer/AML-Large-LI-PNA+EU.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-LI_Transfer/AML-Large-LI-SparseNodeGT-EdgeAttn.yaml",
+      "language": "yaml",
+      "sizeLines": 82,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-LI_Transfer/AML-Large-LI-SparseNodeGT-EdgeGate.yaml",
+      "language": "yaml",
+      "sizeLines": 82,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-LI_Transfer/AML-Large-LI-SparseNodeGT.yaml",
+      "language": "yaml",
+      "sizeLines": 82,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-LI_Transfer/AML-Large-LI-SparseNodeGT+Ego.yaml",
+      "language": "yaml",
+      "sizeLines": 83,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-LI_Transfer/AML-Large-LI-SparseNodeGT+ports.yaml",
+      "language": "yaml",
+      "sizeLines": 83,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-LI_Transfer/AML-Large-LI-SparseNodeGT+ports+Ego.yaml",
+      "language": "yaml",
+      "sizeLines": 84,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-LI_Transfer/AML-Large-LI-SparseNodeGT+RMP.yaml",
+      "language": "yaml",
+      "sizeLines": 84,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-LI/AML-Large-LI-GATE.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-LI/AML-Large-LI-GatedGCN.yaml",
+      "language": "yaml",
+      "sizeLines": 74,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-LI/AML-Large-LI-GINE.yaml",
+      "language": "yaml",
+      "sizeLines": 74,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-LI/AML-Large-LI-GINE+Ego.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-LI/AML-Large-LI-GINE+EU.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-LI/AML-Large-LI-GINE+ports.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-LI/AML-Large-LI-GINE+RMP.yaml",
+      "language": "yaml",
+      "sizeLines": 76,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-LI/AML-Large-LI-MLP.yaml",
+      "language": "yaml",
+      "sizeLines": 72,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-LI/AML-Large-LI-Multi-GINE.yaml",
+      "language": "yaml",
+      "sizeLines": 77,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-LI/AML-Large-LI-Multi-GINE+EU.yaml",
+      "language": "yaml",
+      "sizeLines": 78,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-LI/AML-Large-LI-Multi-PNA.yaml",
+      "language": "yaml",
+      "sizeLines": 77,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-LI/AML-Large-LI-Multi-PNA+EU.yaml",
+      "language": "yaml",
+      "sizeLines": 78,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-LI/AML-Large-LI-Multi-SparseNodeGT.yaml",
+      "language": "yaml",
+      "sizeLines": 85,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-LI/AML-Large-LI-PNA.yaml",
+      "language": "yaml",
+      "sizeLines": 74,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-LI/AML-Large-LI-PNA+EU.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-LI/AML-Large-LI-SparseNodeGT-EdgeAttn.yaml",
+      "language": "yaml",
+      "sizeLines": 82,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-LI/AML-Large-LI-SparseNodeGT-EdgeGate.yaml",
+      "language": "yaml",
+      "sizeLines": 82,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-LI/AML-Large-LI-SparseNodeGT.yaml",
+      "language": "yaml",
+      "sizeLines": 82,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-LI/AML-Large-LI-SparseNodeGT+Ego.yaml",
+      "language": "yaml",
+      "sizeLines": 83,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-LI/AML-Large-LI-SparseNodeGT+ports.yaml",
+      "language": "yaml",
+      "sizeLines": 83,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-LI/AML-Large-LI-SparseNodeGT+ports+Ego.yaml",
+      "language": "yaml",
+      "sizeLines": 84,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Large-LI/AML-Large-LI-SparseNodeGT+RMP.yaml",
+      "language": "yaml",
+      "sizeLines": 84,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-HI/AML-Medium-HI-GATE.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-HI/AML-Medium-HI-GatedGCN.yaml",
+      "language": "yaml",
+      "sizeLines": 74,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-HI/AML-Medium-HI-GINE.yaml",
+      "language": "yaml",
+      "sizeLines": 74,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-HI/AML-Medium-HI-GINE+Ego.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-HI/AML-Medium-HI-GINE+EU.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-HI/AML-Medium-HI-GINE+ports.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-HI/AML-Medium-HI-GINE+RMP.yaml",
+      "language": "yaml",
+      "sizeLines": 76,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-HI/AML-Medium-HI-MLP.yaml",
+      "language": "yaml",
+      "sizeLines": 72,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-HI/AML-Medium-HI-Multi-GINE.yaml",
+      "language": "yaml",
+      "sizeLines": 77,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-HI/AML-Medium-HI-Multi-GINE+EU.yaml",
+      "language": "yaml",
+      "sizeLines": 78,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-HI/AML-Medium-HI-Multi-PNA.yaml",
+      "language": "yaml",
+      "sizeLines": 77,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-HI/AML-Medium-HI-Multi-PNA+EU.yaml",
+      "language": "yaml",
+      "sizeLines": 78,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-HI/AML-Medium-HI-Multi-SparseNodeGT.yaml",
+      "language": "yaml",
+      "sizeLines": 85,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-HI/AML-Medium-HI-PNA.yaml",
+      "language": "yaml",
+      "sizeLines": 74,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-HI/AML-Medium-HI-PNA+EU.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-HI/AML-Medium-HI-SparseEdgeGT.yaml",
+      "language": "yaml",
+      "sizeLines": 82,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-HI/AML-Medium-HI-SparseNodeGT-EdgeAttn.yaml",
+      "language": "yaml",
+      "sizeLines": 82,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-HI/AML-Medium-HI-SparseNodeGT-EdgeGate.yaml",
+      "language": "yaml",
+      "sizeLines": 82,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-HI/AML-Medium-HI-SparseNodeGT.yaml",
+      "language": "yaml",
+      "sizeLines": 82,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-HI/AML-Medium-HI-SparseNodeGT+Ego.yaml",
+      "language": "yaml",
+      "sizeLines": 83,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-HI/AML-Medium-HI-SparseNodeGT+ports.yaml",
+      "language": "yaml",
+      "sizeLines": 83,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-HI/AML-Medium-HI-SparseNodeGT+ports+Ego.yaml",
+      "language": "yaml",
+      "sizeLines": 84,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-HI/AML-Medium-HI-SparseNodeGT+RMP.yaml",
+      "language": "yaml",
+      "sizeLines": 84,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-LI_Transfer/AML-Medium-LI_Transfer-Multi-SparseNodeGT.yaml",
+      "language": "yaml",
+      "sizeLines": 88,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-GATE.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-GatedGCN.yaml",
+      "language": "yaml",
+      "sizeLines": 74,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-GINE.yaml",
+      "language": "yaml",
+      "sizeLines": 74,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-GINE+Ego.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-GINE+EU.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-GINE+ports.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-GINE+RMP.yaml",
+      "language": "yaml",
+      "sizeLines": 76,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-MLP.yaml",
+      "language": "yaml",
+      "sizeLines": 72,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-Multi-GINE.yaml",
+      "language": "yaml",
+      "sizeLines": 77,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-Multi-GINE+EU.yaml",
+      "language": "yaml",
+      "sizeLines": 78,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-Multi-PNA.yaml",
+      "language": "yaml",
+      "sizeLines": 77,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-Multi-PNA+EU.yaml",
+      "language": "yaml",
+      "sizeLines": 78,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-PNA.yaml",
+      "language": "yaml",
+      "sizeLines": 74,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-PNA+EU.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT-EdgeAttn.yaml",
+      "language": "yaml",
+      "sizeLines": 82,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT-EdgeGate.yaml",
+      "language": "yaml",
+      "sizeLines": 82,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT.yaml",
+      "language": "yaml",
+      "sizeLines": 82,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT+Ego.yaml",
+      "language": "yaml",
+      "sizeLines": 83,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT+ports.yaml",
+      "language": "yaml",
+      "sizeLines": 83,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT+ports+Ego.yaml",
+      "language": "yaml",
+      "sizeLines": 84,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT+RMP.yaml",
+      "language": "yaml",
+      "sizeLines": 84,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-LI/AML-Medium-LI-GATE.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-LI/AML-Medium-LI-GatedGCN.yaml",
+      "language": "yaml",
+      "sizeLines": 74,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-LI/AML-Medium-LI-GINE.yaml",
+      "language": "yaml",
+      "sizeLines": 74,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-LI/AML-Medium-LI-GINE+Ego.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-LI/AML-Medium-LI-GINE+EU.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-LI/AML-Medium-LI-GINE+ports.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-LI/AML-Medium-LI-GINE+RMP.yaml",
+      "language": "yaml",
+      "sizeLines": 76,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-LI/AML-Medium-LI-MLP.yaml",
+      "language": "yaml",
+      "sizeLines": 72,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-LI/AML-Medium-LI-Multi-GINE.yaml",
+      "language": "yaml",
+      "sizeLines": 77,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-LI/AML-Medium-LI-Multi-GINE+EU.yaml",
+      "language": "yaml",
+      "sizeLines": 78,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-LI/AML-Medium-LI-Multi-PNA.yaml",
+      "language": "yaml",
+      "sizeLines": 77,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-LI/AML-Medium-LI-Multi-PNA+EU.yaml",
+      "language": "yaml",
+      "sizeLines": 78,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-LI/AML-Medium-LI-Multi-SparseNodeGT.yaml",
+      "language": "yaml",
+      "sizeLines": 85,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-LI/AML-Medium-LI-PNA.yaml",
+      "language": "yaml",
+      "sizeLines": 74,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-LI/AML-Medium-LI-PNA+EU.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-LI/AML-Medium-LI-SparseNodeGT-EdgeAttn.yaml",
+      "language": "yaml",
+      "sizeLines": 82,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-LI/AML-Medium-LI-SparseNodeGT-EdgeGate.yaml",
+      "language": "yaml",
+      "sizeLines": 82,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-LI/AML-Medium-LI-SparseNodeGT.yaml",
+      "language": "yaml",
+      "sizeLines": 82,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-LI/AML-Medium-LI-SparseNodeGT+Ego.yaml",
+      "language": "yaml",
+      "sizeLines": 83,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-LI/AML-Medium-LI-SparseNodeGT+ports.yaml",
+      "language": "yaml",
+      "sizeLines": 83,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-LI/AML-Medium-LI-SparseNodeGT+ports+Ego.yaml",
+      "language": "yaml",
+      "sizeLines": 84,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Medium-LI/AML-Medium-LI-SparseNodeGT+RMP.yaml",
+      "language": "yaml",
+      "sizeLines": 84,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-HI/AML-Small-HI-GATE.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-HI/AML-Small-HI-GatedGCN.yaml",
+      "language": "yaml",
+      "sizeLines": 74,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-HI/AML-Small-HI-GINE.yaml",
+      "language": "yaml",
+      "sizeLines": 74,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-HI/AML-Small-HI-GINE+Ego.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-HI/AML-Small-HI-GINE+EU.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-HI/AML-Small-HI-GINE+ports.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-HI/AML-Small-HI-GINE+RMP.yaml",
+      "language": "yaml",
+      "sizeLines": 76,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-HI/AML-Small-HI-MLP.yaml",
+      "language": "yaml",
+      "sizeLines": 72,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-HI/AML-Small-HI-Multi-GINE.yaml",
+      "language": "yaml",
+      "sizeLines": 77,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-HI/AML-Small-HI-Multi-GINE+EU.yaml",
+      "language": "yaml",
+      "sizeLines": 78,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-HI/AML-Small-HI-Multi-PNA.yaml",
+      "language": "yaml",
+      "sizeLines": 77,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-HI/AML-Small-HI-Multi-PNA+EU.yaml",
+      "language": "yaml",
+      "sizeLines": 78,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-HI/AML-Small-HI-Multi-SparseNodeGT.yaml",
+      "language": "yaml",
+      "sizeLines": 85,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-HI/AML-Small-HI-PNA.yaml",
+      "language": "yaml",
+      "sizeLines": 74,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-HI/AML-Small-HI-PNA+Ego.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-HI/AML-Small-HI-PNA+EU.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-HI/AML-Small-HI-PNA+ports.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-HI/AML-Small-HI-PNA+RMP.yaml",
+      "language": "yaml",
+      "sizeLines": 76,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-HI/AML-Small-HI-SparseNodeGT-EdgeAttn.yaml",
+      "language": "yaml",
+      "sizeLines": 82,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-HI/AML-Small-HI-SparseNodeGT-EdgeGate.yaml",
+      "language": "yaml",
+      "sizeLines": 82,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-HI/AML-Small-HI-SparseNodeGT.yaml",
+      "language": "yaml",
+      "sizeLines": 82,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+Dropout.yaml",
+      "language": "yaml",
+      "sizeLines": 82,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+Ego.yaml",
+      "language": "yaml",
+      "sizeLines": 83,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+LP.yaml",
+      "language": "yaml",
+      "sizeLines": 85,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+ports.yaml",
+      "language": "yaml",
+      "sizeLines": 83,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+ports+Ego.yaml",
+      "language": "yaml",
+      "sizeLines": 84,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+ports+LP.yaml",
+      "language": "yaml",
+      "sizeLines": 86,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+RMP.yaml",
+      "language": "yaml",
+      "sizeLines": 84,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-LI_Transfer/AML-Small-LI_Transfer-Multi-SparseNodeGT.yaml",
+      "language": "yaml",
+      "sizeLines": 88,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-LI_Transfer/AML-Small-LI-GATE.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-LI_Transfer/AML-Small-LI-GatedGCN.yaml",
+      "language": "yaml",
+      "sizeLines": 74,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-LI_Transfer/AML-Small-LI-GINE.yaml",
+      "language": "yaml",
+      "sizeLines": 74,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-LI_Transfer/AML-Small-LI-GINE+Ego.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-LI_Transfer/AML-Small-LI-GINE+EU.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-LI_Transfer/AML-Small-LI-GINE+ports.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-LI_Transfer/AML-Small-LI-GINE+RMP.yaml",
+      "language": "yaml",
+      "sizeLines": 76,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-LI_Transfer/AML-Small-LI-MLP.yaml",
+      "language": "yaml",
+      "sizeLines": 72,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-LI_Transfer/AML-Small-LI-Multi-GINE.yaml",
+      "language": "yaml",
+      "sizeLines": 77,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-LI_Transfer/AML-Small-LI-Multi-GINE+EU.yaml",
+      "language": "yaml",
+      "sizeLines": 78,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-LI_Transfer/AML-Small-LI-Multi-PNA.yaml",
+      "language": "yaml",
+      "sizeLines": 77,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-LI_Transfer/AML-Small-LI-Multi-PNA+EU.yaml",
+      "language": "yaml",
+      "sizeLines": 78,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-LI_Transfer/AML-Small-LI-PNA.yaml",
+      "language": "yaml",
+      "sizeLines": 74,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-LI_Transfer/AML-Small-LI-PNA+EU.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT-EdgeAttn.yaml",
+      "language": "yaml",
+      "sizeLines": 82,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT-EdgeGate.yaml",
+      "language": "yaml",
+      "sizeLines": 82,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT.yaml",
+      "language": "yaml",
+      "sizeLines": 82,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT+Ego.yaml",
+      "language": "yaml",
+      "sizeLines": 83,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT+ports.yaml",
+      "language": "yaml",
+      "sizeLines": 83,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT+ports+Ego.yaml",
+      "language": "yaml",
+      "sizeLines": 84,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT+RMP.yaml",
+      "language": "yaml",
+      "sizeLines": 84,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-LI/AML-Small-LI-GATE.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-LI/AML-Small-LI-GatedGCN.yaml",
+      "language": "yaml",
+      "sizeLines": 74,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-LI/AML-Small-LI-GINE.yaml",
+      "language": "yaml",
+      "sizeLines": 74,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-LI/AML-Small-LI-GINE+Ego.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-LI/AML-Small-LI-GINE+EU.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-LI/AML-Small-LI-GINE+ports.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-LI/AML-Small-LI-GINE+RMP.yaml",
+      "language": "yaml",
+      "sizeLines": 76,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-LI/AML-Small-LI-MLP.yaml",
+      "language": "yaml",
+      "sizeLines": 72,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-LI/AML-Small-LI-Multi-GINE.yaml",
+      "language": "yaml",
+      "sizeLines": 77,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-LI/AML-Small-LI-Multi-GINE+EU.yaml",
+      "language": "yaml",
+      "sizeLines": 78,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-LI/AML-Small-LI-Multi-PNA.yaml",
+      "language": "yaml",
+      "sizeLines": 77,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-LI/AML-Small-LI-Multi-PNA+EU.yaml",
+      "language": "yaml",
+      "sizeLines": 78,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-LI/AML-Small-LI-Multi-SparseNodeGT.yaml",
+      "language": "yaml",
+      "sizeLines": 85,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-LI/AML-Small-LI-PNA.yaml",
+      "language": "yaml",
+      "sizeLines": 74,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-LI/AML-Small-LI-PNA+EU.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-LI/AML-Small-LI-SparseNodeGT-EdgeAttn.yaml",
+      "language": "yaml",
+      "sizeLines": 82,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-LI/AML-Small-LI-SparseNodeGT-EdgeGate.yaml",
+      "language": "yaml",
+      "sizeLines": 82,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-LI/AML-Small-LI-SparseNodeGT.yaml",
+      "language": "yaml",
+      "sizeLines": 82,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-LI/AML-Small-LI-SparseNodeGT+Ego.yaml",
+      "language": "yaml",
+      "sizeLines": 83,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-LI/AML-Small-LI-SparseNodeGT+ports.yaml",
+      "language": "yaml",
+      "sizeLines": 83,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-LI/AML-Small-LI-SparseNodeGT+ports+Ego.yaml",
+      "language": "yaml",
+      "sizeLines": 84,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/AML-Small-LI/AML-Small-LI-SparseNodeGT+RMP.yaml",
+      "language": "yaml",
+      "sizeLines": 84,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/ETH/ETH-GINE.yaml",
+      "language": "yaml",
+      "sizeLines": 74,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/ETH/ETH-GINE+Ego.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/ETH/ETH-GINE+EU.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/ETH/ETH-GINE+ports.yaml",
+      "language": "yaml",
+      "sizeLines": 76,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/ETH/ETH-GINE+RMP.yaml",
+      "language": "yaml",
+      "sizeLines": 76,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/ETH/ETH-MLP.yaml",
+      "language": "yaml",
+      "sizeLines": 72,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/ETH/ETH-Multi-GINE.yaml",
+      "language": "yaml",
+      "sizeLines": 76,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/ETH/ETH-Multi-PNA.yaml",
+      "language": "yaml",
+      "sizeLines": 77,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/ETH/ETH-Multi-PNA+EU.yaml",
+      "language": "yaml",
+      "sizeLines": 78,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/ETH/ETH-Multi-SparseNodeGT.yaml",
+      "language": "yaml",
+      "sizeLines": 85,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/ETH/ETH-PNA.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/ETH/ETH-PNA+EU.yaml",
+      "language": "yaml",
+      "sizeLines": 75,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/ETH/ETH-SparseNodeGT.yaml",
+      "language": "yaml",
+      "sizeLines": 82,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/ETH/ETH-SparseNodeGT+Ego.yaml",
+      "language": "yaml",
+      "sizeLines": 83,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/ETH/ETH-SparseNodeGT+LP.yaml",
+      "language": "yaml",
+      "sizeLines": 85,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/ETH/ETH-SparseNodeGT+LP+ports.yaml",
+      "language": "yaml",
+      "sizeLines": 87,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/ETH/ETH-SparseNodeGT+Node2Vec.yaml",
+      "language": "yaml",
+      "sizeLines": 86,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/ETH/ETH-SparseNodeGT+ports.yaml",
+      "language": "yaml",
+      "sizeLines": 84,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/ETH/ETH-SparseNodeGT+ports+Ego.yaml",
+      "language": "yaml",
+      "sizeLines": 85,
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/ETH/ETH-SparseNodeGT+RMP.yaml",
+      "language": "yaml",
+      "sizeLines": 83,
+      "fileCategory": "config"
+    },
+    {
+      "path": "fraudGT/__init__.py",
+      "language": "python",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/act/__init__.py",
+      "language": "python",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/act/example.py",
+      "language": "python",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/agg_runs.py",
+      "language": "python",
+      "sizeLines": 162,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/config/__init__.py",
+      "language": "python",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/config/dataset_config.py",
+      "language": "python",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/config/defaults_config.py",
+      "language": "python",
+      "sizeLines": 91,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/config/gt_config.py",
+      "language": "python",
+      "sizeLines": 103,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/config/optimizers_config.py",
+      "language": "python",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/config/posenc_config.py",
+      "language": "python",
+      "sizeLines": 141,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/config/pretrained_config.py",
+      "language": "python",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/config/split_config.py",
+      "language": "python",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/config/wandb_config.py",
+      "language": "python",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/datasets/__init__.py",
+      "language": "python",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/datasets/aml_dataset.py",
+      "language": "python",
+      "sizeLines": 351,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/datasets/eth_dataset.py",
+      "language": "python",
+      "sizeLines": 221,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/datasets/temporal_dataset.py",
+      "language": "python",
+      "sizeLines": 205,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/datasets/utils.py",
+      "language": "python",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/encoder/__init__.py",
+      "language": "python",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/encoder/composed_encoders.py",
+      "language": "python",
+      "sizeLines": 331,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/encoder/hetero_embed_encoder.py",
+      "language": "python",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/encoder/hetero_gnn_encoder.py",
+      "language": "python",
+      "sizeLines": 258,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/encoder/hetero_label_encoder.py",
+      "language": "python",
+      "sizeLines": 143,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/encoder/hetero_pos_encoder.py",
+      "language": "python",
+      "sizeLines": 197,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/encoder/hetero_raw_encoder.py",
+      "language": "python",
+      "sizeLines": 179,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/encoder/homo_gnn_encoder.py",
+      "language": "python",
+      "sizeLines": 202,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/encoder/raw_encoder.py",
+      "language": "python",
+      "sizeLines": 171,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/finetuning.py",
+      "language": "python",
+      "sizeLines": 149,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/__init__.py",
+      "language": "python",
+      "sizeLines": 2,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/checkpoint.py",
+      "language": "python",
+      "sizeLines": 87,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/cmd_args.py",
+      "language": "python",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/config.py",
+      "language": "python",
+      "sizeLines": 634,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/__init__.py",
+      "language": "python",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/act/__init__.py",
+      "language": "python",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/act/example.py",
+      "language": "python",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/config/__init__.py",
+      "language": "python",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/config/example.py",
+      "language": "python",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/feature_augment/__init__.py",
+      "language": "python",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/feature_augment/example.py",
+      "language": "python",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/feature_encoder/__init__.py",
+      "language": "python",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/feature_encoder/example.py",
+      "language": "python",
+      "sizeLines": 54,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/head/__init__.py",
+      "language": "python",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/head/example.py",
+      "language": "python",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/layer/__init__.py",
+      "language": "python",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/layer/attconv.py",
+      "language": "python",
+      "sizeLines": 606,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/layer/example.py",
+      "language": "python",
+      "sizeLines": 120,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/layer/generalconv_ogb.py",
+      "language": "python",
+      "sizeLines": 139,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/layer/generalconv_v2.py",
+      "language": "python",
+      "sizeLines": 274,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/layer/generalconv.py",
+      "language": "python",
+      "sizeLines": 242,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/layer/idconv.py",
+      "language": "python",
+      "sizeLines": 487,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/layer/sageinitconv.py",
+      "language": "python",
+      "sizeLines": 115,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/loader/__init__.py",
+      "language": "python",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/loader/example.py",
+      "language": "python",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/loss/__init__.py",
+      "language": "python",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/loss/example.py",
+      "language": "python",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/network/__init__.py",
+      "language": "python",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/network/example.py",
+      "language": "python",
+      "sizeLines": 71,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/optimizer/__init__.py",
+      "language": "python",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/optimizer/example.py",
+      "language": "python",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/pooling/__init__.py",
+      "language": "python",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/pooling/example.py",
+      "language": "python",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/stage/__init__.py",
+      "language": "python",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/stage/example.py",
+      "language": "python",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/train/__init__.py",
+      "language": "python",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/train/example.py",
+      "language": "python",
+      "sizeLines": 76,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/transform/__init__.py",
+      "language": "python",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/contrib/transform/identity.py",
+      "language": "python",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/init.py",
+      "language": "python",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/loader_deepsnap.py",
+      "language": "python",
+      "sizeLines": 291,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/loader.py",
+      "language": "python",
+      "sizeLines": 405,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/logger.py",
+      "language": "python",
+      "sizeLines": 243,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/loss.py",
+      "language": "python",
+      "sizeLines": 65,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/model_builder_deepsnap.py",
+      "language": "python",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/model_builder.py",
+      "language": "python",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/models/__init__.py",
+      "language": "python",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/models/act.py",
+      "language": "python",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/models/feature_augment.py",
+      "language": "python",
+      "sizeLines": 352,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/models/feature_encoder_deepsnap.py",
+      "language": "python",
+      "sizeLines": 118,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/models/feature_encoder.py",
+      "language": "python",
+      "sizeLines": 117,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/models/gnn_deepsnap.py",
+      "language": "python",
+      "sizeLines": 183,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/models/gnn.py",
+      "language": "python",
+      "sizeLines": 156,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/models/head_deepsnap.py",
+      "language": "python",
+      "sizeLines": 130,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/models/head.py",
+      "language": "python",
+      "sizeLines": 124,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/models/layer_deepsnap.py",
+      "language": "python",
+      "sizeLines": 262,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/models/layer.py",
+      "language": "python",
+      "sizeLines": 261,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/models/pooling.py",
+      "language": "python",
+      "sizeLines": 41,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/models/transform.py",
+      "language": "python",
+      "sizeLines": 132,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/optimizer.py",
+      "language": "python",
+      "sizeLines": 77,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/register.py",
+      "language": "python",
+      "sizeLines": 175,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/train_deepsnap.py",
+      "language": "python",
+      "sizeLines": 84,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/train.py",
+      "language": "python",
+      "sizeLines": 88,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/utils/__init__.py",
+      "language": "python",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/utils/agg_runs.py",
+      "language": "python",
+      "sizeLines": 247,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/utils/comp_budget.py",
+      "language": "python",
+      "sizeLines": 96,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/utils/device.py",
+      "language": "python",
+      "sizeLines": 76,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/utils/epoch.py",
+      "language": "python",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/utils/io.py",
+      "language": "python",
+      "sizeLines": 94,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/utils/plot.py",
+      "language": "python",
+      "sizeLines": 46,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/graphgym/utils/tools.py",
+      "language": "python",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/head/__init__.py",
+      "language": "python",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/head/hetero_edge.py",
+      "language": "python",
+      "sizeLines": 69,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/head/hetero_node.py",
+      "language": "python",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/head/inductive_node.py",
+      "language": "python",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/layer/gatedgcn_layer.py",
+      "language": "python",
+      "sizeLines": 132,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/layer/gt_layer.py",
+      "language": "python",
+      "sizeLines": 543,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/loader/__init__.py",
+      "language": "python",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/loader/embedding/HTNE.py",
+      "language": "python",
+      "sizeLines": 314,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/loader/embedding/metapath2vec.py",
+      "language": "python",
+      "sizeLines": 263,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/loader/encoding_generator.py",
+      "language": "python",
+      "sizeLines": 776,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/loader/master_loader.py",
+      "language": "python",
+      "sizeLines": 916,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/loader/split_generator.py",
+      "language": "python",
+      "sizeLines": 272,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/loader/transferers.py",
+      "language": "python",
+      "sizeLines": 135,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/logger.py",
+      "language": "python",
+      "sizeLines": 398,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/loss/__init__.py",
+      "language": "python",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/loss/weighted_cross_entropy.py",
+      "language": "python",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/main.py",
+      "language": "python",
+      "sizeLines": 138,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/metric_wrapper.py",
+      "language": "python",
+      "sizeLines": 330,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/metrics_ogb.py",
+      "language": "python",
+      "sizeLines": 117,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/network/__init__.py",
+      "language": "python",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/network/conv.py",
+      "language": "python",
+      "sizeLines": 324,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/network/gt_model.py",
+      "language": "python",
+      "sizeLines": 221,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/network/hetero_gnn_edge_model.py",
+      "language": "python",
+      "sizeLines": 461,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/network/hetero_gnn_model.py",
+      "language": "python",
+      "sizeLines": 455,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/network/homo_gnn_edge_model.py",
+      "language": "python",
+      "sizeLines": 240,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/network/homo_gnn_model.py",
+      "language": "python",
+      "sizeLines": 271,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/network/mlp_model.py",
+      "language": "python",
+      "sizeLines": 102,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/network/model.py",
+      "language": "python",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/network/utils.py",
+      "language": "python",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/optimizer/__init__.py",
+      "language": "python",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/optimizer/extra_optimizers.py",
+      "language": "python",
+      "sizeLines": 251,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/sampler/__init__.py",
+      "language": "python",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/sampler/custom_sampler.py",
+      "language": "python",
+      "sizeLines": 816,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/timer.py",
+      "language": "python",
+      "sizeLines": 305,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/train/__init__.py",
+      "language": "python",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/train/custom_train.py",
+      "language": "python",
+      "sizeLines": 708,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/transform/__init__.py",
+      "language": "python",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/transform/posenc_stats.py",
+      "language": "python",
+      "sizeLines": 401,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/transform/transforms.py",
+      "language": "python",
+      "sizeLines": 81,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fraudGT/utils.py",
+      "language": "python",
+      "sizeLines": 245,
+      "fileCategory": "code"
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "sizeLines": 38,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "requirements.txt",
+      "language": "unknown",
+      "sizeLines": 7,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "run/interactive_run.sh",
+      "language": "shell",
+      "sizeLines": 145,
+      "fileCategory": "script"
+    },
+    {
+      "path": "run/run_grid.sh",
+      "language": "shell",
+      "sizeLines": 169,
+      "fileCategory": "script"
+    },
+    {
+      "path": "run/wrapper.sb",
+      "language": "unknown",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    }
+  ],
+  "totalFiles": 370,
+  "filteredByIgnore": 0,
+  "estimatedComplexity": "large",
+  "importMap": {
+    "configs/AML-Large-HI/AML-Large-HI-GATE.yaml": [],
+    "configs/AML-Large-HI/AML-Large-HI-GatedGCN.yaml": [],
+    "configs/AML-Large-HI/AML-Large-HI-GINE.yaml": [],
+    "configs/AML-Large-HI/AML-Large-HI-GINE+Ego.yaml": [],
+    "configs/AML-Large-HI/AML-Large-HI-GINE+EU.yaml": [],
+    "configs/AML-Large-HI/AML-Large-HI-GINE+ports.yaml": [],
+    "configs/AML-Large-HI/AML-Large-HI-GINE+RMP.yaml": [],
+    "configs/AML-Large-HI/AML-Large-HI-MLP.yaml": [],
+    "configs/AML-Large-HI/AML-Large-HI-Multi-GINE.yaml": [],
+    "configs/AML-Large-HI/AML-Large-HI-Multi-GINE+EU.yaml": [],
+    "configs/AML-Large-HI/AML-Large-HI-Multi-PNA.yaml": [],
+    "configs/AML-Large-HI/AML-Large-HI-Multi-PNA+EU.yaml": [],
+    "configs/AML-Large-HI/AML-Large-HI-Multi-SparseNodeGT.yaml": [],
+    "configs/AML-Large-HI/AML-Large-HI-PNA.yaml": [],
+    "configs/AML-Large-HI/AML-Large-HI-PNA+EU.yaml": [],
+    "configs/AML-Large-HI/AML-Large-HI-SparseNodeGT-EdgeAttn.yaml": [],
+    "configs/AML-Large-HI/AML-Large-HI-SparseNodeGT-EdgeGate.yaml": [],
+    "configs/AML-Large-HI/AML-Large-HI-SparseNodeGT.yaml": [],
+    "configs/AML-Large-HI/AML-Large-HI-SparseNodeGT+Dropout.yaml": [],
+    "configs/AML-Large-HI/AML-Large-HI-SparseNodeGT+Ego.yaml": [],
+    "configs/AML-Large-HI/AML-Large-HI-SparseNodeGT+ports.yaml": [],
+    "configs/AML-Large-HI/AML-Large-HI-SparseNodeGT+ports+Ego.yaml": [],
+    "configs/AML-Large-HI/AML-Large-HI-SparseNodeGT+RMP.yaml": [],
+    "configs/AML-Large-LI_Transfer/AML-Large-LI_Transfer-Multi-SparseNodeGT.yaml": [],
+    "configs/AML-Large-LI_Transfer/AML-Large-LI-GATE.yaml": [],
+    "configs/AML-Large-LI_Transfer/AML-Large-LI-GatedGCN.yaml": [],
+    "configs/AML-Large-LI_Transfer/AML-Large-LI-GINE.yaml": [],
+    "configs/AML-Large-LI_Transfer/AML-Large-LI-GINE+Ego.yaml": [],
+    "configs/AML-Large-LI_Transfer/AML-Large-LI-GINE+EU.yaml": [],
+    "configs/AML-Large-LI_Transfer/AML-Large-LI-GINE+ports.yaml": [],
+    "configs/AML-Large-LI_Transfer/AML-Large-LI-GINE+RMP.yaml": [],
+    "configs/AML-Large-LI_Transfer/AML-Large-LI-MLP.yaml": [],
+    "configs/AML-Large-LI_Transfer/AML-Large-LI-Multi-GINE.yaml": [],
+    "configs/AML-Large-LI_Transfer/AML-Large-LI-Multi-GINE+EU.yaml": [],
+    "configs/AML-Large-LI_Transfer/AML-Large-LI-Multi-PNA.yaml": [],
+    "configs/AML-Large-LI_Transfer/AML-Large-LI-Multi-PNA+EU.yaml": [],
+    "configs/AML-Large-LI_Transfer/AML-Large-LI-PNA.yaml": [],
+    "configs/AML-Large-LI_Transfer/AML-Large-LI-PNA+EU.yaml": [],
+    "configs/AML-Large-LI_Transfer/AML-Large-LI-SparseNodeGT-EdgeAttn.yaml": [],
+    "configs/AML-Large-LI_Transfer/AML-Large-LI-SparseNodeGT-EdgeGate.yaml": [],
+    "configs/AML-Large-LI_Transfer/AML-Large-LI-SparseNodeGT.yaml": [],
+    "configs/AML-Large-LI_Transfer/AML-Large-LI-SparseNodeGT+Ego.yaml": [],
+    "configs/AML-Large-LI_Transfer/AML-Large-LI-SparseNodeGT+ports.yaml": [],
+    "configs/AML-Large-LI_Transfer/AML-Large-LI-SparseNodeGT+ports+Ego.yaml": [],
+    "configs/AML-Large-LI_Transfer/AML-Large-LI-SparseNodeGT+RMP.yaml": [],
+    "configs/AML-Large-LI/AML-Large-LI-GATE.yaml": [],
+    "configs/AML-Large-LI/AML-Large-LI-GatedGCN.yaml": [],
+    "configs/AML-Large-LI/AML-Large-LI-GINE.yaml": [],
+    "configs/AML-Large-LI/AML-Large-LI-GINE+Ego.yaml": [],
+    "configs/AML-Large-LI/AML-Large-LI-GINE+EU.yaml": [],
+    "configs/AML-Large-LI/AML-Large-LI-GINE+ports.yaml": [],
+    "configs/AML-Large-LI/AML-Large-LI-GINE+RMP.yaml": [],
+    "configs/AML-Large-LI/AML-Large-LI-MLP.yaml": [],
+    "configs/AML-Large-LI/AML-Large-LI-Multi-GINE.yaml": [],
+    "configs/AML-Large-LI/AML-Large-LI-Multi-GINE+EU.yaml": [],
+    "configs/AML-Large-LI/AML-Large-LI-Multi-PNA.yaml": [],
+    "configs/AML-Large-LI/AML-Large-LI-Multi-PNA+EU.yaml": [],
+    "configs/AML-Large-LI/AML-Large-LI-Multi-SparseNodeGT.yaml": [],
+    "configs/AML-Large-LI/AML-Large-LI-PNA.yaml": [],
+    "configs/AML-Large-LI/AML-Large-LI-PNA+EU.yaml": [],
+    "configs/AML-Large-LI/AML-Large-LI-SparseNodeGT-EdgeAttn.yaml": [],
+    "configs/AML-Large-LI/AML-Large-LI-SparseNodeGT-EdgeGate.yaml": [],
+    "configs/AML-Large-LI/AML-Large-LI-SparseNodeGT.yaml": [],
+    "configs/AML-Large-LI/AML-Large-LI-SparseNodeGT+Ego.yaml": [],
+    "configs/AML-Large-LI/AML-Large-LI-SparseNodeGT+ports.yaml": [],
+    "configs/AML-Large-LI/AML-Large-LI-SparseNodeGT+ports+Ego.yaml": [],
+    "configs/AML-Large-LI/AML-Large-LI-SparseNodeGT+RMP.yaml": [],
+    "configs/AML-Medium-HI/AML-Medium-HI-GATE.yaml": [],
+    "configs/AML-Medium-HI/AML-Medium-HI-GatedGCN.yaml": [],
+    "configs/AML-Medium-HI/AML-Medium-HI-GINE.yaml": [],
+    "configs/AML-Medium-HI/AML-Medium-HI-GINE+Ego.yaml": [],
+    "configs/AML-Medium-HI/AML-Medium-HI-GINE+EU.yaml": [],
+    "configs/AML-Medium-HI/AML-Medium-HI-GINE+ports.yaml": [],
+    "configs/AML-Medium-HI/AML-Medium-HI-GINE+RMP.yaml": [],
+    "configs/AML-Medium-HI/AML-Medium-HI-MLP.yaml": [],
+    "configs/AML-Medium-HI/AML-Medium-HI-Multi-GINE.yaml": [],
+    "configs/AML-Medium-HI/AML-Medium-HI-Multi-GINE+EU.yaml": [],
+    "configs/AML-Medium-HI/AML-Medium-HI-Multi-PNA.yaml": [],
+    "configs/AML-Medium-HI/AML-Medium-HI-Multi-PNA+EU.yaml": [],
+    "configs/AML-Medium-HI/AML-Medium-HI-Multi-SparseNodeGT.yaml": [],
+    "configs/AML-Medium-HI/AML-Medium-HI-PNA.yaml": [],
+    "configs/AML-Medium-HI/AML-Medium-HI-PNA+EU.yaml": [],
+    "configs/AML-Medium-HI/AML-Medium-HI-SparseEdgeGT.yaml": [],
+    "configs/AML-Medium-HI/AML-Medium-HI-SparseNodeGT-EdgeAttn.yaml": [],
+    "configs/AML-Medium-HI/AML-Medium-HI-SparseNodeGT-EdgeGate.yaml": [],
+    "configs/AML-Medium-HI/AML-Medium-HI-SparseNodeGT.yaml": [],
+    "configs/AML-Medium-HI/AML-Medium-HI-SparseNodeGT+Ego.yaml": [],
+    "configs/AML-Medium-HI/AML-Medium-HI-SparseNodeGT+ports.yaml": [],
+    "configs/AML-Medium-HI/AML-Medium-HI-SparseNodeGT+ports+Ego.yaml": [],
+    "configs/AML-Medium-HI/AML-Medium-HI-SparseNodeGT+RMP.yaml": [],
+    "configs/AML-Medium-LI_Transfer/AML-Medium-LI_Transfer-Multi-SparseNodeGT.yaml": [],
+    "configs/AML-Medium-LI_Transfer/AML-Medium-LI-GATE.yaml": [],
+    "configs/AML-Medium-LI_Transfer/AML-Medium-LI-GatedGCN.yaml": [],
+    "configs/AML-Medium-LI_Transfer/AML-Medium-LI-GINE.yaml": [],
+    "configs/AML-Medium-LI_Transfer/AML-Medium-LI-GINE+Ego.yaml": [],
+    "configs/AML-Medium-LI_Transfer/AML-Medium-LI-GINE+EU.yaml": [],
+    "configs/AML-Medium-LI_Transfer/AML-Medium-LI-GINE+ports.yaml": [],
+    "configs/AML-Medium-LI_Transfer/AML-Medium-LI-GINE+RMP.yaml": [],
+    "configs/AML-Medium-LI_Transfer/AML-Medium-LI-MLP.yaml": [],
+    "configs/AML-Medium-LI_Transfer/AML-Medium-LI-Multi-GINE.yaml": [],
+    "configs/AML-Medium-LI_Transfer/AML-Medium-LI-Multi-GINE+EU.yaml": [],
+    "configs/AML-Medium-LI_Transfer/AML-Medium-LI-Multi-PNA.yaml": [],
+    "configs/AML-Medium-LI_Transfer/AML-Medium-LI-Multi-PNA+EU.yaml": [],
+    "configs/AML-Medium-LI_Transfer/AML-Medium-LI-PNA.yaml": [],
+    "configs/AML-Medium-LI_Transfer/AML-Medium-LI-PNA+EU.yaml": [],
+    "configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT-EdgeAttn.yaml": [],
+    "configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT-EdgeGate.yaml": [],
+    "configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT.yaml": [],
+    "configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT+Ego.yaml": [],
+    "configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT+ports.yaml": [],
+    "configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT+ports+Ego.yaml": [],
+    "configs/AML-Medium-LI_Transfer/AML-Medium-LI-SparseNodeGT+RMP.yaml": [],
+    "configs/AML-Medium-LI/AML-Medium-LI-GATE.yaml": [],
+    "configs/AML-Medium-LI/AML-Medium-LI-GatedGCN.yaml": [],
+    "configs/AML-Medium-LI/AML-Medium-LI-GINE.yaml": [],
+    "configs/AML-Medium-LI/AML-Medium-LI-GINE+Ego.yaml": [],
+    "configs/AML-Medium-LI/AML-Medium-LI-GINE+EU.yaml": [],
+    "configs/AML-Medium-LI/AML-Medium-LI-GINE+ports.yaml": [],
+    "configs/AML-Medium-LI/AML-Medium-LI-GINE+RMP.yaml": [],
+    "configs/AML-Medium-LI/AML-Medium-LI-MLP.yaml": [],
+    "configs/AML-Medium-LI/AML-Medium-LI-Multi-GINE.yaml": [],
+    "configs/AML-Medium-LI/AML-Medium-LI-Multi-GINE+EU.yaml": [],
+    "configs/AML-Medium-LI/AML-Medium-LI-Multi-PNA.yaml": [],
+    "configs/AML-Medium-LI/AML-Medium-LI-Multi-PNA+EU.yaml": [],
+    "configs/AML-Medium-LI/AML-Medium-LI-Multi-SparseNodeGT.yaml": [],
+    "configs/AML-Medium-LI/AML-Medium-LI-PNA.yaml": [],
+    "configs/AML-Medium-LI/AML-Medium-LI-PNA+EU.yaml": [],
+    "configs/AML-Medium-LI/AML-Medium-LI-SparseNodeGT-EdgeAttn.yaml": [],
+    "configs/AML-Medium-LI/AML-Medium-LI-SparseNodeGT-EdgeGate.yaml": [],
+    "configs/AML-Medium-LI/AML-Medium-LI-SparseNodeGT.yaml": [],
+    "configs/AML-Medium-LI/AML-Medium-LI-SparseNodeGT+Ego.yaml": [],
+    "configs/AML-Medium-LI/AML-Medium-LI-SparseNodeGT+ports.yaml": [],
+    "configs/AML-Medium-LI/AML-Medium-LI-SparseNodeGT+ports+Ego.yaml": [],
+    "configs/AML-Medium-LI/AML-Medium-LI-SparseNodeGT+RMP.yaml": [],
+    "configs/AML-Small-HI/AML-Small-HI-GATE.yaml": [],
+    "configs/AML-Small-HI/AML-Small-HI-GatedGCN.yaml": [],
+    "configs/AML-Small-HI/AML-Small-HI-GINE.yaml": [],
+    "configs/AML-Small-HI/AML-Small-HI-GINE+Ego.yaml": [],
+    "configs/AML-Small-HI/AML-Small-HI-GINE+EU.yaml": [],
+    "configs/AML-Small-HI/AML-Small-HI-GINE+ports.yaml": [],
+    "configs/AML-Small-HI/AML-Small-HI-GINE+RMP.yaml": [],
+    "configs/AML-Small-HI/AML-Small-HI-MLP.yaml": [],
+    "configs/AML-Small-HI/AML-Small-HI-Multi-GINE.yaml": [],
+    "configs/AML-Small-HI/AML-Small-HI-Multi-GINE+EU.yaml": [],
+    "configs/AML-Small-HI/AML-Small-HI-Multi-PNA.yaml": [],
+    "configs/AML-Small-HI/AML-Small-HI-Multi-PNA+EU.yaml": [],
+    "configs/AML-Small-HI/AML-Small-HI-Multi-SparseNodeGT.yaml": [],
+    "configs/AML-Small-HI/AML-Small-HI-PNA.yaml": [],
+    "configs/AML-Small-HI/AML-Small-HI-PNA+Ego.yaml": [],
+    "configs/AML-Small-HI/AML-Small-HI-PNA+EU.yaml": [],
+    "configs/AML-Small-HI/AML-Small-HI-PNA+ports.yaml": [],
+    "configs/AML-Small-HI/AML-Small-HI-PNA+RMP.yaml": [],
+    "configs/AML-Small-HI/AML-Small-HI-SparseNodeGT-EdgeAttn.yaml": [],
+    "configs/AML-Small-HI/AML-Small-HI-SparseNodeGT-EdgeGate.yaml": [],
+    "configs/AML-Small-HI/AML-Small-HI-SparseNodeGT.yaml": [],
+    "configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+Dropout.yaml": [],
+    "configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+Ego.yaml": [],
+    "configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+LP.yaml": [],
+    "configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+ports.yaml": [],
+    "configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+ports+Ego.yaml": [],
+    "configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+ports+LP.yaml": [],
+    "configs/AML-Small-HI/AML-Small-HI-SparseNodeGT+RMP.yaml": [],
+    "configs/AML-Small-LI_Transfer/AML-Small-LI_Transfer-Multi-SparseNodeGT.yaml": [],
+    "configs/AML-Small-LI_Transfer/AML-Small-LI-GATE.yaml": [],
+    "configs/AML-Small-LI_Transfer/AML-Small-LI-GatedGCN.yaml": [],
+    "configs/AML-Small-LI_Transfer/AML-Small-LI-GINE.yaml": [],
+    "configs/AML-Small-LI_Transfer/AML-Small-LI-GINE+Ego.yaml": [],
+    "configs/AML-Small-LI_Transfer/AML-Small-LI-GINE+EU.yaml": [],
+    "configs/AML-Small-LI_Transfer/AML-Small-LI-GINE+ports.yaml": [],
+    "configs/AML-Small-LI_Transfer/AML-Small-LI-GINE+RMP.yaml": [],
+    "configs/AML-Small-LI_Transfer/AML-Small-LI-MLP.yaml": [],
+    "configs/AML-Small-LI_Transfer/AML-Small-LI-Multi-GINE.yaml": [],
+    "configs/AML-Small-LI_Transfer/AML-Small-LI-Multi-GINE+EU.yaml": [],
+    "configs/AML-Small-LI_Transfer/AML-Small-LI-Multi-PNA.yaml": [],
+    "configs/AML-Small-LI_Transfer/AML-Small-LI-Multi-PNA+EU.yaml": [],
+    "configs/AML-Small-LI_Transfer/AML-Small-LI-PNA.yaml": [],
+    "configs/AML-Small-LI_Transfer/AML-Small-LI-PNA+EU.yaml": [],
+    "configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT-EdgeAttn.yaml": [],
+    "configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT-EdgeGate.yaml": [],
+    "configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT.yaml": [],
+    "configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT+Ego.yaml": [],
+    "configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT+ports.yaml": [],
+    "configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT+ports+Ego.yaml": [],
+    "configs/AML-Small-LI_Transfer/AML-Small-LI-SparseNodeGT+RMP.yaml": [],
+    "configs/AML-Small-LI/AML-Small-LI-GATE.yaml": [],
+    "configs/AML-Small-LI/AML-Small-LI-GatedGCN.yaml": [],
+    "configs/AML-Small-LI/AML-Small-LI-GINE.yaml": [],
+    "configs/AML-Small-LI/AML-Small-LI-GINE+Ego.yaml": [],
+    "configs/AML-Small-LI/AML-Small-LI-GINE+EU.yaml": [],
+    "configs/AML-Small-LI/AML-Small-LI-GINE+ports.yaml": [],
+    "configs/AML-Small-LI/AML-Small-LI-GINE+RMP.yaml": [],
+    "configs/AML-Small-LI/AML-Small-LI-MLP.yaml": [],
+    "configs/AML-Small-LI/AML-Small-LI-Multi-GINE.yaml": [],
+    "configs/AML-Small-LI/AML-Small-LI-Multi-GINE+EU.yaml": [],
+    "configs/AML-Small-LI/AML-Small-LI-Multi-PNA.yaml": [],
+    "configs/AML-Small-LI/AML-Small-LI-Multi-PNA+EU.yaml": [],
+    "configs/AML-Small-LI/AML-Small-LI-Multi-SparseNodeGT.yaml": [],
+    "configs/AML-Small-LI/AML-Small-LI-PNA.yaml": [],
+    "configs/AML-Small-LI/AML-Small-LI-PNA+EU.yaml": [],
+    "configs/AML-Small-LI/AML-Small-LI-SparseNodeGT-EdgeAttn.yaml": [],
+    "configs/AML-Small-LI/AML-Small-LI-SparseNodeGT-EdgeGate.yaml": [],
+    "configs/AML-Small-LI/AML-Small-LI-SparseNodeGT.yaml": [],
+    "configs/AML-Small-LI/AML-Small-LI-SparseNodeGT+Ego.yaml": [],
+    "configs/AML-Small-LI/AML-Small-LI-SparseNodeGT+ports.yaml": [],
+    "configs/AML-Small-LI/AML-Small-LI-SparseNodeGT+ports+Ego.yaml": [],
+    "configs/AML-Small-LI/AML-Small-LI-SparseNodeGT+RMP.yaml": [],
+    "configs/ETH/ETH-GINE.yaml": [],
+    "configs/ETH/ETH-GINE+Ego.yaml": [],
+    "configs/ETH/ETH-GINE+EU.yaml": [],
+    "configs/ETH/ETH-GINE+ports.yaml": [],
+    "configs/ETH/ETH-GINE+RMP.yaml": [],
+    "configs/ETH/ETH-MLP.yaml": [],
+    "configs/ETH/ETH-Multi-GINE.yaml": [],
+    "configs/ETH/ETH-Multi-PNA.yaml": [],
+    "configs/ETH/ETH-Multi-PNA+EU.yaml": [],
+    "configs/ETH/ETH-Multi-SparseNodeGT.yaml": [],
+    "configs/ETH/ETH-PNA.yaml": [],
+    "configs/ETH/ETH-PNA+EU.yaml": [],
+    "configs/ETH/ETH-SparseNodeGT.yaml": [],
+    "configs/ETH/ETH-SparseNodeGT+Ego.yaml": [],
+    "configs/ETH/ETH-SparseNodeGT+LP.yaml": [],
+    "configs/ETH/ETH-SparseNodeGT+LP+ports.yaml": [],
+    "configs/ETH/ETH-SparseNodeGT+Node2Vec.yaml": [],
+    "configs/ETH/ETH-SparseNodeGT+ports.yaml": [],
+    "configs/ETH/ETH-SparseNodeGT+ports+Ego.yaml": [],
+    "configs/ETH/ETH-SparseNodeGT+RMP.yaml": [],
+    "fraudGT/__init__.py": [
+      "fraudGT/act/__init__.py",
+      "fraudGT/config/__init__.py",
+      "fraudGT/encoder/__init__.py",
+      "fraudGT/head/__init__.py",
+      "fraudGT/loader/__init__.py",
+      "fraudGT/loss/__init__.py",
+      "fraudGT/network/__init__.py",
+      "fraudGT/optimizer/__init__.py",
+      "fraudGT/sampler/__init__.py",
+      "fraudGT/train/__init__.py",
+      "fraudGT/transform/__init__.py"
+    ],
+    "fraudGT/act/__init__.py": [],
+    "fraudGT/act/example.py": [],
+    "fraudGT/agg_runs.py": [],
+    "fraudGT/config/__init__.py": [],
+    "fraudGT/config/dataset_config.py": [],
+    "fraudGT/config/defaults_config.py": [],
+    "fraudGT/config/gt_config.py": [],
+    "fraudGT/config/optimizers_config.py": [],
+    "fraudGT/config/posenc_config.py": [],
+    "fraudGT/config/pretrained_config.py": [],
+    "fraudGT/config/split_config.py": [],
+    "fraudGT/config/wandb_config.py": [],
+    "fraudGT/datasets/__init__.py": [],
+    "fraudGT/datasets/aml_dataset.py": [
+      "fraudGT/datasets/temporal_dataset.py"
+    ],
+    "fraudGT/datasets/eth_dataset.py": [
+      "fraudGT/datasets/utils.py"
+    ],
+    "fraudGT/datasets/temporal_dataset.py": [],
+    "fraudGT/datasets/utils.py": [],
+    "fraudGT/encoder/__init__.py": [],
+    "fraudGT/encoder/composed_encoders.py": [],
+    "fraudGT/encoder/hetero_embed_encoder.py": [],
+    "fraudGT/encoder/hetero_gnn_encoder.py": [],
+    "fraudGT/encoder/hetero_label_encoder.py": [],
+    "fraudGT/encoder/hetero_pos_encoder.py": [],
+    "fraudGT/encoder/hetero_raw_encoder.py": [],
+    "fraudGT/encoder/homo_gnn_encoder.py": [],
+    "fraudGT/encoder/raw_encoder.py": [],
+    "fraudGT/finetuning.py": [],
+    "fraudGT/graphgym/__init__.py": [
+      "fraudGT/graphgym/models/__init__.py",
+      "fraudGT/graphgym/utils/__init__.py"
+    ],
+    "fraudGT/graphgym/checkpoint.py": [],
+    "fraudGT/graphgym/cmd_args.py": [],
+    "fraudGT/graphgym/config.py": [],
+    "fraudGT/graphgym/contrib/__init__.py": [
+      "fraudGT/graphgym/contrib/act/__init__.py",
+      "fraudGT/graphgym/contrib/config/__init__.py",
+      "fraudGT/graphgym/contrib/feature_augment/__init__.py",
+      "fraudGT/graphgym/contrib/feature_encoder/__init__.py",
+      "fraudGT/graphgym/contrib/head/__init__.py",
+      "fraudGT/graphgym/contrib/layer/__init__.py",
+      "fraudGT/graphgym/contrib/loader/__init__.py",
+      "fraudGT/graphgym/contrib/loss/__init__.py",
+      "fraudGT/graphgym/contrib/network/__init__.py",
+      "fraudGT/graphgym/contrib/pooling/__init__.py",
+      "fraudGT/graphgym/contrib/stage/__init__.py",
+      "fraudGT/graphgym/contrib/train/__init__.py",
+      "fraudGT/graphgym/contrib/transform/__init__.py"
+    ],
+    "fraudGT/graphgym/contrib/act/__init__.py": [],
+    "fraudGT/graphgym/contrib/act/example.py": [],
+    "fraudGT/graphgym/contrib/config/__init__.py": [],
+    "fraudGT/graphgym/contrib/config/example.py": [],
+    "fraudGT/graphgym/contrib/feature_augment/__init__.py": [],
+    "fraudGT/graphgym/contrib/feature_augment/example.py": [],
+    "fraudGT/graphgym/contrib/feature_encoder/__init__.py": [],
+    "fraudGT/graphgym/contrib/feature_encoder/example.py": [],
+    "fraudGT/graphgym/contrib/head/__init__.py": [],
+    "fraudGT/graphgym/contrib/head/example.py": [],
+    "fraudGT/graphgym/contrib/layer/__init__.py": [],
+    "fraudGT/graphgym/contrib/layer/attconv.py": [],
+    "fraudGT/graphgym/contrib/layer/example.py": [],
+    "fraudGT/graphgym/contrib/layer/generalconv_ogb.py": [],
+    "fraudGT/graphgym/contrib/layer/generalconv_v2.py": [],
+    "fraudGT/graphgym/contrib/layer/generalconv.py": [],
+    "fraudGT/graphgym/contrib/layer/idconv.py": [],
+    "fraudGT/graphgym/contrib/layer/sageinitconv.py": [],
+    "fraudGT/graphgym/contrib/loader/__init__.py": [],
+    "fraudGT/graphgym/contrib/loader/example.py": [],
+    "fraudGT/graphgym/contrib/loss/__init__.py": [],
+    "fraudGT/graphgym/contrib/loss/example.py": [],
+    "fraudGT/graphgym/contrib/network/__init__.py": [],
+    "fraudGT/graphgym/contrib/network/example.py": [],
+    "fraudGT/graphgym/contrib/optimizer/__init__.py": [],
+    "fraudGT/graphgym/contrib/optimizer/example.py": [],
+    "fraudGT/graphgym/contrib/pooling/__init__.py": [],
+    "fraudGT/graphgym/contrib/pooling/example.py": [],
+    "fraudGT/graphgym/contrib/stage/__init__.py": [],
+    "fraudGT/graphgym/contrib/stage/example.py": [],
+    "fraudGT/graphgym/contrib/train/__init__.py": [],
+    "fraudGT/graphgym/contrib/train/example.py": [],
+    "fraudGT/graphgym/contrib/transform/__init__.py": [],
+    "fraudGT/graphgym/contrib/transform/identity.py": [],
+    "fraudGT/graphgym/init.py": [],
+    "fraudGT/graphgym/loader_deepsnap.py": [],
+    "fraudGT/graphgym/loader.py": [],
+    "fraudGT/graphgym/logger.py": [],
+    "fraudGT/graphgym/loss.py": [],
+    "fraudGT/graphgym/model_builder_deepsnap.py": [],
+    "fraudGT/graphgym/model_builder.py": [],
+    "fraudGT/graphgym/models/__init__.py": [],
+    "fraudGT/graphgym/models/act.py": [],
+    "fraudGT/graphgym/models/feature_augment.py": [],
+    "fraudGT/graphgym/models/feature_encoder_deepsnap.py": [],
+    "fraudGT/graphgym/models/feature_encoder.py": [],
+    "fraudGT/graphgym/models/gnn_deepsnap.py": [],
+    "fraudGT/graphgym/models/gnn.py": [],
+    "fraudGT/graphgym/models/head_deepsnap.py": [],
+    "fraudGT/graphgym/models/head.py": [],
+    "fraudGT/graphgym/models/layer_deepsnap.py": [],
+    "fraudGT/graphgym/models/layer.py": [],
+    "fraudGT/graphgym/models/pooling.py": [],
+    "fraudGT/graphgym/models/transform.py": [],
+    "fraudGT/graphgym/optimizer.py": [],
+    "fraudGT/graphgym/register.py": [],
+    "fraudGT/graphgym/train_deepsnap.py": [],
+    "fraudGT/graphgym/train.py": [],
+    "fraudGT/graphgym/utils/__init__.py": [],
+    "fraudGT/graphgym/utils/agg_runs.py": [],
+    "fraudGT/graphgym/utils/comp_budget.py": [],
+    "fraudGT/graphgym/utils/device.py": [],
+    "fraudGT/graphgym/utils/epoch.py": [],
+    "fraudGT/graphgym/utils/io.py": [],
+    "fraudGT/graphgym/utils/plot.py": [],
+    "fraudGT/graphgym/utils/tools.py": [],
+    "fraudGT/head/__init__.py": [],
+    "fraudGT/head/hetero_edge.py": [],
+    "fraudGT/head/hetero_node.py": [],
+    "fraudGT/head/inductive_node.py": [],
+    "fraudGT/layer/gatedgcn_layer.py": [],
+    "fraudGT/layer/gt_layer.py": [],
+    "fraudGT/loader/__init__.py": [],
+    "fraudGT/loader/embedding/HTNE.py": [],
+    "fraudGT/loader/embedding/metapath2vec.py": [],
+    "fraudGT/loader/encoding_generator.py": [],
+    "fraudGT/loader/master_loader.py": [],
+    "fraudGT/loader/split_generator.py": [],
+    "fraudGT/loader/transferers.py": [],
+    "fraudGT/logger.py": [],
+    "fraudGT/loss/__init__.py": [],
+    "fraudGT/loss/weighted_cross_entropy.py": [],
+    "fraudGT/main.py": [],
+    "fraudGT/metric_wrapper.py": [],
+    "fraudGT/metrics_ogb.py": [],
+    "fraudGT/network/__init__.py": [],
+    "fraudGT/network/conv.py": [],
+    "fraudGT/network/gt_model.py": [],
+    "fraudGT/network/hetero_gnn_edge_model.py": [],
+    "fraudGT/network/hetero_gnn_model.py": [],
+    "fraudGT/network/homo_gnn_edge_model.py": [],
+    "fraudGT/network/homo_gnn_model.py": [],
+    "fraudGT/network/mlp_model.py": [],
+    "fraudGT/network/model.py": [
+      "fraudGT/network/conv.py"
+    ],
+    "fraudGT/network/utils.py": [],
+    "fraudGT/optimizer/__init__.py": [],
+    "fraudGT/optimizer/extra_optimizers.py": [],
+    "fraudGT/sampler/__init__.py": [],
+    "fraudGT/sampler/custom_sampler.py": [],
+    "fraudGT/timer.py": [],
+    "fraudGT/train/__init__.py": [],
+    "fraudGT/train/custom_train.py": [],
+    "fraudGT/transform/__init__.py": [],
+    "fraudGT/transform/posenc_stats.py": [],
+    "fraudGT/transform/transforms.py": [],
+    "fraudGT/utils.py": [],
+    "README.md": [],
+    "requirements.txt": [],
+    "run/interactive_run.sh": [],
+    "run/run_grid.sh": [],
+    "run/wrapper.sb": []
+  }
+}

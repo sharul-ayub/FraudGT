@@ -1,0 +1,2490 @@
+{
+    "nodes":  [
+                  {
+                      "id":  "file:fraudGT/encoder/hetero_gnn_encoder.py",
+                      "type":  "file",
+                      "name":  "hetero_gnn_encoder.py",
+                      "filePath":  "fraudGT/encoder/hetero_gnn_encoder.py",
+                      "summary":  "Defines heterogeneous GNN encoder building blocks for FraudGT, including reusable wrapped layers and the main HeteroGNNEncoder that applies PyG heterogeneous convolutions over node and edge-type dictionaries.",
+                      "tags":  [
+                                   "encoder",
+                                   "graph-neural-network",
+                                   "feature-processing"
+                               ],
+                      "complexity":  "complex"
+                  },
+                  {
+                      "id":  "class:fraudGT/encoder/hetero_gnn_encoder.py:GeneralLayer",
+                      "type":  "class",
+                      "name":  "GeneralLayer",
+                      "filePath":  "fraudGT/encoder/hetero_gnn_encoder.py",
+                      "lineRange":  [
+                                        13,
+                                        55
+                                    ],
+                      "summary":  "Wraps a neural layer with optional normalization, dropout, activation, and L2 normalization behavior.",
+                      "tags":  [
+                                   "encoder",
+                                   "neural-network",
+                                   "feature-processing"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "class:fraudGT/encoder/hetero_gnn_encoder.py:GeneralMultiLayer",
+                      "type":  "class",
+                      "name":  "GeneralMultiLayer",
+                      "filePath":  "fraudGT/encoder/hetero_gnn_encoder.py",
+                      "lineRange":  [
+                                        58,
+                                        80
+                                    ],
+                      "summary":  "Stacks multiple GeneralLayer blocks to build a configurable multilayer projection module.",
+                      "tags":  [
+                                   "encoder",
+                                   "neural-network",
+                                   "feature-processing"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "class:fraudGT/encoder/hetero_gnn_encoder.py:HeteroGNNEncoder",
+                      "type":  "class",
+                      "name":  "HeteroGNNEncoder",
+                      "filePath":  "fraudGT/encoder/hetero_gnn_encoder.py",
+                      "lineRange":  [
+                                        84,
+                                        258
+                                    ],
+                      "summary":  "Encodes graph batches with configurable GNN layers for HeteroGNN representations.",
+                      "tags":  [
+                                   "encoder",
+                                   "neural-network",
+                                   "feature-processing"
+                               ],
+                      "complexity":  "moderate"
+                  },
+                  {
+                      "id":  "file:fraudGT/encoder/hetero_label_encoder.py",
+                      "type":  "file",
+                      "name":  "hetero_label_encoder.py",
+                      "filePath":  "fraudGT/encoder/hetero_label_encoder.py",
+                      "summary":  "Provides heterogeneous label encoders that inject masked node or edge labels into batch features for semi-supervised graph learning.",
+                      "tags":  [
+                                   "encoder",
+                                   "graph-neural-network",
+                                   "feature-processing"
+                               ],
+                      "complexity":  "moderate"
+                  },
+                  {
+                      "id":  "class:fraudGT/encoder/hetero_label_encoder.py:HeteroLabelNodeEncoder",
+                      "type":  "class",
+                      "name":  "HeteroLabelNodeEncoder",
+                      "filePath":  "fraudGT/encoder/hetero_label_encoder.py",
+                      "lineRange":  [
+                                        12,
+                                        79
+                                    ],
+                      "summary":  "Converts node or edge labels into masked one-hot feature embeddings for label-aware training.",
+                      "tags":  [
+                                   "encoder",
+                                   "neural-network",
+                                   "feature-processing"
+                               ],
+                      "complexity":  "moderate"
+                  },
+                  {
+                      "id":  "class:fraudGT/encoder/hetero_label_encoder.py:HeteroLabelEdgeEncoder",
+                      "type":  "class",
+                      "name":  "HeteroLabelEdgeEncoder",
+                      "filePath":  "fraudGT/encoder/hetero_label_encoder.py",
+                      "lineRange":  [
+                                        83,
+                                        143
+                                    ],
+                      "summary":  "Converts node or edge labels into masked one-hot feature embeddings for label-aware training.",
+                      "tags":  [
+                                   "encoder",
+                                   "neural-network",
+                                   "feature-processing"
+                               ],
+                      "complexity":  "moderate"
+                  },
+                  {
+                      "id":  "file:fraudGT/encoder/hetero_pos_encoder.py",
+                      "type":  "file",
+                      "name":  "hetero_pos_encoder.py",
+                      "filePath":  "fraudGT/encoder/hetero_pos_encoder.py",
+                      "summary":  "Implements heterogeneous positional-embedding encoders, including a configurable HeteroPENodeEncoder and thin registered variants for RWSE, metapath, node2vec, TransE, ComplEx, and DistMult embeddings.",
+                      "tags":  [
+                                   "encoder",
+                                   "graph-neural-network",
+                                   "feature-processing"
+                               ],
+                      "complexity":  "moderate"
+                  },
+                  {
+                      "id":  "class:fraudGT/encoder/hetero_pos_encoder.py:HeteroPENodeEncoder",
+                      "type":  "class",
+                      "name":  "HeteroPENodeEncoder",
+                      "filePath":  "fraudGT/encoder/hetero_pos_encoder.py",
+                      "lineRange":  [
+                                        10,
+                                        158
+                                    ],
+                      "summary":  "Encodes node features or positional embeddings into the hidden feature space expected by GraphGym models.",
+                      "tags":  [
+                                   "encoder",
+                                   "neural-network",
+                                   "feature-processing"
+                               ],
+                      "complexity":  "moderate"
+                  },
+                  {
+                      "id":  "class:fraudGT/encoder/hetero_pos_encoder.py:RWSENodeEncoder",
+                      "type":  "class",
+                      "name":  "RWSENodeEncoder",
+                      "filePath":  "fraudGT/encoder/hetero_pos_encoder.py",
+                      "lineRange":  [
+                                        162,
+                                        165
+                                    ],
+                      "summary":  "Encodes node features or positional embeddings into the hidden feature space expected by GraphGym models.",
+                      "tags":  [
+                                   "encoder",
+                                   "neural-network",
+                                   "feature-processing"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "class:fraudGT/encoder/hetero_pos_encoder.py:MetapathNodeEncoder",
+                      "type":  "class",
+                      "name":  "MetapathNodeEncoder",
+                      "filePath":  "fraudGT/encoder/hetero_pos_encoder.py",
+                      "lineRange":  [
+                                        169,
+                                        172
+                                    ],
+                      "summary":  "Encodes node features or positional embeddings into the hidden feature space expected by GraphGym models.",
+                      "tags":  [
+                                   "encoder",
+                                   "neural-network",
+                                   "feature-processing"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "class:fraudGT/encoder/hetero_pos_encoder.py:Node2VecNodeEncoder",
+                      "type":  "class",
+                      "name":  "Node2VecNodeEncoder",
+                      "filePath":  "fraudGT/encoder/hetero_pos_encoder.py",
+                      "lineRange":  [
+                                        175,
+                                        178
+                                    ],
+                      "summary":  "Encodes node features or positional embeddings into the hidden feature space expected by GraphGym models.",
+                      "tags":  [
+                                   "encoder",
+                                   "neural-network",
+                                   "feature-processing"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "class:fraudGT/encoder/hetero_pos_encoder.py:TransENodeEncoder",
+                      "type":  "class",
+                      "name":  "TransENodeEncoder",
+                      "filePath":  "fraudGT/encoder/hetero_pos_encoder.py",
+                      "lineRange":  [
+                                        181,
+                                        184
+                                    ],
+                      "summary":  "Encodes node features or positional embeddings into the hidden feature space expected by GraphGym models.",
+                      "tags":  [
+                                   "encoder",
+                                   "neural-network",
+                                   "feature-processing"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "class:fraudGT/encoder/hetero_pos_encoder.py:ComplExNodeEncoder",
+                      "type":  "class",
+                      "name":  "ComplExNodeEncoder",
+                      "filePath":  "fraudGT/encoder/hetero_pos_encoder.py",
+                      "lineRange":  [
+                                        187,
+                                        190
+                                    ],
+                      "summary":  "Encodes node features or positional embeddings into the hidden feature space expected by GraphGym models.",
+                      "tags":  [
+                                   "encoder",
+                                   "neural-network",
+                                   "feature-processing"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "class:fraudGT/encoder/hetero_pos_encoder.py:DistMultNodeEncoder",
+                      "type":  "class",
+                      "name":  "DistMultNodeEncoder",
+                      "filePath":  "fraudGT/encoder/hetero_pos_encoder.py",
+                      "lineRange":  [
+                                        193,
+                                        196
+                                    ],
+                      "summary":  "Encodes node features or positional embeddings into the hidden feature space expected by GraphGym models.",
+                      "tags":  [
+                                   "encoder",
+                                   "neural-network",
+                                   "feature-processing"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:fraudGT/encoder/hetero_raw_encoder.py",
+                      "type":  "file",
+                      "name":  "hetero_raw_encoder.py",
+                      "filePath":  "fraudGT/encoder/hetero_raw_encoder.py",
+                      "summary":  "Defines raw feature encoders for heterogeneous node and edge attributes, projecting per-type features into the configured hidden dimension.",
+                      "tags":  [
+                                   "encoder",
+                                   "graph-neural-network",
+                                   "feature-processing"
+                               ],
+                      "complexity":  "moderate"
+                  },
+                  {
+                      "id":  "class:fraudGT/encoder/hetero_raw_encoder.py:GeneralLayer",
+                      "type":  "class",
+                      "name":  "GeneralLayer",
+                      "filePath":  "fraudGT/encoder/hetero_raw_encoder.py",
+                      "lineRange":  [
+                                        8,
+                                        50
+                                    ],
+                      "summary":  "Wraps a neural layer with optional normalization, dropout, activation, and L2 normalization behavior.",
+                      "tags":  [
+                                   "encoder",
+                                   "neural-network",
+                                   "feature-processing"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "class:fraudGT/encoder/hetero_raw_encoder.py:GeneralMultiLayer",
+                      "type":  "class",
+                      "name":  "GeneralMultiLayer",
+                      "filePath":  "fraudGT/encoder/hetero_raw_encoder.py",
+                      "lineRange":  [
+                                        53,
+                                        75
+                                    ],
+                      "summary":  "Stacks multiple GeneralLayer blocks to build a configurable multilayer projection module.",
+                      "tags":  [
+                                   "encoder",
+                                   "neural-network",
+                                   "feature-processing"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "class:fraudGT/encoder/hetero_raw_encoder.py:HeteroRawNodeEncoder",
+                      "type":  "class",
+                      "name":  "HeteroRawNodeEncoder",
+                      "filePath":  "fraudGT/encoder/hetero_raw_encoder.py",
+                      "lineRange":  [
+                                        78,
+                                        138
+                                    ],
+                      "summary":  "Encodes node features or positional embeddings into the hidden feature space expected by GraphGym models.",
+                      "tags":  [
+                                   "encoder",
+                                   "neural-network",
+                                   "feature-processing"
+                               ],
+                      "complexity":  "moderate"
+                  },
+                  {
+                      "id":  "class:fraudGT/encoder/hetero_raw_encoder.py:HeteroRawEdgeEncoder",
+                      "type":  "class",
+                      "name":  "HeteroRawEdgeEncoder",
+                      "filePath":  "fraudGT/encoder/hetero_raw_encoder.py",
+                      "lineRange":  [
+                                        142,
+                                        179
+                                    ],
+                      "summary":  "Projects raw graph attributes into model-ready hidden representations.",
+                      "tags":  [
+                                   "encoder",
+                                   "neural-network",
+                                   "feature-processing"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:fraudGT/encoder/homo_gnn_encoder.py",
+                      "type":  "file",
+                      "name":  "homo_gnn_encoder.py",
+                      "filePath":  "fraudGT/encoder/homo_gnn_encoder.py",
+                      "summary":  "Implements homogeneous GNN encoder blocks and the HomoGNNEncoder used for single-relation graph representation learning.",
+                      "tags":  [
+                                   "encoder",
+                                   "graph-neural-network",
+                                   "feature-processing"
+                               ],
+                      "complexity":  "moderate"
+                  },
+                  {
+                      "id":  "class:fraudGT/encoder/homo_gnn_encoder.py:GeneralLayer",
+                      "type":  "class",
+                      "name":  "GeneralLayer",
+                      "filePath":  "fraudGT/encoder/homo_gnn_encoder.py",
+                      "lineRange":  [
+                                        13,
+                                        55
+                                    ],
+                      "summary":  "Wraps a neural layer with optional normalization, dropout, activation, and L2 normalization behavior.",
+                      "tags":  [
+                                   "encoder",
+                                   "neural-network",
+                                   "feature-processing"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "class:fraudGT/encoder/homo_gnn_encoder.py:GeneralMultiLayer",
+                      "type":  "class",
+                      "name":  "GeneralMultiLayer",
+                      "filePath":  "fraudGT/encoder/homo_gnn_encoder.py",
+                      "lineRange":  [
+                                        58,
+                                        80
+                                    ],
+                      "summary":  "Stacks multiple GeneralLayer blocks to build a configurable multilayer projection module.",
+                      "tags":  [
+                                   "encoder",
+                                   "neural-network",
+                                   "feature-processing"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "class:fraudGT/encoder/homo_gnn_encoder.py:HomoGNNEncoder",
+                      "type":  "class",
+                      "name":  "HomoGNNEncoder",
+                      "filePath":  "fraudGT/encoder/homo_gnn_encoder.py",
+                      "lineRange":  [
+                                        84,
+                                        202
+                                    ],
+                      "summary":  "Encodes graph batches with configurable GNN layers for HomoGNN representations.",
+                      "tags":  [
+                                   "encoder",
+                                   "neural-network",
+                                   "feature-processing"
+                               ],
+                      "complexity":  "moderate"
+                  },
+                  {
+                      "id":  "file:fraudGT/encoder/raw_encoder.py",
+                      "type":  "file",
+                      "name":  "raw_encoder.py",
+                      "filePath":  "fraudGT/encoder/raw_encoder.py",
+                      "summary":  "Provides raw node and edge feature encoders for homogeneous FraudGT graphs, wrapping linear projection, normalization, dropout, and activation logic.",
+                      "tags":  [
+                                   "encoder",
+                                   "graph-neural-network",
+                                   "feature-processing"
+                               ],
+                      "complexity":  "moderate"
+                  },
+                  {
+                      "id":  "class:fraudGT/encoder/raw_encoder.py:GeneralLayer",
+                      "type":  "class",
+                      "name":  "GeneralLayer",
+                      "filePath":  "fraudGT/encoder/raw_encoder.py",
+                      "lineRange":  [
+                                        8,
+                                        50
+                                    ],
+                      "summary":  "Wraps a neural layer with optional normalization, dropout, activation, and L2 normalization behavior.",
+                      "tags":  [
+                                   "encoder",
+                                   "neural-network",
+                                   "feature-processing"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "class:fraudGT/encoder/raw_encoder.py:GeneralMultiLayer",
+                      "type":  "class",
+                      "name":  "GeneralMultiLayer",
+                      "filePath":  "fraudGT/encoder/raw_encoder.py",
+                      "lineRange":  [
+                                        53,
+                                        75
+                                    ],
+                      "summary":  "Stacks multiple GeneralLayer blocks to build a configurable multilayer projection module.",
+                      "tags":  [
+                                   "encoder",
+                                   "neural-network",
+                                   "feature-processing"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "class:fraudGT/encoder/raw_encoder.py:RawNodeEncoder",
+                      "type":  "class",
+                      "name":  "RawNodeEncoder",
+                      "filePath":  "fraudGT/encoder/raw_encoder.py",
+                      "lineRange":  [
+                                        78,
+                                        131
+                                    ],
+                      "summary":  "Encodes node features or positional embeddings into the hidden feature space expected by GraphGym models.",
+                      "tags":  [
+                                   "encoder",
+                                   "neural-network",
+                                   "feature-processing"
+                               ],
+                      "complexity":  "moderate"
+                  },
+                  {
+                      "id":  "class:fraudGT/encoder/raw_encoder.py:RawEdgeEncoder",
+                      "type":  "class",
+                      "name":  "RawEdgeEncoder",
+                      "filePath":  "fraudGT/encoder/raw_encoder.py",
+                      "lineRange":  [
+                                        135,
+                                        171
+                                    ],
+                      "summary":  "Projects raw graph attributes into model-ready hidden representations.",
+                      "tags":  [
+                                   "encoder",
+                                   "neural-network",
+                                   "feature-processing"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:fraudGT/finetuning.py",
+                      "type":  "file",
+                      "name":  "finetuning.py",
+                      "filePath":  "fraudGT/finetuning.py",
+                      "summary":  "Loads pretrained GraphGym/FraudGT configurations and checkpoints, compares compatible settings, and initializes selected model weights for finetuning.",
+                      "tags":  [
+                                   "finetuning",
+                                   "checkpoint-loading",
+                                   "configuration"
+                               ],
+                      "complexity":  "moderate"
+                  },
+                  {
+                      "id":  "function:fraudGT/finetuning.py:get_final_pretrained_ckpt",
+                      "type":  "function",
+                      "name":  "get_final_pretrained_ckpt",
+                      "filePath":  "fraudGT/finetuning.py",
+                      "lineRange":  [
+                                        10,
+                                        17
+                                    ],
+                      "summary":  "Resolves the checkpoint file to use for pretrained model initialization.",
+                      "tags":  [
+                                   "checkpointing",
+                                   "training",
+                                   "persistence"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "function:fraudGT/finetuning.py:compare_cfg",
+                      "type":  "function",
+                      "name":  "compare_cfg",
+                      "filePath":  "fraudGT/finetuning.py",
+                      "lineRange":  [
+                                        20,
+                                        31
+                                    ],
+                      "summary":  "Compares current and pretrained configurations to detect incompatible finetuning settings.",
+                      "tags":  [
+                                   "configuration",
+                                   "graphgym",
+                                   "utility"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "function:fraudGT/finetuning.py:set_new_cfg_allowed",
+                      "type":  "function",
+                      "name":  "set_new_cfg_allowed",
+                      "filePath":  "fraudGT/finetuning.py",
+                      "lineRange":  [
+                                        34,
+                                        45
+                                    ],
+                      "summary":  "Recursively permits new configuration keys while loading pretrained settings.",
+                      "tags":  [
+                                   "configuration",
+                                   "graphgym",
+                                   "utility"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "function:fraudGT/finetuning.py:load_pretrained_model_cfg",
+                      "type":  "function",
+                      "name":  "load_pretrained_model_cfg",
+                      "filePath":  "fraudGT/finetuning.py",
+                      "lineRange":  [
+                                        48,
+                                        96
+                                    ],
+                      "summary":  "Loads and adapts the configuration associated with a pretrained checkpoint directory.",
+                      "tags":  [
+                                   "configuration",
+                                   "graphgym",
+                                   "utility"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "function:fraudGT/finetuning.py:init_model_from_pretrained",
+                      "type":  "function",
+                      "name":  "init_model_from_pretrained",
+                      "filePath":  "fraudGT/finetuning.py",
+                      "lineRange":  [
+                                        99,
+                                        149
+                                    ],
+                      "summary":  "Transfers compatible pretrained weights into the current model before finetuning.",
+                      "tags":  [
+                                   "finetuning",
+                                   "checkpoint-loading",
+                                   "configuration"
+                               ],
+                      "complexity":  "moderate"
+                  },
+                  {
+                      "id":  "file:fraudGT/graphgym/__init__.py",
+                      "type":  "file",
+                      "name":  "__init__.py",
+                      "filePath":  "fraudGT/graphgym/__init__.py",
+                      "summary":  "Initializes the local GraphGym package and re-exports model and utility packages as package-level entry points.",
+                      "tags":  [
+                                   "entry-point",
+                                   "barrel",
+                                   "registration"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:fraudGT/graphgym/checkpoint.py",
+                      "type":  "file",
+                      "name":  "checkpoint.py",
+                      "filePath":  "fraudGT/graphgym/checkpoint.py",
+                      "summary":  "Implements checkpoint persistence helpers for GraphGym training runs, including save, load, cleanup, and checkpoint path discovery functions.",
+                      "tags":  [
+                                   "checkpointing",
+                                   "training",
+                                   "persistence"
+                               ],
+                      "complexity":  "moderate"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/checkpoint.py:load_ckpt",
+                      "type":  "function",
+                      "name":  "load_ckpt",
+                      "filePath":  "fraudGT/graphgym/checkpoint.py",
+                      "lineRange":  [
+                                        15,
+                                        35
+                                    ],
+                      "summary":  "Loads model, optimizer, scheduler, and epoch state from a saved checkpoint.",
+                      "tags":  [
+                                   "checkpointing",
+                                   "training",
+                                   "persistence"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/checkpoint.py:save_ckpt",
+                      "type":  "function",
+                      "name":  "save_ckpt",
+                      "filePath":  "fraudGT/graphgym/checkpoint.py",
+                      "lineRange":  [
+                                        38,
+                                        53
+                                    ],
+                      "summary":  "Persists model and optimizer state for a training epoch.",
+                      "tags":  [
+                                   "checkpointing",
+                                   "training",
+                                   "persistence"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/checkpoint.py:remove_ckpt",
+                      "type":  "function",
+                      "name":  "remove_ckpt",
+                      "filePath":  "fraudGT/graphgym/checkpoint.py",
+                      "lineRange":  [
+                                        56,
+                                        58
+                                    ],
+                      "summary":  "Deletes a specific checkpoint file for cleanup.",
+                      "tags":  [
+                                   "checkpointing",
+                                   "training",
+                                   "persistence"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/checkpoint.py:clean_ckpt",
+                      "type":  "function",
+                      "name":  "clean_ckpt",
+                      "filePath":  "fraudGT/graphgym/checkpoint.py",
+                      "lineRange":  [
+                                        61,
+                                        64
+                                    ],
+                      "summary":  "Removes intermediate checkpoints while preserving selected training states.",
+                      "tags":  [
+                                   "checkpointing",
+                                   "training",
+                                   "persistence"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/checkpoint.py:get_ckpt_dir",
+                      "type":  "function",
+                      "name":  "get_ckpt_dir",
+                      "filePath":  "fraudGT/graphgym/checkpoint.py",
+                      "lineRange":  [
+                                        70,
+                                        71
+                                    ],
+                      "summary":  "Builds or discovers checkpoint paths and epoch identifiers for GraphGym runs.",
+                      "tags":  [
+                                   "checkpointing",
+                                   "training",
+                                   "persistence"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/checkpoint.py:get_ckpt_path",
+                      "type":  "function",
+                      "name":  "get_ckpt_path",
+                      "filePath":  "fraudGT/graphgym/checkpoint.py",
+                      "lineRange":  [
+                                        74,
+                                        75
+                                    ],
+                      "summary":  "Builds or discovers checkpoint paths and epoch identifiers for GraphGym runs.",
+                      "tags":  [
+                                   "checkpointing",
+                                   "training",
+                                   "persistence"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/checkpoint.py:get_ckpt_epochs",
+                      "type":  "function",
+                      "name":  "get_ckpt_epochs",
+                      "filePath":  "fraudGT/graphgym/checkpoint.py",
+                      "lineRange":  [
+                                        78,
+                                        80
+                                    ],
+                      "summary":  "Builds or discovers checkpoint paths and epoch identifiers for GraphGym runs.",
+                      "tags":  [
+                                   "checkpointing",
+                                   "training",
+                                   "persistence"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/checkpoint.py:get_ckpt_epoch",
+                      "type":  "function",
+                      "name":  "get_ckpt_epoch",
+                      "filePath":  "fraudGT/graphgym/checkpoint.py",
+                      "lineRange":  [
+                                        83,
+                                        87
+                                    ],
+                      "summary":  "Builds or discovers checkpoint paths and epoch identifiers for GraphGym runs.",
+                      "tags":  [
+                                   "checkpointing",
+                                   "training",
+                                   "persistence"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:fraudGT/graphgym/cmd_args.py",
+                      "type":  "file",
+                      "name":  "cmd_args.py",
+                      "filePath":  "fraudGT/graphgym/cmd_args.py",
+                      "summary":  "Defines the command-line parser for GraphGym/FraudGT runs, including config path, repeat count, mark, and GPU selection arguments.",
+                      "tags":  [
+                                   "command-line",
+                                   "configuration",
+                                   "entry-point"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/cmd_args.py:parse_args",
+                      "type":  "function",
+                      "name":  "parse_args",
+                      "filePath":  "fraudGT/graphgym/cmd_args.py",
+                      "lineRange":  [
+                                        4,
+                                        29
+                                    ],
+                      "summary":  "Parses command-line options used to launch GraphGym/FraudGT experiments.",
+                      "tags":  [
+                                   "command-line",
+                                   "configuration",
+                                   "parser"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:fraudGT/graphgym/config.py",
+                      "type":  "file",
+                      "name":  "config.py",
+                      "filePath":  "fraudGT/graphgym/config.py",
+                      "summary":  "Centralizes GraphGym configuration defaults, validation, YAML loading, output-directory setup, and config-based object construction.",
+                      "tags":  [
+                                   "configuration",
+                                   "graphgym",
+                                   "build-system"
+                               ],
+                      "complexity":  "complex"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/config.py:set_cfg",
+                      "type":  "function",
+                      "name":  "set_cfg",
+                      "filePath":  "fraudGT/graphgym/config.py",
+                      "lineRange":  [
+                                        18,
+                                        464
+                                    ],
+                      "summary":  "Creates, validates, updates, or serializes GraphGym configuration state.",
+                      "tags":  [
+                                   "configuration",
+                                   "graphgym",
+                                   "utility"
+                               ],
+                      "complexity":  "complex"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/config.py:assert_cfg",
+                      "type":  "function",
+                      "name":  "assert_cfg",
+                      "filePath":  "fraudGT/graphgym/config.py",
+                      "lineRange":  [
+                                        467,
+                                        492
+                                    ],
+                      "summary":  "Creates, validates, updates, or serializes GraphGym configuration state.",
+                      "tags":  [
+                                   "configuration",
+                                   "graphgym",
+                                   "utility"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/config.py:dump_cfg",
+                      "type":  "function",
+                      "name":  "dump_cfg",
+                      "filePath":  "fraudGT/graphgym/config.py",
+                      "lineRange":  [
+                                        495,
+                                        507
+                                    ],
+                      "summary":  "Creates, validates, updates, or serializes GraphGym configuration state.",
+                      "tags":  [
+                                   "configuration",
+                                   "graphgym",
+                                   "utility"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/config.py:load_cfg",
+                      "type":  "function",
+                      "name":  "load_cfg",
+                      "filePath":  "fraudGT/graphgym/config.py",
+                      "lineRange":  [
+                                        510,
+                                        521
+                                    ],
+                      "summary":  "Creates, validates, updates, or serializes GraphGym configuration state.",
+                      "tags":  [
+                                   "configuration",
+                                   "graphgym",
+                                   "utility"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/config.py:update_cfg",
+                      "type":  "function",
+                      "name":  "update_cfg",
+                      "filePath":  "fraudGT/graphgym/config.py",
+                      "lineRange":  [
+                                        524,
+                                        538
+                                    ],
+                      "summary":  "Creates, validates, updates, or serializes GraphGym configuration state.",
+                      "tags":  [
+                                   "configuration",
+                                   "graphgym",
+                                   "utility"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/config.py:makedirs_rm_exist",
+                      "type":  "function",
+                      "name":  "makedirs_rm_exist",
+                      "filePath":  "fraudGT/graphgym/config.py",
+                      "lineRange":  [
+                                        541,
+                                        544
+                                    ],
+                      "summary":  "Implements the makedirs_rm_exist helper used by this GraphGym/FraudGT module.",
+                      "tags":  [
+                                   "configuration",
+                                   "graphgym",
+                                   "utility"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/config.py:get_fname",
+                      "type":  "function",
+                      "name":  "get_fname",
+                      "filePath":  "fraudGT/graphgym/config.py",
+                      "lineRange":  [
+                                        547,
+                                        559
+                                    ],
+                      "summary":  "Implements the get_fname helper used by this GraphGym/FraudGT module.",
+                      "tags":  [
+                                   "configuration",
+                                   "graphgym",
+                                   "utility"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/config.py:set_out_dir",
+                      "type":  "function",
+                      "name":  "set_out_dir",
+                      "filePath":  "fraudGT/graphgym/config.py",
+                      "lineRange":  [
+                                        562,
+                                        577
+                                    ],
+                      "summary":  "Computes the run output directory from configuration and experiment arguments.",
+                      "tags":  [
+                                   "configuration",
+                                   "graphgym",
+                                   "utility"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/config.py:set_run_dir",
+                      "type":  "function",
+                      "name":  "set_run_dir",
+                      "filePath":  "fraudGT/graphgym/config.py",
+                      "lineRange":  [
+                                        580,
+                                        594
+                                    ],
+                      "summary":  "Creates the per-run output directory used for experiment artifacts.",
+                      "tags":  [
+                                   "configuration",
+                                   "graphgym",
+                                   "utility"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/config.py:from_config",
+                      "type":  "function",
+                      "name":  "from_config",
+                      "filePath":  "fraudGT/graphgym/config.py",
+                      "lineRange":  [
+                                        597,
+                                        621
+                                    ],
+                      "summary":  "Constructs an object from configuration values by matching constructor arguments.",
+                      "tags":  [
+                                   "configuration",
+                                   "graphgym",
+                                   "utility"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:fraudGT/graphgym/contrib/__init__.py",
+                      "type":  "file",
+                      "name":  "__init__.py",
+                      "filePath":  "fraudGT/graphgym/contrib/__init__.py",
+                      "summary":  "Imports all GraphGym contribution extension packages so custom acts, configs, encoders, heads, layers, loaders, losses, networks, pooling, stages, trainers, and transforms can register themselves.",
+                      "tags":  [
+                                   "entry-point",
+                                   "barrel",
+                                   "registration"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:fraudGT/graphgym/contrib/act/__init__.py",
+                      "type":  "file",
+                      "name":  "__init__.py",
+                      "filePath":  "fraudGT/graphgym/contrib/act/__init__.py",
+                      "summary":  "Loads contributed activation extensions for registration with the GraphGym extension system.",
+                      "tags":  [
+                                   "entry-point",
+                                   "barrel",
+                                   "registration"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:fraudGT/graphgym/contrib/act/example.py",
+                      "type":  "file",
+                      "name":  "example.py",
+                      "filePath":  "fraudGT/graphgym/contrib/act/example.py",
+                      "summary":  "Provides an example SWISH activation module registered through GraphGym contribution hooks.",
+                      "tags":  [
+                                   "example",
+                                   "extension",
+                                   "registration"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "class:fraudGT/graphgym/contrib/act/example.py:SWISH",
+                      "type":  "class",
+                      "name":  "SWISH",
+                      "filePath":  "fraudGT/graphgym/contrib/act/example.py",
+                      "lineRange":  [
+                                        8,
+                                        18
+                                    ],
+                      "summary":  "Implements the Swish activation as a registered GraphGym activation example.",
+                      "tags":  [
+                                   "class",
+                                   "graphgym",
+                                   "extension"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:fraudGT/graphgym/contrib/config/__init__.py",
+                      "type":  "file",
+                      "name":  "__init__.py",
+                      "filePath":  "fraudGT/graphgym/contrib/config/__init__.py",
+                      "summary":  "Loads contributed configuration extension modules for GraphGym registration.",
+                      "tags":  [
+                                   "entry-point",
+                                   "barrel",
+                                   "registration"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:fraudGT/graphgym/contrib/config/example.py",
+                      "type":  "file",
+                      "name":  "example.py",
+                      "filePath":  "fraudGT/graphgym/contrib/config/example.py",
+                      "summary":  "Shows how to extend the GraphGym global config with a custom example configuration field.",
+                      "tags":  [
+                                   "example",
+                                   "extension",
+                                   "registration"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/contrib/config/example.py:set_cfg_example",
+                      "type":  "function",
+                      "name":  "set_cfg_example",
+                      "filePath":  "fraudGT/graphgym/contrib/config/example.py",
+                      "lineRange":  [
+                                        6,
+                                        23
+                                    ],
+                      "summary":  "Creates, validates, updates, or serializes GraphGym configuration state.",
+                      "tags":  [
+                                   "configuration",
+                                   "graphgym",
+                                   "utility"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:fraudGT/graphgym/contrib/feature_augment/__init__.py",
+                      "type":  "file",
+                      "name":  "__init__.py",
+                      "filePath":  "fraudGT/graphgym/contrib/feature_augment/__init__.py",
+                      "summary":  "Loads contributed feature augmentation extensions for GraphGym registration.",
+                      "tags":  [
+                                   "entry-point",
+                                   "barrel",
+                                   "registration"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:fraudGT/graphgym/contrib/feature_augment/example.py",
+                      "type":  "file",
+                      "name":  "example.py",
+                      "filePath":  "fraudGT/graphgym/contrib/feature_augment/example.py",
+                      "summary":  "Provides a minimal example node feature augmentation function for the GraphGym contribution API.",
+                      "tags":  [
+                                   "example",
+                                   "extension",
+                                   "registration"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "function:fraudGT/graphgym/contrib/feature_augment/example.py:example_node_augmentation_func",
+                      "type":  "function",
+                      "name":  "example_node_augmentation_func",
+                      "filePath":  "fraudGT/graphgym/contrib/feature_augment/example.py",
+                      "lineRange":  [
+                                        6,
+                                        15
+                                    ],
+                      "summary":  "Implements the example_node_augmentation_func helper used by this GraphGym/FraudGT module.",
+                      "tags":  [
+                                   "function",
+                                   "graphgym",
+                                   "extension"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:fraudGT/graphgym/contrib/feature_encoder/__init__.py",
+                      "type":  "file",
+                      "name":  "__init__.py",
+                      "filePath":  "fraudGT/graphgym/contrib/feature_encoder/__init__.py",
+                      "summary":  "Loads contributed feature encoder extensions for GraphGym registration.",
+                      "tags":  [
+                                   "entry-point",
+                                   "barrel",
+                                   "registration"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:fraudGT/graphgym/contrib/feature_encoder/example.py",
+                      "type":  "file",
+                      "name":  "example.py",
+                      "filePath":  "fraudGT/graphgym/contrib/feature_encoder/example.py",
+                      "summary":  "Defines example node and edge encoders that project graph features into the configured hidden dimension.",
+                      "tags":  [
+                                   "encoder",
+                                   "graph-neural-network",
+                                   "feature-processing"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "class:fraudGT/graphgym/contrib/feature_encoder/example.py:ExampleNodeEncoder",
+                      "type":  "class",
+                      "name":  "ExampleNodeEncoder",
+                      "filePath":  "fraudGT/graphgym/contrib/feature_encoder/example.py",
+                      "lineRange":  [
+                                        7,
+                                        25
+                                    ],
+                      "summary":  "Encodes node features or positional embeddings into the hidden feature space expected by GraphGym models.",
+                      "tags":  [
+                                   "encoder",
+                                   "neural-network",
+                                   "feature-processing"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "class:fraudGT/graphgym/contrib/feature_encoder/example.py:ExampleEdgeEncoder",
+                      "type":  "class",
+                      "name":  "ExampleEdgeEncoder",
+                      "filePath":  "fraudGT/graphgym/contrib/feature_encoder/example.py",
+                      "lineRange":  [
+                                        31,
+                                        51
+                                    ],
+                      "summary":  "Projects raw graph attributes into model-ready hidden representations.",
+                      "tags":  [
+                                   "encoder",
+                                   "neural-network",
+                                   "feature-processing"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:fraudGT/graphgym/contrib/head/__init__.py",
+                      "type":  "file",
+                      "name":  "__init__.py",
+                      "filePath":  "fraudGT/graphgym/contrib/head/__init__.py",
+                      "summary":  "Loads contributed prediction head extensions for GraphGym registration.",
+                      "tags":  [
+                                   "entry-point",
+                                   "barrel",
+                                   "registration"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:fraudGT/graphgym/contrib/head/example.py",
+                      "type":  "file",
+                      "name":  "example.py",
+                      "filePath":  "fraudGT/graphgym/contrib/head/example.py",
+                      "summary":  "Defines an example node prediction head that slices batch outputs and applies a linear classifier.",
+                      "tags":  [
+                                   "example",
+                                   "extension",
+                                   "registration"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "class:fraudGT/graphgym/contrib/head/example.py:ExampleNodeHead",
+                      "type":  "class",
+                      "name":  "ExampleNodeHead",
+                      "filePath":  "fraudGT/graphgym/contrib/head/example.py",
+                      "lineRange":  [
+                                        6,
+                                        23
+                                    ],
+                      "summary":  "Applies task-specific prediction logic to encoded batch outputs.",
+                      "tags":  [
+                                   "class",
+                                   "graphgym",
+                                   "extension"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:fraudGT/graphgym/contrib/layer/__init__.py",
+                      "type":  "file",
+                      "name":  "__init__.py",
+                      "filePath":  "fraudGT/graphgym/contrib/layer/__init__.py",
+                      "summary":  "Loads contributed layer extensions for GraphGym registration.",
+                      "tags":  [
+                                   "entry-point",
+                                   "barrel",
+                                   "registration"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:fraudGT/graphgym/contrib/layer/attconv.py",
+                      "type":  "file",
+                      "name":  "attconv.py",
+                      "filePath":  "fraudGT/graphgym/contrib/layer/attconv.py",
+                      "summary":  "Implements attention-based graph convolution layers and wrappers, including additive, multiplicative, and edge-task-aware attention variants.",
+                      "tags":  [
+                                   "graph-layer",
+                                   "attention",
+                                   "message-passing"
+                               ],
+                      "complexity":  "complex"
+                  },
+                  {
+                      "id":  "class:fraudGT/graphgym/contrib/layer/attconv.py:GeneralAddAttConvLayer",
+                      "type":  "class",
+                      "name":  "GeneralAddAttConvLayer",
+                      "filePath":  "fraudGT/graphgym/contrib/layer/attconv.py",
+                      "lineRange":  [
+                                        14,
+                                        121
+                                    ],
+                      "summary":  "Implements a message-passing convolution layer with learnable parameters and aggregation behavior.",
+                      "tags":  [
+                                   "graph-layer",
+                                   "message-passing",
+                                   "neural-network"
+                               ],
+                      "complexity":  "moderate"
+                  },
+                  {
+                      "id":  "class:fraudGT/graphgym/contrib/layer/attconv.py:GeneralMulAttConvLayer",
+                      "type":  "class",
+                      "name":  "GeneralMulAttConvLayer",
+                      "filePath":  "fraudGT/graphgym/contrib/layer/attconv.py",
+                      "lineRange":  [
+                                        124,
+                                        234
+                                    ],
+                      "summary":  "Implements a message-passing convolution layer with learnable parameters and aggregation behavior.",
+                      "tags":  [
+                                   "graph-layer",
+                                   "message-passing",
+                                   "neural-network"
+                               ],
+                      "complexity":  "moderate"
+                  },
+                  {
+                      "id":  "class:fraudGT/graphgym/contrib/layer/attconv.py:GeneralAddAttConv",
+                      "type":  "class",
+                      "name":  "GeneralAddAttConv",
+                      "filePath":  "fraudGT/graphgym/contrib/layer/attconv.py",
+                      "lineRange":  [
+                                        237,
+                                        244
+                                    ],
+                      "summary":  "Wraps a message-passing convolution layer for use as a GraphGym-compatible layer module.",
+                      "tags":  [
+                                   "graph-layer",
+                                   "message-passing",
+                                   "neural-network"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "class:fraudGT/graphgym/contrib/layer/attconv.py:GeneralMulAttConv",
+                      "type":  "class",
+                      "name":  "GeneralMulAttConv",
+                      "filePath":  "fraudGT/graphgym/contrib/layer/attconv.py",
+                      "lineRange":  [
+                                        247,
+                                        254
+                                    ],
+                      "summary":  "Wraps a message-passing convolution layer for use as a GraphGym-compatible layer module.",
+                      "tags":  [
+                                   "graph-layer",
+                                   "message-passing",
+                                   "neural-network"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "class:fraudGT/graphgym/contrib/layer/attconv.py:GeneralEdgeAttConvv1Layer",
+                      "type":  "class",
+                      "name":  "GeneralEdgeAttConvv1Layer",
+                      "filePath":  "fraudGT/graphgym/contrib/layer/attconv.py",
+                      "lineRange":  [
+                                        261,
+                                        413
+                                    ],
+                      "summary":  "Implements a message-passing convolution layer with learnable parameters and aggregation behavior.",
+                      "tags":  [
+                                   "graph-layer",
+                                   "message-passing",
+                                   "neural-network"
+                               ],
+                      "complexity":  "moderate"
+                  },
+                  {
+                      "id":  "class:fraudGT/graphgym/contrib/layer/attconv.py:GeneralEdgeAttConvv2Layer",
+                      "type":  "class",
+                      "name":  "GeneralEdgeAttConvv2Layer",
+                      "filePath":  "fraudGT/graphgym/contrib/layer/attconv.py",
+                      "lineRange":  [
+                                        416,
+                                        578
+                                    ],
+                      "summary":  "Implements a message-passing convolution layer with learnable parameters and aggregation behavior.",
+                      "tags":  [
+                                   "graph-layer",
+                                   "message-passing",
+                                   "neural-network"
+                               ],
+                      "complexity":  "moderate"
+                  },
+                  {
+                      "id":  "class:fraudGT/graphgym/contrib/layer/attconv.py:GeneralEdgeAttConvv1",
+                      "type":  "class",
+                      "name":  "GeneralEdgeAttConvv1",
+                      "filePath":  "fraudGT/graphgym/contrib/layer/attconv.py",
+                      "lineRange":  [
+                                        581,
+                                        590
+                                    ],
+                      "summary":  "Wraps a message-passing convolution layer for use as a GraphGym-compatible layer module.",
+                      "tags":  [
+                                   "graph-layer",
+                                   "message-passing",
+                                   "neural-network"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "class:fraudGT/graphgym/contrib/layer/attconv.py:GeneralEdgeAttConvv2",
+                      "type":  "class",
+                      "name":  "GeneralEdgeAttConvv2",
+                      "filePath":  "fraudGT/graphgym/contrib/layer/attconv.py",
+                      "lineRange":  [
+                                        593,
+                                        602
+                                    ],
+                      "summary":  "Wraps a message-passing convolution layer for use as a GraphGym-compatible layer module.",
+                      "tags":  [
+                                   "graph-layer",
+                                   "message-passing",
+                                   "neural-network"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:fraudGT/graphgym/contrib/layer/example.py",
+                      "type":  "file",
+                      "name":  "example.py",
+                      "filePath":  "fraudGT/graphgym/contrib/layer/example.py",
+                      "summary":  "Provides example message-passing convolution layers and wrappers for GraphGym layer extension development.",
+                      "tags":  [
+                                   "example",
+                                   "extension",
+                                   "registration"
+                               ],
+                      "complexity":  "moderate"
+                  },
+                  {
+                      "id":  "class:fraudGT/graphgym/contrib/layer/example.py:ExampleConv1",
+                      "type":  "class",
+                      "name":  "ExampleConv1",
+                      "filePath":  "fraudGT/graphgym/contrib/layer/example.py",
+                      "lineRange":  [
+                                        16,
+                                        58
+                                    ],
+                      "summary":  "Wraps a message-passing convolution layer for use as a GraphGym-compatible layer module.",
+                      "tags":  [
+                                   "graph-layer",
+                                   "message-passing",
+                                   "neural-network"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "class:fraudGT/graphgym/contrib/layer/example.py:ExampleConv2Layer",
+                      "type":  "class",
+                      "name":  "ExampleConv2Layer",
+                      "filePath":  "fraudGT/graphgym/contrib/layer/example.py",
+                      "lineRange":  [
+                                        67,
+                                        106
+                                    ],
+                      "summary":  "Implements a message-passing convolution layer with learnable parameters and aggregation behavior.",
+                      "tags":  [
+                                   "graph-layer",
+                                   "message-passing",
+                                   "neural-network"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "class:fraudGT/graphgym/contrib/layer/example.py:ExampleConv2",
+                      "type":  "class",
+                      "name":  "ExampleConv2",
+                      "filePath":  "fraudGT/graphgym/contrib/layer/example.py",
+                      "lineRange":  [
+                                        109,
+                                        116
+                                    ],
+                      "summary":  "Wraps a message-passing convolution layer for use as a GraphGym-compatible layer module.",
+                      "tags":  [
+                                   "graph-layer",
+                                   "message-passing",
+                                   "neural-network"
+                               ],
+                      "complexity":  "simple"
+                  }
+              ],
+    "edges":  [
+                  {
+                      "source":  "file:fraudGT/encoder/hetero_gnn_encoder.py",
+                      "target":  "class:fraudGT/encoder/hetero_gnn_encoder.py:GeneralLayer",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/encoder/hetero_gnn_encoder.py",
+                      "target":  "class:fraudGT/encoder/hetero_gnn_encoder.py:GeneralLayer",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/encoder/hetero_gnn_encoder.py",
+                      "target":  "class:fraudGT/encoder/hetero_gnn_encoder.py:GeneralMultiLayer",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/encoder/hetero_gnn_encoder.py",
+                      "target":  "class:fraudGT/encoder/hetero_gnn_encoder.py:GeneralMultiLayer",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/encoder/hetero_gnn_encoder.py",
+                      "target":  "class:fraudGT/encoder/hetero_gnn_encoder.py:HeteroGNNEncoder",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/encoder/hetero_gnn_encoder.py",
+                      "target":  "class:fraudGT/encoder/hetero_gnn_encoder.py:HeteroGNNEncoder",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/encoder/hetero_label_encoder.py",
+                      "target":  "class:fraudGT/encoder/hetero_label_encoder.py:HeteroLabelNodeEncoder",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/encoder/hetero_label_encoder.py",
+                      "target":  "class:fraudGT/encoder/hetero_label_encoder.py:HeteroLabelNodeEncoder",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/encoder/hetero_label_encoder.py",
+                      "target":  "class:fraudGT/encoder/hetero_label_encoder.py:HeteroLabelEdgeEncoder",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/encoder/hetero_label_encoder.py",
+                      "target":  "class:fraudGT/encoder/hetero_label_encoder.py:HeteroLabelEdgeEncoder",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/encoder/hetero_pos_encoder.py",
+                      "target":  "class:fraudGT/encoder/hetero_pos_encoder.py:HeteroPENodeEncoder",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/encoder/hetero_pos_encoder.py",
+                      "target":  "class:fraudGT/encoder/hetero_pos_encoder.py:HeteroPENodeEncoder",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/encoder/hetero_pos_encoder.py",
+                      "target":  "class:fraudGT/encoder/hetero_pos_encoder.py:RWSENodeEncoder",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/encoder/hetero_pos_encoder.py",
+                      "target":  "class:fraudGT/encoder/hetero_pos_encoder.py:RWSENodeEncoder",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/encoder/hetero_pos_encoder.py",
+                      "target":  "class:fraudGT/encoder/hetero_pos_encoder.py:MetapathNodeEncoder",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/encoder/hetero_pos_encoder.py",
+                      "target":  "class:fraudGT/encoder/hetero_pos_encoder.py:MetapathNodeEncoder",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/encoder/hetero_pos_encoder.py",
+                      "target":  "class:fraudGT/encoder/hetero_pos_encoder.py:Node2VecNodeEncoder",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/encoder/hetero_pos_encoder.py",
+                      "target":  "class:fraudGT/encoder/hetero_pos_encoder.py:Node2VecNodeEncoder",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/encoder/hetero_pos_encoder.py",
+                      "target":  "class:fraudGT/encoder/hetero_pos_encoder.py:TransENodeEncoder",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/encoder/hetero_pos_encoder.py",
+                      "target":  "class:fraudGT/encoder/hetero_pos_encoder.py:TransENodeEncoder",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/encoder/hetero_pos_encoder.py",
+                      "target":  "class:fraudGT/encoder/hetero_pos_encoder.py:ComplExNodeEncoder",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/encoder/hetero_pos_encoder.py",
+                      "target":  "class:fraudGT/encoder/hetero_pos_encoder.py:ComplExNodeEncoder",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/encoder/hetero_pos_encoder.py",
+                      "target":  "class:fraudGT/encoder/hetero_pos_encoder.py:DistMultNodeEncoder",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/encoder/hetero_pos_encoder.py",
+                      "target":  "class:fraudGT/encoder/hetero_pos_encoder.py:DistMultNodeEncoder",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/encoder/hetero_raw_encoder.py",
+                      "target":  "class:fraudGT/encoder/hetero_raw_encoder.py:GeneralLayer",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/encoder/hetero_raw_encoder.py",
+                      "target":  "class:fraudGT/encoder/hetero_raw_encoder.py:GeneralLayer",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/encoder/hetero_raw_encoder.py",
+                      "target":  "class:fraudGT/encoder/hetero_raw_encoder.py:GeneralMultiLayer",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/encoder/hetero_raw_encoder.py",
+                      "target":  "class:fraudGT/encoder/hetero_raw_encoder.py:GeneralMultiLayer",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/encoder/hetero_raw_encoder.py",
+                      "target":  "class:fraudGT/encoder/hetero_raw_encoder.py:HeteroRawNodeEncoder",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/encoder/hetero_raw_encoder.py",
+                      "target":  "class:fraudGT/encoder/hetero_raw_encoder.py:HeteroRawNodeEncoder",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/encoder/hetero_raw_encoder.py",
+                      "target":  "class:fraudGT/encoder/hetero_raw_encoder.py:HeteroRawEdgeEncoder",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/encoder/hetero_raw_encoder.py",
+                      "target":  "class:fraudGT/encoder/hetero_raw_encoder.py:HeteroRawEdgeEncoder",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/encoder/homo_gnn_encoder.py",
+                      "target":  "class:fraudGT/encoder/homo_gnn_encoder.py:GeneralLayer",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/encoder/homo_gnn_encoder.py",
+                      "target":  "class:fraudGT/encoder/homo_gnn_encoder.py:GeneralLayer",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/encoder/homo_gnn_encoder.py",
+                      "target":  "class:fraudGT/encoder/homo_gnn_encoder.py:GeneralMultiLayer",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/encoder/homo_gnn_encoder.py",
+                      "target":  "class:fraudGT/encoder/homo_gnn_encoder.py:GeneralMultiLayer",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/encoder/homo_gnn_encoder.py",
+                      "target":  "class:fraudGT/encoder/homo_gnn_encoder.py:HomoGNNEncoder",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/encoder/homo_gnn_encoder.py",
+                      "target":  "class:fraudGT/encoder/homo_gnn_encoder.py:HomoGNNEncoder",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/encoder/raw_encoder.py",
+                      "target":  "class:fraudGT/encoder/raw_encoder.py:GeneralLayer",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/encoder/raw_encoder.py",
+                      "target":  "class:fraudGT/encoder/raw_encoder.py:GeneralLayer",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/encoder/raw_encoder.py",
+                      "target":  "class:fraudGT/encoder/raw_encoder.py:GeneralMultiLayer",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/encoder/raw_encoder.py",
+                      "target":  "class:fraudGT/encoder/raw_encoder.py:GeneralMultiLayer",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/encoder/raw_encoder.py",
+                      "target":  "class:fraudGT/encoder/raw_encoder.py:RawNodeEncoder",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/encoder/raw_encoder.py",
+                      "target":  "class:fraudGT/encoder/raw_encoder.py:RawNodeEncoder",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/encoder/raw_encoder.py",
+                      "target":  "class:fraudGT/encoder/raw_encoder.py:RawEdgeEncoder",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/encoder/raw_encoder.py",
+                      "target":  "class:fraudGT/encoder/raw_encoder.py:RawEdgeEncoder",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/finetuning.py",
+                      "target":  "function:fraudGT/finetuning.py:get_final_pretrained_ckpt",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/finetuning.py",
+                      "target":  "function:fraudGT/finetuning.py:get_final_pretrained_ckpt",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/finetuning.py",
+                      "target":  "function:fraudGT/finetuning.py:compare_cfg",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/finetuning.py",
+                      "target":  "function:fraudGT/finetuning.py:compare_cfg",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/finetuning.py",
+                      "target":  "function:fraudGT/finetuning.py:set_new_cfg_allowed",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/finetuning.py",
+                      "target":  "function:fraudGT/finetuning.py:set_new_cfg_allowed",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/finetuning.py",
+                      "target":  "function:fraudGT/finetuning.py:load_pretrained_model_cfg",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/finetuning.py",
+                      "target":  "function:fraudGT/finetuning.py:load_pretrained_model_cfg",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/finetuning.py",
+                      "target":  "function:fraudGT/finetuning.py:init_model_from_pretrained",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/finetuning.py",
+                      "target":  "function:fraudGT/finetuning.py:init_model_from_pretrained",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/checkpoint.py",
+                      "target":  "function:fraudGT/graphgym/checkpoint.py:load_ckpt",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/checkpoint.py",
+                      "target":  "function:fraudGT/graphgym/checkpoint.py:load_ckpt",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/checkpoint.py",
+                      "target":  "function:fraudGT/graphgym/checkpoint.py:save_ckpt",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/checkpoint.py",
+                      "target":  "function:fraudGT/graphgym/checkpoint.py:save_ckpt",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/checkpoint.py",
+                      "target":  "function:fraudGT/graphgym/checkpoint.py:remove_ckpt",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/checkpoint.py",
+                      "target":  "function:fraudGT/graphgym/checkpoint.py:remove_ckpt",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/checkpoint.py",
+                      "target":  "function:fraudGT/graphgym/checkpoint.py:clean_ckpt",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/checkpoint.py",
+                      "target":  "function:fraudGT/graphgym/checkpoint.py:clean_ckpt",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/checkpoint.py",
+                      "target":  "function:fraudGT/graphgym/checkpoint.py:get_ckpt_dir",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/checkpoint.py",
+                      "target":  "function:fraudGT/graphgym/checkpoint.py:get_ckpt_dir",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/checkpoint.py",
+                      "target":  "function:fraudGT/graphgym/checkpoint.py:get_ckpt_path",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/checkpoint.py",
+                      "target":  "function:fraudGT/graphgym/checkpoint.py:get_ckpt_path",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/checkpoint.py",
+                      "target":  "function:fraudGT/graphgym/checkpoint.py:get_ckpt_epochs",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/checkpoint.py",
+                      "target":  "function:fraudGT/graphgym/checkpoint.py:get_ckpt_epochs",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/checkpoint.py",
+                      "target":  "function:fraudGT/graphgym/checkpoint.py:get_ckpt_epoch",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/checkpoint.py",
+                      "target":  "function:fraudGT/graphgym/checkpoint.py:get_ckpt_epoch",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/cmd_args.py",
+                      "target":  "function:fraudGT/graphgym/cmd_args.py:parse_args",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/cmd_args.py",
+                      "target":  "function:fraudGT/graphgym/cmd_args.py:parse_args",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/config.py",
+                      "target":  "function:fraudGT/graphgym/config.py:set_cfg",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/config.py",
+                      "target":  "function:fraudGT/graphgym/config.py:set_cfg",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/config.py",
+                      "target":  "function:fraudGT/graphgym/config.py:assert_cfg",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/config.py",
+                      "target":  "function:fraudGT/graphgym/config.py:assert_cfg",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/config.py",
+                      "target":  "function:fraudGT/graphgym/config.py:dump_cfg",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/config.py",
+                      "target":  "function:fraudGT/graphgym/config.py:dump_cfg",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/config.py",
+                      "target":  "function:fraudGT/graphgym/config.py:load_cfg",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/config.py",
+                      "target":  "function:fraudGT/graphgym/config.py:load_cfg",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/config.py",
+                      "target":  "function:fraudGT/graphgym/config.py:update_cfg",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/config.py",
+                      "target":  "function:fraudGT/graphgym/config.py:update_cfg",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/config.py",
+                      "target":  "function:fraudGT/graphgym/config.py:makedirs_rm_exist",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/config.py",
+                      "target":  "function:fraudGT/graphgym/config.py:makedirs_rm_exist",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/config.py",
+                      "target":  "function:fraudGT/graphgym/config.py:get_fname",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/config.py",
+                      "target":  "function:fraudGT/graphgym/config.py:get_fname",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/config.py",
+                      "target":  "function:fraudGT/graphgym/config.py:set_out_dir",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/config.py",
+                      "target":  "function:fraudGT/graphgym/config.py:set_out_dir",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/config.py",
+                      "target":  "function:fraudGT/graphgym/config.py:set_run_dir",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/config.py",
+                      "target":  "function:fraudGT/graphgym/config.py:set_run_dir",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/config.py",
+                      "target":  "function:fraudGT/graphgym/config.py:from_config",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/config.py",
+                      "target":  "function:fraudGT/graphgym/config.py:from_config",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/act/example.py",
+                      "target":  "class:fraudGT/graphgym/contrib/act/example.py:SWISH",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/act/example.py",
+                      "target":  "class:fraudGT/graphgym/contrib/act/example.py:SWISH",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/config/example.py",
+                      "target":  "function:fraudGT/graphgym/contrib/config/example.py:set_cfg_example",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/config/example.py",
+                      "target":  "function:fraudGT/graphgym/contrib/config/example.py:set_cfg_example",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/feature_augment/example.py",
+                      "target":  "function:fraudGT/graphgym/contrib/feature_augment/example.py:example_node_augmentation_func",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/feature_augment/example.py",
+                      "target":  "function:fraudGT/graphgym/contrib/feature_augment/example.py:example_node_augmentation_func",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/feature_encoder/example.py",
+                      "target":  "class:fraudGT/graphgym/contrib/feature_encoder/example.py:ExampleNodeEncoder",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/feature_encoder/example.py",
+                      "target":  "class:fraudGT/graphgym/contrib/feature_encoder/example.py:ExampleNodeEncoder",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/feature_encoder/example.py",
+                      "target":  "class:fraudGT/graphgym/contrib/feature_encoder/example.py:ExampleEdgeEncoder",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/feature_encoder/example.py",
+                      "target":  "class:fraudGT/graphgym/contrib/feature_encoder/example.py:ExampleEdgeEncoder",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/head/example.py",
+                      "target":  "class:fraudGT/graphgym/contrib/head/example.py:ExampleNodeHead",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/head/example.py",
+                      "target":  "class:fraudGT/graphgym/contrib/head/example.py:ExampleNodeHead",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/attconv.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/attconv.py:GeneralAddAttConvLayer",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/attconv.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/attconv.py:GeneralAddAttConvLayer",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/attconv.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/attconv.py:GeneralMulAttConvLayer",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/attconv.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/attconv.py:GeneralMulAttConvLayer",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/attconv.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/attconv.py:GeneralAddAttConv",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/attconv.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/attconv.py:GeneralAddAttConv",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/attconv.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/attconv.py:GeneralMulAttConv",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/attconv.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/attconv.py:GeneralMulAttConv",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/attconv.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/attconv.py:GeneralEdgeAttConvv1Layer",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/attconv.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/attconv.py:GeneralEdgeAttConvv1Layer",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/attconv.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/attconv.py:GeneralEdgeAttConvv2Layer",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/attconv.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/attconv.py:GeneralEdgeAttConvv2Layer",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/attconv.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/attconv.py:GeneralEdgeAttConvv1",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/attconv.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/attconv.py:GeneralEdgeAttConvv1",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/attconv.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/attconv.py:GeneralEdgeAttConvv2",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/attconv.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/attconv.py:GeneralEdgeAttConvv2",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/example.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/example.py:ExampleConv1",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/example.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/example.py:ExampleConv1",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/example.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/example.py:ExampleConv2Layer",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/example.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/example.py:ExampleConv2Layer",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/example.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/example.py:ExampleConv2",
+                      "type":  "contains",
+                      "direction":  "forward",
+                      "weight":  1
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/layer/example.py",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/example.py:ExampleConv2",
+                      "type":  "exports",
+                      "direction":  "forward",
+                      "weight":  0.8
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/__init__.py",
+                      "target":  "file:fraudGT/graphgym/models/__init__.py",
+                      "type":  "imports",
+                      "direction":  "forward",
+                      "weight":  0.7
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/__init__.py",
+                      "target":  "file:fraudGT/graphgym/utils/__init__.py",
+                      "type":  "imports",
+                      "direction":  "forward",
+                      "weight":  0.7
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/__init__.py",
+                      "target":  "file:fraudGT/graphgym/contrib/act/__init__.py",
+                      "type":  "imports",
+                      "direction":  "forward",
+                      "weight":  0.7
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/__init__.py",
+                      "target":  "file:fraudGT/graphgym/contrib/config/__init__.py",
+                      "type":  "imports",
+                      "direction":  "forward",
+                      "weight":  0.7
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/__init__.py",
+                      "target":  "file:fraudGT/graphgym/contrib/feature_augment/__init__.py",
+                      "type":  "imports",
+                      "direction":  "forward",
+                      "weight":  0.7
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/__init__.py",
+                      "target":  "file:fraudGT/graphgym/contrib/feature_encoder/__init__.py",
+                      "type":  "imports",
+                      "direction":  "forward",
+                      "weight":  0.7
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/__init__.py",
+                      "target":  "file:fraudGT/graphgym/contrib/head/__init__.py",
+                      "type":  "imports",
+                      "direction":  "forward",
+                      "weight":  0.7
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/__init__.py",
+                      "target":  "file:fraudGT/graphgym/contrib/layer/__init__.py",
+                      "type":  "imports",
+                      "direction":  "forward",
+                      "weight":  0.7
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/__init__.py",
+                      "target":  "file:fraudGT/graphgym/contrib/loader/__init__.py",
+                      "type":  "imports",
+                      "direction":  "forward",
+                      "weight":  0.7
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/__init__.py",
+                      "target":  "file:fraudGT/graphgym/contrib/loss/__init__.py",
+                      "type":  "imports",
+                      "direction":  "forward",
+                      "weight":  0.7
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/__init__.py",
+                      "target":  "file:fraudGT/graphgym/contrib/network/__init__.py",
+                      "type":  "imports",
+                      "direction":  "forward",
+                      "weight":  0.7
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/__init__.py",
+                      "target":  "file:fraudGT/graphgym/contrib/pooling/__init__.py",
+                      "type":  "imports",
+                      "direction":  "forward",
+                      "weight":  0.7
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/__init__.py",
+                      "target":  "file:fraudGT/graphgym/contrib/stage/__init__.py",
+                      "type":  "imports",
+                      "direction":  "forward",
+                      "weight":  0.7
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/__init__.py",
+                      "target":  "file:fraudGT/graphgym/contrib/train/__init__.py",
+                      "type":  "imports",
+                      "direction":  "forward",
+                      "weight":  0.7
+                  },
+                  {
+                      "source":  "file:fraudGT/graphgym/contrib/__init__.py",
+                      "target":  "file:fraudGT/graphgym/contrib/transform/__init__.py",
+                      "type":  "imports",
+                      "direction":  "forward",
+                      "weight":  0.7
+                  },
+                  {
+                      "source":  "class:fraudGT/encoder/hetero_gnn_encoder.py:GeneralMultiLayer",
+                      "target":  "class:fraudGT/encoder/hetero_gnn_encoder.py:GeneralLayer",
+                      "type":  "depends_on",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "class:fraudGT/encoder/hetero_gnn_encoder.py:HeteroGNNEncoder",
+                      "target":  "class:fraudGT/encoder/hetero_gnn_encoder.py:GeneralMultiLayer",
+                      "type":  "depends_on",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "class:fraudGT/encoder/hetero_raw_encoder.py:GeneralMultiLayer",
+                      "target":  "class:fraudGT/encoder/hetero_raw_encoder.py:GeneralLayer",
+                      "type":  "depends_on",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "class:fraudGT/encoder/homo_gnn_encoder.py:GeneralMultiLayer",
+                      "target":  "class:fraudGT/encoder/homo_gnn_encoder.py:GeneralLayer",
+                      "type":  "depends_on",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "class:fraudGT/encoder/raw_encoder.py:GeneralMultiLayer",
+                      "target":  "class:fraudGT/encoder/raw_encoder.py:GeneralLayer",
+                      "type":  "depends_on",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "class:fraudGT/graphgym/contrib/layer/attconv.py:GeneralAddAttConv",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/attconv.py:GeneralAddAttConvLayer",
+                      "type":  "depends_on",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "class:fraudGT/graphgym/contrib/layer/attconv.py:GeneralMulAttConv",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/attconv.py:GeneralMulAttConvLayer",
+                      "type":  "depends_on",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "class:fraudGT/graphgym/contrib/layer/attconv.py:GeneralEdgeAttConvv1",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/attconv.py:GeneralEdgeAttConvv1Layer",
+                      "type":  "depends_on",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "class:fraudGT/graphgym/contrib/layer/attconv.py:GeneralEdgeAttConvv2",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/attconv.py:GeneralEdgeAttConvv2Layer",
+                      "type":  "depends_on",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  },
+                  {
+                      "source":  "class:fraudGT/graphgym/contrib/layer/example.py:ExampleConv2",
+                      "target":  "class:fraudGT/graphgym/contrib/layer/example.py:ExampleConv2Layer",
+                      "type":  "depends_on",
+                      "direction":  "forward",
+                      "weight":  0.6
+                  }
+              ]
+}

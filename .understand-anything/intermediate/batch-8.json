@@ -1,0 +1,525 @@
+{
+  "nodes": [
+    {
+      "id": "config:configs/AML-Large-LI_Transfer/AML-Large-LI-Multi-PNA.yaml",
+      "type": "config",
+      "name": "AML-Large-LI-Multi-PNA.yaml",
+      "filePath": "configs/AML-Large-LI_Transfer/AML-Large-LI-Multi-PNA.yaml",
+      "summary": "Experiment configuration for AML Large-LI hetero-edge classification with multi-layer PNA under HomoGNNEdgeModel. It enables ports=True, reverse_mp=True, ego ids while using weighted cross entropy [1, 7].",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "pna",
+        "large-li"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML sections cover dataset, train, validation, model, GNN or GT, and optimizer settings for a reproducible AML experiment."
+    },
+    {
+      "id": "config:configs/AML-Large-LI_Transfer/AML-Large-LI-Multi-PNA+EU.yaml",
+      "type": "config",
+      "name": "AML-Large-LI-Multi-PNA+EU.yaml",
+      "filePath": "configs/AML-Large-LI_Transfer/AML-Large-LI-Multi-PNA+EU.yaml",
+      "summary": "Experiment configuration for AML Large-LI hetero-edge classification with multi-layer PNA under HomoGNNEdgeModel. It enables ports=True, reverse_mp=True, ego ids, EU variant while using weighted cross entropy [1, 7].",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "pna",
+        "large-li"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML sections cover dataset, train, validation, model, GNN or GT, and optimizer settings for a reproducible AML experiment."
+    },
+    {
+      "id": "config:configs/AML-Large-LI_Transfer/AML-Large-LI-PNA.yaml",
+      "type": "config",
+      "name": "AML-Large-LI-PNA.yaml",
+      "filePath": "configs/AML-Large-LI_Transfer/AML-Large-LI-PNA.yaml",
+      "summary": "Experiment configuration for AML Large-LI hetero-edge classification with PNA under HomoGNNEdgeModel. It uses weighted cross entropy [1, 7] with link-neighbor sampling.",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "pna",
+        "large-li"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML sections cover dataset, train, validation, model, GNN or GT, and optimizer settings for a reproducible AML experiment."
+    },
+    {
+      "id": "config:configs/AML-Large-LI_Transfer/AML-Large-LI-PNA+EU.yaml",
+      "type": "config",
+      "name": "AML-Large-LI-PNA+EU.yaml",
+      "filePath": "configs/AML-Large-LI_Transfer/AML-Large-LI-PNA+EU.yaml",
+      "summary": "Experiment configuration for AML Large-LI hetero-edge classification with PNA under HomoGNNEdgeModel. It enables EU variant while using weighted cross entropy [1, 7].",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "pna",
+        "large-li"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML sections cover dataset, train, validation, model, GNN or GT, and optimizer settings for a reproducible AML experiment."
+    },
+    {
+      "id": "config:configs/AML-Large-LI_Transfer/AML-Large-LI-SparseNodeGT.yaml",
+      "type": "config",
+      "name": "AML-Large-LI-SparseNodeGT.yaml",
+      "filePath": "configs/AML-Large-LI_Transfer/AML-Large-LI-SparseNodeGT.yaml",
+      "summary": "Experiment configuration for AML Large-LI hetero-edge classification with SparseNodeGT under GTModel. It uses weighted cross entropy [1, 6] with link-neighbor sampling.",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "sparsenodegt",
+        "large-li"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML sections cover dataset, train, validation, model, GNN or GT, and optimizer settings for a reproducible AML experiment."
+    },
+    {
+      "id": "config:configs/AML-Large-LI_Transfer/AML-Large-LI-SparseNodeGT+Ego.yaml",
+      "type": "config",
+      "name": "AML-Large-LI-SparseNodeGT+Ego.yaml",
+      "filePath": "configs/AML-Large-LI_Transfer/AML-Large-LI-SparseNodeGT+Ego.yaml",
+      "summary": "Experiment configuration for AML Large-LI hetero-edge classification with SparseNodeGT under GTModel. It enables ego ids while using weighted cross entropy [1, 6].",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "sparsenodegt",
+        "large-li"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML sections cover dataset, train, validation, model, GNN or GT, and optimizer settings for a reproducible AML experiment."
+    },
+    {
+      "id": "config:configs/AML-Large-LI_Transfer/AML-Large-LI-SparseNodeGT+ports.yaml",
+      "type": "config",
+      "name": "AML-Large-LI-SparseNodeGT+ports.yaml",
+      "filePath": "configs/AML-Large-LI_Transfer/AML-Large-LI-SparseNodeGT+ports.yaml",
+      "summary": "Experiment configuration for AML Large-LI hetero-edge classification with SparseNodeGT under GTModel. It enables ports=True while using weighted cross entropy [1, 6].",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "sparsenodegt",
+        "large-li"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML sections cover dataset, train, validation, model, GNN or GT, and optimizer settings for a reproducible AML experiment."
+    },
+    {
+      "id": "config:configs/AML-Large-LI_Transfer/AML-Large-LI-SparseNodeGT+ports+Ego.yaml",
+      "type": "config",
+      "name": "AML-Large-LI-SparseNodeGT+ports+Ego.yaml",
+      "filePath": "configs/AML-Large-LI_Transfer/AML-Large-LI-SparseNodeGT+ports+Ego.yaml",
+      "summary": "Experiment configuration for AML Large-LI hetero-edge classification with SparseNodeGT under GTModel. It enables ports=True, ego ids while using weighted cross entropy [1, 6].",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "sparsenodegt",
+        "large-li"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML sections cover dataset, train, validation, model, GNN or GT, and optimizer settings for a reproducible AML experiment."
+    },
+    {
+      "id": "config:configs/AML-Large-LI_Transfer/AML-Large-LI-SparseNodeGT+RMP.yaml",
+      "type": "config",
+      "name": "AML-Large-LI-SparseNodeGT+RMP.yaml",
+      "filePath": "configs/AML-Large-LI_Transfer/AML-Large-LI-SparseNodeGT+RMP.yaml",
+      "summary": "Experiment configuration for AML Large-LI hetero-edge classification with SparseNodeGT under GTModel. It enables ports=False, reverse_mp=True while using weighted cross entropy [1, 6].",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "sparsenodegt",
+        "large-li"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML sections cover dataset, train, validation, model, GNN or GT, and optimizer settings for a reproducible AML experiment."
+    },
+    {
+      "id": "config:configs/AML-Large-LI_Transfer/AML-Large-LI-SparseNodeGT-EdgeAttn.yaml",
+      "type": "config",
+      "name": "AML-Large-LI-SparseNodeGT-EdgeAttn.yaml",
+      "filePath": "configs/AML-Large-LI_Transfer/AML-Large-LI-SparseNodeGT-EdgeAttn.yaml",
+      "summary": "Experiment configuration for AML Large-LI hetero-edge classification with SparseNodeGT under GTModel. It enables edge-attention masking while using weighted cross entropy [1, 6].",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "sparsenodegt",
+        "large-li"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML sections cover dataset, train, validation, model, GNN or GT, and optimizer settings for a reproducible AML experiment."
+    },
+    {
+      "id": "config:configs/AML-Large-LI_Transfer/AML-Large-LI-SparseNodeGT-EdgeGate.yaml",
+      "type": "config",
+      "name": "AML-Large-LI-SparseNodeGT-EdgeGate.yaml",
+      "filePath": "configs/AML-Large-LI_Transfer/AML-Large-LI-SparseNodeGT-EdgeGate.yaml",
+      "summary": "Experiment configuration for AML Large-LI hetero-edge classification with SparseNodeGT under GTModel. It enables edge-gating while using weighted cross entropy [1, 6].",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "sparsenodegt",
+        "large-li"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML sections cover dataset, train, validation, model, GNN or GT, and optimizer settings for a reproducible AML experiment."
+    },
+    {
+      "id": "config:configs/AML-Medium-HI/AML-Medium-HI-GATE.yaml",
+      "type": "config",
+      "name": "AML-Medium-HI-GATE.yaml",
+      "filePath": "configs/AML-Medium-HI/AML-Medium-HI-GATE.yaml",
+      "summary": "Experiment configuration for AML Medium-HI hetero-edge classification with GATE under HomoGNNEdgeModel. It uses weighted cross entropy [1, 6] with link-neighbor sampling.",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "gate",
+        "medium-hi"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML sections cover dataset, train, validation, model, GNN or GT, and optimizer settings for a reproducible AML experiment."
+    },
+    {
+      "id": "config:configs/AML-Medium-HI/AML-Medium-HI-GatedGCN.yaml",
+      "type": "config",
+      "name": "AML-Medium-HI-GatedGCN.yaml",
+      "filePath": "configs/AML-Medium-HI/AML-Medium-HI-GatedGCN.yaml",
+      "summary": "Experiment configuration for AML Medium-HI hetero-edge classification with GatedGCN under HomoGNNEdgeModel. It uses weighted cross entropy [1, 6] with link-neighbor sampling.",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "gatedgcn",
+        "medium-hi"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML sections cover dataset, train, validation, model, GNN or GT, and optimizer settings for a reproducible AML experiment."
+    },
+    {
+      "id": "config:configs/AML-Medium-HI/AML-Medium-HI-GINE.yaml",
+      "type": "config",
+      "name": "AML-Medium-HI-GINE.yaml",
+      "filePath": "configs/AML-Medium-HI/AML-Medium-HI-GINE.yaml",
+      "summary": "Experiment configuration for AML Medium-HI hetero-edge classification with GINE under HomoGNNEdgeModel. It uses weighted cross entropy [1, 6] with link-neighbor sampling.",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "gine",
+        "medium-hi"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML sections cover dataset, train, validation, model, GNN or GT, and optimizer settings for a reproducible AML experiment."
+    },
+    {
+      "id": "config:configs/AML-Medium-HI/AML-Medium-HI-GINE+Ego.yaml",
+      "type": "config",
+      "name": "AML-Medium-HI-GINE+Ego.yaml",
+      "filePath": "configs/AML-Medium-HI/AML-Medium-HI-GINE+Ego.yaml",
+      "summary": "Experiment configuration for AML Medium-HI hetero-edge classification with GINE under HomoGNNEdgeModel. It enables ego ids while using weighted cross entropy [1, 6].",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "gine",
+        "medium-hi"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML sections cover dataset, train, validation, model, GNN or GT, and optimizer settings for a reproducible AML experiment."
+    },
+    {
+      "id": "config:configs/AML-Medium-HI/AML-Medium-HI-GINE+EU.yaml",
+      "type": "config",
+      "name": "AML-Medium-HI-GINE+EU.yaml",
+      "filePath": "configs/AML-Medium-HI/AML-Medium-HI-GINE+EU.yaml",
+      "summary": "Experiment configuration for AML Medium-HI hetero-edge classification with GINE under HomoGNNEdgeModel. It enables EU variant while using weighted cross entropy [1, 6].",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "gine",
+        "medium-hi"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML sections cover dataset, train, validation, model, GNN or GT, and optimizer settings for a reproducible AML experiment."
+    },
+    {
+      "id": "config:configs/AML-Medium-HI/AML-Medium-HI-GINE+ports.yaml",
+      "type": "config",
+      "name": "AML-Medium-HI-GINE+ports.yaml",
+      "filePath": "configs/AML-Medium-HI/AML-Medium-HI-GINE+ports.yaml",
+      "summary": "Experiment configuration for AML Medium-HI hetero-edge classification with GINE under HomoGNNEdgeModel. It enables ports=True while using weighted cross entropy [1, 6].",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "gine",
+        "medium-hi"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML sections cover dataset, train, validation, model, GNN or GT, and optimizer settings for a reproducible AML experiment."
+    },
+    {
+      "id": "config:configs/AML-Medium-HI/AML-Medium-HI-GINE+RMP.yaml",
+      "type": "config",
+      "name": "AML-Medium-HI-GINE+RMP.yaml",
+      "filePath": "configs/AML-Medium-HI/AML-Medium-HI-GINE+RMP.yaml",
+      "summary": "Experiment configuration for AML Medium-HI hetero-edge classification with GINE under HomoGNNEdgeModel. It enables ports=False, reverse_mp=True while using weighted cross entropy [1, 6].",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "gine",
+        "medium-hi"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML sections cover dataset, train, validation, model, GNN or GT, and optimizer settings for a reproducible AML experiment."
+    },
+    {
+      "id": "config:configs/AML-Medium-HI/AML-Medium-HI-MLP.yaml",
+      "type": "config",
+      "name": "AML-Medium-HI-MLP.yaml",
+      "filePath": "configs/AML-Medium-HI/AML-Medium-HI-MLP.yaml",
+      "summary": "Experiment configuration for AML Medium-HI hetero-edge classification with MLPModel under MLPModel. It uses weighted cross entropy [1, 6] with link-neighbor sampling.",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "mlpmodel",
+        "medium-hi"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML sections cover dataset, train, validation, model, GNN or GT, and optimizer settings for a reproducible AML experiment."
+    },
+    {
+      "id": "config:configs/AML-Medium-HI/AML-Medium-HI-Multi-GINE.yaml",
+      "type": "config",
+      "name": "AML-Medium-HI-Multi-GINE.yaml",
+      "filePath": "configs/AML-Medium-HI/AML-Medium-HI-Multi-GINE.yaml",
+      "summary": "Experiment configuration for AML Medium-HI hetero-edge classification with multi-layer GINE under HomoGNNEdgeModel. It enables ports=True, reverse_mp=True, ego ids while using weighted cross entropy [1, 6].",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "gine",
+        "medium-hi"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML sections cover dataset, train, validation, model, GNN or GT, and optimizer settings for a reproducible AML experiment."
+    },
+    {
+      "id": "config:configs/AML-Medium-HI/AML-Medium-HI-Multi-GINE+EU.yaml",
+      "type": "config",
+      "name": "AML-Medium-HI-Multi-GINE+EU.yaml",
+      "filePath": "configs/AML-Medium-HI/AML-Medium-HI-Multi-GINE+EU.yaml",
+      "summary": "Experiment configuration for AML Medium-HI hetero-edge classification with multi-layer GINE under HomoGNNEdgeModel. It enables ports=True, reverse_mp=True, ego ids, EU variant while using weighted cross entropy [1, 6].",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "gine",
+        "medium-hi"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML sections cover dataset, train, validation, model, GNN or GT, and optimizer settings for a reproducible AML experiment."
+    },
+    {
+      "id": "config:configs/AML-Medium-HI/AML-Medium-HI-Multi-PNA.yaml",
+      "type": "config",
+      "name": "AML-Medium-HI-Multi-PNA.yaml",
+      "filePath": "configs/AML-Medium-HI/AML-Medium-HI-Multi-PNA.yaml",
+      "summary": "Experiment configuration for AML Medium-HI hetero-edge classification with multi-layer PNA under HomoGNNEdgeModel. It enables ports=True, reverse_mp=True, ego ids while using weighted cross entropy [1, 7].",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "pna",
+        "medium-hi"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML sections cover dataset, train, validation, model, GNN or GT, and optimizer settings for a reproducible AML experiment."
+    },
+    {
+      "id": "config:configs/AML-Medium-HI/AML-Medium-HI-Multi-PNA+EU.yaml",
+      "type": "config",
+      "name": "AML-Medium-HI-Multi-PNA+EU.yaml",
+      "filePath": "configs/AML-Medium-HI/AML-Medium-HI-Multi-PNA+EU.yaml",
+      "summary": "Experiment configuration for AML Medium-HI hetero-edge classification with multi-layer PNA under HomoGNNEdgeModel. It enables ports=True, reverse_mp=True, ego ids, EU variant while using weighted cross entropy [1, 7].",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "pna",
+        "medium-hi"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML sections cover dataset, train, validation, model, GNN or GT, and optimizer settings for a reproducible AML experiment."
+    },
+    {
+      "id": "config:configs/AML-Medium-HI/AML-Medium-HI-Multi-SparseNodeGT.yaml",
+      "type": "config",
+      "name": "AML-Medium-HI-Multi-SparseNodeGT.yaml",
+      "filePath": "configs/AML-Medium-HI/AML-Medium-HI-Multi-SparseNodeGT.yaml",
+      "summary": "Experiment configuration for AML Medium-HI hetero-edge classification with multi-layer SparseNodeGT under GTModel. It enables ports=True, reverse_mp=True, ego ids while using weighted cross entropy [1, 6].",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "sparsenodegt",
+        "medium-hi"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML sections cover dataset, train, validation, model, GNN or GT, and optimizer settings for a reproducible AML experiment."
+    },
+    {
+      "id": "config:configs/AML-Medium-HI/AML-Medium-HI-PNA.yaml",
+      "type": "config",
+      "name": "AML-Medium-HI-PNA.yaml",
+      "filePath": "configs/AML-Medium-HI/AML-Medium-HI-PNA.yaml",
+      "summary": "Experiment configuration for AML Medium-HI hetero-edge classification with PNA under HomoGNNEdgeModel. It uses weighted cross entropy [1, 7] with link-neighbor sampling.",
+      "tags": [
+        "configuration",
+        "aml",
+        "edge-classification",
+        "pna",
+        "medium-hi"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "YAML sections cover dataset, train, validation, model, GNN or GT, and optimizer settings for a reproducible AML experiment."
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:configs/AML-Large-LI_Transfer/AML-Large-LI-Multi-PNA+EU.yaml",
+      "target": "config:configs/AML-Large-LI_Transfer/AML-Large-LI-Multi-PNA.yaml",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:configs/AML-Large-LI_Transfer/AML-Large-LI-PNA+EU.yaml",
+      "target": "config:configs/AML-Large-LI_Transfer/AML-Large-LI-PNA.yaml",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:configs/AML-Large-LI_Transfer/AML-Large-LI-SparseNodeGT+Ego.yaml",
+      "target": "config:configs/AML-Large-LI_Transfer/AML-Large-LI-SparseNodeGT.yaml",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:configs/AML-Large-LI_Transfer/AML-Large-LI-SparseNodeGT+ports.yaml",
+      "target": "config:configs/AML-Large-LI_Transfer/AML-Large-LI-SparseNodeGT.yaml",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:configs/AML-Large-LI_Transfer/AML-Large-LI-SparseNodeGT+ports+Ego.yaml",
+      "target": "config:configs/AML-Large-LI_Transfer/AML-Large-LI-SparseNodeGT.yaml",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:configs/AML-Large-LI_Transfer/AML-Large-LI-SparseNodeGT+RMP.yaml",
+      "target": "config:configs/AML-Large-LI_Transfer/AML-Large-LI-SparseNodeGT.yaml",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:configs/AML-Large-LI_Transfer/AML-Large-LI-SparseNodeGT-EdgeAttn.yaml",
+      "target": "config:configs/AML-Large-LI_Transfer/AML-Large-LI-SparseNodeGT.yaml",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:configs/AML-Large-LI_Transfer/AML-Large-LI-SparseNodeGT-EdgeGate.yaml",
+      "target": "config:configs/AML-Large-LI_Transfer/AML-Large-LI-SparseNodeGT.yaml",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:configs/AML-Medium-HI/AML-Medium-HI-GINE+Ego.yaml",
+      "target": "config:configs/AML-Medium-HI/AML-Medium-HI-GINE.yaml",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:configs/AML-Medium-HI/AML-Medium-HI-GINE+EU.yaml",
+      "target": "config:configs/AML-Medium-HI/AML-Medium-HI-GINE.yaml",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:configs/AML-Medium-HI/AML-Medium-HI-GINE+ports.yaml",
+      "target": "config:configs/AML-Medium-HI/AML-Medium-HI-GINE.yaml",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:configs/AML-Medium-HI/AML-Medium-HI-GINE+RMP.yaml",
+      "target": "config:configs/AML-Medium-HI/AML-Medium-HI-GINE.yaml",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:configs/AML-Medium-HI/AML-Medium-HI-Multi-GINE+EU.yaml",
+      "target": "config:configs/AML-Medium-HI/AML-Medium-HI-Multi-GINE.yaml",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:configs/AML-Medium-HI/AML-Medium-HI-Multi-PNA+EU.yaml",
+      "target": "config:configs/AML-Medium-HI/AML-Medium-HI-Multi-PNA.yaml",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:configs/AML-Large-LI_Transfer/AML-Large-LI-Multi-PNA+EU.yaml",
+      "target": "config:configs/AML-Large-LI_Transfer/AML-Large-LI-Multi-PNA.yaml",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:configs/AML-Medium-HI/AML-Medium-HI-Multi-GINE+EU.yaml",
+      "target": "config:configs/AML-Medium-HI/AML-Medium-HI-Multi-GINE.yaml",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:configs/AML-Medium-HI/AML-Medium-HI-Multi-PNA+EU.yaml",
+      "target": "config:configs/AML-Medium-HI/AML-Medium-HI-Multi-PNA.yaml",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

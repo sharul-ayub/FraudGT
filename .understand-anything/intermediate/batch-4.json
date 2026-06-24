@@ -1,0 +1,2954 @@
+{
+  "nodes": [
+    {
+      "id": "file:fraudGT/graphgym/utils/io.py",
+      "type": "file",
+      "name": "io.py",
+      "filePath": "fraudGT/graphgym/utils/io.py",
+      "summary": "Provides JSON serialization, TensorBoard logging, and directory helpers used by FraudGT GraphGym utilities and loggers.",
+      "tags": [
+        "utility",
+        "serialization",
+        "logging",
+        "filesystem"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:fraudGT/graphgym/utils/io.py:string_to_python",
+      "type": "function",
+      "name": "string_to_python",
+      "filePath": "fraudGT/graphgym/utils/io.py",
+      "lineRange": [
+        7,
+        11
+      ],
+      "summary": "Implements string_to_python, an exported helper in io.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "utility",
+        "helper",
+        "graphgym",
+        "support"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/utils/io.py:dict_to_json",
+      "type": "function",
+      "name": "dict_to_json",
+      "filePath": "fraudGT/graphgym/utils/io.py",
+      "lineRange": [
+        14,
+        25
+      ],
+      "summary": "Implements dict_to_json, an exported helper in io.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "utility",
+        "helper",
+        "graphgym",
+        "support"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/utils/io.py:dict_list_to_json",
+      "type": "function",
+      "name": "dict_list_to_json",
+      "filePath": "fraudGT/graphgym/utils/io.py",
+      "lineRange": [
+        28,
+        40
+      ],
+      "summary": "Implements dict_list_to_json, an exported helper in io.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "utility",
+        "helper",
+        "graphgym",
+        "support"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/utils/io.py:json_to_dict_list",
+      "type": "function",
+      "name": "json_to_dict_list",
+      "filePath": "fraudGT/graphgym/utils/io.py",
+      "lineRange": [
+        43,
+        54
+      ],
+      "summary": "Implements json_to_dict_list, an exported helper in io.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "utility",
+        "helper",
+        "graphgym",
+        "support"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/utils/io.py:dict_to_tb",
+      "type": "function",
+      "name": "dict_to_tb",
+      "filePath": "fraudGT/graphgym/utils/io.py",
+      "lineRange": [
+        57,
+        69
+      ],
+      "summary": "Implements dict_to_tb, an exported helper in io.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "utility",
+        "helper",
+        "graphgym",
+        "support"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/utils/io.py:dict_list_to_tb",
+      "type": "function",
+      "name": "dict_list_to_tb",
+      "filePath": "fraudGT/graphgym/utils/io.py",
+      "lineRange": [
+        72,
+        75
+      ],
+      "summary": "Implements dict_list_to_tb, an exported helper in io.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "utility",
+        "helper",
+        "graphgym",
+        "support"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/utils/io.py:makedirs",
+      "type": "function",
+      "name": "makedirs",
+      "filePath": "fraudGT/graphgym/utils/io.py",
+      "lineRange": [
+        78,
+        79
+      ],
+      "summary": "Implements makedirs, an exported helper in io.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "utility",
+        "helper",
+        "graphgym",
+        "support"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/utils/io.py:makedirs_rm_exist",
+      "type": "function",
+      "name": "makedirs_rm_exist",
+      "filePath": "fraudGT/graphgym/utils/io.py",
+      "lineRange": [
+        82,
+        94
+      ],
+      "summary": "Implements makedirs_rm_exist, an exported helper in io.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "utility",
+        "helper",
+        "graphgym",
+        "support"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/graphgym/utils/plot.py",
+      "type": "file",
+      "name": "plot.py",
+      "filePath": "fraudGT/graphgym/utils/plot.py",
+      "summary": "Provides PCA-based embedding visualization helpers for saving node and knowledge-graph embedding plots.",
+      "tags": [
+        "utility",
+        "visualization",
+        "embedding",
+        "pca"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/utils/plot.py:view_emb",
+      "type": "function",
+      "name": "view_emb",
+      "filePath": "fraudGT/graphgym/utils/plot.py",
+      "lineRange": [
+        14,
+        29
+      ],
+      "summary": "Implements view_emb, an exported helper in plot.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "utility",
+        "helper",
+        "graphgym",
+        "support"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/graphgym/utils/plot.py:view_emb_kg",
+      "type": "function",
+      "name": "view_emb_kg",
+      "filePath": "fraudGT/graphgym/utils/plot.py",
+      "lineRange": [
+        32,
+        46
+      ],
+      "summary": "Implements view_emb_kg, an exported helper in plot.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "utility",
+        "helper",
+        "graphgym",
+        "support"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/graphgym/utils/tools.py",
+      "type": "file",
+      "name": "tools.py",
+      "filePath": "fraudGT/graphgym/utils/tools.py",
+      "summary": "Defines a no-op context manager used where code expects a context object but no resource management is needed.",
+      "tags": [
+        "utility",
+        "context-manager",
+        "testing",
+        "control-flow"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/graphgym/utils/tools.py:dummy_context",
+      "type": "class",
+      "name": "dummy_context",
+      "filePath": "fraudGT/graphgym/utils/tools.py",
+      "lineRange": [
+        1,
+        7
+      ],
+      "summary": "Defines dummy_context, a significant tools.py class used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "utility",
+        "helper",
+        "graphgym",
+        "support"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/head/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "fraudGT/head/__init__.py",
+      "summary": "Auto-imports head modules in the package so custom GraphGym prediction heads are registered on package import.",
+      "tags": [
+        "entry-point",
+        "registration",
+        "package-init",
+        "head"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/head/hetero_edge.py",
+      "type": "file",
+      "name": "hetero_edge.py",
+      "filePath": "fraudGT/head/hetero_edge.py",
+      "summary": "Implements a heterogeneous edge prediction head that indexes train, validation, and test edges and scores concatenated endpoint embeddings.",
+      "tags": [
+        "model-head",
+        "edge-classification",
+        "heterogeneous-graph",
+        "registration"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:fraudGT/head/hetero_edge.py:HeteroGNNEdgeHead",
+      "type": "class",
+      "name": "HeteroGNNEdgeHead",
+      "filePath": "fraudGT/head/hetero_edge.py",
+      "lineRange": [
+        13,
+        69
+      ],
+      "summary": "Defines HeteroGNNEdgeHead, a significant hetero_edge.py class used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "model-head",
+        "prediction",
+        "registration",
+        "graphgym"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:fraudGT/head/hetero_node.py",
+      "type": "file",
+      "name": "hetero_node.py",
+      "filePath": "fraudGT/head/hetero_node.py",
+      "summary": "Implements a heterogeneous node prediction head that selects task-node embeddings from HeteroData batches before applying an MLP classifier.",
+      "tags": [
+        "model-head",
+        "node-classification",
+        "heterogeneous-graph",
+        "registration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/head/hetero_node.py:HeteroGNNNodeHead",
+      "type": "class",
+      "name": "HeteroGNNNodeHead",
+      "filePath": "fraudGT/head/hetero_node.py",
+      "lineRange": [
+        12,
+        53
+      ],
+      "summary": "Defines HeteroGNNNodeHead, a significant hetero_node.py class used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "model-head",
+        "prediction",
+        "registration",
+        "graphgym"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/head/inductive_node.py",
+      "type": "file",
+      "name": "inductive_node.py",
+      "filePath": "fraudGT/head/inductive_node.py",
+      "summary": "Implements an inductive node prediction head for GraphGym that applies a post-message-passing MLP to batch nodes.",
+      "tags": [
+        "model-head",
+        "node-classification",
+        "inductive",
+        "registration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/head/inductive_node.py:GNNInductiveNodeHead",
+      "type": "class",
+      "name": "GNNInductiveNodeHead",
+      "filePath": "fraudGT/head/inductive_node.py",
+      "lineRange": [
+        8,
+        28
+      ],
+      "summary": "Defines GNNInductiveNodeHead, a significant inductive_node.py class used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "model-head",
+        "prediction",
+        "registration",
+        "graphgym"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/layer/gatedgcn_layer.py",
+      "type": "file",
+      "name": "gatedgcn_layer.py",
+      "filePath": "fraudGT/layer/gatedgcn_layer.py",
+      "summary": "Implements a GatedGCN message-passing layer with edge gating, residual connections, normalization, activation, and dropout.",
+      "tags": [
+        "gnn-layer",
+        "message-passing",
+        "edge-features",
+        "registration"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:fraudGT/layer/gatedgcn_layer.py:GatedGCNLayer",
+      "type": "class",
+      "name": "GatedGCNLayer",
+      "filePath": "fraudGT/layer/gatedgcn_layer.py",
+      "lineRange": [
+        10,
+        113
+      ],
+      "summary": "Defines GatedGCNLayer, a significant gatedgcn_layer.py class used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "model",
+        "message-passing",
+        "graph-neural-network",
+        "pytorch"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:fraudGT/layer/gt_layer.py",
+      "type": "file",
+      "name": "gt_layer.py",
+      "filePath": "fraudGT/layer/gt_layer.py",
+      "summary": "Implements the core graph transformer layer with relation-aware attention, edge-type handling, temporal encoding, and feed-forward update blocks.",
+      "tags": [
+        "graph-transformer",
+        "attention",
+        "message-passing",
+        "edge-types"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:fraudGT/layer/gt_layer.py:GTLayer",
+      "type": "class",
+      "name": "GTLayer",
+      "filePath": "fraudGT/layer/gt_layer.py",
+      "lineRange": [
+        18,
+        542
+      ],
+      "summary": "Defines GTLayer, a significant gt_layer.py class used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "model",
+        "message-passing",
+        "graph-neural-network",
+        "pytorch"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:fraudGT/loader/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "fraudGT/loader/__init__.py",
+      "summary": "Auto-imports loader modules so dataset loader registration side effects are available when the loader package is imported.",
+      "tags": [
+        "entry-point",
+        "registration",
+        "package-init",
+        "loader"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/loader/embedding/HTNE.py",
+      "type": "file",
+      "name": "HTNE.py",
+      "filePath": "fraudGT/loader/embedding/HTNE.py",
+      "summary": "Implements HTNE temporal network embedding datasets and neural models for sequence-based heterogeneous temporal embedding pretraining.",
+      "tags": [
+        "embedding",
+        "temporal-graph",
+        "dataset",
+        "pytorch-model"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:fraudGT/loader/embedding/HTNE.py:HTNE_Dataset",
+      "type": "class",
+      "name": "HTNE_Dataset",
+      "filePath": "fraudGT/loader/embedding/HTNE.py",
+      "lineRange": [
+        7,
+        123
+      ],
+      "summary": "Defines HTNE_Dataset, a significant HTNE.py class used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "data-loader",
+        "embedding",
+        "pytorch",
+        "pipeline"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:fraudGT/loader/embedding/HTNE.py:HTNE",
+      "type": "class",
+      "name": "HTNE",
+      "filePath": "fraudGT/loader/embedding/HTNE.py",
+      "lineRange": [
+        126,
+        178
+      ],
+      "summary": "Defines HTNE, a significant HTNE.py class used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "data-loader",
+        "embedding",
+        "pytorch",
+        "pipeline"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:fraudGT/loader/embedding/HTNE.py:HTNE_a",
+      "type": "class",
+      "name": "HTNE_a",
+      "filePath": "fraudGT/loader/embedding/HTNE.py",
+      "lineRange": [
+        183,
+        313
+      ],
+      "summary": "Defines HTNE_a, a significant HTNE.py class used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "data-loader",
+        "embedding",
+        "pytorch",
+        "pipeline"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:fraudGT/loader/embedding/metapath2vec.py",
+      "type": "file",
+      "name": "metapath2vec.py",
+      "filePath": "fraudGT/loader/embedding/metapath2vec.py",
+      "summary": "Implements MetaPath2Vec sampling, training, and loss computation for heterogeneous random-walk embeddings.",
+      "tags": [
+        "embedding",
+        "random-walk",
+        "heterogeneous-graph",
+        "training"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:fraudGT/loader/embedding/metapath2vec.py:sample",
+      "type": "function",
+      "name": "sample",
+      "filePath": "fraudGT/loader/embedding/metapath2vec.py",
+      "lineRange": [
+        249,
+        263
+      ],
+      "summary": "Implements sample, an exported helper in metapath2vec.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "data-pipeline",
+        "preprocessing",
+        "utility",
+        "dataset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/loader/embedding/metapath2vec.py:MetaPath2Vec",
+      "type": "class",
+      "name": "MetaPath2Vec",
+      "filePath": "fraudGT/loader/embedding/metapath2vec.py",
+      "lineRange": [
+        15,
+        246
+      ],
+      "summary": "Defines MetaPath2Vec, a significant metapath2vec.py class used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "data-loader",
+        "embedding",
+        "pytorch",
+        "pipeline"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:fraudGT/loader/encoding_generator.py",
+      "type": "file",
+      "name": "encoding_generator.py",
+      "filePath": "fraudGT/loader/encoding_generator.py",
+      "summary": "Generates and caches structural encodings from Node2Vec, MetaPath2Vec, and knowledge graph embedding models for FraudGT datasets.",
+      "tags": [
+        "data-pipeline",
+        "embedding",
+        "preprocessing",
+        "cache"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:fraudGT/loader/encoding_generator.py:preprocess_Node2Vec",
+      "type": "function",
+      "name": "preprocess_Node2Vec",
+      "filePath": "fraudGT/loader/encoding_generator.py",
+      "lineRange": [
+        19,
+        172
+      ],
+      "summary": "Implements preprocess_Node2Vec, an exported helper in encoding_generator.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "data-pipeline",
+        "preprocessing",
+        "utility",
+        "dataset"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:fraudGT/loader/encoding_generator.py:check_Node2Vec",
+      "type": "function",
+      "name": "check_Node2Vec",
+      "filePath": "fraudGT/loader/encoding_generator.py",
+      "lineRange": [
+        174,
+        175
+      ],
+      "summary": "Implements check_Node2Vec, an exported helper in encoding_generator.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "data-pipeline",
+        "preprocessing",
+        "utility",
+        "dataset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/loader/encoding_generator.py:load_Node2Vec",
+      "type": "function",
+      "name": "load_Node2Vec",
+      "filePath": "fraudGT/loader/encoding_generator.py",
+      "lineRange": [
+        177,
+        180
+      ],
+      "summary": "Implements load_Node2Vec, an exported helper in encoding_generator.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "data-pipeline",
+        "preprocessing",
+        "utility",
+        "dataset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/loader/encoding_generator.py:preprocess_Metapath",
+      "type": "function",
+      "name": "preprocess_Metapath",
+      "filePath": "fraudGT/loader/encoding_generator.py",
+      "lineRange": [
+        183,
+        573
+      ],
+      "summary": "Implements preprocess_Metapath, an exported helper in encoding_generator.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "data-pipeline",
+        "preprocessing",
+        "utility",
+        "dataset"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:fraudGT/loader/encoding_generator.py:check_Metapath",
+      "type": "function",
+      "name": "check_Metapath",
+      "filePath": "fraudGT/loader/encoding_generator.py",
+      "lineRange": [
+        575,
+        576
+      ],
+      "summary": "Implements check_Metapath, an exported helper in encoding_generator.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "data-pipeline",
+        "preprocessing",
+        "utility",
+        "dataset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/loader/encoding_generator.py:load_Metapath",
+      "type": "function",
+      "name": "load_Metapath",
+      "filePath": "fraudGT/loader/encoding_generator.py",
+      "lineRange": [
+        578,
+        581
+      ],
+      "summary": "Implements load_Metapath, an exported helper in encoding_generator.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "data-pipeline",
+        "preprocessing",
+        "utility",
+        "dataset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/loader/encoding_generator.py:preprocess_KGE",
+      "type": "function",
+      "name": "preprocess_KGE",
+      "filePath": "fraudGT/loader/encoding_generator.py",
+      "lineRange": [
+        583,
+        692
+      ],
+      "summary": "Implements preprocess_KGE, an exported helper in encoding_generator.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "data-pipeline",
+        "preprocessing",
+        "utility",
+        "dataset"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:fraudGT/loader/encoding_generator.py:check_KGE",
+      "type": "function",
+      "name": "check_KGE",
+      "filePath": "fraudGT/loader/encoding_generator.py",
+      "lineRange": [
+        694,
+        695
+      ],
+      "summary": "Implements check_KGE, an exported helper in encoding_generator.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "data-pipeline",
+        "preprocessing",
+        "utility",
+        "dataset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/loader/encoding_generator.py:load_KGE",
+      "type": "function",
+      "name": "load_KGE",
+      "filePath": "fraudGT/loader/encoding_generator.py",
+      "lineRange": [
+        697,
+        712
+      ],
+      "summary": "Implements load_KGE, an exported helper in encoding_generator.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "data-pipeline",
+        "preprocessing",
+        "utility",
+        "dataset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/loader/master_loader.py",
+      "type": "file",
+      "name": "master_loader.py",
+      "filePath": "fraudGT/loader/master_loader.py",
+      "summary": "Central dataset-loading hub that prepares supported homogeneous and heterogeneous datasets, applies transforms, logs metadata, and joins splits.",
+      "tags": [
+        "data-loader",
+        "dataset-preparation",
+        "heterogeneous-graph",
+        "preprocessing"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:fraudGT/loader/master_loader.py:get_sparse_tensor",
+      "type": "function",
+      "name": "get_sparse_tensor",
+      "filePath": "fraudGT/loader/master_loader.py",
+      "lineRange": [
+        57,
+        76
+      ],
+      "summary": "Implements get_sparse_tensor, an exported helper in master_loader.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "data-pipeline",
+        "preprocessing",
+        "utility",
+        "dataset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/loader/master_loader.py:even_quantile_labels",
+      "type": "function",
+      "name": "even_quantile_labels",
+      "filePath": "fraudGT/loader/master_loader.py",
+      "lineRange": [
+        79,
+        102
+      ],
+      "summary": "Implements even_quantile_labels, an exported helper in master_loader.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "data-pipeline",
+        "preprocessing",
+        "utility",
+        "dataset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/loader/master_loader.py:log_loaded_dataset",
+      "type": "function",
+      "name": "log_loaded_dataset",
+      "filePath": "fraudGT/loader/master_loader.py",
+      "lineRange": [
+        105,
+        156
+      ],
+      "summary": "Implements log_loaded_dataset, an exported helper in master_loader.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "data-pipeline",
+        "preprocessing",
+        "utility",
+        "dataset"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:fraudGT/loader/master_loader.py:load_dataset_master",
+      "type": "function",
+      "name": "load_dataset_master",
+      "filePath": "fraudGT/loader/master_loader.py",
+      "lineRange": [
+        159,
+        407
+      ],
+      "summary": "Implements load_dataset_master, an exported helper in master_loader.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "data-pipeline",
+        "preprocessing",
+        "utility",
+        "dataset"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:fraudGT/loader/master_loader.py:compute_indegree_histogram",
+      "type": "function",
+      "name": "compute_indegree_histogram",
+      "filePath": "fraudGT/loader/master_loader.py",
+      "lineRange": [
+        410,
+        428
+      ],
+      "summary": "Implements compute_indegree_histogram, an exported helper in master_loader.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "data-pipeline",
+        "preprocessing",
+        "utility",
+        "dataset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/loader/master_loader.py:preformat_DBLP",
+      "type": "function",
+      "name": "preformat_DBLP",
+      "filePath": "fraudGT/loader/master_loader.py",
+      "lineRange": [
+        431,
+        442
+      ],
+      "summary": "Implements preformat_DBLP, an exported helper in master_loader.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "data-pipeline",
+        "preprocessing",
+        "utility",
+        "dataset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/loader/master_loader.py:preformat_IMDB",
+      "type": "function",
+      "name": "preformat_IMDB",
+      "filePath": "fraudGT/loader/master_loader.py",
+      "lineRange": [
+        445,
+        476
+      ],
+      "summary": "Implements preformat_IMDB, an exported helper in master_loader.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "data-pipeline",
+        "preprocessing",
+        "utility",
+        "dataset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/loader/master_loader.py:preformat_Planetoid",
+      "type": "function",
+      "name": "preformat_Planetoid",
+      "filePath": "fraudGT/loader/master_loader.py",
+      "lineRange": [
+        479,
+        505
+      ],
+      "summary": "Implements preformat_Planetoid, an exported helper in master_loader.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "data-pipeline",
+        "preprocessing",
+        "utility",
+        "dataset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/loader/master_loader.py:preformat_MovieLens",
+      "type": "function",
+      "name": "preformat_MovieLens",
+      "filePath": "fraudGT/loader/master_loader.py",
+      "lineRange": [
+        508,
+        518
+      ],
+      "summary": "Implements preformat_MovieLens, an exported helper in master_loader.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "data-pipeline",
+        "preprocessing",
+        "utility",
+        "dataset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/loader/master_loader.py:preformat_OGB_Node",
+      "type": "function",
+      "name": "preformat_OGB_Node",
+      "filePath": "fraudGT/loader/master_loader.py",
+      "lineRange": [
+        521,
+        802
+      ],
+      "summary": "Implements preformat_OGB_Node, an exported helper in master_loader.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "data-pipeline",
+        "preprocessing",
+        "utility",
+        "dataset"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:fraudGT/loader/master_loader.py:preformat_AML",
+      "type": "function",
+      "name": "preformat_AML",
+      "filePath": "fraudGT/loader/master_loader.py",
+      "lineRange": [
+        805,
+        818
+      ],
+      "summary": "Implements preformat_AML, an exported helper in master_loader.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "data-pipeline",
+        "preprocessing",
+        "utility",
+        "dataset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/loader/master_loader.py:preformat_ETH",
+      "type": "function",
+      "name": "preformat_ETH",
+      "filePath": "fraudGT/loader/master_loader.py",
+      "lineRange": [
+        821,
+        834
+      ],
+      "summary": "Implements preformat_ETH, an exported helper in master_loader.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "data-pipeline",
+        "preprocessing",
+        "utility",
+        "dataset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/loader/master_loader.py:join_dataset_splits",
+      "type": "function",
+      "name": "join_dataset_splits",
+      "filePath": "fraudGT/loader/master_loader.py",
+      "lineRange": [
+        838,
+        862
+      ],
+      "summary": "Implements join_dataset_splits, an exported helper in master_loader.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "data-pipeline",
+        "preprocessing",
+        "utility",
+        "dataset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/loader/split_generator.py",
+      "type": "file",
+      "name": "split_generator.py",
+      "filePath": "fraudGT/loader/split_generator.py",
+      "summary": "Creates standard, random, fixed, sliced, and cross-validation splits and attaches split masks to GraphGym datasets.",
+      "tags": [
+        "data-splitting",
+        "cross-validation",
+        "mask-generation",
+        "dataset-preparation"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:fraudGT/loader/split_generator.py:prepare_splits",
+      "type": "function",
+      "name": "prepare_splits",
+      "filePath": "fraudGT/loader/split_generator.py",
+      "lineRange": [
+        12,
+        32
+      ],
+      "summary": "Implements prepare_splits, an exported helper in split_generator.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "data-pipeline",
+        "preprocessing",
+        "utility",
+        "dataset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/loader/split_generator.py:setup_standard_split",
+      "type": "function",
+      "name": "setup_standard_split",
+      "filePath": "fraudGT/loader/split_generator.py",
+      "lineRange": [
+        35,
+        90
+      ],
+      "summary": "Implements setup_standard_split, an exported helper in split_generator.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "data-pipeline",
+        "preprocessing",
+        "utility",
+        "dataset"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:fraudGT/loader/split_generator.py:setup_random_split",
+      "type": "function",
+      "name": "setup_random_split",
+      "filePath": "fraudGT/loader/split_generator.py",
+      "lineRange": [
+        93,
+        135
+      ],
+      "summary": "Implements setup_random_split, an exported helper in split_generator.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "data-pipeline",
+        "preprocessing",
+        "utility",
+        "dataset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/loader/split_generator.py:setup_fixed_split",
+      "type": "function",
+      "name": "setup_fixed_split",
+      "filePath": "fraudGT/loader/split_generator.py",
+      "lineRange": [
+        138,
+        148
+      ],
+      "summary": "Implements setup_fixed_split, an exported helper in split_generator.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "data-pipeline",
+        "preprocessing",
+        "utility",
+        "dataset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/loader/split_generator.py:setup_sliced_split",
+      "type": "function",
+      "name": "setup_sliced_split",
+      "filePath": "fraudGT/loader/split_generator.py",
+      "lineRange": [
+        151,
+        161
+      ],
+      "summary": "Implements setup_sliced_split, an exported helper in split_generator.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "data-pipeline",
+        "preprocessing",
+        "utility",
+        "dataset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/loader/split_generator.py:set_dataset_splits",
+      "type": "function",
+      "name": "set_dataset_splits",
+      "filePath": "fraudGT/loader/split_generator.py",
+      "lineRange": [
+        164,
+        201
+      ],
+      "summary": "Implements set_dataset_splits, an exported helper in split_generator.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "data-pipeline",
+        "preprocessing",
+        "utility",
+        "dataset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/loader/split_generator.py:setup_cv_split",
+      "type": "function",
+      "name": "setup_cv_split",
+      "filePath": "fraudGT/loader/split_generator.py",
+      "lineRange": [
+        204,
+        247
+      ],
+      "summary": "Implements setup_cv_split, an exported helper in split_generator.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "data-pipeline",
+        "preprocessing",
+        "utility",
+        "dataset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/loader/split_generator.py:create_cv_splits",
+      "type": "function",
+      "name": "create_cv_splits",
+      "filePath": "fraudGT/loader/split_generator.py",
+      "lineRange": [
+        250,
+        272
+      ],
+      "summary": "Implements create_cv_splits, an exported helper in split_generator.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "data-pipeline",
+        "preprocessing",
+        "utility",
+        "dataset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/loader/transferers.py",
+      "type": "file",
+      "name": "transferers.py",
+      "filePath": "fraudGT/loader/transferers.py",
+      "summary": "Defines dataset transfer helpers and lookup mappings for moving trained models or encodings across related datasets.",
+      "tags": [
+        "data-transfer",
+        "dataset-mapping",
+        "utility",
+        "configuration"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:fraudGT/logger.py",
+      "type": "file",
+      "name": "logger.py",
+      "filePath": "fraudGT/logger.py",
+      "summary": "Provides custom experiment logging, metric aggregation, ranking metrics, GPU usage tracking, and JSON/TensorBoard output integration.",
+      "tags": [
+        "logging",
+        "metrics",
+        "experiment-tracking",
+        "evaluation"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:fraudGT/logger.py:get_current_gpu_usage",
+      "type": "function",
+      "name": "get_current_gpu_usage",
+      "filePath": "fraudGT/logger.py",
+      "lineRange": [
+        21,
+        38
+      ],
+      "summary": "Implements get_current_gpu_usage, an exported helper in logger.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "metrics",
+        "evaluation",
+        "logging",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/logger.py:accuracy_SBM",
+      "type": "function",
+      "name": "accuracy_SBM",
+      "filePath": "fraudGT/logger.py",
+      "lineRange": [
+        40,
+        60
+      ],
+      "summary": "Implements accuracy_SBM, an exported helper in logger.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "metrics",
+        "evaluation",
+        "logging",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/logger.py:dcg_at_k",
+      "type": "function",
+      "name": "dcg_at_k",
+      "filePath": "fraudGT/logger.py",
+      "lineRange": [
+        62,
+        67
+      ],
+      "summary": "Implements dcg_at_k, an exported helper in logger.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "metrics",
+        "evaluation",
+        "logging",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/logger.py:ndcg_at_k",
+      "type": "function",
+      "name": "ndcg_at_k",
+      "filePath": "fraudGT/logger.py",
+      "lineRange": [
+        69,
+        74
+      ],
+      "summary": "Implements ndcg_at_k, an exported helper in logger.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "metrics",
+        "evaluation",
+        "logging",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/logger.py:NDCG",
+      "type": "function",
+      "name": "NDCG",
+      "filePath": "fraudGT/logger.py",
+      "lineRange": [
+        76,
+        80
+      ],
+      "summary": "Implements NDCG, an exported helper in logger.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "metrics",
+        "evaluation",
+        "logging",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/logger.py:_dcg",
+      "type": "function",
+      "name": "_dcg",
+      "filePath": "fraudGT/logger.py",
+      "lineRange": [
+        83,
+        89
+      ],
+      "summary": "Implements _dcg, an exported helper in logger.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "metrics",
+        "evaluation",
+        "logging",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/logger.py:NDCG_fast",
+      "type": "function",
+      "name": "NDCG_fast",
+      "filePath": "fraudGT/logger.py",
+      "lineRange": [
+        91,
+        107
+      ],
+      "summary": "Implements NDCG_fast, an exported helper in logger.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "metrics",
+        "evaluation",
+        "logging",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/logger.py:create_logger",
+      "type": "function",
+      "name": "create_logger",
+      "filePath": "fraudGT/logger.py",
+      "lineRange": [
+        370,
+        381
+      ],
+      "summary": "Implements create_logger, an exported helper in logger.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "metrics",
+        "evaluation",
+        "logging",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/logger.py:eval_spearmanr",
+      "type": "function",
+      "name": "eval_spearmanr",
+      "filePath": "fraudGT/logger.py",
+      "lineRange": [
+        384,
+        398
+      ],
+      "summary": "Implements eval_spearmanr, an exported helper in logger.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "metrics",
+        "evaluation",
+        "logging",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/logger.py:CustomLogger",
+      "type": "class",
+      "name": "CustomLogger",
+      "filePath": "fraudGT/logger.py",
+      "lineRange": [
+        109,
+        367
+      ],
+      "summary": "Defines CustomLogger, a significant logger.py class used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "metrics",
+        "evaluation",
+        "logging",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:fraudGT/loss/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "fraudGT/loss/__init__.py",
+      "summary": "Auto-imports loss modules so custom registered losses are available through GraphGym registration.",
+      "tags": [
+        "entry-point",
+        "registration",
+        "package-init",
+        "loss"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/loss/weighted_cross_entropy.py",
+      "type": "file",
+      "name": "weighted_cross_entropy.py",
+      "filePath": "fraudGT/loss/weighted_cross_entropy.py",
+      "summary": "Registers a weighted cross-entropy loss that applies configured class weights before delegating to PyTorch functional loss.",
+      "tags": [
+        "loss-function",
+        "class-weights",
+        "classification",
+        "registration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/loss/weighted_cross_entropy.py:weighted_cross_entropy",
+      "type": "function",
+      "name": "weighted_cross_entropy",
+      "filePath": "fraudGT/loss/weighted_cross_entropy.py",
+      "lineRange": [
+        8,
+        32
+      ],
+      "summary": "Implements weighted_cross_entropy, an exported helper in weighted_cross_entropy.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "loss-function",
+        "classification",
+        "registration",
+        "pytorch"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/main.py",
+      "type": "file",
+      "name": "main.py",
+      "filePath": "fraudGT/main.py",
+      "summary": "Main training entry point that parses configuration, initializes GraphGym components, creates model/optimizer/logger objects, and launches training.",
+      "tags": [
+        "entry-point",
+        "training",
+        "configuration",
+        "experiment-runner"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:fraudGT/main.py:run",
+      "type": "function",
+      "name": "run",
+      "filePath": "fraudGT/main.py",
+      "lineRange": [
+        34,
+        135
+      ],
+      "summary": "Implements run, an exported helper in main.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "utility",
+        "helper",
+        "graphgym",
+        "support"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:fraudGT/metric_wrapper.py",
+      "type": "file",
+      "name": "metric_wrapper.py",
+      "filePath": "fraudGT/metric_wrapper.py",
+      "summary": "Wraps TorchMetrics functions with thresholding, task-aware aggregation, and custom Pearson and Spearman correlation implementations.",
+      "tags": [
+        "metrics",
+        "thresholding",
+        "evaluation",
+        "torchmetrics"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:fraudGT/metric_wrapper.py:pearsonr",
+      "type": "function",
+      "name": "pearsonr",
+      "filePath": "fraudGT/metric_wrapper.py",
+      "lineRange": [
+        88,
+        124
+      ],
+      "summary": "Implements pearsonr, an exported helper in metric_wrapper.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "metrics",
+        "evaluation",
+        "logging",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/metric_wrapper.py:_get_rank",
+      "type": "function",
+      "name": "_get_rank",
+      "filePath": "fraudGT/metric_wrapper.py",
+      "lineRange": [
+        127,
+        143
+      ],
+      "summary": "Implements _get_rank, an exported helper in metric_wrapper.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "metrics",
+        "evaluation",
+        "logging",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/metric_wrapper.py:spearmanr",
+      "type": "function",
+      "name": "spearmanr",
+      "filePath": "fraudGT/metric_wrapper.py",
+      "lineRange": [
+        146,
+        170
+      ],
+      "summary": "Implements spearmanr, an exported helper in metric_wrapper.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "metrics",
+        "evaluation",
+        "logging",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/metric_wrapper.py:Thresholder",
+      "type": "class",
+      "name": "Thresholder",
+      "filePath": "fraudGT/metric_wrapper.py",
+      "lineRange": [
+        25,
+        85
+      ],
+      "summary": "Defines Thresholder, a significant metric_wrapper.py class used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "metrics",
+        "evaluation",
+        "logging",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:fraudGT/metric_wrapper.py:MetricWrapper",
+      "type": "class",
+      "name": "MetricWrapper",
+      "filePath": "fraudGT/metric_wrapper.py",
+      "lineRange": [
+        196,
+        330
+      ],
+      "summary": "Defines MetricWrapper, a significant metric_wrapper.py class used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "metrics",
+        "evaluation",
+        "logging",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:fraudGT/metrics_ogb.py",
+      "type": "file",
+      "name": "metrics_ogb.py",
+      "filePath": "fraudGT/metrics_ogb.py",
+      "summary": "Provides OGB-style evaluation functions for ROC-AUC, average precision, RMSE, accuracy, and F1 metrics.",
+      "tags": [
+        "metrics",
+        "ogb",
+        "evaluation",
+        "classification"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:fraudGT/metrics_ogb.py:eval_rocauc",
+      "type": "function",
+      "name": "eval_rocauc",
+      "filePath": "fraudGT/metrics_ogb.py",
+      "lineRange": [
+        9,
+        28
+      ],
+      "summary": "Implements eval_rocauc, an exported helper in metrics_ogb.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "metrics",
+        "evaluation",
+        "logging",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/metrics_ogb.py:eval_ap",
+      "type": "function",
+      "name": "eval_ap",
+      "filePath": "fraudGT/metrics_ogb.py",
+      "lineRange": [
+        31,
+        52
+      ],
+      "summary": "Implements eval_ap, an exported helper in metrics_ogb.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "metrics",
+        "evaluation",
+        "logging",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/metrics_ogb.py:eval_rmse",
+      "type": "function",
+      "name": "eval_rmse",
+      "filePath": "fraudGT/metrics_ogb.py",
+      "lineRange": [
+        55,
+        67
+      ],
+      "summary": "Implements eval_rmse, an exported helper in metrics_ogb.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "metrics",
+        "evaluation",
+        "logging",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/metrics_ogb.py:eval_acc",
+      "type": "function",
+      "name": "eval_acc",
+      "filePath": "fraudGT/metrics_ogb.py",
+      "lineRange": [
+        70,
+        78
+      ],
+      "summary": "Implements eval_acc, an exported helper in metrics_ogb.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "metrics",
+        "evaluation",
+        "logging",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:fraudGT/metrics_ogb.py:eval_F1",
+      "type": "function",
+      "name": "eval_F1",
+      "filePath": "fraudGT/metrics_ogb.py",
+      "lineRange": [
+        81,
+        117
+      ],
+      "summary": "Implements eval_F1, an exported helper in metrics_ogb.py used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "metrics",
+        "evaluation",
+        "logging",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/network/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "fraudGT/network/__init__.py",
+      "summary": "Auto-imports network modules so custom GraphGym network registrations are available on package import.",
+      "tags": [
+        "entry-point",
+        "registration",
+        "package-init",
+        "network"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/network/conv.py",
+      "type": "file",
+      "name": "conv.py",
+      "filePath": "fraudGT/network/conv.py",
+      "summary": "Implements heterogeneous graph convolution primitives including HGT, dense HGT, temporal encoding, and a general convolution adapter.",
+      "tags": [
+        "graph-convolution",
+        "heterogeneous-graph",
+        "attention",
+        "message-passing"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:fraudGT/network/conv.py:HGTConv",
+      "type": "class",
+      "name": "HGTConv",
+      "filePath": "fraudGT/network/conv.py",
+      "lineRange": [
+        11,
+        139
+      ],
+      "summary": "Defines HGTConv, a significant conv.py class used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "model",
+        "message-passing",
+        "graph-neural-network",
+        "pytorch"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:fraudGT/network/conv.py:DenseHGTConv",
+      "type": "class",
+      "name": "DenseHGTConv",
+      "filePath": "fraudGT/network/conv.py",
+      "lineRange": [
+        143,
+        280
+      ],
+      "summary": "Defines DenseHGTConv, a significant conv.py class used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "model",
+        "message-passing",
+        "graph-neural-network",
+        "pytorch"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:fraudGT/network/conv.py:RelTemporalEncoding",
+      "type": "class",
+      "name": "RelTemporalEncoding",
+      "filePath": "fraudGT/network/conv.py",
+      "lineRange": [
+        283,
+        299
+      ],
+      "summary": "Defines RelTemporalEncoding, a significant conv.py class used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "model",
+        "message-passing",
+        "graph-neural-network",
+        "pytorch"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/network/conv.py:GeneralConv",
+      "type": "class",
+      "name": "GeneralConv",
+      "filePath": "fraudGT/network/conv.py",
+      "lineRange": [
+        303,
+        323
+      ],
+      "summary": "Defines GeneralConv, a significant conv.py class used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "model",
+        "message-passing",
+        "graph-neural-network",
+        "pytorch"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:fraudGT/network/gt_model.py",
+      "type": "file",
+      "name": "gt_model.py",
+      "filePath": "fraudGT/network/gt_model.py",
+      "summary": "Defines the registered GTModel network, including feature encoders, graph transformer layers, normalization, and task head integration.",
+      "tags": [
+        "graph-transformer",
+        "model",
+        "feature-encoding",
+        "registration"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:fraudGT/network/gt_model.py:FeatureEncoder",
+      "type": "class",
+      "name": "FeatureEncoder",
+      "filePath": "fraudGT/network/gt_model.py",
+      "lineRange": [
+        17,
+        56
+      ],
+      "summary": "Defines FeatureEncoder, a significant gt_model.py class used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "model",
+        "message-passing",
+        "graph-neural-network",
+        "pytorch"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:fraudGT/network/gt_model.py:GTModel",
+      "type": "class",
+      "name": "GTModel",
+      "filePath": "fraudGT/network/gt_model.py",
+      "lineRange": [
+        60,
+        221
+      ],
+      "summary": "Defines GTModel, a significant gt_model.py class used by the FraudGT graph learning pipeline.",
+      "tags": [
+        "model",
+        "message-passing",
+        "graph-neural-network",
+        "pytorch"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:fraudGT/graphgym/utils/io.py",
+      "target": "function:fraudGT/graphgym/utils/io.py:string_to_python",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/io.py",
+      "target": "function:fraudGT/graphgym/utils/io.py:string_to_python",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/io.py",
+      "target": "function:fraudGT/graphgym/utils/io.py:dict_to_json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/io.py",
+      "target": "function:fraudGT/graphgym/utils/io.py:dict_to_json",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/io.py",
+      "target": "function:fraudGT/graphgym/utils/io.py:dict_list_to_json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/io.py",
+      "target": "function:fraudGT/graphgym/utils/io.py:dict_list_to_json",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/io.py",
+      "target": "function:fraudGT/graphgym/utils/io.py:json_to_dict_list",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/io.py",
+      "target": "function:fraudGT/graphgym/utils/io.py:json_to_dict_list",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/io.py",
+      "target": "function:fraudGT/graphgym/utils/io.py:dict_to_tb",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/io.py",
+      "target": "function:fraudGT/graphgym/utils/io.py:dict_to_tb",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/io.py",
+      "target": "function:fraudGT/graphgym/utils/io.py:dict_list_to_tb",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/io.py",
+      "target": "function:fraudGT/graphgym/utils/io.py:dict_list_to_tb",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/io.py",
+      "target": "function:fraudGT/graphgym/utils/io.py:makedirs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/io.py",
+      "target": "function:fraudGT/graphgym/utils/io.py:makedirs",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/io.py",
+      "target": "function:fraudGT/graphgym/utils/io.py:makedirs_rm_exist",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/io.py",
+      "target": "function:fraudGT/graphgym/utils/io.py:makedirs_rm_exist",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/plot.py",
+      "target": "function:fraudGT/graphgym/utils/plot.py:view_emb",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/plot.py",
+      "target": "function:fraudGT/graphgym/utils/plot.py:view_emb",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/plot.py",
+      "target": "function:fraudGT/graphgym/utils/plot.py:view_emb_kg",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/plot.py",
+      "target": "function:fraudGT/graphgym/utils/plot.py:view_emb_kg",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/tools.py",
+      "target": "class:fraudGT/graphgym/utils/tools.py:dummy_context",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/tools.py",
+      "target": "class:fraudGT/graphgym/utils/tools.py:dummy_context",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/head/hetero_edge.py",
+      "target": "class:fraudGT/head/hetero_edge.py:HeteroGNNEdgeHead",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/head/hetero_edge.py",
+      "target": "class:fraudGT/head/hetero_edge.py:HeteroGNNEdgeHead",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/head/hetero_node.py",
+      "target": "class:fraudGT/head/hetero_node.py:HeteroGNNNodeHead",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/head/hetero_node.py",
+      "target": "class:fraudGT/head/hetero_node.py:HeteroGNNNodeHead",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/head/inductive_node.py",
+      "target": "class:fraudGT/head/inductive_node.py:GNNInductiveNodeHead",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/head/inductive_node.py",
+      "target": "class:fraudGT/head/inductive_node.py:GNNInductiveNodeHead",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/layer/gatedgcn_layer.py",
+      "target": "class:fraudGT/layer/gatedgcn_layer.py:GatedGCNLayer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/layer/gatedgcn_layer.py",
+      "target": "class:fraudGT/layer/gatedgcn_layer.py:GatedGCNLayer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/layer/gt_layer.py",
+      "target": "class:fraudGT/layer/gt_layer.py:GTLayer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/layer/gt_layer.py",
+      "target": "class:fraudGT/layer/gt_layer.py:GTLayer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/loader/embedding/HTNE.py",
+      "target": "class:fraudGT/loader/embedding/HTNE.py:HTNE_Dataset",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/loader/embedding/HTNE.py",
+      "target": "class:fraudGT/loader/embedding/HTNE.py:HTNE_Dataset",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/loader/embedding/HTNE.py",
+      "target": "class:fraudGT/loader/embedding/HTNE.py:HTNE",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/loader/embedding/HTNE.py",
+      "target": "class:fraudGT/loader/embedding/HTNE.py:HTNE",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/loader/embedding/HTNE.py",
+      "target": "class:fraudGT/loader/embedding/HTNE.py:HTNE_a",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/loader/embedding/HTNE.py",
+      "target": "class:fraudGT/loader/embedding/HTNE.py:HTNE_a",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/loader/embedding/metapath2vec.py",
+      "target": "function:fraudGT/loader/embedding/metapath2vec.py:sample",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/loader/embedding/metapath2vec.py",
+      "target": "function:fraudGT/loader/embedding/metapath2vec.py:sample",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/loader/embedding/metapath2vec.py",
+      "target": "class:fraudGT/loader/embedding/metapath2vec.py:MetaPath2Vec",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/loader/embedding/metapath2vec.py",
+      "target": "class:fraudGT/loader/embedding/metapath2vec.py:MetaPath2Vec",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/loader/encoding_generator.py",
+      "target": "function:fraudGT/loader/encoding_generator.py:preprocess_Node2Vec",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/loader/encoding_generator.py",
+      "target": "function:fraudGT/loader/encoding_generator.py:preprocess_Node2Vec",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/loader/encoding_generator.py",
+      "target": "function:fraudGT/loader/encoding_generator.py:check_Node2Vec",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/loader/encoding_generator.py",
+      "target": "function:fraudGT/loader/encoding_generator.py:check_Node2Vec",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/loader/encoding_generator.py",
+      "target": "function:fraudGT/loader/encoding_generator.py:load_Node2Vec",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/loader/encoding_generator.py",
+      "target": "function:fraudGT/loader/encoding_generator.py:load_Node2Vec",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/loader/encoding_generator.py",
+      "target": "function:fraudGT/loader/encoding_generator.py:preprocess_Metapath",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/loader/encoding_generator.py",
+      "target": "function:fraudGT/loader/encoding_generator.py:preprocess_Metapath",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/loader/encoding_generator.py",
+      "target": "function:fraudGT/loader/encoding_generator.py:check_Metapath",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/loader/encoding_generator.py",
+      "target": "function:fraudGT/loader/encoding_generator.py:check_Metapath",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/loader/encoding_generator.py",
+      "target": "function:fraudGT/loader/encoding_generator.py:load_Metapath",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/loader/encoding_generator.py",
+      "target": "function:fraudGT/loader/encoding_generator.py:load_Metapath",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/loader/encoding_generator.py",
+      "target": "function:fraudGT/loader/encoding_generator.py:preprocess_KGE",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/loader/encoding_generator.py",
+      "target": "function:fraudGT/loader/encoding_generator.py:preprocess_KGE",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/loader/encoding_generator.py",
+      "target": "function:fraudGT/loader/encoding_generator.py:check_KGE",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/loader/encoding_generator.py",
+      "target": "function:fraudGT/loader/encoding_generator.py:check_KGE",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/loader/encoding_generator.py",
+      "target": "function:fraudGT/loader/encoding_generator.py:load_KGE",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/loader/encoding_generator.py",
+      "target": "function:fraudGT/loader/encoding_generator.py:load_KGE",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/loader/master_loader.py",
+      "target": "function:fraudGT/loader/master_loader.py:get_sparse_tensor",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/loader/master_loader.py",
+      "target": "function:fraudGT/loader/master_loader.py:get_sparse_tensor",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/loader/master_loader.py",
+      "target": "function:fraudGT/loader/master_loader.py:even_quantile_labels",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/loader/master_loader.py",
+      "target": "function:fraudGT/loader/master_loader.py:even_quantile_labels",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/loader/master_loader.py",
+      "target": "function:fraudGT/loader/master_loader.py:log_loaded_dataset",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/loader/master_loader.py",
+      "target": "function:fraudGT/loader/master_loader.py:log_loaded_dataset",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/loader/master_loader.py",
+      "target": "function:fraudGT/loader/master_loader.py:load_dataset_master",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/loader/master_loader.py",
+      "target": "function:fraudGT/loader/master_loader.py:load_dataset_master",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/loader/master_loader.py",
+      "target": "function:fraudGT/loader/master_loader.py:compute_indegree_histogram",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/loader/master_loader.py",
+      "target": "function:fraudGT/loader/master_loader.py:compute_indegree_histogram",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/loader/master_loader.py",
+      "target": "function:fraudGT/loader/master_loader.py:preformat_DBLP",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/loader/master_loader.py",
+      "target": "function:fraudGT/loader/master_loader.py:preformat_DBLP",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/loader/master_loader.py",
+      "target": "function:fraudGT/loader/master_loader.py:preformat_IMDB",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/loader/master_loader.py",
+      "target": "function:fraudGT/loader/master_loader.py:preformat_IMDB",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/loader/master_loader.py",
+      "target": "function:fraudGT/loader/master_loader.py:preformat_Planetoid",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/loader/master_loader.py",
+      "target": "function:fraudGT/loader/master_loader.py:preformat_Planetoid",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/loader/master_loader.py",
+      "target": "function:fraudGT/loader/master_loader.py:preformat_MovieLens",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/loader/master_loader.py",
+      "target": "function:fraudGT/loader/master_loader.py:preformat_MovieLens",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/loader/master_loader.py",
+      "target": "function:fraudGT/loader/master_loader.py:preformat_OGB_Node",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/loader/master_loader.py",
+      "target": "function:fraudGT/loader/master_loader.py:preformat_OGB_Node",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/loader/master_loader.py",
+      "target": "function:fraudGT/loader/master_loader.py:preformat_AML",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/loader/master_loader.py",
+      "target": "function:fraudGT/loader/master_loader.py:preformat_AML",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/loader/master_loader.py",
+      "target": "function:fraudGT/loader/master_loader.py:preformat_ETH",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/loader/master_loader.py",
+      "target": "function:fraudGT/loader/master_loader.py:preformat_ETH",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/loader/master_loader.py",
+      "target": "function:fraudGT/loader/master_loader.py:join_dataset_splits",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/loader/master_loader.py",
+      "target": "function:fraudGT/loader/master_loader.py:join_dataset_splits",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/loader/split_generator.py",
+      "target": "function:fraudGT/loader/split_generator.py:prepare_splits",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/loader/split_generator.py",
+      "target": "function:fraudGT/loader/split_generator.py:prepare_splits",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/loader/split_generator.py",
+      "target": "function:fraudGT/loader/split_generator.py:setup_standard_split",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/loader/split_generator.py",
+      "target": "function:fraudGT/loader/split_generator.py:setup_standard_split",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/loader/split_generator.py",
+      "target": "function:fraudGT/loader/split_generator.py:setup_random_split",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/loader/split_generator.py",
+      "target": "function:fraudGT/loader/split_generator.py:setup_random_split",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/loader/split_generator.py",
+      "target": "function:fraudGT/loader/split_generator.py:setup_fixed_split",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/loader/split_generator.py",
+      "target": "function:fraudGT/loader/split_generator.py:setup_fixed_split",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/loader/split_generator.py",
+      "target": "function:fraudGT/loader/split_generator.py:setup_sliced_split",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/loader/split_generator.py",
+      "target": "function:fraudGT/loader/split_generator.py:setup_sliced_split",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/loader/split_generator.py",
+      "target": "function:fraudGT/loader/split_generator.py:set_dataset_splits",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/loader/split_generator.py",
+      "target": "function:fraudGT/loader/split_generator.py:set_dataset_splits",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/loader/split_generator.py",
+      "target": "function:fraudGT/loader/split_generator.py:setup_cv_split",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/loader/split_generator.py",
+      "target": "function:fraudGT/loader/split_generator.py:setup_cv_split",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/loader/split_generator.py",
+      "target": "function:fraudGT/loader/split_generator.py:create_cv_splits",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/loader/split_generator.py",
+      "target": "function:fraudGT/loader/split_generator.py:create_cv_splits",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/logger.py",
+      "target": "function:fraudGT/logger.py:get_current_gpu_usage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/logger.py",
+      "target": "function:fraudGT/logger.py:get_current_gpu_usage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/logger.py",
+      "target": "function:fraudGT/logger.py:accuracy_SBM",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/logger.py",
+      "target": "function:fraudGT/logger.py:accuracy_SBM",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/logger.py",
+      "target": "function:fraudGT/logger.py:dcg_at_k",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/logger.py",
+      "target": "function:fraudGT/logger.py:dcg_at_k",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/logger.py",
+      "target": "function:fraudGT/logger.py:ndcg_at_k",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/logger.py",
+      "target": "function:fraudGT/logger.py:ndcg_at_k",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/logger.py",
+      "target": "function:fraudGT/logger.py:NDCG",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/logger.py",
+      "target": "function:fraudGT/logger.py:NDCG",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/logger.py",
+      "target": "function:fraudGT/logger.py:_dcg",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/logger.py",
+      "target": "function:fraudGT/logger.py:_dcg",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/logger.py",
+      "target": "function:fraudGT/logger.py:NDCG_fast",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/logger.py",
+      "target": "function:fraudGT/logger.py:NDCG_fast",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/logger.py",
+      "target": "function:fraudGT/logger.py:create_logger",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/logger.py",
+      "target": "function:fraudGT/logger.py:create_logger",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/logger.py",
+      "target": "function:fraudGT/logger.py:eval_spearmanr",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/logger.py",
+      "target": "function:fraudGT/logger.py:eval_spearmanr",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/logger.py",
+      "target": "class:fraudGT/logger.py:CustomLogger",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/logger.py",
+      "target": "class:fraudGT/logger.py:CustomLogger",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/loss/weighted_cross_entropy.py",
+      "target": "function:fraudGT/loss/weighted_cross_entropy.py:weighted_cross_entropy",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/loss/weighted_cross_entropy.py",
+      "target": "function:fraudGT/loss/weighted_cross_entropy.py:weighted_cross_entropy",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/main.py",
+      "target": "function:fraudGT/main.py:run",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/main.py",
+      "target": "function:fraudGT/main.py:run",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/metric_wrapper.py",
+      "target": "function:fraudGT/metric_wrapper.py:pearsonr",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/metric_wrapper.py",
+      "target": "function:fraudGT/metric_wrapper.py:pearsonr",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/metric_wrapper.py",
+      "target": "function:fraudGT/metric_wrapper.py:_get_rank",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/metric_wrapper.py",
+      "target": "function:fraudGT/metric_wrapper.py:_get_rank",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/metric_wrapper.py",
+      "target": "function:fraudGT/metric_wrapper.py:spearmanr",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/metric_wrapper.py",
+      "target": "function:fraudGT/metric_wrapper.py:spearmanr",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/metric_wrapper.py",
+      "target": "class:fraudGT/metric_wrapper.py:Thresholder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/metric_wrapper.py",
+      "target": "class:fraudGT/metric_wrapper.py:Thresholder",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/metric_wrapper.py",
+      "target": "class:fraudGT/metric_wrapper.py:MetricWrapper",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/metric_wrapper.py",
+      "target": "class:fraudGT/metric_wrapper.py:MetricWrapper",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/metrics_ogb.py",
+      "target": "function:fraudGT/metrics_ogb.py:eval_rocauc",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/metrics_ogb.py",
+      "target": "function:fraudGT/metrics_ogb.py:eval_rocauc",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/metrics_ogb.py",
+      "target": "function:fraudGT/metrics_ogb.py:eval_ap",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/metrics_ogb.py",
+      "target": "function:fraudGT/metrics_ogb.py:eval_ap",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/metrics_ogb.py",
+      "target": "function:fraudGT/metrics_ogb.py:eval_rmse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/metrics_ogb.py",
+      "target": "function:fraudGT/metrics_ogb.py:eval_rmse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/metrics_ogb.py",
+      "target": "function:fraudGT/metrics_ogb.py:eval_acc",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/metrics_ogb.py",
+      "target": "function:fraudGT/metrics_ogb.py:eval_acc",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/metrics_ogb.py",
+      "target": "function:fraudGT/metrics_ogb.py:eval_F1",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/metrics_ogb.py",
+      "target": "function:fraudGT/metrics_ogb.py:eval_F1",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/network/conv.py",
+      "target": "class:fraudGT/network/conv.py:HGTConv",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/network/conv.py",
+      "target": "class:fraudGT/network/conv.py:HGTConv",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/network/conv.py",
+      "target": "class:fraudGT/network/conv.py:DenseHGTConv",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/network/conv.py",
+      "target": "class:fraudGT/network/conv.py:DenseHGTConv",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/network/conv.py",
+      "target": "class:fraudGT/network/conv.py:RelTemporalEncoding",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/network/conv.py",
+      "target": "class:fraudGT/network/conv.py:RelTemporalEncoding",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/network/conv.py",
+      "target": "class:fraudGT/network/conv.py:GeneralConv",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/network/conv.py",
+      "target": "class:fraudGT/network/conv.py:GeneralConv",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/network/gt_model.py",
+      "target": "class:fraudGT/network/gt_model.py:FeatureEncoder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/network/gt_model.py",
+      "target": "class:fraudGT/network/gt_model.py:FeatureEncoder",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/network/gt_model.py",
+      "target": "class:fraudGT/network/gt_model.py:GTModel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:fraudGT/network/gt_model.py",
+      "target": "class:fraudGT/network/gt_model.py:GTModel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:fraudGT/graphgym/utils/plot.py",
+      "target": "file:fraudGT/graphgym/utils/io.py",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:fraudGT/logger.py",
+      "target": "file:fraudGT/graphgym/utils/io.py",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:fraudGT/logger.py",
+      "target": "file:fraudGT/metrics_ogb.py",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:fraudGT/logger.py",
+      "target": "file:fraudGT/metric_wrapper.py",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:fraudGT/loader/encoding_generator.py",
+      "target": "file:fraudGT/loader/embedding/HTNE.py",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:fraudGT/loader/encoding_generator.py",
+      "target": "file:fraudGT/loader/embedding/metapath2vec.py",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:fraudGT/loader/master_loader.py",
+      "target": "file:fraudGT/loader/split_generator.py",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:fraudGT/loader/master_loader.py",
+      "target": "file:fraudGT/loader/encoding_generator.py",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:fraudGT/network/gt_model.py",
+      "target": "file:fraudGT/layer/gt_layer.py",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:fraudGT/main.py",
+      "target": "file:fraudGT/logger.py",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}
