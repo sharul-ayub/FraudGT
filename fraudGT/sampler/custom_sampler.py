@@ -57,6 +57,14 @@ class LoaderWrapper:
     def set_step(self, n_step):
         self.step = n_step
 
+
+def get_supervision_mask(store):
+    mask = store.split_mask
+    if hasattr(store, 'known_mask'):
+        mask = mask & store.known_mask
+    return mask
+
+
 # def convert_batch(batch):
 #     for node_type, x in batch.x_dict.items():
 #         batch[node_type].x = x.to(torch.float) 
@@ -90,7 +98,7 @@ def get_NeighborLoader(dataset, batch_size, shuffle=True, split='train'):
     task = cfg.dataset.task_entity
     if isinstance(dataset, TemporalDataset):
         data = dataset[split]
-        mask = data[task].split_mask
+        mask = get_supervision_mask(data[task])
         input_nodes = (task, mask)
     else:
         data = dataset[0]
@@ -793,7 +801,7 @@ class AddEgoIdsForLinkNeighbor(BaseTransform):
 def get_LinkNeighborLoader(dataset, batch_size, shuffle=True, split='train'):
     task = cfg.dataset.task_entity
     data = dataset[split]
-    mask = data[task].split_mask
+    mask = get_supervision_mask(data[task])
     edge_label_index = data[task].edge_index[:, mask]
     edge_label = data[task].y[mask]
     loader_train = \

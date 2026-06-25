@@ -9,6 +9,13 @@ def weighted_cross_entropy(pred, true, epoch):
     """Weighted cross-entropy for unbalanced classes.
     """
     if cfg.model.loss_fun == 'weighted_cross_entropy':
+        known_mask = true >= 0
+        if not torch.all(known_mask):
+            pred = pred[known_mask]
+            true = true[known_mask]
+        if true.numel() == 0:
+            return pred.sum() * 0, pred
+
         # calculating label weights for weighted loss computation
         if cfg.model.loss_fun_weight is None:
             V = true.size(0)

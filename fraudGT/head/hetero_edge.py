@@ -9,6 +9,14 @@ from fraudGT.graphgym.config import cfg
 from fraudGT.graphgym.models.layer import MLP
 
 
+def get_supervision_indices(dataset, split, task):
+    store = dataset[split][task]
+    mask = store.split_mask
+    if hasattr(store, 'known_mask'):
+        mask = mask & store.known_mask
+    return mask_to_index(mask).to(cfg.device)
+
+
 @register_head('hetero_edge')
 class HeteroGNNEdgeHead(nn.Module):
     '''Head of Hetero GNN, edge prediction'''
@@ -18,9 +26,9 @@ class HeteroGNNEdgeHead(nn.Module):
         # self.train_edge_inds = mask_to_index(data[cfg.dataset.task_entity].train_edge_mask).to(cfg.device)
         # self.val_edge_inds = mask_to_index(data[cfg.dataset.task_entity].val_edge_mask).to(cfg.device)
         # self.test_edge_inds = mask_to_index(data[cfg.dataset.task_entity].test_edge_mask).to(cfg.device)
-        self.train_inds = mask_to_index(dataset['train'][cfg.dataset.task_entity].split_mask).to(cfg.device)
-        self.val_inds = mask_to_index(dataset['val'][cfg.dataset.task_entity].split_mask).to(cfg.device)
-        self.test_inds = mask_to_index(dataset['test'][cfg.dataset.task_entity].split_mask).to(cfg.device)
+        self.train_inds = get_supervision_indices(dataset, 'train', cfg.dataset.task_entity)
+        self.val_inds = get_supervision_indices(dataset, 'val', cfg.dataset.task_entity)
+        self.test_inds = get_supervision_indices(dataset, 'test', cfg.dataset.task_entity)
 
         self.layer_post_mp = MLP(dim_in * 3, dim_out, 
                                  num_layers=max(cfg.gnn.layers_post_mp, cfg.gt.layers_post_gt),
@@ -36,6 +44,8 @@ class HeteroGNNEdgeHead(nn.Module):
         #                   getattr(self, f'{batch.split}_inds')[batch[task].input_id])
         mask = torch.isin(batch[task].e_id, 
                           getattr(self, f'{batch.split}_inds')[batch[task].input_id])
+        if hasattr(batch[task], 'known_mask'):
+            mask = mask & batch[task].known_mask
 
         task = cfg.dataset.task_entity
         edge_index = batch[task].edge_index

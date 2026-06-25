@@ -19,6 +19,7 @@ from ogb.lsc import MAG240MDataset
 from ogb.nodeproppred import PygNodePropPredDataset
 from torch_geometric.datasets import (DBLP, IMDB, OGB_MAG, Planetoid, MovieLens)
 from fraudGT.datasets.aml_dataset import AMLDataset
+from fraudGT.datasets.btc_dataset import BTCDataset
 from fraudGT.datasets.eth_dataset import ETHDataset
 from fraudGT.datasets.temporal_dataset import TemporalDataset
 from fraudGT.graphgym.config import cfg
@@ -219,6 +220,10 @@ def load_dataset_master(format, name, dataset_dir):
     elif format == 'AML':
         dataset_dir = osp.join(dataset_dir, format)
         dataset = preformat_AML(dataset_dir, name)
+
+    elif format == 'BTC':
+        dataset_dir = osp.join(dataset_dir, format)
+        dataset = preformat_BTC(dataset_dir, name)
 
     elif format == 'ETH':
         dataset_dir = osp.join(dataset_dir, format)
@@ -814,6 +819,13 @@ def preformat_AML(dataset_dir, name):
     """
     # transform = T.ToUndirected(merge=True)
     dataset = AMLDataset(root=dataset_dir, name=name, reverse_mp=cfg.dataset.reverse_mp,
+                         add_ports=cfg.dataset.add_ports)
+    return dataset
+
+
+def preformat_BTC(dataset_dir, name):
+    """Load and preformat the custom BTC transaction dataset."""
+    dataset = BTCDataset(root=dataset_dir, name=name, reverse_mp=cfg.dataset.reverse_mp,
                          add_ports=cfg.dataset.add_ports)
     return dataset
 
