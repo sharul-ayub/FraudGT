@@ -65,12 +65,12 @@ def get_supervision_mask(store):
     return mask
 
 
-# def convert_batch(batch):
-#     for node_type, x in batch.x_dict.items():
-#         batch[node_type].x = x.to(torch.float) 
-#     for node_type, y in batch.y_dict.items():
-#         batch[node_type].y = y.to(torch.long) 
-#     return batch
+def convert_batch(batch):
+    for node_type, x in batch.x_dict.items():
+        batch[node_type].x = x.to(torch.float)
+    for node_type, y in batch.y_dict.items():
+        batch[node_type].y = y.to(torch.long)
+    return batch
 class AddEgoIdsForNeighbor(BaseTransform):
     r"""Add IDs to the centre nodes of the batch.
     """

@@ -267,6 +267,14 @@ def custom_train(loggers, loaders, model, optimizer, scheduler):
 
     num_splits = len(loggers)
     split_names = ['val', 'test']
+    if cfg.train.final_report:
+        if cfg.dataset.format != 'BTC':
+            raise ValueError("train.final_report currently supports only dataset.format=BTC.")
+        if num_splits < 3 or loggers[2].task_type != 'classification_binary':
+            raise ValueError(
+                "train.final_report requires binary train/validation/test splits."
+            )
+    best_report_validation_f1 = float('-inf')
     full_epoch_times = []
     perf = [[] for _ in range(num_splits)]
     for cur_epoch in range(start_epoch, cfg.optim.max_epoch):
@@ -278,10 +286,27 @@ def custom_train(loggers, loaders, model, optimizer, scheduler):
         perf[0].append(loggers[0].write_epoch(cur_epoch))
 
         if is_eval_epoch(cur_epoch, start_epoch):
+            update_final_report = False
             for i in range(1, num_splits):
                 eval_epoch(loggers[i], loaders[i], model,
                            split=split_names[i - 1])
-                perf[i].append(loggers[i].write_epoch(cur_epoch))
+                if i == 1:
+                    split_stats = loggers[i].write_epoch(cur_epoch)
+                    if cfg.train.final_report and \
+                            split_stats['f1'] > best_report_validation_f1:
+                        best_report_validation_f1 = split_stats['f1']
+                        update_final_report = True
+                else:
+                    split_stats = loggers[i].write_epoch(
+                        cur_epoch,
+                        final_report=cfg.train.final_report and update_final_report,
+                        validation_f1=(
+                            best_report_validation_f1
+                            if cfg.train.final_report and update_final_report
+                            else None
+                        ),
+                    )
+                perf[i].append(split_stats)
         else:
             for i in range(1, num_splits):
                 perf[i].append(perf[i][-1])

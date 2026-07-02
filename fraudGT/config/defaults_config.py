@@ -35,6 +35,11 @@ def extended_cfg(cfg):
     # instead, when False, follow cfg.train.eval_period checkpointing frequency.
     cfg.train.ckpt_best = False
 
+    # Generate a detailed binary test-set report whenever validation F1 reaches
+    # a new best value. Disabled by default so tuning runs keep their existing
+    # output and runtime characteristics.
+    cfg.train.final_report = False
+
     # Enable tqdm progress bar during training/validation/testing
     cfg.train.tqdm = False
     cfg.val.tqdm = False

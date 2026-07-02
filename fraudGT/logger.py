@@ -314,7 +314,7 @@ class CustomLogger(Logger):
             else:
                 self._custom_stats[key] += val * batch_size
 
-    def write_epoch(self, cur_epoch):
+    def write_epoch(self, cur_epoch, final_report=False, validation_f1=None):
         start_time = time.perf_counter()
         basic_stats = self.basic()
 
@@ -352,6 +352,29 @@ class CustomLogger(Logger):
                 **task_stats,
                 **custom_stats
             }
+
+        if final_report:
+            if self.name != 'test' or self.task_type != 'classification_binary':
+                raise ValueError(
+                    "Final report is supported only by the binary test logger."
+                )
+            # Import plotting dependencies only for explicitly enabled final
+            # runs, keeping ordinary and Optuna runs lightweight.
+            from fraudGT.final_report import generate_final_report
+
+            report_dir = os.path.join(cfg.run_dir, 'final_test_report')
+            generate_final_report(
+                true=torch.cat(self._true).squeeze(-1),
+                pred_score=torch.cat(self._pred),
+                output_dir=report_dir,
+                epoch=cur_epoch,
+                validation_f1=validation_f1,
+                test_loss=stats['loss'],
+            )
+            logging.info(
+                f"Final test report updated for best validation F1 "
+                f"at epoch {cur_epoch}: {report_dir}"
+            )
 
         # print
         logging.info('{}: {}'.format(self.name, stats))
